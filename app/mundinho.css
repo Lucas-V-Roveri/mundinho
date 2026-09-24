@@ -1,0 +1,46 @@
+html { scroll-behavior: smooth; }
+
+.page-enter { animation: page-enter 180ms steps(6, end) both; }
+@keyframes page-enter { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+.chunk-pixel { animation: chunk-load 900ms steps(4, end) infinite alternate; }
+@keyframes chunk-load { from { background: var(--color-dirt-500); transform: translateY(0); } to { background: var(--color-grass-500); transform: translateY(-2px); } }
+
+.xp-fill {
+  transition: width 620ms steps(12, end);
+  box-shadow: inset 0 3px 0 color-mix(in srgb, var(--color-paper-50) 36%, transparent);
+  background-image: repeating-linear-gradient(90deg, transparent 0 13px, color-mix(in srgb, var(--color-night-950) 18%, transparent) 13px 15px);
+}
+
+.polaroid-card, .handmade-note { transform-origin: center; }
+.handmade-note:nth-child(even) { transform: rotate(.35deg); }
+.handmade-note:nth-child(odd) { transform: rotate(-.25deg); }
+
+.image-pixel-soft { image-rendering: auto; }
+.skin-preview {
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: 800% 800%;
+  background-position: -100% 0;
+  border: 4px solid var(--color-night-950);
+  background-color: var(--color-stone-100);
+  box-shadow: 4px 4px 0 var(--color-night-950);
+}
+
+.list-square { list-style-type: square; }
+
+[id] { scroll-margin-top: 15rem; }
+
+table tr:hover td { background: var(--color-torch-100); }
+
+@media (max-width: 700px) {
+  .skin-preview { height: 8rem; width: 5rem; }
+  [id] { scroll-margin-top: 22rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .page-enter, .chunk-pixel { animation: none !important; }
+  .xp-fill { transition: none !important; }
+  .handmade-note { transform: none !important; }
+}

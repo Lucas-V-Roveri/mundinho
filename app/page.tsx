@@ -1,5 +1,2 @@
-import { DesignSystemPreview } from "@/components/design-system-preview";
-
-export default function HomePage() {
-  return <DesignSystemPreview />;
-}
+import { HomeView } from "@/components/pages/home-view";
+export default function HomePage() { return <HomeView />; }

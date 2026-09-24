@@ -1,0 +1,13 @@
+{
+  "name": "Mundinho · pra sempre",
+  "short_name": "Mundinho",
+  "description": "Wiki e diário do foreverworld de gr1d e benamu.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#33251d",
+  "theme_color": "#5d402f",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
