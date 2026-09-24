@@ -12,4 +12,5 @@ try {
 }
 
 await import('./lote2-extend.js');
+await import('./lote3-extend.js');
 await import('./app.js');
