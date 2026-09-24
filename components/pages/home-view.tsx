@@ -4,7 +4,7 @@ import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ContentIcon, iconKindForType } from "@/components/media/content-icon";
+import { ContentIcon } from "@/components/media/content-icon";
 import { useMundinho } from "@/components/app-providers";
 import { dependencyReady, flatPlayerKey, sortProgression } from "@/lib/progression-model";
 import type { Actor, ProgressionItem, ProgressionSubitem } from "@/types/content";
@@ -34,7 +34,7 @@ export function HomeView() {
             <div className="mt-6 border-4 border-night-950 bg-night-900 p-3 text-paper-50 shadow-inset"><div className="flex justify-between gap-3 font-label text-xl"><span>XP do mundinho</span><span>{completed}/{total} · {percent}%</span></div><div className="mt-2 h-5 border-4 border-night-950 bg-stone-700"><div className="xp-fill h-full bg-grass-500" style={{ width: `${percent}%` }} /></div></div>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
               <div className="border-4 border-night-950 bg-torch-100 p-4 shadow-pixel-sm"><span className="font-label text-xl">Próximo sugerido para {actor}</span>{next ? <><strong className="mt-1 block">#{String(next.order).padStart(3, "0")} · {next.title}</strong><p className="mt-1 text-sm">{next.entry} · {next.phase} · risco {next.risk}</p><Link className="mt-3 inline-block font-label text-xl underline" href={`/progressao#${next.id}` as Route}>ver na progressão</Link></> : <p className="mt-2">Tudo elegível já foi marcado. Aí sim dá para escolher por vontade.</p>}</div>
-              <div className="border-4 border-night-950 bg-stone-100 p-4 shadow-pixel-sm"><span className="font-label text-xl">Última marcação do mundinho</span>{last ? <><strong className="mt-1 block">{last.item_id}</strong><p className="mt-1 text-sm">{last.completed_by} · {new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short" }).format(new Date(last.completed_at!))}</p></> : <p className="mt-2">Ainda sem marcações nesta base.</p>}</div>
+              <div className="smooth-text-panel border-4 border-night-950 bg-stone-100 p-4 shadow-pixel-sm"><span className="font-label text-xl">Última marcação do mundinho</span>{last ? <><strong className="mt-1 block">{last.item_id}</strong><p className="mt-1 text-sm">{last.completed_by} · {new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short" }).format(new Date(last.completed_at!))}</p></> : <p className="mt-2">Ainda sem marcações nesta base.</p>}</div>
             </div>
           </CardContent>
         </Card>
@@ -45,7 +45,14 @@ export function HomeView() {
 
       <section className="grid gap-4 md:grid-cols-2">
         <Card surface="wood"><CardHeader><CardTitle>gr1d + benamu</CardTitle></CardHeader><CardContent className="grid gap-4 sm:grid-cols-2"><PlayerPanel actor="gr1d" src="/skins/gr1d.png" progression={content.progression} /><PlayerPanel actor="benamu" src="/skins/benamu.png" progression={content.progression} /></CardContent></Card>
-        <Card surface="paper"><CardHeader><div className="flex flex-wrap items-center justify-between gap-2"><CardTitle>Prateleira de troféus</CardTitle><Link href={"/extras#extra-museum" as Route} className="font-label text-lg underline">Construir um museu de troféus ↗</Link></div></CardHeader><CardContent><p className="text-sm leading-6">Cada boss fica em sombra até alguém marcar o marco correspondente. Sem pressa: a prateleira cresce junto com o mundo.</p><div className="trophy-shelf mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">{trophies.map((trophy) => { const state = states[trophy.stateId]; const done = Boolean(state?.completed); return <Link key={trophy.stateId} href={`/progressao#${trophy.parent.id}` as Route} className="trophy-slot border-4 border-night-950 bg-stone-100 p-2 text-center text-ink-900 shadow-pixel-sm"><ContentIcon src={trophy.subitem?.imagem?.src ?? trophy.subitem?.icone ?? trophy.parent.imagem?.src ?? trophy.parent.icone} alt={`Troféu: ${trophy.title}`} kind="boss" locked={!done} className="mx-auto size-14" /><strong className="mt-2 block text-xs leading-4">{trophy.title}</strong><span className="mt-1 block text-[10px] leading-4">{done ? `${state?.completed_by ?? "?"} · ${state?.completed_at ? new Intl.DateTimeFormat("pt-BR", { dateStyle: "short" }).format(new Date(state.completed_at)) : "feito"}` : "a descobrir"}</span></Link>; })}</div></CardContent></Card>
+        <Card surface="paper"><CardHeader><div className="flex flex-wrap items-center justify-between gap-2"><CardTitle>Prateleira de troféus</CardTitle><Link href={"/extras#extra-museum" as Route} className="font-label text-lg underline">Construir um museu de troféus ↗</Link></div></CardHeader><CardContent><p className="text-sm leading-6">Cada boss fica em sombra até alguém marcar o marco correspondente. Sem pressa: a prateleira cresce junto com o mundo.</p><div className="trophy-shelf mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">{trophies.map((trophy) => {
+          const state = states[trophy.stateId];
+          const personal = (["gr1d", "benamu"] as const).map((who) => playerStates[flatPlayerKey(who, trophy.stateId)]).find((row) => row?.completed);
+          const done = Boolean(state?.completed || personal?.completed);
+          const markedBy = state?.completed_by ?? personal?.actor ?? "?";
+          const markedAt = state?.completed_at ?? personal?.completed_at;
+          return <Link key={trophy.stateId} href={`/progressao#${trophy.parent.id}` as Route} className="trophy-slot smooth-text-panel border-4 border-night-950 bg-stone-100 p-2 text-center text-ink-900 shadow-pixel-sm"><ContentIcon src={trophy.subitem?.imagem?.src ?? trophy.subitem?.icone ?? trophy.parent.imagem?.src ?? trophy.parent.icone} alt={`Troféu: ${trophy.title}`} kind="boss" locked={!done} className="mx-auto size-14" /><strong className="mt-2 block text-xs leading-4">{trophy.title}</strong><span className="mt-1 block text-[10px] leading-4">{done ? `${markedBy} · ${markedAt ? new Intl.DateTimeFormat("pt-BR", { dateStyle: "short" }).format(new Date(markedAt)) : "feito"}` : "a descobrir"}</span></Link>;
+        })}</div></CardContent></Card>
       </section>
     </div>
   );
@@ -63,7 +70,8 @@ function buildTrophies(items: ProgressionItem[]) {
     const trophySubitems = item.subitens?.filter((subitem) => subitem.trophy) ?? [];
     if (trophySubitems.length) { trophySubitems.forEach((subitem) => result.push({ stateId: subitem.id, title: subitem.title, parent: item, subitem })); continue; }
     const type = item.type.toLocaleLowerCase("pt-BR");
-    if (type.includes("boss") || type.includes("miniboss") || item.order === 530 || item.order === 570) result.push({ stateId: item.id, title: item.title, parent: item });
+    const isPreparationOnly = type.includes("preparação") || type.includes("preparacao");
+    if (!isPreparationOnly && (type.includes("boss") || type.includes("miniboss") || item.order === 530 || item.order === 570)) result.push({ stateId: item.id, title: item.title, parent: item });
   }
   return result;
 }
