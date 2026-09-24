@@ -1,0 +1,8 @@
+{
+  "name": "Mundinho · pra sempre",
+  "short_name": "Mundinho",
+  "start_url": "./#inicio",
+  "display": "standalone",
+  "background_color": "#201b18",
+  "theme_color": "#201b18"
+}
