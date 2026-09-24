@@ -25,7 +25,9 @@ jobs:
           const fs=require('fs');
           const cfg=JSON.parse(fs.readFileSync('/tmp/config.json','utf8'));
           if (!cfg.supabaseUrl) throw new Error('SUPABASE_URL ausente em /api/config');
+          if (!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(cfg.supabaseUrl)) throw new Error('SUPABASE_URL inválida ou variáveis invertidas');
           if (!cfg.supabaseAnonKey) throw new Error('SUPABASE_PUBLISHABLE_KEY ausente em /api/config');
+          if (!/^sb_publishable_/.test(cfg.supabaseAnonKey) && cfg.supabaseAnonKey.split('.').length !== 3) throw new Error('SUPABASE_PUBLISHABLE_KEY inválida');
           if (cfg.worldId !== 'mundinho-pra-sempre') throw new Error('worldId inesperado');
           console.log('Config OK:', {supabaseUrl: cfg.supabaseUrl, worldId: cfg.worldId, keyPresent: true});
           NODE
@@ -47,11 +49,7 @@ jobs:
             const response=await page.goto('https://mundinho-blue.vercel.app/',{waitUntil:'networkidle',timeout:30000});
             if (response?.status() !== 200) throw new Error(`HTTP ${response?.status()}`);
             await page.waitForTimeout(1500);
-            const loaderHidden=await page.locator('#chunk-loader').getAttribute('hidden');
-            const shellHidden=await page.locator('#site-shell').getAttribute('hidden');
             const body=await page.locator('body').innerText();
-            console.log('LOADER_HIDDEN',loaderHidden);
-            console.log('SHELL_HIDDEN',shellHidden);
             console.log('BODY',body.slice(0,1200).replace(/\n/g,' | '));
             if (body.includes('Prévia local.')) throw new Error('Site ainda está em prévia local; Supabase não foi ativado');
             if (!body.includes('sincronização: Supabase compartilhado')) throw new Error('Indicador de Supabase compartilhado não apareceu');
