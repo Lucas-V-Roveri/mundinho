@@ -1,0 +1,51 @@
+name: Production browser smoke
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Wait for Vercel Git deployment
+        run: sleep 35
+      - name: Check HTTP endpoints
+        shell: bash
+        run: |
+          set -x
+          curl -fsS -D /tmp/home.headers https://mundinho-blue.vercel.app/ -o /tmp/home.html
+          head -n 20 /tmp/home.headers
+          curl -fsS -D /tmp/config.headers https://mundinho-blue.vercel.app/api/config -o /tmp/config.json
+          cat /tmp/config.json
+      - name: Browser smoke test
+        shell: bash
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install playwright@1.55.0 >/dev/null 2>&1
+          npx playwright install chromium >/dev/null 2>&1
+          cat > /tmp/smoke.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          (async()=>{
+            const browser=await chromium.launch({headless:true});
+            const page=await browser.newPage();
+            page.on('console',m=>console.log('BROWSER-CONSOLE',m.type(),m.text()));
+            page.on('pageerror',e=>console.log('PAGE-ERROR',e.stack||e.message));
+            page.on('requestfailed',r=>console.log('REQUEST-FAILED',r.url(),r.failure()?.errorText));
+            const response=await page.goto('https://mundinho-blue.vercel.app/',{waitUntil:'domcontentloaded',timeout:30000});
+            console.log('STATUS',response?.status());
+            await page.waitForTimeout(10000);
+            console.log('URL',page.url());
+            console.log('LOADER_HIDDEN',await page.locator('#chunk-loader').getAttribute('hidden'));
+            console.log('SHELL_HIDDEN',await page.locator('#site-shell').getAttribute('hidden'));
+            console.log('BODY',((await page.locator('body').innerText()).slice(0,1200)).replace(/\n/g,' | '));
+            await page.screenshot({path:'/tmp/mundinho-smoke.png',fullPage:true});
+            await browser.close();
+          })().catch(e=>{console.error('SMOKE-FATAL',e);process.exit(1)});
+          NODE
+          node /tmp/smoke.cjs
