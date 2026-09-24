@@ -2,7 +2,15 @@ const CFG = window.MUNDINHO_CONFIG || {};
 const WORLD_ID = CFG.worldId || 'mundinho-pra-sempre';
 const LEGACY_KEYS = ['mundinho.progress','mundinhoProgress','mundinho.progress.v1','mundinho.custom.v1','mundinho-state','mundinho.checklists'];
 const nowIso = () => new Date().toISOString();
-const safeJson = (value, fallback) => { try { return JSON.parse(value); } catch { return fallback; } };
+const safeJson = (value, fallback) => {
+  if (value == null || value === '') return fallback;
+  try {
+    const parsed = JSON.parse(value);
+    return parsed ?? fallback;
+  } catch {
+    return fallback;
+  }
+};
 
 class LocalPreviewStore {
   constructor() {
@@ -12,8 +20,14 @@ class LocalPreviewStore {
     this.listeners = new Set();
   }
   async init(){ return this; }
-  _states(){ return safeJson(localStorage.getItem(this.statesKey), {}); }
-  _custom(){ return safeJson(localStorage.getItem(this.customKey), []); }
+  _states(){
+    const parsed = safeJson(localStorage.getItem(this.statesKey), {});
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : {};
+  }
+  _custom(){
+    const parsed = safeJson(localStorage.getItem(this.customKey), []);
+    return Array.isArray(parsed) ? parsed : [];
+  }
   _emit(){ this.listeners.forEach(fn => fn()); }
   async getStates(){ return this._states(); }
   async getCustomItems(){ return this._custom().filter(x => !x.deleted_at); }
