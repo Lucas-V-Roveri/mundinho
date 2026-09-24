@@ -1,0 +1,25 @@
+name: JavaScript syntax check
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Parse browser modules
+        shell: bash
+        run: |
+          printf '{"type":"module"}\n' > package.json
+          failed=0
+          for f in ./*.js; do
+            echo "checking $f"
+            node --check "$f" || failed=1
+          done
+          exit $failed
