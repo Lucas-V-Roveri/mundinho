@@ -50,7 +50,13 @@ jobs:
             if (response?.status() !== 200) throw new Error(`HTTP ${response?.status()}`);
             await page.waitForTimeout(1500);
             const body=await page.locator('body').innerText();
+            const loaderVisible=await page.locator('#chunk-loader').isVisible();
+            const shellVisible=await page.locator('#site-shell').isVisible();
+            console.log('LOADER_VISIBLE',loaderVisible);
+            console.log('SHELL_VISIBLE',shellVisible);
             console.log('BODY',body.slice(0,1200).replace(/\n/g,' | '));
+            if (loaderVisible) throw new Error('Chunk loader continua visível depois da inicialização');
+            if (!shellVisible) throw new Error('Site shell não ficou visível depois da inicialização');
             if (body.includes('Prévia local.')) throw new Error('Site ainda está em prévia local; Supabase não foi ativado');
             if (!body.includes('sincronização: Supabase compartilhado')) throw new Error('Indicador de Supabase compartilhado não apareceu');
             if (errors.length) throw new Error(`Erros no navegador: ${errors.join(' || ')}`);
