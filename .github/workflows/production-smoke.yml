@@ -78,9 +78,11 @@ jobs:
             let response = await page.goto(base, { waitUntil: 'networkidle', timeout: 45000 });
             if (response?.status() !== 200) throw new Error(`Home HTTP ${response?.status()}`);
             await page.waitForTimeout(800);
-            const body = await page.locator('body').innerText();
+            let body = await page.locator('body').innerText();
             if (body.includes('Carregando chunks...')) throw new Error('Chunk loader ficou preso');
             if (!body.includes('sincronização: Supabase compartilhado')) throw new Error('Supabase compartilhado não ficou ativo');
+            if (!/XP do mundinho[\s\S]*\/308/.test(body)) throw new Error('XP total não está em 308');
+            if (!body.includes('Prateleira de troféus')) throw new Error('Prateleira de troféus ausente');
             if (await page.getByRole('navigation', { name: 'Navegação principal' }).count() !== 1) throw new Error('Navegação principal ausente');
 
             const actor = page.getByLabel('Quem está marcando');
@@ -95,18 +97,31 @@ jobs:
             if (!(await page.getByRole('dialog').innerText()).toLowerCase().includes('twilight')) throw new Error('Busca não retornou Twilight');
             await page.keyboard.press('Escape');
 
-            const routes = [
-              ['/progressao', 'Progressão'],
-              ['/mods', 'Mods'],
-              ['/amendments', 'Amendments'],
-              ['/extras', 'Extras'],
-              ['/bastidores', 'Bastidores'],
-            ];
-            for (const [path, heading] of routes) {
+            response = await page.goto(base + '/progressao', { waitUntil: 'networkidle', timeout: 45000 });
+            if (response?.status() !== 200) throw new Error(`/progressao HTTP ${response?.status()}`);
+            body = await page.locator('body').innerText();
+            if (!body.includes('101 marcos do mundinho')) throw new Error('Progressão não carregou 101 marcos');
+            if (!body.includes('confiança:')) throw new Error('Selo de confiança não está rotulado');
+            const backpack = page.locator('#progression\\:30 details');
+            await backpack.locator('summary').click();
+            if (!(await backpack.innerText()).includes('Copper Backpack')) throw new Error('Subitens da mochila ausentes');
+
+            response = await page.goto(base + '/mods', { waitUntil: 'networkidle', timeout: 45000 });
+            if (response?.status() !== 200) throw new Error(`/mods HTTP ${response?.status()}`);
+            body = await page.locator('body').innerText();
+            if (!body.includes('Marcos relacionados')) throw new Error('Marcos relacionados ausentes dos guias');
+            if (!body.includes('Craftings pesquisados')) throw new Error('Craftings pesquisados ausentes');
+
+            for (const [path, heading] of [['/amendments','Amendments'], ['/extras','Extras']]) {
               response = await page.goto(base + path, { waitUntil: 'networkidle', timeout: 45000 });
               if (response?.status() !== 200) throw new Error(`${path} HTTP ${response?.status()}`);
               await page.getByRole('heading', { name: heading, exact: true }).waitFor({ state: 'visible' });
             }
+
+            response = await page.goto(base + '/bastidores', { waitUntil: 'networkidle', timeout: 45000 });
+            if (response?.status() !== 200) throw new Error(`/bastidores HTTP ${response?.status()}`);
+            body = await page.locator('body').innerText();
+            if (!body.includes('Fontes das imagens')) throw new Error('Fontes das imagens ausentes dos Bastidores');
 
             await page.emulateMedia({ reducedMotion: 'reduce' });
             await page.goto(base, { waitUntil: 'networkidle' });
