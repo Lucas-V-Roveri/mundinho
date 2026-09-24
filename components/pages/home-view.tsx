@@ -1,5 +1,6 @@
 "use client";
 
+import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -30,7 +31,7 @@ export function HomeView() {
               <div className="mt-2 h-5 border-4 border-night-950 bg-stone-700"><div className="xp-fill h-full bg-grass-500" style={{ width: `${percent}%` }} /></div>
             </div>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <div className="border-4 border-night-950 bg-torch-100 p-4 shadow-pixel-sm"><span className="font-label text-xl">Próximo sugerido</span>{next ? <><strong className="mt-1 block">{next.title}</strong><p className="mt-1 text-sm">{next.entry} · {next.phase}</p><Link className="mt-3 inline-block font-label text-xl underline" href={`/progressao#${encodeURIComponent(next.id)}`}>ver na progressão</Link></> : <p className="mt-2">Tudo marcado. Isso parece suspeito.</p>}</div>
+              <div className="border-4 border-night-950 bg-torch-100 p-4 shadow-pixel-sm"><span className="font-label text-xl">Próximo sugerido</span>{next ? <><strong className="mt-1 block">{next.title}</strong><p className="mt-1 text-sm">{next.entry} · {next.phase}</p><Link className="mt-3 inline-block font-label text-xl underline" href={`/progressao#${encodeURIComponent(next.id)}` as Route}>ver na progressão</Link></> : <p className="mt-2">Tudo marcado. Isso parece suspeito.</p>}</div>
               <div className="border-4 border-night-950 bg-stone-100 p-4 shadow-pixel-sm"><span className="font-label text-xl">Última marcação</span>{last ? <><strong className="mt-1 block">{last.item_id}</strong><p className="mt-1 text-sm">{last.completed_by} · {new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short" }).format(new Date(last.completed_at!))}</p></> : <p className="mt-2">Ainda sem marcações nesta base.</p>}</div>
             </div>
           </CardContent>
