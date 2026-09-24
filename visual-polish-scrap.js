@@ -1,0 +1,1 @@
+if(!document.querySelector('link[data-visual-polish-scrap]')){const l=document.createElement('link');l.rel='stylesheet';l.href='./visual-polish-scrap.css';l.dataset.visualPolishScrap='1';document.head.appendChild(l);}

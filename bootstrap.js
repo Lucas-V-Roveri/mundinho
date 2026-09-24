@@ -17,3 +17,5 @@ await import('./lote3-refine.js');
 await import('./app.js');
 await import('./lote4-ui.js');
 await import('./lote4-search.js');
+await import('./visual-polish.js');
+await import('./visual-polish-scrap.js');
