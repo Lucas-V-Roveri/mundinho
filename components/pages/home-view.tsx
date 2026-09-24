@@ -12,7 +12,10 @@ export function HomeView() {
   content.guides.forEach((guide) => guide.checklist.forEach(([id]) => ids.add(id)));
   content.progression.forEach((item) => ids.add(item.id));
   content.extras?.items.forEach((item) => ids.add(item.id));
-  customItems.forEach((item) => ids.add(`custom:${item.id}`));
+
+  const visibleCustomScopes = new Set(["extras", "progression", ...content.guides.map((guide) => guide.id)]);
+  customItems.filter((item) => visibleCustomScopes.has(item.entry_key)).forEach((item) => ids.add(`custom:${item.id}`));
+
   const total = ids.size;
   const completed = [...ids].filter((id) => states[id]?.completed).length;
   const percent = total ? Math.round((completed / total) * 100) : 0;
