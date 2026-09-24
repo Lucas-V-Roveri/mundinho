@@ -8,13 +8,14 @@ module.exports = {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
       },
       transitionTimingFunction: {
-        pixel: "steps(3, end)",
+        pixel: "steps(4, end)",
         "pixel-soft": "steps(6, end)",
       },
       boxShadow: {
-        pixel: "4px 4px 0 var(--color-night-950)",
-        "pixel-sm": "2px 2px 0 var(--color-night-950)",
-        inset: "inset 2px 2px 0 rgba(255,255,255,.12), inset -2px -2px 0 rgba(0,0,0,.24)",
+        pixel: "5px 5px 0 var(--color-night-950)",
+        "pixel-sm": "3px 3px 0 var(--color-night-950)",
+        inset:
+          "inset 2px 2px 0 var(--pixel-highlight), inset -2px -2px 0 var(--pixel-lowlight)",
       },
     },
   },
