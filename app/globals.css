@@ -1,0 +1,100 @@
+@config "../tailwind.config.js";
+@import "tailwindcss";
+
+@theme {
+  --color-wood-50: #f7eddf;
+  --color-wood-100: #ead6bc;
+  --color-wood-300: #c99868;
+  --color-wood-500: #8a5e3d;
+  --color-wood-700: #5c3d2a;
+  --color-wood-900: #2f2118;
+
+  --color-dirt-100: #e2ccb1;
+  --color-dirt-300: #b98d63;
+  --color-dirt-500: #80583e;
+  --color-dirt-700: #5d402f;
+  --color-dirt-900: #33251d;
+
+  --color-grass-100: #dce8c9;
+  --color-grass-300: #a8c47e;
+  --color-grass-500: #73934f;
+  --color-grass-700: #4b6735;
+  --color-grass-900: #2d4224;
+
+  --color-stone-50: #f4f1ea;
+  --color-stone-100: #e4dfd4;
+  --color-stone-300: #beb7aa;
+  --color-stone-500: #8a847b;
+  --color-stone-700: #5f5b55;
+  --color-stone-900: #34312e;
+
+  --color-torch-100: #fff0b3;
+  --color-torch-300: #ffd56a;
+  --color-torch-500: #f2a83b;
+  --color-torch-700: #b96824;
+
+  --color-night-700: #29231f;
+  --color-night-800: #211c18;
+  --color-night-900: #17130f;
+  --color-night-950: #0d0a08;
+
+  --color-paper-50: #fff9ed;
+  --color-paper-100: #f6ecd8;
+  --color-paper-200: #eadabe;
+
+  --color-ink-700: #4a3a2f;
+  --color-ink-900: #241a14;
+}
+
+:root {
+  color-scheme: light;
+  --focus-ring: var(--color-torch-300);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--color-dirt-900);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--color-ink-900);
+  background-color: var(--color-dirt-700);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      var(--color-dirt-700) 0 18px,
+      var(--color-dirt-500) 18px 36px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 31px,
+      rgb(36 26 20 / 0.14) 31px 32px
+    );
+}
+
+::selection {
+  color: var(--color-night-950);
+  background: var(--color-torch-300);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
