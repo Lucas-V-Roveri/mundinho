@@ -5,6 +5,7 @@ import { lote2Part3 } from './lote2-part3.js';
 import { lote2Part4 } from './lote2-part4.js';
 import { lote2Part5 } from './lote2-part5.js';
 import { lote2Part6 } from './lote2-part6.js';
+import { lote2Part7 } from './lote2-part7.js';
 
 const additions = [
   ...lote2Part1,
@@ -13,6 +14,7 @@ const additions = [
   ...lote2Part4,
   ...lote2Part5,
   ...lote2Part6,
+  ...lote2Part7,
 ];
 
 if (!guides.some((guide) => guide.id === 'aether')) {
