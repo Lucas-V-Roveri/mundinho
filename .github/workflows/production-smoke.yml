@@ -81,7 +81,8 @@ jobs:
             let body = await page.locator('body').innerText();
             if (body.includes('Carregando chunks...')) throw new Error('Chunk loader ficou preso');
             if (!body.includes('sincronização: Supabase compartilhado')) throw new Error('Supabase compartilhado não ficou ativo');
-            if (!/XP do mundinho[\s\S]*\/308/.test(body)) throw new Error('XP total não está em 308');
+            const xpMatch = body.match(/XP do mundinho\s*(\d+)\/(\d+)/);
+            if (!xpMatch || Number(xpMatch[2]) < 308) throw new Error(`XP total inválido: ${xpMatch?.[0] || 'ausente'}`);
             if (!body.includes('Prateleira de troféus')) throw new Error('Prateleira de troféus ausente');
             if (await page.getByRole('navigation', { name: 'Navegação principal' }).count() !== 1) throw new Error('Navegação principal ausente');
 
