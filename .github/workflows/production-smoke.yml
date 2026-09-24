@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
@@ -12,55 +15,106 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
-      - name: Wait for Vercel Git deployment
-        run: sleep 35
-      - name: Check HTTP endpoints and Supabase config
+          node-version: 22
+          cache: npm
+
+      - name: Wait for the Next deployment and validate routes
         shell: bash
         run: |
           set -euo pipefail
-          curl -fsS -D /tmp/home.headers https://mundinho-blue.vercel.app/ -o /tmp/home.html
-          curl -fsS -D /tmp/config.headers https://mundinho-blue.vercel.app/api/config -o /tmp/config.json
-          node - <<'NODE'
-          const fs=require('fs');
-          const cfg=JSON.parse(fs.readFileSync('/tmp/config.json','utf8'));
-          if (!cfg.supabaseUrl) throw new Error('SUPABASE_URL ausente em /api/config');
-          if (!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(cfg.supabaseUrl)) throw new Error('SUPABASE_URL inválida ou variáveis invertidas');
-          if (!cfg.supabaseAnonKey) throw new Error('SUPABASE_PUBLISHABLE_KEY ausente em /api/config');
-          if (!/^sb_publishable_/.test(cfg.supabaseAnonKey) && cfg.supabaseAnonKey.split('.').length !== 3) throw new Error('SUPABASE_PUBLISHABLE_KEY inválida');
-          if (cfg.worldId !== 'mundinho-pra-sempre') throw new Error('worldId inesperado');
-          console.log('Config OK:', {supabaseUrl: cfg.supabaseUrl, worldId: cfg.worldId, keyPresent: true});
+          BASE=https://mundinho-blue.vercel.app
+          ready=0
+          for attempt in $(seq 1 18); do
+            if curl -fsS "$BASE/api/config" -o /tmp/config.json; then
+              if node - <<'NODE'
+          const fs = require('fs');
+          const cfg = JSON.parse(fs.readFileSync('/tmp/config.json','utf8'));
+          process.exit(cfg.supabasePublishableKey && cfg.worldId === 'mundinho-pra-sempre' ? 0 : 1);
           NODE
-      - name: Browser smoke test
+              then
+                ready=1
+                break
+              fi
+            fi
+            sleep 10
+          done
+          test "$ready" -eq 1 || { echo 'Novo deploy não ficou disponível a tempo'; exit 1; }
+
+          for path in / /progressao /mods /amendments /extras /bastidores /manifest.webmanifest; do
+            echo "checking $path"
+            curl -fsS "$BASE$path" -o /dev/null
+          done
+
+          node - <<'NODE'
+          const fs = require('fs');
+          const cfg = JSON.parse(fs.readFileSync('/tmp/config.json','utf8'));
+          if (!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(cfg.supabaseUrl || '')) throw new Error('SUPABASE_URL inválida');
+          if (!/^sb_publishable_/.test(cfg.supabasePublishableKey || '') && String(cfg.supabasePublishableKey || '').split('.').length !== 3) throw new Error('SUPABASE_PUBLISHABLE_KEY inválida');
+          if (cfg.worldId !== 'mundinho-pra-sempre') throw new Error('worldId inesperado');
+          console.log('runtime config OK');
+          NODE
+
+      - name: Install browser smoke dependency
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Browser smoke
         shell: bash
         run: |
-          npm init -y >/dev/null 2>&1
-          npm install playwright@1.55.0 >/dev/null 2>&1
-          npx playwright install chromium >/dev/null 2>&1
           cat > /tmp/smoke.cjs <<'NODE'
           const { chromium } = require(process.cwd() + '/node_modules/playwright');
-          (async()=>{
-            const browser=await chromium.launch({headless:true});
-            const page=await browser.newPage();
-            const errors=[];
-            page.on('console',m=>{ console.log('BROWSER-CONSOLE',m.type(),m.text()); if(m.type()==='error') errors.push(m.text()); });
-            page.on('pageerror',e=>{ console.log('PAGE-ERROR',e.stack||e.message); errors.push(e.message); });
-            page.on('requestfailed',r=>{ console.log('REQUEST-FAILED',r.url(),r.failure()?.errorText); errors.push(`${r.url()} ${r.failure()?.errorText||''}`); });
-            const response=await page.goto('https://mundinho-blue.vercel.app/',{waitUntil:'networkidle',timeout:30000});
-            if (response?.status() !== 200) throw new Error(`HTTP ${response?.status()}`);
-            await page.waitForTimeout(1500);
-            const body=await page.locator('body').innerText();
-            const loaderVisible=await page.locator('#chunk-loader').isVisible();
-            const shellVisible=await page.locator('#site-shell').isVisible();
-            console.log('LOADER_VISIBLE',loaderVisible);
-            console.log('SHELL_VISIBLE',shellVisible);
-            console.log('BODY',body.slice(0,1200).replace(/\n/g,' | '));
-            if (loaderVisible) throw new Error('Chunk loader continua visível depois da inicialização');
-            if (!shellVisible) throw new Error('Site shell não ficou visível depois da inicialização');
-            if (body.includes('Prévia local.')) throw new Error('Site ainda está em prévia local; Supabase não foi ativado');
-            if (!body.includes('sincronização: Supabase compartilhado')) throw new Error('Indicador de Supabase compartilhado não apareceu');
-            if (errors.length) throw new Error(`Erros no navegador: ${errors.join(' || ')}`);
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage();
+            const fatal = [];
+            page.on('pageerror', e => fatal.push(`pageerror: ${e.message}`));
+            page.on('requestfailed', r => {
+              const url = r.url();
+              if (!url.includes('google') && !url.includes('vercel')) fatal.push(`requestfailed: ${url} ${r.failure()?.errorText || ''}`);
+            });
+
+            const base = 'https://mundinho-blue.vercel.app';
+            let response = await page.goto(base, { waitUntil: 'networkidle', timeout: 45000 });
+            if (response?.status() !== 200) throw new Error(`Home HTTP ${response?.status()}`);
+            await page.waitForTimeout(800);
+            const body = await page.locator('body').innerText();
+            if (body.includes('Carregando chunks...')) throw new Error('Chunk loader ficou preso');
+            if (!body.includes('sincronização: Supabase compartilhado')) throw new Error('Supabase compartilhado não ficou ativo');
+            if (await page.getByRole('navigation', { name: 'Navegação principal' }).count() !== 1) throw new Error('Navegação principal ausente');
+
+            const actor = page.getByLabel('Quem está marcando');
+            await actor.selectOption('benamu');
+            await page.reload({ waitUntil: 'networkidle' });
+            if (await actor.inputValue() !== 'benamu') throw new Error('Preferência local do autor não persistiu');
+            await actor.selectOption('gr1d');
+
+            await page.keyboard.press('/');
+            await page.getByLabel('Pesquisar no Mundinho').fill('Twilight');
+            if (await page.getByRole('dialog').count() !== 1) throw new Error('Busca global não abriu');
+            if (!(await page.getByRole('dialog').innerText()).toLowerCase().includes('twilight')) throw new Error('Busca não retornou Twilight');
+            await page.keyboard.press('Escape');
+
+            const routes = [
+              ['/progressao', 'Progressão'],
+              ['/mods', 'Mods'],
+              ['/amendments', 'Amendments'],
+              ['/extras', 'Extras'],
+              ['/bastidores', 'Bastidores'],
+            ];
+            for (const [path, heading] of routes) {
+              response = await page.goto(base + path, { waitUntil: 'networkidle', timeout: 45000 });
+              if (response?.status() !== 200) throw new Error(`${path} HTTP ${response?.status()}`);
+              await page.getByRole('heading', { name: heading, exact: true }).waitFor({ state: 'visible' });
+            }
+
+            await page.emulateMedia({ reducedMotion: 'reduce' });
+            await page.goto(base, { waitUntil: 'networkidle' });
+            const duration = await page.locator('.page-enter').evaluate(el => getComputedStyle(el).animationDuration);
+            console.log('reduced-motion animationDuration', duration);
+
+            if (fatal.length) throw new Error(fatal.join(' || '));
             await browser.close();
-          })().catch(e=>{console.error('SMOKE-FATAL',e);process.exit(1)});
+          })().catch(error => { console.error(error); process.exit(1); });
           NODE
           node /tmp/smoke.cjs

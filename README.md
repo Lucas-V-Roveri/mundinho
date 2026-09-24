@@ -1,75 +1,118 @@
 # Mundinho · pra sempre
 
-Wiki e diário de progressão do foreverworld de Minecraft Java 1.21.1 / NeoForge de **gr1d + benamu**.
+Wiki e diário do foreverworld Minecraft Java 1.21.1 / NeoForge de **gr1d + benamu**.
 
-## Estado atual
+## Stack
 
-**Fase 4 concluída — Lotes 1 a 4**
+- Next.js 16 (App Router) + TypeScript
+- Tailwind CSS 4 com design system próprio “Cozy Minecraft”
+- Supabase via `@supabase/ssr`, sem login
+- Vercel via integração Git: push em `main` publica automaticamente
 
-- 6 páginas: Início, Progressão, Mods, Amendments, Extras e Bastidores.
-- Persistência compartilhada em Supabase, sem login.
-- Seletor local `gr1d` / `benamu` por dispositivo.
-- Checklists com autoria e timestamp.
-- Itens personalizados com soft delete.
-- Realtime, export/import JSON e migração de progresso legado.
-- Busca global `/`, accordions, toasts estilo advancement, barra de XP e chunk loading.
-- `prefers-reduced-motion` respeitado; som opt-in.
-- Skins reais de gr1d e benamu.
-- Guias de dimensões, chefes, utilidade, sobrevivência, decoração e automação baseados na fonte de verdade das Fases 1 e 2.
-- Página fixa de Amendments organizada por tema.
-- Extras com 18 objetivos de carinho já cadastrados e botão de sugestão de novas ideias.
-- Bastidores com os 87 mods classificados nessa categoria e a função curta de cada um.
+## Rotas
+
+- `/` — início, progresso real, próximo marco e troféus
+- `/progressao` — 98 marcos com filtros persistentes
+- `/mods` — wiki dos guias aprovados
+- `/amendments` — consulta fixa organizada por tema
+- `/extras` — 18 objetivos de carinho + itens de vocês
+- `/bastidores` — 87 mods de biblioteca/performance/compat/cosméticos
+
+## Funcionalidades preservadas
+
+- seletor local `gr1d` / `benamu`
+- checklists com autoria + timestamp
+- itens personalizados em Mods/Progressão/Extras com soft delete
+- Realtime do Supabase
+- fallback de `localStorage` em modo “Prévia local”
+- migração defensiva de chaves legadas de progresso
+- export/import JSON
+- busca global com `/` e `Ctrl/Cmd + K`
+- accordions acessíveis
+- toast “Advancement Made!”
+- barra de XP
+- chunk loader
+- som opt-in, desligado por padrão
+- filtros persistentes por dispositivo
+- `prefers-reduced-motion`
+- skins e foto reais, sem arte de personagem gerada
 
 ## Supabase
 
-Projeto usado em produção: `mundinho-pra-sempre`, região `sa-east-1` (São Paulo), plano Free / Nano.
+Projeto: `mundinho-pra-sempre` — `sa-east-1` — Free/Nano.
 
-A aplicação usa `mundinho_item_state` e `mundinho_custom_items` para estado/checklists e itens adicionados. O schema inicial versionado está em `supabase/migrations/001_initial_schema.sql`; migrations adicionais aplicadas no projeto alinham o schema de runtime e Realtime.
+Runtime principal:
 
-## Variáveis no Vercel
+- `mundinho_item_state`
+- `mundinho_custom_items`
+- `mundinho_content`
 
-Configure no projeto Vercel:
+`mundinho_item_state` e `mundinho_custom_items` fazem parte da publicação Realtime. RLS permite ao papel `anon` ler/gravar apenas o `world_id = 'mundinho-pra-sempre'`. `mundinho_content` é leitura pública.
+
+A publishable key pode chegar ao navegador. **Nunca use `service_role` no frontend.**
+
+## Variáveis de ambiente
+
+Na Vercel ou em `.env.local`:
 
 ```text
 SUPABASE_URL=https://<project-ref>.supabase.co
 SUPABASE_PUBLISHABLE_KEY=sb_publishable_...
 ```
 
-A aplicação lê essas variáveis por `/api/config`. A publishable key pode chegar ao navegador; **não** use `service_role` no frontend.
+O Route Handler `app/api/config/route.ts` expõe somente URL, publishable key e `worldId` para o browser.
 
-## Publicação
+## Desenvolvimento
 
-O repositório está ligado ao Vercel pelo Git. Cada push em `main` dispara o deploy automaticamente. O fluxo não depende mais da ação `deploy_to_vercel` do conector.
+```bash
+npm ci
+npm run dev
+```
 
-## Desenvolvimento local
+Validações:
 
-Para o fluxo completo, use a CLI do Vercel com as variáveis acima configuradas. Sem `/api/config`, o site entra em **Prévia local** e usa `localStorage` apenas para testar a interface.
+```bash
+npm run typecheck
+npm run lint
+npm run build
+```
+
+Sem configuração válida em `/api/config`, a interface entra em **Prévia local** em vez de travar.
 
 ## Estrutura
 
-- `index.html` — shell, dialogs e navegação.
-- `bootstrap.js` — carrega configuração, lotes e extensões da interface.
-- `api/config.js` — Vercel Function que expõe somente URL + publishable key.
-- `styles.css` — identidade visual Minecraft/diário feito à mão.
-- `content.js` — guias de calibração da Fase 3.
-- `lote2-*.js` — dimensões e chefes.
-- `lote3-*.js` — utilidade, sobrevivência, decoração e automação; `lote3-refine.js` refina receitas confirmadas.
-- `lote4-content.js` — conteúdo fixo de Amendments, Bastidores e pool de sugestões.
-- `lote4-extras.js` — 18 objetivos de carinho e lista explícita do que continua a conferir.
-- `lote4-ui.js` — páginas finais e checklists Extras compartilhados no Supabase.
-- `lote4-search.js` — integra Amendments, Extras e Bastidores à busca global.
-- `app.js` — SPA, UI, busca, accordions, progresso, export/import e ações.
-- `db.js` — adapter Supabase + modo local de prévia.
-- `supabase/migrations/` — schema versionado.
-- `assets/` — skins reais.
-- `vercel.json` — configuração/headers para deploy.
+```text
+app/                 App Router, páginas, Route Handler e estilos
+components/ui/       primitives reutilizáveis do design system
+components/shell/    navegação, seletor, chunk loader e shell
+components/pages/    renderizadores das seis páginas
+components/guides/   renderização tipada dos guias/craftings
+components/checklist estado visual + custom items
+components/search/   busca global
+lib/                 Supabase, adapter DB, conteúdo, migração legado
+types/               contratos TypeScript
+public/              skins, lembranças, favicon e manifest
+supabase/migrations/ schema versionado
+```
 
-## Itens ainda a conferir
+O conteúdo aprovado não vive mais em strings HTML do frontend. Os 39 registros de conteúdo tipado ficam em `mundinho_content` e são renderizados por componentes TypeScript.
 
-- `Dream Relics` — não classificar nem usar como pré-requisito até teste in-game.
-- `Twilight Eye` — não classificar nem usar como pré-requisito até teste in-game.
-- `Castle Keeper` — existência/posição documentadas; conferir o gatilho exato da versão instalada.
-- `Maledictus` — Frosted Prison + boss documentados; conferir o gatilho fino do encontro na versão 3.33.
-- `Ancient Remnant` — detalhe fino de ativação/spawn ficou conservador onde a documentação pública da versão não fechou com segurança.
-- Coexistência dos dois JARs listados de `Ferrite Core`, `ImmediatelyFast` e `ModernFix` — apenas conferir a pasta/modpack; não foi presumido conflito.
-- Alguns craftings de mods cuja versão pública não expõe recipe data suficiente permanecem marcados como `Média` ou `Baixa-conferir` e apontam para JEI apenas como último recurso por item.
+## Publicação
+
+O projeto Vercel está ligado a este repositório. `main` é produção; branches geram previews. Não usar a antiga ação `deploy_to_vercel` do conector.
+
+O workflow `CI` executa install, typecheck, lint e build. Depois de um push em `main`, `Production browser smoke` aguarda o Git deploy e valida as seis rotas, `/api/config`, Supabase compartilhado, busca, persistência local do autor e carregamento da interface.
+
+## Itens a conferir in-game
+
+- **Dream Relics** — continua “a conferir”; não é pré-requisito de nada.
+- **Twilight Eye** — continua “a conferir”; não é pré-requisito de nada.
+- **Castle Keeper** — conferir gatilho exato na versão instalada.
+- **Maledictus** — conferir o gatilho fino do encontro na 3.33.
+- **Ancient Remnant** — conferir detalhe fino de ativação/spawn.
+- coexistência dos JARs duplicados listados de Ferrite Core, ImmediatelyFast e ModernFix.
+- craftings marcados Média/Baixa-conferir continuam usando JEI só como último recurso.
+
+## PWA
+
+Há `manifest.webmanifest` e metadados de instalação, mas **não há service worker/offline cache**. Isso foi intencional para não criar risco de conteúdo/progresso desatualizado durante a migração.

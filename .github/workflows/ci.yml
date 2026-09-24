@@ -1,8 +1,9 @@
-name: Next migration CI
+name: CI
 
 on:
   push:
-    branches: [next-migration]
+    branches: [main, next-migration]
+  pull_request:
   workflow_dispatch:
 
 permissions:
