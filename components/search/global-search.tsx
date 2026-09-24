@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import type { Route } from "next";
 import Link from "next/link";
 import { Dialog } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -55,7 +56,7 @@ export function GlobalSearch() {
         <Input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Twilight, Hydra, Waystones..." aria-label="Pesquisar no Mundinho" />
         <div className="mt-4 max-h-[55vh] space-y-2 overflow-auto pr-1">
           {filtered.length ? filtered.map((row) => (
-            <Link key={`${row.group}-${row.id}`} href={row.href} onClick={() => { setOpen(false); setQuery(""); }} className="block border-4 border-night-950 bg-paper-50 p-3 shadow-pixel-sm hover:-translate-y-0.5 hover:bg-torch-100">
+            <Link key={`${row.group}-${row.id}`} href={row.href as Route} onClick={() => { setOpen(false); setQuery(""); }} className="block border-4 border-night-950 bg-paper-50 p-3 shadow-pixel-sm hover:-translate-y-0.5 hover:bg-torch-100">
               <span className="font-label text-xl text-wood-700">{row.group}</span>
               <strong className="mt-1 block text-sm text-ink-900">{row.title}</strong>
               <span className="mt-1 block text-xs leading-5 text-ink-700">{row.subtitle}</span>
