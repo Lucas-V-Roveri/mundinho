@@ -27,6 +27,47 @@ html { scroll-behavior: smooth; }
   box-shadow: 4px 4px 0 var(--color-night-950);
 }
 
+/* A textura continua parecendo pedra, mas não disputa legibilidade com o texto. */
+.panel-stone {
+  background-color: var(--color-stone-300) !important;
+  background-image:
+    repeating-linear-gradient(90deg, transparent 0 47px, color-mix(in srgb, var(--color-stone-700) 8%, transparent) 47px 49px),
+    repeating-linear-gradient(0deg, transparent 0 31px, color-mix(in srgb, var(--color-stone-700) 7%, transparent) 31px 33px) !important;
+}
+.smooth-text-panel {
+  background-color: var(--color-paper-50);
+  background-image: none;
+}
+.content-pixel-image {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+.content-pixel-image-locked {
+  filter: grayscale(1) brightness(.16) contrast(1.35);
+  opacity: .72;
+}
+.skin-head {
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-size: 800% 800%;
+  background-position: 14.2857% 14.2857%;
+}
+.progression-summary::-webkit-details-marker { display: none; }
+.progression-summary::after {
+  content: "abrir detalhes ▸";
+  display: block;
+  margin-top: .7rem;
+  font-family: var(--font-label, monospace);
+  font-size: .78rem;
+  opacity: .7;
+}
+.progression-card[open] > .progression-summary::after { content: "fechar detalhes ▾"; }
+.trophy-shelf {
+  background: linear-gradient(to bottom, transparent 0 82%, var(--color-wood-700) 82% 92%, var(--color-wood-900) 92% 100%);
+  padding-bottom: 1rem;
+}
+.trophy-slot { min-height: 8.5rem; }
+
 .list-square { list-style-type: square; }
 
 [id] { scroll-margin-top: 15rem; }
