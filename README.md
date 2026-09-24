@@ -48,13 +48,16 @@ Para o fluxo completo, use a CLI do Vercel com as variáveis acima configuradas.
 ## Estrutura
 
 - `index.html` — shell, dialogs e navegação.
-- `bootstrap.js` — carrega configuração e os lotes antes/depois da aplicação.
+- `bootstrap.js` — carrega configuração, lotes e extensões da interface.
 - `api/config.js` — Vercel Function que expõe somente URL + publishable key.
 - `styles.css` — identidade visual Minecraft/diário feito à mão.
 - `content.js` — guias de calibração da Fase 3.
 - `lote2-*.js` — dimensões e chefes.
 - `lote3-*.js` — utilidade, sobrevivência, decoração e automação; `lote3-refine.js` refina receitas confirmadas.
-- `lote4-content.js` / `lote4-runtime.js` — Amendments, Extras e Bastidores.
+- `lote4-content.js` — conteúdo fixo de Amendments, Bastidores e pool de sugestões.
+- `lote4-extras.js` — 18 objetivos de carinho e lista explícita do que continua a conferir.
+- `lote4-ui.js` — páginas finais e checklists Extras compartilhados no Supabase.
+- `lote4-search.js` — integra Amendments, Extras e Bastidores à busca global.
 - `app.js` — SPA, UI, busca, accordions, progresso, export/import e ações.
 - `db.js` — adapter Supabase + modo local de prévia.
 - `supabase/migrations/` — schema versionado.
@@ -65,5 +68,8 @@ Para o fluxo completo, use a CLI do Vercel com as variáveis acima configuradas.
 
 - `Dream Relics` — não classificar nem usar como pré-requisito até teste in-game.
 - `Twilight Eye` — não classificar nem usar como pré-requisito até teste in-game.
+- `Castle Keeper` — existência/posição documentadas; conferir o gatilho exato da versão instalada.
+- `Maledictus` — Frosted Prison + boss documentados; conferir o gatilho fino do encontro na versão 3.33.
+- `Ancient Remnant` — detalhe fino de ativação/spawn ficou conservador onde a documentação pública da versão não fechou com segurança.
 - Coexistência dos dois JARs listados de `Ferrite Core`, `ImmediatelyFast` e `ModernFix` — apenas conferir a pasta/modpack; não foi presumido conflito.
 - Alguns craftings de mods cuja versão pública não expõe recipe data suficiente permanecem marcados como `Média` ou `Baixa-conferir` e apontam para JEI apenas como último recurso por item.
