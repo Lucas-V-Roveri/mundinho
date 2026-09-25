@@ -66,6 +66,8 @@ jobs:
           async function waitReady(page) {
             await page.waitForLoadState('domcontentloaded');
             await page.getByText('sincronização: Supabase compartilhado', { exact: false }).waitFor({ timeout: 30000 });
+            const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
+            if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
           }
 
           (async () => {
@@ -135,8 +137,9 @@ jobs:
             await waitReady(page);
             await page.getByText('35 guia(s)', { exact: true }).waitFor({ timeout: 30000 });
             const guides = page.locator('article[id^="guide-"]');
-            assert(await guides.count() === 35, `Esperados 35 guias, vieram ${await guides.count()}`);
-            for (let i = 0; i < 35; i++) {
+            const guideCount = await guides.count();
+            assert(guideCount === 35, `Esperados 35 guias, vieram ${guideCount}`);
+            for (let i = 0; i < guideCount; i++) {
               const card = guides.nth(i).locator('.guide-theme-frame').first();
               assert(await card.count() === 1, `Guia ${i + 1} sem frame de theme`);
               const cls = await card.getAttribute('class');
@@ -151,8 +154,9 @@ jobs:
 
             const firstGuide = guides.first();
             const buttons = firstGuide.locator('.pixel-accordion-trigger');
-            assert(await buttons.count() >= 4, 'Primeiro guia deveria ter várias seções de accordion');
-            for (let i = 0; i < await buttons.count(); i++) {
+            const accordionCount = await buttons.count();
+            assert(accordionCount >= 4, 'Primeiro guia deveria ter várias seções de accordion');
+            for (let i = 0; i < accordionCount; i++) {
               const button = buttons.nth(i);
               const before = await button.getAttribute('aria-expanded');
               await button.click();
@@ -162,7 +166,7 @@ jobs:
               const restored = await button.getAttribute('aria-expanded');
               assert(restored === before, `Accordion ${i + 1} não voltou ao estado inicial`);
             }
-            for (let i = 0; i < await buttons.count(); i++) {
+            for (let i = 0; i < accordionCount; i++) {
               if ((await buttons.nth(i).getAttribute('aria-expanded')) === 'true') await buttons.nth(i).click();
             }
             await page.screenshot({ path: 'artifacts/etapa2/mods-accordion-closed.png', fullPage: false });
@@ -199,8 +203,8 @@ jobs:
               `hero-color=${heroColor}`,
               `body-bg=${bodyStyles.bg}`,
               `body-pattern=${bodyStyles.image}`,
-              `guide-count=${await guides.count()}`,
-              `accordion-count-first-guide=${await buttons.count()}`,
+              `guide-count=${guideCount}`,
+              `accordion-count-first-guide=${accordionCount}`,
               `header-overflow-680=${overflow}`,
               `reduced-motion-xp=${JSON.stringify(xpPseudo)}`,
             ].join('\n'));
