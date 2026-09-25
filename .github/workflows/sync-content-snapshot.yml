@@ -1,0 +1,41 @@
+name: Sync typed content snapshot
+
+on:
+  push:
+    branches: [migration/finalize-all-stages]
+    paths:
+      - scripts/sync-content-snapshot.mjs
+      - types/content.ts
+      - .github/workflows/sync-content-snapshot.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/finalize-all-stages
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Generate snapshot from production content API
+        run: node scripts/sync-content-snapshot.mjs
+      - name: Commit generated snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/content-snapshot.generated.ts; then
+            echo "Snapshot unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/content-snapshot.generated.ts
+          git commit -m "chore: refresh bundled content snapshot [skip ci]"
+          git push origin HEAD:migration/finalize-all-stages
