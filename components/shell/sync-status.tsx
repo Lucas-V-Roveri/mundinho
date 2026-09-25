@@ -54,9 +54,11 @@ export function SyncStatus({ compact = false, className }: { compact?: boolean; 
         variant="danger"
         size="sm"
         onClick={retry}
+        aria-label={labels.error}
         className={cn("min-h-7 whitespace-nowrap border-2 px-2 py-1 text-[11px]", className)}
       >
-        falha · tentar
+        <span className="min-[980px]:hidden">falha · tentar</span>
+        <span className="hidden min-[980px]:inline">falha de conexão — tentar novamente</span>
       </Button>
     );
   }
