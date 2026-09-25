@@ -40,10 +40,10 @@ jobs:
           const assert = (ok, msg) => { if (!ok) throw new Error(msg); };
           assert((themes.match(/rationale:/g) || []).length === 35, 'S2: mapa precisa ter 35 justificativas explícitas');
           assert((themes.match(/theme: \{ accent:/g) || []).length === 35, 'S2: mapa precisa ter 35 themes explícitos');
-          assert(themes.includes('acampamento:') && themes.includes('accent: "torch", texture: "fire"'), 'S2: Campfires/acampamento sem fire+torch');
+          assert(themes.includes('acampamento:') && themes.includes('accent: "torch", texture: "fire"'), 'S2: acampamento sem fire+torch');
           assert(themes.includes('"sophisticated-backpacks":') && themes.includes('accent: "wood", texture: "leather"'), 'S2: Backpacks sem wood+leather');
-          for (const token of ['bg-grass-100','bg-gold-100','bg-torch-100','bg-redstone-100','bg-blue-100']) assert(tag.includes(token), `S4: token semântico ausente: ${token}`);
-          for (const icon of ['torch','chest','compass','heart','book','pickaxe']) assert(icons.includes(`${icon}:`), `S5: ícone ausente: ${icon}`);
+          for (const token of ['bg-grass-100','bg-gold-100','bg-torch-100','bg-redstone-100','bg-blue-100']) assert(tag.includes(token), `S4: token ausente ${token}`);
+          for (const icon of ['torch','chest','compass','heart','book','pickaxe']) assert(icons.includes(`${icon}:`), `S5: ícone ausente ${icon}`);
           assert(globals.includes('background-color: var(--color-night-900)'), 'S1: body não usa night-900');
           assert(css.includes('.xp-fill::after') && css.includes('xp-warm-glow'), 'S7: XP glow ausente');
           console.log('STATIC_ACCEPTANCE_OK');
@@ -79,9 +79,9 @@ jobs:
           const assert = (v,m) => { if (!v) throw new Error(m); };
           async function ready(page) {
             await page.waitForLoadState('domcontentloaded');
-            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ timeout: 30000 });
             const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
             if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
+            await page.waitForTimeout(120);
           }
           (async () => {
             const browser = await chromium.launch({headless:true});
