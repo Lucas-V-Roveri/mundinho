@@ -1,4 +1,4 @@
-import type { GuideTheme } from "@/types/content";
+import type { Guide, GuideTheme } from "@/types/content";
 
 export const DEFAULT_GUIDE_THEME: GuideTheme = {
   accent: "stone",
@@ -18,5 +18,18 @@ export function guideThemeClasses(theme?: GuideTheme) {
     frame: `guide-accent-${resolved.accent} guide-theme-frame`,
     stripe: `guide-texture-${resolved.texture} guide-theme-stripe`,
     badge: "guide-theme-badge",
+    accent: `guide-accent-${resolved.accent}`,
   };
+}
+
+function normalize(value: string) {
+  return value.toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+export function findGuideForText(guides: Guide[], text: string) {
+  const haystack = normalize(text);
+  return guides.find((guide) => {
+    const candidates = normalize(`${guide.id} ${guide.title}`).split(/[^a-z0-9]+/).filter((token) => token.length >= 5);
+    return candidates.some((token) => haystack.includes(token));
+  });
 }
