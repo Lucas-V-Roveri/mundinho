@@ -91,8 +91,8 @@ function GuideEmblem({ guide }: { guide: Guide }) {
     return <ContentIcon src={source} alt={guide.imagem?.alt ?? `Ícone do guia ${guide.title}`} kind={iconKindForType(guide.type)} className="size-14 shrink-0 border border-stone-500 bg-paper-50 p-1" />;
   }
   return (
-    <span className="grid size-14 shrink-0 place-items-center border border-[var(--guide-accent)] bg-[var(--guide-accent-soft)] text-ink-900" aria-label={`Ícone temático de ${guide.title}`}>
-      <PixelIcon name={guideFallbackIcon(guide)} size={28} />
+    <span className="grid size-14 shrink-0 place-items-center border border-[var(--guide-accent)] bg-paper-50 text-[var(--guide-accent)]" aria-label={`Ícone pixel-art temático de ${guide.title}`}>
+      <PixelIcon name={guideFallbackIcon(guide)} size={32} />
     </span>
   );
 }
