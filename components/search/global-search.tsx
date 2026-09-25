@@ -55,7 +55,9 @@ export function GlobalSearch() {
   return (
     <>
       <button type="button" onClick={() => setOpen(true)} className="pixel-control inline-flex min-h-9 items-center gap-1.5 border-2 border-night-950 bg-torch-500 px-2 py-1 font-label text-lg leading-none text-night-950" aria-label="Abrir busca global">
-        <PixelIcon name="compass" size={16} /><span className="hidden min-[680px]:inline">Buscar</span><kbd className="border border-night-950/70 bg-paper-100 px-1 text-sm">/</kbd>
+        <PixelIcon name="compass" size={16} />
+        <span className="hidden min-[980px]:inline">Buscar</span>
+        <kbd className="border border-night-950/70 bg-paper-100 px-1 text-sm">/</kbd>
       </button>
       <Dialog open={open} onOpenChange={setOpen} title="Busca global" description="Mods, progressão, Extras, Amendments e Bastidores." className="w-[min(94vw,46rem)]">
         <Input disabled={dataStatus !== "ready"} autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Twilight, Hydra, Waystones..." aria-label="Pesquisar no Mundinho" />
