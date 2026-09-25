@@ -4,11 +4,14 @@ import type { Route } from "next";
 import Link from "next/link";
 import { Accordion, AccordionItem } from "@/components/ui/accordion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tag } from "@/components/ui/tag";
 import { ChecklistItem } from "@/components/checklist/checklist-item";
 import { CustomItemPanel } from "@/components/checklist/custom-item-panel";
 import { ContentIcon, iconKindForType } from "@/components/media/content-icon";
 import { RecipeDisplay } from "@/components/guides/recipe-display";
 import { useMundinho } from "@/components/app-providers";
+import { guideThemeClasses } from "@/lib/guide-theme";
+import { cn } from "@/lib/cn";
 import type { Guide } from "@/types/content";
 
 function normalize(value: string) { return value.toLocaleLowerCase("pt-BR").normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
@@ -20,16 +23,29 @@ export function GuideCard({ guide }: { guide: Guide }) {
     const haystack = normalize(`${item.entry} ${item.mods} ${item.title}`);
     return tokens.some((token) => haystack.includes(token));
   });
+  const theme = guideThemeClasses(guide.theme);
 
   return (
-    <article id={`guide-${guide.id}`} className="scroll-mt-64">
-      <Card surface={guide.type === "chefe" ? "night" : guide.type === "dimensão" ? "wood" : "paper"} className="overflow-hidden">
+    <article id={`guide-${guide.id}`} className="scroll-mt-40">
+      <Card surface="paper" className={cn("overflow-hidden", theme.frame)}>
+        <div aria-hidden="true" className={theme.stripe} />
         <CardHeader>
           <div className="flex flex-wrap items-start justify-between gap-3">
-            <div className="flex min-w-0 items-start gap-3"><ContentIcon src={guide.imagem?.src ?? guide.icone} alt={guide.imagem?.alt ?? `Ícone do guia ${guide.title}`} kind={iconKindForType(guide.type)} className="size-14 shrink-0 border-2 border-current/30 bg-paper-50 p-1" /><div><CardTitle>{guide.title}</CardTitle><CardDescription>{guide.subtitle}</CardDescription></div></div>
-            <span className="border-4 border-night-950 bg-torch-100 px-2 py-1 font-label text-lg text-ink-900">{guide.type}</span>
+            <div className="flex min-w-0 items-start gap-3">
+              <ContentIcon src={guide.imagem?.src ?? guide.icone} alt={guide.imagem?.alt ?? `Ícone do guia ${guide.title}`} kind={iconKindForType(guide.type)} className="size-14 shrink-0 border-2 border-stone-500 bg-paper-50 p-1" />
+              <div>
+                <CardTitle>{guide.title}</CardTitle>
+                <CardDescription>{guide.subtitle}</CardDescription>
+              </div>
+            </div>
+            <Tag className={theme.badge}>{guide.type}</Tag>
           </div>
-          <div className="flex flex-wrap gap-2 font-label text-lg"><Tag label="fase" value={guide.phase} /><Tag label="risco" value={guide.risk} /><Tag label="complexidade" value={guide.complexity} /><Tag label="confiança" value={guide.confidence} /></div>
+          <div className="flex flex-wrap gap-2">
+            <Tag>fase: {guide.phase}</Tag>
+            <Tag tone={guide.risk === "Severo" || guide.risk === "Alto" ? "danger" : "neutral"}>risco: {guide.risk}</Tag>
+            <Tag>complexidade: {guide.complexity}</Tag>
+            <Tag>confiança: {guide.confidence}</Tag>
+          </div>
         </CardHeader>
         <CardContent className="space-y-5">
           <p className="text-base leading-7">{guide.intro}</p>
@@ -41,19 +57,17 @@ export function GuideCard({ guide }: { guide: Guide }) {
             </AccordionItem>)}
             <AccordionItem title="Craftings pesquisados"><div className="grid gap-4">{guide.craftings.map((craft) => <RecipeDisplay key={craft.title} craft={craft} />)}</div></AccordionItem>
             <AccordionItem title={`Marcos relacionados (${related.length})`}>
-              {related.length ? <div className="grid gap-2 sm:grid-cols-2">{related.map((item) => <Link key={item.id} href={`/progressao#${item.id}` as Route} className="border-4 border-night-950 bg-paper-50 p-3 text-ink-900 shadow-pixel-sm hover:bg-torch-100"><span className="font-label text-lg">#{String(item.order).padStart(3, "0")} · {item.phase}</span><strong className="mt-1 block text-sm">{item.title}</strong></Link>)}</div> : <p className="text-sm">Nenhum marco exclusivo deste guia; ele entra como apoio/consulta.</p>}
+              {related.length ? <div className="grid gap-2 sm:grid-cols-2">{related.map((item) => <Link key={item.id} href={`/progressao#${item.id}` as Route} className="pixel-card-interactive block border-4 border-night-950 bg-paper-50 p-3 text-ink-900"><span className="font-label text-lg text-blue-700">#{String(item.order).padStart(3, "0")} · {item.phase}</span><strong className="mt-1 block text-sm">{item.title}</strong></Link>)}</div> : <p className="text-sm">Nenhum marco exclusivo deste guia; ele entra como apoio/consulta.</p>}
             </AccordionItem>
             <AccordionItem title="Checklist">
               <div className="grid gap-2">{guide.checklist.map(([id, label, phase]) => <ChecklistItem key={id} itemId={id} label={label} phase={phase} section="mods" entryKey={guide.id} />)}</div>
               <CustomItemPanel section="mods" entryKey={guide.id} />
             </AccordionItem>
-            <AccordionItem title="Fontes"><ul className="space-y-2">{guide.sources.map(([label, href]) => <li key={href}><a className="font-label text-xl text-wood-700 underline decoration-2 underline-offset-4 hover:text-torch-700" href={href} target="_blank" rel="noreferrer">{label}</a></li>)}</ul></AccordionItem>
+            <AccordionItem title="Fontes"><ul className="space-y-2">{guide.sources.map(([label, href]) => <li key={href}><a className="semantic-link font-label text-xl" href={href} target="_blank" rel="noreferrer">{label}</a></li>)}</ul></AccordionItem>
           </Accordion>
-          {guide.notes?.length ? <div className="border-l-8 border-torch-500 bg-torch-100 p-4 text-sm text-ink-900">{guide.notes.map((note) => <p key={note}>{note}</p>)}</div> : null}
+          {guide.notes?.length ? <div className="border-l-4 border-torch-500 bg-torch-100 p-4 text-sm text-ink-900">{guide.notes.map((note) => <p key={note}>{note}</p>)}</div> : null}
         </CardContent>
       </Card>
     </article>
   );
 }
-
-function Tag({ label, value }: { label: string; value: string }) { return <span className="border-2 border-current/30 bg-paper-100 px-2 py-1 text-ink-900"><strong>{label}:</strong> {value}</span>; }
