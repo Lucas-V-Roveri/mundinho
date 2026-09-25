@@ -1,0 +1,323 @@
+name: Etapa 2 R1-R8 S1-S7 final audit
+
+on:
+  push:
+    branches: ["fix/etapa2-final-audit"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Validate explicit guide theme map and semantic primitives
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const themes = fs.readFileSync('data/guide-themes.ts', 'utf8');
+          const tag = fs.readFileSync('components/ui/tag.tsx', 'utf8');
+          const icons = fs.readFileSync('components/ui/pixel-icon.tsx', 'utf8');
+          const globals = fs.readFileSync('app/globals.css', 'utf8');
+          const mundinho = fs.readFileSync('app/mundinho.css', 'utf8');
+          const rationaleCount = (themes.match(/rationale:/g) || []).length;
+          if (rationaleCount !== 35) throw new Error(`Esperados 35 temas justificados; vieram ${rationaleCount}`);
+          for (const sample of [
+            'theme: { accent: "torch", texture: "fire" }',
+            '"sophisticated-backpacks":',
+            'theme: { accent: "wood", texture: "leather" }',
+            '"dungeons-structures":',
+            '"graveyard":',
+          ]) if (!themes.includes(sample)) throw new Error(`Mapa de temas sem ${sample}`);
+          for (const semantic of ['bg-grass-100', 'bg-gold-100', 'bg-torch-100', 'bg-redstone-100', 'bg-blue-100']) {
+            if (!tag.includes(semantic)) throw new Error(`Tag sem token semântico ${semantic}`);
+          }
+          for (const icon of ['torch', 'chest', 'compass', 'heart', 'book', 'pickaxe']) {
+            if (!icons.includes(`${icon}:`)) throw new Error(`Ícone pixel ausente: ${icon}`);
+          }
+          if (!globals.includes('background-color: var(--color-night-900)')) throw new Error('S1: fundo global não está em night-900');
+          if (!mundinho.includes('.xp-fill::after') || !mundinho.includes('xp-warm-glow')) throw new Error('S7: glow de XP ausente');
+          console.log('STATIC_ACCEPTANCE_OK');
+          NODE
+
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Fetch public config and start local production build
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/mundinho-config.json
+          export SUPABASE_URL="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabaseUrl)")"
+          export SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabasePublishableKey)")"
+          npm run start -- -p 3000 >/tmp/mundinho-next.log 2>&1 &
+          echo $! >/tmp/mundinho-next.pid
+          for attempt in $(seq 1 40); do
+            if curl -fsS http://127.0.0.1:3000/api/config >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/mundinho-next.log
+          exit 1
+
+      - name: Validate R1-R8 and S1-S7 in browser
+        shell: bash
+        run: |
+          mkdir -p artifacts/etapa2-final
+          cat >/tmp/etapa2-final.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          const base = 'http://127.0.0.1:3000';
+          const INK = 'rgb(36, 26, 20)';
+          const NIGHT = 'rgb(23, 19, 15)';
+          const PAPER50 = 'rgb(255, 249, 237)';
+          const assert = (condition, message) => { if (!condition) throw new Error(message); };
+
+          async function ready(page) {
+            await page.waitForLoadState('domcontentloaded');
+            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ timeout: 30000 });
+            const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
+            if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
+          }
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+            const page = await context.newPage();
+            const errors = [];
+            page.on('pageerror', e => errors.push(`pageerror: ${e.message}`));
+            page.on('console', msg => { if (msg.type() === 'error') errors.push(`console: ${msg.text()}`); });
+
+            // HOME: R1, R4, R5, R7, R8, S1, S5, S7.
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await ready(page);
+
+            const hero = page.getByRole('heading', { name: 'Mundinho · pra sempre', level: 1 });
+            assert(await hero.count() === 1, 'R1: h1 da home ausente/duplicado');
+            assert((await hero.evaluate(el => getComputedStyle(el).color)) === INK, 'R1: h1 da home não é ink-900');
+            const nosso = page.getByText('nosso mundo', { exact: true });
+            assert(await nosso.count() === 1, 'R1: rótulo nosso mundo ausente');
+            assert((await nosso.evaluate(el => getComputedStyle(el).color)) !== PAPER50, 'R1: rótulo nosso mundo herdou texto claro');
+
+            const bodyStyle = await page.locator('body').evaluate(el => ({ bg: getComputedStyle(el).backgroundColor, img: getComputedStyle(el).backgroundImage }));
+            assert(bodyStyle.bg === NIGHT, `S1: body deveria ser night-900, recebeu ${bodyStyle.bg}`);
+            assert(!/wood|8a5e3d|5c3d2a/i.test(bodyStyle.img), `S1: fundo ainda parece madeira: ${bodyStyle.img}`);
+
+            const search = page.getByRole('button', { name: 'Abrir busca global' });
+            assert(await search.count() === 1, 'R7: botão de busca ausente');
+            assert(await search.evaluate(el => Boolean(el.closest('header'))), 'R7: busca não está integrada ao header');
+            assert((await search.evaluate(el => getComputedStyle(el).position)) !== 'fixed', 'R7: busca continua fixed sobre o conteúdo');
+
+            const lastBlock = page.getByText('Última marcação', { exact: true }).locator('..');
+            assert(await lastBlock.count() === 1, 'R5: card Última marcação ausente');
+            const lastText = await lastBlock.innerText();
+            assert(!/progression:\d+/i.test(lastText), `R5: chave interna vazou: ${lastText}`);
+
+            const stats = page.getByRole('region', { name: 'Resumo do Mundinho' }).locator('.panel-stone');
+            assert(await stats.count() === 4, `R8: esperados 4 stats; vieram ${await stats.count()}`);
+            for (let i = 0; i < 4; i++) {
+              const style = await stats.nth(i).evaluate(el => ({ bg: getComputedStyle(el).backgroundImage, color: getComputedStyle(el).color }));
+              assert(style.bg === 'none', `R8: stat ${i + 1} ainda tem textura ${style.bg}`);
+              assert(await stats.nth(i).locator('.font-display').count() === 1, `R8: stat ${i + 1} não usa valor display consistente`);
+            }
+            assert(await page.getByText('ONLINE', { exact: true }).count() === 1, 'R8: ONLINE não segue o padrão dos stats');
+
+            const faces = page.locator('.skin-face-frame');
+            assert(await faces.count() >= 3, `R4: esperados rostos no header/home; vieram ${await faces.count()}`);
+            for (let i = 0; i < Math.min(4, await faces.count()); i++) {
+              const imgs = faces.nth(i).locator('img');
+              assert(await imgs.count() >= 1, `R4: face ${i + 1} não usa <img>`);
+              const meta = await imgs.first().evaluate(el => ({ w: el.naturalWidth, h: el.naturalHeight, rendering: getComputedStyle(el).imageRendering }));
+              assert(meta.w === 64 && meta.h === 64, `R4: skin ${i + 1} não é 64x64 (${meta.w}x${meta.h})`);
+              assert(meta.rendering === 'pixelated' || meta.rendering === 'crisp-edges', `R4: skin ${i + 1} sem pixelated`);
+            }
+
+            assert(await page.locator('.trophy-shelf').count() === 1, 'S5: prateleira de troféus ausente');
+            assert(await page.locator('.trophy-slot').count() > 0, 'S5: prateleira sem slots');
+            const locked = page.locator('.trophy-placeholder-locked, .content-pixel-image-locked');
+            assert(await locked.count() > 0, 'S5: nenhum troféu bloqueado em silhueta');
+
+            const xp = page.locator('.xp-fill').first();
+            const xpAnim = await xp.evaluate(el => getComputedStyle(el, '::after').animationName);
+            assert(xpAnim.includes('xp-warm-glow'), `S7: XP sem glow ativo (${xpAnim})`);
+
+            await page.screenshot({ path: 'artifacts/etapa2-final/home-full.png', fullPage: true });
+
+            // R1 + S6 audit on every public page.
+            const pages = [
+              ['/progressao', 'Progressão'],
+              ['/mods', 'Mods'],
+              ['/amendments', 'Amendments'],
+              ['/extras', 'Extras'],
+              ['/bastidores', 'Bastidores'],
+            ];
+            for (const [path, heading] of pages) {
+              await page.goto(base + path, { waitUntil: 'domcontentloaded' });
+              await ready(page);
+              const h1 = page.getByRole('heading', { name: heading, level: 1 });
+              assert(await h1.count() === 1, `R1: ${path} sem h1 único`);
+              assert((await h1.evaluate(el => getComputedStyle(el).color)) === INK, `R1: ${path} h1 não é ink-900`);
+            }
+
+            // MODS: R2, R3, S2, S3, S4.
+            await page.goto(base + '/mods', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            await page.getByText('35 guia(s) nesta seleção', { exact: true }).waitFor({ timeout: 30000 });
+            const guides = page.locator('article[id^="guide-"]');
+            assert(await guides.count() === 35, `S2: esperados 35 guias; vieram ${await guides.count()}`);
+
+            for (let i = 0; i < 35; i++) {
+              const guide = guides.nth(i);
+              const frame = guide.locator('.guide-theme-frame').first();
+              assert(await frame.count() === 1, `S2: guia ${i + 1} sem frame temático`);
+              const frameClass = await frame.getAttribute('class');
+              assert(/guide-accent-(stone|torch|wood|grass|redstone|gold|blue|ice)/.test(frameClass || ''), `S2: guia ${i + 1} sem accent`);
+              const stripe = guide.locator('.guide-theme-stripe').first();
+              assert(await stripe.count() === 1, `S2: guia ${i + 1} sem faixa/textura`);
+              const stripeClass = await stripe.getAttribute('class');
+              assert(/guide-texture-(fire|leather|ice|leaf|stone|none)/.test(stripeClass || ''), `S2: guia ${i + 1} sem texture`);
+
+              const header = guide.locator('.panel-paper').first().locator('div').first();
+              assert(await guide.locator('header img, header svg, [aria-label^="Ícone pixel-art temático"] svg').count() > 0 || await guide.locator('img[alt^="Ícone do guia"]').count() > 0, `R3: guia ${i + 1} sem ícone real/pixel-art`);
+
+              const tags = guide.locator('.tag-flat');
+              assert(await tags.count() >= 4, `S3: guia ${i + 1} sem chips de metadados`);
+              const tagStyle = await tags.first().evaluate(el => ({ shadow: getComputedStyle(el).boxShadow, borderWidth: getComputedStyle(el).borderWidth }));
+              assert(tagStyle.shadow === 'none', `S3: tag do guia ${i + 1} tem sombra`);
+            }
+
+            const firstGuide = guides.first();
+            const triggers = firstGuide.locator('.pixel-accordion-trigger');
+            const triggerCount = await triggers.count();
+            assert(triggerCount >= 4, `R2: primeiro guia só tem ${triggerCount} accordions`);
+
+            for (let i = 0; i < triggerCount; i++) {
+              const button = triggers.nth(i);
+              assert((await button.evaluate(el => getComputedStyle(el).cursor)) === 'pointer', `R2: accordion ${i + 1} sem cursor pointer`);
+              const color = await button.evaluate(el => getComputedStyle(el).color);
+              assert(color !== 'rgba(0, 0, 0, 0)' && color !== 'rgb(138, 132, 123)', `R2: accordion ${i + 1} com contraste de desativado`);
+              const before = await button.getAttribute('aria-expanded');
+              await button.click();
+              const after = await button.getAttribute('aria-expanded');
+              assert(before !== after, `R2: accordion ${i + 1} não alterou aria-expanded`);
+              const controls = await button.getAttribute('aria-controls');
+              assert(Boolean(controls), `R2: accordion ${i + 1} sem aria-controls`);
+              const panel = page.locator(`[id="${String(controls).replaceAll('"', '\\"')}"]`);
+              if (after === 'true') {
+                await page.waitForTimeout(220);
+                assert((await panel.getAttribute('aria-hidden')) === 'false', `R2: accordion ${i + 1} aberto segue aria-hidden`);
+                const opacity = await panel.evaluate(el => Number.parseFloat(getComputedStyle(el).opacity));
+                assert(opacity > 0.8, `R2: accordion ${i + 1} abriu invisível`);
+              }
+              await button.click();
+              assert((await button.getAttribute('aria-expanded')) === before, `R2: accordion ${i + 1} não fechou de volta`);
+            }
+
+            for (let i = 0; i < triggerCount; i++) if ((await triggers.nth(i).getAttribute('aria-expanded')) === 'true') await triggers.nth(i).click();
+            await page.screenshot({ path: 'artifacts/etapa2-final/mods-closed.png', fullPage: false });
+            await triggers.first().click();
+            await page.waitForTimeout(220);
+            await page.screenshot({ path: 'artifacts/etapa2-final/mods-open.png', fullPage: false });
+
+            // Every guide first accordion must also respond.
+            for (let i = 0; i < 35; i++) {
+              const button = guides.nth(i).locator('.pixel-accordion-trigger').first();
+              if (!await button.count()) throw new Error(`R2: guia ${i + 1} sem accordion`);
+              const before = await button.getAttribute('aria-expanded');
+              await button.click();
+              assert((await button.getAttribute('aria-expanded')) !== before, `R2: primeiro accordion do guia ${i + 1} não responde`);
+            }
+
+            // S6: long guide/progression titles must use reading font, not display.
+            const guideTitle = guides.first().locator('h3').first();
+            const guideFamily = await guideTitle.evaluate(el => getComputedStyle(el).fontFamily);
+            assert(!/Press Start 2P/i.test(guideFamily), `S6: título longo de guia usa Press Start 2P (${guideFamily})`);
+
+            await page.goto(base + '/progressao', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            const progressionTitles = page.locator('.progression-card h3');
+            assert(await progressionTitles.count() > 10, 'S6: títulos de progressão não encontrados');
+            for (let i = 0; i < Math.min(12, await progressionTitles.count()); i++) {
+              const family = await progressionTitles.nth(i).evaluate(el => getComputedStyle(el).fontFamily);
+              assert(!/Press Start 2P/i.test(family), `S6: marco ${i + 1} usa Press Start 2P`);
+            }
+
+            // S4: semantic colours actually appear in product UI.
+            const pageText = await page.locator('body').innerText();
+            assert(pageText.includes('risco'), 'S4: risco não aparece na Progressão');
+            assert(await page.locator('.bg-redstone-100, .border-redstone-500, .text-redstone-700').count() > 0, 'S4: redstone não aplicado a risco');
+            assert(await page.locator('.bg-grass-100, .bg-grass-500').count() > 0, 'S4: grass não aplicado a sucesso/progresso');
+
+            // Header at 680px: R6.
+            await page.setViewportSize({ width: 680, height: 900 });
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            const header = page.locator('header').first();
+            assert(await page.getByText('quem está marcando?', { exact: true }).count() === 1, 'R6: label compacto do ator ausente');
+            assert(await page.getByText('marcando como', { exact: true }).count() === 0, 'R6: label antigo ainda existe');
+            const docOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+            assert(docOverflow <= 1, `R6: overflow horizontal de ${docOverflow}px em 680px`);
+            const strayI = await header.locator('text=/^i$/').count();
+            assert(strayI === 0, 'R6: existe i solto no header');
+            await header.screenshot({ path: 'artifacts/etapa2-final/header-680.png' });
+
+            // Reduced motion: S7 + permanent rule.
+            await page.emulateMedia({ reducedMotion: 'reduce' });
+            const reduced = await page.locator('.xp-fill').evaluate(el => ({ name: getComputedStyle(el, '::after').animationName, duration: getComputedStyle(el, '::after').animationDuration }));
+            assert(reduced.name === 'none' || reduced.duration === '0s' || reduced.duration === '0.001ms', `S7: XP glow ignora reduced-motion ${JSON.stringify(reduced)}`);
+
+            if (errors.length) throw new Error(errors.join(' | '));
+            fs.writeFileSync('artifacts/etapa2-final/evidence.txt', [
+              'R1=page titles ink-900 across all routes',
+              `R2=accordions-first-guide:${triggerCount}; all-35-first-trigger:ok`,
+              'R3=guide emblem present for all 35',
+              `R4=skin-face-frames:${await faces.count()}`,
+              `R5=last-marking:${JSON.stringify(lastText)}`,
+              'R6=header-680:no-overflow,no-legacy-label,no-stray-i',
+              'R7=search-in-header:not-fixed',
+              'R8=4-solid-stats,ONLINE-consistent',
+              `S1=body:${bodyStyle.bg};pattern:${bodyStyle.img}`,
+              'S2=35 themed guide cards with accent+texture',
+              'S3=flat metadata chips',
+              'S4=semantic grass/redstone verified; token map static audit covers gold/torch/blue',
+              'S5=pixel icon set+trophy shelf verified',
+              `S6=guide-family:${guideFamily}`,
+              `S7=xp-normal:${xpAnim};reduced:${JSON.stringify(reduced)}`,
+            ].join('\n'));
+            await browser.close();
+          })().catch(error => { console.error(error); process.exit(1); });
+          NODE
+          node /tmp/etapa2-final.cjs
+
+      - name: Show server log on failure
+        if: failure()
+        run: cat /tmp/mundinho-next.log || true
+
+      - name: Upload final visual evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: etapa2-final-evidence
+          path: artifacts/etapa2-final
+          if-no-files-found: warn
