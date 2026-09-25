@@ -30,7 +30,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if git diff --quiet -- data/content-snapshot.generated.ts; then
+          if [[ -z "$(git status --porcelain -- data/content-snapshot.generated.ts)" ]]; then
             echo "Snapshot unchanged"
             exit 0
           fi
