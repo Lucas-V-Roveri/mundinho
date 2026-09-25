@@ -2,6 +2,13 @@ export type Actor = "gr1d" | "benamu";
 export type ContentSection = "mods" | "progression" | "extras";
 export type Confidence = "Alta" | "Média" | "Baixa-conferir" | string;
 
+export type GuideThemeAccent = "stone" | "torch" | "wood" | "grass" | "redstone" | "gold" | "blue" | "ice";
+export type GuideThemeTexture = "fire" | "leather" | "ice" | "leaf" | "stone" | "none";
+export type GuideTheme = {
+  accent: GuideThemeAccent;
+  texture: GuideThemeTexture;
+};
+
 export type MediaRef = {
   src: string;
   alt: string;
@@ -49,6 +56,7 @@ export type Guide = {
   subtitle: string;
   type: "chefe" | "dimensão" | "utilidade" | string;
   color?: string;
+  theme?: GuideTheme;
   difficulty: string;
   risk: string;
   phase: string;
