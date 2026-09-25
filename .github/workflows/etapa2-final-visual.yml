@@ -1,0 +1,113 @@
+name: Etapa 2 final visual
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: npm ci --no-audit --no-fund
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Lint
+        run: npm run lint
+      - name: Build
+        run: npm run build
+      - name: Runtime config
+        run: curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/config.json
+      - name: Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+      - name: Start production build
+        shell: bash
+        run: |
+          set -euo pipefail
+          export SUPABASE_URL="$(node -e "const c=require('/tmp/config.json'); process.stdout.write(c.supabaseUrl)")"
+          export SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/config.json'); process.stdout.write(c.supabasePublishableKey)")"
+          npm run start -- -p 3000 >/tmp/server.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:3000/api/config >/dev/null && exit 0; sleep 1; done
+          cat /tmp/server.log; exit 1
+      - name: Browser acceptance and screenshots
+        shell: bash
+        run: |
+          mkdir -p artifacts/etapa2-final
+          cat >/tmp/final-visual.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          const base = 'http://127.0.0.1:3000';
+          const assert = (v, m) => { if (!v) throw new Error(m); };
+          const INK = 'rgb(36, 26, 20)';
+          const NIGHT = 'rgb(23, 19, 15)';
+          async function ready(page) {
+            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ timeout: 30000 });
+            const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
+            if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
+          }
+          async function assertInk(page, path, title, home=false) {
+            await page.goto(base + path, { waitUntil:'domcontentloaded', timeout:45000 }); await ready(page);
+            const el = home ? page.locator('main').getByText(title, { exact:true }).first() : page.getByRole('heading', { level:1, name:title });
+            assert(await el.count() === 1, `R1 ${path}: título ausente/duplicado`);
+            assert((await el.evaluate(n => getComputedStyle(n).color)) === INK, `R1 ${path}: título não é ink-900`);
+          }
+          (async()=>{
+            const browser = await chromium.launch({headless:true});
+            const ctx = await browser.newContext({viewport:{width:1440,height:1000}});
+            const page = await ctx.newPage();
+            const pageErrors=[]; page.on('pageerror',e=>pageErrors.push(e.message));
+
+            await assertInk(page,'/','Mundinho · pra sempre',true);
+            const body = await page.locator('body').evaluate(el=>({bg:getComputedStyle(el).backgroundColor,img:getComputedStyle(el).backgroundImage}));
+            assert(body.bg===NIGHT,`S1 body=${body.bg}`); assert(!/8a5e3d|5c3d2a/i.test(body.img),'S1 fundo de madeira detectado');
+            const search=page.getByRole('button',{name:'Abrir busca global'}); assert(await search.count()===1,'R7 busca ausente');
+            assert((await search.evaluate(el=>getComputedStyle(el).position))!=='fixed','R7 busca fixed'); assert(await search.evaluate(el=>!!el.closest('header')),'R7 busca fora do header');
+            const stats=page.getByRole('region',{name:'Resumo do Mundinho'}).locator('.panel-stone'); assert(await stats.count()===4,'R8 stats !=4');
+            for(let i=0;i<4;i++){assert((await stats.nth(i).evaluate(el=>getComputedStyle(el).backgroundImage))==='none',`R8 stat ${i+1} texturizado`); assert(await stats.nth(i).locator('.font-display').count()===1,`R8 stat ${i+1} sem display`);}
+            assert(await page.getByText('ONLINE',{exact:true}).count()===1,'R8 ONLINE não segue stat');
+            const faces=page.locator('.skin-face-frame'); assert(await faces.count()>=3,'R4 skins ausentes');
+            for(let i=0;i<3;i++){const img=faces.nth(i).locator('img').first();const m=await img.evaluate(el=>({w:el.naturalWidth,h:el.naturalHeight,r:getComputedStyle(el).imageRendering}));assert(m.w===64&&m.h===64,`R4 skin ${i+1} não 64x64`);assert(m.r==='pixelated'||m.r==='crisp-edges',`R4 skin ${i+1} sem pixelated`);}
+            const home=await page.locator('body').innerText(); const latest=home.split('Última marcação')[1]?.split('Guias')[0]||''; assert(!/progression:\d+/.test(latest),'R5 chave crua');
+            assert(!home.includes('marcando como'),'R6 rótulo antigo'); assert(await page.getByText('quem está marcando?',{exact:true}).count()===1,'R6 label novo ausente');
+            assert(await page.locator('.trophy-shelf').count()===1,'S5 shelf ausente'); assert(await page.locator('.xp-fill').count()===1,'S7 XP ausente');
+            const xp=await page.locator('.xp-fill').evaluate(el=>getComputedStyle(el).animationName); assert(xp!=='none','S7 glow XP ausente');
+            await page.screenshot({path:'artifacts/etapa2-final/home-full.png',fullPage:true});
+
+            for(const [p,t] of [['/progressao','Progressão'],['/mods','Mods'],['/amendments','Amendments'],['/extras','Extras'],['/bastidores','Bastidores']]) await assertInk(page,p,t);
+
+            await page.goto(base+'/mods',{waitUntil:'domcontentloaded',timeout:45000}); await ready(page); await page.getByText('35 guia(s) nesta seleção',{exact:true}).waitFor({timeout:30000});
+            const guides=page.locator('article[id^="guide-"]'); assert(await guides.count()===35,'S2 guia count');
+            for(let i=0;i<35;i++){const g=guides.nth(i);const frame=g.locator('.guide-theme-frame').first();assert(await frame.count()===1,`S2 guia ${i+1} frame`);const fc=(await frame.getAttribute('class'))||'';assert(/guide-accent-(stone|torch|wood|grass|redstone|gold|blue|ice)/.test(fc),`S2 guia ${i+1} accent`);assert(await g.locator('[class*="guide-texture-"]').count()>=1,`S2 guia ${i+1} texture`);assert(await g.locator('[aria-label^="Ícone pixel-art temático"],img[alt^="Ícone do guia"]').count()>=1,`R3 guia ${i+1} emblem`);const tags=g.locator('.tag-flat');assert(await tags.count()>=4,`S3 guia ${i+1} chips`);assert((await tags.first().evaluate(el=>getComputedStyle(el).boxShadow))==='none',`S3 guia ${i+1} chip shadow`);}
+            const triggers=page.locator('.pixel-accordion-trigger');const n=await triggers.count();assert(n>100,`R2 accordions=${n}`);
+            for(let i=0;i<n;i++){const b=triggers.nth(i);const a=await b.getAttribute('aria-expanded');await b.evaluate(el=>el.click());assert((await b.getAttribute('aria-expanded'))!==a,`R2 toggle ${i+1}`);await b.evaluate(el=>el.click());assert((await b.getAttribute('aria-expanded'))===a,`R2 restore ${i+1}`);}
+            const fg=guides.first(), ft=fg.locator('.pixel-accordion-trigger');for(let i=0;i<await ft.count();i++)if((await ft.nth(i).getAttribute('aria-expanded'))==='true')await ft.nth(i).click();await fg.scrollIntoViewIfNeeded();await page.screenshot({path:'artifacts/etapa2-final/mods-closed.png'});const first=ft.first();await first.click();assert((await first.getAttribute('aria-expanded'))==='true','R2 real click');const c=await first.getAttribute('aria-controls');assert(c,'R2 aria-controls');const panel=page.locator('#'+c);assert((await panel.getAttribute('aria-hidden'))==='false','R2 aria-hidden');await page.waitForTimeout(220);await page.screenshot({path:'artifacts/etapa2-final/mods-open.png'});
+
+            await page.setViewportSize({width:680,height:900});await page.goto(base+'/',{waitUntil:'domcontentloaded'});await ready(page);const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);assert(overflow<=1,`R6 overflow=${overflow}`);assert(await page.getByText('quem está marcando?',{exact:true}).count()===1,'R6 mobile actor');await page.locator('header').screenshot({path:'artifacts/etapa2-final/header-680.png'});
+            await page.emulateMedia({reducedMotion:'reduce'});const reduced=await page.locator('.xp-fill').evaluate(el=>getComputedStyle(el).animationDuration);assert(reduced==='0s'||reduced==='0.001ms',`S7 reduced=${reduced}`);
+            assert(pageErrors.length===0,`page errors: ${pageErrors.join(' | ')}`);
+            fs.writeFileSync('artifacts/etapa2-final/evidence.txt',[`titles=ink-900`,`body=${body.bg}`,`guides=35`,`accordions=${n}`,`header-overflow-680=${overflow}`,`xp-animation=${xp}`,`xp-reduced=${reduced}`].join('\n'));
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
+          node /tmp/final-visual.cjs
+      - name: Logs on failure
+        if: failure()
+        run: cat /tmp/server.log || true
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: etapa2-final-visual
+          path: artifacts/etapa2-final
+          if-no-files-found: warn
