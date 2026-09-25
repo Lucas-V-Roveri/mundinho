@@ -64,6 +64,13 @@ jobs:
         run: |
           cat > /tmp/smoke.cjs <<'NODE'
           const { chromium } = require(process.cwd() + '/node_modules/playwright');
+
+          async function waitForSupabase(page) {
+            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ state: 'visible', timeout: 30000 });
+            const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
+            if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
+          }
+
           (async () => {
             const browser = await chromium.launch({ headless: true });
             const page = await browser.newPage();
@@ -77,10 +84,11 @@ jobs:
             const base = 'https://mundinho-blue.vercel.app';
             let response = await page.goto(base, { waitUntil: 'networkidle', timeout: 45000 });
             if (response?.status() !== 200) throw new Error(`Home HTTP ${response?.status()}`);
-            await page.waitForTimeout(800);
+            await waitForSupabase(page);
             let body = await page.locator('body').innerText();
             if (body.includes('Carregando chunks...')) throw new Error('Chunk loader ficou preso');
-            if (!body.includes('sincronização: Supabase compartilhado')) throw new Error('Supabase compartilhado não ficou ativo');
+            if (!body.includes('Supabase compartilhado')) throw new Error('Supabase compartilhado não ficou ativo');
+            if (body.includes('falha de conexão')) throw new Error('Estado de sincronização entrou em erro');
             const xpMatch = body.match(/XP do mundinho\s*(\d+)\/(\d+)/);
             if (!xpMatch || Number(xpMatch[2]) < 308) throw new Error(`XP total inválido: ${xpMatch?.[0] || 'ausente'}`);
             if (!body.includes('Prateleira de troféus')) throw new Error('Prateleira de troféus ausente');
@@ -89,6 +97,7 @@ jobs:
             const actor = page.getByLabel('Quem está marcando');
             await actor.selectOption('benamu');
             await page.reload({ waitUntil: 'networkidle' });
+            await waitForSupabase(page);
             if (await actor.inputValue() !== 'benamu') throw new Error('Preferência local do autor não persistiu');
             await actor.selectOption('gr1d');
 
@@ -100,6 +109,7 @@ jobs:
 
             response = await page.goto(base + '/progressao', { waitUntil: 'networkidle', timeout: 45000 });
             if (response?.status() !== 200) throw new Error(`/progressao HTTP ${response?.status()}`);
+            await waitForSupabase(page);
             body = await page.locator('body').innerText();
             if (!body.includes('101 marcos do mundinho')) throw new Error('Progressão não carregou 101 marcos');
             if (!body.includes('confiança:')) throw new Error('Selo de confiança não está rotulado');
@@ -109,23 +119,28 @@ jobs:
 
             response = await page.goto(base + '/mods', { waitUntil: 'networkidle', timeout: 45000 });
             if (response?.status() !== 200) throw new Error(`/mods HTTP ${response?.status()}`);
+            await waitForSupabase(page);
             body = await page.locator('body').innerText();
             if (!body.includes('Marcos relacionados')) throw new Error('Marcos relacionados ausentes dos guias');
             if (!body.includes('Craftings pesquisados')) throw new Error('Craftings pesquisados ausentes');
+            if (await page.locator('article[id^="guide-"]').count() !== 35) throw new Error('Mods não carregou os 35 guias');
 
             for (const [path, heading] of [['/amendments','Amendments'], ['/extras','Extras']]) {
               response = await page.goto(base + path, { waitUntil: 'networkidle', timeout: 45000 });
               if (response?.status() !== 200) throw new Error(`${path} HTTP ${response?.status()}`);
+              await waitForSupabase(page);
               await page.getByRole('heading', { name: heading, exact: true }).waitFor({ state: 'visible' });
             }
 
             response = await page.goto(base + '/bastidores', { waitUntil: 'networkidle', timeout: 45000 });
             if (response?.status() !== 200) throw new Error(`/bastidores HTTP ${response?.status()}`);
+            await waitForSupabase(page);
             body = await page.locator('body').innerText();
             if (!body.includes('Fontes das imagens')) throw new Error('Fontes das imagens ausentes dos Bastidores');
 
             await page.emulateMedia({ reducedMotion: 'reduce' });
             await page.goto(base, { waitUntil: 'networkidle' });
+            await waitForSupabase(page);
             const duration = await page.locator('.page-enter').evaluate(el => getComputedStyle(el).animationDuration);
             console.log('reduced-motion animationDuration', duration);
 
