@@ -30,6 +30,19 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Probe production runtime config
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/mundinho-config.json
+          node - <<'NODE'
+          const cfg = require('/tmp/mundinho-config.json');
+          if (!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(cfg.supabaseUrl || '')) throw new Error('SUPABASE_URL inválida em produção');
+          if (!/^sb_publishable_/.test(cfg.supabasePublishableKey || '') && String(cfg.supabasePublishableKey || '').split('.').length !== 3) throw new Error('SUPABASE_PUBLISHABLE_KEY inválida em produção');
+          if (cfg.worldId !== 'mundinho-pra-sempre') throw new Error('worldId inesperado');
+          console.log('PRODUCTION_CONFIG_RESPONSE=' + JSON.stringify(cfg));
+          NODE
+
       - name: Install Chromium for local browser validation
         run: |
           npm install --no-save --no-package-lock playwright@1.55.0
@@ -39,7 +52,6 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/mundinho-config.json
           export SUPABASE_URL="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabaseUrl)")"
           export SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabasePublishableKey)")"
           npm run start -- -p 3000 >/tmp/mundinho-next.log 2>&1 &
@@ -51,7 +63,32 @@ jobs:
           cat /tmp/mundinho-next.log
           exit 1
 
-      - name: Validate R1-R8 and S1-S7 in local browser
+      - name: Validate SSR static totals in raw HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS http://127.0.0.1:3000/ -o /tmp/home.html
+          curl -fsS http://127.0.0.1:3000/progressao -o /tmp/progressao.html
+          curl -fsS http://127.0.0.1:3000/mods -o /tmp/mods.html
+          curl -fsS http://127.0.0.1:3000/extras -o /tmp/extras.html
+          node - <<'NODE'
+          const fs = require('fs');
+          const text = file => fs.readFileSync(file, 'utf8').replace(/<!--.*?-->/gs, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+          const home = text('/tmp/home.html');
+          const progression = text('/tmp/progressao.html');
+          const mods = text('/tmp/mods.html');
+          const extras = text('/tmp/extras.html');
+          if (!/Guias\s+35/.test(home)) throw new Error('Home SSR não contém Guias 35');
+          if (!/Marcos\s+101/.test(home)) throw new Error('Home SSR não contém Marcos 101');
+          if (!/Ideias extras\s+18/.test(home)) throw new Error('Home SSR não contém Extras 18');
+          if (!progression.includes('101 marcos do mundinho')) throw new Error('Progressão SSR não contém 101 marcos');
+          if (!mods.includes('35 guia(s) no Mundinho')) throw new Error('Mods SSR não contém 35 guias');
+          if (!extras.includes('18 ideias')) throw new Error('Extras SSR não contém 18 ideias');
+          if (/XP do mundinho\s+0\/0/.test(home)) throw new Error('Home SSR vazou XP 0/0');
+          console.log('SSR_TOTALS_OK');
+          NODE
+
+      - name: Validate R1-R8, S1-S7 and P1-P3 in local browser
         shell: bash
         run: |
           mkdir -p artifacts/etapa2
@@ -62,16 +99,73 @@ jobs:
           const INK = 'rgb(36, 26, 20)';
           const NIGHT = 'rgb(23, 19, 15)';
           const assert = (condition, message) => { if (!condition) throw new Error(message); };
+          const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
           async function waitReady(page) {
             await page.waitForLoadState('domcontentloaded');
-            await page.getByText('sincronização: Supabase compartilhado', { exact: false }).waitFor({ timeout: 30000 });
+            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ timeout: 30000 });
             const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
             if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
           }
 
           (async () => {
             const browser = await chromium.launch({ headless: true });
+
+            // P2: totals remain visible when JavaScript is disabled.
+            const noJs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1200, height: 900 } });
+            for (const [path, assertions] of [
+              ['/', ['Guias', '35', 'Marcos', '101', 'Ideias extras', '18']],
+              ['/progressao', ['101 marcos do mundinho']],
+              ['/mods', ['35 guia(s) no Mundinho']],
+              ['/extras', ['18 ideias']],
+            ]) {
+              const p = await noJs.newPage();
+              await p.goto(base + path, { waitUntil: 'domcontentloaded' });
+              const text = await p.locator('body').innerText();
+              for (const expected of assertions) assert(text.includes(expected), `${path} sem JS não contém ${expected}`);
+              assert(!text.includes('Carregando chunks...'), `${path} sem JS ficou coberto pelo loader`);
+              await p.close();
+            }
+            await noJs.close();
+
+            // P1/P3: Slow-3G-like startup must remain "connecting", never local/all-done.
+            const slowContext = await browser.newContext({ viewport: { width: 1200, height: 900 } });
+            const slowPage = await slowContext.newPage();
+            await slowPage.route('**/api/config', async route => { await sleep(2800); await route.continue(); });
+            await slowPage.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await slowPage.waitForTimeout(500);
+            const slowText = await slowPage.locator('body').innerText();
+            assert(slowText.includes('conectando...'), 'Durante load o sync não mostra conectando...');
+            assert(slowText.includes('acendendo as tochas...'), 'Durante load a home não mostra estado de carregamento');
+            assert(!slowText.includes('Prévia local'), 'Prévia local apareceu antes de /api/config responder');
+            assert(!slowText.includes('Tudo elegível já foi marcado'), 'Mensagem de tudo marcado apareceu durante loading');
+            assert(!/XP do mundinho\s*0\/0/.test(slowText), 'XP 0/0 apareceu durante loading');
+            await waitReady(slowPage);
+            await slowContext.close();
+
+            // P1: configured Supabase failure must be error, never silent local fallback.
+            const prodConfig = JSON.parse(fs.readFileSync('/tmp/mundinho-config.json', 'utf8'));
+            const errorContext = await browser.newContext({ viewport: { width: 1200, height: 900 } });
+            const errorPage = await errorContext.newPage();
+            await errorPage.route('**/api/config', route => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify(prodConfig) }));
+            await errorPage.route('**.supabase.co/**', route => route.abort('failed'));
+            await errorPage.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await errorPage.getByText('falha de conexão — tentar novamente', { exact: true }).first().waitFor({ timeout: 15000 });
+            const errorText = await errorPage.locator('body').innerText();
+            assert(!errorText.includes('Prévia local'), 'Falha configurada caiu indevidamente em Prévia local');
+            assert(!errorText.includes('Tudo elegível já foi marcado'), 'Erro de dados foi interpretado como conclusão');
+            await errorContext.close();
+
+            // P1: Preview local exists only when config explicitly confirms both values are absent.
+            const localContext = await browser.newContext({ viewport: { width: 1200, height: 900 } });
+            const localPage = await localContext.newPage();
+            await localPage.route('**/api/config', route => route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ supabaseUrl: '', supabasePublishableKey: '', worldId: 'mundinho-pra-sempre' }) }));
+            await localPage.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await localPage.getByText('Prévia local', { exact: true }).first().waitFor({ timeout: 10000 });
+            const localText = await localPage.locator('body').innerText();
+            assert(!localText.includes('Supabase compartilhado'), 'Config ausente foi rotulada como Supabase');
+            await localContext.close();
+
             const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
             const page = await context.newPage();
             const fatal = [];
@@ -100,8 +194,12 @@ jobs:
             for (let i = 0; i < 4; i++) {
               const bgImage = await statCards.nth(i).evaluate(el => getComputedStyle(el).backgroundImage);
               assert(bgImage === 'none', `Stat ${i + 1} ainda tem textura: ${bgImage}`);
-              assert(await statCards.nth(i).locator('.font-display').count() === 1, `Stat ${i + 1} não usa valor display consistente`);
             }
+            for (let i = 0; i < 3; i++) assert(await statCards.nth(i).locator('.font-display').count() === 1, `Stat numérico ${i + 1} não usa display font`);
+            assert((await statCards.nth(0).innerText()).includes('35'), 'Stat Guias não mostra 35');
+            assert((await statCards.nth(1).innerText()).includes('101'), 'Stat Marcos não mostra 101');
+            assert((await statCards.nth(2).innerText()).includes('18'), 'Stat Extras não mostra 18');
+            assert((await statCards.nth(3).innerText()).includes('Supabase compartilhado'), 'Stat Sync não mostra Supabase');
 
             const faceFrames = page.locator('.skin-face-frame');
             assert(await faceFrames.count() >= 3, 'Esperados rostos das skins no header e home');
@@ -115,6 +213,7 @@ jobs:
             const homeText = await page.locator('body').innerText();
             const lastBlock = homeText.split('Última marcação')[1]?.split('Guias')[0] || '';
             assert(!/progression:\d+/.test(lastBlock), `Última marcação expõe chave interna: ${lastBlock}`);
+            assert(!homeText.includes('XP do mundinho\n0/0'), 'Home pronta não pode exibir XP 0/0');
 
             await page.screenshot({ path: 'artifacts/etapa2/home-full.png', fullPage: true });
 
@@ -135,7 +234,7 @@ jobs:
 
             await page.goto(base + '/mods', { waitUntil: 'domcontentloaded' });
             await waitReady(page);
-            await page.getByText('35 guia(s)', { exact: true }).waitFor({ timeout: 30000 });
+            await page.getByText('35 guia(s) nesta seleção', { exact: true }).waitFor({ timeout: 30000 });
             const guides = page.locator('article[id^="guide-"]');
             const guideCount = await guides.count();
             assert(guideCount === 35, `Esperados 35 guias, vieram ${guideCount}`);
@@ -166,9 +265,7 @@ jobs:
               const restored = await button.getAttribute('aria-expanded');
               assert(restored === before, `Accordion ${i + 1} não voltou ao estado inicial`);
             }
-            for (let i = 0; i < accordionCount; i++) {
-              if ((await buttons.nth(i).getAttribute('aria-expanded')) === 'true') await buttons.nth(i).click();
-            }
+            for (let i = 0; i < accordionCount; i++) if ((await buttons.nth(i).getAttribute('aria-expanded')) === 'true') await buttons.nth(i).click();
             await page.screenshot({ path: 'artifacts/etapa2/mods-accordion-closed.png', fullPage: false });
             const firstButton = buttons.first();
             await firstButton.click();
@@ -192,14 +289,12 @@ jobs:
             await page.locator('header').screenshot({ path: 'artifacts/etapa2/header-680.png' });
 
             await page.emulateMedia({ reducedMotion: 'reduce' });
-            const xpPseudo = await page.locator('.xp-fill').evaluate(el => ({
-              name: getComputedStyle(el, '::after').animationName,
-              duration: getComputedStyle(el, '::after').animationDuration,
-            }));
+            const xpPseudo = await page.locator('.xp-fill').evaluate(el => ({ name: getComputedStyle(el, '::after').animationName, duration: getComputedStyle(el, '::after').animationDuration }));
             assert(xpPseudo.name === 'none' || xpPseudo.duration === '0s' || xpPseudo.duration === '0.001ms', `XP glow não respeita reduced-motion: ${JSON.stringify(xpPseudo)}`);
 
             if (fatal.length) throw new Error(fatal.join(' || '));
             fs.writeFileSync('artifacts/etapa2/evidence.txt', [
+              `production-config=${JSON.stringify(prodConfig)}`,
               `hero-color=${heroColor}`,
               `body-bg=${bodyStyles.bg}`,
               `body-pattern=${bodyStyles.image}`,
@@ -207,6 +302,11 @@ jobs:
               `accordion-count-first-guide=${accordionCount}`,
               `header-overflow-680=${overflow}`,
               `reduced-motion-xp=${JSON.stringify(xpPseudo)}`,
+              'p1-slow-start=no-local-fallback',
+              'p1-configured-failure=explicit-error',
+              'p1-absent-config=explicit-preview-local',
+              'p2-js-disabled=static-totals-visible',
+              'p3-loading=never-all-done',
             ].join('\n'));
             await browser.close();
           })().catch(error => { console.error(error); process.exit(1); });
