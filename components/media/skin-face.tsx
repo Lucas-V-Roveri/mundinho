@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element -- Minecraft 64x64 skin sprites rely on exact intrinsic pixels and CSS clipping */
 import { cn } from "@/lib/cn";
 
 export function SkinFace({
