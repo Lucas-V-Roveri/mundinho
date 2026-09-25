@@ -2,7 +2,6 @@
 
 import { SkinFace } from "@/components/media/skin-face";
 import { Select } from "@/components/ui/select";
-import { SyncStatus } from "@/components/shell/sync-status";
 import { useMundinho } from "@/components/app-providers";
 
 export function ActorSelector() {
@@ -24,9 +23,6 @@ export function ActorSelector() {
           <option value="benamu">benamu</option>
         </Select>
       </label>
-      <div className="hidden min-[1180px]:block">
-        <SyncStatus compact />
-      </div>
     </section>
   );
 }
