@@ -78,7 +78,6 @@ jobs:
             await page.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
             await waitReady(page);
 
-            // R1 + S1: paper title is ink; whole app background is night and not brown wood planks.
             const heroTitle = page.getByRole('heading', { name: 'Mundinho · pra sempre', level: 1 });
             assert(await heroTitle.count() === 1, 'Home precisa ter um único h1 legível');
             const heroColor = await heroTitle.evaluate(el => getComputedStyle(el).color);
@@ -87,14 +86,12 @@ jobs:
             assert(bodyStyles.bg === NIGHT, `Body deveria ser night-900; recebeu ${bodyStyles.bg}`);
             assert(!bodyStyles.image.includes('wood'), 'Fundo global não pode usar madeira');
 
-            // R7: search is in header, never fixed over content.
             const search = page.getByRole('button', { name: 'Abrir busca global' });
             assert(await search.count() === 1, 'Busca global ausente');
             const searchPosition = await search.evaluate(el => getComputedStyle(el).position);
             assert(searchPosition !== 'fixed', 'Busca continua flutuando sobre o conteúdo');
             assert(await search.evaluate(el => Boolean(el.closest('header'))), 'Busca precisa pertencer ao header');
 
-            // R8: stone stats are solid; values all share the same display font class.
             const summary = page.getByRole('region', { name: 'Resumo do Mundinho' });
             const statCards = summary.locator('.panel-stone');
             assert(await statCards.count() === 4, 'Esperados quatro stats stone');
@@ -104,7 +101,6 @@ jobs:
               assert(await statCards.nth(i).locator('.font-display').count() === 1, `Stat ${i + 1} não usa valor display consistente`);
             }
 
-            // R4: both player faces are real 64x64 skin sprites, with pixelated rendering.
             const faceFrames = page.locator('.skin-face-frame');
             assert(await faceFrames.count() >= 3, 'Esperados rostos das skins no header e home');
             for (let i = 0; i < Math.min(3, await faceFrames.count()); i++) {
@@ -114,14 +110,12 @@ jobs:
               assert(img.rendering === 'pixelated' || img.rendering === 'crisp-edges', `Skin ${i + 1} perdeu pixel rendering`);
             }
 
-            // R5: raw internal state keys must not leak into the last-marking card.
             const homeText = await page.locator('body').innerText();
             const lastBlock = homeText.split('Última marcação')[1]?.split('Guias')[0] || '';
             assert(!/progression:\d+/.test(lastBlock), `Última marcação expõe chave interna: ${lastBlock}`);
 
             await page.screenshot({ path: 'artifacts/etapa2/home-full.png', fullPage: true });
 
-            // R1 audit: every public page h1 on paper must compute to ink-900.
             for (const [path, heading] of [
               ['/progressao', 'Progressão'],
               ['/mods', 'Mods'],
@@ -137,7 +131,6 @@ jobs:
               assert(color === INK, `${path}: h1 deveria ser ink-900, recebeu ${color}`);
             }
 
-            // R2 + S2/S3: 35 themed guide cards, usable accordions, flat metadata.
             await page.goto(base + '/mods', { waitUntil: 'domcontentloaded' });
             await waitReady(page);
             await page.getByText('35 guia(s)', { exact: true }).waitFor({ timeout: 30000 });
@@ -159,7 +152,6 @@ jobs:
             const firstGuide = guides.first();
             const buttons = firstGuide.locator('.pixel-accordion-trigger');
             assert(await buttons.count() >= 4, 'Primeiro guia deveria ter várias seções de accordion');
-            // Close all for the closed-state evidence and validate every trigger can toggle.
             for (let i = 0; i < await buttons.count(); i++) {
               const button = buttons.nth(i);
               const before = await button.getAttribute('aria-expanded');
@@ -170,7 +162,6 @@ jobs:
               const restored = await button.getAttribute('aria-expanded');
               assert(restored === before, `Accordion ${i + 1} não voltou ao estado inicial`);
             }
-            // Ensure closed screenshot.
             for (let i = 0; i < await buttons.count(); i++) {
               if ((await buttons.nth(i).getAttribute('aria-expanded')) === 'true') await buttons.nth(i).click();
             }
@@ -180,13 +171,12 @@ jobs:
             assert((await firstButton.getAttribute('aria-expanded')) === 'true', 'Accordion não abriu');
             const controls = await firstButton.getAttribute('aria-controls');
             assert(Boolean(controls), 'Accordion sem aria-controls');
-            const panel = page.locator(`#${CSS.escape(controls)}`);
+            const panel = page.locator(`[id="${String(controls).replaceAll('"', '\\"')}"]`);
             assert((await panel.getAttribute('aria-hidden')) === 'false', 'Painel aberto continua aria-hidden');
             const visible = await panel.evaluate(el => { const s = getComputedStyle(el); return s.visibility !== 'hidden' && s.opacity !== '0'; });
             assert(visible, 'Painel aberto não ficou visualmente visível');
             await page.screenshot({ path: 'artifacts/etapa2/mods-accordion-open.png', fullPage: false });
 
-            // R6: 680px header remains compact, actor unit intact, no stray legacy label, no document overflow.
             await page.setViewportSize({ width: 680, height: 900 });
             await page.goto(base + '/', { waitUntil: 'domcontentloaded' });
             await waitReady(page);
@@ -196,7 +186,6 @@ jobs:
             assert(overflow <= 1, `Header/página cria overflow horizontal de ${overflow}px em 680px`);
             await page.locator('header').screenshot({ path: 'artifacts/etapa2/header-680.png' });
 
-            // S7 + permanent reduced-motion contract.
             await page.emulateMedia({ reducedMotion: 'reduce' });
             const xpPseudo = await page.locator('.xp-fill').evaluate(el => ({
               name: getComputedStyle(el, '::after').animationName,
