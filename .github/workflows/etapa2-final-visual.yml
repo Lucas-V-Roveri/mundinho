@@ -81,7 +81,7 @@ jobs:
             const home=await page.locator('body').innerText(); const latest=home.split('Última marcação')[1]?.split('Guias')[0]||''; assert(!/progression:\d+/.test(latest),'R5 chave crua');
             assert(!home.includes('marcando como'),'R6 rótulo antigo'); assert(await page.getByText('quem está marcando?',{exact:true}).count()===1,'R6 label novo ausente');
             assert(await page.locator('.trophy-shelf').count()===1,'S5 shelf ausente'); assert(await page.locator('.xp-fill').count()===1,'S7 XP ausente');
-            const xp=await page.locator('.xp-fill').evaluate(el=>getComputedStyle(el).animationName); assert(xp!=='none','S7 glow XP ausente');
+            const xp=await page.locator('.xp-fill').evaluate(el=>getComputedStyle(el,'::after').animationName); assert(xp!=='none','S7 glow XP ausente');
             await page.screenshot({path:'artifacts/etapa2-final/home-full.png',fullPage:true});
 
             for(const [p,t] of [['/progressao','Progressão'],['/mods','Mods'],['/amendments','Amendments'],['/extras','Extras'],['/bastidores','Bastidores']]) await assertInk(page,p,t);
@@ -94,7 +94,7 @@ jobs:
             const fg=guides.first(), ft=fg.locator('.pixel-accordion-trigger');for(let i=0;i<await ft.count();i++)if((await ft.nth(i).getAttribute('aria-expanded'))==='true')await ft.nth(i).click();await fg.scrollIntoViewIfNeeded();await page.screenshot({path:'artifacts/etapa2-final/mods-closed.png'});const first=ft.first();await first.click();assert((await first.getAttribute('aria-expanded'))==='true','R2 real click');const c=await first.getAttribute('aria-controls');assert(c,'R2 aria-controls');const panel=page.locator('#'+c);assert((await panel.getAttribute('aria-hidden'))==='false','R2 aria-hidden');await page.waitForTimeout(220);await page.screenshot({path:'artifacts/etapa2-final/mods-open.png'});
 
             await page.setViewportSize({width:680,height:900});await page.goto(base+'/',{waitUntil:'domcontentloaded'});await ready(page);const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);assert(overflow<=1,`R6 overflow=${overflow}`);assert(await page.getByText('quem está marcando?',{exact:true}).count()===1,'R6 mobile actor');await page.locator('header').screenshot({path:'artifacts/etapa2-final/header-680.png'});
-            await page.emulateMedia({reducedMotion:'reduce'});const reduced=await page.locator('.xp-fill').evaluate(el=>getComputedStyle(el).animationDuration);assert(reduced==='0s'||reduced==='0.001ms',`S7 reduced=${reduced}`);
+            await page.emulateMedia({reducedMotion:'reduce'});const reduced=await page.locator('.xp-fill').evaluate(el=>getComputedStyle(el,'::after').animationDuration);assert(reduced==='0s'||reduced==='0.001ms',`S7 reduced=${reduced}`);
             assert(pageErrors.length===0,`page errors: ${pageErrors.join(' | ')}`);
             fs.writeFileSync('artifacts/etapa2-final/evidence.txt',[`titles=ink-900`,`body=${body.bg}`,`guides=35`,`accordions=${n}`,`header-overflow-680=${overflow}`,`xp-animation=${xp}`,`xp-reduced=${reduced}`].join('\n'));
             await browser.close();
