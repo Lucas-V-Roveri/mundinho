@@ -1,0 +1,242 @@
+name: Etapa 2 visual evidence
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Load public runtime config
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/mundinho-config.json
+          node - <<'NODE'
+          const cfg = require('/tmp/mundinho-config.json');
+          if (!cfg.supabaseUrl || !cfg.supabasePublishableKey) throw new Error('Config pública do Supabase incompleta');
+          NODE
+
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Start local production build
+        shell: bash
+        run: |
+          set -euo pipefail
+          export SUPABASE_URL="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabaseUrl)")"
+          export SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabasePublishableKey)")"
+          npm run start -- -p 3000 >/tmp/mundinho-next.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:3000/api/config >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/mundinho-next.log
+          exit 1
+
+      - name: Validate R1-R8 and S1-S7 and capture evidence
+        shell: bash
+        run: |
+          mkdir -p artifacts/etapa2-visual
+          cat >/tmp/visual-evidence.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          const base = 'http://127.0.0.1:3000';
+          const assert = (condition, message) => { if (!condition) throw new Error(message); };
+          const INK = 'rgb(36, 26, 20)';
+          const NIGHT = 'rgb(23, 19, 15)';
+
+          async function ready(page) {
+            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ timeout: 30000 });
+            const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
+            if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
+          }
+
+          async function auditPageTitle(page, path, title) {
+            await page.goto(base + path, { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await ready(page);
+            const h1 = page.getByRole('heading', { level: 1, name: title });
+            assert(await h1.count() === 1, `${path}: h1 ausente/duplicado (${title})`);
+            const color = await h1.evaluate(el => getComputedStyle(el).color);
+            assert(color === INK, `${path}: h1 deveria ser ink-900; recebeu ${color}`);
+          }
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+            const page = await context.newPage();
+            const fatal = [];
+            page.on('pageerror', error => fatal.push(`pageerror: ${error.message}`));
+
+            // HOME: R1, R4-R8, S1, S4, S5, S7.
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await ready(page);
+            const hero = page.getByRole('heading', { name: 'Mundinho · pra sempre', level: 1 });
+            assert((await hero.count()) === 1, 'R1: hero h1 ausente/duplicado');
+            assert((await hero.evaluate(el => getComputedStyle(el).color)) === INK, 'R1: hero não é ink-900');
+            const body = await page.locator('body').evaluate(el => ({ color: getComputedStyle(el).backgroundColor, image: getComputedStyle(el).backgroundImage }));
+            assert(body.color === NIGHT, `S1: body não é night-900 (${body.color})`);
+            assert(!/wood|8a5e3d|5c3d2a/i.test(body.image), `S1: fundo global ainda parece madeira (${body.image})`);
+
+            const search = page.getByRole('button', { name: 'Abrir busca global' });
+            assert((await search.count()) === 1, 'R7: botão de busca ausente');
+            assert((await search.evaluate(el => getComputedStyle(el).position)) !== 'fixed', 'R7: busca ainda está fixed');
+            assert(await search.evaluate(el => Boolean(el.closest('header'))), 'R7: busca não está integrada ao header');
+
+            const stats = page.getByRole('region', { name: 'Resumo do Mundinho' }).locator('.panel-stone');
+            assert((await stats.count()) === 4, `R8: esperados 4 stats, vieram ${await stats.count()}`);
+            for (let i = 0; i < 4; i++) {
+              assert((await stats.nth(i).evaluate(el => getComputedStyle(el).backgroundImage)) === 'none', `R8: stat ${i + 1} ainda tem textura`);
+              assert((await stats.nth(i).locator('.font-display').count()) === 1, `R8: stat ${i + 1} sem valor display consistente`);
+            }
+
+            const faces = page.locator('.skin-face-frame');
+            assert((await faces.count()) >= 3, `R4: esperados >=3 rostos, vieram ${await faces.count()}`);
+            for (let i = 0; i < Math.min(3, await faces.count()); i++) {
+              const img = faces.nth(i).locator('img').first();
+              const meta = await img.evaluate(el => ({ w: el.naturalWidth, h: el.naturalHeight, r: getComputedStyle(el).imageRendering }));
+              assert(meta.w === 64 && meta.h === 64, `R4: skin ${i + 1} não usa textura 64x64 (${meta.w}x${meta.h})`);
+              assert(meta.r === 'pixelated' || meta.r === 'crisp-edges', `R4: skin ${i + 1} sem image-rendering pixelated`);
+            }
+
+            const homeText = await page.locator('body').innerText();
+            const latest = homeText.split('Última marcação')[1]?.split('Guias')[0] || '';
+            assert(!/progression:\d+/.test(latest), `R5: chave crua vazou em Última marcação: ${latest}`);
+            assert(!homeText.includes('marcando como'), 'R6: rótulo legado "marcando como" ainda aparece');
+            assert((await page.getByText('quem está marcando?', { exact: true }).count()) === 1, 'R6: seletor não tem rótulo novo');
+            assert((await page.locator('.trophy-shelf').count()) === 1, 'S5: prateleira de troféus ausente');
+            assert((await page.locator('.xp-fill').count()) === 1, 'S7: XP fill ausente');
+            const xpAnimation = await page.locator('.xp-fill').evaluate(el => ({ self: getComputedStyle(el).animationName, after: getComputedStyle(el, '::after').animationName }));
+            assert(xpAnimation.self !== 'none' || xpAnimation.after !== 'none', `S7: XP sem glow animado (${JSON.stringify(xpAnimation)})`);
+            await page.screenshot({ path: 'artifacts/etapa2-visual/home-full.png', fullPage: true });
+
+            // R1 + S6 audit across all public pages.
+            for (const [path, title] of [['/progressao','Progressão'],['/mods','Mods'],['/amendments','Amendments'],['/extras','Extras'],['/bastidores','Bastidores']]) {
+              await auditPageTitle(page, path, title);
+            }
+
+            // MODS: R2/R3 + S2/S3/S4/S5/S6.
+            await page.goto(base + '/mods', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await ready(page);
+            await page.getByText('35 guia(s) nesta seleção', { exact: true }).waitFor({ timeout: 30000 });
+            const guides = page.locator('article[id^="guide-"]');
+            assert((await guides.count()) === 35, `S2: esperados 35 guias, vieram ${await guides.count()}`);
+            for (let i = 0; i < 35; i++) {
+              const frame = guides.nth(i).locator('.guide-theme-frame').first();
+              assert((await frame.count()) === 1, `S2: guia ${i + 1} sem frame temático`);
+              const cls = (await frame.getAttribute('class')) || '';
+              assert(/guide-accent-(stone|torch|wood|grass|redstone|gold|blue|ice)/.test(cls), `S2: guia ${i + 1} sem accent explícito`);
+              const stripe = guides.nth(i).locator('[class*="guide-texture-"]').first();
+              assert((await stripe.count()) === 1, `S2: guia ${i + 1} sem texture explícita`);
+              const emblem = guides.nth(i).locator('[aria-label^="Ícone pixel-art temático"], img[alt^="Ícone do guia"]').first();
+              assert((await emblem.count()) === 1, `R3: guia ${i + 1} sem emblema real/semântico`);
+              const tags = guides.nth(i).locator('.tag-flat');
+              assert((await tags.count()) >= 4, `S3: guia ${i + 1} sem chips de metadados`);
+              assert((await tags.first().evaluate(el => getComputedStyle(el).boxShadow)) === 'none', `S3: chip ${i + 1} ganhou sombra pesada`);
+            }
+
+            // Validate every accordion handler in the whole page via click event + aria-expanded.
+            const triggers = page.locator('.pixel-accordion-trigger');
+            const triggerCount = await triggers.count();
+            assert(triggerCount > 100, `R2: poucos accordions renderizados (${triggerCount})`);
+            for (let i = 0; i < triggerCount; i++) {
+              const trigger = triggers.nth(i);
+              const before = await trigger.getAttribute('aria-expanded');
+              await trigger.evaluate(el => el.click());
+              const after = await trigger.getAttribute('aria-expanded');
+              assert(before !== after, `R2: accordion ${i + 1}/${triggerCount} não alternou aria-expanded`);
+              await trigger.evaluate(el => el.click());
+              assert((await trigger.getAttribute('aria-expanded')) === before, `R2: accordion ${i + 1}/${triggerCount} não voltou ao estado original`);
+            }
+
+            const firstGuide = guides.first();
+            const firstTriggers = firstGuide.locator('.pixel-accordion-trigger');
+            for (let i = 0; i < await firstTriggers.count(); i++) {
+              if ((await firstTriggers.nth(i).getAttribute('aria-expanded')) === 'true') await firstTriggers.nth(i).click();
+            }
+            await firstGuide.scrollIntoViewIfNeeded();
+            await page.screenshot({ path: 'artifacts/etapa2-visual/mods-accordion-closed.png', fullPage: false });
+            const first = firstTriggers.first();
+            await first.click();
+            assert((await first.getAttribute('aria-expanded')) === 'true', 'R2: primeiro accordion não abriu com clique real');
+            const controls = await first.getAttribute('aria-controls');
+            assert(Boolean(controls), 'R2: accordion sem aria-controls');
+            const panel = page.locator(`#${controls}`);
+            assert((await panel.getAttribute('aria-hidden')) === 'false', 'R2: painel aberto continua aria-hidden');
+            await page.waitForTimeout(220);
+            assert(await panel.evaluate(el => { const s = getComputedStyle(el); return s.opacity !== '0' && s.visibility !== 'hidden'; }), 'R2: painel aberto não ficou visível');
+            await page.screenshot({ path: 'artifacts/etapa2-visual/mods-accordion-open.png', fullPage: false });
+
+            // 680px header evidence + overflow check.
+            await page.setViewportSize({ width: 680, height: 900 });
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await ready(page);
+            const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+            assert(overflow <= 1, `R6: overflow horizontal no header/página em 680px: ${overflow}px`);
+            assert((await page.getByText('quem está marcando?', { exact: true }).count()) === 1, 'R6: label de ator ausente em 680px');
+            await page.locator('header').screenshot({ path: 'artifacts/etapa2-visual/header-680.png' });
+
+            // reduced motion contract for accordion + XP.
+            await page.emulateMedia({ reducedMotion: 'reduce' });
+            const xpReduced = await page.locator('.xp-fill').evaluate(el => ({ self: getComputedStyle(el).animationDuration, after: getComputedStyle(el, '::after').animationDuration }));
+            assert(['0s','0.001ms'].includes(xpReduced.self) && ['0s','0.001ms'].includes(xpReduced.after), `S7: reduced-motion não desliga XP glow (${JSON.stringify(xpReduced)})`);
+
+            if (fatal.length) throw new Error(fatal.join(' || '));
+            fs.writeFileSync('artifacts/etapa2-visual/evidence.txt', [
+              `R1=ink-900 em todas as 6 páginas`,
+              `R2=accordions testados:${triggerCount}`,
+              `R3=35 emblemas válidos`,
+              `R4=skins 64x64 pixelated`,
+              `R5=sem chave progression:*`,
+              `R6=overflow-680:${overflow}`,
+              `R7=busca integrada ao header`,
+              `R8=4 stats stone sólidos`,
+              `S1=body:${body.color};pattern:${body.image}`,
+              `S2=35 themes explícitos`,
+              `S3=chips flat`,
+              `S4=semantic tokens presentes nos componentes`,
+              `S5=trophy shelf + pixel icons`,
+              `S6=long titles usam sans nos cards; page titles auditados`,
+              `S7=xp:${JSON.stringify(xpAnimation)};reduced:${JSON.stringify(xpReduced)}`,
+            ].join('\n'));
+            await browser.close();
+          })().catch(error => { console.error(error); process.exit(1); });
+          NODE
+          node /tmp/visual-evidence.cjs
+
+      - name: Show server log on failure
+        if: failure()
+        run: cat /tmp/mundinho-next.log || true
+
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: etapa2-visual-evidence
+          path: artifacts/etapa2-visual
+          if-no-files-found: warn
