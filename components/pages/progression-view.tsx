@@ -5,16 +5,18 @@ import { useMundinho } from "@/components/app-providers";
 import { ChecklistItem } from "@/components/checklist/checklist-item";
 import { CustomItemPanel } from "@/components/checklist/custom-item-panel";
 import { ContentIcon, iconKindForType } from "@/components/media/content-icon";
+import { DataStatePanel } from "@/components/ui/data-state";
 import { Select } from "@/components/ui/select";
 import { Tag } from "@/components/ui/tag";
 import { PHASE_EQUIPMENT, PHASE_ORDER, flatPlayerKey, isPlaceholder, personalSubitemProgress, sortProgression } from "@/lib/progression-model";
+import { STATIC_TOTALS } from "@/lib/static-totals";
 import type { Actor, ProgressionItem } from "@/types/content";
 
 const phases = ["Todas", ...PHASE_ORDER];
 const risks = ["Todos", "Baixo", "Médio", "Alto", "Severo"];
 
 export function ProgressionView() {
-  const { content, states, actor } = useMundinho();
+  const { content, states, actor, dataStatus, dataError, retry } = useMundinho();
   const [phase, setPhase] = React.useState("Todas");
   const [risk, setRisk] = React.useState("Todos");
   React.useEffect(() => { const frame = requestAnimationFrame(() => { setPhase(localStorage.getItem("mundinho.filter.phase") || "Todas"); setRisk(localStorage.getItem("mundinho.filter.risk") || "Todos"); }); return () => cancelAnimationFrame(frame); }, []);
@@ -23,22 +25,25 @@ export function ProgressionView() {
   const sorted = React.useMemo(() => sortProgression(content.progression), [content.progression]);
   const filtered = sorted.filter((item) => (phase === "Todas" || item.phase === phase) && (risk === "Todos" || item.risk === risk));
   const byId = React.useMemo(() => new Map(content.progression.map((item) => [item.id, item])), [content.progression]);
+  const ready = dataStatus === "ready";
 
   return <div className="space-y-6 page-enter">
-    <header className="pixel-surface panel-paper p-5 text-ink-900"><p className="font-label text-2xl text-wood-700">{content.progression.length} marcos do mundinho</p><h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Progressão</h1><p className="mt-3 max-w-4xl leading-7 text-ink-900">Por fase, risco e dependências reais. É uma ordem de conforto, não uma corrida para zerar tudo.</p></header>
-    <section className="grid gap-3 border border-stone-500 bg-stone-100 p-4 text-ink-900 sm:grid-cols-2"><label className="font-label text-xl">Fase<Select className="mt-1" value={phase} onChange={(event) => setPhaseSaved(event.target.value)}>{phases.map((value) => <option key={value}>{value}</option>)}</Select></label><label className="font-label text-xl">Risco<Select className="mt-1" value={risk} onChange={(event) => setRiskSaved(event.target.value)}>{risks.map((value) => <option key={value}>{value}</option>)}</Select></label></section>
+    <header className="pixel-surface panel-paper p-5 text-ink-900"><p className="font-label text-2xl text-wood-700">{STATIC_TOTALS.progression} marcos do mundinho</p><h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Progressão</h1><p className="mt-3 max-w-4xl leading-7 text-ink-900">Por fase, risco e dependências reais. É uma ordem de conforto, não uma corrida para zerar tudo.</p></header>
+    <section className="grid gap-3 border border-stone-500 bg-stone-100 p-4 text-ink-900 sm:grid-cols-2"><label className="font-label text-xl">Fase<Select disabled={!ready} className="mt-1" value={phase} onChange={(event) => setPhaseSaved(event.target.value)}>{phases.map((value) => <option key={value}>{value}</option>)}</Select></label><label className="font-label text-xl">Risco<Select disabled={!ready} className="mt-1" value={risk} onChange={(event) => setRiskSaved(event.target.value)}>{risks.map((value) => <option key={value}>{value}</option>)}</Select></label></section>
 
-    {PHASE_ORDER.map((phaseName) => {
-      const phaseItems = filtered.filter((item) => item.phase === phaseName);
-      if (!phaseItems.length) return null;
-      const allInPhase = content.progression.filter((item) => item.phase === phaseName);
-      const complete = allInPhase.filter((item) => states[item.id]?.completed).length;
-      return <section key={phaseName} className="space-y-4" aria-labelledby={`phase-${phaseName}`}>
-        <header className="pixel-surface header-texture-wood p-4 text-paper-50"><h2 id={`phase-${phaseName}`} className="font-display text-base sm:text-xl">{phaseName} · {complete}/{allInPhase.length}</h2><p className="mt-2 text-sm leading-6">Equipamento sugerido: {PHASE_EQUIPMENT[phaseName]}</p></header>
-        <div className="grid gap-4">{phaseItems.map((item) => <ProgressionCard key={item.id} item={item} byId={byId} actor={actor} />)}</div>
-      </section>;
-    })}
-    <CustomItemPanel section="progression" entryKey="progression" />
+    {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText="organizando os 101 marcos..." /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : content.progression.length === 0 ? <DataStatePanel status="empty" emptyText="A progressão carregou, mas não trouxe nenhum marco." /> : <>
+      {PHASE_ORDER.map((phaseName) => {
+        const phaseItems = filtered.filter((item) => item.phase === phaseName);
+        if (!phaseItems.length) return null;
+        const allInPhase = content.progression.filter((item) => item.phase === phaseName);
+        const complete = allInPhase.filter((item) => states[item.id]?.completed).length;
+        return <section key={phaseName} className="space-y-4" aria-labelledby={`phase-${phaseName}`}>
+          <header className="pixel-surface header-texture-wood p-4 text-paper-50"><h2 id={`phase-${phaseName}`} className="font-display text-base sm:text-xl">{phaseName} · {complete}/{allInPhase.length}</h2><p className="mt-2 text-sm leading-6">Equipamento sugerido: {PHASE_EQUIPMENT[phaseName]}</p></header>
+          <div className="grid gap-4">{phaseItems.map((item) => <ProgressionCard key={item.id} item={item} byId={byId} actor={actor} />)}</div>
+        </section>;
+      })}
+      <CustomItemPanel section="progression" entryKey="progression" />
+    </>}
   </div>;
 }
 
