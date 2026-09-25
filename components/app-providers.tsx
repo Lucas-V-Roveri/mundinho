@@ -110,13 +110,14 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
       toast({ title: "Falha de conexão", description: message, variant: "error" });
     };
 
-    const activateLocalPreview = async (worldId: string, reason: string) => {
+    const activateLocalPreview = async (worldId: string) => {
       const store = createDataStore(null, worldId || DEFAULT_WORLD);
       store.configureSubitems(buildSubitemMap(bundledContentStore.progression));
       storeRef.current = store;
       await store.ensureCompatibility(storedActor);
       await refresh();
       if (cancelled) return;
+      const reason = "Configuração do Supabase ausente: o conteúdo compartilhado da wiki não pôde ser carregado; usando o snapshot tipado completo e o progresso deste navegador.";
       setContent(bundledContentStore);
       setMode("preview-local");
       setSyncStatus("preview-local");
@@ -129,48 +130,36 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
     };
 
     void (async () => {
-      let config;
-      try {
-        config = await loadPublicRuntimeConfig();
-      } catch (error) {
-        await activateLocalPreview(DEFAULT_WORLD, `Configuração remota indisponível. A wiki continua completa neste navegador: ${errorMessage(error)}`);
-        return;
-      }
-
+      const config = await loadPublicRuntimeConfig();
       const configState = classifyRuntimeConfig(config);
       const worldId = config.worldId || DEFAULT_WORLD;
 
       if (configState.kind === "absent") {
-        await activateLocalPreview(worldId, "Supabase não configurado. Conteúdo completo e progresso continuam disponíveis apenas neste navegador.");
+        await activateLocalPreview(worldId);
         return;
       }
 
       if (configState.kind === "invalid") {
-        await activateLocalPreview(worldId, `Configuração do Supabase inválida. Usando prévia local: ${configState.reason}`);
-        return;
+        throw new Error(configState.reason);
       }
 
-      try {
-        const client = getBrowserSupabase(configState.config) as SupabaseClient;
-        const loadedContent = await loadContentStore(client);
-        const store = createDataStore(client, worldId);
-        store.configureSubitems(buildSubitemMap(loadedContent.progression));
-        storeRef.current = store;
-        await store.ensureCompatibility(storedActor);
-        await refresh();
-        if (cancelled) return;
+      const client = getBrowserSupabase(configState.config) as SupabaseClient;
+      const loadedContent = await loadContentStore(client);
+      const store = createDataStore(client, worldId);
+      store.configureSubitems(buildSubitemMap(loadedContent.progression));
+      storeRef.current = store;
+      await store.ensureCompatibility(storedActor);
+      await refresh();
+      if (cancelled) return;
 
-        setContent(loadedContent);
-        setMode("supabase");
-        setSyncStatus("supabase");
-        setDataStatus("ready");
-        setDataError(null);
-        unsubscribe = store.subscribe(() => {
-          void refresh().catch(failHard);
-        });
-      } catch (error) {
-        await activateLocalPreview(worldId, `Supabase indisponível. Conteúdo completo e progresso local preservados: ${errorMessage(error)}`);
-      }
+      setContent(loadedContent);
+      setMode("supabase");
+      setSyncStatus("supabase");
+      setDataStatus("ready");
+      setDataError(null);
+      unsubscribe = store.subscribe(() => {
+        void refresh().catch(failHard);
+      });
     })().catch(failHard);
 
     return () => {
