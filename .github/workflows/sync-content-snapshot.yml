@@ -1,12 +1,6 @@
 name: Sync typed content snapshot
 
 on:
-  push:
-    branches: [migration/finalize-all-stages]
-    paths:
-      - scripts/sync-content-snapshot.mjs
-      - types/content.ts
-      - .github/workflows/sync-content-snapshot.yml
   workflow_dispatch:
 
 permissions:
@@ -14,12 +8,11 @@ permissions:
 
 jobs:
   sync:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: migration/finalize-all-stages
+          ref: main
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
@@ -37,5 +30,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/content-snapshot.generated.ts
-          git commit -m "chore: refresh bundled content snapshot [skip ci]"
-          git push origin HEAD:migration/finalize-all-stages
+          git commit -m "chore: refresh bundled content snapshot"
+          git push origin HEAD:main
