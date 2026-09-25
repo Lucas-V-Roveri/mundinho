@@ -17,7 +17,7 @@ import { cn } from "@/lib/cn";
 import type { Actor, ContentStore, CustomItem, ProgressionItem, ProgressionSubitem } from "@/types/content";
 
 export function HomeView() {
-  const { actor, content, states, playerStates, customItems, dataStatus, dataError, retry } = useMundinho();
+  const { actor, content, states, playerStates, customItems, dataStatus, dataError, syncStatus, retry } = useMundinho();
   const ids = new Set<string>();
   content.guides.forEach((guide) => guide.checklist.forEach(([id]) => ids.add(id)));
   content.progression.forEach((item) => ids.add(item.id));
@@ -34,6 +34,7 @@ export function HomeView() {
   const lastLabel = last ? resolveStateLabel(content, customItems, last.item_id) : null;
   const trophies = buildTrophies(content.progression);
   const unlockedTrophies = trophies.filter((trophy) => states[trophy.stateId]?.completed || (["gr1d", "benamu"] as const).some((who) => playerStates[flatPlayerKey(who, trophy.stateId)]?.completed));
+  const syncValue = syncStatus === "supabase" ? "ONLINE" : syncStatus === "preview-local" ? "LOCAL" : syncStatus === "connecting" ? "..." : "ERRO";
 
   return (
     <div className="space-y-6 page-enter">
@@ -92,7 +93,7 @@ export function HomeView() {
         <Stat icon="book" title="Guias" value={String(STATIC_TOTALS.guides)} />
         <Stat icon="compass" title="Marcos" value={String(STATIC_TOTALS.progression)} />
         <Stat icon="heart" title="Ideias extras" value={String(STATIC_TOTALS.extras)} />
-        <Card surface="stone" className="bg-stone-100 text-ink-900"><CardContent className="min-h-32"><span className="flex items-center gap-2 font-label text-xl text-ink-700"><PixelIcon name="torch" size={18} /> Sincronização</span><div className="mt-3"><SyncStatus /></div></CardContent></Card>
+        <Card surface="stone" className="bg-stone-100 text-ink-900"><CardContent className="min-h-32"><span className="flex items-center gap-2 font-label text-xl text-ink-700"><PixelIcon name="torch" size={18} /> Sincronização</span><strong className="mt-3 block break-words font-display text-xl leading-relaxed text-night-950 sm:text-2xl">{syncValue}</strong><div className="mt-2"><SyncStatus compact /></div></CardContent></Card>
       </section>
 
       <section className="grid gap-4 md:grid-cols-2">
