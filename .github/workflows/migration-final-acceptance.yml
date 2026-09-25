@@ -90,7 +90,7 @@ jobs:
             // Etapa 4: bundled typed content is complete without Supabase.
             await page.goto(base + '/mods', { waitUntil: 'domcontentloaded' });
             await ready(page);
-            await page.getByText('35 guia(s)', { exact: true }).waitFor();
+            await page.getByText('35 guia(s) nesta seleção', { exact: true }).waitFor();
             assert(await page.locator('article[id^="guide-"]').count() === 35, 'Snapshot local não trouxe 35 guias');
 
             await page.goto(base + '/progressao', { waitUntil: 'domcontentloaded' });
@@ -184,7 +184,6 @@ jobs:
             await customCard.getByRole('button', { name: 'arquivar' }).click();
             const archiveDialog = page.getByRole('dialog', { name: 'Arquivar este item?' });
             await archiveDialog.getByRole('button', { name: 'Arquivar' }).click();
-            await page.getByText('Teste final de migração', { exact: true }).waitFor({ state: 'detached', timeout: 5000 }).catch(() => {});
             const customRows = await page.evaluate(() => JSON.parse(localStorage.getItem('mundinho.preview.custom.mundinho-pra-sempre') || '[]'));
             const archived = customRows.find(row => row.title === 'Teste final de migração');
             assert(archived?.deleted === true && archived?.deleted_at, 'Soft delete local não preservou tombstone');
@@ -252,7 +251,7 @@ jobs:
             await page.waitForTimeout(1500);
             assert(sockets.some(url => url.includes('/realtime/v1/websocket')), `Realtime websocket não abriu: ${JSON.stringify(sockets)}`);
             await page.goto('http://127.0.0.1:3001/mods', { waitUntil: 'domcontentloaded' });
-            await page.getByText('35 guia(s)', { exact: true }).waitFor({ timeout: 30000 });
+            await page.getByText('35 guia(s) nesta seleção', { exact: true }).waitFor({ timeout: 30000 });
             if (errors.length) throw new Error(errors.join(' | '));
             require('fs').writeFileSync('artifacts/final-acceptance/supabase-evidence.txt', `realtime=${sockets.join('\n')}\n`);
             await browser.close();
