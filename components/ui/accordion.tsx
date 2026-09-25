@@ -41,7 +41,7 @@ export function AccordionItem({
   }
 
   return (
-    <section className={cn("accordion-item border-4 border-night-950 bg-wood-700 text-paper-50 shadow-pixel", className)}>
+    <section className={cn("accordion-item border-2 border-night-950 bg-paper-100 text-ink-900", className)}>
       <Heading>
         <button
           id={buttonId}
@@ -49,7 +49,7 @@ export function AccordionItem({
           aria-expanded={isOpen}
           aria-controls={panelId}
           onClick={toggle}
-          className="pixel-accordion-trigger flex w-full items-center justify-between gap-4 bg-wood-500 px-4 py-3 text-left font-label text-xl text-paper-50 hover:bg-wood-300 hover:text-ink-900"
+          className="pixel-control pixel-accordion-trigger header-texture-wood flex w-full items-center justify-between gap-4 border-4 border-night-950 px-4 py-3 text-left font-label text-xl text-paper-50 hover:bg-wood-500"
         >
           <span>{title}</span>
           <span aria-hidden="true" className="accordion-chevron text-2xl" data-open={isOpen ? "true" : "false"}>
@@ -65,7 +65,7 @@ export function AccordionItem({
         className="accordion-panel"
       >
         <div className="overflow-hidden">
-          <div className="border-t-4 border-wood-900 bg-paper-100 p-4 text-ink-900">{children}</div>
+          <div className="border-t-2 border-wood-900/30 bg-paper-100 p-4 text-ink-900">{children}</div>
         </div>
       </div>
     </section>
