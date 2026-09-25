@@ -65,7 +65,14 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   const storeRef = React.useRef<DataStore | null>(null);
   const audioRef = React.useRef<AudioContext | null>(null);
 
-  const retry = React.useCallback(() => setRetryNonce((value) => value + 1), []);
+  const retry = React.useCallback(() => {
+    setSyncStatus("connecting");
+    setDataStatus("loading");
+    setDataError(null);
+    setMode(null);
+    storeRef.current = null;
+    setRetryNonce((value) => value + 1);
+  }, []);
 
   const refresh = React.useCallback(async () => {
     const store = storeRef.current;
@@ -90,11 +97,6 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
 
     let unsubscribe = () => {};
     let cancelled = false;
-
-    setSyncStatus("connecting");
-    setDataStatus("loading");
-    setDataError(null);
-    setMode(null);
     storeRef.current = null;
 
     const fail = (error: unknown) => {
