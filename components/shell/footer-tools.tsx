@@ -15,7 +15,7 @@ export function FooterTools() {
     <section aria-label="Ferramentas do diário" className="flex flex-wrap items-center gap-2">
       <div className="mr-auto flex flex-wrap items-center gap-2">
         <span className="font-label text-lg text-paper-100">sincronização:</span>
-        <SyncStatus />
+        <SyncStatus compact />
       </div>
       <Button variant="ghost" size="sm" onClick={() => setSoundEnabled(!soundEnabled)} aria-pressed={soundEnabled}>
         <PixelIcon name="heart" size={16} /> Som: {soundEnabled ? "ligado" : "desligado"}
