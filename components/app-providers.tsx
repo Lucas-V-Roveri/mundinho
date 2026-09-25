@@ -127,7 +127,8 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
         setContent(emptyContentStore);
         setMode("preview-local");
         setSyncStatus("preview-local");
-        setDataStatus("ready");
+        setDataStatus("error");
+        setDataError("Configuração do Supabase ausente: a prévia local mantém apenas o estado deste navegador; o conteúdo compartilhado da wiki não pôde ser carregado.");
         unsubscribe = store.subscribe(() => {
           void refresh().catch(fail);
         });
@@ -147,6 +148,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
       setMode("supabase");
       setSyncStatus("supabase");
       setDataStatus("ready");
+      setDataError(null);
       unsubscribe = store.subscribe(() => {
         void refresh().catch(fail);
       });
