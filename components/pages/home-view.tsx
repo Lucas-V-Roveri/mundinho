@@ -38,7 +38,7 @@ export function HomeView() {
         <Card surface="paper" className="relative overflow-hidden text-ink-900">
           <CardHeader className="border-t-2 border-t-torch-500 text-ink-900">
             <p className="font-label text-2xl text-wood-700">nosso mundo</p>
-            <CardTitle display className="text-ink-900">Mundinho · pra sempre</CardTitle>
+            <h1 className="font-display text-base leading-relaxed text-ink-900 sm:text-xl">Mundinho · pra sempre</h1>
           </CardHeader>
           <CardContent className="text-ink-900">
             <p className="max-w-2xl text-base leading-7">Um canto para lembrar o que já fizemos, decidir o próximo desafio e não esquecer aquela receita que a gente jurou que ia lembrar.</p>
@@ -59,8 +59,8 @@ export function HomeView() {
           </CardContent>
         </Card>
 
-        <figure className="polaroid-card rotate-[-1deg] border-4 border-night-950 bg-paper-50 p-3 pb-5 shadow-pixel">
-          <div className="relative aspect-[4/3] overflow-hidden border-2 border-night-950 bg-stone-300"><Image src="/memories/selfie.jpg" alt="Lembrança do Mundinho" fill className="object-cover image-pixel-soft" sizes="(max-width: 1024px) 100vw, 35vw" /></div>
+        <figure className="polaroid-card rotate-[-1deg] border-2 border-night-950 bg-paper-50 p-3 pb-5 shadow-soft">
+          <div className="relative aspect-[4/3] overflow-hidden border border-night-950 bg-stone-300"><Image src="/memories/selfie.jpg" alt="Lembrança do Mundinho" fill className="object-cover image-pixel-soft" sizes="(max-width: 1024px) 100vw, 35vw" /></div>
           <figcaption className="mt-3 text-center font-label text-2xl text-ink-900">A fogueira fica. A gente já volta.</figcaption>
         </figure>
       </section>
