@@ -137,6 +137,13 @@ export type BackstagePayload = {
   image_sources?: ImageSource[];
 };
 
+/** Raw row contract shared by Supabase and the generated offline snapshot. */
+export type ContentSnapshotRow = {
+  key: string;
+  lot: number;
+  payload: unknown;
+};
+
 export type ContentStore = {
   guides: Guide[];
   progression: ProgressionItem[];
