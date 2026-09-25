@@ -15,12 +15,14 @@ export const ChecklistCheckbox = React.forwardRef<HTMLInputElement, ChecklistChe
     const generatedId = React.useId();
     const inputId = id ?? `check-${generatedId}`;
     const metaId = meta ? `${inputId}-meta` : undefined;
+    const isChecked = Boolean(checked ?? defaultChecked);
 
     return (
       <label
         htmlFor={inputId}
         className={cn(
-          "group flex cursor-pointer items-start gap-3 border-4 border-night-950 bg-paper-50 p-3 text-ink-900 shadow-pixel-sm transition-[transform,box-shadow,background-color] duration-150 ease-pixel hover:-translate-y-0.5 hover:bg-torch-100 disabled:pointer-events-none",
+          "group flex cursor-pointer items-start gap-3 border-4 border-night-950 p-3 text-ink-900 shadow-pixel-sm transition-[transform,box-shadow,background-color,border-color] duration-150 ease-pixel hover:-translate-y-0.5",
+          isChecked ? "border-grass-700 bg-grass-100 hover:bg-grass-100" : "bg-paper-50 hover:bg-torch-100",
           disabled && "cursor-not-allowed opacity-55",
           className,
         )}
@@ -46,7 +48,7 @@ export const ChecklistCheckbox = React.forwardRef<HTMLInputElement, ChecklistChe
         <span className="min-w-0 flex-1">
           <span className="block font-label text-xl leading-none peer-checked:line-through">{label}</span>
           {meta ? (
-            <span id={metaId} className="mt-1 block text-xs leading-5 text-ink-700">
+            <span id={metaId} className={cn("mt-1 block text-xs leading-5", isChecked ? "text-grass-900" : "text-ink-700")}>
               {meta}
             </span>
           ) : null}
