@@ -173,8 +173,9 @@ jobs:
             assert(Boolean(controls), 'Accordion sem aria-controls');
             const panel = page.locator(`[id="${String(controls).replaceAll('"', '\\"')}"]`);
             assert((await panel.getAttribute('aria-hidden')) === 'false', 'Painel aberto continua aria-hidden');
-            const visible = await panel.evaluate(el => { const s = getComputedStyle(el); return s.visibility !== 'hidden' && s.opacity !== '0'; });
-            assert(visible, 'Painel aberto não ficou visualmente visível');
+            await page.waitForTimeout(240);
+            const visible = await panel.evaluate(el => { const s = getComputedStyle(el); return s.visibility !== 'hidden' && Number.parseFloat(s.opacity) > 0.9; });
+            assert(visible, 'Painel aberto não ficou visualmente visível depois da transição');
             await page.screenshot({ path: 'artifacts/etapa2/mods-accordion-open.png', fullPage: false });
 
             await page.setViewportSize({ width: 680, height: 900 });
