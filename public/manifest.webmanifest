@@ -3,11 +3,18 @@
   "short_name": "Mundinho",
   "description": "Wiki e diário do foreverworld de gr1d e benamu.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#33251d",
-  "theme_color": "#5d402f",
+  "background_color": "#17130f",
+  "theme_color": "#17130f",
   "lang": "pt-BR",
+  "categories": ["games", "lifestyle"],
   "icons": [
-    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
   ]
 }
