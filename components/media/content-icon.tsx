@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element -- raw local pixel assets need exact browser rendering and a simple onError fallback */
 "use client";
 
 import * as React from "react";
