@@ -2,14 +2,14 @@
 
 import * as React from "react";
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { useToast } from "@/components/ui/toast";
 import { getBrowserSupabase } from "@/lib/supabase/browser";
 import { classifyRuntimeConfig, loadPublicRuntimeConfig } from "@/lib/runtime-config";
 import { createDataStore, type DataMode, type DataStore } from "@/lib/db";
-import { emptyContentStore, loadContentStore } from "@/lib/content-store";
+import { bundledContentStore, loadContentStore } from "@/lib/content-store";
 import { hasLegacyData } from "@/lib/legacy-migration";
 import { buildSubitemMap } from "@/lib/progression-model";
 import type { Actor, ContentSection, ContentStore, CustomItem, ItemState, PlayerItemState } from "@/types/content";
-import { useToast } from "@/components/ui/toast";
 
 const DEFAULT_WORLD = "mundinho-pra-sempre";
 
@@ -57,7 +57,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
   const [dataStatus, setDataStatus] = React.useState<DataStatus>("loading");
   const [dataError, setDataError] = React.useState<string | null>(null);
   const [retryNonce, setRetryNonce] = React.useState(0);
-  const [content, setContent] = React.useState<ContentStore>(emptyContentStore);
+  const [content, setContent] = React.useState<ContentStore>(bundledContentStore);
   const [states, setStates] = React.useState<Record<string, ItemState>>({});
   const [playerStates, setPlayerStates] = React.useState<Record<string, PlayerItemState>>({});
   const [customItems, setCustomItems] = React.useState<CustomItem[]>([]);
@@ -99,7 +99,7 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
     let cancelled = false;
     storeRef.current = null;
 
-    const fail = (error: unknown) => {
+    const failHard = (error: unknown) => {
       if (cancelled) return;
       const message = errorMessage(error);
       setSyncStatus("error");
@@ -110,29 +110,37 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
       toast({ title: "Falha de conexão", description: message, variant: "error" });
     };
 
+    const activateLocalPreview = async (worldId: string) => {
+      const store = createDataStore(null, worldId || DEFAULT_WORLD);
+      store.configureSubitems(buildSubitemMap(bundledContentStore.progression));
+      storeRef.current = store;
+      await store.ensureCompatibility(storedActor);
+      await refresh();
+      if (cancelled) return;
+      const reason = "Configuração do Supabase ausente: o conteúdo compartilhado da wiki não pôde ser carregado; usando o snapshot tipado completo e o progresso deste navegador.";
+      setContent(bundledContentStore);
+      setMode("preview-local");
+      setSyncStatus("preview-local");
+      setDataStatus("ready");
+      setDataError(reason);
+      toast({ title: "Prévia local", description: reason, variant: "warning" });
+      unsubscribe = store.subscribe(() => {
+        void refresh().catch(failHard);
+      });
+    };
+
     void (async () => {
       const config = await loadPublicRuntimeConfig();
       const configState = classifyRuntimeConfig(config);
       const worldId = config.worldId || DEFAULT_WORLD;
 
-      if (configState.kind === "invalid") throw new Error(configState.reason);
-
       if (configState.kind === "absent") {
-        const store = createDataStore(null, worldId);
-        store.configureSubitems({});
-        storeRef.current = store;
-        await store.ensureCompatibility(storedActor);
-        await refresh();
-        if (cancelled) return;
-        setContent(emptyContentStore);
-        setMode("preview-local");
-        setSyncStatus("preview-local");
-        setDataStatus("error");
-        setDataError("Configuração do Supabase ausente: a prévia local mantém apenas o estado deste navegador; o conteúdo compartilhado da wiki não pôde ser carregado.");
-        unsubscribe = store.subscribe(() => {
-          void refresh().catch(fail);
-        });
+        await activateLocalPreview(worldId);
         return;
+      }
+
+      if (configState.kind === "invalid") {
+        throw new Error(configState.reason);
       }
 
       const client = getBrowserSupabase(configState.config) as SupabaseClient;
@@ -150,9 +158,9 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
       setDataStatus("ready");
       setDataError(null);
       unsubscribe = store.subscribe(() => {
-        void refresh().catch(fail);
+        void refresh().catch(failHard);
       });
-    })().catch(fail);
+    })().catch(failHard);
 
     return () => {
       cancelled = true;

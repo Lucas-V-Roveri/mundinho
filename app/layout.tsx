@@ -10,9 +10,29 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "sw
 const pressStart = Press_Start_2P({ subsets: ["latin"], weight: "400", variable: "--font-press-start-2p", display: "swap" });
 const vt323 = VT323({ subsets: ["latin"], weight: "400", variable: "--font-vt323", display: "swap" });
 
-export const metadata: Metadata = { title: { default: "Mundinho · pra sempre", template: "%s · Mundinho" }, description: "Wiki e diário do foreverworld de gr1d e benamu.", manifest: "/manifest.webmanifest", icons: { icon: "/favicon.svg" } };
-export const viewport: Viewport = { themeColor: "#5d402f", colorScheme: "light" };
+export const metadata: Metadata = {
+  title: { default: "Mundinho · pra sempre", template: "%s · Mundinho" },
+  description: "Wiki e diário do foreverworld de gr1d e benamu.",
+  applicationName: "Mundinho · pra sempre",
+  manifest: "/manifest.webmanifest",
+  icons: { icon: "/favicon.svg", apple: "/favicon.svg" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#17130f",
+  colorScheme: "dark light",
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="pt-BR"><body className={`${inter.variable} ${pressStart.variable} ${vt323.variable} font-sans`}><ToastProvider><AppProviders><AppShell>{children}</AppShell></AppProviders></ToastProvider></body></html>;
+  return (
+    <html lang="pt-BR">
+      <body className={`${inter.variable} ${pressStart.variable} ${vt323.variable} font-sans`}>
+        <ToastProvider>
+          <AppProviders>
+            <AppShell>{children}</AppShell>
+          </AppProviders>
+        </ToastProvider>
+      </body>
+    </html>
+  );
 }
