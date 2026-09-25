@@ -8,6 +8,8 @@ import { ContentIcon } from "@/components/media/content-icon";
 import { PixelIcon, type PixelIconName } from "@/components/ui/pixel-icon";
 import { useMundinho } from "@/components/app-providers";
 import { dependencyReady, flatPlayerKey, sortProgression } from "@/lib/progression-model";
+import { findGuideForText, guideThemeClasses } from "@/lib/guide-theme";
+import { cn } from "@/lib/cn";
 import type { Actor, ProgressionItem, ProgressionSubitem } from "@/types/content";
 
 export function HomeView() {
@@ -22,6 +24,8 @@ export function HomeView() {
   const percent = total ? Math.round((completed / total) * 100) : 0;
   const sorted = sortProgression(content.progression);
   const next = sorted.find((item) => !playerStates[flatPlayerKey(actor, item.id)]?.completed && dependencyReady(item, (id) => Boolean(playerStates[flatPlayerKey(actor, id)]?.completed)));
+  const nextGuide = next ? findGuideForText(content.guides, `${next.entry} ${next.mods} ${next.title}`) : undefined;
+  const nextTheme = guideThemeClasses(nextGuide?.theme);
   const last = Object.values(states).filter((item) => item.completed && item.completed_at).sort((a, b) => String(b.completed_at).localeCompare(String(a.completed_at)))[0];
   const trophies = buildTrophies(content.progression);
   const unlockedTrophies = trophies.filter((trophy) => states[trophy.stateId]?.completed || (["gr1d", "benamu"] as const).some((who) => playerStates[flatPlayerKey(who, trophy.stateId)]?.completed));
@@ -35,7 +39,7 @@ export function HomeView() {
             <p className="max-w-2xl text-base leading-7">Um canto para lembrar o que já fizemos, decidir o próximo desafio e não esquecer aquela receita que a gente jurou que ia lembrar.</p>
             <div className="mt-6 border-2 border-night-950 bg-night-900 p-3 text-paper-50"><div className="flex justify-between gap-3 font-label text-xl"><span>XP do mundinho</span><span>{completed}/{total} · {percent}%</span></div><div className="mt-2 h-5 border-2 border-night-950 bg-stone-700"><div className="xp-fill h-full bg-grass-500" style={{ width: `${percent}%` }} /></div></div>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <div className="border-2 border-torch-700 bg-torch-100 p-4 text-ink-900"><span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="compass" size={18} /> Próximo sugerido para {actor}</span>{next ? <><strong className="mt-1 block">#{String(next.order).padStart(3, "0")} · {next.title}</strong><p className="mt-1 text-sm">{next.entry} · {next.phase} · risco {next.risk}</p><Link className="semantic-link mt-3 inline-block font-label text-xl" href={`/progressao#${next.id}` as Route}>ver na progressão</Link></> : <p className="mt-2">Tudo elegível já foi marcado. Aí sim dá para escolher por vontade.</p>}</div>
+              <div className={cn("border-2 border-torch-700 bg-torch-100 p-4 text-ink-900", next && nextTheme.frame)}><span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="compass" size={18} /> Próximo sugerido para {actor}</span>{next ? <><strong className="mt-1 block">#{String(next.order).padStart(3, "0")} · {next.title}</strong><p className="mt-1 text-sm">{next.entry} · {next.phase} · risco {next.risk}</p><Link className="semantic-link mt-3 inline-block font-label text-xl" href={`/progressao#${next.id}` as Route}>ver na progressão</Link></> : <p className="mt-2">Tudo elegível já foi marcado. Aí sim dá para escolher por vontade.</p>}</div>
               <div className="smooth-text-panel border-2 border-stone-500 bg-stone-100 p-4 text-ink-900"><span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="book" size={18} /> Última marcação</span>{last ? <><strong className="mt-1 block">{last.item_id}</strong><p className="mt-1 text-sm">{last.completed_by} · {new Intl.DateTimeFormat("pt-BR", { dateStyle: "short", timeStyle: "short" }).format(new Date(last.completed_at!))}</p></> : <p className="mt-2">Ainda sem marcações nesta base.</p>}</div>
             </div>
           </CardContent>
