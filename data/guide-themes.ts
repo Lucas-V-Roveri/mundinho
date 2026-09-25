@@ -2,7 +2,7 @@ import type { GuideTheme } from "@/types/content";
 
 export type GuideThemeMeta = {
   theme: GuideTheme;
-  rationale: string;
+  ["rationale"]: string;
 };
 
 export const GUIDE_THEME_BY_ID = {

@@ -2,10 +2,11 @@
 
 import { SkinFace } from "@/components/media/skin-face";
 import { Select } from "@/components/ui/select";
+import { SyncStatus } from "@/components/shell/sync-status";
 import { useMundinho } from "@/components/app-providers";
 
 export function ActorSelector() {
-  const { actor, setActor, mode } = useMundinho();
+  const { actor, setActor } = useMundinho();
   const skin = actor === "gr1d" ? "/skins/gr1d.png" : "/skins/benamu.png";
 
   return (
@@ -23,11 +24,9 @@ export function ActorSelector() {
           <option value="benamu">benamu</option>
         </Select>
       </label>
-      <span
-        className={`size-2.5 shrink-0 border border-night-950 ${mode === "supabase" ? "bg-grass-500" : "bg-torch-500"}`}
-        title={mode === "supabase" ? "Supabase compartilhado" : "Prévia local"}
-        aria-label={mode === "supabase" ? "Sincronização Supabase compartilhado" : "Prévia local"}
-      />
+      <div className="hidden min-[1180px]:block">
+        <SyncStatus compact />
+      </div>
     </section>
   );
 }

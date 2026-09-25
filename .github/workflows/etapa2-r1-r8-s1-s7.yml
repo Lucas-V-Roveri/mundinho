@@ -1,0 +1,144 @@
+name: Etapa 2 R1-R8 S1-S7 final audit
+
+on:
+  push:
+    branches: ["fix/etapa2-final-audit"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Lint
+        run: npm run lint
+      - name: Build
+        run: npm run build
+
+      - name: Static design-system acceptance
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const themes = fs.readFileSync('data/guide-themes.ts', 'utf8');
+          const tag = fs.readFileSync('components/ui/tag.tsx', 'utf8');
+          const icons = fs.readFileSync('components/ui/pixel-icon.tsx', 'utf8');
+          const globals = fs.readFileSync('app/globals.css', 'utf8');
+          const css = fs.readFileSync('app/mundinho.css', 'utf8');
+          const assert = (ok, msg) => { if (!ok) throw new Error(msg); };
+          assert((themes.match(/rationale:/g) || []).length === 35, 'S2: mapa precisa ter 35 justificativas explícitas');
+          assert((themes.match(/theme: \{ accent:/g) || []).length === 35, 'S2: mapa precisa ter 35 themes explícitos');
+          assert(themes.includes('acampamento:') && themes.includes('accent: "torch", texture: "fire"'), 'S2: acampamento sem fire+torch');
+          assert(themes.includes('"sophisticated-backpacks":') && themes.includes('accent: "wood", texture: "leather"'), 'S2: Backpacks sem wood+leather');
+          for (const token of ['bg-grass-100','bg-gold-100','bg-torch-100','bg-redstone-100','bg-blue-100']) assert(tag.includes(token), `S4: token ausente ${token}`);
+          for (const icon of ['torch','chest','compass','heart','book','pickaxe']) assert(icons.includes(`${icon}:`), `S5: ícone ausente ${icon}`);
+          assert(globals.includes('background-color: var(--color-night-900)'), 'S1: body não usa night-900');
+          assert(css.includes('.xp-fill::after') && css.includes('xp-warm-glow'), 'S7: XP glow ausente');
+          console.log('STATIC_ACCEPTANCE_OK');
+          NODE
+
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Start local production build
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/cfg.json
+          export SUPABASE_URL="$(node -e "const c=require('/tmp/cfg.json');process.stdout.write(c.supabaseUrl)")"
+          export SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/cfg.json');process.stdout.write(c.supabasePublishableKey)")"
+          npm run start -- -p 3000 >/tmp/mundinho-next.log 2>&1 &
+          for i in $(seq 1 40); do curl -fsS http://127.0.0.1:3000/api/config >/dev/null && exit 0; sleep 1; done
+          cat /tmp/mundinho-next.log
+          exit 1
+
+      - name: Browser acceptance and screenshots
+        shell: bash
+        run: |
+          mkdir -p artifacts/etapa2-final
+          cat >/tmp/audit.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          const base = 'http://127.0.0.1:3000';
+          const INK = 'rgb(36, 26, 20)';
+          const NIGHT = 'rgb(23, 19, 15)';
+          const assert = (v,m) => { if (!v) throw new Error(m); };
+          async function ready(page) {
+            await page.waitForLoadState('domcontentloaded');
+            const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
+            if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
+            await page.waitForTimeout(120);
+          }
+          (async () => {
+            const browser = await chromium.launch({headless:true});
+            const context = await browser.newContext({viewport:{width:1440,height:1000}});
+            const page = await context.newPage();
+            const errors=[];
+            page.on('pageerror',e=>errors.push(`pageerror:${e.message}`));
+            page.on('console',m=>{if(m.type()==='error') errors.push(`console:${m.text()}`)});
+
+            await page.goto(base+'/', {waitUntil:'domcontentloaded'}); await ready(page);
+            const hero=page.getByRole('heading',{name:'Mundinho · pra sempre',level:1});
+            assert(await hero.count()===1,'R1: hero h1 ausente/duplicado');
+            assert(await hero.evaluate(e=>getComputedStyle(e).color)===INK,'R1: hero h1 não é ink-900');
+            assert(await page.getByText('nosso mundo',{exact:true}).evaluate(e=>getComputedStyle(e).color)!=='rgb(255, 249, 237)','R1: nosso mundo está claro sobre paper');
+            const body=await page.locator('body').evaluate(e=>({bg:getComputedStyle(e).backgroundColor,img:getComputedStyle(e).backgroundImage}));
+            assert(body.bg===NIGHT,`S1: body=${body.bg}`); assert(!/8a5e3d|5c3d2a/i.test(body.img),'S1: fundo ainda usa madeira dominante');
+            const search=page.getByRole('button',{name:'Abrir busca global'}); assert(await search.count()===1,'R7: busca ausente'); assert(await search.evaluate(e=>!!e.closest('header')),'R7: busca fora do header'); assert(await search.evaluate(e=>getComputedStyle(e).position)!=='fixed','R7: busca ainda fixed');
+            const last=page.getByText('Última marcação',{exact:true}).locator('..'); assert(!/progression:\d+/.test(await last.innerText()),'R5: chave interna visível');
+            const stats=page.getByRole('region',{name:'Resumo do Mundinho'}).locator('.panel-stone'); assert(await stats.count()===4,'R8: stats != 4');
+            for(let i=0;i<4;i++){ assert(await stats.nth(i).evaluate(e=>getComputedStyle(e).backgroundImage)==='none',`R8: stat ${i} tem textura`); assert(await stats.nth(i).locator('.font-display').count()===1,`R8: stat ${i} tipografia inconsistente`); }
+            assert(await page.getByText('ONLINE',{exact:true}).count()===1,'R8: ONLINE inconsistente');
+            const faces=page.locator('.skin-face-frame'); assert(await faces.count()>=3,'R4: faltam rostos de skin');
+            for(let i=0;i<Math.min(4,await faces.count());i++){const im=faces.nth(i).locator('img').first(); const x=await im.evaluate(e=>({w:e.naturalWidth,h:e.naturalHeight,r:getComputedStyle(e).imageRendering})); assert(x.w===64&&x.h===64,`R4: skin ${i} não 64x64`); assert(x.r==='pixelated'||x.r==='crisp-edges',`R4: skin ${i} sem pixelated`);}
+            assert(await page.locator('.trophy-shelf').count()===1 && await page.locator('.trophy-slot').count()>0,'S5: trophy shelf ausente');
+            assert(await page.locator('.trophy-placeholder-locked,.content-pixel-image-locked').count()>0,'S5: sem troféu em silhueta');
+            const xp=page.locator('.xp-fill').first(); const xpAnim=await xp.evaluate(e=>getComputedStyle(e,'::after').animationName); assert(xpAnim.includes('xp-warm-glow'),`S7: xp=${xpAnim}`);
+            await page.screenshot({path:'artifacts/etapa2-final/home-full.png',fullPage:true});
+
+            for(const [path,name] of [['/progressao','Progressão'],['/mods','Mods'],['/amendments','Amendments'],['/extras','Extras'],['/bastidores','Bastidores']]){await page.goto(base+path,{waitUntil:'domcontentloaded'});await ready(page);const h=page.getByRole('heading',{name,level:1});assert(await h.count()===1,`R1:${path} h1`);assert(await h.evaluate(e=>getComputedStyle(e).color)===INK,`R1:${path} contraste`);}
+
+            await page.goto(base+'/mods',{waitUntil:'domcontentloaded'}); await ready(page); await page.getByText('35 guia(s) nesta seleção',{exact:true}).waitFor();
+            const guides=page.locator('article[id^="guide-"]'); assert(await guides.count()===35,`S2: ${await guides.count()} guias`);
+            for(let i=0;i<35;i++){const g=guides.nth(i);const frame=g.locator('.guide-theme-frame').first();assert(await frame.count()===1,`S2: guia ${i} sem frame`);assert(/guide-accent-/.test(await frame.getAttribute('class')||''),`S2: guia ${i} sem accent`);const stripe=g.locator('.guide-theme-stripe').first();assert(await stripe.count()===1&&/guide-texture-/.test(await stripe.getAttribute('class')||''),`S2: guia ${i} sem texture`);const tags=g.locator('.tag-flat');assert(await tags.count()>=4,`S3: guia ${i} sem chips`);assert(await tags.first().evaluate(e=>getComputedStyle(e).boxShadow)==='none',`S3: tag ${i} tem sombra`);assert(await g.locator('img[alt^="Ícone do guia"], [aria-label^="Ícone pixel-art temático"] svg').count()>0,`R3: guia ${i} sem ícone`);}
+            const triggers=guides.first().locator('.pixel-accordion-trigger'); const tc=await triggers.count(); assert(tc>=4,'R2: poucos accordions');
+            for(let i=0;i<tc;i++){const b=triggers.nth(i);assert(await b.evaluate(e=>getComputedStyle(e).cursor)==='pointer',`R2:${i} cursor`);const before=await b.getAttribute('aria-expanded');await b.click();assert(await b.getAttribute('aria-expanded')!==before,`R2:${i} não abre`);await b.click();assert(await b.getAttribute('aria-expanded')===before,`R2:${i} não fecha`);}
+            for(let i=0;i<tc;i++)if(await triggers.nth(i).getAttribute('aria-expanded')==='true')await triggers.nth(i).click(); await page.screenshot({path:'artifacts/etapa2-final/mods-closed.png'}); await triggers.first().click(); await page.waitForTimeout(250); await page.screenshot({path:'artifacts/etapa2-final/mods-open.png'});
+            for(let i=0;i<35;i++){const b=guides.nth(i).locator('.pixel-accordion-trigger').first();const before=await b.getAttribute('aria-expanded');await b.click();assert(await b.getAttribute('aria-expanded')!==before,`R2: guia ${i} não responde`);}
+            const guideFamily=await guides.first().locator('h3').first().evaluate(e=>getComputedStyle(e).fontFamily);assert(!/Press Start 2P/i.test(guideFamily),'S6: título longo de guia usa display');
+
+            await page.goto(base+'/progressao',{waitUntil:'domcontentloaded'});await ready(page);const pt=page.locator('.progression-card h3');assert(await pt.count()>10,'S6: títulos de progressão ausentes');for(let i=0;i<Math.min(12,await pt.count());i++)assert(!/Press Start 2P/i.test(await pt.nth(i).evaluate(e=>getComputedStyle(e).fontFamily)),`S6: marco ${i} display`);assert(await page.locator('.bg-redstone-100,.border-redstone-500,.text-redstone-700').count()>0,'S4: redstone não aplicado');assert(await page.locator('.bg-grass-100,.bg-grass-500').count()>0,'S4: grass não aplicado');
+
+            await page.setViewportSize({width:680,height:900}); await page.goto(base+'/',{waitUntil:'domcontentloaded'});await ready(page);const header=page.locator('header').first();assert(await page.getByText('quem está marcando?',{exact:true}).count()===1,'R6: label ator ausente');assert(await page.getByText('marcando como',{exact:true}).count()===0,'R6: label antigo');const overflow=await page.evaluate(()=>document.documentElement.scrollWidth-window.innerWidth);assert(overflow<=1,`R6: overflow ${overflow}px`);assert(await header.locator('text=/^i$/').count()===0,'R6: i solto');await header.screenshot({path:'artifacts/etapa2-final/header-680.png'});
+            await page.emulateMedia({reducedMotion:'reduce'});const reduced=await page.locator('.xp-fill').evaluate(e=>({n:getComputedStyle(e,'::after').animationName,d:getComputedStyle(e,'::after').animationDuration}));assert(reduced.n==='none'||reduced.d==='0s'||reduced.d==='0.001ms',`S7: reduced-motion ${JSON.stringify(reduced)}`);
+            if(errors.length) throw new Error(errors.join(' | '));
+            fs.writeFileSync('artifacts/etapa2-final/evidence.txt',[`R1=all-page-h1-ink`,`R2=35-guides-accordion-ok`,`R3=35-guide-icons-ok`,`R4=skin-img-64x64-pixelated`,`R5=no-raw-key`,`R6=header680-overflow:${overflow}`,`R7=search-header`,`R8=solid-stats`,`S1=${body.bg}`,`S2=35-themes`,`S3=flat-chips`,`S4=semantic-colors`,`S5=icons+trophies`,`S6=${guideFamily}`,`S7=${xpAnim};reduced:${JSON.stringify(reduced)}`].join('\n'));
+            await browser.close();
+          })().catch(e=>{console.error(e);process.exit(1)});
+          NODE
+          node /tmp/audit.cjs
+
+      - name: Show server log on failure
+        if: failure()
+        run: cat /tmp/mundinho-next.log || true
+      - name: Upload final visual evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: etapa2-final-evidence
+          path: artifacts/etapa2-final
+          if-no-files-found: warn

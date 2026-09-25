@@ -55,8 +55,9 @@ export function CardTitle({
   display = false,
   ...props
 }: React.HTMLAttributes<HTMLHeadingElement> & { display?: boolean }) {
+  const Heading = display ? "h1" : "h3";
   return (
-    <h3
+    <Heading
       className={cn(
         display ? "font-display text-sm leading-relaxed" : "font-sans text-lg font-bold leading-snug",
         className,
