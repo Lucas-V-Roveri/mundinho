@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/cn";
 
-export type ButtonVariant = "primary" | "secondary" | "ghost" | "danger";
+export type ButtonVariant = "primary" | "secondary" | "success" | "external" | "ghost" | "danger";
 export type ButtonSize = "sm" | "md" | "lg" | "icon";
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
@@ -15,6 +15,10 @@ const variantClasses: Record<ButtonVariant, string> = {
     "bg-torch-500 text-night-950 border-torch-700 hover:bg-torch-300 active:bg-torch-700 active:text-paper-50",
   secondary:
     "bg-wood-500 text-paper-50 border-wood-900 hover:bg-wood-300 hover:text-ink-900 active:bg-wood-700 active:text-paper-50",
+  success:
+    "bg-grass-500 text-night-950 border-grass-900 hover:bg-grass-300 active:bg-grass-700 active:text-paper-50",
+  external:
+    "bg-blue-500 text-night-950 border-blue-900 hover:bg-blue-300 active:bg-blue-700 active:text-paper-50",
   ghost:
     "bg-paper-100 text-ink-900 border-stone-700 hover:bg-paper-50 active:bg-stone-100",
   danger:
