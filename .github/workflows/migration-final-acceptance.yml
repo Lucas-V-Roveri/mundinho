@@ -1,0 +1,277 @@
+name: Migration final acceptance
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Verify TypeScript, lint and production build
+        run: npm run verify
+
+      - name: Install browser dependency
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Start preview-local server with no Supabase env
+        shell: bash
+        run: |
+          set -euo pipefail
+          unset SUPABASE_URL SUPABASE_PUBLISHABLE_KEY
+          env -u SUPABASE_URL -u SUPABASE_PUBLISHABLE_KEY npm run start -- -p 3000 >/tmp/mundinho-local.log 2>&1 &
+          echo $! >/tmp/mundinho-local.pid
+          for attempt in $(seq 1 40); do
+            curl -fsS http://127.0.0.1:3000/api/config >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/mundinho-local.log
+          exit 1
+
+      - name: Validate full local fallback, shell and interactions
+        shell: bash
+        run: |
+          mkdir -p artifacts/final-acceptance
+          cat >/tmp/final-local.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          const assert = (condition, message) => { if (!condition) throw new Error(message); };
+          const base = 'http://127.0.0.1:3000';
+
+          async function ready(page) {
+            await page.waitForLoadState('domcontentloaded');
+            await page.getByText('Prévia local', { exact: true }).first().waitFor({ timeout: 30000 });
+          }
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+            const page = await context.newPage();
+            const errors = [];
+            page.on('pageerror', error => errors.push(`pageerror:${error.message}`));
+            page.on('console', msg => { if (msg.type() === 'error') errors.push(`console:${msg.text()}`); });
+
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+
+            // Etapa 3: shell, author selector, search, sound.
+            const actor = page.locator('select[aria-label="Quem está marcando"]');
+            assert(await actor.count() === 1, 'Seletor de autor ausente');
+            await actor.selectOption('benamu');
+            await page.reload({ waitUntil: 'domcontentloaded' });
+            await ready(page);
+            assert(await actor.inputValue() === 'benamu', 'Autor não persistiu por dispositivo');
+
+            await page.keyboard.press('/');
+            const searchDialog = page.getByRole('dialog', { name: 'Busca global' });
+            await searchDialog.waitFor({ timeout: 5000 });
+            await page.keyboard.press('Escape');
+
+            const sound = page.getByRole('button', { name: /Som: desligado/ });
+            await sound.click();
+            const soundPref = await page.evaluate(() => localStorage.getItem('mundinho.sound'));
+            assert(soundPref === '1', 'Som opt-in não persistiu');
+
+            // Etapa 4: bundled typed content is complete without Supabase.
+            await page.goto(base + '/mods', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            await page.getByText('35 guia(s)', { exact: true }).waitFor();
+            assert(await page.locator('article[id^="guide-"]').count() === 35, 'Snapshot local não trouxe 35 guias');
+
+            await page.goto(base + '/progressao', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            await page.getByText('101 marcos do mundinho', { exact: true }).waitFor();
+
+            const routeChecks = [
+              ['/', 'Mundinho · pra sempre'],
+              ['/progressao', 'Progressão'],
+              ['/mods', 'Mods'],
+              ['/amendments', 'Amendments'],
+              ['/extras', 'Extras'],
+              ['/bastidores', 'Bastidores'],
+            ];
+            for (const [path, heading] of routeChecks) {
+              await page.goto(base + path, { waitUntil: 'domcontentloaded' });
+              await ready(page);
+              assert(await page.getByRole('heading', { name: heading, level: 1 }).count() === 1, `${path} não renderizou ${heading}`);
+            }
+
+            // Etapa 5: old backup import expands new subitems and export keeps modern format.
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            await actor.selectOption('gr1d');
+            const legacyBackup = {
+              world_id: 'mundinho-pra-sempre',
+              exported_at: '2026-01-01T00:00:00.000Z',
+              item_state: {
+                'progression:390': {
+                  world_id: 'mundinho-pra-sempre',
+                  item_id: 'progression:390',
+                  section: 'progression',
+                  entry_key: 'Twilight Forest',
+                  completed: true,
+                  completed_by: 'gr1d',
+                  completed_at: '2026-01-01T00:00:00.000Z',
+                  updated_at: '2026-01-01T00:00:00.000Z'
+                }
+              },
+              custom_items: []
+            };
+            const fileInput = page.locator('input[type="file"][accept*="json"]');
+            await fileInput.setInputFiles({ name: 'backup-antigo.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(legacyBackup)) });
+            await page.getByText('Backup importado', { exact: true }).waitFor({ timeout: 5000 });
+            const migrated = await page.evaluate(() => JSON.parse(localStorage.getItem('mundinho.preview.playerStates.mundinho-pra-sempre') || '{}'));
+            const inherited = [
+              'gr1d:progression:390',
+              'gr1d:progression:390:troll-caves',
+              'gr1d:progression:390:giants',
+              'gr1d:progression:390:lamp-of-cinders',
+              'gr1d:progression:390:thornlands',
+            ];
+            for (const key of inherited) assert(migrated[key]?.completed === true, `Migração não herdou ${key}`);
+
+            const [download] = await Promise.all([
+              page.waitForEvent('download'),
+              page.getByRole('button', { name: /Exportar JSON/ }).click(),
+            ]);
+            const path = await download.path();
+            assert(path, 'Exportar JSON não gerou arquivo');
+            const exported = JSON.parse(fs.readFileSync(path, 'utf8'));
+            assert(exported.world_id === 'mundinho-pra-sempre', 'Backup exportado com world_id incorreto');
+            assert(exported.player_item_state?.['gr1d:progression:390:troll-caves']?.completed === true, 'Backup moderno perdeu subitens herdados');
+
+            // Legacy localStorage migration path remains functional too.
+            await page.evaluate(() => {
+              localStorage.removeItem('mundinho.legacyMigrationDone');
+              localStorage.setItem('mundinho.progress', JSON.stringify({ 'progression:420': true }));
+            });
+            await page.reload({ waitUntil: 'domcontentloaded' });
+            await ready(page);
+            const migrateButton = page.getByRole('button', { name: 'Migrar progresso antigo' });
+            await migrateButton.waitFor({ timeout: 5000 });
+            await migrateButton.click();
+            await page.getByText('Progresso antigo migrado', { exact: true }).waitFor({ timeout: 5000 });
+            const afterLegacy = await page.evaluate(() => JSON.parse(localStorage.getItem('mundinho.preview.playerStates.mundinho-pra-sempre') || '{}'));
+            for (const id of ['cloggrum', 'froststeel', 'utherium', 'regalium']) {
+              assert(afterLegacy[`gr1d:progression:420:${id}`]?.completed === true, `Migração legacy não expandiu ${id}`);
+            }
+
+            // Etapa 6: custom item + soft delete and dialog flow.
+            await page.goto(base + '/extras', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            await page.getByRole('button', { name: '+ adicionar item' }).click();
+            const addDialog = page.getByRole('dialog', { name: 'Adicionar ao diário' });
+            await addDialog.getByLabel('Título').fill('Teste final de migração');
+            await addDialog.getByLabel('Descrição opcional').fill('Pode ser arquivado sem apagar o histórico.');
+            await addDialog.getByRole('button', { name: 'Adicionar' }).click();
+            await page.getByText('Teste final de migração', { exact: true }).waitFor({ timeout: 5000 });
+            const customCard = page.locator('article').filter({ hasText: 'Teste final de migração' });
+            await customCard.getByRole('button', { name: 'arquivar' }).click();
+            const archiveDialog = page.getByRole('dialog', { name: 'Arquivar este item?' });
+            await archiveDialog.getByRole('button', { name: 'Arquivar' }).click();
+            await page.getByText('Teste final de migração', { exact: true }).waitFor({ state: 'detached', timeout: 5000 }).catch(() => {});
+            const customRows = await page.evaluate(() => JSON.parse(localStorage.getItem('mundinho.preview.custom.mundinho-pra-sempre') || '[]'));
+            const archived = customRows.find(row => row.title === 'Teste final de migração');
+            assert(archived?.deleted === true && archived?.deleted_at, 'Soft delete local não preservou tombstone');
+
+            // Etapa 7: manifest, reduced motion and responsive shell.
+            const manifestResponse = await page.request.get(base + '/manifest.webmanifest');
+            assert(manifestResponse.ok(), 'Manifest indisponível');
+            const manifest = await manifestResponse.json();
+            assert(manifest.start_url === '/' && manifest.display === 'standalone', 'Manifest incompleto');
+            assert(manifest.theme_color === '#17130f', 'Manifest fora do tema night');
+
+            await page.setViewportSize({ width: 680, height: 900 });
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded' });
+            await ready(page);
+            const overflow680 = await page.evaluate(() => document.documentElement.scrollWidth - innerWidth);
+            assert(overflow680 <= 1, `Overflow horizontal em 680px: ${overflow680}px`);
+            await page.screenshot({ path: 'artifacts/final-acceptance/header-home-680.png', fullPage: true });
+
+            await page.emulateMedia({ reducedMotion: 'reduce' });
+            const xp = page.locator('.xp-fill').first();
+            const motion = await xp.evaluate(el => ({ animation: getComputedStyle(el).animationName, transition: getComputedStyle(el).transitionDuration }));
+            assert(motion.animation === 'none' || motion.transition === '0s' || motion.transition === '0.001ms', `Reduced motion não anulou XP: ${JSON.stringify(motion)}`);
+
+            if (errors.length) throw new Error(errors.join(' | '));
+            fs.writeFileSync('artifacts/final-acceptance/local-evidence.txt', JSON.stringify({ inherited, overflow680, manifest: { start_url: manifest.start_url, theme_color: manifest.theme_color }, errors }, null, 2));
+            await browser.close();
+          })().catch(error => { console.error(error); process.exit(1); });
+          NODE
+          node /tmp/final-local.cjs
+
+      - name: Start Supabase-connected server without mutating production data
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/mundinho-config.json
+          SUPABASE_URL="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabaseUrl)")"
+          SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabasePublishableKey)")"
+          test -n "$SUPABASE_URL"
+          test -n "$SUPABASE_PUBLISHABLE_KEY"
+          SUPABASE_URL="$SUPABASE_URL" SUPABASE_PUBLISHABLE_KEY="$SUPABASE_PUBLISHABLE_KEY" npm run start -- -p 3001 >/tmp/mundinho-supabase.log 2>&1 &
+          echo $! >/tmp/mundinho-supabase.pid
+          for attempt in $(seq 1 40); do
+            curl -fsS http://127.0.0.1:3001/api/config >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/mundinho-supabase.log
+          exit 1
+
+      - name: Validate Supabase mode and Realtime socket
+        shell: bash
+        run: |
+          cat >/tmp/final-supabase.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const assert = (condition, message) => { if (!condition) throw new Error(message); };
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+            const sockets = [];
+            const errors = [];
+            page.on('websocket', ws => sockets.push(ws.url()));
+            page.on('pageerror', error => errors.push(`pageerror:${error.message}`));
+            page.on('console', msg => { if (msg.type() === 'error') errors.push(`console:${msg.text()}`); });
+            await page.goto('http://127.0.0.1:3001/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ timeout: 30000 });
+            await page.waitForTimeout(1500);
+            assert(sockets.some(url => url.includes('/realtime/v1/websocket')), `Realtime websocket não abriu: ${JSON.stringify(sockets)}`);
+            await page.goto('http://127.0.0.1:3001/mods', { waitUntil: 'domcontentloaded' });
+            await page.getByText('35 guia(s)', { exact: true }).waitFor({ timeout: 30000 });
+            if (errors.length) throw new Error(errors.join(' | '));
+            require('fs').writeFileSync('artifacts/final-acceptance/supabase-evidence.txt', `realtime=${sockets.join('\n')}\n`);
+            await browser.close();
+          })().catch(error => { console.error(error); process.exit(1); });
+          NODE
+          node /tmp/final-supabase.cjs
+
+      - name: Logs on failure
+        if: failure()
+        run: |
+          echo '--- preview-local ---'
+          cat /tmp/mundinho-local.log || true
+          echo '--- supabase ---'
+          cat /tmp/mundinho-supabase.log || true
+
+      - name: Upload acceptance evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: migration-final-acceptance
+          path: artifacts/final-acceptance
+          if-no-files-found: warn
