@@ -179,8 +179,8 @@ jobs:
             await addDialog.getByLabel('Título').fill('Teste final de migração');
             await addDialog.getByLabel('Descrição opcional').fill('Pode ser arquivado sem apagar o histórico.');
             await addDialog.getByRole('button', { name: 'Adicionar' }).click();
-            await page.getByText('Teste final de migração', { exact: true }).waitFor({ timeout: 5000 });
-            const customCard = page.locator('article').filter({ hasText: 'Teste final de migração' });
+            const customCard = page.getByRole('main').locator('article').filter({ hasText: 'Teste final de migração' });
+            await customCard.getByText('Teste final de migração', { exact: true }).waitFor({ timeout: 5000 });
             await customCard.getByRole('button', { name: 'arquivar' }).click();
             const archiveDialog = page.getByRole('dialog', { name: 'Arquivar este item?' });
             await archiveDialog.getByRole('button', { name: 'Arquivar' }).click();
