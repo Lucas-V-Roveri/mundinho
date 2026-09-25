@@ -24,7 +24,9 @@ export function ActorSelector() {
           <option value="benamu">benamu</option>
         </Select>
       </label>
-      <SyncStatus compact className="hidden min-[1180px]:inline-flex" />
+      <div className="hidden min-[1180px]:block">
+        <SyncStatus compact />
+      </div>
     </section>
   );
 }
