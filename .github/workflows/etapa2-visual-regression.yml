@@ -1,0 +1,226 @@
+name: Etapa 2 visual regression
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+
+      - name: Install Chromium for local browser validation
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Start local Next server with public production runtime config
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/mundinho-config.json
+          export SUPABASE_URL="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabaseUrl)")"
+          export SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabasePublishableKey)")"
+          npm run start -- -p 3000 >/tmp/mundinho-next.log 2>&1 &
+          echo $! >/tmp/mundinho-next.pid
+          for attempt in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:3000/api/config >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/mundinho-next.log
+          exit 1
+
+      - name: Validate R1-R8 and S1-S7 in local browser
+        shell: bash
+        run: |
+          mkdir -p artifacts/etapa2
+          cat >/tmp/etapa2-visual.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          const base = 'http://127.0.0.1:3000';
+          const INK = 'rgb(36, 26, 20)';
+          const NIGHT = 'rgb(23, 19, 15)';
+          const assert = (condition, message) => { if (!condition) throw new Error(message); };
+
+          async function waitReady(page) {
+            await page.waitForLoadState('domcontentloaded');
+            await page.getByText('sincronização: Supabase compartilhado', { exact: false }).waitFor({ timeout: 30000 });
+            const loader = page.getByRole('status', { name: 'Carregando o mundinho' });
+            if (await loader.count()) await loader.waitFor({ state: 'detached', timeout: 30000 });
+          }
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, deviceScaleFactor: 1 });
+            const page = await context.newPage();
+            const fatal = [];
+            page.on('pageerror', e => fatal.push(`pageerror: ${e.message}`));
+
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await waitReady(page);
+
+            const heroTitle = page.getByRole('heading', { name: 'Mundinho · pra sempre', level: 1 });
+            assert(await heroTitle.count() === 1, 'Home precisa ter um único h1 legível');
+            const heroColor = await heroTitle.evaluate(el => getComputedStyle(el).color);
+            assert(heroColor === INK, `Hero h1 deveria ser ink-900; recebeu ${heroColor}`);
+            const bodyStyles = await page.locator('body').evaluate(el => ({ bg: getComputedStyle(el).backgroundColor, image: getComputedStyle(el).backgroundImage }));
+            assert(bodyStyles.bg === NIGHT, `Body deveria ser night-900; recebeu ${bodyStyles.bg}`);
+            assert(!bodyStyles.image.includes('wood'), 'Fundo global não pode usar madeira');
+
+            const search = page.getByRole('button', { name: 'Abrir busca global' });
+            assert(await search.count() === 1, 'Busca global ausente');
+            const searchPosition = await search.evaluate(el => getComputedStyle(el).position);
+            assert(searchPosition !== 'fixed', 'Busca continua flutuando sobre o conteúdo');
+            assert(await search.evaluate(el => Boolean(el.closest('header'))), 'Busca precisa pertencer ao header');
+
+            const summary = page.getByRole('region', { name: 'Resumo do Mundinho' });
+            const statCards = summary.locator('.panel-stone');
+            assert(await statCards.count() === 4, 'Esperados quatro stats stone');
+            for (let i = 0; i < 4; i++) {
+              const bgImage = await statCards.nth(i).evaluate(el => getComputedStyle(el).backgroundImage);
+              assert(bgImage === 'none', `Stat ${i + 1} ainda tem textura: ${bgImage}`);
+              assert(await statCards.nth(i).locator('.font-display').count() === 1, `Stat ${i + 1} não usa valor display consistente`);
+            }
+
+            const faceFrames = page.locator('.skin-face-frame');
+            assert(await faceFrames.count() >= 3, 'Esperados rostos das skins no header e home');
+            for (let i = 0; i < Math.min(3, await faceFrames.count()); i++) {
+              const baseFace = faceFrames.nth(i).locator('img').first();
+              const img = await baseFace.evaluate(el => ({ naturalWidth: el.naturalWidth, naturalHeight: el.naturalHeight, rendering: getComputedStyle(el).imageRendering }));
+              assert(img.naturalWidth === 64 && img.naturalHeight === 64, `Skin ${i + 1} não é sprite 64x64`);
+              assert(img.rendering === 'pixelated' || img.rendering === 'crisp-edges', `Skin ${i + 1} perdeu pixel rendering`);
+            }
+
+            const homeText = await page.locator('body').innerText();
+            const lastBlock = homeText.split('Última marcação')[1]?.split('Guias')[0] || '';
+            assert(!/progression:\d+/.test(lastBlock), `Última marcação expõe chave interna: ${lastBlock}`);
+
+            await page.screenshot({ path: 'artifacts/etapa2/home-full.png', fullPage: true });
+
+            for (const [path, heading] of [
+              ['/progressao', 'Progressão'],
+              ['/mods', 'Mods'],
+              ['/amendments', 'Amendments'],
+              ['/extras', 'Extras'],
+              ['/bastidores', 'Bastidores'],
+            ]) {
+              await page.goto(base + path, { waitUntil: 'domcontentloaded' });
+              await waitReady(page);
+              const h1 = page.getByRole('heading', { name: heading, level: 1 });
+              assert(await h1.count() === 1, `${path}: h1 ${heading} ausente`);
+              const color = await h1.evaluate(el => getComputedStyle(el).color);
+              assert(color === INK, `${path}: h1 deveria ser ink-900, recebeu ${color}`);
+            }
+
+            await page.goto(base + '/mods', { waitUntil: 'domcontentloaded' });
+            await waitReady(page);
+            await page.getByText('35 guia(s)', { exact: true }).waitFor({ timeout: 30000 });
+            const guides = page.locator('article[id^="guide-"]');
+            const guideCount = await guides.count();
+            assert(guideCount === 35, `Esperados 35 guias, vieram ${guideCount}`);
+            for (let i = 0; i < guideCount; i++) {
+              const card = guides.nth(i).locator('.guide-theme-frame').first();
+              assert(await card.count() === 1, `Guia ${i + 1} sem frame de theme`);
+              const cls = await card.getAttribute('class');
+              assert(/guide-accent-(stone|torch|wood|grass|redstone|gold|blue|ice)/.test(cls || ''), `Guia ${i + 1} sem accent válido`);
+              const headerIcon = guides.nth(i).locator('div').first().locator('img,svg');
+              assert(await headerIcon.count() > 0, `Guia ${i + 1} ficou com caixa vazia no lugar do ícone`);
+              const tags = guides.nth(i).locator('.tag-flat');
+              assert(await tags.count() >= 4, `Guia ${i + 1} não apresenta os quatro chips de metadados`);
+              const tagShadow = await tags.first().evaluate(el => getComputedStyle(el).boxShadow);
+              assert(tagShadow === 'none', `Chip do guia ${i + 1} ainda tem sombra pesada`);
+            }
+
+            const firstGuide = guides.first();
+            const buttons = firstGuide.locator('.pixel-accordion-trigger');
+            const accordionCount = await buttons.count();
+            assert(accordionCount >= 4, 'Primeiro guia deveria ter várias seções de accordion');
+            for (let i = 0; i < accordionCount; i++) {
+              const button = buttons.nth(i);
+              const before = await button.getAttribute('aria-expanded');
+              await button.click();
+              const after = await button.getAttribute('aria-expanded');
+              assert(before !== after, `Accordion ${i + 1} não mudou aria-expanded no clique`);
+              await button.click();
+              const restored = await button.getAttribute('aria-expanded');
+              assert(restored === before, `Accordion ${i + 1} não voltou ao estado inicial`);
+            }
+            for (let i = 0; i < accordionCount; i++) {
+              if ((await buttons.nth(i).getAttribute('aria-expanded')) === 'true') await buttons.nth(i).click();
+            }
+            await page.screenshot({ path: 'artifacts/etapa2/mods-accordion-closed.png', fullPage: false });
+            const firstButton = buttons.first();
+            await firstButton.click();
+            assert((await firstButton.getAttribute('aria-expanded')) === 'true', 'Accordion não abriu');
+            const controls = await firstButton.getAttribute('aria-controls');
+            assert(Boolean(controls), 'Accordion sem aria-controls');
+            const panel = page.locator(`[id="${String(controls).replaceAll('"', '\\"')}"]`);
+            assert((await panel.getAttribute('aria-hidden')) === 'false', 'Painel aberto continua aria-hidden');
+            await page.waitForTimeout(240);
+            const visible = await panel.evaluate(el => { const s = getComputedStyle(el); return s.visibility !== 'hidden' && Number.parseFloat(s.opacity) > 0.9; });
+            assert(visible, 'Painel aberto não ficou visualmente visível depois da transição');
+            await page.screenshot({ path: 'artifacts/etapa2/mods-accordion-open.png', fullPage: false });
+
+            await page.setViewportSize({ width: 680, height: 900 });
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded' });
+            await waitReady(page);
+            assert(await page.getByText('quem está marcando?', { exact: true }).count() === 1, 'Rótulo compacto do seletor ausente em 680px');
+            assert(await page.getByText('marcando como', { exact: true }).count() === 0, 'Rótulo legado ainda aparece no header');
+            const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+            assert(overflow <= 1, `Header/página cria overflow horizontal de ${overflow}px em 680px`);
+            await page.locator('header').screenshot({ path: 'artifacts/etapa2/header-680.png' });
+
+            await page.emulateMedia({ reducedMotion: 'reduce' });
+            const xpPseudo = await page.locator('.xp-fill').evaluate(el => ({
+              name: getComputedStyle(el, '::after').animationName,
+              duration: getComputedStyle(el, '::after').animationDuration,
+            }));
+            assert(xpPseudo.name === 'none' || xpPseudo.duration === '0s' || xpPseudo.duration === '0.001ms', `XP glow não respeita reduced-motion: ${JSON.stringify(xpPseudo)}`);
+
+            if (fatal.length) throw new Error(fatal.join(' || '));
+            fs.writeFileSync('artifacts/etapa2/evidence.txt', [
+              `hero-color=${heroColor}`,
+              `body-bg=${bodyStyles.bg}`,
+              `body-pattern=${bodyStyles.image}`,
+              `guide-count=${guideCount}`,
+              `accordion-count-first-guide=${accordionCount}`,
+              `header-overflow-680=${overflow}`,
+              `reduced-motion-xp=${JSON.stringify(xpPseudo)}`,
+            ].join('\n'));
+            await browser.close();
+          })().catch(error => { console.error(error); process.exit(1); });
+          NODE
+          node /tmp/etapa2-visual.cjs
+
+      - name: Show local server log on failure
+        if: failure()
+        run: cat /tmp/mundinho-next.log || true
+
+      - name: Upload visual evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: etapa2-visual-evidence
+          path: artifacts/etapa2
+          if-no-files-found: warn

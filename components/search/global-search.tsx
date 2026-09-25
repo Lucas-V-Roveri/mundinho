@@ -5,6 +5,7 @@ import type { Route } from "next";
 import Link from "next/link";
 import { Dialog } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
+import { PixelIcon } from "@/components/ui/pixel-icon";
 import { useMundinho } from "@/components/app-providers";
 import { guideThemeClasses } from "@/lib/guide-theme";
 import { cn } from "@/lib/cn";
@@ -52,8 +53,15 @@ export function GlobalSearch() {
 
   return (
     <>
-      <button type="button" onClick={() => setOpen(true)} className="pixel-control fixed bottom-4 right-4 z-30 border-4 border-night-950 bg-torch-500 px-3 py-2 font-label text-lg text-night-950" aria-label="Abrir busca global">
-        Buscar <kbd className="ml-1 border border-night-950 bg-paper-100 px-1 text-sm">/</kbd>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="pixel-control inline-flex min-h-9 items-center gap-1.5 border-2 border-night-950 bg-torch-500 px-2 py-1 font-label text-lg leading-none text-night-950"
+        aria-label="Abrir busca global"
+      >
+        <PixelIcon name="compass" size={16} />
+        <span className="hidden min-[680px]:inline">Buscar</span>
+        <kbd className="border border-night-950/70 bg-paper-100 px-1 text-sm">/</kbd>
       </button>
       <Dialog open={open} onOpenChange={setOpen} title="Busca global" description="Mods, progressão, Extras, Amendments e Bastidores." className="w-[min(94vw,46rem)]">
         <Input autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Twilight, Hydra, Waystones..." aria-label="Pesquisar no Mundinho" />
@@ -67,7 +75,7 @@ export function GlobalSearch() {
                 <span className="mt-1 block text-xs leading-5 text-ink-700">{row.subtitle}</span>
               </Link>
             );
-          }) : <p className="border-2 border-stone-500 bg-stone-100 p-4 text-sm text-ink-900">Nada encontrado.</p>}
+          }) : <p className="border border-stone-500 bg-stone-100 p-4 text-sm text-ink-900">Nada encontrado.</p>}
         </div>
       </Dialog>
     </>

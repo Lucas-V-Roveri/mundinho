@@ -82,9 +82,7 @@
   --guide-accent-soft: var(--color-stone-100);
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   min-height: 100%;
@@ -100,12 +98,12 @@ body {
     repeating-linear-gradient(
       0deg,
       transparent 0 31px,
-      color-mix(in srgb, var(--color-stone-500) 4%, transparent) 31px 32px
+      color-mix(in srgb, var(--color-stone-500) 2.5%, transparent) 31px 32px
     ),
     repeating-linear-gradient(
       90deg,
       transparent 0 31px,
-      color-mix(in srgb, var(--color-grass-500) 3%, transparent) 31px 32px
+      color-mix(in srgb, var(--color-grass-500) 2%, transparent) 31px 32px
     );
   background-attachment: fixed;
 }
@@ -113,14 +111,9 @@ body {
 button,
 input,
 select,
-dialog {
-  font: inherit;
-}
-
+dialog { font: inherit; }
 button,
-select {
-  touch-action: manipulation;
-}
+select { touch-action: manipulation; }
 
 ::selection {
   color: var(--color-night-950);
@@ -132,38 +125,37 @@ select {
   outline-offset: 3px;
 }
 
-/* Static surfaces are intentionally quieter. Heavy pixel borders are reserved for interaction. */
+/* Static content stays quiet. Heavy bevel/shadow belongs to interaction only. */
 .pixel-surface {
-  border: 2px solid var(--color-night-950);
-  box-shadow: 0 2px 0 color-mix(in srgb, var(--color-night-950) 24%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-night-950) 72%, transparent);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--color-night-950) 18%, transparent);
 }
 
 .panel-paper {
   color: var(--color-ink-900);
   background: var(--color-paper-100);
 }
-
 .panel-wood {
   color: var(--color-paper-50);
   background: var(--color-wood-700);
 }
-
 .panel-stone {
   color: var(--color-ink-900);
   background: var(--color-stone-100);
+  background-image: none;
 }
-
 .panel-night {
   color: var(--color-paper-50);
   background: var(--color-night-900);
 }
 
 .header-texture-wood {
+  color: var(--color-paper-50);
   background-color: var(--color-wood-700);
   background-image: repeating-linear-gradient(
     0deg,
     transparent 0 13px,
-    color-mix(in srgb, var(--color-wood-900) 18%, transparent) 13px 15px
+    color-mix(in srgb, var(--color-wood-900) 15%, transparent) 13px 15px
   );
 }
 
@@ -183,7 +175,6 @@ select {
     inset 2px 2px 0 var(--pixel-highlight),
     inset -2px -2px 0 var(--pixel-lowlight);
 }
-
 .pixel-control:not(:disabled):hover {
   transform: translate(-2px, -2px);
   box-shadow:
@@ -191,7 +182,6 @@ select {
     inset 2px 2px 0 var(--pixel-highlight),
     inset -2px -2px 0 var(--pixel-lowlight);
 }
-
 .pixel-control:not(:disabled):active {
   transform: translate(2px, 2px);
   box-shadow:
@@ -207,7 +197,6 @@ select {
     inset 2px 2px 0 var(--pixel-highlight),
     inset -2px -2px 0 var(--pixel-lowlight);
 }
-
 .pixel-card-interactive:hover {
   transform: translate(-2px, -2px);
   border-color: var(--color-torch-500);
@@ -223,21 +212,14 @@ select {
     inset 3px 3px 0 color-mix(in srgb, var(--color-night-950) 22%, transparent),
     inset -2px -2px 0 var(--pixel-highlight);
 }
-
-.pixel-field:hover {
-  border-color: var(--color-wood-700);
-}
-
-.pixel-field:focus-visible {
-  border-color: var(--color-torch-500);
-}
+.pixel-field:hover { border-color: var(--color-wood-700); }
+.pixel-field:focus-visible { border-color: var(--color-torch-500); }
 
 .inventory-slot {
   box-shadow:
     inset 3px 3px 0 color-mix(in srgb, var(--color-night-950) 28%, transparent),
     inset -3px -3px 0 var(--pixel-highlight);
 }
-
 .inventory-slot:hover {
   border-color: var(--color-torch-500);
   background: var(--color-torch-100);
@@ -247,10 +229,11 @@ select {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  border: 1px solid color-mix(in srgb, currentColor 42%, transparent);
-  padding: 0.2rem 0.45rem;
+  border: 1px solid color-mix(in srgb, currentColor 38%, transparent);
+  padding: 0.18rem 0.45rem;
   font-family: var(--font-vt323), monospace;
   line-height: 1;
+  box-shadow: none;
 }
 
 .semantic-link {
@@ -261,19 +244,38 @@ select {
 }
 .semantic-link:hover { color: var(--color-blue-500); }
 
+.pixel-accordion-trigger {
+  position: relative;
+  box-shadow: inset 0 -2px 0 color-mix(in srgb, var(--color-night-950) 35%, transparent);
+}
+.pixel-accordion-trigger:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 5px 0 0 var(--guide-accent, var(--color-torch-500)),
+    inset 0 -2px 0 color-mix(in srgb, var(--color-night-950) 35%, transparent),
+    0 3px 0 var(--color-night-950);
+}
+.pixel-accordion-trigger:active { transform: translateY(1px); }
+
 .accordion-panel {
   display: grid;
   grid-template-rows: 0fr;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transition:
     grid-template-rows 180ms steps(6, end),
-    opacity 180ms steps(6, end);
+    opacity 180ms steps(6, end),
+    visibility 0s linear 180ms;
 }
-
 .accordion-panel[data-open="true"] {
   grid-template-rows: 1fr;
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition-delay: 0s;
 }
+.accordion-panel-inner { min-height: 0; }
 
 .accordion-chevron {
   display: inline-block;
@@ -281,24 +283,13 @@ select {
   transform-origin: center;
   transition: transform 180ms steps(6, end);
 }
+.accordion-chevron[data-open="true"] { transform: rotate(90deg); }
 
-.accordion-chevron[data-open="true"] {
-  transform: rotate(90deg);
-}
+.pixel-dialog::backdrop { background: var(--dialog-backdrop); }
+.pixel-dialog[open] { animation: dialog-pop 150ms steps(5, end) both; }
+.pixel-toast { animation: toast-enter 180ms steps(6, end) both; }
 
-.pixel-dialog::backdrop {
-  background: var(--dialog-backdrop);
-}
-
-.pixel-dialog[open] {
-  animation: dialog-pop 150ms steps(5, end) both;
-}
-
-.pixel-toast {
-  animation: toast-enter 180ms steps(6, end) both;
-}
-
-/* Guide identity primitives. Text remains on controlled paper/wood surfaces. */
+/* Per-guide identity: accent/texture decorate, never carry reading text. */
 .guide-accent-stone { --guide-accent: var(--color-stone-500); --guide-accent-soft: var(--color-stone-100); }
 .guide-accent-torch { --guide-accent: var(--color-torch-500); --guide-accent-soft: var(--color-torch-100); }
 .guide-accent-wood { --guide-accent: var(--color-wood-500); --guide-accent-soft: var(--color-wood-100); }
@@ -308,25 +299,31 @@ select {
 .guide-accent-blue { --guide-accent: var(--color-blue-500); --guide-accent-soft: var(--color-blue-100); }
 .guide-accent-ice { --guide-accent: var(--color-ice-500); --guide-accent-soft: var(--color-ice-100); }
 
-.guide-theme-frame { border-top: 6px solid var(--guide-accent); }
-.guide-theme-badge { border-color: var(--guide-accent); background: var(--guide-accent-soft); }
+.guide-theme-frame { border-top: 5px solid var(--guide-accent); }
+.guide-theme-badge {
+  border-color: color-mix(in srgb, var(--guide-accent) 70%, var(--color-night-950));
+  background: var(--guide-accent-soft);
+  color: var(--color-ink-900);
+}
 .guide-theme-stripe {
   height: 0.45rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--guide-accent) 55%, var(--color-night-950));
+  border-bottom: 1px solid color-mix(in srgb, var(--guide-accent) 45%, var(--color-night-950));
   background-color: var(--guide-accent-soft);
 }
+.guide-theme-frame .pixel-accordion-trigger {
+  border-left-color: var(--guide-accent);
+}
 .guide-texture-none { background-image: none; }
-.guide-texture-fire { background-image: repeating-linear-gradient(90deg, transparent 0 12px, color-mix(in srgb, var(--color-torch-700) 16%, transparent) 12px 16px); }
-.guide-texture-leather { background-image: repeating-linear-gradient(45deg, transparent 0 10px, color-mix(in srgb, var(--color-wood-900) 10%, transparent) 10px 12px); }
-.guide-texture-ice { background-image: repeating-linear-gradient(135deg, transparent 0 14px, color-mix(in srgb, var(--color-ice-700) 12%, transparent) 14px 16px); }
-.guide-texture-leaf { background-image: repeating-linear-gradient(90deg, transparent 0 14px, color-mix(in srgb, var(--color-grass-700) 12%, transparent) 14px 17px); }
-.guide-texture-stone { background-image: repeating-linear-gradient(90deg, transparent 0 20px, color-mix(in srgb, var(--color-stone-700) 9%, transparent) 20px 22px); }
+.guide-texture-fire { background-image: repeating-linear-gradient(90deg, transparent 0 12px, color-mix(in srgb, var(--color-torch-700) 14%, transparent) 12px 16px); }
+.guide-texture-leather { background-image: repeating-linear-gradient(45deg, transparent 0 10px, color-mix(in srgb, var(--color-wood-900) 9%, transparent) 10px 12px); }
+.guide-texture-ice { background-image: repeating-linear-gradient(135deg, transparent 0 14px, color-mix(in srgb, var(--color-ice-700) 10%, transparent) 14px 16px); }
+.guide-texture-leaf { background-image: repeating-linear-gradient(90deg, transparent 0 14px, color-mix(in srgb, var(--color-grass-700) 10%, transparent) 14px 17px); }
+.guide-texture-stone { background-image: repeating-linear-gradient(90deg, transparent 0 20px, color-mix(in srgb, var(--color-stone-700) 8%, transparent) 20px 22px); }
 
 @keyframes dialog-pop {
   from { opacity: 0; transform: translateY(12px) scale(0.97); }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
-
 @keyframes toast-enter {
   from { opacity: 0; transform: translateX(24px); }
   to { opacity: 1; transform: translateX(0); }
@@ -341,9 +338,7 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
   }
-
   .pixel-control,
-  .pixel-card-interactive {
-    transform: none !important;
-  }
+  .pixel-card-interactive,
+  .pixel-accordion-trigger { transform: none !important; }
 }

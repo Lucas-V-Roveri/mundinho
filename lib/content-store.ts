@@ -1,4 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
+import { EXPECTED_GUIDE_THEME_COUNT, guideThemeForId } from "@/data/guide-themes";
+import { DEFAULT_GUIDE_THEME } from "@/lib/guide-theme";
 import type {
   AmendmentsPayload,
   BackstagePayload,
@@ -7,6 +9,8 @@ import type {
   Guide,
   ProgressionItem,
 } from "@/types/content";
+
+type RawGuide = Omit<Guide, "theme"> & { theme?: Guide["theme"] };
 
 export async function loadContentStore(client: SupabaseClient): Promise<ContentStore> {
   const { data, error } = await client
@@ -24,12 +28,22 @@ export async function loadContentStore(client: SupabaseClient): Promise<ContentS
   let backstage: BackstagePayload | null = null;
 
   for (const row of data ?? []) {
-    if (row.key.startsWith("guide:")) guides.push(row.payload as unknown as Guide);
-    else if (row.key === "page:progression") {
+    if (row.key.startsWith("guide:")) {
+      const raw = row.payload as unknown as RawGuide;
+      const assigned = guideThemeForId(raw.id);
+      if (!assigned) {
+        console.warn(`[mundinho] Guia sem theme explícito: ${raw.id}. Aplicando fallback stone.`);
+      }
+      guides.push({ ...raw, theme: assigned ?? raw.theme ?? DEFAULT_GUIDE_THEME });
+    } else if (row.key === "page:progression") {
       progression = ((row.payload as { items?: ProgressionItem[] })?.items ?? []).sort((a, b) => a.order - b.order);
     } else if (row.key === "page:amendments") amendments = row.payload as unknown as AmendmentsPayload;
     else if (row.key === "page:extras") extras = row.payload as unknown as ExtrasPayload;
     else if (row.key === "page:backstage") backstage = row.payload as unknown as BackstagePayload;
+  }
+
+  if (guides.length === EXPECTED_GUIDE_THEME_COUNT && guides.some((guide) => guide.theme === DEFAULT_GUIDE_THEME && !guideThemeForId(guide.id))) {
+    console.warn("[mundinho] Pelo menos um dos 35 guias atuais caiu no fallback visual.");
   }
 
   guides.sort((a, b) => a.title.localeCompare(b.title, "pt-BR"));

@@ -56,7 +56,7 @@ export type Guide = {
   subtitle: string;
   type: "chefe" | "dimensão" | "utilidade" | string;
   color?: string;
-  theme?: GuideTheme;
+  theme: GuideTheme;
   difficulty: string;
   risk: string;
   phase: string;
