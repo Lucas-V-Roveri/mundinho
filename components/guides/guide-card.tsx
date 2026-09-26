@@ -65,7 +65,7 @@ export function GuideCard({ guide }: { guide: Guide }) {
               </AccordionItem>
             ))}
             <AccordionItem title={<SectionTitle icon="pickaxe">Craftings pesquisados</SectionTitle>}>
-              <div className="grid gap-4">{guide.craftings.map((craft) => <RecipeDisplay key={craft.title} craft={craft} />)}</div>
+              {guide.craftings.length ? <div className="grid gap-4">{guide.craftings.map((craft) => <RecipeDisplay key={craft.title} craft={craft} />)}</div> : <p className="leading-7">{guide.craftingNote || "Este guia não possui um crafting de progressão relevante documentado."}</p>}
             </AccordionItem>
             <AccordionItem title={<SectionTitle icon="compass">Marcos relacionados ({related.length})</SectionTitle>}>
               {related.length ? <div className="grid gap-2 sm:grid-cols-2">{related.map((item) => <Link key={item.id} href={`/progressao#${item.id}` as Route} className="pixel-card-interactive block border-4 border-night-950 bg-paper-50 p-3 text-ink-900"><span className="font-label text-lg text-blue-700">#{String(item.order).padStart(3, "0")} · {item.phase}</span><strong className="mt-1 block text-sm">{item.title}</strong></Link>)}</div> : <p className="text-sm">Nenhum marco exclusivo deste guia; ele entra como apoio/consulta.</p>}

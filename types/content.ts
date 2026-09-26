@@ -15,18 +15,32 @@ export type MediaRef = {
   source?: string;
 };
 
+export type ResearchSource = {
+  label: string;
+  href: string;
+};
+
 export type RecipeIngredient = {
   namePt: string;
   nameEn?: string;
   icon?: string;
+  iconSource?: string;
+};
+
+export type RecipeOrigin = {
+  source: RecipeIngredient;
+  chance?: string;
+  condition?: string;
 };
 
 export type RecipeDefinition = {
-  type: "crafting" | "furnace" | "smelting" | "blasting" | "create" | "ingredients" | "none" | string;
+  type: "crafting" | "furnace" | "smelting" | "blasting" | "create" | "ingredients" | "drop" | "loot" | "activation" | "construction" | "none" | string;
   station?: string;
   grid?: Array<RecipeIngredient | null>;
   ingredients?: RecipeIngredient[];
   result?: RecipeIngredient;
+  origins?: RecipeOrigin[];
+  note?: string;
 };
 
 export type Crafting = {
@@ -41,6 +55,8 @@ export type Crafting = {
   utilidade?: string;
   receita?: RecipeDefinition;
   nameEn?: string;
+  source?: ResearchSource;
+  iconSource?: string;
 };
 
 export type GuideSection = {
@@ -66,6 +82,7 @@ export type Guide = {
   intro: string;
   sections: GuideSection[];
   craftings: Crafting[];
+  craftingNote?: string;
   checklist: [string, string, string][];
   sources: [string, string][];
   notes?: string[];
