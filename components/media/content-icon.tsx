@@ -4,13 +4,14 @@
 import * as React from "react";
 import { cn } from "@/lib/cn";
 
+const neutralFallback = "/icons/minecraft/paper.png";
 const fallbacks = {
-  boss: "/icons/boss.svg",
-  dimension: "/icons/dimension.svg",
-  structure: "/icons/structure.svg",
-  apple: "/icons/apple.svg",
-  item: "/icons/item.svg",
-  cube: "/icons/cube.svg",
+  boss: neutralFallback,
+  dimension: neutralFallback,
+  structure: neutralFallback,
+  apple: neutralFallback,
+  item: neutralFallback,
+  cube: neutralFallback,
 } as const;
 
 type Kind = keyof typeof fallbacks;
