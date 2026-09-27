@@ -16,7 +16,8 @@ export function guideThemeClasses(theme?: GuideTheme) {
   const resolved = resolveGuideTheme(theme);
   return {
     frame: `guide-accent-${resolved.accent} guide-theme-frame`,
-    stripe: `guide-texture-${resolved.texture} guide-theme-stripe`,
+    stripe: "guide-theme-stripe",
+    header: `guide-texture-${resolved.texture} guide-theme-header`,
     badge: "guide-theme-badge",
     accent: `guide-accent-${resolved.accent}`,
   };
