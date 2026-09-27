@@ -1,0 +1,175 @@
+/* Visual addendum: guide identities, Minecraft inventory sprites, XP and progression timeline. */
+
+.guide-theme-frame {
+  position: relative;
+  border-top: 5px solid var(--guide-accent);
+}
+
+.guide-theme-stripe {
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: 2;
+  width: 0.45rem;
+  border-right: 1px solid color-mix(in srgb, var(--guide-accent) 62%, var(--color-night-950));
+  background: var(--guide-accent);
+  pointer-events: none;
+}
+
+.guide-theme-header {
+  color: var(--color-ink-900);
+  background-color: color-mix(in srgb, var(--guide-accent-soft) 36%, var(--color-paper-100));
+  background-repeat: repeat;
+}
+
+.guide-theme-badge {
+  border-color: color-mix(in srgb, var(--guide-accent) 72%, var(--color-night-950));
+  background: var(--guide-accent-soft);
+  color: var(--color-ink-900);
+}
+
+.guide-texture-none { background-image: none; }
+.guide-texture-fire {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 12px,
+    color-mix(in srgb, var(--color-torch-700) 12%, transparent) 12px 16px
+  );
+}
+.guide-texture-leather {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0 10px,
+    color-mix(in srgb, var(--color-wood-900) 8%, transparent) 10px 12px
+  );
+}
+.guide-texture-ice {
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0 14px,
+    color-mix(in srgb, var(--color-ice-700) 9%, transparent) 14px 16px
+  );
+}
+.guide-texture-leaf {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 14px,
+    color-mix(in srgb, var(--color-grass-700) 9%, transparent) 14px 17px
+  );
+}
+.guide-texture-stone {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent 0 20px,
+    color-mix(in srgb, var(--color-stone-700) 7%, transparent) 20px 22px
+  );
+}
+
+.content-pixel-image,
+.minecraft-item-sprite {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.minecraft-item-sprite {
+  object-fit: contain;
+}
+
+.inventory-slot {
+  border-color: var(--color-night-950);
+  background-color: var(--color-stone-700);
+  box-shadow:
+    inset 3px 3px 0 color-mix(in srgb, var(--color-night-950) 45%, transparent),
+    inset -3px -3px 0 color-mix(in srgb, var(--color-paper-50) 38%, transparent);
+}
+
+.world-xp-shell {
+  box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--color-stone-700) 44%, transparent);
+}
+
+.world-xp-track {
+  box-shadow:
+    inset 3px 3px 0 color-mix(in srgb, var(--color-night-950) 62%, transparent),
+    inset -2px -2px 0 color-mix(in srgb, var(--color-paper-50) 15%, transparent);
+}
+
+.world-xp-fill {
+  background: repeating-linear-gradient(
+    90deg,
+    #83c65f 0 10px,
+    #6bab4d 10px 20px
+  );
+  transform-origin: left center;
+  transition: width 420ms steps(12, end);
+}
+
+.world-xp-bump {
+  animation: world-xp-bump 320ms steps(4, end);
+}
+
+@keyframes world-xp-bump {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.18); }
+}
+
+.progression-timeline {
+  position: relative;
+}
+
+.progression-timeline-item::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  bottom: -1rem;
+  left: 1.2rem;
+  z-index: 0;
+  width: 4px;
+  background: repeating-linear-gradient(
+    0deg,
+    var(--color-stone-700) 0 8px,
+    var(--color-stone-500) 8px 12px
+  );
+}
+
+.progression-timeline-item:first-child::before { top: 1.25rem; }
+.progression-timeline-item:last-child::before { bottom: calc(100% - 1.25rem); }
+.progression-timeline-node { isolation: isolate; }
+
+.progression-card[data-completed="true"] .progression-summary {
+  background: color-mix(in srgb, var(--color-grass-100) 45%, var(--color-paper-100));
+}
+
+.guide-compact-card .guide-theme-header {
+  min-height: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  .progression-timeline-item::before { left: 1.4rem; }
+}
+
+@media (max-width: 680px) {
+  .world-xp-shell > div:first-child {
+    align-items: flex-start;
+  }
+
+  .progression-timeline-item {
+    padding-left: 3rem;
+  }
+
+  .progression-timeline-item::before {
+    left: 1.18rem;
+  }
+
+  .progression-timeline-node {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .world-xp-fill {
+    transition: none !important;
+  }
+  .world-xp-bump {
+    animation: none !important;
+  }
+}
