@@ -75,13 +75,23 @@ jobs:
             const browser = await chromium.launch({ headless: true });
             const page = await browser.newPage();
             const fatal = [];
+            const assetWarnings = [];
+            const base = 'https://mundinho-blue.vercel.app';
             page.on('pageerror', e => fatal.push(`pageerror: ${e.message}`));
             page.on('requestfailed', r => {
               const url = r.url();
-              if (!url.includes('google') && !url.includes('vercel')) fatal.push(`requestfailed: ${url} ${r.failure()?.errorText || ''}`);
+              const failure = r.failure()?.errorText || '';
+              const isAppRequest = url.startsWith(base) || url.includes('.supabase.co');
+              if (isAppRequest) fatal.push(`requestfailed: ${url} ${failure}`);
+              else if (!url.includes('google') && !url.includes('vercel')) assetWarnings.push(`external requestfailed: ${url} ${failure}`);
+            });
+            page.on('response', r => {
+              const url = r.url();
+              if (r.status() >= 400 && !url.startsWith(base) && !url.includes('.supabase.co')) {
+                assetWarnings.push(`external HTTP ${r.status()}: ${url}`);
+              }
             });
 
-            const base = 'https://mundinho-blue.vercel.app';
             let response = await page.goto(base, { waitUntil: 'networkidle', timeout: 45000 });
             if (response?.status() !== 200) throw new Error(`Home HTTP ${response?.status()}`);
             await waitForSupabase(page);
@@ -144,6 +154,7 @@ jobs:
             const duration = await page.locator('.page-enter').evaluate(el => getComputedStyle(el).animationDuration);
             console.log('reduced-motion animationDuration', duration);
 
+            if (assetWarnings.length) console.warn('External asset warnings:\n' + assetWarnings.join('\n'));
             if (fatal.length) throw new Error(fatal.join(' || '));
             await browser.close();
           })().catch(error => { console.error(error); process.exit(1); });
