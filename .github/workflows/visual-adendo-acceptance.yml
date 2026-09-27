@@ -1,0 +1,189 @@
+name: Visual addendum acceptance
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --no-audit --no-fund
+
+      - name: Test, typecheck, lint and build
+        run: npm run verify
+
+      - name: Probe production runtime config
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsS https://mundinho-blue.vercel.app/api/config -o /tmp/mundinho-config.json
+          node - <<'NODE'
+          const cfg = require('/tmp/mundinho-config.json');
+          if (!/^https:\/\/[a-z0-9-]+\.supabase\.co\/?$/i.test(cfg.supabaseUrl || '')) throw new Error('SUPABASE_URL inválida em produção');
+          if (!/^sb_publishable_/.test(cfg.supabasePublishableKey || '') && String(cfg.supabasePublishableKey || '').split('.').length !== 3) throw new Error('SUPABASE_PUBLISHABLE_KEY inválida em produção');
+          if (cfg.worldId !== 'mundinho-pra-sempre') throw new Error('worldId inesperado');
+          NODE
+
+      - name: Install Chromium
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+
+      - name: Start local production build
+        shell: bash
+        run: |
+          set -euo pipefail
+          export SUPABASE_URL="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabaseUrl)")"
+          export SUPABASE_PUBLISHABLE_KEY="$(node -e "const c=require('/tmp/mundinho-config.json'); process.stdout.write(c.supabasePublishableKey)")"
+          npm run start -- -p 3000 >/tmp/mundinho-next.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:3000/api/config >/dev/null; then exit 0; fi
+            sleep 1
+          done
+          cat /tmp/mundinho-next.log
+          exit 1
+
+      - name: Visual and behavior acceptance
+        shell: bash
+        run: |
+          mkdir -p artifacts/visual-adendo
+          cat >/tmp/visual-adendo.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          const base = 'http://127.0.0.1:3000';
+          const assert = (value, message) => { if (!value) throw new Error(message); };
+
+          async function waitReady(page) {
+            await page.getByText('Supabase compartilhado', { exact: true }).first().waitFor({ timeout: 30000 });
+            await page.waitForFunction(() => !document.body.innerText.includes('acendendo as tochas da busca...'), null, { timeout: 30000 });
+          }
+
+          async function assertSpritesLoaded(page) {
+            const broken = await page.locator('img.minecraft-item-sprite').evaluateAll((images) => images.filter((image) => !image.complete || image.naturalWidth === 0).map((image) => image.getAttribute('src')));
+            assert(broken.length === 0, `Sprites quebrados: ${broken.join(', ')}`);
+          }
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const context = await browser.newContext({ viewport: { width: 1440, height: 1200 } });
+            const page = await context.newPage();
+
+            // Home: shared XP + themed compact suggestion.
+            await page.goto(base + '/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await waitReady(page);
+            const homeXp = (await page.getByTestId('world-xp').innerText()).replace(/\s+/g, ' ').trim();
+            assert(/XP do mundinho.*\d+\/\d+.*\d+%/.test(homeXp), `XP da Home inválido: ${homeXp}`);
+            assert(await page.locator('.guide-compact-card').count() >= 1, 'Próximo sugerido não usa card compacto temático');
+            await assertSpritesLoaded(page);
+
+            // Global search: a result from Mods must reuse the compact themed card.
+            await page.keyboard.press('/');
+            await page.getByLabel('Pesquisar no Mundinho').fill('Ignis');
+            assert(await page.locator('[role="dialog"] .guide-compact-card').count() >= 1, 'Busca global não reutiliza o card temático de Mods');
+            await page.keyboard.press('Escape');
+
+            // Mods: three different guide identities visible in one acceptance frame.
+            await page.goto(base + '/mods', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await waitReady(page);
+            const ids = ['#guide-acampamento', '#guide-aether', '#guide-alexs-caves'];
+            const accents = [];
+            let bottom = 0;
+            for (const selector of ids) {
+              const card = page.locator(selector);
+              await card.waitFor({ state: 'visible' });
+              const box = await card.boundingBox();
+              assert(box, `Guia ausente: ${selector}`);
+              bottom = Math.max(bottom, box.y + box.height);
+              accents.push(await card.locator('.guide-theme-frame').evaluate((el) => getComputedStyle(el).getPropertyValue('--guide-accent').trim()));
+            }
+            assert(new Set(accents).size === 3, `Os 3 guias de aceite não têm temas distintos: ${accents.join(' | ')}`);
+            await page.setViewportSize({ width: 1440, height: Math.min(Math.max(Math.ceil(bottom + 40), 1600), 5000) });
+            await assertSpritesLoaded(page);
+            await page.screenshot({ path: 'artifacts/visual-adendo/01-mods-tres-temas.png', fullPage: false });
+
+            // Progression: default hides completed, XP matches Home.
+            await page.evaluate(() => localStorage.setItem('mundinho.progression.showCompleted', 'false'));
+            await page.setViewportSize({ width: 1440, height: 1200 });
+            await page.goto(base + '/progressao', { waitUntil: 'domcontentloaded', timeout: 45000 });
+            await waitReady(page);
+            const toggle = page.getByTestId('show-completed-toggle');
+            await toggle.waitFor({ state: 'visible' });
+            assert(await toggle.getAttribute('aria-pressed') === 'false', 'Toggle não inicia desativado');
+            const label = (await toggle.innerText()).replace(/\s+/g, ' ').trim();
+            const match = label.match(/\((\d+)\)/);
+            assert(match && Number(match[1]) > 0, `Contador de concluídos inválido: ${label}`);
+            assert(await page.locator('.progression-card[data-completed="true"]').count() === 0, 'Concluídos continuam renderizados com toggle desligado');
+            const progressionXp = (await page.getByTestId('world-xp').innerText()).replace(/\s+/g, ' ').trim();
+            assert(progressionXp === homeXp, `XP divergiu entre Home e Progressão: ${homeXp} <> ${progressionXp}`);
+            await assertSpritesLoaded(page);
+            await page.screenshot({ path: 'artifacts/visual-adendo/02-progressao-concluidos-ocultos.png', fullPage: false });
+            await page.getByTestId('world-xp').screenshot({ path: 'artifacts/visual-adendo/03-xp-mundinho.png' });
+
+            // Toggle on: completed milestones return collapsed.
+            await toggle.click();
+            assert(await toggle.getAttribute('aria-pressed') === 'true', 'Toggle não ativou');
+            const completedCards = page.locator('.progression-card[data-completed="true"]');
+            assert(await completedCards.count() > 0, 'Nenhum marco concluído reapareceu');
+            const openCompleted = await completedCards.evaluateAll((items) => items.filter((item) => item.hasAttribute('open')).length);
+            assert(openCompleted === 0, 'Marco concluído reapareceu expandido');
+            await page.screenshot({ path: 'artifacts/visual-adendo/04-progressao-concluidos-visiveis-colapsados.png', fullPage: false });
+
+            // Expanded regular card: inventory slot + real item sprite.
+            await toggle.click();
+            const firstCard = page.locator('.progression-card').first();
+            await firstCard.locator('summary').click();
+            assert(await firstCard.getAttribute('open') !== null, 'Card regular não expandiu');
+            assert(await firstCard.locator('.inventory-slot img.minecraft-item-sprite').count() >= 1, 'Card expandido não mostra sprite no slot GUI');
+            await firstCard.screenshot({ path: 'artifacts/visual-adendo/05-card-expandido-sprite.png' });
+
+            // Mobile acceptance at exactly 680px.
+            await page.evaluate(() => localStorage.setItem('mundinho.progression.showCompleted', 'false'));
+            await page.setViewportSize({ width: 680, height: 1100 });
+            await page.reload({ waitUntil: 'domcontentloaded' });
+            await waitReady(page);
+            await page.getByTestId('show-completed-toggle').waitFor({ state: 'visible' });
+            const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
+            assert(overflow <= 1, `Overflow horizontal em 680px: ${overflow}px`);
+            await assertSpritesLoaded(page);
+            await page.screenshot({ path: 'artifacts/visual-adendo/06-mobile-680.png', fullPage: false });
+
+            fs.writeFileSync('artifacts/visual-adendo/evidence.txt', [
+              `home-xp=${homeXp}`,
+              `progression-xp=${progressionXp}`,
+              `completed-hidden-count=${match[1]}`,
+              `theme-accents=${accents.join(',')}`,
+              'completed-default-hidden=true',
+              'completed-shown-collapsed=true',
+              'minecraft-sprites-loaded=true',
+              'mobile-680-overflow=false',
+            ].join('\n'));
+
+            await context.close();
+            await browser.close();
+          })().catch((error) => { console.error(error); process.exit(1); });
+          NODE
+          node /tmp/visual-adendo.cjs
+
+      - name: Show server log on failure
+        if: failure()
+        run: cat /tmp/mundinho-next.log || true
+
+      - name: Upload acceptance screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: visual-adendo-acceptance
+          path: artifacts/visual-adendo
+          if-no-files-found: error

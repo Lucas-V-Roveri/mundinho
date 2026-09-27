@@ -8,10 +8,11 @@ import { Tag } from "@/components/ui/tag";
 import { PixelIcon, type PixelIconName } from "@/components/ui/pixel-icon";
 import { ChecklistItem } from "@/components/checklist/checklist-item";
 import { CustomItemPanel } from "@/components/checklist/custom-item-panel";
-import { ContentIcon, iconKindForType } from "@/components/media/content-icon";
+import { ContentIcon } from "@/components/media/content-icon";
 import { RecipeDisplay } from "@/components/guides/recipe-display";
 import { useMundinho } from "@/components/app-providers";
 import { guideThemeClasses } from "@/lib/guide-theme";
+import { resolveGuideIcon } from "@/lib/minecraft-icons";
 import { cn } from "@/lib/cn";
 import type { Guide } from "@/types/content";
 
@@ -30,9 +31,9 @@ export function GuideCard({ guide }: { guide: Guide }) {
 
   return (
     <article id={`guide-${guide.id}`} className="scroll-mt-40">
-      <Card surface="paper" className={cn("overflow-hidden text-ink-900", theme.frame)}>
-        <div aria-hidden="true" className={theme.stripe} />
-        <CardHeader className="text-ink-900">
+      <Card surface="paper" className={cn("relative overflow-hidden text-ink-900", theme.frame)}>
+        <span aria-hidden="true" className={theme.stripe} />
+        <CardHeader className={cn("border-b border-stone-300 pl-6 text-ink-900", theme.header)}>
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div className="flex min-w-0 items-start gap-3">
               <GuideEmblem guide={guide} />
@@ -50,7 +51,7 @@ export function GuideCard({ guide }: { guide: Guide }) {
             <Tag tone={String(guide.confidence).startsWith("Alta") ? "success" : "neutral"} className="shrink-0">confiança: {guide.confidence}</Tag>
           </div>
         </CardHeader>
-        <CardContent className="space-y-5 text-ink-900">
+        <CardContent className="space-y-5 pl-6 text-ink-900">
           <p className="text-base leading-7">{guide.intro}</p>
           <Accordion>
             {guide.sections.map((section, index) => (
@@ -86,24 +87,11 @@ export function GuideCard({ guide }: { guide: Guide }) {
 }
 
 function GuideEmblem({ guide }: { guide: Guide }) {
-  const source = guide.imagem?.src ?? guide.icone;
-  if (source) {
-    return <ContentIcon src={source} alt={guide.imagem?.alt ?? `Ícone do guia ${guide.title}`} kind={iconKindForType(guide.type)} className="size-14 shrink-0 border border-stone-500 bg-paper-50 p-1" />;
-  }
   return (
-    <span className="grid size-14 shrink-0 place-items-center border border-[var(--guide-accent)] bg-paper-50 text-[var(--guide-accent)]" aria-label={`Ícone pixel-art temático de ${guide.title}`}>
-      <PixelIcon name={guideFallbackIcon(guide)} size={32} />
+    <span className="inventory-slot grid size-14 shrink-0 place-items-center border-2 border-night-950 bg-stone-700" aria-label={`Item-símbolo de ${guide.title}`}>
+      <ContentIcon src={resolveGuideIcon(guide)} alt="" kind="item" className="minecraft-item-sprite size-10" />
     </span>
   );
-}
-
-function guideFallbackIcon(guide: Guide): PixelIconName {
-  if (guide.id === "sophisticated-backpacks") return "chest";
-  if (["acampamento", "cozinha", "ignis", "incendium", "piglin-proliferation"].includes(guide.id)) return "torch";
-  if (["create", "construcao", "fallingtree", "overworld-terreno"].includes(guide.id)) return "pickaxe";
-  if (guide.type === "dimensão" || guide.id === "waystones" || guide.id === "dungeons-structures") return "compass";
-  if (["mca", "friends-foes", "alexs-mobs", "overworld-vivo", "mob-variants"].includes(guide.id)) return "heart";
-  return "book";
 }
 
 function sectionIcon(title: string, index: number): PixelIconName {

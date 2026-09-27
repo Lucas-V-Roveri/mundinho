@@ -6,12 +6,15 @@
     "node": ">=20.9.0"
   },
   "scripts": {
+    "predev": "node scripts/generate-minecraft-icons.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-minecraft-icons.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "verify": "npm run typecheck && npm run lint && npm run build",
+    "test:progression": "node --experimental-strip-types --test tests/progression-suggestion.test.mjs",
+    "verify": "npm run test:progression && npm run typecheck && npm run lint && npm run build",
     "sync:content": "node scripts/sync-content-snapshot.mjs"
   },
   "dependencies": {

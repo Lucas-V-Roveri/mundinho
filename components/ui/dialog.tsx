@@ -39,6 +39,8 @@ export function Dialog({
   return (
     <dialog
       ref={dialogRef}
+      role="dialog"
+      aria-modal="true"
       aria-labelledby={titleId}
       aria-describedby={description ? descriptionId : undefined}
       className={cn(

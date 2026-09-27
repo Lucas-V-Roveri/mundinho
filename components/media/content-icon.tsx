@@ -4,13 +4,14 @@
 import * as React from "react";
 import { cn } from "@/lib/cn";
 
+const neutralFallback = "/icons/minecraft/paper.png";
 const fallbacks = {
-  boss: "/icons/boss.svg",
-  dimension: "/icons/dimension.svg",
-  structure: "/icons/structure.svg",
-  apple: "/icons/apple.svg",
-  item: "/icons/item.svg",
-  cube: "/icons/cube.svg",
+  boss: neutralFallback,
+  dimension: neutralFallback,
+  structure: neutralFallback,
+  apple: neutralFallback,
+  item: neutralFallback,
+  cube: neutralFallback,
 } as const;
 
 type Kind = keyof typeof fallbacks;
@@ -19,7 +20,8 @@ export function ContentIcon({ src, alt, kind = "cube", className, locked = false
   const [failed, setFailed] = React.useState(false);
   const fallback = fallbacks[kind];
   const resolved = failed || !src ? fallback : src;
-  return <img src={resolved} alt={alt} loading="lazy" decoding="async" onError={() => setFailed(true)} className={cn("content-pixel-image object-contain", locked && "content-pixel-image-locked", className)} />;
+  const loading = resolved.startsWith("/icons/minecraft/") ? "eager" : "lazy";
+  return <img src={resolved} alt={alt} loading={loading} decoding="async" onError={() => setFailed(true)} className={cn("content-pixel-image object-contain", locked && "content-pixel-image-locked", className)} />;
 }
 
 export function iconKindForType(type: string): Kind {

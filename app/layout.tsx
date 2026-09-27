@@ -5,6 +5,7 @@ import { AppProviders } from "@/components/app-providers";
 import { AppShell } from "@/components/shell/app-shell";
 import "./globals.css";
 import "./mundinho.css";
+import "./visual-adendo.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const pressStart = Press_Start_2P({ subsets: ["latin"], weight: "400", variable: "--font-press-start-2p", display: "swap" });
