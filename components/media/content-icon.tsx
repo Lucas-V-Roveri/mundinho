@@ -20,7 +20,7 @@ export function ContentIcon({ src, alt, kind = "cube", className, locked = false
   const [failed, setFailed] = React.useState(false);
   const fallback = fallbacks[kind];
   const resolved = failed || !src ? fallback : src;
-  return <img src={resolved} alt={alt} loading="lazy" decoding="async" onError={() => setFailed(true)} className={cn("content-pixel-image object-contain", locked && "content-pixel-image-locked", className)} />;
+  return <img src={resolved} alt={alt} loading="eager" decoding="async" onError={() => setFailed(true)} className={cn("content-pixel-image object-contain", locked && "content-pixel-image-locked", className)} />;
 }
 
 export function iconKindForType(type: string): Kind {
