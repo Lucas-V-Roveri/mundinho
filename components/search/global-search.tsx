@@ -3,16 +3,16 @@
 import * as React from "react";
 import type { Route } from "next";
 import Link from "next/link";
+import { GuideCompactCard } from "@/components/guides/guide-compact-card";
 import { Dialog } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PixelIcon } from "@/components/ui/pixel-icon";
 import { useMundinho } from "@/components/app-providers";
-import { guideThemeClasses } from "@/lib/guide-theme";
-import { cn } from "@/lib/cn";
+import { resolveGuideIcon } from "@/lib/minecraft-icons";
 import type { GuideTheme } from "@/types/content";
 
-type SearchRow = { id: string; title: string; subtitle: string; href: string; group: string; theme?: GuideTheme };
+type SearchRow = { id: string; title: string; subtitle: string; href: string; group: string; theme?: GuideTheme; iconSrc?: string };
 
 export function GlobalSearch() {
   const { content, dataStatus, dataError, retry } = useMundinho();
@@ -38,7 +38,7 @@ export function GlobalSearch() {
 
   const rows = React.useMemo<SearchRow[]>(() => {
     const result: SearchRow[] = [];
-    content.guides.forEach((guide) => result.push({ id: `guide-${guide.id}`, title: guide.title, subtitle: `${guide.subtitle} · ${guide.phase}`, href: `/mods#guide-${guide.id}`, group: "Mods", theme: guide.theme }));
+    content.guides.forEach((guide) => result.push({ id: `guide-${guide.id}`, title: guide.title, subtitle: `${guide.subtitle} · ${guide.phase}`, href: `/mods#guide-${guide.id}`, group: "Mods", theme: guide.theme, iconSrc: resolveGuideIcon(guide) }));
     content.progression.forEach((item) => result.push({ id: item.id, title: item.title, subtitle: `${item.entry} · ${item.phase}`, href: `/progressao#${encodeURIComponent(item.id)}`, group: "Progressão" }));
     content.extras?.items.forEach((item) => result.push({ id: item.id, title: item.title, subtitle: item.description, href: `/extras#${item.id}`, group: "Extras" }));
     content.backstage?.items.forEach((item) => result.push({ id: `backstage-${item.name}`, title: item.name, subtitle: `${item.fn} · ${item.version}`, href: `/bastidores#${encodeURIComponent(item.name)}`, group: "Bastidores" }));
@@ -52,6 +52,8 @@ export function GlobalSearch() {
     return rows.filter((row) => `${row.title} ${row.subtitle} ${row.group}`.toLocaleLowerCase("pt-BR").includes(normalized)).slice(0, 40);
   }, [query, rows]);
 
+  const closeSearch = () => { setOpen(false); setQuery(""); };
+
   return (
     <>
       <button type="button" onClick={() => setOpen(true)} className="pixel-control inline-flex min-h-9 items-center gap-1.5 border-2 border-night-950 bg-torch-500 px-2 py-1 font-label text-lg leading-none text-night-950" aria-label="Abrir busca global">
@@ -62,10 +64,11 @@ export function GlobalSearch() {
       <Dialog open={open} onOpenChange={setOpen} title="Busca global" description="Mods, progressão, Extras, Amendments e Bastidores." className="w-[min(94vw,46rem)]">
         <Input disabled={dataStatus !== "ready"} autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Twilight, Hydra, Waystones..." aria-label="Pesquisar no Mundinho" />
         <div className="mt-4 max-h-[55vh] space-y-2 overflow-auto pr-1">
-          {dataStatus === "loading" ? <p role="status" className="border border-stone-500 bg-stone-100 p-4 font-label text-xl text-ink-900">acendendo as tochas da busca...</p> : dataStatus === "error" ? <div role="alert" className="border border-redstone-700 bg-redstone-100 p-4 text-redstone-900"><p className="font-label text-xl">falha ao carregar o índice</p><p className="mt-1 text-sm">{dataError || "A fonte de dados não respondeu."}</p><Button variant="danger" size="sm" className="mt-3" onClick={retry}>tentar novamente</Button></div> : filtered.length ? filtered.map((row) => {
-            const theme = guideThemeClasses(row.theme);
-            return <Link key={`${row.group}-${row.id}`} href={row.href as Route} onClick={() => { setOpen(false); setQuery(""); }} className={cn("pixel-card-interactive block border-4 border-night-950 bg-paper-50 p-3 text-ink-900", row.group === "Mods" && theme.frame)}><span className="font-label text-xl text-blue-700">{row.group}</span><strong className="mt-1 block text-sm">{row.title}</strong><span className="mt-1 block text-xs leading-5 text-ink-700">{row.subtitle}</span></Link>;
-          }) : <p className="border border-stone-500 bg-stone-100 p-4 text-sm text-ink-900">Nada encontrado.</p>}
+          {dataStatus === "loading" ? <p role="status" className="border border-stone-500 bg-stone-100 p-4 font-label text-xl text-ink-900">acendendo as tochas da busca...</p> : dataStatus === "error" ? <div role="alert" className="border border-redstone-700 bg-redstone-100 p-4 text-redstone-900"><p className="font-label text-xl">falha ao carregar o índice</p><p className="mt-1 text-sm">{dataError || "A fonte de dados não respondeu."}</p><Button variant="danger" size="sm" className="mt-3" onClick={retry}>tentar novamente</Button></div> : filtered.length ? filtered.map((row) => row.group === "Mods" && row.iconSrc ? (
+            <GuideCompactCard key={`${row.group}-${row.id}`} href={row.href} theme={row.theme} iconSrc={row.iconSrc} eyebrow="Mods" title={row.title} meta={row.subtitle} onClick={closeSearch} />
+          ) : (
+            <Link key={`${row.group}-${row.id}`} href={row.href as Route} onClick={closeSearch} className="pixel-card-interactive block border-4 border-night-950 bg-paper-50 p-3 text-ink-900"><span className="font-label text-xl text-blue-700">{row.group}</span><strong className="mt-1 block text-sm">{row.title}</strong><span className="mt-1 block text-xs leading-5 text-ink-700">{row.subtitle}</span></Link>
+          )) : <p className="border border-stone-500 bg-stone-100 p-4 text-sm text-ink-900">Nada encontrado.</p>}
         </div>
       </Dialog>
     </>
