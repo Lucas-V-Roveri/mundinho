@@ -2,6 +2,9 @@ name: Sync typed content snapshot
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/sync-content-snapshot.yml"
 
 permissions:
   contents: write
