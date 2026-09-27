@@ -3,33 +3,30 @@
 import type { Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { GuideCompactCard } from "@/components/guides/guide-compact-card";
 import { ContentIcon } from "@/components/media/content-icon";
 import { SkinFace } from "@/components/media/skin-face";
+import { WorldXpBar } from "@/components/progression/world-xp-bar";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PixelIcon, type PixelIconName } from "@/components/ui/pixel-icon";
 import { SyncStatus } from "@/components/shell/sync-status";
 import { useMundinho } from "@/components/app-providers";
-import { dependencyReady, flatPlayerKey, sortProgression } from "@/lib/progression-model";
-import { findGuideForText, guideThemeClasses } from "@/lib/guide-theme";
+import { findGuideForText } from "@/lib/guide-theme";
+import { resolveGuideIcon, resolveProgressionIcon } from "@/lib/minecraft-icons";
+import { flatPlayerKey, nextEligibleProgression } from "@/lib/progression-model";
 import { STATIC_TOTALS } from "@/lib/static-totals";
+import { worldXpStats } from "@/lib/world-xp";
 import { cn } from "@/lib/cn";
 import type { Actor, ContentStore, CustomItem, ProgressionItem, ProgressionSubitem } from "@/types/content";
 
 export function HomeView() {
   const { actor, content, states, playerStates, customItems, dataStatus, dataError, syncStatus, retry } = useMundinho();
-  const ids = new Set<string>();
-  content.guides.forEach((guide) => guide.checklist.forEach(([id]) => ids.add(id)));
-  content.progression.forEach((item) => ids.add(item.id));
-  content.extras?.items.forEach((item) => ids.add(item.id));
-  customItems.filter((item) => new Date(item.created_at).getTime() >= new Date("2026-09-24T20:00:00Z").getTime()).forEach((item) => ids.add(`custom:${item.id}`));
-  const total = ids.size;
-  const completed = [...ids].filter((id) => states[id]?.completed).length;
-  const percent = total ? Math.round((completed / total) * 100) : 0;
-  const sorted = sortProgression(content.progression);
-  const next = sorted.find((item) => !playerStates[flatPlayerKey(actor, item.id)]?.completed && dependencyReady(item, (id) => Boolean(playerStates[flatPlayerKey(actor, id)]?.completed)));
+  const xp = worldXpStats(content, states, customItems);
+  const completedForActor = (id: string) => Boolean(playerStates[flatPlayerKey(actor, id)]?.completed);
+  const next = nextEligibleProgression(content.progression, completedForActor);
   const nextGuide = next ? findGuideForText(content.guides, `${next.entry} ${next.mods} ${next.title}`) : undefined;
-  const nextTheme = guideThemeClasses(nextGuide?.theme);
+  const nextIcon = nextGuide ? resolveGuideIcon(nextGuide) : next ? resolveProgressionIcon(next) : "/icons/minecraft/paper.png";
   const last = Object.values(states).filter((item) => item.completed && item.completed_at).sort((a, b) => String(b.completed_at).localeCompare(String(a.completed_at)))[0];
   const lastLabel = last ? resolveStateLabel(content, customItems, last.item_id) : null;
   const trophies = buildTrophies(content.progression);
@@ -47,33 +44,25 @@ export function HomeView() {
           <CardContent className="text-ink-900">
             <p className="max-w-2xl text-base leading-7">Um canto para lembrar o que já fizemos, decidir o próximo desafio e não esquecer aquela receita que a gente jurou que ia lembrar.</p>
 
-            <div className="mt-6 border border-night-950 bg-night-900 p-3 text-paper-50" aria-live="polite">
-              <div className="flex justify-between gap-3 font-label text-xl">
-                <span>XP do mundinho</span>
-                {dataStatus === "ready" ? <span>{completed}/{total} · {percent}%</span> : <span>{dataStatus === "loading" ? "acendendo..." : "indisponível"}</span>}
-              </div>
-              {dataStatus === "ready" ? (
-                <div className="mt-2 h-5 border-2 border-night-950 bg-stone-700"><div className="xp-fill h-full bg-grass-500" style={{ width: `${percent}%` }} /></div>
-              ) : dataStatus === "loading" ? (
-                <div className="mt-2 h-5 animate-pulse border-2 border-night-950 bg-stone-700" aria-label="Carregando XP" />
-              ) : (
-                <div className="mt-2 flex flex-wrap items-center gap-2 text-sm text-redstone-100"><span>Falha ao carregar progresso.</span><Button variant="danger" size="sm" onClick={retry}>tentar novamente</Button></div>
-              )}
-            </div>
+            <WorldXpBar stats={xp} status={dataStatus} className="mt-6" />
 
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <div className={cn("border border-torch-700 bg-torch-100 p-4 text-ink-900", dataStatus === "ready" && next && nextTheme.frame)}>
-                <span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="compass" size={18} /> Próximo sugerido para {actor}</span>
-                {dataStatus === "loading" ? (
-                  <p className="mt-2 font-label text-xl">acendendo as tochas...</p>
-                ) : dataStatus === "error" ? (
-                  <div className="mt-2"><p className="text-sm text-redstone-900">Não deu para ler a progressão agora.</p><Button variant="danger" size="sm" className="mt-2" onClick={retry}>tentar novamente</Button></div>
-                ) : next ? (
-                  <><strong className="mt-1 block">#{String(next.order).padStart(3, "0")} · {next.title}</strong><p className="mt-1 text-sm">{next.entry} · {next.phase} · risco {next.risk}</p><Link className="semantic-link mt-3 inline-block font-label text-xl" href={`/progressao#${next.id}` as Route}>ver na progressão</Link></>
-                ) : (
-                  <p className="mt-2">Tudo elegível já foi marcado. Aí sim dá para escolher por vontade.</p>
-                )}
-              </div>
+              {dataStatus === "loading" ? (
+                <div className="border border-torch-700 bg-torch-100 p-4 text-ink-900"><span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="compass" size={18} /> Próximo sugerido para {actor}</span><p className="mt-2 font-label text-xl">acendendo as tochas...</p></div>
+              ) : dataStatus === "error" ? (
+                <div className="border border-redstone-700 bg-redstone-100 p-4 text-redstone-900"><span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="compass" size={18} /> Próximo sugerido para {actor}</span><p className="mt-2 text-sm">Não deu para ler a progressão agora.</p><Button variant="danger" size="sm" className="mt-2" onClick={retry}>tentar novamente</Button></div>
+              ) : next ? (
+                <GuideCompactCard
+                  href={`/progressao#${next.id}`}
+                  theme={nextGuide?.theme}
+                  iconSrc={nextIcon}
+                  eyebrow={`Próximo sugerido para ${actor}`}
+                  title={`#${String(next.order).padStart(3, "0")} · ${next.title}`}
+                  meta={`${next.entry} · ${next.phase} · risco ${next.risk}`}
+                />
+              ) : (
+                <div className="border border-torch-700 bg-torch-100 p-4 text-ink-900"><span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="compass" size={18} /> Próximo sugerido para {actor}</span><p className="mt-2">Tudo elegível já foi marcado. Aí sim dá para escolher por vontade.</p></div>
+              )}
 
               <div className="border border-stone-500 bg-stone-100 p-4 text-ink-900">
                 <span className="flex items-center gap-2 font-label text-xl"><PixelIcon name="book" size={18} /> Última marcação</span>
