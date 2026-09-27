@@ -49,7 +49,7 @@ export function WorldXpBar({
       <div className="world-xp-track mt-2 h-6 overflow-hidden border-4 border-night-950 bg-stone-700" aria-hidden="true">
         {status === "ready" ? (
           <div
-            className={cn("world-xp-fill h-full", bump && "world-xp-bump")}
+            className={cn("xp-fill world-xp-fill h-full", bump && "world-xp-bump")}
             style={{ width: `${stats.percent}%` }}
           />
         ) : (
