@@ -14,14 +14,51 @@ const names = [...new Set([
 
 const base = `https://raw.githubusercontent.com/PrismarineJS/minecraft-assets/${config.sourceCommit}/data/${config.version}`;
 
+async function fetchJson(relative) {
+  const response = await fetch(`${base}/${relative}`, { cache: "no-store" });
+  if (!response.ok) throw new Error(`Falha ao buscar ${relative}: HTTP ${response.status}`);
+  return response.json();
+}
+
+const [itemTextures, blockTextures] = await Promise.all([
+  fetchJson("items_textures.json"),
+  fetchJson("blocks_textures.json"),
+]);
+
+function metadataTexture(entry) {
+  if (!entry) return null;
+  if (typeof entry === "string") return entry;
+  if (typeof entry.texture === "string") return entry.texture;
+  if (Array.isArray(entry.textures)) {
+    const candidate = entry.textures.find((value) => typeof value === "string" || typeof value?.texture === "string");
+    return typeof candidate === "string" ? candidate : candidate?.texture ?? null;
+  }
+  return null;
+}
+
+function normalizeTexturePath(value) {
+  if (!value) return null;
+  return String(value)
+    .replace(/^minecraft:/, "")
+    .replace(/^textures\//, "")
+    .replace(/^item\//, "items/")
+    .replace(/^block\//, "blocks/");
+}
+
 async function fetchIcon(name) {
-  const candidates = [`items/${name}.png`, `blocks/${name}.png`];
+  const candidates = [...new Set([
+    `items/${name}.png`,
+    `blocks/${name}.png`,
+    normalizeTexturePath(metadataTexture(itemTextures[name])),
+    normalizeTexturePath(metadataTexture(blockTextures[name])),
+  ].filter(Boolean))];
+
   for (const relative of candidates) {
     const response = await fetch(`${base}/${relative}`, { cache: "no-store" });
     if (response.ok) return Buffer.from(await response.arrayBuffer());
     if (response.status !== 404) throw new Error(`Falha ao buscar ${relative}: HTTP ${response.status}`);
   }
-  throw new Error(`Sprite Minecraft ${config.version} não encontrado: ${name}`);
+  throw new Error(`Sprite Minecraft ${config.version} não encontrado: ${name} (tentativas: ${candidates.join(", ")})`);
 }
 
 let cursor = 0;
