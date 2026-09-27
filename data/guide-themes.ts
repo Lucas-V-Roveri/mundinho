@@ -2,150 +2,45 @@ import type { GuideTheme } from "@/types/content";
 
 export type GuideThemeMeta = {
   theme: GuideTheme;
-  ["rationale"]: string;
+  rationale: string;
 };
 
 export const GUIDE_THEME_BY_ID = {
-  acampamento: {
-    theme: { accent: "torch", texture: "fire" },
-    rationale: "Fogueira, descanso e calor pedem âmbar de tocha com detalhe de fogo.",
-  },
-  aether: {
-    theme: { accent: "gold", texture: "stone" },
-    rationale: "O Aether usa uma leitura luminosa/celestial; ouro diferencia a dimensão sem pintar o texto.",
-  },
-  "alexs-caves": {
-    theme: { accent: "blue", texture: "stone" },
-    rationale: "Exploração subterrânea e biomas de caverna ganham azul mineral sobre textura de pedra.",
-  },
-  "alexs-mobs": {
-    theme: { accent: "grass", texture: "leaf" },
-    rationale: "Fauna e ecossistemas combinam com verde natural e detalhe de folhas.",
-  },
-  bomd: {
-    theme: { accent: "redstone", texture: "stone" },
-    rationale: "Guia focado em bosses: vermelho de perigo sobre pedra mantém leitura de combate.",
-  },
-  bumblezone: {
-    theme: { accent: "gold", texture: "stone" },
-    rationale: "Mel e colmeias pedem ouro; a textura fica discreta para não simular favos atrás do texto.",
-  },
-  "cataclysm-restante": {
-    theme: { accent: "redstone", texture: "stone" },
-    rationale: "Bosses de alto risco usam o token de perigo e uma base mineral neutra.",
-  },
-  construcao: {
-    theme: { accent: "wood", texture: "leather" },
-    rationale: "Construção e decoração usam madeira quente com uma trama artesanal sutil.",
-  },
-  cozinha: {
-    theme: { accent: "torch", texture: "none" },
-    rationale: "Comida e cozinha ficam quentes e acolhedoras sem textura adicional competindo com receitas.",
-  },
-  create: {
-    theme: { accent: "redstone", texture: "stone" },
-    rationale: "Automação, engrenagens e metal usam redstone como sinal funcional sobre base de pedra/ferro.",
-  },
-  "deeper-darker": {
-    theme: { accent: "blue", texture: "stone" },
-    rationale: "Sculk e profundezas combinam com azul frio controlado e textura mineral.",
-  },
-  "dungeons-structures": {
-    theme: { accent: "stone", texture: "stone" },
-    rationale: "Estruturas e masmorras são o caso neutro intencional: pedra comunica arquitetura sem cor arbitrária.",
-  },
-  "end-reformulado": {
-    theme: { accent: "blue", texture: "stone" },
-    rationale: "Sem token roxo no sistema, azul noturno diferencia o End mantendo contraste AA.",
-  },
-  "eternal-starlight": {
-    theme: { accent: "ice", texture: "ice" },
-    rationale: "Atmosfera fria/etérea pede azul acinzentado e padrão de gelo discreto.",
-  },
-  fallingtree: {
-    theme: { accent: "grass", texture: "leaf" },
-    rationale: "Árvores e coleta de madeira usam verde de natureza com folhas.",
-  },
-  "friends-foes": {
-    theme: { accent: "grass", texture: "leaf" },
-    rationale: "Mobs integrados ao overworld usam a identidade natural do mundo vivo.",
-  },
-  graveyard: {
-    theme: { accent: "stone", texture: "stone" },
-    rationale: "Túmulos e estruturas sombrias usam pedra neutra de propósito, sem inventar uma cor chamativa.",
-  },
-  ignis: {
-    theme: { accent: "torch", texture: "fire" },
-    rationale: "Ignis e Burning Arena têm identidade diretamente ligada a fogo e calor.",
-  },
-  "illager-invasion": {
-    theme: { accent: "redstone", texture: "stone" },
-    rationale: "Invasões e combate recebem vermelho de risco com base estrutural de pedra.",
-  },
-  incendium: {
-    theme: { accent: "torch", texture: "fire" },
-    rationale: "Nether reformulado é identificado de longe por calor, fogo e âmbar.",
-  },
-  mca: {
-    theme: { accent: "gold", texture: "none" },
-    rationale: "Vida de vila, relações e família usam ouro acolhedor sem textura atrás das histórias.",
-  },
-  "mob-variants": {
-    theme: { accent: "grass", texture: "leaf" },
-    rationale: "Variações de criaturas vanilla permanecem visualmente ligadas ao overworld natural.",
-  },
-  "mowzies-mobs": {
-    theme: { accent: "gold", texture: "stone" },
-    rationale: "Bosses e criaturas míticas usam ouro de troféu com base neutra de pedra.",
-  },
-  "overworld-terreno": {
-    theme: { accent: "grass", texture: "stone" },
-    rationale: "Terreno e cavernas misturam identidade verde do overworld com padrão mineral.",
-  },
-  "overworld-vivo": {
-    theme: { accent: "grass", texture: "leaf" },
-    rationale: "Natureza, ambientação e vida do overworld usam verde e folhas.",
-  },
-  "piglin-proliferation": {
-    theme: { accent: "torch", texture: "fire" },
-    rationale: "Piglins e Nether herdam calor e fogo como assinatura reconhecível.",
-  },
-  quark: {
-    theme: { accent: "wood", texture: "stone" },
-    rationale: "Vanilla+ amplo usa madeira como acento cozy e pedra como textura neutra de apoio.",
-  },
-  relics: {
-    theme: { accent: "gold", texture: "stone" },
-    rationale: "Relíquias e artefatos usam ouro de descoberta/conquista sobre base neutra.",
-  },
-  "sophisticated-backpacks": {
-    theme: { accent: "wood", texture: "leather" },
-    rationale: "Mochilas pedem couro/marrom quente e textura de material costurado.",
-  },
-  "spider-overhaul": {
-    theme: { accent: "redstone", texture: "stone" },
-    rationale: "Ameaça de aranhas usa vermelho de perigo; pedra evita uma textura temática agressiva demais.",
-  },
-  supplementaries: {
-    theme: { accent: "wood", texture: "leather" },
-    rationale: "Blocos decorativos e utilidades artesanais usam madeira com trama discreta.",
-  },
-  "survival-climate": {
-    theme: { accent: "ice", texture: "ice" },
-    rationale: "Clima, frio e sobrevivência térmica ganham identidade azul acinzentada de gelo.",
-  },
-  "twilight-forest": {
-    theme: { accent: "grass", texture: "leaf" },
-    rationale: "Floresta, progressão orgânica e biomas verdes usam musgo/folhas.",
-  },
-  undergarden: {
-    theme: { accent: "grass", texture: "stone" },
-    rationale: "Dimensão subterrânea orgânica combina verde musgo com textura mineral escura.",
-  },
-  waystones: {
-    theme: { accent: "blue", texture: "stone" },
-    rationale: "Teleporte e viagem usam azul como sinal de conexão/rota sobre runas de pedra.",
-  },
+  acampamento: { theme: { accent: "torch", texture: "fire" }, rationale: "Fogueira, descanso e cozinha de expedição fazem do fogo a identidade dominante." },
+  aether: { theme: { accent: "gold", texture: "stone" }, rationale: "Dungeons Bronze/Silver/Gold e estética celestial pedem ouro/templo." },
+  "alexs-caves": { theme: { accent: "stone", texture: "stone" }, rationale: "A campanha gira em torno de biomas subterrâneos, tablets e exploração profunda." },
+  "alexs-mobs": { theme: { accent: "grass", texture: "leaf" }, rationale: "Fauna, ecossistemas e materiais de criaturas dão identidade natural ao guia." },
+  bomd: { theme: { accent: "blue", texture: "ice" }, rationale: "Bosses sobrenaturais muito diferentes entre si são unificados pela família end/arcana." },
+  bumblezone: { theme: { accent: "gold", texture: "stone" }, rationale: "Mel, colmeia, Bee Queen e Sempiternal Sanctum dão uma leitura dourada clara." },
+  "cataclysm-restante": { theme: { accent: "blue", texture: "ice" }, rationale: "Bosses antigos e eldritch distribuídos por vários ambientes pedem end/arcana." },
+  construcao: { theme: { accent: "wood", texture: "leather" }, rationale: "Móveis, madeira e interiores artesanais pedem uma identidade quente e material." },
+  cozinha: { theme: { accent: "torch", texture: "fire" }, rationale: "Fogão, preparo e refeições têm associação visual imediata com calor." },
+  create: { theme: { accent: "redstone", texture: "stone" }, rationale: "Mecânica, energia, automação e máquinas usam redstone como assinatura funcional." },
+  "deeper-darker": { theme: { accent: "blue", texture: "ice" }, rationale: "Sculk, portal Ancient City e Otherside têm identidade obscura e extradimensional." },
+  "dungeons-structures": { theme: { accent: "stone", texture: "stone" }, rationale: "Dungeons, fortalezas, monumentos e strongholds são exploração arquitetônica." },
+  "end-reformulado": { theme: { accent: "blue", texture: "ice" }, rationale: "Eyes, portal, End e Nullscape tornam a família end/arcana direta." },
+  "eternal-starlight": { theme: { accent: "blue", texture: "ice" }, rationale: "Profecia, Starlight, Gatekeeper e dimensão sobrenatural combinam com arcana." },
+  fallingtree: { theme: { accent: "grass", texture: "leaf" }, rationale: "Árvore, madeira e coleta florestal são a identidade inteira do mod." },
+  "friends-foes": { theme: { accent: "grass", texture: "leaf" }, rationale: "A personalidade vem das criaturas e da interação com o mundo." },
+  graveyard: { theme: { accent: "stone", texture: "stone" }, rationale: "Crypts, prisões, ruínas e túmulos pedem pedra escura." },
+  ignis: { theme: { accent: "torch", texture: "fire" }, rationale: "Burning Arena, Burning Ashes e soul fire tornam fogo inequívoco." },
+  "illager-invasion": { theme: { accent: "redstone", texture: "stone" }, rationale: "Raid, hostilidade e combate usam redstone sem virar fundo de texto." },
+  incendium: { theme: { accent: "torch", texture: "fire" }, rationale: "Nether, lava e estruturas incendiárias dominam a identidade visual." },
+  mca: { theme: { accent: "wood", texture: "leather" }, rationale: "Vila, casa, relações e vida cotidiana combinam com linguagem doméstica e quente." },
+  "mob-variants": { theme: { accent: "grass", texture: "leaf" }, rationale: "É uma expansão leve do bestiário vivo do mundo normal." },
+  "mowzies-mobs": { theme: { accent: "gold", texture: "stone" }, rationale: "Encontros rituais, Sunbird e bosses monumentais têm forte linguagem de templo." },
+  "overworld-terreno": { theme: { accent: "stone", texture: "stone" }, rationale: "Terreno, mineração e redes de cavernas são a própria proposta." },
+  "overworld-vivo": { theme: { accent: "grass", texture: "leaf" }, rationale: "Ecologia e weathering tornam o mundo organicamente vivo." },
+  "piglin-proliferation": { theme: { accent: "gold", texture: "stone" }, rationale: "Ouro e cultura piglin são mais específicos que simplesmente Nether=fogo." },
+  quark: { theme: { accent: "redstone", texture: "stone" }, rationale: "Sistemas funcionais, mecanismos e utilidades vanilla+ combinam com linguagem técnica." },
+  relics: { theme: { accent: "gold", texture: "stone" }, rationale: "Loot raro, tesouro e artefatos pedem identidade de relíquia dourada." },
+  "sophisticated-backpacks": { theme: { accent: "wood", texture: "leather" }, rationale: "Mochilas e armazenamento têm couro como leitura imediata." },
+  "spider-overhaul": { theme: { accent: "stone", texture: "stone" }, rationale: "Aranhas, estruturas e ameaça subterrânea encaixam em pedra/caverna." },
+  supplementaries: { theme: { accent: "wood", texture: "leather" }, rationale: "Objetos funcionais de casa/base têm linguagem artesanal semelhante à decoração." },
+  "survival-climate": { theme: { accent: "ice", texture: "ice" }, rationale: "Clima e temperatura distinguem esse guia dos demais de survival." },
+  "twilight-forest": { theme: { accent: "grass", texture: "leaf" }, rationale: "Floresta, biomas, vegetação e exploração mágica tornam o tema natural." },
+  undergarden: { theme: { accent: "grass", texture: "leaf" }, rationale: "A dimensão é subterrânea, mas a identidade é orgânica, úmida e biome-heavy." },
+  waystones: { theme: { accent: "blue", texture: "ice" }, rationale: "Teleporte e rede mágica de viagem são essencialmente arcane utility." },
 } as const satisfies Record<string, GuideThemeMeta>;
 
 export type KnownGuideId = keyof typeof GUIDE_THEME_BY_ID;
