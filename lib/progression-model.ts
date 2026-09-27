@@ -19,7 +19,7 @@ export const KNOWN_SUBITEM_IDS: Record<string, string[]> = {
   "progression:420": ["progression:420:cloggrum", "progression:420:froststeel", "progression:420:utherium", "progression:420:regalium"],
   "progression:500": ["progression:500:victory-medals", "progression:500:valkyrie-queen"],
   "progression:810": ["progression:810:old-eye", "progression:810:nether-eye", "progression:810:cold-eye", "progression:810:rogue-eye", "progression:810:black-eye", "progression:810:magical-eye", "progression:810:lost-eye", "progression:810:corrupted-eye", "progression:810:wither-eye", "progression:810:guardian-eye", "progression:810:witch-eye", "progression:810:cursed-eye"],
-  "progression:970": ["progression:970:burning-arena", "progression:970:revenant-1", "progression:970:revenant-2", "progression:970:burning-ashes", "progression:970:altar-of-fire", "progression:970:phase-1", "progression:970:phase-2", "progression:970:phase-3", "progression:970:defeat", "progression:970:ignitium", "progression:970:ignitium-item"],
+  "progression:970": ["progression:970:burning-arena", "progression:970:revenant-1", "progression:970:revenant-2", "progression:970:burning-ashes", "progression:970:altar-of-fire", "progression:970:summon", "progression:970:phase-1", "progression:970:phase-2", "progression:970:phase-3", "progression:970:defeat", "progression:970:ignitium", "progression:970:ignitium-item"],
 };
 
 export function flatPlayerKey(actor: Actor, itemId: string) { return `${actor}:${itemId}`; }
@@ -56,6 +56,10 @@ export function sortProgression(items: ProgressionItem[]) {
     if (dependsTransitively(a, b.id, byId)) return 1;
     return a.order - b.order;
   });
+}
+
+export function nextEligibleProgression(items: ProgressionItem[], completed: (id: string) => boolean) {
+  return sortProgression(items).find((item) => !completed(item.id) && dependencyReady(item, completed));
 }
 
 export function isPlaceholder(value?: string | null) {
