@@ -20,10 +20,16 @@ async function fetchJson(relative) {
   return response.json();
 }
 
-const [itemTextures, blockTextures] = await Promise.all([
+function byName(rows) {
+  return Object.fromEntries((Array.isArray(rows) ? rows : Object.values(rows)).filter((row) => row?.name).map((row) => [row.name, row]));
+}
+
+const [itemTextureRows, blockTextureRows] = await Promise.all([
   fetchJson("items_textures.json"),
   fetchJson("blocks_textures.json"),
 ]);
+const itemTextures = byName(itemTextureRows);
+const blockTextures = byName(blockTextureRows);
 
 function metadataTexture(entry) {
   if (!entry) return null;
@@ -38,11 +44,12 @@ function metadataTexture(entry) {
 
 function normalizeTexturePath(value) {
   if (!value) return null;
-  return String(value)
-    .replace(/^minecraft:/, "")
-    .replace(/^textures\//, "")
-    .replace(/^item\//, "items/")
-    .replace(/^block\//, "blocks/");
+  let normalized = String(value).replace(/^textures\//, "");
+  if (normalized.startsWith("minecraft:item/")) normalized = `items/${normalized.slice("minecraft:item/".length)}`;
+  else if (normalized.startsWith("minecraft:block/")) normalized = `blocks/${normalized.slice("minecraft:block/".length)}`;
+  else normalized = normalized.replace(/^minecraft:/, "").replace(/^item\//, "items/").replace(/^block\//, "blocks/");
+  if (!normalized.endsWith(".png")) normalized += ".png";
+  return normalized;
 }
 
 async function fetchIcon(name) {
