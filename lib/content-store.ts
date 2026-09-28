@@ -19,6 +19,29 @@ import type {
   ProgressionItem,
 } from "@/types/content";
 
+const LOTE3_GUIDE_IDS = [
+  "acampamento",
+  "alexs-mobs",
+  "construcao",
+  "cozinha",
+  "create",
+  "dungeons-structures",
+  "fallingtree",
+  "friends-foes",
+  "illager-invasion",
+  "mca",
+  "mob-variants",
+  "overworld-terreno",
+  "overworld-vivo",
+  "piglin-proliferation",
+  "quark",
+  "relics",
+  "spider-overhaul",
+  "supplementaries",
+  "survival-climate",
+  "waystones",
+] as const;
+
 function withoutTwilightEyeSource(source: string): string {
   return source
     .split("\n")
@@ -56,6 +79,24 @@ function applyApprovedContinuityRules(items: ProgressionItem[]): ProgressionItem
   });
 }
 
+function assertGuideCoverage(guides: Guide[], source: string) {
+  const guideIds = guides.map((guide) => guide.id);
+  const duplicateIds = [...new Set(guideIds.filter((id, index) => guideIds.indexOf(id) !== index))];
+
+  if (duplicateIds.length) {
+    throw new Error(`${source}: IDs de guia duplicados: ${duplicateIds.join(", ")}`);
+  }
+
+  if (guides.length !== EXPECTED_GUIDE_THEME_COUNT) {
+    throw new Error(`${source}: esperados ${EXPECTED_GUIDE_THEME_COUNT} guias, recebidos ${guides.length}`);
+  }
+
+  const missingLote3 = LOTE3_GUIDE_IDS.filter((id) => !guideIds.includes(id));
+  if (missingLote3.length) {
+    throw new Error(`${source}: Lote 3 incompleto; faltando ${missingLote3.join(", ")}`);
+  }
+}
+
 function buildContentStore(rows: readonly ContentSnapshotRow[], source: string): ContentStore {
   const guides: Guide[] = [];
   let progression: ProgressionItem[] = [];
@@ -80,9 +121,7 @@ function buildContentStore(rows: readonly ContentSnapshotRow[], source: string):
     }
   }
 
-  if (guides.length !== EXPECTED_GUIDE_THEME_COUNT) {
-    throw new Error(`${source}: esperados ${EXPECTED_GUIDE_THEME_COUNT} guias, recebidos ${guides.length}`);
-  }
+  assertGuideCoverage(guides, source);
   if (!progression.length) throw new Error(`${source}: progressão vazia`);
   if (!amendments || !extras || !backstage) throw new Error(`${source}: páginas estruturadas incompletas`);
 
