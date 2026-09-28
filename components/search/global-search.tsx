@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PixelIcon } from "@/components/ui/pixel-icon";
 import { useMundinho } from "@/components/app-providers";
-import { BESTIARY_ENTRIES } from "@/data/bestiary";
+import { BESTIARY_ENTRIES } from "@/data/bestiary-catalog";
 import { ENCOUNTER_CATALOG, ITEM_CATALOG } from "@/data/wiki-catalog";
 import { resolveGuideIcon } from "@/lib/minecraft-icons";
 import type { GuideTheme } from "@/types/content";
@@ -67,7 +67,7 @@ export function GlobalSearch() {
         <kbd className="border border-night-950/70 bg-paper-100 px-1 text-sm">/</kbd>
       </button>
       <Dialog open={open} onOpenChange={setOpen} title="Busca global" description="Mods, Bestiário, itens, encontros, progressão, Extras, Amendments e Bastidores." className="w-[min(94vw,46rem)]">
-        <Input disabled={dataStatus !== "ready"} autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Crow, Ignis, Twilight Eye, Waystones..." aria-label="Pesquisar no Mundinho" />
+        <Input disabled={dataStatus !== "ready"} autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Moa, Slider, Crow, Ignis, Waystones..." aria-label="Pesquisar no Mundinho" />
         <div className="mt-4 max-h-[55vh] space-y-2 overflow-auto pr-1">
           {dataStatus === "loading" ? <p role="status" className="border border-stone-500 bg-stone-100 p-4 font-label text-xl text-ink-900">acendendo as tochas da busca...</p> : dataStatus === "error" ? <div role="alert" className="border border-redstone-700 bg-redstone-100 p-4 text-redstone-900"><p className="font-label text-xl">falha ao carregar o índice</p><p className="mt-1 text-sm">{dataError || "A fonte de dados não respondeu."}</p><Button variant="danger" size="sm" className="mt-3" onClick={retry}>tentar novamente</Button></div> : filtered.length ? filtered.map((row) => row.group === "Mods" && row.iconSrc ? (
             <GuideCompactCard key={`${row.group}-${row.id}`} href={row.href} theme={row.theme} iconSrc={row.iconSrc} eyebrow="Mods" title={row.title} meta={row.subtitle} onClick={closeSearch} />
