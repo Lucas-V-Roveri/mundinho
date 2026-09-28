@@ -7,6 +7,8 @@ export type BestiarySourceStatus =
   | "não documentado";
 
 export type BestiaryTrackFlag = "seen" | "defeated" | "tamed";
+export type BestiaryConfidence = "Alta" | "Média" | "Baixa-conferir";
+export type BestiaryCreatureType = "Hostil" | "Neutro" | "Passivo" | "Domesticável" | "Chefe" | "Mini-chefe" | "Não confirmado";
 
 export type BestiarySource = {
   label: string;
@@ -31,10 +33,12 @@ export type BestiaryEntry = {
   registryId: string;
   category: string;
   behavior: string;
+  type?: BestiaryCreatureType;
   danger: "Baixo" | "Médio" | "Alto" | "Severo";
   summary: string;
   dimensions: string[];
   locations: string[];
+  habitat?: string;
   howToFind: string;
   health?: string;
   attack?: string;
@@ -44,9 +48,12 @@ export type BestiaryEntry = {
   notes?: string[];
   track: BestiaryTrackFlag[];
   status: BestiarySourceStatus;
+  confidence?: BestiaryConfidence;
   imageUrl?: string;
   imageAlt?: string;
   imageSourceUrl?: string;
+  progressionHref?: string;
+  guideHref?: string;
   sources: BestiarySource[];
 };
 
