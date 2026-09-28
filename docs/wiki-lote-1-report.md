@@ -4,14 +4,15 @@ Data da pesquisa: 2026-09-28
 
 ## Escopo
 
-Este lote cobre Naga, Twilight Lich, Minoshroom, Hydra, Knight Phantoms, Ur-Ghast, Alpha Yeti, Snow Queen e Final Castle/Castle Keeper, incluindo Twilight Eye e o addon Twilight Forest Final Boss (remake).
+Este lote cobre Naga, Twilight Lich, Minoshroom, Hydra, Knight Phantoms, Ur-Ghast, Alpha Yeti, Snow Queen e Final Castle/Castle Keeper, além do addon Twilight Forest Final Boss (remake).
+
+Twilight Eye permanece explicitamente fora da camada factual deste lote. Pela fonte de verdade do projeto, ele continua **a conferir** até validação in-game do usuário; não foi usado como pré-requisito, drop confirmado ou fato pesquisado adicional nesta revisão.
 
 A regra aplicada foi: nenhum fato novo entra sem URL de fonte registrada. Chance, quantidade e números só são registrados quando a fonte os publica explicitamente.
 
 ## Versões verificadas
 
 - The Twilight Forest: Minecraft 1.21.1, NeoForge, 4.8.3345 — https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/files/7797302
-- Twilight Eye: Minecraft 1.21.1, NeoForge, 1.0.0 — https://www.curseforge.com/minecraft/mc-mods/twilight-eye
 - Twilight Forest Final Boss (remake): a página do addon publica builds 2.1.1 e 2.1.2 testadas com Minecraft 1.21.1 + NeoForge + Twilight Forest 4.8.3345 — https://www.curseforge.com/minecraft/mc-mods/twilight-forest-final-boss-remake
 - O snapshot atual do Mundinho não identifica qual build 2.1.x do Final Boss (remake) está instalada; por isso essa versão exata permanece não verificada.
 
@@ -26,16 +27,15 @@ As fontes abaixo documentam Twilight Forest/addons em isolamento. O pack contém
 3. mcmodwiki — Boss Progression Guide: https://mcmodwiki.com/the-twilight-forest/guides/boss-progression-guide
 4. MC Toolbox — Twilight Forest 1.21.1: https://mctoolbox.net/mod/twilight-forest
 5. WIKI-MINE — Twilight Forest 1.21.1 guide: https://wiki-mine.com/guides/twilight-forest-1211-complete-guide-to-the-world-and-bosses
-6. CurseForge — Twilight Eye: https://www.curseforge.com/minecraft/mc-mods/twilight-eye
-7. CurseForge — Twilight Forest Final Boss (remake): https://www.curseforge.com/minecraft/mc-mods/twilight-forest-final-boss-remake
-8. CurseForge — Twilight Forest Final Boss original (1.20.1, somente para registrar divergência histórica; não usado como evidência da versão do pack): https://www.curseforge.com/minecraft/mc-mods/twilight-forest-final-boss
+6. CurseForge — Twilight Forest Final Boss (remake): https://www.curseforge.com/minecraft/mc-mods/twilight-forest-final-boss-remake
+7. CurseForge — Twilight Forest Final Boss original (1.20.1, somente para registrar divergência histórica; não usado como evidência da versão do pack): https://www.curseforge.com/minecraft/mc-mods/twilight-forest-final-boss
 
 ## Relatório por encontro
 
 | Encontro | Dados adicionados | Status | Observações |
 | --- | --- | --- | --- |
 | Naga | Localização na Naga Courtyard; Naga Scale; Naga Trophy | confirmado (2+ fontes) | Nenhuma chance/quantidade adicionada sem documentação explícita. |
-| Twilight Lich | Lich Tower; Scepter of Twilight; Scepter of Life Draining; Zombie Scepter; Lich Trophy; Twilight Eye | confirmado (2+ fontes) | Twilight Eye: 25% explicitamente documentado pela página do addon 1.0.0. |
+| Twilight Lich | Lich Tower; Scepter of Twilight; Scepter of Life Draining; Zombie Scepter; Lich Trophy | confirmado (2+ fontes) | Twilight Eye permanece fora do catálogo factual por estar “a conferir” no projeto. |
 | Minoshroom | Labyrinth; Meef Stroganoff; Minotaur Axe | confirmado (2+ fontes) | Nenhuma chance/quantidade inferida. |
 | Hydra | Hydra Lair / Fire Swamp; Fiery Blood; Hydra Chop; Hydra Trophy | confirmado (2+ fontes) | Fiery Blood fica associado à Hydra; não é usado para resolver o conflito do Ur-Ghast. |
 | Knight Phantoms | Knight/Goblin Stronghold; Knightmetal gear; Phantom Trophy | confirmado (2+ fontes) | A fonte resume “Knightmetal gear” sem fixar peças, quantidades ou chances; o catálogo não inventa essas especificidades. |
@@ -103,3 +103,4 @@ Isso é intencional: o requisito “não usar imagem sem origem identificada” 
 1. Ícones específicos ainda não foram incorporados por falta de origem de asset verificável no fluxo de pesquisa atual.
 2. Castle Keeper permanece parcialmente não documentado, conforme detalhado acima.
 3. Receitas/usos só aparecem quando foram registrados com fonte; o site não cria placeholders para campos ausentes.
+4. Twilight Eye continua “a conferir” e, até validação do usuário, permanece fora dos fatos confirmados da wiki.
