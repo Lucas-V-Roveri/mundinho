@@ -8,6 +8,7 @@ const items = [
   ["/", "Início"],
   ["/progressao", "Progressão"],
   ["/mods", "Mods"],
+  ["/bestiario", "Bestiário"],
   ["/amendments", "Amendments"],
   ["/extras", "Extras"],
   ["/bastidores", "Bastidores"],
