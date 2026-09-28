@@ -21,6 +21,12 @@ export type Database = {
         Update: Partial<Database["public"]["Tables"]["mundinho_content"]["Insert"]>;
         Relationships: [];
       };
+      mundinho_bestiary_state: {
+        Row: { world_id: string; mob_id: string; actor: string; seen: boolean; seen_at: string | null; defeated: boolean; defeated_at: string | null; tamed: boolean; tamed_at: string | null; updated_by: string; updated_at: string; deleted: boolean; deleted_by: string | null; deleted_at: string | null };
+        Insert: { world_id: string; mob_id: string; actor: string; seen?: boolean; seen_at?: string | null; defeated?: boolean; defeated_at?: string | null; tamed?: boolean; tamed_at?: string | null; updated_by: string; updated_at?: string; deleted?: boolean; deleted_by?: string | null; deleted_at?: string | null };
+        Update: Partial<Database["public"]["Tables"]["mundinho_bestiary_state"]["Insert"]>;
+        Relationships: [];
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;
