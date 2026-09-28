@@ -19,6 +19,43 @@ import type {
   ProgressionItem,
 } from "@/types/content";
 
+function withoutTwilightEyeSource(source: string): string {
+  return source
+    .split("\n")
+    .filter((line) => !line.toLowerCase().includes("twilight-eye"))
+    .join("\n");
+}
+
+/**
+ * Regras de continuidade aprovadas depois do snapshot/Supabase atual.
+ * Mantemos os IDs e a ordem intactos para não quebrar progresso já salvo.
+ */
+function applyApprovedContinuityRules(items: ProgressionItem[]): ProgressionItem[] {
+  return items.map((item) => {
+    if (item.id === "progression:350") {
+      return {
+        ...item,
+        mods: "Spiced Twilight, The Twilight Forest",
+        notes:
+          "Twilight Eye continua a conferir in-game. Não presumir origem, chance, receita, função nem dependência até confirmação explícita.",
+        source: withoutTwilightEyeSource(item.source),
+      };
+    }
+
+    if (item.id === "progression:810") {
+      return {
+        ...item,
+        mods: "End Remastered, End Remastered Additions",
+        notes:
+          "End Remastered exige 12 Eyes distintos. End Remastered Additions amplia o pool confirmado. Twilight Eye continua a conferir in-game e não é contado, presumido como alternativa nem usado como pré-requisito até confirmação explícita.",
+        source: withoutTwilightEyeSource(item.source),
+      };
+    }
+
+    return item;
+  });
+}
+
 function buildContentStore(rows: readonly ContentSnapshotRow[], source: string): ContentStore {
   const guides: Guide[] = [];
   let progression: ProgressionItem[] = [];
@@ -33,7 +70,7 @@ function buildContentStore(rows: readonly ContentSnapshotRow[], source: string):
       if (!assigned) console.warn(`[mundinho] ${source}: guia sem theme explícito: ${raw.id}; fallback stone aplicado.`);
       guides.push({ ...raw, theme: assigned ?? raw.theme ?? DEFAULT_GUIDE_THEME });
     } else if (row.key === "page:progression") {
-      progression = parseProgression(row.payload).sort((a, b) => a.order - b.order);
+      progression = applyApprovedContinuityRules(parseProgression(row.payload)).sort((a, b) => a.order - b.order);
     } else if (row.key === "page:amendments") {
       amendments = parseAmendments(row.payload);
     } else if (row.key === "page:extras") {
