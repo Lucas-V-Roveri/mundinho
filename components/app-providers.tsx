@@ -12,6 +12,7 @@ import { buildSubitemMap } from "@/lib/progression-model";
 import type { Actor, ContentSection, ContentStore, CustomItem, ItemState, PlayerItemState } from "@/types/content";
 
 const DEFAULT_WORLD = "mundinho-pra-sempre";
+const SHARED_ACTORS: readonly Actor[] = ["gr1d", "benamu"];
 
 export type SyncStatus = "connecting" | "supabase" | "preview-local" | "error";
 export type DataStatus = "loading" | "ready" | "error";
@@ -208,7 +209,10 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
     const store = storeRef.current;
     if (!store || dataStatus !== "ready") return;
     try {
-      await store.setCompleted({ itemId: input.itemId, completed: input.completed, actor, section: input.section, entryKey: input.entryKey });
+      const sharedWriteOrder = [...SHARED_ACTORS.filter((candidate) => candidate !== actor), actor];
+      for (const sharedActor of sharedWriteOrder) {
+        await store.setCompleted({ itemId: input.itemId, completed: input.completed, actor: sharedActor, section: input.section, entryKey: input.entryKey });
+      }
       playUiSound(input.completed ? "success" : "click");
       if (input.completed) toast({ title: "Advancement Made!", description: `${actor} marcou: ${input.label}`, variant: "advancement" });
       await refresh();
