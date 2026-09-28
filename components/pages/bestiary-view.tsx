@@ -7,7 +7,14 @@ import { DataStatePanel } from "@/components/ui/data-state";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Tag } from "@/components/ui/tag";
-import { BESTIARY_ENTRIES, BESTIARY_INVENTORY_TOTAL, BESTIARY_LOT_5A_DETAILED, BESTIARY_MOD_AUDIT } from "@/data/bestiary";
+import {
+  BESTIARY_DETAILED_TOTAL,
+  BESTIARY_ENTRIES,
+  BESTIARY_INVENTORY_TOTAL,
+  BESTIARY_LOT_5A_DETAILED,
+  BESTIARY_LOT_5B_DETAILED,
+  BESTIARY_MOD_AUDIT,
+} from "@/data/bestiary-catalog";
 import { useBestiaryState } from "@/lib/bestiary-state";
 import type { BestiaryTrackFlag } from "@/types/bestiary";
 
@@ -79,12 +86,12 @@ export function BestiaryView() {
   return (
     <div className="space-y-6 page-enter">
       <header className="pixel-surface panel-paper p-5 text-ink-900">
-        <p className="font-label text-2xl text-wood-700">wiki central · lote 5A</p>
+        <p className="font-label text-2xl text-wood-700">wiki central · lote 5B</p>
         <h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Bestiário</h1>
-        <p className="mt-3 max-w-4xl leading-7">Catálogo de criaturas do pack com origem rastreável, versão, comportamento, spawn, drops e descoberta separada para gr1d e benamu. O inventário-base tem {BESTIARY_INVENTORY_TOTAL} candidatos; este lote calibra {BESTIARY_LOT_5A_DETAILED} cards antes da expansão em massa.</p>
+        <p className="mt-3 max-w-4xl leading-7">Catálogo de criaturas do pack com origem rastreável, versão, comportamento, spawn, drops e descoberta separada para gr1d e benamu. O inventário-base continua com {BESTIARY_INVENTORY_TOTAL} candidatos; já há {BESTIARY_DETAILED_TOTAL} cards detalhados ({BESTIARY_LOT_5A_DETAILED} do 5A + {BESTIARY_LOT_5B_DETAILED} do 5B).</p>
         <div className="mt-4 flex flex-wrap gap-2">
           <Tag tone="achievement">{actor}</Tag>
-          <Tag tone="success">{seenCount}/{BESTIARY_LOT_5A_DETAILED} vistos</Tag>
+          <Tag tone="success">{seenCount}/{BESTIARY_DETAILED_TOTAL} vistos</Tag>
           <Tag tone="danger">{defeatedCount} derrotados</Tag>
           <Tag tone="external">{tamedCount} domesticados</Tag>
           <Tag>{BESTIARY_INVENTORY_TOTAL} candidatos no inventário</Tag>
@@ -114,8 +121,8 @@ export function BestiaryView() {
       ) : <DataStatePanel status="empty" emptyText="Nenhuma criatura corresponde a estes filtros." />}
 
       <section className="pixel-surface panel-paper p-5 text-ink-900" aria-labelledby="bestiary-audit-title">
-        <h2 id="bestiary-audit-title" className="font-display text-base sm:text-lg">Auditoria do Lote 5A</h2>
-        <p className="mt-3 max-w-4xl text-sm leading-6">“Calibrado” significa que o formato foi testado com registry/código/wiki/loot quando disponíveis. Não significa que todos os mobs desse mod já estejam detalhados — essa expansão fica para 5B–5D.</p>
+        <h2 id="bestiary-audit-title" className="font-display text-base sm:text-lg">Auditoria do Bestiário · Lotes 5A–5B</h2>
+        <p className="mt-3 max-w-4xl text-sm leading-6">“Calibrado” significa que o formato foi cruzado com registry/código/wiki/loot quando disponíveis. No Aether, o 5B fecha o registro de mobs vivos da versão 1.5.10; entidades técnicas e projéteis continuam deliberadamente fora do Bestiário.</p>
         <div className="mt-4 grid gap-3 md:grid-cols-2">
           {BESTIARY_MOD_AUDIT.map((item) => (
             <a key={item.mod} href={item.sourceHref} target="_blank" rel="noreferrer" className="pixel-card-interactive border-4 border-night-950 bg-paper-100 p-4 text-ink-900">
