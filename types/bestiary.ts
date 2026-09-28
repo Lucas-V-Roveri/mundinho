@@ -47,6 +47,8 @@ export type BestiaryEntry = {
   imageUrl?: string;
   imageAlt?: string;
   imageSourceUrl?: string;
+  guideHref?: string;
+  progressionHref?: string;
   sources: BestiarySource[];
 };
 
