@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PixelIcon } from "@/components/ui/pixel-icon";
 import { useMundinho } from "@/components/app-providers";
+import { ENCOUNTER_CATALOG, ITEM_CATALOG } from "@/data/wiki-catalog";
 import { resolveGuideIcon } from "@/lib/minecraft-icons";
 import type { GuideTheme } from "@/types/content";
 
@@ -40,6 +41,8 @@ export function GlobalSearch() {
     const result: SearchRow[] = [];
     content.guides.forEach((guide) => result.push({ id: `guide-${guide.id}`, title: guide.title, subtitle: `${guide.subtitle} · ${guide.phase}`, href: `/mods#guide-${guide.id}`, group: "Mods", theme: guide.theme, iconSrc: resolveGuideIcon(guide) }));
     content.progression.forEach((item) => result.push({ id: item.id, title: item.title, subtitle: `${item.entry} · ${item.phase}`, href: `/progressao#${encodeURIComponent(item.id)}`, group: "Progressão" }));
+    ITEM_CATALOG.forEach((item) => result.push({ id: `item-${item.id}`, title: `${item.namePt} · ${item.nameEn}`, subtitle: `${item.mod} · ${item.utility}`, href: `/mods#catalogo-twilight`, group: "Itens" }));
+    ENCOUNTER_CATALOG.forEach((entry) => result.push({ id: `encounter-${entry.id}`, title: `${entry.namePt} · ${entry.nameEn}`, subtitle: `${entry.mod} · ${entry.status}`, href: `/progressao#encounter-${entry.id}`, group: "Encontros" }));
     content.extras?.items.forEach((item) => result.push({ id: item.id, title: item.title, subtitle: item.description, href: `/extras#${item.id}`, group: "Extras" }));
     content.backstage?.items.forEach((item) => result.push({ id: `backstage-${item.name}`, title: item.name, subtitle: `${item.fn} · ${item.version}`, href: `/bastidores#${encodeURIComponent(item.name)}`, group: "Bastidores" }));
     content.amendments?.groups.forEach((group) => result.push({ id: `amendments-${group.title}`, title: group.title, subtitle: group.items.slice(0, 2).join(" "), href: `/amendments#${encodeURIComponent(group.title)}`, group: "Amendments" }));
@@ -61,8 +64,8 @@ export function GlobalSearch() {
         <span className="hidden min-[980px]:inline">Buscar</span>
         <kbd className="border border-night-950/70 bg-paper-100 px-1 text-sm">/</kbd>
       </button>
-      <Dialog open={open} onOpenChange={setOpen} title="Busca global" description="Mods, progressão, Extras, Amendments e Bastidores." className="w-[min(94vw,46rem)]">
-        <Input disabled={dataStatus !== "ready"} autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Twilight, Hydra, Waystones..." aria-label="Pesquisar no Mundinho" />
+      <Dialog open={open} onOpenChange={setOpen} title="Busca global" description="Mods, itens, encontros, progressão, Extras, Amendments e Bastidores." className="w-[min(94vw,46rem)]">
+        <Input disabled={dataStatus !== "ready"} autoFocus value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Ex.: Twilight Eye, Hydra, Waystones..." aria-label="Pesquisar no Mundinho" />
         <div className="mt-4 max-h-[55vh] space-y-2 overflow-auto pr-1">
           {dataStatus === "loading" ? <p role="status" className="border border-stone-500 bg-stone-100 p-4 font-label text-xl text-ink-900">acendendo as tochas da busca...</p> : dataStatus === "error" ? <div role="alert" className="border border-redstone-700 bg-redstone-100 p-4 text-redstone-900"><p className="font-label text-xl">falha ao carregar o índice</p><p className="mt-1 text-sm">{dataError || "A fonte de dados não respondeu."}</p><Button variant="danger" size="sm" className="mt-3" onClick={retry}>tentar novamente</Button></div> : filtered.length ? filtered.map((row) => row.group === "Mods" && row.iconSrc ? (
             <GuideCompactCard key={`${row.group}-${row.id}`} href={row.href} theme={row.theme} iconSrc={row.iconSrc} eyebrow="Mods" title={row.title} meta={row.subtitle} onClick={closeSearch} />

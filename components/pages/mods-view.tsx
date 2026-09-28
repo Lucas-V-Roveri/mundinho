@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { GuideCard } from "@/components/guides/guide-card";
+import { TwilightCatalogPanel } from "@/components/wiki/wiki-catalog";
 import { Input } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { DataStatePanel } from "@/components/ui/data-state";
@@ -35,7 +36,7 @@ export function ModsView() {
           <option value="utilidade">Utilidade</option>
         </Select>
       </section>
-      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText="abrindo os 35 guias..." /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} />)}</div></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
+      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText="abrindo os 35 guias..." /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} />)}</div><TwilightCatalogPanel /></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
     </div>
   );
 }

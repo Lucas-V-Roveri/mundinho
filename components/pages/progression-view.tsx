@@ -9,6 +9,7 @@ import { WorldXpBar } from "@/components/progression/world-xp-bar";
 import { DataStatePanel } from "@/components/ui/data-state";
 import { Select } from "@/components/ui/select";
 import { Tag } from "@/components/ui/tag";
+import { EncounterDetails } from "@/components/wiki/wiki-catalog";
 import { resolveProgressionIcon } from "@/lib/minecraft-icons";
 import { PHASE_EQUIPMENT, PHASE_ORDER, flatPlayerKey, isPlaceholder, personalSubitemProgress, sortProgression } from "@/lib/progression-model";
 import { STATIC_TOTALS } from "@/lib/static-totals";
@@ -160,6 +161,7 @@ function ProgressionCard({
   const activeProgress = actor === "gr1d" ? gr1dProgress : benamuProgress;
   const danger = item.risk === "Severo" || item.risk === "Alto";
   const icon = resolveProgressionIcon(item);
+  const milestoneId = String(item.order).padStart(3, "0");
 
   return <article id={item.id} className="progression-timeline-item relative scroll-mt-40 pl-12 sm:pl-16">
     <span className="progression-timeline-node inventory-slot absolute left-0 top-4 z-10 grid size-10 place-items-center border-2 border-night-950 bg-stone-700 sm:size-12" aria-hidden="true">
@@ -171,7 +173,7 @@ function ProgressionCard({
           <div className="grid gap-3 sm:grid-cols-[3.5rem_1fr_auto] sm:items-center">
             <span className="inventory-slot grid size-12 place-items-center border-2 border-night-950 bg-stone-700 font-display text-2xl text-grass-100" aria-label="Concluído">✓</span>
             <div className="min-w-0">
-              <span className="font-label text-lg text-ink-700">#{String(item.order).padStart(3, "0")} · {item.entry}</span>
+              <span className="font-label text-lg text-ink-700">#{milestoneId} · {item.entry}</span>
               <h3 className="mt-1 text-base font-bold leading-snug line-through decoration-2 sm:text-lg">{item.title}</h3>
               <p className="mt-1 font-label text-lg text-grass-900">concluído em {formatCompletionDate(completedAt)}</p>
             </div>
@@ -183,7 +185,7 @@ function ProgressionCard({
               <span className="inventory-slot grid size-14 place-items-center border-2 border-night-950 bg-stone-700">
                 <ContentIcon src={icon} alt={`Item-símbolo de ${item.title}`} kind="item" className="minecraft-item-sprite size-10" />
               </span>
-              <div className="min-w-0"><span className="font-label text-lg text-ink-700">#{String(item.order).padStart(3, "0")} · {item.entry}</span><h3 className="mt-1 font-sans text-base font-bold leading-snug sm:text-lg">{item.title}</h3><p className="mt-1 text-xs text-ink-700">{item.mods}</p>{!isPlaceholder(item.equipment) ? <p className="mt-2 line-clamp-2 text-sm"><strong>Equipamento mínimo:</strong> {item.equipment}</p> : null}</div>
+              <div className="min-w-0"><span className="font-label text-lg text-ink-700">#{milestoneId} · {item.entry}</span><h3 className="mt-1 font-sans text-base font-bold leading-snug sm:text-lg">{item.title}</h3><p className="mt-1 text-xs text-ink-700">{item.mods}</p>{!isPlaceholder(item.equipment) ? <p className="mt-2 line-clamp-2 text-sm"><strong>Equipamento mínimo:</strong> {item.equipment}</p> : null}</div>
               <div className="flex flex-wrap gap-2 sm:max-w-64 sm:justify-end"><Tag tone="focus">{item.phase}</Tag><Tag tone={danger ? "danger" : "neutral"}>risco {item.risk}</Tag><Tag tone={String(item.confidence).startsWith("Alta") ? "success" : "neutral"}>confiança: {item.confidence}</Tag></div>
             </div>
             <div className="mt-3 flex flex-wrap items-center gap-2 text-xs"><PlayerPill actor="gr1d" done={status("gr1d")} progress={subitems.length ? gr1dProgress : undefined} /><PlayerPill actor="benamu" done={status("benamu")} progress={subitems.length ? benamuProgress : undefined} />{subitems.length ? <Tag>{actor}: {activeProgress.completed}/{activeProgress.total} subitens</Tag> : null}</div>
@@ -198,6 +200,7 @@ function ProgressionCard({
             {subitems.length ? <><ChecklistItem itemId={item.id} label="Marcar como feito" toastLabel={item.title} phase={`Conclui automaticamente quando ${actor} terminar ${subitems.length}/${subitems.length} subitens.`} section="progression" entryKey={item.entry} disabled /><div className="space-y-2 border border-stone-500 bg-stone-100 p-3 text-ink-900"><div className="flex justify-between gap-3"><strong className="font-label text-xl">Subitens de {actor}</strong><span className="font-label text-xl">{activeProgress.completed}/{activeProgress.total}</span></div>{subitems.map((subitem) => <div key={subitem.id} className="space-y-1"><ChecklistItem itemId={subitem.id} label={subitem.title} toastLabel={`${item.title}: ${subitem.title}`} phase={[subitem.phase, subitem.equipment].filter(Boolean).join(" · ")} section="progression" entryKey={item.entry} /><div className="flex flex-wrap gap-1 pl-10 text-xs">{subitem.phase ? <Tag tone="focus">fase {subitem.phase}</Tag> : null}{subitem.equipment ? <Tag>{subitem.equipment}</Tag> : null}</div></div>)}</div></> : <ChecklistItem itemId={item.id} label="Marcar como feito" toastLabel={item.title} phase={item.phase} section="progression" entryKey={item.entry} />}
           </div>
         </div>
+        <EncounterDetails milestoneId={milestoneId} />
       </div>
     </details>
   </article>;
