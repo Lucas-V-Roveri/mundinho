@@ -82,7 +82,9 @@ jobs:
               const url = r.url();
               const failure = r.failure()?.errorText || '';
               const isAppRequest = url.startsWith(base) || url.includes('.supabase.co');
-              if (isAppRequest) fatal.push(`requestfailed: ${url} ${failure}`);
+              const benignImageAbort = r.resourceType() === 'image' && failure === 'net::ERR_ABORTED';
+              if (isAppRequest && !benignImageAbort) fatal.push(`requestfailed: ${url} ${failure}`);
+              else if (isAppRequest && benignImageAbort) assetWarnings.push(`app image aborted on navigation: ${url}`);
               else if (!url.includes('google') && !url.includes('vercel')) assetWarnings.push(`external requestfailed: ${url} ${failure}`);
             });
             page.on('response', r => {
@@ -156,7 +158,7 @@ jobs:
             const duration = await page.locator('.page-enter').evaluate(el => getComputedStyle(el).animationDuration);
             console.log('reduced-motion animationDuration', duration);
 
-            if (assetWarnings.length) console.warn('External asset warnings:\n' + assetWarnings.join('\n'));
+            if (assetWarnings.length) console.warn('Asset warnings:\n' + assetWarnings.join('\n'));
             if (fatal.length) throw new Error(fatal.join(' || '));
             await browser.close();
           })().catch(error => { console.error(error); process.exit(1); });
