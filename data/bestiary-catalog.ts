@@ -16,6 +16,12 @@ import {
   TWILIGHT_FOREST_BESTIARY_5E_FULL,
 } from "@/data/bestiary-twilight-5e";
 import {
+  UNDERGARDEN_BESTIARY_5E,
+  UNDERGARDEN_BESTIARY_5E_COMPACT,
+  UNDERGARDEN_BESTIARY_5E_COUNT,
+  UNDERGARDEN_BESTIARY_5E_FULL,
+} from "@/data/bestiary-undergarden-5e";
+import {
   BESTIARY_ENTRIES as BESTIARY_LOT_5A_ENTRIES,
   BESTIARY_INVENTORY_TOTAL as BESTIARY_BASE_INVENTORY_TOTAL,
   BESTIARY_LOT_5A_DETAILED,
@@ -38,6 +44,9 @@ export const BESTIARY_LOT_5E_TWILIGHT_COMPACT = TWILIGHT_FOREST_BESTIARY_5E_COMP
 export const BESTIARY_LOT_5E_BUMBLEZONE_DETAILED = BUMBLEZONE_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_BUMBLEZONE_FULL = BUMBLEZONE_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_BUMBLEZONE_COMPACT = BUMBLEZONE_BESTIARY_5E_COMPACT;
+export const BESTIARY_LOT_5E_UNDERGARDEN_DETAILED = UNDERGARDEN_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_UNDERGARDEN_FULL = UNDERGARDEN_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_UNDERGARDEN_COMPACT = UNDERGARDEN_BESTIARY_5E_COMPACT;
 
 export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
@@ -47,6 +56,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5D_ENTRIES,
   ...TWILIGHT_FOREST_BESTIARY_5E,
   ...BUMBLEZONE_BESTIARY_5E,
+  ...UNDERGARDEN_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
@@ -78,6 +88,14 @@ const BUMBLEZONE_5E_AUDIT: BestiaryModAudit = {
   note: "Build 7.15.3 auditada na revisão que fixa mod_version=7.15.3: seis criaturas jogáveis entram no Bestiário — Variant Bee, Honey Slime, Beehemoth, Bee Queen, Rootmin e Cosmic Crystal. Projéteis e Sentry Watcher ficam fora; Cosmic Crystal entra apesar de MobCategory.MISC porque é LivingEntity de combate com atributos próprios.",
 };
 
+const UNDERGARDEN_5E_AUDIT: BestiaryModAudit = {
+  mod: "The Undergarden",
+  version: "0.9.6",
+  status: "calibrado",
+  sourceHref: "https://github.com/quek04/undergarden/blob/6d7f02deab3e2ad44692f7edf2dea1cca3ba747f/src/main/java/quek/undergarden/registry/UGEntityTypes.java",
+  note: "Build 0.9.6 / Minecraft 1.21.1 auditada na revisão histórica da branch 1.21: 21 criaturas no bloco normal/bosses + Forgotten Minion, que entra mesmo registrado como MISC por ser AbstractGolem com atributos próprios. Boomgourd, projéteis e demais entidades utilitárias ficam fora. Resultado: 22 cards.",
+};
+
 const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
   if (item.mod === "The Aether") {
     return {
@@ -106,6 +124,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
   if (item.mod === BUMBLEZONE_5E_AUDIT.mod) {
     return { ...item, ...BUMBLEZONE_5E_AUDIT };
   }
+  if (item.mod === UNDERGARDEN_5E_AUDIT.mod) {
+    return { ...item, ...UNDERGARDEN_5E_AUDIT };
+  }
   const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
   if (lot5dAudit) {
     return { ...item, ...lot5dAudit };
@@ -119,4 +140,5 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...LOT_5D_AUDIT.filter((item) => !UPDATED_BASE_AUDIT_MODS.has(item.mod)),
   ...(UPDATED_BASE_AUDIT_MODS.has(TWILIGHT_5E_AUDIT.mod) ? [] : [TWILIGHT_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(BUMBLEZONE_5E_AUDIT.mod) ? [] : [BUMBLEZONE_5E_AUDIT]),
+  ...(UPDATED_BASE_AUDIT_MODS.has(UNDERGARDEN_5E_AUDIT.mod) ? [] : [UNDERGARDEN_5E_AUDIT]),
 ];
