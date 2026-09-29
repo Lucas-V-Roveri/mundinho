@@ -2,6 +2,12 @@ import { AETHER_BESTIARY_5B } from "@/data/bestiary-aether-5b";
 import { ALEXS_CAVES_BESTIARY_5C } from "@/data/bestiary-alexs-caves-5c";
 import { ALEXS_MOBS_BESTIARY_5C } from "@/data/bestiary-alexs-mobs-5c";
 import {
+  BOMD_BESTIARY_5E,
+  BOMD_BESTIARY_5E_COMPACT,
+  BOMD_BESTIARY_5E_COUNT,
+  BOMD_BESTIARY_5E_FULL,
+} from "@/data/bestiary-bomd-5e";
+import {
   BUMBLEZONE_BESTIARY_5E,
   BUMBLEZONE_BESTIARY_5E_COMPACT,
   BUMBLEZONE_BESTIARY_5E_COUNT,
@@ -74,6 +80,9 @@ export const BESTIARY_LOT_5E_UNDERGARDEN_COMPACT = UNDERGARDEN_BESTIARY_5E_COMPA
 export const BESTIARY_LOT_5E_MOWZIES_MOBS_DETAILED = MOWZIES_MOBS_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_MOWZIES_MOBS_FULL = MOWZIES_MOBS_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_MOWZIES_MOBS_COMPACT = MOWZIES_MOBS_BESTIARY_5E_COMPACT;
+export const BESTIARY_LOT_5E_BOMD_DETAILED = BOMD_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_BOMD_FULL = BOMD_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_BOMD_COMPACT = BOMD_BESTIARY_5E_COMPACT;
 
 export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
@@ -87,6 +96,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...UNDERGARDEN_BESTIARY_5E,
   ...DEEPER_DARKER_BESTIARY_5E,
   ...MOWZIES_MOBS_BESTIARY_5E,
+  ...BOMD_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
@@ -147,7 +157,15 @@ const MOWZIES_MOBS_5E_AUDIT: BestiaryModAudit = {
   version: "1.8.2",
   status: "calibrado",
   sourceHref: "https://github.com/BobMowzie/MowziesMobs-Public/blob/7aa17309337cbd4102efc418cba12a4983b1540c/src/main/java/com/bobmowzie/mowziesmobs/server/entity/EntityHandler.java",
-  note: "Build 1.8.2 / Minecraft 1.21.1 NeoForge auditada na revisão oficial ‘1.8.2 update’: 18 entidades vivas de gameplay antes do bloco de efeitos/projéteis. Inclui seguidores Umvuthana/Elokosa e Tongbi apesar de categorias de uso especiais; sunstrike, beams, boulders, pillars, frozen_controller e demais auxiliares ficam fora. Resultado: 18 cards (3 full + 15 compact).",
+  note: "Build 1.8.2 / Minecraft 1.21.1 NeoForge auditada na revisão oficial “1.8.2 update”: 18 entidades vivas de gameplay antes do bloco de efeitos/projéteis. Inclui seguidores Umvuthana/Elokosa e Tongbi apesar de categorias de uso especiais; sunstrike, beams, boulders, pillars, frozen_controller e demais auxiliares ficam fora. Resultado: 18 cards (3 full + 15 compact).",
+};
+
+const BOMD_5E_AUDIT: BestiaryModAudit = {
+  mod: "Bosses of Mass Destruction",
+  version: "1.3.3",
+  status: "calibrado",
+  sourceHref: "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/BMDEntities.java",
+  note: "Build 1.3.3 / Minecraft 1.21.1 NeoForge auditada: o registry separa quatro bosses MONSTER — Night Lich, Obsidilith, Nether Gauntlet e Void Blossom — de projéteis e auxiliares MISC. Resultado: 4 cards full ligados aos marcos 860/870/880/890.",
 };
 
 const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
@@ -190,6 +208,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
   if (item.mod === MOWZIES_MOBS_5E_AUDIT.mod) {
     return { ...item, ...MOWZIES_MOBS_5E_AUDIT };
   }
+  if (item.mod === BOMD_5E_AUDIT.mod) {
+    return { ...item, ...BOMD_5E_AUDIT };
+  }
   const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
   if (lot5dAudit) {
     return { ...item, ...lot5dAudit };
@@ -207,4 +228,5 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...(UPDATED_BASE_AUDIT_MODS.has(UNDERGARDEN_5E_AUDIT.mod) ? [] : [UNDERGARDEN_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(DEEPER_DARKER_5E_AUDIT.mod) ? [] : [DEEPER_DARKER_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(MOWZIES_MOBS_5E_AUDIT.mod) ? [] : [MOWZIES_MOBS_5E_AUDIT]),
+  ...(UPDATED_BASE_AUDIT_MODS.has(BOMD_5E_AUDIT.mod) ? [] : [BOMD_5E_AUDIT]),
 ];
