@@ -18,6 +18,7 @@ import {
   BESTIARY_LOT_5B_DETAILED,
   BESTIARY_LOT_5C_DETAILED,
   BESTIARY_LOT_5D_DETAILED,
+  BESTIARY_LOT_5E_BUMBLEZONE_DETAILED,
   BESTIARY_LOT_5E_TWILIGHT_DETAILED,
   BESTIARY_MOD_AUDIT,
 } from "@/data/bestiary-catalog";
@@ -53,6 +54,7 @@ function guideForMod(guides: Guide[], mod: string) {
     "L_Ender's Cataclysm": "cataclysm-restante",
     "Alex's Mobs Continued": "alexs-mobs",
     "The Aether": "aether",
+    "The Bumblezone": "bumblezone",
     "Creeper Overhaul": "mob-variants",
     "Alex's Caves": "alexs-caves",
   };
@@ -237,7 +239,7 @@ export function BestiaryView() {
         <p className="font-label text-2xl text-wood-700">wiki central · lote 5E</p>
         <h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Bestiário</h1>
         <p className="mt-3 max-w-4xl leading-7">
-          Catálogo de criaturas do pack com origem rastreável, versão, habitat, drops documentados e descoberta separada para gr1d e benamu. O inventário aprovado tem {BESTIARY_INVENTORY_TOTAL} candidatos; {BESTIARY_DETAILED_TOTAL} já possuem card auditado ({BESTIARY_LOT_5A_DETAILED} do 5A + {BESTIARY_LOT_5B_DETAILED} do 5B + {BESTIARY_LOT_5C_DETAILED} do 5C + {BESTIARY_LOT_5D_DETAILED} do 5D + {BESTIARY_LOT_5E_TWILIGHT_DETAILED} do Twilight/5E).
+          Catálogo de criaturas do pack com origem rastreável, versão, habitat, drops documentados e descoberta separada para gr1d e benamu. O inventário aprovado tem {BESTIARY_INVENTORY_TOTAL} candidatos; {BESTIARY_DETAILED_TOTAL} já possuem card auditado ({BESTIARY_LOT_5A_DETAILED} do 5A + {BESTIARY_LOT_5B_DETAILED} do 5B + {BESTIARY_LOT_5C_DETAILED} do 5C + {BESTIARY_LOT_5D_DETAILED} do 5D + {BESTIARY_LOT_5E_TWILIGHT_DETAILED} do Twilight/5E + {BESTIARY_LOT_5E_BUMBLEZONE_DETAILED} da Bumblezone/5E).
         </p>
         <div className="mt-4 grid gap-2 sm:grid-cols-3">
           <div className="border-2 border-night-950 bg-paper-50 p-3"><strong className="font-label text-xl">gr1d</strong><p className="mt-1 text-sm">{gr1d.seen} vistos · {gr1d.defeated} derrotados · {gr1d.tamed} domesticados</p></div>

@@ -1,6 +1,12 @@
 import { AETHER_BESTIARY_5B } from "@/data/bestiary-aether-5b";
 import { ALEXS_CAVES_BESTIARY_5C } from "@/data/bestiary-alexs-caves-5c";
 import { ALEXS_MOBS_BESTIARY_5C } from "@/data/bestiary-alexs-mobs-5c";
+import {
+  BUMBLEZONE_BESTIARY_5E,
+  BUMBLEZONE_BESTIARY_5E_COMPACT,
+  BUMBLEZONE_BESTIARY_5E_COUNT,
+  BUMBLEZONE_BESTIARY_5E_FULL,
+} from "@/data/bestiary-bumblezone-5e";
 import { enrichBestiaryEntries } from "@/data/bestiary-drop-uses";
 import { BESTIARY_LOT_5D_COUNTS, BESTIARY_LOT_5D_ENTRIES } from "@/data/bestiary-lote-5d";
 import {
@@ -29,6 +35,9 @@ export const BESTIARY_LOT_5D_DETAILED = BESTIARY_LOT_5D_ENTRIES.length;
 export const BESTIARY_LOT_5E_TWILIGHT_DETAILED = TWILIGHT_FOREST_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_TWILIGHT_FULL = TWILIGHT_FOREST_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_TWILIGHT_COMPACT = TWILIGHT_FOREST_BESTIARY_5E_COMPACT;
+export const BESTIARY_LOT_5E_BUMBLEZONE_DETAILED = BUMBLEZONE_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_BUMBLEZONE_FULL = BUMBLEZONE_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_BUMBLEZONE_COMPACT = BUMBLEZONE_BESTIARY_5E_COMPACT;
 
 export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
@@ -37,6 +46,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...ALEXS_CAVES_BESTIARY_5C,
   ...BESTIARY_LOT_5D_ENTRIES,
   ...TWILIGHT_FOREST_BESTIARY_5E,
+  ...BUMBLEZONE_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
@@ -58,6 +68,14 @@ const TWILIGHT_5E_AUDIT: BestiaryModAudit = {
   status: "calibrado",
   sourceHref: "https://github.com/TeamTwilight/twilightforest/blob/008085c660f1f9fc9aad6376ea0dc8080b3c0629/src/main/java/twilightforest/init/TFEntities.java",
   note: "Build NeoForge 1.21.1 auditada na revisão histórica de 22/03/2026: 59 entidades MONSTER/CREATURE no registry, PlateauBoss excluído como placeholder do Final Castle e Rising Zombie mantido como MONSTER real sem Spawn Egg. Resultado: 58 cards; IDs literais cruzados com o en_us.json gerado da mesma revisão.",
+};
+
+const BUMBLEZONE_5E_AUDIT: BestiaryModAudit = {
+  mod: "The Bumblezone",
+  version: "7.15.3+1.21.1-neoforge",
+  status: "calibrado",
+  sourceHref: "https://github.com/TelepathicGrunt/Bumblezone/blob/78c52256e38a537a31839b264e6058138e6cb4e8/common/src/main/java/com/telepathicgrunt/the_bumblezone/modinit/BzEntities.java",
+  note: "Build 7.15.3 auditada na revisão que fixa mod_version=7.15.3: seis criaturas jogáveis entram no Bestiário — Variant Bee, Honey Slime, Beehemoth, Bee Queen, Rootmin e Cosmic Crystal. Projéteis e Sentry Watcher ficam fora; Cosmic Crystal entra apesar de MobCategory.MISC porque é LivingEntity de combate com atributos próprios.",
 };
 
 const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
@@ -85,6 +103,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
   if (item.mod === TWILIGHT_5E_AUDIT.mod) {
     return { ...item, ...TWILIGHT_5E_AUDIT };
   }
+  if (item.mod === BUMBLEZONE_5E_AUDIT.mod) {
+    return { ...item, ...BUMBLEZONE_5E_AUDIT };
+  }
   const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
   if (lot5dAudit) {
     return { ...item, ...lot5dAudit };
@@ -97,4 +118,5 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...UPDATED_BASE_AUDIT,
   ...LOT_5D_AUDIT.filter((item) => !UPDATED_BASE_AUDIT_MODS.has(item.mod)),
   ...(UPDATED_BASE_AUDIT_MODS.has(TWILIGHT_5E_AUDIT.mod) ? [] : [TWILIGHT_5E_AUDIT]),
+  ...(UPDATED_BASE_AUDIT_MODS.has(BUMBLEZONE_5E_AUDIT.mod) ? [] : [BUMBLEZONE_5E_AUDIT]),
 ];
