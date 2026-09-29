@@ -8,6 +8,12 @@ import {
   BUMBLEZONE_BESTIARY_5E_FULL,
 } from "@/data/bestiary-bumblezone-5e";
 import { enrichBestiaryEntries } from "@/data/bestiary-drop-uses";
+import {
+  ETERNAL_STARLIGHT_BESTIARY_5E,
+  ETERNAL_STARLIGHT_BESTIARY_5E_COMPACT,
+  ETERNAL_STARLIGHT_BESTIARY_5E_COUNT,
+  ETERNAL_STARLIGHT_BESTIARY_5E_FULL,
+} from "@/data/bestiary-eternal-starlight-5e";
 import { BESTIARY_LOT_5D_COUNTS, BESTIARY_LOT_5D_ENTRIES } from "@/data/bestiary-lote-5d";
 import {
   TWILIGHT_FOREST_BESTIARY_5E,
@@ -44,6 +50,9 @@ export const BESTIARY_LOT_5E_TWILIGHT_COMPACT = TWILIGHT_FOREST_BESTIARY_5E_COMP
 export const BESTIARY_LOT_5E_BUMBLEZONE_DETAILED = BUMBLEZONE_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_BUMBLEZONE_FULL = BUMBLEZONE_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_BUMBLEZONE_COMPACT = BUMBLEZONE_BESTIARY_5E_COMPACT;
+export const BESTIARY_LOT_5E_ETERNAL_STARLIGHT_DETAILED = ETERNAL_STARLIGHT_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_ETERNAL_STARLIGHT_FULL = ETERNAL_STARLIGHT_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_ETERNAL_STARLIGHT_COMPACT = ETERNAL_STARLIGHT_BESTIARY_5E_COMPACT;
 export const BESTIARY_LOT_5E_UNDERGARDEN_DETAILED = UNDERGARDEN_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_UNDERGARDEN_FULL = UNDERGARDEN_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_UNDERGARDEN_COMPACT = UNDERGARDEN_BESTIARY_5E_COMPACT;
@@ -56,6 +65,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5D_ENTRIES,
   ...TWILIGHT_FOREST_BESTIARY_5E,
   ...BUMBLEZONE_BESTIARY_5E,
+  ...ETERNAL_STARLIGHT_BESTIARY_5E,
   ...UNDERGARDEN_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
@@ -86,6 +96,14 @@ const BUMBLEZONE_5E_AUDIT: BestiaryModAudit = {
   status: "calibrado",
   sourceHref: "https://github.com/TelepathicGrunt/Bumblezone/blob/78c52256e38a537a31839b264e6058138e6cb4e8/common/src/main/java/com/telepathicgrunt/the_bumblezone/modinit/BzEntities.java",
   note: "Build 7.15.3 auditada na revisão que fixa mod_version=7.15.3: seis criaturas jogáveis entram no Bestiário — Variant Bee, Honey Slime, Beehemoth, Bee Queen, Rootmin e Cosmic Crystal. Projéteis e Sentry Watcher ficam fora; Cosmic Crystal entra apesar de MobCategory.MISC porque é LivingEntity de combate com atributos próprios.",
+};
+
+const ETERNAL_STARLIGHT_5E_AUDIT: BestiaryModAudit = {
+  mod: "Eternal Starlight",
+  version: "0.9.0+1.21.1+neoforge",
+  status: "calibrado",
+  sourceHref: "https://github.com/LeoMinecraftModding/eternal-starlight/blob/e412e1e144137889125b7d2885f2598a936ec7b6/common/src/main/java/cn/leolezury/eternalstarlight/common/registry/ESEntities.java",
+  note: "Build 0.9.0 auditada na revisão oficial de version bump: ESItems registra 32 Spawn Eggs, enquanto o wip.json da mesma revisão marca Boarwarf e Astral Golem como WIP. Resultado publicado: 30 cards. Solar Creeper existe no registry, mas não integra o conjunto de Spawn Eggs 0.9.0; projéteis, partes e efeitos auxiliares ficam fora.",
 };
 
 const UNDERGARDEN_5E_AUDIT: BestiaryModAudit = {
@@ -124,6 +142,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
   if (item.mod === BUMBLEZONE_5E_AUDIT.mod) {
     return { ...item, ...BUMBLEZONE_5E_AUDIT };
   }
+  if (item.mod === ETERNAL_STARLIGHT_5E_AUDIT.mod) {
+    return { ...item, ...ETERNAL_STARLIGHT_5E_AUDIT };
+  }
   if (item.mod === UNDERGARDEN_5E_AUDIT.mod) {
     return { ...item, ...UNDERGARDEN_5E_AUDIT };
   }
@@ -140,5 +161,6 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...LOT_5D_AUDIT.filter((item) => !UPDATED_BASE_AUDIT_MODS.has(item.mod)),
   ...(UPDATED_BASE_AUDIT_MODS.has(TWILIGHT_5E_AUDIT.mod) ? [] : [TWILIGHT_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(BUMBLEZONE_5E_AUDIT.mod) ? [] : [BUMBLEZONE_5E_AUDIT]),
+  ...(UPDATED_BASE_AUDIT_MODS.has(ETERNAL_STARLIGHT_5E_AUDIT.mod) ? [] : [ETERNAL_STARLIGHT_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(UNDERGARDEN_5E_AUDIT.mod) ? [] : [UNDERGARDEN_5E_AUDIT]),
 ];
