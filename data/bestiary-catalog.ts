@@ -1,4 +1,5 @@
 import { AETHER_BESTIARY_5B } from "@/data/bestiary-aether-5b";
+import { enrichBestiaryEntries } from "@/data/bestiary-drop-uses";
 import {
   BESTIARY_ENTRIES as BESTIARY_LOT_5A_ENTRIES,
   BESTIARY_INVENTORY_TOTAL,
@@ -9,7 +10,7 @@ import type { BestiaryModAudit } from "@/types/bestiary";
 
 export { BESTIARY_INVENTORY_TOTAL, BESTIARY_LOT_5A_DETAILED };
 export const BESTIARY_LOT_5B_DETAILED = AETHER_BESTIARY_5B.length;
-export const BESTIARY_ENTRIES = [...BESTIARY_LOT_5A_ENTRIES, ...AETHER_BESTIARY_5B];
+export const BESTIARY_ENTRIES = enrichBestiaryEntries([...BESTIARY_LOT_5A_ENTRIES, ...AETHER_BESTIARY_5B]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
 export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) =>

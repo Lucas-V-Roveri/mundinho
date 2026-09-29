@@ -7,6 +7,7 @@ export type BestiarySourceStatus =
   | "não documentado";
 
 export type BestiaryTrackFlag = "seen" | "defeated" | "tamed";
+export type BestiaryUseConfidence = "Alta" | "Média" | "Baixa-conferir";
 
 export type BestiarySource = {
   label: string;
@@ -20,6 +21,11 @@ export type BestiaryDrop = {
   quantity?: string;
   chance?: string;
   condition?: string;
+  /** Obrigatório na camada publicada; dados legados são enriquecidos no catálogo. */
+  use?: string;
+  useConfidence?: BestiaryUseConfidence;
+  /** Âncora direta para receitas já documentadas na aba Mods. */
+  guideHref?: string;
 };
 
 export type BestiaryEntry = {
@@ -47,6 +53,8 @@ export type BestiaryEntry = {
   imageUrl?: string;
   imageAlt?: string;
   imageSourceUrl?: string;
+  guideHref?: string;
+  progressionHref?: string;
   sources: BestiarySource[];
 };
 

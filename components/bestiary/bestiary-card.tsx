@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element -- Bestiário usa texturas raw oficiais com fallback visual simples. */
+/* eslint-disable @next/next/no-img-element -- Bestiário usa imagens/texturas oficiais rastreadas por fonte. */
 "use client";
 
 import * as React from "react";
@@ -34,7 +34,11 @@ export function BestiaryCard({
   onFlag: (flag: BestiaryTrackFlag, value: boolean) => Promise<void>;
 }) {
   const [busy, setBusy] = React.useState<BestiaryTrackFlag | null>(null);
+  const [imageFailed, setImageFailed] = React.useState(false);
   const seen = row.seen;
+  const hasImage = Boolean(entry.imageUrl) && !imageFailed;
+
+  React.useEffect(() => setImageFailed(false), [entry.imageUrl]);
 
   const toggle = async (flag: BestiaryTrackFlag) => {
     setBusy(flag);
@@ -47,34 +51,53 @@ export function BestiaryCard({
     }
   };
 
+  const media = hasImage ? (
+    <img
+      src={entry.imageUrl}
+      alt={seen ? entry.imageAlt ?? entry.nameEn : `Silhueta de ${entry.nameEn}`}
+      loading="lazy"
+      decoding="async"
+      className={`aspect-square w-full object-contain [image-rendering:pixelated] transition-[filter,opacity] motion-reduce:transition-none ${seen ? "" : "brightness-0 opacity-65"}`}
+      onError={() => setImageFailed(true)}
+    />
+  ) : (
+    <div className="grid aspect-square w-full place-items-center border border-dashed border-stone-500 bg-night-950 p-4 text-center font-label text-lg leading-5 text-paper-100">
+      imagem a adicionar
+    </div>
+  );
+
   return (
     <article id={`mob-${entry.id}`} className="pixel-surface panel-paper scroll-mt-28 p-4 text-ink-900 sm:p-5">
       <div className="grid gap-5 lg:grid-cols-[12rem_1fr]">
         <div>
-          <a href={entry.imageSourceUrl} target="_blank" rel="noreferrer" className="block border-4 border-night-950 bg-night-800 p-2" title="Abrir origem da imagem">
-            {entry.imageUrl ? (
-              <img
-                src={entry.imageUrl}
-                alt={seen ? entry.imageAlt ?? entry.nameEn : `Silhueta de ${entry.nameEn}`}
-                loading="lazy"
-                decoding="async"
-                className={`aspect-square w-full object-contain [image-rendering:pixelated] transition-[filter,opacity] ${seen ? "" : "brightness-0 opacity-65"}`}
-                onError={(event) => { event.currentTarget.style.display = "none"; }}
-              />
-            ) : <div className="aspect-square w-full bg-night-950" aria-hidden="true" />}
-          </a>
+          {hasImage && entry.imageSourceUrl ? (
+            <a href={entry.imageSourceUrl} target="_blank" rel="noreferrer" className="block border-4 border-night-950 bg-night-800 p-2" title="Abrir origem da imagem">
+              {media}
+            </a>
+          ) : (
+            <div className="border-4 border-night-950 bg-night-800 p-2">{media}</div>
+          )}
+          {hasImage && entry.imageSourceUrl ? (
+            <a href={entry.imageSourceUrl} target="_blank" rel="noreferrer" className="mt-2 block text-center font-label text-base text-blue-700 underline underline-offset-2">
+              fonte da imagem
+            </a>
+          ) : (
+            <p className="mt-2 text-center font-label text-base text-ink-700">sem mídia cadastrada</p>
+          )}
           <div className="mt-3 flex flex-wrap gap-2">
             <Tag tone={seen ? "success" : "neutral"}>{seen ? "visto" : "não visto"}</Tag>
             <Tag tone={dangerTone(entry.danger)}>{entry.danger}</Tag>
           </div>
-          <p className="mt-3 break-all font-mono text-[11px] leading-5 text-ink-700">{entry.registryId}</p>
         </div>
 
         <div className="min-w-0">
           <div className="flex flex-wrap items-start justify-between gap-3">
-            <div>
+            <div className="min-w-0">
               <p className="font-label text-xl text-wood-700">{entry.mod} · {entry.version}</p>
-              <h2 className="mt-1 font-display text-base leading-relaxed sm:text-xl">{entry.namePt}</h2>
+              <div className="mt-1 flex flex-wrap items-center gap-2">
+                <h2 className="font-display text-base leading-relaxed sm:text-xl">{entry.namePt}</h2>
+                <code className="max-w-full break-all border border-stone-500 bg-stone-100 px-2 py-1 font-mono text-[10px] leading-none text-ink-700">{entry.registryId}</code>
+              </div>
               {entry.namePt !== entry.nameEn ? <p className="mt-1 text-sm text-ink-700">{entry.nameEn}</p> : null}
             </div>
             <Tag tone={entry.status.includes("2+") ? "success" : entry.status.includes("conflito") ? "danger" : "neutral"}>{entry.status}</Tag>
@@ -103,19 +126,26 @@ export function BestiaryCard({
             </section>
           ) : null}
 
-          {entry.drops.length ? (
-            <section className="mt-5">
-              <h3 className="font-label text-xl text-wood-700">Drops documentados</h3>
+          <section className="mt-5">
+            <h3 className="font-label text-xl text-wood-700">Drops documentados</h3>
+            {entry.drops.length ? (
               <div className="mt-2 grid gap-2 sm:grid-cols-2">
                 {entry.drops.map((drop) => (
                   <div key={`${entry.id}-${drop.nameEn ?? drop.namePt}`} className="border border-stone-500 bg-paper-100 p-3 text-sm">
                     <strong>{drop.namePt}</strong>{drop.nameEn && drop.nameEn !== drop.namePt ? <span className="text-ink-700"> · {drop.nameEn}</span> : null}
-                    <p className="mt-1 text-xs leading-5 text-ink-700">{[drop.quantity, drop.chance, drop.condition].filter(Boolean).join(" · ")}</p>
+                    <p className="mt-1 text-xs leading-5 text-ink-700">{[drop.quantity, drop.chance, drop.condition].filter(Boolean).join(" · ") || "quantidade/condição não documentada"}</p>
+                    <p className="mt-2 text-sm leading-5"><strong>Para que serve:</strong> {drop.use || "Uso não documentado — conferir no JEI como último recurso."}</p>
+                    <div className="mt-2 flex flex-wrap items-center gap-2">
+                      {drop.useConfidence ? <Tag tone={drop.useConfidence === "Alta" ? "success" : drop.useConfidence === "Baixa-conferir" ? "danger" : "neutral"}>uso: {drop.useConfidence}</Tag> : null}
+                      {drop.guideHref ? <a href={drop.guideHref} className="font-label text-lg text-blue-700 underline underline-offset-2">ver receitas completas no guia</a> : null}
+                    </div>
                   </div>
                 ))}
               </div>
-            </section>
-          ) : null}
+            ) : (
+              <p className="mt-2 border border-stone-500 bg-stone-100 p-3 text-sm text-ink-700">Sem drops de item documentados nas fontes auditadas para este card.</p>
+            )}
+          </section>
 
           {entry.notes?.length ? (
             <details className="mt-5 border border-stone-500 bg-stone-100 p-3">
@@ -139,7 +169,7 @@ export function BestiaryCard({
             <summary className="cursor-pointer font-label text-xl text-wood-700">Fontes</summary>
             <ul className="mt-3 space-y-2 text-sm">
               {entry.sources.map((source) => (
-                <li key={source.href}>
+                <li key={`${source.href}-${source.label}`}>
                   <a className="font-semibold text-blue-700 underline underline-offset-2" href={source.href} target="_blank" rel="noreferrer">{source.label}</a>
                   {source.note ? <span className="text-ink-700"> — {source.note}</span> : null}
                 </li>
