@@ -22,6 +22,12 @@ import {
 } from "@/data/bestiary-eternal-starlight-5e";
 import { BESTIARY_LOT_5D_COUNTS, BESTIARY_LOT_5D_ENTRIES } from "@/data/bestiary-lote-5d";
 import {
+  MOWZIES_MOBS_BESTIARY_5E,
+  MOWZIES_MOBS_BESTIARY_5E_COMPACT,
+  MOWZIES_MOBS_BESTIARY_5E_COUNT,
+  MOWZIES_MOBS_BESTIARY_5E_FULL,
+} from "@/data/bestiary-mowzies-mobs-5e";
+import {
   TWILIGHT_FOREST_BESTIARY_5E,
   TWILIGHT_FOREST_BESTIARY_5E_COMPACT,
   TWILIGHT_FOREST_BESTIARY_5E_COUNT,
@@ -65,6 +71,9 @@ export const BESTIARY_LOT_5E_ETERNAL_STARLIGHT_COMPACT = ETERNAL_STARLIGHT_BESTI
 export const BESTIARY_LOT_5E_UNDERGARDEN_DETAILED = UNDERGARDEN_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_UNDERGARDEN_FULL = UNDERGARDEN_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_UNDERGARDEN_COMPACT = UNDERGARDEN_BESTIARY_5E_COMPACT;
+export const BESTIARY_LOT_5E_MOWZIES_MOBS_DETAILED = MOWZIES_MOBS_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_MOWZIES_MOBS_FULL = MOWZIES_MOBS_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_MOWZIES_MOBS_COMPACT = MOWZIES_MOBS_BESTIARY_5E_COMPACT;
 
 export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
@@ -77,6 +86,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...ETERNAL_STARLIGHT_BESTIARY_5E,
   ...UNDERGARDEN_BESTIARY_5E,
   ...DEEPER_DARKER_BESTIARY_5E,
+  ...MOWZIES_MOBS_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
@@ -132,6 +142,14 @@ const DEEPER_DARKER_5E_AUDIT: BestiaryModAudit = {
   note: "Build 1.4.1 / Minecraft 1.21.1 reconciliada na revisão f7ba235d: o registry contém dois barcos técnicos + 11 criaturas, e DDItems registra Spawn Egg para as mesmas 11. Anger/Fear/Sorrow Pot permanecem porque OvercastPot é Monster de combate, embora tenham sido removidos temporariamente do advancement kill_all_sculk_mobs. Resultado: 11 cards.",
 };
 
+const MOWZIES_MOBS_5E_AUDIT: BestiaryModAudit = {
+  mod: "Mowzie's Mobs",
+  version: "1.8.2",
+  status: "calibrado",
+  sourceHref: "https://github.com/BobMowzie/MowziesMobs-Public/blob/7aa17309337cbd4102efc418cba12a4983b1540c/src/main/java/com/bobmowzie/mowziesmobs/server/entity/EntityHandler.java",
+  note: "Build 1.8.2 / Minecraft 1.21.1 NeoForge auditada na revisão oficial ‘1.8.2 update’: 18 entidades vivas de gameplay antes do bloco de efeitos/projéteis. Inclui seguidores Umvuthana/Elokosa e Tongbi apesar de categorias de uso especiais; sunstrike, beams, boulders, pillars, frozen_controller e demais auxiliares ficam fora. Resultado: 18 cards (3 full + 15 compact).",
+};
+
 const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
   if (item.mod === "The Aether") {
     return {
@@ -169,6 +187,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
   if (item.mod === DEEPER_DARKER_5E_AUDIT.mod) {
     return { ...item, ...DEEPER_DARKER_5E_AUDIT };
   }
+  if (item.mod === MOWZIES_MOBS_5E_AUDIT.mod) {
+    return { ...item, ...MOWZIES_MOBS_5E_AUDIT };
+  }
   const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
   if (lot5dAudit) {
     return { ...item, ...lot5dAudit };
@@ -185,4 +206,5 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...(UPDATED_BASE_AUDIT_MODS.has(ETERNAL_STARLIGHT_5E_AUDIT.mod) ? [] : [ETERNAL_STARLIGHT_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(UNDERGARDEN_5E_AUDIT.mod) ? [] : [UNDERGARDEN_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(DEEPER_DARKER_5E_AUDIT.mod) ? [] : [DEEPER_DARKER_5E_AUDIT]),
+  ...(UPDATED_BASE_AUDIT_MODS.has(MOWZIES_MOBS_5E_AUDIT.mod) ? [] : [MOWZIES_MOBS_5E_AUDIT]),
 ];
