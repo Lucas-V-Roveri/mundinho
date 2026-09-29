@@ -4,23 +4,39 @@ import { ALEXS_MOBS_BESTIARY_5C } from "@/data/bestiary-alexs-mobs-5c";
 import { enrichBestiaryEntries } from "@/data/bestiary-drop-uses";
 import { BESTIARY_LOT_5D_COUNTS, BESTIARY_LOT_5D_ENTRIES } from "@/data/bestiary-lote-5d";
 import {
+  TWILIGHT_FOREST_BESTIARY_5E,
+  TWILIGHT_FOREST_BESTIARY_5E_COMPACT,
+  TWILIGHT_FOREST_BESTIARY_5E_COUNT,
+  TWILIGHT_FOREST_BESTIARY_5E_FULL,
+} from "@/data/bestiary-twilight-5e";
+import {
   BESTIARY_ENTRIES as BESTIARY_LOT_5A_ENTRIES,
-  BESTIARY_INVENTORY_TOTAL,
+  BESTIARY_INVENTORY_TOTAL as BESTIARY_BASE_INVENTORY_TOTAL,
   BESTIARY_LOT_5A_DETAILED,
   BESTIARY_MOD_AUDIT as BESTIARY_LOT_5A_AUDIT,
 } from "@/data/bestiary";
 import type { BestiaryModAudit } from "@/types/bestiary";
 
-export { BESTIARY_INVENTORY_TOTAL, BESTIARY_LOT_5A_DETAILED, BESTIARY_LOT_5D_COUNTS };
+/**
+ * 259 cards publicados antes do 5E + 172 alvos aprovados no Lote 5E.
+ * O inventário legado (263) ficou obsoleto quando os sub-lotes 5D/5E foram fechados.
+ */
+export const BESTIARY_INVENTORY_TOTAL = Math.max(BESTIARY_BASE_INVENTORY_TOTAL, 431);
+export { BESTIARY_LOT_5A_DETAILED, BESTIARY_LOT_5D_COUNTS };
 export const BESTIARY_LOT_5B_DETAILED = AETHER_BESTIARY_5B.length;
 export const BESTIARY_LOT_5C_DETAILED = ALEXS_MOBS_BESTIARY_5C.length + ALEXS_CAVES_BESTIARY_5C.length;
 export const BESTIARY_LOT_5D_DETAILED = BESTIARY_LOT_5D_ENTRIES.length;
+export const BESTIARY_LOT_5E_TWILIGHT_DETAILED = TWILIGHT_FOREST_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_TWILIGHT_FULL = TWILIGHT_FOREST_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_TWILIGHT_COMPACT = TWILIGHT_FOREST_BESTIARY_5E_COMPACT;
+
 export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
   ...AETHER_BESTIARY_5B,
   ...ALEXS_MOBS_BESTIARY_5C,
   ...ALEXS_CAVES_BESTIARY_5C,
   ...BESTIARY_LOT_5D_ENTRIES,
+  ...TWILIGHT_FOREST_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
@@ -35,6 +51,14 @@ const LOT_5D_AUDIT: BestiaryModAudit[] = [
   { mod: "Spider Overhaul", version: "0.0.6-NeoForge-v1.21", status: "calibrado", sourceHref: "https://github.com/Chybx/Spider-Overhaul/blob/master/src/main/java/dev/chybx/spideroverhaul/registry/ModEntities.java", note: "0.0.6 registra onze variantes no código, mas o projeto declara somente seis implementadas em survival; apenas essas seis entram no Bestiário agora." },
 ];
 const LOT_5D_AUDIT_BY_MOD = new Map(LOT_5D_AUDIT.map((item) => [item.mod, item]));
+
+const TWILIGHT_5E_AUDIT: BestiaryModAudit = {
+  mod: "The Twilight Forest",
+  version: "4.8.3345",
+  status: "calibrado",
+  sourceHref: "https://github.com/TeamTwilight/twilightforest/blob/008085c660f1f9fc9aad6376ea0dc8080b3c0629/src/main/java/twilightforest/init/TFEntities.java",
+  note: "Build NeoForge 1.21.1 auditada na revisão histórica de 22/03/2026: 59 entidades MONSTER/CREATURE no registry, PlateauBoss excluído como placeholder do Final Castle e Rising Zombie mantido como MONSTER real sem Spawn Egg. Resultado: 58 cards; IDs literais cruzados com o en_us.json gerado da mesma revisão.",
+};
 
 const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
   if (item.mod === "The Aether") {
@@ -58,6 +82,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
       note: "Build 2.0.10 auditada por registry e mapeamento oficial de Spawn Eggs: 43 criaturas jogáveis distribuídas entre Magnetic Caves, Primordial Caves, Toxic Caves, Abyssal Chasm, Forlorn Hollows e Candy Cavity.",
     };
   }
+  if (item.mod === TWILIGHT_5E_AUDIT.mod) {
+    return { ...item, ...TWILIGHT_5E_AUDIT };
+  }
   const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
   if (lot5dAudit) {
     return { ...item, ...lot5dAudit };
@@ -69,4 +96,5 @@ const UPDATED_BASE_AUDIT_MODS = new Set(UPDATED_BASE_AUDIT.map((item) => item.mo
 export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...UPDATED_BASE_AUDIT,
   ...LOT_5D_AUDIT.filter((item) => !UPDATED_BASE_AUDIT_MODS.has(item.mod)),
+  ...(UPDATED_BASE_AUDIT_MODS.has(TWILIGHT_5E_AUDIT.mod) ? [] : [TWILIGHT_5E_AUDIT]),
 ];

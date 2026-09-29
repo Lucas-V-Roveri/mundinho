@@ -17,15 +17,17 @@ import {
   BESTIARY_LOT_5A_DETAILED,
   BESTIARY_LOT_5B_DETAILED,
   BESTIARY_LOT_5C_DETAILED,
+  BESTIARY_LOT_5D_DETAILED,
+  BESTIARY_LOT_5E_TWILIGHT_DETAILED,
   BESTIARY_MOD_AUDIT,
 } from "@/data/bestiary-catalog";
 import { useBestiaryState } from "@/lib/bestiary-state";
 import { cn } from "@/lib/cn";
 import { findGuideForText, guideThemeClasses } from "@/lib/guide-theme";
 import { resolveGuideIcon } from "@/lib/minecraft-icons";
-import type { Actor, Guide } from "@/types/content";
 import type { BestiaryEntry, BestiaryStateRow, BestiaryTrackFlag } from "@/types/bestiary";
 import { bestiaryStateKey } from "@/types/bestiary";
+import type { Actor, Guide } from "@/types/content";
 
 const FILTER_KEY = "mundinho.filter.bestiary";
 const REVEAL_KEY = "mundinho.bestiary.revealAll";
@@ -42,7 +44,7 @@ function entryType(entry: BestiaryEntry) {
   if (entry.track.includes("tamed") || category.includes("domestic")) return "Domesticável";
   if (behavior.includes("hostil") || category.includes("monstro") || category.includes("hostil")) return "Hostil";
   if (behavior.includes("neutro") || category.includes("neutr")) return "Neutro";
-  if (behavior.includes("passivo") || category.includes("fauna")) return "Passivo";
+  if (behavior.includes("passivo") || category.includes("fauna") || category.includes("criatura")) return "Passivo";
   return "Outro";
 }
 
@@ -150,7 +152,9 @@ export function BestiaryView() {
       try {
         const stored = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
         if (stored && typeof stored === "object") setFilters({ ...initialFilters, ...stored });
-      } catch { /* filtro inválido: usa padrão */ }
+      } catch {
+        // filtro inválido: usa padrão
+      }
       setRevealAll(localStorage.getItem(REVEAL_KEY) === "true");
     });
     return () => cancelAnimationFrame(frame);
@@ -230,9 +234,11 @@ export function BestiaryView() {
   return (
     <div className="space-y-6 page-enter">
       <header className="pixel-surface panel-paper p-5 text-ink-900">
-        <p className="font-label text-2xl text-wood-700">wiki central · lote 5C</p>
+        <p className="font-label text-2xl text-wood-700">wiki central · lote 5E</p>
         <h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Bestiário</h1>
-        <p className="mt-3 max-w-4xl leading-7">Catálogo de criaturas do pack com origem rastreável, versão, habitat, drops documentados e descoberta separada para gr1d e benamu. O inventário-base tem {BESTIARY_INVENTORY_TOTAL} candidatos; {BESTIARY_DETAILED_TOTAL} já possuem card auditado ({BESTIARY_LOT_5A_DETAILED} do 5A + {BESTIARY_LOT_5B_DETAILED} do 5B + {BESTIARY_LOT_5C_DETAILED} do 5C).</p>
+        <p className="mt-3 max-w-4xl leading-7">
+          Catálogo de criaturas do pack com origem rastreável, versão, habitat, drops documentados e descoberta separada para gr1d e benamu. O inventário aprovado tem {BESTIARY_INVENTORY_TOTAL} candidatos; {BESTIARY_DETAILED_TOTAL} já possuem card auditado ({BESTIARY_LOT_5A_DETAILED} do 5A + {BESTIARY_LOT_5B_DETAILED} do 5B + {BESTIARY_LOT_5C_DETAILED} do 5C + {BESTIARY_LOT_5D_DETAILED} do 5D + {BESTIARY_LOT_5E_TWILIGHT_DETAILED} do Twilight/5E).
+        </p>
         <div className="mt-4 grid gap-2 sm:grid-cols-3">
           <div className="border-2 border-night-950 bg-paper-50 p-3"><strong className="font-label text-xl">gr1d</strong><p className="mt-1 text-sm">{gr1d.seen} vistos · {gr1d.defeated} derrotados · {gr1d.tamed} domesticados</p></div>
           <div className="border-2 border-night-950 bg-paper-50 p-3"><strong className="font-label text-xl">benamu</strong><p className="mt-1 text-sm">{benamu.seen} vistos · {benamu.defeated} derrotados · {benamu.tamed} domesticados</p></div>
@@ -289,7 +295,7 @@ export function BestiaryView() {
       )}
 
       <section className="pixel-surface panel-paper p-5 text-ink-900" aria-labelledby="bestiary-audit-title">
-        <h2 id="bestiary-audit-title" className="font-display text-base sm:text-lg">Auditoria do Bestiário · Lotes 5A–5C</h2>
+        <h2 id="bestiary-audit-title" className="font-display text-base sm:text-lg">Auditoria do Bestiário · Lotes 5A–5E</h2>
         <p className="mt-3 max-w-4xl text-sm leading-6">“Calibrado” significa que a lista foi cruzada com registry/código da versão do pack e que dados finos só entram quando a fonte sustenta o campo. Drops não auditados ficam explicitamente não confirmados; quando um drop é listado, a camada publicada exige também “Para que serve”.</p>
         <div className="mt-4 grid gap-3 md:grid-cols-2">
           {BESTIARY_MOD_AUDIT.map((item) => (

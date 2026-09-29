@@ -8,6 +8,7 @@ export type BestiarySourceStatus =
 
 export type BestiaryTrackFlag = "seen" | "defeated" | "tamed";
 export type BestiaryUseConfidence = "Alta" | "Média" | "Baixa-conferir";
+export type BestiaryEntryDepth = "compact" | "full";
 
 export type BestiarySource = {
   label: string;
@@ -35,6 +36,8 @@ export type BestiaryEntry = {
   mod: string;
   version: string;
   registryId: string;
+  /** Ausente mantém o renderer legado completo; novos lotes devem classificar explicitamente. */
+  depth?: BestiaryEntryDepth;
   category: string;
   behavior: string;
   danger: "Baixo" | "Médio" | "Alto" | "Severo";
