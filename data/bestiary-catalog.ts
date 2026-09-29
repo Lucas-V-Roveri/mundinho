@@ -2,6 +2,7 @@ import { AETHER_BESTIARY_5B } from "@/data/bestiary-aether-5b";
 import { ALEXS_CAVES_BESTIARY_5C } from "@/data/bestiary-alexs-caves-5c";
 import { ALEXS_MOBS_BESTIARY_5C } from "@/data/bestiary-alexs-mobs-5c";
 import { enrichBestiaryEntries } from "@/data/bestiary-drop-uses";
+import { BESTIARY_LOT_5D_COUNTS, BESTIARY_LOT_5D_ENTRIES } from "@/data/bestiary-lote-5d";
 import {
   BESTIARY_ENTRIES as BESTIARY_LOT_5A_ENTRIES,
   BESTIARY_INVENTORY_TOTAL,
@@ -10,18 +11,32 @@ import {
 } from "@/data/bestiary";
 import type { BestiaryModAudit } from "@/types/bestiary";
 
-export { BESTIARY_INVENTORY_TOTAL, BESTIARY_LOT_5A_DETAILED };
+export { BESTIARY_INVENTORY_TOTAL, BESTIARY_LOT_5A_DETAILED, BESTIARY_LOT_5D_COUNTS };
 export const BESTIARY_LOT_5B_DETAILED = AETHER_BESTIARY_5B.length;
 export const BESTIARY_LOT_5C_DETAILED = ALEXS_MOBS_BESTIARY_5C.length + ALEXS_CAVES_BESTIARY_5C.length;
+export const BESTIARY_LOT_5D_DETAILED = BESTIARY_LOT_5D_ENTRIES.length;
 export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
   ...AETHER_BESTIARY_5B,
   ...ALEXS_MOBS_BESTIARY_5C,
   ...ALEXS_CAVES_BESTIARY_5C,
+  ...BESTIARY_LOT_5D_ENTRIES,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
-export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
+const LOT_5D_AUDIT: BestiaryModAudit[] = [
+  { mod: "L_Ender's Cataclysm", version: "3.33", status: "calibrado", sourceHref: "https://github.com/lender544/new1.20.1/blob/1.21/src/main/java/com/github/L_Ender/cataclysm/init/ModEntities.java", note: "Build 3.33 auditada pelo registry 1.21.1: 38 mobs restantes além de Ignis. Entidades MISC, projéteis, efeitos e partes de boss ficam fora." },
+  { mod: "Creeper Overhaul", version: "4.0.6", status: "calibrado", sourceHref: "https://github.com/bonsaistudi0s/Creeper-Overhaul/blob/1.21.x/common/src/main/java/tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.java", note: "Registry 1.21.x reconciliado: 16 variantes distintas no total; Bamboo Creeper já estava no 5A e as outras 15 entram no 5D." },
+  { mod: "Friends&Foes", version: "4.0.27", status: "calibrado", sourceHref: "https://github.com/Faboslav/friends-and-foes/blob/1.21.1/common/src/main/java/com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityTypes.java", note: "Registry 1.21.1 reconciliado em 10 mobs jogáveis. ice_chunk e player_illusion foram tratados como entidades técnicas e excluídos." },
+  { mod: "Enderman Overhaul", version: "2.0.3", status: "calibrado", sourceHref: "https://github.com/bonsaistudi0s/Enderman-Overhaul/blob/1.21.x/src/main/java/tech/alexnijjar/endermanoverhaul/common/registry/ModEntityTypes.java", note: "Registry, loot tables e biome modifiers 1.21.x reconciliados em 18 variantes jogáveis; pets, summons e auxiliares ficam fora." },
+  { mod: "Variants&Ventures", version: "1.0.26", status: "calibrado", sourceHref: "https://github.com/Faboslav/variants-and-ventures/blob/1.21.1/common/src/main/java/com/faboslav/variantsandventures/common/init/VariantsAndVenturesEntityTypes.java", note: "Registry 1.21.1 confirma quatro entidades próprias: Gelid, Murk, Thicket e Verdant." },
+  { mod: "Illager Invasion", version: "21.1.6", status: "calibrado", sourceHref: "https://github.com/Fuzss/illager-invasion/blob/1.21.1/Common/src/generated/resources/assets/illagerinvasion/lang/en_us.json", note: "Linha 1.21.1 confirma onze entidades com chaves próprias e Spawn Eggs correspondentes." },
+  { mod: "Piglin Proliferation", version: "2.0.15", status: "calibrado", sourceHref: "https://github.com/seymourimadeit/Piglin-Proliferation/blob/e417875/src/main/java/tallestred/piglinproliferation/common/entities/PPEntityTypes.java", note: "Registry da revisão auditada contém exatamente Piglin Alchemist e Piglin Traveler." },
+  { mod: "Spider Overhaul", version: "0.0.6-NeoForge-v1.21", status: "calibrado", sourceHref: "https://github.com/Chybx/Spider-Overhaul/blob/master/src/main/java/dev/chybx/spideroverhaul/registry/ModEntities.java", note: "0.0.6 registra onze variantes no código, mas o projeto declara somente seis implementadas em survival; apenas essas seis entram no Bestiário agora." },
+];
+const LOT_5D_AUDIT_BY_MOD = new Map(LOT_5D_AUDIT.map((item) => [item.mod, item]));
+
+const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
   if (item.mod === "The Aether") {
     return {
       ...item,
@@ -43,5 +58,15 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map(
       note: "Build 2.0.10 auditada por registry e mapeamento oficial de Spawn Eggs: 43 criaturas jogáveis distribuídas entre Magnetic Caves, Primordial Caves, Toxic Caves, Abyssal Chasm, Forlorn Hollows e Candy Cavity.",
     };
   }
+  const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
+  if (lot5dAudit) {
+    return { ...item, ...lot5dAudit };
+  }
   return item;
 });
+
+const UPDATED_BASE_AUDIT_MODS = new Set(UPDATED_BASE_AUDIT.map((item) => item.mod));
+export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
+  ...UPDATED_BASE_AUDIT,
+  ...LOT_5D_AUDIT.filter((item) => !UPDATED_BASE_AUDIT_MODS.has(item.mod)),
+];
