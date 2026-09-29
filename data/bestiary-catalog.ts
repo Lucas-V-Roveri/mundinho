@@ -28,6 +28,12 @@ import {
 } from "@/data/bestiary-eternal-starlight-5e";
 import { BESTIARY_LOT_5D_COUNTS, BESTIARY_LOT_5D_ENTRIES } from "@/data/bestiary-lote-5d";
 import {
+  GRAVEYARD_BESTIARY_5E,
+  GRAVEYARD_BESTIARY_5E_COMPACT,
+  GRAVEYARD_BESTIARY_5E_COUNT,
+  GRAVEYARD_BESTIARY_5E_FULL,
+} from "@/data/bestiary-graveyard-5e";
+import {
   MOWZIES_MOBS_BESTIARY_5E,
   MOWZIES_MOBS_BESTIARY_5E_COMPACT,
   MOWZIES_MOBS_BESTIARY_5E_COUNT,
@@ -83,6 +89,9 @@ export const BESTIARY_LOT_5E_MOWZIES_MOBS_COMPACT = MOWZIES_MOBS_BESTIARY_5E_COM
 export const BESTIARY_LOT_5E_BOMD_DETAILED = BOMD_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_BOMD_FULL = BOMD_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_BOMD_COMPACT = BOMD_BESTIARY_5E_COMPACT;
+export const BESTIARY_LOT_5E_GRAVEYARD_DETAILED = GRAVEYARD_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_GRAVEYARD_FULL = GRAVEYARD_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_GRAVEYARD_COMPACT = GRAVEYARD_BESTIARY_5E_COMPACT;
 
 export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
@@ -97,6 +106,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...DEEPER_DARKER_BESTIARY_5E,
   ...MOWZIES_MOBS_BESTIARY_5E,
   ...BOMD_BESTIARY_5E,
+  ...GRAVEYARD_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
@@ -168,6 +178,14 @@ const BOMD_5E_AUDIT: BestiaryModAudit = {
   note: "Build 1.3.3 / Minecraft 1.21.1 NeoForge auditada: o registry separa quatro bosses MONSTER — Night Lich, Obsidilith, Nether Gauntlet e Void Blossom — de projéteis e auxiliares MISC. Resultado: 4 cards full ligados aos marcos 860/870/880/890.",
 };
 
+const GRAVEYARD_5E_AUDIT: BestiaryModAudit = {
+  mod: "The Graveyard",
+  version: "2.6.2",
+  status: "calibrado",
+  sourceHref: "https://github.com/SmartStreamLabs/The-Graveyard-Unofficial-Port-/blob/8fb0cd3f4ed556eb53336ed03ba6000d997b858d/src/main/java/com/finallion/graveyard/init/TGEntities.java",
+  note: "JAR publicado para Minecraft 1.21.1 / NeoForge confirmado no CurseForge. O registry público 2.6.2 separa 13 entidades vivas de gameplay de Skull (projétil MISC): 1 card full para Corrupted Champion e 12 compact. O source tree da revisão já aponta o Gradle para uma linha Minecraft mais nova, divergência documentada sem alterar o alvo aprovado.",
+};
+
 const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
   if (item.mod === "The Aether") {
     return {
@@ -211,6 +229,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
   if (item.mod === BOMD_5E_AUDIT.mod) {
     return { ...item, ...BOMD_5E_AUDIT };
   }
+  if (item.mod === GRAVEYARD_5E_AUDIT.mod) {
+    return { ...item, ...GRAVEYARD_5E_AUDIT };
+  }
   const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
   if (lot5dAudit) {
     return { ...item, ...lot5dAudit };
@@ -229,4 +250,5 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...(UPDATED_BASE_AUDIT_MODS.has(DEEPER_DARKER_5E_AUDIT.mod) ? [] : [DEEPER_DARKER_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(MOWZIES_MOBS_5E_AUDIT.mod) ? [] : [MOWZIES_MOBS_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(BOMD_5E_AUDIT.mod) ? [] : [BOMD_5E_AUDIT]),
+  ...(UPDATED_BASE_AUDIT_MODS.has(GRAVEYARD_5E_AUDIT.mod) ? [] : [GRAVEYARD_5E_AUDIT]),
 ];
