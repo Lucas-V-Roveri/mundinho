@@ -7,6 +7,12 @@ import {
   BUMBLEZONE_BESTIARY_5E_COUNT,
   BUMBLEZONE_BESTIARY_5E_FULL,
 } from "@/data/bestiary-bumblezone-5e";
+import {
+  DEEPER_DARKER_BESTIARY_5E,
+  DEEPER_DARKER_BESTIARY_5E_COMPACT,
+  DEEPER_DARKER_BESTIARY_5E_COUNT,
+  DEEPER_DARKER_BESTIARY_5E_FULL,
+} from "@/data/bestiary-deeper-darker-5e";
 import { enrichBestiaryEntries } from "@/data/bestiary-drop-uses";
 import {
   ETERNAL_STARLIGHT_BESTIARY_5E,
@@ -50,6 +56,9 @@ export const BESTIARY_LOT_5E_TWILIGHT_COMPACT = TWILIGHT_FOREST_BESTIARY_5E_COMP
 export const BESTIARY_LOT_5E_BUMBLEZONE_DETAILED = BUMBLEZONE_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_BUMBLEZONE_FULL = BUMBLEZONE_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_BUMBLEZONE_COMPACT = BUMBLEZONE_BESTIARY_5E_COMPACT;
+export const BESTIARY_LOT_5E_DEEPER_DARKER_DETAILED = DEEPER_DARKER_BESTIARY_5E_COUNT;
+export const BESTIARY_LOT_5E_DEEPER_DARKER_FULL = DEEPER_DARKER_BESTIARY_5E_FULL;
+export const BESTIARY_LOT_5E_DEEPER_DARKER_COMPACT = DEEPER_DARKER_BESTIARY_5E_COMPACT;
 export const BESTIARY_LOT_5E_ETERNAL_STARLIGHT_DETAILED = ETERNAL_STARLIGHT_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_ETERNAL_STARLIGHT_FULL = ETERNAL_STARLIGHT_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_ETERNAL_STARLIGHT_COMPACT = ETERNAL_STARLIGHT_BESTIARY_5E_COMPACT;
@@ -67,6 +76,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...BUMBLEZONE_BESTIARY_5E,
   ...ETERNAL_STARLIGHT_BESTIARY_5E,
   ...UNDERGARDEN_BESTIARY_5E,
+  ...DEEPER_DARKER_BESTIARY_5E,
 ]);
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
@@ -114,6 +124,14 @@ const UNDERGARDEN_5E_AUDIT: BestiaryModAudit = {
   note: "Build 0.9.6 / Minecraft 1.21.1 auditada na revisão histórica da branch 1.21: 21 criaturas no bloco normal/bosses + Forgotten Minion, que entra mesmo registrado como MISC por ser AbstractGolem com atributos próprios. Boomgourd, projéteis e demais entidades utilitárias ficam fora. Resultado: 22 cards.",
 };
 
+const DEEPER_DARKER_5E_AUDIT: BestiaryModAudit = {
+  mod: "Deeper and Darker",
+  version: "1.4.1",
+  status: "calibrado",
+  sourceHref: "https://github.com/KyaniteMods/DeeperAndDarker/blob/f7ba235d078411a1165a8cac184adfe0ccc8cebe/src/main/java/com/kyanite/deeperdarker/content/DDEntities.java",
+  note: "Build 1.4.1 / Minecraft 1.21.1 reconciliada na revisão f7ba235d: o registry contém dois barcos técnicos + 11 criaturas, e DDItems registra Spawn Egg para as mesmas 11. Anger/Fear/Sorrow Pot permanecem porque OvercastPot é Monster de combate, embora tenham sido removidos temporariamente do advancement kill_all_sculk_mobs. Resultado: 11 cards.",
+};
+
 const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) => {
   if (item.mod === "The Aether") {
     return {
@@ -148,6 +166,9 @@ const UPDATED_BASE_AUDIT: BestiaryModAudit[] = BESTIARY_LOT_5A_AUDIT.map((item) 
   if (item.mod === UNDERGARDEN_5E_AUDIT.mod) {
     return { ...item, ...UNDERGARDEN_5E_AUDIT };
   }
+  if (item.mod === DEEPER_DARKER_5E_AUDIT.mod) {
+    return { ...item, ...DEEPER_DARKER_5E_AUDIT };
+  }
   const lot5dAudit = LOT_5D_AUDIT_BY_MOD.get(item.mod);
   if (lot5dAudit) {
     return { ...item, ...lot5dAudit };
@@ -163,4 +184,5 @@ export const BESTIARY_MOD_AUDIT: BestiaryModAudit[] = [
   ...(UPDATED_BASE_AUDIT_MODS.has(BUMBLEZONE_5E_AUDIT.mod) ? [] : [BUMBLEZONE_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(ETERNAL_STARLIGHT_5E_AUDIT.mod) ? [] : [ETERNAL_STARLIGHT_5E_AUDIT]),
   ...(UPDATED_BASE_AUDIT_MODS.has(UNDERGARDEN_5E_AUDIT.mod) ? [] : [UNDERGARDEN_5E_AUDIT]),
+  ...(UPDATED_BASE_AUDIT_MODS.has(DEEPER_DARKER_5E_AUDIT.mod) ? [] : [DEEPER_DARKER_5E_AUDIT]),
 ];
