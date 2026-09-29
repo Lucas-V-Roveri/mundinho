@@ -43,7 +43,7 @@ const LOTE3_GUIDE_IDS = [
   "waystones",
 ] as const;
 
-const LOTE4_AMENDMENTS_GROUP_COUNT = 6;
+const LOTE4_AMENDMENTS_GROUP_COUNT = 8;
 const LOTE4_BACKSTAGE_COUNT = 87;
 const LOTE4_REQUIRED_TO_CHECK = ["Dream Relics", "Twilight Eye"] as const;
 
