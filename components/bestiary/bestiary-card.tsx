@@ -38,8 +38,6 @@ export function BestiaryCard({
   const seen = row.seen;
   const hasImage = Boolean(entry.imageUrl) && !imageFailed;
 
-  React.useEffect(() => setImageFailed(false), [entry.imageUrl]);
-
   const toggle = async (flag: BestiaryTrackFlag) => {
     setBusy(flag);
     try {

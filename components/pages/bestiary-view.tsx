@@ -149,6 +149,7 @@ export function BestiaryView() {
   }, []);
 
   const updateFilter = (key: keyof Filters, value: string) => {
+    setVisibleCount(FILTER_PAGE_SIZE);
     setFilters((current) => {
       const next = { ...current, [key]: value };
       localStorage.setItem(FILTER_KEY, JSON.stringify(next));
@@ -180,8 +181,6 @@ export function BestiaryView() {
   }, [bestiary, filters]);
 
   const filtering = hasActiveFilters(filters);
-  React.useEffect(() => setVisibleCount(FILTER_PAGE_SIZE), [filters]);
-
   const grouped = React.useMemo(() => {
     const result = new Map<string, BestiaryEntry[]>();
     BESTIARY_ENTRIES.forEach((entry) => result.set(entry.mod, [...(result.get(entry.mod) ?? []), entry]));
