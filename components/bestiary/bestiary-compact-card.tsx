@@ -120,7 +120,12 @@ export function BestiaryCompactCard({
                     {entry.drops.map((drop) => (
                       <li key={`${entry.id}-${drop.nameEn ?? drop.namePt}`} className="border border-stone-500 bg-paper-100 p-2">
                         <strong>{drop.namePt}</strong>{drop.nameEn && drop.nameEn !== drop.namePt ? <span className="text-ink-700"> · {drop.nameEn}</span> : null}
-                        {drop.use ? <p className="mt-1 leading-5"><strong>Serve para:</strong> {drop.use}</p> : null}
+                        <p className="mt-1 text-xs leading-5 text-ink-700">{[drop.quantity, drop.chance, drop.condition].filter(Boolean).join(" · ") || "quantidade/condição não documentada"}</p>
+                        <p className="mt-1 leading-5"><strong>Para que serve:</strong> {drop.use || "Uso não documentado — conferir no JEI como último recurso."}</p>
+                        <div className="mt-2 flex flex-wrap items-center gap-2">
+                          {drop.useConfidence ? <Tag tone={drop.useConfidence === "Alta" ? "success" : drop.useConfidence === "Baixa-conferir" ? "danger" : "neutral"}>uso: {drop.useConfidence}</Tag> : null}
+                          {drop.guideHref ? <a href={drop.guideHref} className="font-label text-base text-blue-700 underline underline-offset-2">ver crafting em Mods</a> : null}
+                        </div>
                       </li>
                     ))}
                   </ul>

@@ -138,6 +138,10 @@ const DROP_USE: Record<string, DropUse> = {
   },
 };
 
+const DROP_GUIDE_HREF: Record<string, string> = {
+  "naga trophy": "/mods#twilight-crafting-tf-naga-trophy",
+};
+
 const EXTRA_DROPS: Record<string, BestiaryDrop[]> = {
   "aether-aerwhale": [
     {
@@ -150,13 +154,32 @@ const EXTRA_DROPS: Record<string, BestiaryDrop[]> = {
 };
 
 function enrichDrop(drop: BestiaryDrop): BestiaryDrop {
-  if (drop.use?.trim()) return drop;
-  const meta = DROP_USE[key(drop.nameEn ?? drop.namePt)] ?? DROP_USE[key(drop.namePt)];
-  if (meta) return { ...drop, ...meta };
+  const primaryKey = key(drop.nameEn ?? drop.namePt);
+  const localizedKey = key(drop.namePt);
+  const guideHref = drop.guideHref ?? DROP_GUIDE_HREF[primaryKey] ?? DROP_GUIDE_HREF[localizedKey];
+
+  if (drop.use?.trim()) {
+    return {
+      ...drop,
+      useConfidence: drop.useConfidence ?? "Baixa-conferir",
+      ...(guideHref ? { guideHref } : {}),
+    };
+  }
+
+  const meta = DROP_USE[primaryKey] ?? DROP_USE[localizedKey];
+  if (meta) {
+    return {
+      ...drop,
+      ...meta,
+      guideHref: drop.guideHref ?? meta.guideHref ?? guideHref,
+    };
+  }
+
   return {
     ...drop,
     use: "Uso específico ainda não documentado neste Bestiário — conferir no JEI como último recurso antes de presumir receita ou função.",
     useConfidence: "Baixa-conferir",
+    ...(guideHref ? { guideHref } : {}),
   };
 }
 
