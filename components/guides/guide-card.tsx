@@ -4,9 +4,6 @@ import * as React from "react";
 import type { Route } from "next";
 import Link from "next/link";
 import { Accordion, AccordionItem } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tag } from "@/components/ui/tag";
 import { PixelIcon, type PixelIconName } from "@/components/ui/pixel-icon";
 import { ChecklistItem } from "@/components/checklist/checklist-item";
 import { CustomItemPanel } from "@/components/checklist/custom-item-panel";
@@ -42,44 +39,33 @@ export function GuideCard({ guide, expanded, onExpandedChange }: GuideCardProps)
     return tokens.some((token) => haystack.includes(token));
   });
   const theme = guideThemeClasses(guide.theme);
-  const contentId = `guide-${guide.id}-content`;
 
   return (
     <article id={`guide-${guide.id}`} className="scroll-mt-40">
-      <Card surface="paper" className={cn("relative overflow-hidden text-ink-900", theme.frame)}>
-        <span aria-hidden="true" className={theme.stripe} />
-        <CardHeader className={cn(isExpanded && "border-b border-stone-300", "pl-6 text-ink-900", theme.header)}>
-          <div className="flex flex-wrap items-start justify-between gap-3">
-            <div className="flex min-w-0 items-start gap-3">
-              <GuideEmblem guide={guide} />
-              <div className="min-w-0">
-                <CardTitle className="text-ink-900">{guide.title}</CardTitle>
-                <CardDescription className="text-ink-700">{guide.subtitle}</CardDescription>
-              </div>
-            </div>
-            <div className="flex shrink-0 flex-wrap items-center justify-end gap-2">
-              <Tag className={cn(theme.badge, "shrink-0")}>{guide.type}</Tag>
-              <Button
-                variant="ghost"
-                size="sm"
-                aria-expanded={isExpanded}
-                aria-controls={contentId}
-                onClick={() => setExpanded(!isExpanded)}
-              >
-                <span aria-hidden="true" className="font-mono text-base leading-none">{isExpanded ? "−" : "+"}</span>
-                {isExpanded ? "Recolher" : "Expandir"}
-              </Button>
-            </div>
-          </div>
-          <div className="flex gap-2 overflow-x-auto whitespace-nowrap pb-1" aria-label={`Metadados de ${guide.title}`}>
-            <Tag tone="focus" className="shrink-0">fase: {guide.phase}</Tag>
-            <Tag tone={guide.risk === "Severo" || guide.risk === "Alto" ? "danger" : "neutral"} className="shrink-0">risco: {guide.risk}</Tag>
-            <Tag className="shrink-0">complexidade: {guide.complexity}</Tag>
-            <Tag tone={String(guide.confidence).startsWith("Alta") ? "success" : "neutral"} className="shrink-0">confiança: {guide.confidence}</Tag>
-          </div>
-        </CardHeader>
+      <AccordionItem
+        open={isExpanded}
+        onOpenChange={setExpanded}
+        headingLevel={2}
+        className={cn("scroll-mt-40", theme.frame)}
+        title={(
+          <span className="flex min-w-0 flex-1 flex-wrap items-center gap-3">
+            <GuideEmblem guide={guide} />
+            <span className="min-w-[12rem] flex-1">
+              <strong className="block truncate font-label text-2xl">{guide.title}</strong>
+              <span className="mt-1 block truncate font-mono text-[10px] leading-4 text-paper-100/80">{guide.subtitle}</span>
+            </span>
+            <span className="flex flex-wrap gap-2 font-sans text-xs normal-case tracking-normal" aria-label={`Metadados de ${guide.title}`}>
+              <span className="border border-paper-100/40 bg-night-950/35 px-2 py-1">{guide.type}</span>
+              <span className="border border-paper-100/40 bg-night-950/35 px-2 py-1">fase {guide.phase}</span>
+              <span className="border border-paper-100/40 bg-night-950/35 px-2 py-1">risco {guide.risk}</span>
+              <span className="border border-paper-100/40 bg-night-950/35 px-2 py-1">complexidade {guide.complexity}</span>
+              <span className="border border-paper-100/40 bg-night-950/35 px-2 py-1">confiança {guide.confidence}</span>
+            </span>
+          </span>
+        )}
+      >
         {isExpanded ? (
-          <CardContent id={contentId} className="space-y-5 pl-6 text-ink-900">
+          <div className="space-y-5 text-ink-900">
             <p className="text-base leading-7">{guide.intro}</p>
             <Accordion>
               {guide.sections.map((section, index) => (
@@ -110,17 +96,17 @@ export function GuideCard({ guide, expanded, onExpandedChange }: GuideCardProps)
               </AccordionItem>
             </Accordion>
             {guide.notes?.length ? <div className="border-l-4 border-torch-500 bg-torch-100 p-4 text-sm text-ink-900">{guide.notes.map((note) => <p key={note}>{note}</p>)}</div> : null}
-          </CardContent>
+          </div>
         ) : null}
-      </Card>
+      </AccordionItem>
     </article>
   );
 }
 
 function GuideEmblem({ guide }: { guide: Guide }) {
   return (
-    <span className="inventory-slot grid size-14 shrink-0 place-items-center border-2 border-night-950 bg-stone-700" aria-label={`Item-símbolo de ${guide.title}`}>
-      <ContentIcon src={resolveGuideIcon(guide)} alt="" kind="item" className="minecraft-item-sprite size-10" />
+    <span className="inventory-slot grid size-11 shrink-0 place-items-center border-2 border-night-950 bg-stone-700" aria-hidden="true">
+      <ContentIcon src={resolveGuideIcon(guide)} alt="" kind="item" className="minecraft-item-sprite size-8" />
     </span>
   );
 }
