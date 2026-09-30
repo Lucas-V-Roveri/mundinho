@@ -39,6 +39,10 @@ export function isUnsafeBestiaryImage(entry: Pick<BestiaryEntry, "imageUrl" | "i
 export function sanitizeBestiaryMedia(entry: BestiaryEntry): BestiaryEntry {
   if (!isUnsafeBestiaryImage(entry)) return entry;
 
-  const { imageUrl: _imageUrl, imageAlt: _imageAlt, imageSourceUrl: _imageSourceUrl, ...safe } = entry;
-  return safe;
+  return {
+    ...entry,
+    imageUrl: undefined,
+    imageAlt: undefined,
+    imageSourceUrl: undefined,
+  };
 }
