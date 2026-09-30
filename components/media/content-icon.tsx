@@ -14,12 +14,20 @@ const fallbacks = {
   cube: neutralFallback,
 } as const;
 
+const unavailableLocalIcons = new Set(["/icons/mob.svg"]);
+
+function canRenderDirectly(src?: string | null) {
+  if (!src || unavailableLocalIcons.has(src)) return false;
+  if (/^https?:\/\//i.test(src) && /wiki\.gg\/wiki\/Special:Redirect\/file\//i.test(src)) return false;
+  return true;
+}
+
 type Kind = keyof typeof fallbacks;
 
 export function ContentIcon({ src, alt, kind = "cube", className, locked = false }: { src?: string | null; alt: string; kind?: Kind; className?: string; locked?: boolean }) {
   const [failed, setFailed] = React.useState(false);
   const fallback = fallbacks[kind];
-  const resolved = failed || !src ? fallback : src;
+  const resolved = failed || !canRenderDirectly(src) ? fallback : src!;
   const loading = resolved.startsWith("/icons/minecraft/") ? "eager" : "lazy";
   return <img src={resolved} alt={alt} loading={loading} decoding="async" onError={() => setFailed(true)} className={cn("content-pixel-image object-contain", locked && "content-pixel-image-locked", className)} />;
 }
