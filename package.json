@@ -15,7 +15,8 @@
     "typecheck": "tsc --noEmit",
     "test:progression": "node --experimental-strip-types --test tests/progression-suggestion.test.mjs",
     "test:bestiary-media": "node --experimental-strip-types --test tests/bestiary-media.test.mjs",
-    "verify": "npm run test:progression && npm run test:bestiary-media && npm run typecheck && npm run lint && npm run build",
+    "test:minecraft-progress": "node --experimental-strip-types --test tests/minecraft-progress.test.mjs",
+    "verify": "npm run test:progression && npm run test:bestiary-media && npm run test:minecraft-progress && npm run typecheck && npm run lint && npm run build",
     "sync:content": "node scripts/sync-content-snapshot.mjs"
   },
   "dependencies": {
