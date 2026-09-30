@@ -14,7 +14,8 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test:progression": "node --experimental-strip-types --test tests/progression-suggestion.test.mjs",
-    "verify": "npm run test:progression && npm run typecheck && npm run lint && npm run build",
+    "test:bestiary-media": "node --experimental-strip-types --test tests/bestiary-media.test.mjs",
+    "verify": "npm run test:progression && npm run test:bestiary-media && npm run typecheck && npm run lint && npm run build",
     "sync:content": "node scripts/sync-content-snapshot.mjs"
   },
   "dependencies": {
