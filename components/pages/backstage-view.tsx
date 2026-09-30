@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { MinecraftProgressImport } from "@/components/bestiary/minecraft-progress-import";
 import { Input } from "@/components/ui/input";
 import { DataStatePanel } from "@/components/ui/data-state";
 import { PixelIcon } from "@/components/ui/pixel-icon";
@@ -21,8 +20,6 @@ export function BackstageView() {
       <h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Bastidores</h1>
       <p className="mt-3 max-w-4xl leading-7 text-ink-900">{data?.note ?? "O que mantém o mundinho funcionando por baixo dos blocos."}</p>
     </header>
-
-    <MinecraftProgressImport />
 
     <Input disabled={dataStatus !== "ready"} value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Filtrar os 87 bastidores..." aria-label="Filtrar bastidores" />
 
