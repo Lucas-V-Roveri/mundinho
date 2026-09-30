@@ -20,6 +20,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
+      - name: Bestiary media guard
+        run: npm run test:bestiary-media
       - name: Typecheck
         run: npm run typecheck
       - name: Lint
