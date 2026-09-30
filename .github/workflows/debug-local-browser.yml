@@ -42,13 +42,23 @@ jobs:
             const browser = await chromium.launch({ headless: true });
             const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
             const errors = [];
-            page.on('pageerror', error => errors.push(`pageerror:${error.message}`));
-            page.on('console', msg => { if (msg.type() === 'error') errors.push(`console:${msg.text()}`); });
+            let route = '';
+            page.on('pageerror', error => errors.push(`[${route}] pageerror:${error.message}`));
+            page.on('console', msg => {
+              if (msg.type() !== 'error') return;
+              const location = msg.location();
+              errors.push(`[${route}] console:${msg.text()} source=${location.url || 'unknown'}:${location.lineNumber ?? 0}:${location.columnNumber ?? 0}`);
+            });
+            page.on('response', response => {
+              if (response.status() >= 400) errors.push(`[${route}] response:${response.status()} ${response.url()}`);
+            });
+            page.on('requestfailed', request => errors.push(`[${route}] requestfailed:${request.failure()?.errorText || 'unknown'} ${request.url()}`));
             const routes = ['/', '/mods', '/progressao', '/amendments', '/extras', '/bastidores'];
-            for (const route of routes) {
-              await page.goto('http://127.0.0.1:3000' + route, { waitUntil: 'domcontentloaded' });
+            for (const current of routes) {
+              route = current;
+              await page.goto('http://127.0.0.1:3000' + current, { waitUntil: 'domcontentloaded' });
               await page.getByText('Prévia local', { exact: true }).first().waitFor({ timeout: 30000 });
-              await page.waitForTimeout(250);
+              await page.waitForTimeout(500);
             }
             fs.writeFileSync('artifacts/browser-debug/errors.txt', errors.length ? errors.join('\n') : 'NO_ERRORS');
             await browser.close();
