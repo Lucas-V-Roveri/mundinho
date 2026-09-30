@@ -1,0 +1,63 @@
+name: Debug local browser
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run build
+      - run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install chromium
+      - name: Start preview-local
+        shell: bash
+        run: |
+          set -euo pipefail
+          env -u SUPABASE_URL -u SUPABASE_PUBLISHABLE_KEY npm run start -- -p 3000 >/tmp/mundinho-local.log 2>&1 &
+          for attempt in $(seq 1 40); do
+            curl -fsS http://127.0.0.1:3000/api/config >/dev/null && exit 0
+            sleep 1
+          done
+          exit 1
+      - name: Capture browser errors
+        shell: bash
+        run: |
+          mkdir -p artifacts/browser-debug
+          cat >/tmp/debug.cjs <<'NODE'
+          const { chromium } = require(process.cwd() + '/node_modules/playwright');
+          const fs = require('fs');
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1280, height: 900 } });
+            const errors = [];
+            page.on('pageerror', error => errors.push(`pageerror:${error.message}`));
+            page.on('console', msg => { if (msg.type() === 'error') errors.push(`console:${msg.text()}`); });
+            const routes = ['/', '/mods', '/progressao', '/amendments', '/extras', '/bastidores'];
+            for (const route of routes) {
+              await page.goto('http://127.0.0.1:3000' + route, { waitUntil: 'domcontentloaded' });
+              await page.getByText('Prévia local', { exact: true }).first().waitFor({ timeout: 30000 });
+              await page.waitForTimeout(250);
+            }
+            fs.writeFileSync('artifacts/browser-debug/errors.txt', errors.length ? errors.join('\n') : 'NO_ERRORS');
+            await browser.close();
+          })().catch(error => { fs.writeFileSync('artifacts/browser-debug/runner-error.txt', String(error?.stack || error)); process.exit(1); });
+          NODE
+          node /tmp/debug.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-debug
+          path: artifacts/browser-debug
+          if-no-files-found: warn
