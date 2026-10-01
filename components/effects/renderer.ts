@@ -44,7 +44,7 @@ export function createCelebrationRenderer(canvas: HTMLCanvasElement, reduced: Me
     const count = Math.min(celebration.count, PARTICLE_CAP - particles.length);
     for (let i = 0; i < count; i++) {
       const sprite = celebration.trophy && i === 0 ? "trophy" : preset.sprites[i % preset.sprites.length];
-      const rain = Boolean(("rain" in preset && preset.rain) || celebration.effect === "forest" && sprite === "leaf");
+      const rain = sprite !== "trophy" && Boolean(("rain" in preset && preset.rain) || celebration.effect === "forest" && sprite === "leaf");
       const motion = sprite === "heart" || sprite === "bubble" || sprite === "firefly" ? "rise" : rain ? "fall" : sprite === "trophy" ? "rise" : preset.motion;
       const angle = Math.random() * Math.PI * 2;
       const speed = 35 + Math.random() * 65;

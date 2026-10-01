@@ -26,8 +26,8 @@ async function pageFor(options = {}, seed = {}, disabled = false) {
   const page = await context.newPage();
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto(`${base}/progressao`);
-  await page.locator("canvas[data-celebration-overlay]").waitFor();
-  await page.locator('article[id="progression:50"] input[type=checkbox]').waitFor();
+  await page.locator("canvas[data-celebration-overlay]").waitFor({ state: "attached" });
+  await page.locator('article[id="progression:50"] input[type=checkbox]').waitFor({ state: "attached" });
   return { page, context };
 }
 async function mark(page, id, index = 0, keyboard = false) {
@@ -105,7 +105,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
   {
     const { page, context } = await pageFor();
     await page.goto(`${base}/extras`);
-    await page.locator('input[type="checkbox"]').first().waitFor();
+    await page.locator('input[type="checkbox"]').first().waitFor({ state: "attached" });
     // Legitimate checkbox change events in a rapid batch; all writes remain local.
     await page.locator('input[type="checkbox"]').evaluateAll((inputs) => inputs.slice(0, 10).forEach((input) => input.click()));
     await page.waitForTimeout(100);
@@ -118,7 +118,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
   {
     const { page, context } = await pageFor();
     const other = await context.newPage();
-    await other.goto(`${base}/progressao`); await other.locator('article[id="progression:50"] input[type=checkbox]').waitFor();
+    await other.goto(`${base}/progressao`); await other.locator('article[id="progression:50"] input[type=checkbox]').waitFor({ state: "attached" });
     await page.bringToFront(); await mark(page, "progression:50");
     await other.waitForFunction(() => document.querySelector('article[id="progression:50"] input[type=checkbox]')?.checked === true);
     assert.equal(await other.locator("canvas[data-celebration-overlay]").getAttribute("data-effect"), null);

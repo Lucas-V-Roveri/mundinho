@@ -26,7 +26,7 @@ test("specific identity overrides shared colors and ambiguous generic words", ()
 test("variants are scoped, Extras and relics retain their own families", () => {
   assert.equal(matchFamily("Mowzie’s Mobs", "Frostmaw").effect, "ice");
   assert.equal(matchFamily("Cataclysm", "Harbinger").effect, "metal");
-  assert.equal(matchFamily("Cataclysm", "Ignis").effect, "fire");
+  assert.equal(matchFamily("Cataclysm", "Ignis").effect, "fireBurst");
   assert.equal(matchFamily("Extras", "Piquenique na Twilight Forest", undefined, true).effect, "love");
   assert.equal(matchFamily("Relics · Reliquified Twilight Forest", "Relíquia").effect, "relics");
 });

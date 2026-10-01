@@ -6,6 +6,7 @@ export type Effect = { sprites: Sprite[]; colors: string[]; motion: Motion; rain
 const effect = (sprites: Sprite[], colors: string[], motion: Motion, rain = false): Effect => ({ sprites, colors, motion, rain });
 export const EFFECTS = {
   fire: effect(["spark", "shard"], ["#ffa044", "#ffd36a", "#49382b"], "rise"),
+  fireBurst: effect(["spark", "shard"], ["#ff7544", "#ffd36a", "#30253f"], "burst"),
   forest: effect(["firefly", "leaf"], ["#ffd966", "#5e9d45"], "rise"),
   leaves: effect(["leaf", "seed"], ["#80ad5a", "#d79c4e", "#dea0be"], "fall", true),
   ice: effect(["snow", "shard"], ["#f2faff", "#a5dff5"], "fall", true),
@@ -70,7 +71,7 @@ type Rule = { family: string; match: RegExp; effect: EffectKey; variants?: [RegE
 // Semantic aliases only. No milestone, checklist or guide IDs select an effect.
 export const FAMILY_RULES: Rule[] = [
   { family: "relics", match: /\b(relics|reliquified|reliquias|artefatos|artifacts)\b/, effect: "relics" },
-  { family: "cataclysm", match: /\b(cataclysm|ignis)\b/, effect: "ancient", variants: [[/\b(ignis|ignited|burning|ignitium|netherite monstrosity|lava)\b/, "fire"], [/\b(ender guardian|void runes?)\b/, "ender"], [/\bharbinger\b/, "metal"], [/\bancient remnant\b/, "sand"], [/\bleviathan\b/, "ocean"], [/\bscylla\b/, "storm"], [/\bmaledictus\b/, "soul"]] },
+  { family: "cataclysm", match: /\b(cataclysm|ignis)\b/, effect: "ancient", variants: [[/\b(ignis|ignited|burning|ignitium|netherite monstrosity|lava)\b/, "fireBurst"], [/\b(ender guardian|void runes?)\b/, "ender"], [/\bharbinger\b/, "metal"], [/\bancient remnant\b/, "sand"], [/\bleviathan\b/, "ocean"], [/\bscylla\b/, "storm"], [/\bmaledictus\b/, "soul"]] },
   { family: "twilight", match: /\b(twilight|floresta crepuscular)\b/, effect: "forest", variants: [[/\b(alpha yeti|snow queen|snowy|glacier)\b/, "ice"], [/\b(hydra|fire swamp|lamp of cinders|brasas)\b/, "fire"]] },
   { family: "deep-aether", match: /\bdeep aether\b/, effect: "deepSky", variants: [[/\b(eye of the storm|tempestade)\b/, "storm"]] },
   { family: "aether", match: /\baether\b/, effect: "sky", variants: [[/\beye of the storm\b/, "storm"], [/\b(sun spirit|gold dungeon)\b/, "sun"], [/\b(deep aether|brass dungeon)\b/, "deepSky"]] },
