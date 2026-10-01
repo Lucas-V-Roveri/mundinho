@@ -47,19 +47,19 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
   browser = await chromium.launch({ executablePath: process.env.BROWSER_EXECUTABLE || undefined, headless: true, args: ["--no-sandbox"] });
   {
     const { page, context } = await pageFor();
-    const before = await page.locator('article[id="progression:50"]').boundingBox();
-    await mark(page, "progression:50");
+    const before = await page.locator('article[id="progression:750"]').boundingBox();
+    await mark(page, "progression:750");
     await page.waitForTimeout(120);
     const state = await canvasState(page);
     assert.equal(state.effect, "fire"); assert.ok(+state.particles > 0); assert.ok(state.pixels);
     assert.equal(await page.locator("canvas[data-celebration-overlay]").count(), 1);
     assert.equal(await page.locator("canvas[data-celebration-overlay]").evaluate((c) => getComputedStyle(c).pointerEvents), "none");
-    const after = await page.locator('article[id="progression:50"]').boundingBox();
+    const after = await page.locator('article[id="progression:750"]').boundingBox();
     assert.equal(Math.round(before.width), Math.round(after.width));
     await page.screenshot({ path: `${output}/fire.png` });
     const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("mundinho.preview.playerStates.mundinho-pra-sempre")));
-    assert.equal(stored["gr1d:progression:50"].completed, true); assert.equal(stored["benamu:progression:50"].completed, true);
-    const input = page.locator('article[id="progression:50"] input[type=checkbox]');
+    assert.equal(stored["gr1d:progression:750"].completed, true); assert.equal(stored["benamu:progression:750"].completed, true);
+    const input = page.locator('article[id="progression:750"] input[type=checkbox]');
     await input.locator("..").click();
     assert.equal(await page.evaluate(() => window.celebrationEvents.length), 1);
     await page.waitForTimeout(2500); assert.equal((await canvasState(page)).particles, "0");
@@ -145,7 +145,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
   }
   {
     const { page, context } = await pageFor({}, { "mundinho.progression.showCompleted": false });
-    await mark(page, "progression:50");
+    await mark(page, "progression:750");
     await page.waitForTimeout(120);
     const state = await canvasState(page); assert.equal(state.effect, "fire"); assert.ok(state.pixels);
     results.push("captured card origin survives hiding completed cards");
