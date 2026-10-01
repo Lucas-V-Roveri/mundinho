@@ -143,6 +143,26 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
     assert.equal((await canvasState(page)).pixels, false); results.push("disabled feature leaves empty overlay and unchanged progress flow");
     await context.close();
   }
+  {
+    const { page, context } = await pageFor({}, { "mundinho.progression.showCompleted": false });
+    await mark(page, "progression:50");
+    await page.waitForTimeout(120);
+    const state = await canvasState(page); assert.equal(state.effect, "fire"); assert.ok(state.pixels);
+    results.push("captured card origin survives hiding completed cards");
+    await context.close();
+  }
+  {
+    const context = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    await context.route("**/icons/**/*.png", (route) => route.abort());
+    await context.addInitScript(() => { localStorage.setItem("mundinho.progression.showCompleted", "true"); window.celebrationEvents = []; window.addEventListener("mundinho:celebration", (e) => window.celebrationEvents.push(e.detail.celebration)); });
+    const page = await context.newPage(); page.on("pageerror", (error) => errors.push(error.message));
+    await page.goto(`${base}/progressao`); await page.locator("canvas[data-celebration-overlay]").waitFor({ state: "attached" });
+    const skyId = progression.find((p) => /aether/i.test(p.title) && !p.subitens?.length).id;
+    await mark(page, skyId); await page.waitForTimeout(120);
+    assert.ok((await canvasState(page)).pixels);
+    results.push("failed Minecraft PNG loads use inline pixel sprites");
+    await context.close();
+  }
   assert.deepEqual(errors, []);
   fs.writeFileSync(`${output}/results.json`, JSON.stringify({ results, pageErrors: errors }, null, 2));
   console.log(JSON.stringify({ status: "PASS", results, evidence: output }, null, 2));
