@@ -3,6 +3,7 @@ import { Inter, Press_Start_2P, VT323 } from "next/font/google";
 import { ToastProvider } from "@/components/ui/toast";
 import { AppProviders } from "@/components/app-providers";
 import { AppShell } from "@/components/shell/app-shell";
+import { CelebrationOverlay } from "@/components/effects/celebration-overlay";
 import "./globals.css";
 import "./mundinho.css";
 import "./visual-adendo.css";
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <ToastProvider>
           <AppProviders>
             <AppShell>{children}</AppShell>
+            <CelebrationOverlay />
           </AppProviders>
         </ToastProvider>
       </body>

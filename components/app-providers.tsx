@@ -3,6 +3,7 @@
 import * as React from "react";
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { useToast } from "@/components/ui/toast";
+import { celebrateConfirmed } from "@/components/effects/celebration-bus";
 import { getBrowserSupabase } from "@/lib/supabase/browser";
 import { classifyRuntimeConfig, loadPublicRuntimeConfig } from "@/lib/runtime-config";
 import { createDataStore, type DataMode, type DataStore } from "@/lib/db";
@@ -214,12 +215,13 @@ export function AppProviders({ children }: { children: React.ReactNode }) {
         await store.setCompleted({ itemId: input.itemId, completed: input.completed, actor: sharedActor, section: input.section, entryKey: input.entryKey });
       }
       playUiSound(input.completed ? "success" : "click");
+      celebrateConfirmed(input, { content, playerStates, customItems, actor });
       if (input.completed) toast({ title: "Advancement Made!", description: `${actor} marcou: ${input.label}`, variant: "advancement" });
       await refresh();
     } catch (error) {
       surfaceMutationError(error);
     }
-  }, [actor, dataStatus, playUiSound, refresh, surfaceMutationError, toast]);
+  }, [actor, content, playerStates, customItems, dataStatus, playUiSound, refresh, surfaceMutationError, toast]);
 
   const addCustomItem = React.useCallback(async (input: Parameters<ContextValue["addCustomItem"]>[0]) => {
     const store = storeRef.current;

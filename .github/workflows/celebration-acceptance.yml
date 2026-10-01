@@ -1,0 +1,52 @@
+name: Celebration acceptance
+
+on:
+  push:
+    branches: [main, celebration-achievements]
+    paths:
+      - components/effects/**
+      - components/app-providers.tsx
+      - app/layout.tsx
+      - public/icons/celebrations/**
+      - tests/celebration-*.mjs
+      - tests/celebration-*.cjs
+      - .github/workflows/celebration-acceptance.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Taxonomy and regression checks
+        run: |
+          node --experimental-strip-types --test tests/celebration-taxonomy.test.mjs
+          npm run verify
+      - name: Install browser
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Isolated browser acceptance
+        run: |
+          npm run start -- --hostname 127.0.0.1 --port 3000 > /tmp/mundinho-server.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:3000/api/config > /dev/null; then break; fi
+            sleep 1
+          done
+          BASE_URL=http://127.0.0.1:3000 EVIDENCE_DIR=/tmp/mundinho-celebration-evidence node tests/celebration-browser-smoke.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: celebration-evidence
+          path: |
+            /tmp/mundinho-celebration-evidence/
+            /tmp/mundinho-server.log
