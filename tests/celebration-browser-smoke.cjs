@@ -12,6 +12,7 @@ const progression = rows.find((r) => r.key === "page:progression").payload.items
 const output = process.env.EVIDENCE_DIR || "/tmp/mundinho-celebration-evidence";
 fs.mkdirSync(output, { recursive: true });
 const errors = [], results = [];
+let mobilePerformance;
 let browser;
 
 async function pageFor(options = {}, seed = {}, disabled = false) {
@@ -68,8 +69,15 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
   }
   {
     const { page, context } = await pageFor({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
+    const cdp = await context.newCDPSession(page);
+    await cdp.send("Emulation.setCPUThrottlingRate", { rate: 4 });
     await mark(page, "progression:780", 0, true);
-    await page.waitForTimeout(900);
+    mobilePerformance = await page.evaluate(() => new Promise((resolve) => {
+      const gaps = []; let last = 0;
+      function sample(now) { if (last) gaps.push(now - last); last = now; if (gaps.length < 45) requestAnimationFrame(sample); else { const sorted = [...gaps].sort((a, b) => a - b); resolve({ cpuThrottle: 4, samples: gaps.length, averageFps: Math.round(1000 / (gaps.reduce((a, b) => a + b, 0) / gaps.length)), p95FrameMs: Math.round(sorted[Math.floor(sorted.length * .95)] * 100) / 100 }); } }
+      requestAnimationFrame(sample);
+    }));
+    assert.ok(mobilePerformance.p95FrameMs < 50, JSON.stringify(mobilePerformance));
     const state = await canvasState(page); assert.equal(state.effect, "ice"); assert.ok(state.pixels);
     assert.equal(await page.locator("canvas[data-celebration-overlay]").evaluate((c) => c.width), 780);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
@@ -164,6 +172,6 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
     await context.close();
   }
   assert.deepEqual(errors, []);
-  fs.writeFileSync(`${output}/results.json`, JSON.stringify({ results, pageErrors: errors }, null, 2));
-  console.log(JSON.stringify({ status: "PASS", results, evidence: output }, null, 2));
+  fs.writeFileSync(`${output}/results.json`, JSON.stringify({ results, mobilePerformance, pageErrors: errors }, null, 2));
+  console.log(JSON.stringify({ status: "PASS", results, mobilePerformance, evidence: output }, null, 2));
 })().catch((error) => { console.error(error); process.exitCode = 1; }).finally(async () => { await browser?.close(); });
