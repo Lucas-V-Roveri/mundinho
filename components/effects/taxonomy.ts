@@ -37,7 +37,7 @@ export const EFFECTS = {
   raid: effect(["banner", "spark"], ["#a34b50", "#96999f"], "burst"),
   gold: effect(["coin", "star"], ["#f5cb58", "#8d6348"], "burst"),
   spiders: effect(["web", "eye"], ["#dddcd2", "#cc625e"], "fall"),
-  rest: effect(["moon", "star"], ["#eee4b6", "#8eacd5"], "rise"),
+  rest: effect(["moon", "star"], ["#d6a34d", "#7296c3"], "rise"),
   create: effect(["gear", "spark"], ["#b58a56", "#939c9e", "#d5b15a"], "fall"),
   kitchen: effect(["food", "heart"], ["#d7a766", "#7eb44e", "#e87364"], "burst"),
   crops: effect(["seed", "leaf"], ["#77ac4d", "#e6c46b"], "burst"),

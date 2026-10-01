@@ -49,7 +49,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
     const { page, context } = await pageFor();
     const before = await page.locator('article[id="progression:750"]').boundingBox();
     await mark(page, "progression:750");
-    await page.waitForTimeout(120);
+    await page.waitForTimeout(450);
     const state = await canvasState(page);
     assert.equal(state.effect, "fire"); assert.ok(+state.particles > 0); assert.ok(state.pixels);
     assert.equal(await page.locator("canvas[data-celebration-overlay]").count(), 1);
@@ -69,7 +69,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
   {
     const { page, context } = await pageFor({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
     await mark(page, "progression:780", 0, true);
-    await page.waitForTimeout(140);
+    await page.waitForTimeout(900);
     const state = await canvasState(page); assert.equal(state.effect, "ice"); assert.ok(state.pixels);
     assert.equal(await page.locator("canvas[data-celebration-overlay]").evaluate((c) => c.width), 780);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
@@ -89,7 +89,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
     await mark(page, "progression:50");
     const event = await page.evaluate(() => window.celebrationEvents[0]);
     assert.equal(event.level, "phase"); assert.equal(event.count, 34);
-    await page.waitForTimeout(150); await page.screenshot({ path: `${output}/phase.png` });
+    await page.waitForTimeout(450); await page.screenshot({ path: `${output}/phase.png` });
     results.push("full phase emits one amplified celebration with 34 particles");
     await context.close();
   }
@@ -146,7 +146,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
   {
     const { page, context } = await pageFor({}, { "mundinho.progression.showCompleted": false });
     await mark(page, "progression:750");
-    await page.waitForTimeout(120);
+    await page.waitForTimeout(450);
     const state = await canvasState(page); assert.equal(state.effect, "fire"); assert.ok(state.pixels);
     results.push("captured card origin survives hiding completed cards");
     await context.close();
@@ -158,7 +158,7 @@ async function canvasState(page) { return page.locator("canvas[data-celebration-
     const page = await context.newPage(); page.on("pageerror", (error) => errors.push(error.message));
     await page.goto(`${base}/progressao`); await page.locator("canvas[data-celebration-overlay]").waitFor({ state: "attached" });
     const skyId = progression.find((p) => /aether/i.test(p.title) && !p.subitens?.length).id;
-    await mark(page, skyId); await page.waitForTimeout(120);
+    await mark(page, skyId); await page.waitForTimeout(450);
     assert.ok((await canvasState(page)).pixels);
     results.push("failed Minecraft PNG loads use inline pixel sprites");
     await context.close();

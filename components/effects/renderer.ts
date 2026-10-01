@@ -48,8 +48,8 @@ export function createCelebrationRenderer(canvas: HTMLCanvasElement, reduced: Me
       const motion = sprite === "heart" || sprite === "bubble" || sprite === "firefly" ? "rise" : rain ? "fall" : sprite === "trophy" ? "rise" : preset.motion;
       const angle = Math.random() * Math.PI * 2;
       const speed = 35 + Math.random() * 65;
-      const x = rain ? Math.random() * width : source.left + source.width / 2 + (celebration.effect === "love" ? (i % 2 ? 10 : -10) : 0);
-      particles.push({ x, y: rain ? -Math.random() * 20 : source.top + source.height / 2, vx: motion === "burst" ? Math.cos(angle) * speed : (Math.random() - .5) * 35, vy: motion === "burst" ? Math.sin(angle) * speed - 25 : motion === "fall" ? 55 + Math.random() * 45 : -40 - Math.random() * 40, age: 0, duration: celebration.duration, size: sprite === "trophy" ? 22 : sprite === "bee" || sprite === "gear" ? 16 : 6 + Math.floor(Math.random() * 5) * 2, sprite, effect: celebration.effect, color: sprite === "trophy" ? "#ffd56b" : preset.colors[i % preset.colors.length], motion, rotation: 0, seed: Math.random() * Math.PI * 2 });
+      const x = rain ? Math.random() * width : source.left + source.width / 2 + (Math.random() - .5) * 12 + (celebration.effect === "love" ? (i % 2 ? 10 : -10) : 0);
+      particles.push({ x, y: rain ? -Math.random() * 20 : source.top + source.height / 2 + (Math.random() - .5) * 8, vx: motion === "burst" ? Math.cos(angle) * speed : (Math.random() - .5) * (motion === "fall" ? 35 : 100), vy: motion === "burst" ? Math.sin(angle) * speed - 25 : motion === "fall" ? 55 + Math.random() * 45 : -40 - Math.random() * 40, age: 0, duration: celebration.duration, size: sprite === "trophy" ? 22 : sprite === "bee" || sprite === "gear" ? 16 : 6 + Math.floor(Math.random() * 5) * 2, sprite, effect: celebration.effect, color: sprite === "trophy" ? "#ffd56b" : preset.colors[i % preset.colors.length], motion, rotation: 0, seed: Math.random() * Math.PI * 2 });
     }
     diagnostics();
   }
