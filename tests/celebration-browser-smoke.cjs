@@ -37,7 +37,8 @@ async function mark(page, id, index = 0, keyboard = false) {
   const label = input.locator("..");
   await label.scrollIntoViewIfNeeded();
   if (keyboard) { await input.focus(); await input.press("Space"); } else await label.click();
-  await page.waitForFunction(() => window.celebrationEvents.length > 0);
+  try { await page.waitForFunction(() => window.celebrationEvents.length > 0, null, { timeout: 5000 }); }
+  catch (error) { console.log(await page.evaluate(() => ({ checked: document.querySelector('article[id="progression:50"] input')?.checked, canvas: document.querySelector("canvas[data-celebration-overlay]")?.dataset, keys: Object.keys(localStorage), events: window.celebrationEvents, text: document.body.innerText.slice(-1500) }))); await page.screenshot({ path: `${output}/failure.png` }); throw error; }
   return input;
 }
 async function canvasState(page) { return page.locator("canvas[data-celebration-overlay]").evaluate((c) => ({ ...c.dataset, pixels: c.getContext("2d").getImageData(0, 0, c.width, c.height).data.some((v, i) => i % 4 === 3 && v > 0) })); }

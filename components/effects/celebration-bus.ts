@@ -40,7 +40,7 @@ export function identifyCheckbox(input: HTMLInputElement, context: CelebrationCo
   return context.content.extras?.items.find((extra) => extra.title === title && input.closest(`[id="${CSS.escape(extra.id)}"]`))?.id;
 }
 
-/** Capture phase runs before React's handler, for mouse, touch and keyboard changes. */
+/** Native activation capture runs before React's checkbox onChange (which uses click), for mouse, touch and keyboard. */
 export function captureCheckbox(event: Event, context: CelebrationContext) {
   if (!enabled || !(event.target instanceof HTMLInputElement) || event.target.type !== "checkbox") return;
   const input = event.target;

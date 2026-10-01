@@ -27,10 +27,10 @@ export function CelebrationOverlay() {
     rendererRef.current = renderer;
     const capture = (event: Event) => captureCheckbox(event, contextRef.current);
     const celebrate = (event: Event) => renderer.accept((event as CustomEvent<CelebrationEvent>).detail);
-    document.addEventListener("change", capture, true);
+    document.addEventListener("click", capture, true);
     window.addEventListener(CELEBRATION_EVENT, celebrate);
     return () => {
-      document.removeEventListener("change", capture, true);
+      document.removeEventListener("click", capture, true);
       window.removeEventListener(CELEBRATION_EVENT, celebrate);
       renderer.dispose(); rendererRef.current = null; clearCelebrationSession();
     };
