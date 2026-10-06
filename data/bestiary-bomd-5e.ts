@@ -1,3 +1,4 @@
+import audit from "@/data/bestiary-bomd-audit.json";
 import type { BestiaryEntry } from "@/types/bestiary";
 
 const SOURCE_COMMIT = "1a7bd955d201d1b4d066157b8335cd967677e209";
@@ -41,6 +42,7 @@ function boss(spec: {
   notes: string[];
   configFile: string;
 }): BestiaryEntry {
+  const auditedRows = audit.rows.filter((row) => row.Mob === spec.name);
   return {
     id: `bomd-${spec.id}`,
     namePt: spec.name,
@@ -55,10 +57,25 @@ function boss(spec: {
     summary: spec.summary,
     dimensions: spec.dimensions,
     locations: spec.locations,
-    howToFind: spec.howToFind,
-    drops: [],
+    howToFind: auditedRows[0]?.["Onde encontrar"] ?? spec.howToFind,
+    audit: { rows: auditedRows, recipes: audit.recipes.map((recipe) => ({ ...recipe, key: Object.fromEntries(Object.entries(recipe.key).filter(([, value]) => typeof value === "string")) })) },
+    imageUrl: auditedRows[0]?.Imagem,
+    imageAlt: `${spec.name} · render técnico do modelo auditado BOMD 1.3.3`,
+    imageSourceUrl: "/bestiary/auditoria/bomd-proveniencia.json",
+    drops: auditedRows.map((row) => ({
+      namePt: row["Drop/Recompensa"],
+      quantity: row.Quantidade,
+      condition: row["Chance/condição"],
+      mechanism: row.Mecanismo,
+      use: row["Para que serve"],
+      useConfidence: row.Confiança.includes("Média") ? "Média" : row.Confiança.startsWith("Alta") ? "Alta" : "Baixa-conferir",
+      confidenceDetail: row.Confiança,
+      sourceDetail: row["Fontes pesquisadas"],
+      guideHref: row.Crafting,
+    })),
     notes: [
       ...spec.notes,
+      "Calibração 2026-10-06: recompensa de morte, tesouro de estrutura e baú/blocos pós-boss são mecanismos separados; configurações externas e addon End Remastered são condicionais, não prêmio garantido.",
       "Vida, armadura, ataque/efeitos e geração são configuráveis na build 1.3.3; o card não congela números que o pack pode alterar.",
       "A revisão 1.3.3 não possui pt_br.json; o nome oficial inglês é preservado em vez de inventar tradução.",
     ],

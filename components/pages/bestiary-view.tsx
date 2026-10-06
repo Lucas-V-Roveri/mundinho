@@ -148,7 +148,7 @@ export function BestiaryView() {
   const { actor, mode, dataStatus, content } = useMundinho();
   const bestiary = useBestiaryState({ actor, mode, parentDataStatus: dataStatus });
   const [filters, setFilters] = React.useState<Filters>(initialFilters);
-  const [revealAll, setRevealAll] = React.useState(false);
+  const [revealAll, setRevealAll] = React.useState(true);
   const [visibleCount, setVisibleCount] = React.useState(FILTER_PAGE_SIZE);
 
   React.useEffect(() => {
@@ -159,7 +159,7 @@ export function BestiaryView() {
       } catch {
         // filtro inválido: usa padrão
       }
-      setRevealAll(localStorage.getItem(REVEAL_KEY) === "true");
+      setRevealAll(localStorage.getItem(REVEAL_KEY) !== "false");
     });
     return () => cancelAnimationFrame(frame);
   }, []);

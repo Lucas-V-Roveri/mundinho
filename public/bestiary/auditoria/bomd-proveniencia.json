@@ -1,0 +1,319 @@
+{
+  "project": "Mundinho pra sempre",
+  "mod": "Bosses of Mass Destruction Forge/NeoForge port",
+  "version": "1.3.3",
+  "repository": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE",
+  "commit": "1a7bd955d201d1b4d066157b8335cd967677e209",
+  "method": "Rasterização técnica ortográfica das geometrias originais, box-UV e pivôs; animações idle amostradas em t=0. Não são screenshots do jogo.",
+  "limits": [
+    "Animações de código, interpolação e estado do servidor não executados.",
+    "Não reproduz lightmap, pós-processamento, partículas ou projéteis externos.",
+    "Enquadramento individual normaliza a escala absoluta.",
+    "Poses escolhidas e partes luminosas registradas por imagem; estados de ataque e escudo fora deste lote."
+  ],
+  "geckolib_reference": {
+    "repository": "https://github.com/bernie-g/geckolib",
+    "commit": "cce098097cdd2084d8383bec593e0db79e0ed5a0",
+    "scope": "Referência das convenções de baking e UV na branch MC1.21.1; não é afirmação da versão GeckoLib instalada no pack. O build BOMD declara >=4.5.8."
+  },
+  "images": [
+    {
+      "mob": "Night Lich",
+      "entity_id": "bosses_of_mass_destruction:lich",
+      "image": "night-lich.png",
+      "cube_count": 233,
+      "bone_count": 161,
+      "animations_at_seconds": {
+        "time": 0,
+        "names": [
+          "idle",
+          "float",
+          "skull_float",
+          "book_idle"
+        ]
+      },
+      "notes": "Geometria integral original; animações idle, float, skull_float, book_idle amostradas em t=0. Renderização ortográfica técnica; escala absoluta normalizada. Sem execução do jogo, interpolação ou animações de código. Livro, cajado e coroa pertencem à malha; olhos/cristais luminosos conforme LichBoneLight. Inclinação dinâmica do corpo de LichCodeAnimations não executada.",
+      "geometry_description": {
+        "identifier": "geometry.unknown",
+        "texture_width": 196,
+        "texture_height": 128,
+        "visible_bounds_width": 6,
+        "visible_bounds_height": 7,
+        "visible_bounds_offset": [
+          0,
+          2.5,
+          0
+        ]
+      },
+      "sources": [
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/lich.geo.json",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/lich.png",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/lich.animation.json",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/BMDEntities.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/GeoModel.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/util/SimpleLivingGeoRenderer.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichBoneLight.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichCodeAnimations.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichEntity.java"
+      ],
+      "sha256": "9e0e7e1a3e19fbf70a05fc9063d800bee0aa1e4b73e03b90183eb6151d753297"
+    },
+    {
+      "mob": "Nether Gauntlet",
+      "entity_id": "bosses_of_mass_destruction:gauntlet",
+      "image": "nether-gauntlet.png",
+      "cube_count": 42,
+      "bone_count": 26,
+      "animations_at_seconds": {
+        "time": 0,
+        "names": [
+          "idle"
+        ]
+      },
+      "notes": "Geometria integral original; animações idle amostradas em t=0. Renderização ortográfica técnica; escala absoluta normalizada. Sem execução do jogo, interpolação ou animações de código. Textura normal, sem dano, laser ou escudo de energia ativo.",
+      "geometry_description": {
+        "identifier": "geometry.unknown",
+        "texture_width": 256,
+        "texture_height": 256,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 5.5,
+        "visible_bounds_offset": [
+          0,
+          2.25,
+          0
+        ]
+      },
+      "sources": [
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/gauntlet.geo.json",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/gauntlet.png",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/gauntlet.animation.json",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/BMDEntities.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/GeoModel.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/util/SimpleLivingGeoRenderer.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletCodeAnimations.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletTextureProvider.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletEntity.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletEnergyRenderer.java"
+      ],
+      "sha256": "e8a58e615fcbed229a86316d2dbfa22bfa2e1e5573372bd340abf48977ee7806"
+    },
+    {
+      "mob": "Void Blossom",
+      "entity_id": "bosses_of_mass_destruction:void_blossom",
+      "image": "void-blossom.png",
+      "cube_count": 91,
+      "bone_count": 67,
+      "animations_at_seconds": {
+        "time": 0,
+        "names": [
+          "idle"
+        ]
+      },
+      "notes": "Geometria integral original; animações idle amostradas em t=0. Renderização ortográfica técnica; escala absoluta normalizada. Sem execução do jogo, interpolação ou animações de código. Pose idle; partes luminosas conforme VoidBlossomBoneLight. Sem projéteis ou espinhos externos de ataque.",
+      "geometry_description": {
+        "identifier": "geometry.unknown",
+        "texture_width": 256,
+        "texture_height": 256,
+        "visible_bounds_width": 11,
+        "visible_bounds_height": 13,
+        "visible_bounds_offset": [
+          0,
+          4.5,
+          0
+        ]
+      },
+      "sources": [
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/void_blossom.geo.json",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/void_blossom.png",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/void_blossom.animation.json",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/BMDEntities.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/GeoModel.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/util/SimpleLivingGeoRenderer.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomBoneLight.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomCodeAnimations.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomEntity.java"
+      ],
+      "sha256": "0bd8a2b4134a5694eb1e2f71a29c64919fa080bdc9dc4a13f2e7797a33c8441a"
+    },
+    {
+      "mob": "Obsidilith",
+      "entity_id": "bosses_of_mass_destruction:obsidilith",
+      "image": "obsidilith.png",
+      "cube_count": 8,
+      "bone_count": 6,
+      "animations_at_seconds": {
+        "time": 0,
+        "names": [
+          "placeholder"
+        ]
+      },
+      "notes": "Geometria integral original; animações placeholder amostradas em t=0. Renderização ortográfica técnica; escala absoluta normalizada. Sem execução do jogo, interpolação ou animações de código. Estado sem ataque e sem escudo, runas centrais com multiplicador RGB=127/255 conforme renderer. Sem energySwirl.",
+      "geometry_description": {
+        "identifier": "geometry.unknown",
+        "texture_width": 256,
+        "texture_height": 256,
+        "visible_bounds_width": 5,
+        "visible_bounds_height": 9,
+        "visible_bounds_offset": [
+          0,
+          0.5,
+          0
+        ]
+      },
+      "sources": [
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/obsidilith.geo.json",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/obsidilith.png",
+        "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/obsidilith.animation.json",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/BMDEntities.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/GeoModel.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/util/SimpleLivingGeoRenderer.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithBoneLight.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithArmorRenderer.java",
+        "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithEntity.java"
+      ],
+      "sha256": "19871aa8d7355c4c9cada11b16759fb7fffec449580a2329a641cc6a0243c7d0"
+    }
+  ],
+  "original_sources": {
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/lich.geo.json": {
+      "git_blob_sha1": "210e81bff5ce6a7a2c6bdc1a5032e2c663f57b8c",
+      "sha256": "b5cc886fc6cd3aec798ec78aea2c0e478553e81c44331ecc3e838f87a4de6c57",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/geo/lich.geo.json"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/lich.png": {
+      "git_blob_sha1": "3d921372c77794dba51273efb1601b53e3bdfeb4",
+      "sha256": "246705c820b8991d1eb5685c0bd7248034c122c5acbc7c73e93f0896fe81ad9a",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/lich.png"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/lich.animation.json": {
+      "git_blob_sha1": "08765f870cb0869f7947d8c351bb5acd3937889c",
+      "sha256": "e0b463cd8c6923b92330b66fa15267d6a029887028f8d79282283f06f865f3ea",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/animations/lich.animation.json"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/BMDEntities.java": {
+      "git_blob_sha1": "19b96a9c7c656d4c8d7d3fe4730bc1a7ddee1b45",
+      "sha256": "bf8af41cf550ffdcc36e8fe82cf916d91eddaf572c7ab3332c20b6cff13c37ff",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/BMDEntities.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/GeoModel.java": {
+      "git_blob_sha1": "9942efbc63e7b30fb7bcdb68be60689ac45d0a13",
+      "sha256": "b63ada73811560f6ae8f24aabfd05caba3e443ddffd6f43e2b6723cbe14ffd2b",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/GeoModel.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/util/SimpleLivingGeoRenderer.java": {
+      "git_blob_sha1": "63c36ff28274acf3c87359e62e3b2c2b182c82a2",
+      "sha256": "72645b312d0deaecc25d1ec8a12d2e7ca00056383f1a0ce8cbaa8e891a33ea94",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/util/SimpleLivingGeoRenderer.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichBoneLight.java": {
+      "git_blob_sha1": "704eda091863bddfa9ff3b205f112f76da4da034",
+      "sha256": "a8cd031c3a58ed301e3eb92b354617f1614278bcef800ded04b90b577dd72143",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichBoneLight.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichCodeAnimations.java": {
+      "git_blob_sha1": "7338ed69f3bc7d0511cf638c442261e4fc8dcbbd",
+      "sha256": "d27517774630bf6189ab5941ffa9fce3a2c3d76944d5ab0b4b45b619c67049ac",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichCodeAnimations.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichEntity.java": {
+      "git_blob_sha1": "71ed9a027d7950af5afa279e4ba626b7ec2d91ac",
+      "sha256": "28df6f2adcbd8954d2f6b5eafb426847b0faeee27931698e047de5468ef56918",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/lich/LichEntity.java"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/gauntlet.geo.json": {
+      "git_blob_sha1": "d9506d73606a5f561d7050d78a80cb2107a2d21f",
+      "sha256": "77d4d55abd656b9af313ca58f4a989b1280bbf0b12310f0b98e0300706fb02b0",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/geo/gauntlet.geo.json"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/gauntlet.png": {
+      "git_blob_sha1": "b340530e737a2c1703c99b5cf3ea38ab0509a18c",
+      "sha256": "5d0ac04bc5eb121616edebb9cb467e9f13dd086f08797ce1fc77dd2d209d9703",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/gauntlet.png"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/gauntlet.animation.json": {
+      "git_blob_sha1": "50d2252039add8e8c827d93a49c0810030677156",
+      "sha256": "80823e431f7445bbb694c2a7dbf0ced1d9221b51334a1f9a357936caf2654fac",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/animations/gauntlet.animation.json"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletCodeAnimations.java": {
+      "git_blob_sha1": "3fb7ceae9b4d8d7314185adb0071272d8e1b398f",
+      "sha256": "aa368db3cffb82456cc7252489ea4d77b325db8407b51b2ec4e25f2cbc5606cd",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletCodeAnimations.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletTextureProvider.java": {
+      "git_blob_sha1": "f93e9a7fafd4b81435b5874c770c50e8310677d4",
+      "sha256": "7bf46f9cda501c7bcc10178fc2acd15a81a2b81a036de6b90e29ce261a186dc8",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletTextureProvider.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletEntity.java": {
+      "git_blob_sha1": "2b1de661c0235ca1e43707c5e6bd8368c6d02a34",
+      "sha256": "ffc588f9b963417ac463b9d2af57c9e54608d9638ee267e53d25abdc5425aa2b",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletEntity.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletEnergyRenderer.java": {
+      "git_blob_sha1": "961db20e3b13d75a5f104698b81a790ddbc1e204",
+      "sha256": "382782919ea95267edd17f8605abb73cf34a1202388cbc32c361e268d6a070ef",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/gauntlet/GauntletEnergyRenderer.java"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/void_blossom.geo.json": {
+      "git_blob_sha1": "4c78460b21a5048b8be98d85133e511db3ed6914",
+      "sha256": "0bdfac92e9db3b93ba109fac54c3c975ab57137541d9d1e90890e49f31b53cb2",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/geo/void_blossom.geo.json"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/void_blossom.png": {
+      "git_blob_sha1": "a1bd5d9849acca97701ed281dd8a92799ceb43ed",
+      "sha256": "54c1a3a25c3760c06a9fe6e33ce2c451fd6d151cc4bacea49a9a55c82e38d3f1",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/void_blossom.png"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/void_blossom.animation.json": {
+      "git_blob_sha1": "d1a0ed1141f9d1cde40709dba7365b34efa8af13",
+      "sha256": "428fccd426325d0f3ee4d97efd218111a22908cc59d862a2b77bd2f93c1c7190",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/animations/void_blossom.animation.json"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomBoneLight.java": {
+      "git_blob_sha1": "a3a8f8af790f59bdc275bd37410ab4d2d8f38cd0",
+      "sha256": "d34f37b97625f41e1d1249bdb7b1012beb3d0f73e559658ec8677ca9f59c1640",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomBoneLight.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomCodeAnimations.java": {
+      "git_blob_sha1": "464a41bf9e9718d776b50bbcd5cbe2a03de7f988",
+      "sha256": "8d2d683d35419f4f9dd5d261ae234d7913b194dc65c9029bccbfb965dcb1fe70",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomCodeAnimations.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomEntity.java": {
+      "git_blob_sha1": "dcd91d7014df5b781e43becc5e37c6549857f23b",
+      "sha256": "2b25027cbbf2fd1b4681fa3b79de41183edbe0d6c7d18216779fa16b42efa608",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/void_blossom/VoidBlossomEntity.java"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/geo/obsidilith.geo.json": {
+      "git_blob_sha1": "5b0568ab480c360cc7b72901457f7e3fe33ab520",
+      "sha256": "0862320bbc46df4947c5e7f40cf61cd49954c6742c58a9fd90678474a7dd71d8",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/geo/obsidilith.geo.json"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/obsidilith.png": {
+      "git_blob_sha1": "bee71db382ab9b55ced7ff3d1ae420449ba8f10b",
+      "sha256": "4953ea901cf7ebd8919829cebac051c7400a761ca9dad6cea112fa339ce78cb7",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/textures/entity/obsidilith.png"
+    },
+    "Common/src/main/resources/assets/bosses_of_mass_destruction/animations/obsidilith.animation.json": {
+      "git_blob_sha1": "cbe83cfc3361bc4829c7332482dc33fbe4979d80",
+      "sha256": "00985c571f3bcdb525383aa234d6710486457d64e1c7d35a660de0549d5ab383",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/resources/assets/bosses_of_mass_destruction/animations/obsidilith.animation.json"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithBoneLight.java": {
+      "git_blob_sha1": "d4bb76abd88b24587095839d8a68c9f977d645c3",
+      "sha256": "f60c065f3f008f9bff9bfa3714182c08f16fe98c9ecb56562639af33addec7cd",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithBoneLight.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithArmorRenderer.java": {
+      "git_blob_sha1": "16403674b8b5cbeafee5756ef66ef079aea49e53",
+      "sha256": "3d13f7f0bb9fd1f6b6843d5eb084768b029106d48d823f50519255df8a13177e",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithArmorRenderer.java"
+    },
+    "Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithEntity.java": {
+      "git_blob_sha1": "3b588f0ba7bd2892fbddead22bd7af368ad3065f",
+      "sha256": "80fb08659e571a6e6b812a6d9bf680b35361eb2c7531e19bcca58ce9321dc91f",
+      "url": "https://github.com/CERBON-MODS/Bosses-of-Mass-Destruction-FORGE/blob/1a7bd955d201d1b4d066157b8335cd967677e209/Common/src/main/java/com/cerbon/bosses_of_mass_destruction/entity/custom/obsidilith/ObsidilithEntity.java"
+    }
+  }
+}

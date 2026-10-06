@@ -2,6 +2,10 @@ type CatalogOriginLike = { encounterId?: string };
 type CatalogItemLike = { origins: readonly CatalogOriginLike[] };
 
 const BESTIARY_MOB_BY_ENCOUNTER: Record<string, string> = {
+  "bomd-blossom": "bomd-void-blossom",
+  "bomd-lich": "bomd-night-lich",
+  "bomd-gauntlet": "bomd-nether-gauntlet",
+  "bomd-obsidilith": "bomd-obsidilith",
   "tf-naga": "twilightforest-naga",
   "tf-lich": "twilightforest-lich",
   "tf-minoshroom": "twilightforest-minoshroom",

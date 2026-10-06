@@ -19,6 +19,9 @@ export type BestiarySource = {
 export type BestiaryDrop = {
   namePt: string;
   nameEn?: string;
+  mechanism?: string;
+  confidenceDetail?: string;
+  sourceDetail?: string;
   quantity?: string;
   chance?: string;
   condition?: string;
@@ -29,7 +32,29 @@ export type BestiaryDrop = {
   guideHref?: string;
 };
 
+export type BestiaryAuditRow = {
+  "Mob": string;
+  "Mod": string;
+  "Categoria/comportamento": string;
+  "Onde encontrar": string;
+  "Mecanismo": string;
+  "Drop/Recompensa": string;
+  "Quantidade": string;
+  "Chance/condição": string;
+  "Para que serve": string;
+  "Confiança": string;
+  "Imagem": string;
+  "Fonte da imagem": string;
+  "Fontes pesquisadas": string;
+  "Crafting": string;
+};
+
+export type BestiaryAuditRecipe = {
+  id: string; pattern: string[]; key: Record<string, string>; ingredients: string[]; result: string; count: number; source: string;
+};
+
 export type BestiaryEntry = {
+  audit?: { rows: BestiaryAuditRow[]; recipes: BestiaryAuditRecipe[] };
   id: string;
   namePt: string;
   nameEn: string;

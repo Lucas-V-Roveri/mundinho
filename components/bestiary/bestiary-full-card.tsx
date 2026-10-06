@@ -175,14 +175,17 @@ export function BestiaryCard({
                 <h3 className="font-label text-xl text-wood-700">Drops documentados</h3>
                 {entry.drops.length ? (
                   <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                    {entry.drops.map((drop) => (
-                      <div key={`${entry.id}-${drop.nameEn ?? drop.namePt}`} className="border border-stone-500 bg-paper-100 p-3 text-sm">
+                    {entry.drops.map((drop, dropIndex) => (
+                      <div key={`${entry.id}-${dropIndex}-${drop.nameEn ?? drop.namePt}`} className="border border-stone-500 bg-paper-100 p-3 text-sm">
+                        {drop.mechanism ? <p className="mb-1 font-semibold text-blue-800">{drop.mechanism}</p> : null}
                         <strong>{drop.namePt}</strong>{drop.nameEn && drop.nameEn !== drop.namePt ? <span className="text-ink-700"> · {drop.nameEn}</span> : null}
                         <p className="mt-1 text-xs leading-5 text-ink-700">{[drop.quantity, drop.chance, drop.condition].filter(Boolean).join(" · ") || "quantidade/condição não documentada"}</p>
                         <p className="mt-2 text-sm leading-5"><strong>Para que serve:</strong> {drop.use || "Uso não documentado — conferir no JEI como último recurso."}</p>
+                        {drop.confidenceDetail ? <p className="mt-2 text-xs leading-5"><strong>Confiança:</strong> {drop.confidenceDetail}</p> : null}
+                        {drop.sourceDetail ? <details className="mt-2 text-xs leading-5"><summary className="cursor-pointer">Fontes da recompensa</summary><p className="mt-2 break-words">{drop.sourceDetail}</p></details> : null}
                         <div className="mt-2 flex flex-wrap items-center gap-2">
                           {drop.useConfidence ? <Tag tone={drop.useConfidence === "Alta" ? "success" : drop.useConfidence === "Baixa-conferir" ? "danger" : "neutral"}>uso: {drop.useConfidence}</Tag> : null}
-                          {drop.guideHref ? <a href={drop.guideHref} className="font-label text-lg text-blue-700 underline underline-offset-2">ver receitas completas no guia</a> : null}
+                          {drop.guideHref ? <a href={drop.guideHref} className="font-label text-lg text-blue-700 underline underline-offset-2">ver crafting / receitas</a> : null}
                         </div>
                       </div>
                     ))}
@@ -191,6 +194,23 @@ export function BestiaryCard({
                   <p className="mt-2 border border-stone-500 bg-stone-100 p-3 text-sm text-ink-700">Sem drops de item documentados nas fontes auditadas para este card. Isso não significa que a criatura não dropa nada.</p>
                 )}
               </section>
+
+              {entry.audit?.recipes.length ? (
+                <section id={`mob-${entry.id}-recipes`} className="mt-5 scroll-mt-28">
+                  <h3 className="font-label text-xl text-wood-700">Crafting auditado · BOMD 1.3.3</h3>
+                  <p className="mt-2 text-sm leading-6">Receitas da versão auditada. Os ingredientes podem vir de encontros diferentes; não são recompensas adicionais deste boss.</p>
+                  <div className="mt-3 grid gap-3 sm:grid-cols-2">
+                    {entry.audit.recipes.map((recipe) => (
+                      <div key={recipe.id} className="border border-stone-500 bg-paper-100 p-3 text-sm">
+                        <strong className="break-all">{recipe.result} ×{recipe.count}</strong>
+                        {recipe.pattern.length ? <div className="my-2 grid w-fit grid-cols-3 gap-1" aria-label="Grade de crafting">{recipe.pattern.flatMap((line, y) => [...line].map((symbol, x) => <span key={`${y}-${x}`} title={recipe.key[symbol] ?? "vazio"} className="grid size-9 place-items-center border border-stone-500 bg-stone-100 font-mono">{symbol === " " ? "·" : symbol}</span>))}</div> : <p className="mt-2">Crafting sem forma</p>}
+                        <ul className="mt-2 space-y-1 break-words">{Object.entries(recipe.key).map(([symbol, item]) => <li key={symbol}>{symbol}: {item}</li>)}{recipe.ingredients.map((item, i) => <li key={`${item}-${i}`}>{item}</li>)}</ul>
+                        <a href={recipe.source} target="_blank" rel="noreferrer" className="mt-2 inline-block text-blue-700 underline">Fonte da receita</a>
+                      </div>
+                    ))}
+                  </div>
+                </section>
+              ) : null}
 
               {(guideHref || progressionHref) ? (
                 <section className="mt-5 flex flex-wrap gap-2" aria-label={`Ligações de ${entry.namePt}`}>
