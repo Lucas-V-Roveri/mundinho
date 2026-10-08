@@ -1,3 +1,6 @@
+import audit_mca from "@/data/bestiary-audit-mca.json";
+import audit_tf from "@/data/bestiary-audit-tf.json";
+import audit_am from "@/data/bestiary-audit-am.json";
 import audit_ac from "@/data/bestiary-audit-ac.json";
 import audit_cat from "@/data/bestiary-audit-cat.json";
 import audit_es from "@/data/bestiary-audit-es.json";
@@ -16,6 +19,9 @@ import audit_so from "@/data/bestiary-audit-so.json";
 import initial from "@/data/bestiary-integrated-audits.json";
 export const integratedAudits = {
   ...initial,
+  ...audit_mca,
+  ...audit_tf,
+  ...audit_am,
   ...audit_ac,
   ...audit_cat,
   ...audit_es,

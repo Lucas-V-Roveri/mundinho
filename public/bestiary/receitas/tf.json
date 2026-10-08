@@ -1,0 +1,2071 @@
+[
+  {
+    "anchor": "receita-straight-ahead-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_boots/straight_ahead_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_boots/straight_ahead_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shaped_recipe",
+      "is_rotated": false,
+      "modifier_key": "twilightforest:straight_ahead",
+      "pattern": {
+        "key": {
+          "B": {
+            "item": "twilightforest:travellers_boots"
+          },
+          "H": {
+            "item": "minecraft:rabbit_hide"
+          },
+          "M": {
+            "item": "twilightforest:raw_meef"
+          },
+          "P": [
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:swiftness"
+                }
+              },
+              "items": "minecraft:potion"
+            },
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:long_swiftness"
+                }
+              },
+              "items": "minecraft:potion"
+            },
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:strong_swiftness"
+                }
+              },
+              "items": "minecraft:potion"
+            }
+          ]
+        },
+        "pattern": [
+          "MPM",
+          "HBH"
+        ]
+      }
+    }
+  },
+  {
+    "anchor": "receita-water-walk-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_boots/water_walk_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_boots/water_walk_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shaped_recipe",
+      "is_rotated": false,
+      "modifier_key": "twilightforest:water_walk",
+      "pattern": {
+        "key": {
+          "B": {
+            "item": "twilightforest:travellers_boots"
+          },
+          "L": {
+            "item": "minecraft:lily_pad"
+          },
+          "S": {
+            "item": "twilightforest:maze_slime_ball"
+          }
+        },
+        "pattern": [
+          "SBS",
+          "L L"
+        ]
+      }
+    }
+  },
+  {
+    "anchor": "receita-aquatic-agility-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_goggles/aquatic_agility_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_goggles/aquatic_agility_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shaped_recipe",
+      "is_rotated": false,
+      "modifier_key": "twilightforest:aquatic_agility",
+      "pattern": {
+        "key": {
+          "b": {
+            "item": "minecraft:bamboo"
+          },
+          "g": {
+            "item": "twilightforest:travellers_goggles"
+          },
+          "s": {
+            "tag": "c:slime_balls"
+          },
+          "w": [
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:water_breathing"
+                }
+              },
+              "items": "minecraft:potion"
+            },
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:long_water_breathing"
+                }
+              },
+              "items": "minecraft:potion"
+            }
+          ]
+        },
+        "pattern": [
+          " b",
+          "gb",
+          "sw"
+        ]
+      }
+    }
+  },
+  {
+    "anchor": "receita-arrow-magnetism-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/arrow_magnetism_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/arrow_magnetism_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shapeless_recipe",
+      "ingredients": [
+        {
+          "item": "twilightforest:exanimate_essence"
+        },
+        {
+          "item": "twilightforest:ore_magnet"
+        },
+        {
+          "item": "twilightforest:liveroot"
+        },
+        {
+          "item": "minecraft:chicken"
+        },
+        {
+          "item": "twilightforest:travellers_vest"
+        }
+      ],
+      "modifier_key": "twilightforest:arrow_magnetism"
+    }
+  },
+  {
+    "anchor": "receita-efficient-eater-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/efficient_eater_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/efficient_eater_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shapeless_recipe",
+      "ingredients": [
+        {
+          "item": "twilightforest:hydra_chop"
+        },
+        {
+          "item": "twilightforest:hydra_chop"
+        },
+        {
+          "item": "twilightforest:hydra_chop"
+        },
+        {
+          "item": "minecraft:bundle"
+        },
+        {
+          "item": "twilightforest:travellers_vest"
+        }
+      ],
+      "modifier_key": "twilightforest:efficient_eater"
+    }
+  },
+  {
+    "anchor": "receita-perfect-dodge-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/perfect_dodge_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/perfect_dodge_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shaped_recipe",
+      "is_rotated": false,
+      "modifier_key": "twilightforest:perfect_dodge",
+      "pattern": {
+        "key": {
+          "E": {
+            "item": "minecraft:ender_eye"
+          },
+          "P": {
+            "item": "minecraft:ender_pearl"
+          },
+          "S": {
+            "item": "minecraft:sugar"
+          },
+          "V": {
+            "item": "twilightforest:travellers_vest"
+          }
+        },
+        "pattern": [
+          " E ",
+          "PVP",
+          " S "
+        ]
+      }
+    }
+  },
+  {
+    "anchor": "receita-stealth-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/stealth_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_vest/stealth_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shapeless_recipe",
+      "ingredients": [
+        [
+          {
+            "type": "neoforge:components",
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:invisibility"
+              }
+            },
+            "items": "minecraft:potion"
+          },
+          {
+            "type": "neoforge:components",
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_invisibility"
+              }
+            },
+            "items": "minecraft:potion"
+          }
+        ],
+        {
+          "item": "minecraft:ender_eye"
+        },
+        {
+          "item": "minecraft:spider_eye"
+        },
+        {
+          "item": "minecraft:golden_carrot"
+        },
+        {
+          "item": "twilightforest:travellers_vest"
+        }
+      ],
+      "modifier_key": "twilightforest:stealth"
+    }
+  },
+  {
+    "anchor": "receita-agile-ranger-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_wings/agile_ranger_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_wings/agile_ranger_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shaped_recipe",
+      "is_rotated": false,
+      "modifier_key": "twilightforest:agile_ranger",
+      "pattern": {
+        "key": {
+          "F": {
+            "item": "twilightforest:raven_feather"
+          },
+          "H": {
+            "item": "minecraft:rabbit_hide"
+          },
+          "P": [
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:swiftness"
+                }
+              },
+              "items": "minecraft:potion"
+            },
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:long_swiftness"
+                }
+              },
+              "items": "minecraft:potion"
+            },
+            {
+              "type": "neoforge:components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "potion": "minecraft:strong_swiftness"
+                }
+              },
+              "items": "minecraft:potion"
+            }
+          ],
+          "W": {
+            "item": "twilightforest:travellers_wings"
+          }
+        },
+        "pattern": [
+          "FPF",
+          "HWH"
+        ]
+      }
+    }
+  },
+  {
+    "anchor": "receita-gradual-glide-modifier",
+    "name": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_wings/gradual_glide_modifier.json",
+    "source": "data/twilightforest/recipe/add_modifier_to_travellers_gear/travellers_wings/gradual_glide_modifier.json",
+    "recipe": {
+      "type": "twilightforest:travellers_gear_modifier_shaped_recipe",
+      "is_rotated": false,
+      "modifier_key": "twilightforest:gradual_glide",
+      "pattern": {
+        "key": {
+          "C": {
+            "item": "minecraft:cobweb"
+          },
+          "E": {
+            "item": "twilightforest:borer_essence"
+          },
+          "F": {
+            "item": "minecraft:feather"
+          },
+          "W": {
+            "item": "twilightforest:travellers_wings"
+          }
+        },
+        "pattern": [
+          "FCF",
+          "FWF",
+          "FEF"
+        ]
+      }
+    }
+  },
+  {
+    "anchor": "receita-alpha-yeti-banner-pattern",
+    "name": "data/twilightforest/recipe/alpha_yeti_banner_pattern.json",
+    "source": "data/twilightforest/recipe/alpha_yeti_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:alpha_yeti_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:alpha_yeti_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-canopy-bookshelf",
+    "name": "data/twilightforest/recipe/canopy_bookshelf.json",
+    "source": "data/twilightforest/recipe/canopy_bookshelf.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "-": {
+          "item": "twilightforest:canopy_planks"
+        },
+        "B": {
+          "item": "minecraft:book"
+        }
+      },
+      "pattern": [
+        "---",
+        "B B",
+        "---"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:canopy_bookshelf"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carminite-builder",
+    "name": "data/twilightforest/recipe/carminite_builder.json",
+    "source": "data/twilightforest/recipe/carminite_builder.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "twilightforest:encased_towerwood"
+        },
+        "6": {
+          "tag": "c:gems/carminite"
+        },
+        "o": {
+          "item": "minecraft:dispenser"
+        }
+      },
+      "pattern": [
+        "#6#",
+        "6o6",
+        "#6#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:carminite_builder"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carminite-reactor",
+    "name": "data/twilightforest/recipe/carminite_reactor.json",
+    "source": "data/twilightforest/recipe/carminite_reactor.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "twilightforest:encased_towerwood"
+        },
+        "%": {
+          "tag": "c:ores/redstone"
+        },
+        "6": {
+          "tag": "c:gems/carminite"
+        }
+      },
+      "pattern": [
+        "#6#",
+        "6%6",
+        "#6#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:carminite_reactor"
+      }
+    }
+  },
+  {
+    "anchor": "receita-charm-of-keeping-2",
+    "name": "data/twilightforest/recipe/charm_of_keeping_2.json",
+    "source": "data/twilightforest/recipe/charm_of_keeping_2.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "ingredients": [
+        {
+          "item": "twilightforest:charm_of_keeping_1"
+        },
+        {
+          "item": "twilightforest:charm_of_keeping_1"
+        },
+        {
+          "item": "twilightforest:charm_of_keeping_1"
+        },
+        {
+          "item": "twilightforest:charm_of_keeping_1"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:charm_of_keeping_2"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cod-jerky",
+    "name": "data/twilightforest/recipe/cod_jerky.json",
+    "source": "data/twilightforest/recipe/cod_jerky.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "minecraft:cod"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cod_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-arctic-fur-block",
+    "name": "data/twilightforest/recipe/compressed_blocks/arctic_fur_block.json",
+    "source": "data/twilightforest/recipe/compressed_blocks/arctic_fur_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "tag": "twilightforest:arctic_fur"
+        },
+        "m": {
+          "item": "twilightforest:arctic_fur"
+        }
+      },
+      "pattern": [
+        "###",
+        "#m#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:arctic_fur_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carminite-block",
+    "name": "data/twilightforest/recipe/compressed_blocks/carminite_block.json",
+    "source": "data/twilightforest/recipe/compressed_blocks/carminite_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "tag": "c:gems/carminite"
+        },
+        "m": {
+          "item": "twilightforest:carminite"
+        }
+      },
+      "pattern": [
+        "###",
+        "#m#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:carminite_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-maze-slime",
+    "name": "data/twilightforest/recipe/compressed_blocks/maze_slime.json",
+    "source": "data/twilightforest/recipe/compressed_blocks/maze_slime.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "twilightforest:maze_slime_ball"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:maze_slime_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-arctic-boots",
+    "name": "data/twilightforest/recipe/equipment/arctic_boots.json",
+    "source": "data/twilightforest/recipe/equipment/arctic_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "twilightforest:arctic_fur"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:arctic_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-arctic-chestplate",
+    "name": "data/twilightforest/recipe/equipment/arctic_chestplate.json",
+    "source": "data/twilightforest/recipe/equipment/arctic_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "twilightforest:arctic_fur"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:arctic_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-arctic-helmet",
+    "name": "data/twilightforest/recipe/equipment/arctic_helmet.json",
+    "source": "data/twilightforest/recipe/equipment/arctic_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "twilightforest:arctic_fur"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:arctic_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-arctic-leggings",
+    "name": "data/twilightforest/recipe/equipment/arctic_leggings.json",
+    "source": "data/twilightforest/recipe/equipment/arctic_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "twilightforest:arctic_fur"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:arctic_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fiery-ingot-crafting",
+    "name": "data/twilightforest/recipe/equipment/fiery_ingot_crafting.json",
+    "source": "data/twilightforest/recipe/equipment/fiery_ingot_crafting.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "fiery_ingot",
+      "ingredients": [
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "c:ingots/iron"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:fiery_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fiery-iron-boots",
+    "name": "data/twilightforest/recipe/equipment/fiery_iron_boots.json",
+    "source": "data/twilightforest/recipe/equipment/fiery_iron_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "fiery_boots",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_boots"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:fiery_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fiery-iron-chestplate",
+    "name": "data/twilightforest/recipe/equipment/fiery_iron_chestplate.json",
+    "source": "data/twilightforest/recipe/equipment/fiery_iron_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "fiery_chestplate",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_chestplate"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:fiery_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fiery-iron-helmet",
+    "name": "data/twilightforest/recipe/equipment/fiery_iron_helmet.json",
+    "source": "data/twilightforest/recipe/equipment/fiery_iron_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "fiery_helmet",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_helmet"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:fiery_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fiery-iron-leggings",
+    "name": "data/twilightforest/recipe/equipment/fiery_iron_leggings.json",
+    "source": "data/twilightforest/recipe/equipment/fiery_iron_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "fiery_leggings",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_leggings"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:fiery_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fiery-iron-pickaxe",
+    "name": "data/twilightforest/recipe/equipment/fiery_iron_pickaxe.json",
+    "source": "data/twilightforest/recipe/equipment/fiery_iron_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "fiery_pickaxe",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_pickaxe"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "c:rods/blaze"
+        },
+        {
+          "tag": "c:rods/blaze"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:fiery_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fiery-iron-sword",
+    "name": "data/twilightforest/recipe/equipment/fiery_iron_sword.json",
+    "source": "data/twilightforest/recipe/equipment/fiery_iron_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "group": "fiery_sword",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "twilightforest:fiery_vial"
+        },
+        {
+          "tag": "c:rods/blaze"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:fiery_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fortification-scepter",
+    "name": "data/twilightforest/recipe/equipment/fortification_scepter.json",
+    "source": "data/twilightforest/recipe/equipment/fortification_scepter.json",
+    "recipe": {
+      "type": "twilightforest:scepter_repair",
+      "durability": 9,
+      "repair_ingredients": [
+        {
+          "item": "minecraft:golden_apple"
+        }
+      ],
+      "scepter": "twilightforest:fortification_scepter"
+    }
+  },
+  {
+    "anchor": "receita-knightmetal-shield",
+    "name": "data/twilightforest/recipe/equipment/knightmetal_shield.json",
+    "source": "data/twilightforest/recipe/equipment/knightmetal_shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "twilightforest:towerwood"
+        },
+        "-": {
+          "tag": "c:ingots/knightmetal"
+        },
+        "o": {
+          "item": "twilightforest:knightmetal_ring"
+        }
+      },
+      "pattern": [
+        "-#",
+        "-o",
+        "-#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:knightmetal_shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lifedrain-scepter",
+    "name": "data/twilightforest/recipe/equipment/lifedrain_scepter.json",
+    "source": "data/twilightforest/recipe/equipment/lifedrain_scepter.json",
+    "recipe": {
+      "type": "twilightforest:scepter_repair",
+      "durability": 9,
+      "repair_ingredients": [
+        {
+          "item": "minecraft:fermented_spider_eye"
+        }
+      ],
+      "scepter": "twilightforest:lifedrain_scepter"
+    }
+  },
+  {
+    "anchor": "receita-naga-chestplate",
+    "name": "data/twilightforest/recipe/equipment/naga_chestplate.json",
+    "source": "data/twilightforest/recipe/equipment/naga_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "twilightforest:naga_scale"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "components": {
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:fire_protection": 3
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:naga_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-naga-leggings",
+    "name": "data/twilightforest/recipe/equipment/naga_leggings.json",
+    "source": "data/twilightforest/recipe/equipment/naga_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "twilightforest:naga_scale"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "components": {
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:protection": 3
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:naga_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-travellers-wings",
+    "name": "data/twilightforest/recipe/equipment/travellers_wings.json",
+    "source": "data/twilightforest/recipe/equipment/travellers_wings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "c": {
+          "tag": "c:gems/carminite"
+        },
+        "g": {
+          "tag": "c:ingots/gold"
+        },
+        "i": {
+          "tag": "c:ingots/copper"
+        },
+        "l": {
+          "item": "twilightforest:tanned_leather"
+        }
+      },
+      "pattern": [
+        "g g",
+        "ili",
+        "ici"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:travellers_wings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-twilight-scepter",
+    "name": "data/twilightforest/recipe/equipment/twilight_scepter.json",
+    "source": "data/twilightforest/recipe/equipment/twilight_scepter.json",
+    "recipe": {
+      "type": "twilightforest:scepter_repair",
+      "durability": 9,
+      "repair_ingredients": [
+        {
+          "tag": "c:ender_pearls"
+        }
+      ],
+      "scepter": "twilightforest:twilight_scepter"
+    }
+  },
+  {
+    "anchor": "receita-yeti-boots",
+    "name": "data/twilightforest/recipe/equipment/yeti_boots.json",
+    "source": "data/twilightforest/recipe/equipment/yeti_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "twilightforest:alpha_yeti_fur"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "components": {
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:feather_falling": 4,
+              "minecraft:protection": 2
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:yeti_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-yeti-chestplate",
+    "name": "data/twilightforest/recipe/equipment/yeti_chestplate.json",
+    "source": "data/twilightforest/recipe/equipment/yeti_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "twilightforest:alpha_yeti_fur"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "components": {
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:protection": 2
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:yeti_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-yeti-helmet",
+    "name": "data/twilightforest/recipe/equipment/yeti_helmet.json",
+    "source": "data/twilightforest/recipe/equipment/yeti_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "twilightforest:alpha_yeti_fur"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #"
+      ],
+      "result": {
+        "components": {
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:protection": 2
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:yeti_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-yeti-leggings",
+    "name": "data/twilightforest/recipe/equipment/yeti_leggings.json",
+    "source": "data/twilightforest/recipe/equipment/yeti_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "twilightforest:alpha_yeti_fur"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "components": {
+          "minecraft:enchantments": {
+            "levels": {
+              "minecraft:protection": 2
+            }
+          }
+        },
+        "count": 1,
+        "id": "twilightforest:yeti_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zombie-scepter",
+    "name": "data/twilightforest/recipe/equipment/zombie_scepter.json",
+    "source": "data/twilightforest/recipe/equipment/zombie_scepter.json",
+    "recipe": {
+      "type": "twilightforest:scepter_repair",
+      "durability": 9,
+      "repair_ingredients": [
+        [
+          {
+            "type": "neoforge:components",
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strength"
+              }
+            },
+            "items": "minecraft:potion"
+          },
+          {
+            "type": "neoforge:components",
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:long_strength"
+              }
+            },
+            "items": "minecraft:potion"
+          },
+          {
+            "type": "neoforge:components",
+            "components": {
+              "minecraft:potion_contents": {
+                "potion": "minecraft:strong_strength"
+              }
+            },
+            "items": "minecraft:potion"
+          }
+        ],
+        {
+          "item": "minecraft:rotten_flesh"
+        }
+      ],
+      "scepter": "twilightforest:zombie_scepter"
+    }
+  },
+  {
+    "anchor": "receita-campfired-meef",
+    "name": "data/twilightforest/recipe/food/campfired_meef.json",
+    "source": "data/twilightforest/recipe/food/campfired_meef.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "twilightforest:raw_meef"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cooked_meef"
+      }
+    }
+  },
+  {
+    "anchor": "receita-campfired-venison",
+    "name": "data/twilightforest/recipe/food/campfired_venison.json",
+    "source": "data/twilightforest/recipe/food/campfired_venison.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "twilightforest:raw_venison"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cooked_venison"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smelted-meef",
+    "name": "data/twilightforest/recipe/food/smelted_meef.json",
+    "source": "data/twilightforest/recipe/food/smelted_meef.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "twilightforest:raw_meef"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cooked_meef"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smelted-venison",
+    "name": "data/twilightforest/recipe/food/smelted_venison.json",
+    "source": "data/twilightforest/recipe/food/smelted_venison.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "twilightforest:raw_venison"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cooked_venison"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smoked-meef",
+    "name": "data/twilightforest/recipe/food/smoked_meef.json",
+    "source": "data/twilightforest/recipe/food/smoked_meef.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "twilightforest:raw_meef"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cooked_meef"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smoked-venison",
+    "name": "data/twilightforest/recipe/food/smoked_venison.json",
+    "source": "data/twilightforest/recipe/food/smoked_venison.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "twilightforest:raw_venison"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cooked_venison"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gelatinous-maze-slime-drop",
+    "name": "data/twilightforest/recipe/gelatinous_maze_slime_drop.json",
+    "source": "data/twilightforest/recipe/gelatinous_maze_slime_drop.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "twilightforest:maze_slime_ball"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:gelatinous_maze_slime_drop"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gelatinous-slime-drop",
+    "name": "data/twilightforest/recipe/gelatinous_slime_drop.json",
+    "source": "data/twilightforest/recipe/gelatinous_slime_drop.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "minecraft:slime_ball"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:gelatinous_slime_drop"
+      }
+    }
+  },
+  {
+    "anchor": "receita-hydra-banner-pattern",
+    "name": "data/twilightforest/recipe/hydra_banner_pattern.json",
+    "source": "data/twilightforest/recipe/hydra_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:hydra_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:hydra_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted",
+    "name": "data/twilightforest/recipe/jeed/frosted.json",
+    "source": "data/twilightforest/recipe/jeed/frosted.json",
+    "recipe": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "jeed"
+        }
+      ],
+      "type": "jeed:effect_provider",
+      "effect": "twilightforest:frosted",
+      "providers": [
+        {
+          "item": "twilightforest:alpha_yeti_spawn_egg"
+        },
+        {
+          "item": "twilightforest:ice_bomb"
+        },
+        {
+          "item": "twilightforest:ice_bow"
+        },
+        {
+          "item": "twilightforest:ice_sword"
+        },
+        {
+          "item": "twilightforest:yeti_helmet"
+        },
+        {
+          "item": "twilightforest:yeti_chestplate"
+        },
+        {
+          "item": "twilightforest:yeti_leggings"
+        },
+        {
+          "item": "twilightforest:yeti_boots"
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-slowness",
+    "name": "data/twilightforest/recipe/jeed/slowness.json",
+    "source": "data/twilightforest/recipe/jeed/slowness.json",
+    "recipe": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "jeed"
+        }
+      ],
+      "type": "jeed:effect_provider",
+      "effect": "minecraft:slowness",
+      "providers": [
+        {
+          "item": "twilightforest:lifedrain_scepter"
+        },
+        {
+          "item": "twilightforest:death_tome_spawn_egg"
+        },
+        {
+          "item": "twilightforest:skyberry"
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-knight-phantom-banner-pattern",
+    "name": "data/twilightforest/recipe/knight_phantom_banner_pattern.json",
+    "source": "data/twilightforest/recipe/knight_phantom_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:knight_phantom_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:knight_phantom_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lead-maze-ver",
+    "name": "data/twilightforest/recipe/lead_maze_ver.json",
+    "source": "data/twilightforest/recipe/lead_maze_ver.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "O": {
+          "item": "twilightforest:maze_slime_ball"
+        },
+        "~": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "~~ ",
+        "~O ",
+        "  ~"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:lead"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lich-banner-pattern",
+    "name": "data/twilightforest/recipe/lich_banner_pattern.json",
+    "source": "data/twilightforest/recipe/lich_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:lich_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:lich_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-magic-map",
+    "name": "data/twilightforest/recipe/magic_map.json",
+    "source": "data/twilightforest/recipe/magic_map.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:paper"
+        },
+        "•": {
+          "item": "twilightforest:magic_map_focus"
+        }
+      },
+      "pattern": [
+        "###",
+        "#•#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:magic_map"
+      }
+    }
+  },
+  {
+    "anchor": "receita-magic-map-focus",
+    "name": "data/twilightforest/recipe/magic_map_focus.json",
+    "source": "data/twilightforest/recipe/magic_map_focus.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "twilightforest:raven_feather"
+        },
+        {
+          "item": "twilightforest:torchberries"
+        },
+        {
+          "tag": "c:dusts/glowstone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:magic_map_focus"
+      }
+    }
+  },
+  {
+    "anchor": "receita-magma-cream-maze-ver",
+    "name": "data/twilightforest/recipe/magma_cream_maze_ver.json",
+    "source": "data/twilightforest/recipe/magma_cream_maze_ver.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:blaze_powder"
+        },
+        {
+          "item": "twilightforest:maze_slime_ball"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:magma_cream"
+      }
+    }
+  },
+  {
+    "anchor": "receita-armor-shard-cluster",
+    "name": "data/twilightforest/recipe/material/armor_shard_cluster.json",
+    "source": "data/twilightforest/recipe/material/armor_shard_cluster.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        },
+        {
+          "item": "twilightforest:armor_shard"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:armor_shard_cluster"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carminite",
+    "name": "data/twilightforest/recipe/material/carminite.json",
+    "source": "data/twilightforest/recipe/material/carminite.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "twilightforest:borer_essence"
+        },
+        {
+          "tag": "c:dusts/redstone"
+        },
+        {
+          "item": "twilightforest:borer_essence"
+        },
+        {
+          "tag": "c:dusts/redstone"
+        },
+        {
+          "item": "minecraft:ghast_tear"
+        },
+        {
+          "tag": "c:dusts/redstone"
+        },
+        {
+          "item": "twilightforest:borer_essence"
+        },
+        {
+          "tag": "c:dusts/redstone"
+        },
+        {
+          "item": "twilightforest:borer_essence"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:carminite"
+      }
+    }
+  },
+  {
+    "anchor": "receita-maze-map",
+    "name": "data/twilightforest/recipe/maze_map.json",
+    "source": "data/twilightforest/recipe/maze_map.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:paper"
+        },
+        "•": {
+          "item": "twilightforest:maze_map_focus"
+        }
+      },
+      "pattern": [
+        "###",
+        "#•#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:maze_map"
+      }
+    }
+  },
+  {
+    "anchor": "receita-meef-jerky",
+    "name": "data/twilightforest/recipe/meef_jerky.json",
+    "source": "data/twilightforest/recipe/meef_jerky.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "twilightforest:raw_meef"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:meef_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-minoshroom-banner-pattern",
+    "name": "data/twilightforest/recipe/minoshroom_banner_pattern.json",
+    "source": "data/twilightforest/recipe/minoshroom_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:minoshroom_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:minoshroom_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-monster-jerky",
+    "name": "data/twilightforest/recipe/monster_jerky.json",
+    "source": "data/twilightforest/recipe/monster_jerky.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:monster_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mutton-jerky",
+    "name": "data/twilightforest/recipe/mutton_jerky.json",
+    "source": "data/twilightforest/recipe/mutton_jerky.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "minecraft:mutton"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:mutton_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-naga-banner-pattern",
+    "name": "data/twilightforest/recipe/naga_banner_pattern.json",
+    "source": "data/twilightforest/recipe/naga_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:naga_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:naga_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pork-jerky",
+    "name": "data/twilightforest/recipe/pork_jerky.json",
+    "source": "data/twilightforest/recipe/pork_jerky.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "minecraft:porkchop"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:pork_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rabbit-jerky",
+    "name": "data/twilightforest/recipe/rabbit_jerky.json",
+    "source": "data/twilightforest/recipe/rabbit_jerky.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "minecraft:rabbit"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:rabbit_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-reappearing-block",
+    "name": "data/twilightforest/recipe/reappearing_block.json",
+    "source": "data/twilightforest/recipe/reappearing_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "twilightforest:encased_towerwood"
+        },
+        "6": {
+          "tag": "c:gems/carminite"
+        },
+        "∴": {
+          "tag": "c:dusts/redstone"
+        }
+      },
+      "pattern": [
+        "#∴#",
+        "∴6∴",
+        "#∴#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "twilightforest:reappearing_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-snow-queen-banner-pattern",
+    "name": "data/twilightforest/recipe/snow_queen_banner_pattern.json",
+    "source": "data/twilightforest/recipe/snow_queen_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:snow_queen_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:snow_queen_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stale-bread",
+    "name": "data/twilightforest/recipe/stale_bread.json",
+    "source": "data/twilightforest/recipe/stale_bread.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "minecraft:bread"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:stale_bread"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sticky-piston-maze-ver",
+    "name": "data/twilightforest/recipe/sticky_piston_maze_ver.json",
+    "source": "data/twilightforest/recipe/sticky_piston_maze_ver.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "P": {
+          "item": "minecraft:piston"
+        },
+        "S": {
+          "item": "twilightforest:maze_slime_ball"
+        }
+      },
+      "pattern": [
+        "S",
+        "P"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:sticky_piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-written-book",
+    "name": "data/twilightforest/recipe/uncrafting/written_book.json",
+    "source": "data/twilightforest/recipe/uncrafting/written_book.json",
+    "recipe": {
+      "type": "twilightforest:uncrafting",
+      "cost": 0,
+      "input": {
+        "item": "minecraft:written_book"
+      },
+      "key": {
+        "B": {
+          "item": "minecraft:book"
+        }
+      },
+      "pattern": [
+        "B"
+      ]
+    }
+  },
+  {
+    "anchor": "receita-uncrafting-table",
+    "name": "data/twilightforest/recipe/uncrafting_table.json",
+    "source": "data/twilightforest/recipe/uncrafting_table.json",
+    "recipe": {
+      "neoforge:conditions": [
+        {
+          "type": "twilightforest:uncrafting_table_enabled"
+        }
+      ],
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:crafting_table"
+        },
+        "X": {
+          "item": "twilightforest:maze_map_focus"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:uncrafting_table"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ur-ghast-banner-pattern",
+    "name": "data/twilightforest/recipe/ur_ghast_banner_pattern.json",
+    "source": "data/twilightforest/recipe/ur_ghast_banner_pattern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "c:paper"
+        },
+        {
+          "item": "twilightforest:ur_ghast_trophy"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:ur_ghast_banner_pattern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-vanishing-block",
+    "name": "data/twilightforest/recipe/vanishing_block.json",
+    "source": "data/twilightforest/recipe/vanishing_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "twilightforest:encased_towerwood"
+        },
+        "6": {
+          "tag": "c:gems/carminite"
+        },
+        "w": {
+          "tag": "twilightforest:towerwood"
+        }
+      },
+      "pattern": [
+        "#w#",
+        "w6w",
+        "#w#"
+      ],
+      "result": {
+        "count": 8,
+        "id": "twilightforest:vanishing_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-venison-jerky",
+    "name": "data/twilightforest/recipe/venison_jerky.json",
+    "source": "data/twilightforest/recipe/venison_jerky.json",
+    "recipe": {
+      "type": "twilightforest:drying",
+      "filter_time": 6000,
+      "input": {
+        "item": "twilightforest:raw_venison"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:venison_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mossy-towerwood",
+    "name": "data/twilightforest/recipe/wood/mossy_towerwood.json",
+    "source": "data/twilightforest/recipe/wood/mossy_towerwood.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "ingredients": [
+        {
+          "item": "twilightforest:towerwood"
+        },
+        [
+          {
+            "item": "minecraft:vine"
+          },
+          {
+            "item": "minecraft:moss_block"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "twilightforest:mossy_towerwood"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smoked-cracked-towerwood",
+    "name": "data/twilightforest/recipe/wood/smoked_cracked_towerwood.json",
+    "source": "data/twilightforest/recipe/wood/smoked_cracked_towerwood.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.1,
+      "ingredient": {
+        "item": "twilightforest:towerwood"
+      },
+      "result": {
+        "count": 1,
+        "id": "twilightforest:cracked_towerwood"
+      }
+    }
+  }
+]

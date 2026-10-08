@@ -1,0 +1,193 @@
+{
+  "cards": 431,
+  "rows": 2715,
+  "groups": [
+    {
+      "mod": "L_Ender's Cataclysm",
+      "cards": 39,
+      "rows": 105,
+      "missingImages": [],
+      "exceptions": [
+        "cataclysm-endermaptera"
+      ]
+    },
+    {
+      "mod": "Alex's Mobs Continued",
+      "cards": 90,
+      "rows": 286,
+      "missingImages": [],
+      "exceptions": [
+        "alexsmobs-bone-serpent"
+      ]
+    },
+    {
+      "mod": "The Aether",
+      "cards": 20,
+      "rows": 242,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Creeper Overhaul",
+      "cards": 16,
+      "rows": 70,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Alex's Caves",
+      "cards": 43,
+      "rows": 163,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Friends&Foes",
+      "cards": 10,
+      "rows": 29,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Enderman Overhaul",
+      "cards": 18,
+      "rows": 62,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Variants&Ventures",
+      "cards": 4,
+      "rows": 26,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Illager Invasion",
+      "cards": 11,
+      "rows": 43,
+      "missingImages": [],
+      "exceptions": [
+        "illagerinvasion-invoker"
+      ]
+    },
+    {
+      "mod": "Piglin Proliferation",
+      "cards": 2,
+      "rows": 50,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Spider Overhaul",
+      "cards": 6,
+      "rows": 25,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "The Twilight Forest",
+      "cards": 58,
+      "rows": 248,
+      "missingImages": [],
+      "exceptions": [
+        "twilightforest-adherent",
+        "twilightforest-harbinger_cube",
+        "twilightforest-ice_crystal",
+        "twilightforest-roving_cube"
+      ]
+    },
+    {
+      "mod": "The Bumblezone",
+      "cards": 6,
+      "rows": 781,
+      "missingImages": [],
+      "exceptions": [
+        "bumblezone-bee-queen"
+      ]
+    },
+    {
+      "mod": "Eternal Starlight",
+      "cards": 30,
+      "rows": 154,
+      "missingImages": [],
+      "exceptions": [
+        "eternal-starlight-the-gatekeeper",
+        "eternal-starlight-aurora-deer"
+      ]
+    },
+    {
+      "mod": "The Undergarden",
+      "cards": 22,
+      "rows": 60,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Deeper and Darker",
+      "cards": 11,
+      "rows": 37,
+      "missingImages": [],
+      "exceptions": [
+        "deeper-darker-anger-pot",
+        "deeper-darker-fear-pot",
+        "deeper-darker-sorrow-pot"
+      ]
+    },
+    {
+      "mod": "Mowzie's Mobs",
+      "cards": 18,
+      "rows": 79,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Bosses of Mass Destruction",
+      "cards": 4,
+      "rows": 63,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "The Graveyard",
+      "cards": 13,
+      "rows": 93,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Minecraft Comes Alive Reborn",
+      "cards": 3,
+      "rows": 7,
+      "missingImages": [
+        "mca-raider"
+      ],
+      "exceptions": [
+        "mca-raider",
+        "mca-villager-revive-tombstone"
+      ]
+    },
+    {
+      "mod": "Ecologics",
+      "cards": 2,
+      "rows": 9,
+      "missingImages": [],
+      "exceptions": []
+    },
+    {
+      "mod": "Incendium",
+      "cards": 5,
+      "rows": 83,
+      "missingImages": [
+        "incendium-sanctum-inferno"
+      ],
+      "exceptions": [
+        "incendium-hovering-inferno",
+        "incendium-sanctum-inferno",
+        "incendium-nether-reactor"
+      ]
+    }
+  ],
+  "missingImages": 2,
+  "cardsWithExceptions": 18
+}

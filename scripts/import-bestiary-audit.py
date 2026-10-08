@@ -4,8 +4,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 AUDIT = ROOT.parent / 'auditoria/originais-extraidos'
 ROWS = list(csv.DictReader((ROOT.parent/'auditoria/bestiario-todos-430-cards-2026-10-06.csv').open(encoding='utf-8-sig')))
+supplement=ROOT/'data/bestiary-mca-supplement.csv'
+if supplement.exists():ROWS.extend(csv.DictReader(supplement.open(encoding='utf-8-sig')))
 ENTRIES = json.loads((ROOT.parent/'catalog-before.json').read_text())
 CONFIG = {
+ 'mca': ('Minecraft Comes Alive','Minecraft Comes Alive Reborn','lote-8-mods-2026-10-06/mca-cards-2026-10-06.md','lote-8-mods-2026-10-06/output-mca'),
  'inc': ('Incendium','Incendium','lote-5-mods-2026-10-06/inc-cards-2026-10-06.md','lote-5-mods-2026-10-06/output-inc'),
  'so': ('Spider Overhaul','Spider Overhaul',None,'spider-overhaul-6-cards-2026-10-05'),
  'bz': ('The Bumblezone','The Bumblezone','lote-5-mods-2026-10-06/bz-cards-2026-10-06.md','lote-5-mods-2026-10-06/output-bz'),

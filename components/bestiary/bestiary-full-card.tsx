@@ -118,6 +118,8 @@ export function BestiaryCard({
           ) : !hasImage ? (
             <p className="mt-2 text-center font-label text-base text-ink-700">sem mídia cadastrada</p>
           ) : null}
+          {revealed && entry.audit && !entry.imageUrl ? <p className="mt-2 text-xs leading-5 text-ink-700">{entry.audit.rows[0].Imagem}</p> : null}
+          {revealed && entry.audit?.rows[0]["Fonte da imagem"].startsWith("Exemplo") ? <p className="mt-2 text-xs leading-5 text-ink-700">Exemplo masculino; aparência e tipo real dependem da entidade restaurada.</p> : null}
           <div className="mt-3 flex flex-wrap gap-2">
             <Tag tone={seen ? "success" : "neutral"}>{seen ? "visto" : "não visto"}</Tag>
             {revealed ? <Tag tone={dangerTone(entry.danger)}>{entry.danger}</Tag> : null}

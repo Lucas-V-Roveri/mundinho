@@ -1,0 +1,6404 @@
+[
+  {
+    "anchor": "receita-baby-boy-from-smelting",
+    "name": "baby boy from smelting",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_boy_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "mca:baby_boy"
+      },
+      "result": {
+        "id": "minecraft:cooked_beef"
+      },
+      "experience": 0.35,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-baby-boy-from-smoking",
+    "name": "baby boy from smoking",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_boy_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "mca:baby_boy"
+      },
+      "result": {
+        "id": "minecraft:cooked_beef"
+      },
+      "experience": 0.35,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-baby-girl-from-smelting",
+    "name": "baby girl from smelting",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_girl_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "mca:baby_girl"
+      },
+      "result": {
+        "id": "minecraft:cooked_beef"
+      },
+      "experience": 0.35,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-baby-girl-from-smoking",
+    "name": "baby girl from smoking",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_girl_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "mca:baby_girl"
+      },
+      "result": {
+        "id": "minecraft:cooked_beef"
+      },
+      "experience": 0.35,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-baby-sirben-boy-from-smelting",
+    "name": "baby sirben boy from smelting",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_sirben_boy_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "mca:sirben_baby_boy"
+      },
+      "result": {
+        "id": "minecraft:charcoal"
+      },
+      "experience": 0.18,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-baby-sirben-boy-from-smoking",
+    "name": "baby sirben boy from smoking",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_sirben_boy_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "mca:sirben_baby_boy"
+      },
+      "result": {
+        "id": "minecraft:charcoal"
+      },
+      "experience": 0.18,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-baby-sirben-girl-from-smelting",
+    "name": "baby sirben girl from smelting",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_sirben_girl_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "mca:sirben_baby_girl"
+      },
+      "result": {
+        "id": "minecraft:charcoal"
+      },
+      "experience": 0.18,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-baby-sirben-girl-from-smoking",
+    "name": "baby sirben girl from smoking",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/baby_sirben_girl_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "mca:sirben_baby_girl"
+      },
+      "result": {
+        "id": "minecraft:charcoal"
+      },
+      "experience": 0.18,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-black-acacia-crib",
+    "name": "black acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-bamboo-crib",
+    "name": "black bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-birch-crib",
+    "name": "black birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-cherry-crib",
+    "name": "black cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-crimson-crib",
+    "name": "black crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-dark-oak-crib",
+    "name": "black dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-jungle-crib",
+    "name": "black jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-mangrove-crib",
+    "name": "black mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-oak-crib",
+    "name": "black oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-spruce-crib",
+    "name": "black spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-warped-crib",
+    "name": "black warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/black_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:black_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:black_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-acacia-crib",
+    "name": "blue acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-bamboo-crib",
+    "name": "blue bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-birch-crib",
+    "name": "blue birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-cherry-crib",
+    "name": "blue cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-crimson-crib",
+    "name": "blue crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-dark-oak-crib",
+    "name": "blue dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-jungle-crib",
+    "name": "blue jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-mangrove-crib",
+    "name": "blue mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-oak-crib",
+    "name": "blue oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-spruce-crib",
+    "name": "blue spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blue-warped-crib",
+    "name": "blue warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blue_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:blue_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-blueprint",
+    "name": "blueprint",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/blueprint.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "PPP",
+        "PBP",
+        "PPP"
+      ],
+      "key": {
+        "P": [
+          {
+            "item": "minecraft:paper"
+          }
+        ],
+        "B": [
+          {
+            "item": "minecraft:blue_dye"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:blueprint"
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-blueprint",
+    "name": "book blueprint",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/book_blueprint.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "mca:blueprint"
+        }
+      ],
+      "result": {
+        "id": "mca:book_blueprint",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-death",
+    "name": "book death",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/book_death.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:bone"
+        }
+      ],
+      "result": {
+        "id": "mca:book_death",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-family",
+    "name": "book family",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/book_family.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:wheat_seeds"
+        }
+      ],
+      "result": {
+        "id": "mca:book_family",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-infection",
+    "name": "book infection",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/book_infection.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:rotten_flesh"
+        }
+      ],
+      "result": {
+        "id": "mca:book_infection",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-romance",
+    "name": "book romance",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/book_romance.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:poppy"
+        }
+      ],
+      "result": {
+        "id": "mca:book_romance",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-rose-gold",
+    "name": "book rose gold",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/book_rose_gold.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        },
+        {
+          "item": "minecraft:copper_ingot"
+        }
+      ],
+      "result": {
+        "id": "mca:book_rose_gold",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-supporters",
+    "name": "book supporters",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/book_supporters.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:emerald"
+        }
+      ],
+      "result": {
+        "id": "mca:book_supporters",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-bouquet",
+    "name": "bouquet",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/bouquet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "F F",
+        "   "
+      ],
+      "key": {
+        "F": [
+          {
+            "tag": "minecraft:small_flowers"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:bouquet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-brown-acacia-crib",
+    "name": "brown acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-bamboo-crib",
+    "name": "brown bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-birch-crib",
+    "name": "brown birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-cherry-crib",
+    "name": "brown cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-crimson-crib",
+    "name": "brown crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-dark-oak-crib",
+    "name": "brown dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-jungle-crib",
+    "name": "brown jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-mangrove-crib",
+    "name": "brown mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-oak-crib",
+    "name": "brown oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-spruce-crib",
+    "name": "brown spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-brown-warped-crib",
+    "name": "brown warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/brown_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:brown_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:brown_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-civil-registry",
+    "name": "civil registry",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/civil_registry.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "EWR",
+        "   ",
+        "   "
+      ],
+      "key": {
+        "W": [
+          {
+            "item": "minecraft:writable_book"
+          }
+        ],
+        "E": [
+          {
+            "item": "minecraft:emerald"
+          }
+        ],
+        "R": [
+          {
+            "item": "mca:rose_gold_ingot"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:civil_registry"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobblestone-slanted-headstone",
+    "name": "cobblestone slanted headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cobblestone_slanted_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " ##",
+        " I ",
+        "## "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:cobblestone_slanted_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobblestone-upright-headstone",
+    "name": "cobblestone upright headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cobblestone_upright_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "II",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:cobblestone_upright_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-comb",
+    "name": "comb",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/comb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "BI ",
+        " BI",
+        "  I"
+      ],
+      "key": {
+        "I": [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ],
+        "B": [
+          {
+            "item": "minecraft:iron_bars"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:comb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cross-headstone",
+    "name": "cross headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cross_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "#I#",
+        " # "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:cross_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cyan-acacia-crib",
+    "name": "cyan acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-bamboo-crib",
+    "name": "cyan bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-birch-crib",
+    "name": "cyan birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-cherry-crib",
+    "name": "cyan cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-crimson-crib",
+    "name": "cyan crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-dark-oak-crib",
+    "name": "cyan dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-jungle-crib",
+    "name": "cyan jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-mangrove-crib",
+    "name": "cyan mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-oak-crib",
+    "name": "cyan oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-spruce-crib",
+    "name": "cyan spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-cyan-warped-crib",
+    "name": "cyan warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/cyan_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:cyan_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:cyan_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-deepslate-slanted-headstone",
+    "name": "deepslate slanted headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/deepslate_slanted_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " ##",
+        " I ",
+        "## "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:deepslate"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:deepslate_slanted_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepslate-upright-headstone",
+    "name": "deepslate upright headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/deepslate_upright_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "II",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:deepslate"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:deepslate_upright_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-engagement-ring",
+    "name": "engagement ring",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/engagement_ring.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GDG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": [
+          {
+            "item": "minecraft:gold_ingot"
+          }
+        ],
+        "D": [
+          {
+            "item": "minecraft:diamond"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:engagement_ring"
+      }
+    }
+  },
+  {
+    "anchor": "receita-engagement-ring-rg",
+    "name": "engagement ring rg",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/engagement_ring_rg.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GDG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": [
+          {
+            "item": "mca:rose_gold_ingot"
+          }
+        ],
+        "D": [
+          {
+            "item": "minecraft:diamond"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:engagement_ring_rg"
+      }
+    }
+  },
+  {
+    "anchor": "receita-family-tree",
+    "name": "family tree",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/family_tree.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:oak_sapling"
+        }
+      ],
+      "result": {
+        "id": "mca:family_tree",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-slanted-headstone",
+    "name": "golden slanted headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/golden_slanted_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "mca:deepslate_slanted_headstone"
+        },
+        {
+          "item": "minecraft:gold_nugget"
+        }
+      ],
+      "result": {
+        "id": "mca:golden_slanted_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-upright-headstone",
+    "name": "golden upright headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/golden_upright_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "mca:deepslate_upright_headstone"
+        },
+        {
+          "item": "minecraft:gold_nugget"
+        }
+      ],
+      "result": {
+        "id": "mca:golden_upright_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravelling-headstone",
+    "name": "gravelling headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gravelling_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " I ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:gravelling_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gray-acacia-crib",
+    "name": "gray acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-bamboo-crib",
+    "name": "gray bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-birch-crib",
+    "name": "gray birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-cherry-crib",
+    "name": "gray cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-crimson-crib",
+    "name": "gray crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-dark-oak-crib",
+    "name": "gray dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-jungle-crib",
+    "name": "gray jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-mangrove-crib",
+    "name": "gray mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-oak-crib",
+    "name": "gray oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-spruce-crib",
+    "name": "gray spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-gray-warped-crib",
+    "name": "gray warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/gray_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:gray_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-acacia-crib",
+    "name": "green acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-bamboo-crib",
+    "name": "green bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-birch-crib",
+    "name": "green birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-cherry-crib",
+    "name": "green cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-crimson-crib",
+    "name": "green crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-dark-oak-crib",
+    "name": "green dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-jungle-crib",
+    "name": "green jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-mangrove-crib",
+    "name": "green mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-oak-crib",
+    "name": "green oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-spruce-crib",
+    "name": "green spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-green-warped-crib",
+    "name": "green warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/green_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:green_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:green_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-acacia-crib",
+    "name": "light blue acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-bamboo-crib",
+    "name": "light blue bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-birch-crib",
+    "name": "light blue birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-cherry-crib",
+    "name": "light blue cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-crimson-crib",
+    "name": "light blue crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-dark-oak-crib",
+    "name": "light blue dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-jungle-crib",
+    "name": "light blue jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-mangrove-crib",
+    "name": "light blue mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-oak-crib",
+    "name": "light blue oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-spruce-crib",
+    "name": "light blue spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-blue-warped-crib",
+    "name": "light blue warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_blue_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_blue_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_blue_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-acacia-crib",
+    "name": "light gray acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-bamboo-crib",
+    "name": "light gray bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-birch-crib",
+    "name": "light gray birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-cherry-crib",
+    "name": "light gray cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-crimson-crib",
+    "name": "light gray crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-dark-oak-crib",
+    "name": "light gray dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-jungle-crib",
+    "name": "light gray jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-mangrove-crib",
+    "name": "light gray mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-oak-crib",
+    "name": "light gray oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-spruce-crib",
+    "name": "light gray spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-light-gray-warped-crib",
+    "name": "light gray warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/light_gray_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:light_gray_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:light_gray_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-acacia-crib",
+    "name": "lime acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-bamboo-crib",
+    "name": "lime bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-birch-crib",
+    "name": "lime birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-cherry-crib",
+    "name": "lime cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-crimson-crib",
+    "name": "lime crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-dark-oak-crib",
+    "name": "lime dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-jungle-crib",
+    "name": "lime jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-mangrove-crib",
+    "name": "lime mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-oak-crib",
+    "name": "lime oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-spruce-crib",
+    "name": "lime spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-lime-warped-crib",
+    "name": "lime warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/lime_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:lime_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:lime_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-acacia-crib",
+    "name": "magenta acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-bamboo-crib",
+    "name": "magenta bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-birch-crib",
+    "name": "magenta birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-cherry-crib",
+    "name": "magenta cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-crimson-crib",
+    "name": "magenta crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-dark-oak-crib",
+    "name": "magenta dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-jungle-crib",
+    "name": "magenta jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-mangrove-crib",
+    "name": "magenta mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-oak-crib",
+    "name": "magenta oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-spruce-crib",
+    "name": "magenta spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-magenta-warped-crib",
+    "name": "magenta warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/magenta_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:magenta_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:magenta_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-matchmakers-ring",
+    "name": "matchmakers ring",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/matchmakers_ring.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "III",
+        "I I",
+        "III"
+      ],
+      "key": {
+        "I": [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:matchmakers_ring"
+      }
+    }
+  },
+  {
+    "anchor": "receita-needle-and-thread",
+    "name": "needle and thread",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/needle_and_thread.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "I  ",
+        "SI ",
+        "S I"
+      ],
+      "key": {
+        "I": [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ],
+        "S": [
+          {
+            "item": "minecraft:string"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:needle_and_thread"
+      }
+    }
+  },
+  {
+    "anchor": "receita-orange-acacia-crib",
+    "name": "orange acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-bamboo-crib",
+    "name": "orange bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-birch-crib",
+    "name": "orange birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-cherry-crib",
+    "name": "orange cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-crimson-crib",
+    "name": "orange crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-dark-oak-crib",
+    "name": "orange dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-jungle-crib",
+    "name": "orange jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-mangrove-crib",
+    "name": "orange mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-oak-crib",
+    "name": "orange oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-spruce-crib",
+    "name": "orange spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-orange-warped-crib",
+    "name": "orange warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/orange_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:orange_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:orange_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-acacia-crib",
+    "name": "pink acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-bamboo-crib",
+    "name": "pink bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-birch-crib",
+    "name": "pink birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-cherry-crib",
+    "name": "pink cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-crimson-crib",
+    "name": "pink crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-dark-oak-crib",
+    "name": "pink dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-jungle-crib",
+    "name": "pink jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-mangrove-crib",
+    "name": "pink mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-oak-crib",
+    "name": "pink oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-spruce-crib",
+    "name": "pink spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-pink-warped-crib",
+    "name": "pink warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/pink_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:pink_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:pink_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-potion-of-femininity",
+    "name": "potion of femininity",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/potion_of_femininity.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "   ",
+        "EBS",
+        "   "
+      ],
+      "key": {
+        "E": [
+          {
+            "item": "minecraft:egg"
+          }
+        ],
+        "B": [
+          {
+            "item": "minecraft:glass_bottle"
+          }
+        ],
+        "S": [
+          {
+            "item": "minecraft:pink_dye"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:potion_of_femininity"
+      }
+    }
+  },
+  {
+    "anchor": "receita-potion-of-masculinity",
+    "name": "potion of masculinity",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/potion_of_masculinity.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "   ",
+        "EBS",
+        "   "
+      ],
+      "key": {
+        "E": [
+          {
+            "item": "minecraft:egg"
+          }
+        ],
+        "B": [
+          {
+            "item": "minecraft:glass_bottle"
+          }
+        ],
+        "S": [
+          {
+            "item": "minecraft:light_blue_dye"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:potion_of_masculinity"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purple-acacia-crib",
+    "name": "purple acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-bamboo-crib",
+    "name": "purple bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-birch-crib",
+    "name": "purple birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-cherry-crib",
+    "name": "purple cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-crimson-crib",
+    "name": "purple crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-dark-oak-crib",
+    "name": "purple dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-jungle-crib",
+    "name": "purple jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-mangrove-crib",
+    "name": "purple mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-oak-crib",
+    "name": "purple oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-spruce-crib",
+    "name": "purple spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-purple-warped-crib",
+    "name": "purple warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/purple_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:purple_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:purple_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-acacia-crib",
+    "name": "red acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-bamboo-crib",
+    "name": "red bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-birch-crib",
+    "name": "red birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-cherry-crib",
+    "name": "red cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-crimson-crib",
+    "name": "red crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-dark-oak-crib",
+    "name": "red dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-jungle-crib",
+    "name": "red jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-mangrove-crib",
+    "name": "red mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-oak-crib",
+    "name": "red oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-spruce-crib",
+    "name": "red spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-red-warped-crib",
+    "name": "red warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/red_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:red_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:red_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-rose-gold-block",
+    "name": "rose gold block",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/rose_gold_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "mca:rose_gold_ingot"
+        }
+      },
+      "result": {
+        "id": "mca:rose_gold_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rose-gold-dust",
+    "name": "rose gold dust",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/rose_gold_dust.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:raw_gold"
+        },
+        {
+          "item": "minecraft:raw_gold"
+        },
+        {
+          "item": "minecraft:raw_gold"
+        },
+        {
+          "item": "minecraft:raw_copper"
+        }
+      ],
+      "result": {
+        "id": "mca:rose_gold_dust",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-rose-gold-dust-from-ingot",
+    "name": "rose gold dust from ingot",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/rose_gold_dust_from_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "mca:rose_gold_ingot"
+        }
+      ],
+      "result": {
+        "id": "mca:rose_gold_dust"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rose-gold-ingot",
+    "name": "rose gold ingot",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/rose_gold_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "mca:rose_gold_block"
+        }
+      ],
+      "result": {
+        "id": "mca:rose_gold_ingot",
+        "count": 9
+      }
+    }
+  },
+  {
+    "anchor": "receita-rose-gold-ingot-blasting",
+    "name": "rose gold ingot blasting",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/rose_gold_ingot_blasting.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "ingredient": {
+        "item": "mca:rose_gold_dust"
+      },
+      "result": {
+        "id": "mca:rose_gold_ingot"
+      },
+      "experience": 0.7,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-rose-gold-ingot-smelting",
+    "name": "rose gold ingot smelting",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/rose_gold_ingot_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "mca:rose_gold_dust"
+      },
+      "result": {
+        "id": "mca:rose_gold_ingot"
+      },
+      "experience": 0.7,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-slanted-headstone",
+    "name": "slanted headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/slanted_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " ##",
+        " I ",
+        "## "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:slanted_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-staff-of-life",
+    "name": "staff of life",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/staff_of_life.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "*  ",
+        " I ",
+        "  o"
+      ],
+      "key": {
+        "*": {
+          "item": "minecraft:nether_star"
+        },
+        "I": {
+          "item": "minecraft:end_rod"
+        },
+        "o": {
+          "item": "mca:scythe"
+        }
+      },
+      "result": {
+        "id": "mca:staff_of_life"
+      }
+    }
+  },
+  {
+    "anchor": "receita-upright-headstone",
+    "name": "upright headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/upright_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "II",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:upright_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-villager-tracker",
+    "name": "villager tracker",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/villager_tracker.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "RER",
+        "RCR",
+        "RRR"
+      ],
+      "key": {
+        "C": [
+          {
+            "item": "minecraft:compass"
+          }
+        ],
+        "E": [
+          {
+            "item": "minecraft:ender_eye"
+          }
+        ],
+        "R": [
+          {
+            "item": "mca:rose_gold_ingot"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:villager_tracker"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wall-headstone",
+    "name": "wall headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/wall_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "# ",
+        "#I",
+        "# "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:wall_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wedding-ring",
+    "name": "wedding ring",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/wedding_ring.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": [
+          {
+            "item": "minecraft:gold_ingot"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:wedding_ring"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wedding-ring-rg",
+    "name": "wedding ring rg",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/wedding_ring_rg.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": [
+          {
+            "item": "mca:rose_gold_ingot"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:wedding_ring_rg"
+      }
+    }
+  },
+  {
+    "anchor": "receita-whistle",
+    "name": "whistle",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/whistle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "IB ",
+        "III"
+      ],
+      "key": {
+        "I": [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ],
+        "B": [
+          {
+            "item": "minecraft:gold_block"
+          }
+        ]
+      },
+      "result": {
+        "id": "mca:whistle"
+      }
+    }
+  },
+  {
+    "anchor": "receita-white-acacia-crib",
+    "name": "white acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-bamboo-crib",
+    "name": "white bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-birch-crib",
+    "name": "white birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-cherry-crib",
+    "name": "white cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-crimson-crib",
+    "name": "white crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-dark-oak-crib",
+    "name": "white dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-jungle-crib",
+    "name": "white jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-mangrove-crib",
+    "name": "white mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-oak-crib",
+    "name": "white oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-spruce-crib",
+    "name": "white spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-white-warped-crib",
+    "name": "white warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/white_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:white_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:white_warped_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-wooden-slanted-headstone",
+    "name": "wooden slanted headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/wooden_slanted_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " ##",
+        " I ",
+        "## "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:oak_planks"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:wooden_slanted_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wooden-upright-headstone",
+    "name": "wooden upright headstone",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/wooden_upright_headstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "II",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:oak_planks"
+        },
+        "I": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "mca:wooden_upright_headstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-yellow-acacia-crib",
+    "name": "yellow acacia crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_acacia_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:acacia_fence"
+        },
+        "P": {
+          "item": "minecraft:acacia_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_acacia_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-bamboo-crib",
+    "name": "yellow bamboo crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_bamboo_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:bamboo_fence"
+        },
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_bamboo_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-birch-crib",
+    "name": "yellow birch crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_birch_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:birch_fence"
+        },
+        "P": {
+          "item": "minecraft:birch_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_birch_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-cherry-crib",
+    "name": "yellow cherry crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_cherry_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:cherry_fence"
+        },
+        "P": {
+          "item": "minecraft:cherry_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_cherry_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-crimson-crib",
+    "name": "yellow crimson crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_crimson_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:crimson_fence"
+        },
+        "P": {
+          "item": "minecraft:crimson_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_crimson_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-dark-oak-crib",
+    "name": "yellow dark oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_dark_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:dark_oak_fence"
+        },
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_dark_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-jungle-crib",
+    "name": "yellow jungle crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_jungle_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:jungle_fence"
+        },
+        "P": {
+          "item": "minecraft:jungle_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_jungle_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-mangrove-crib",
+    "name": "yellow mangrove crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_mangrove_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:mangrove_fence"
+        },
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_mangrove_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-oak-crib",
+    "name": "yellow oak crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_oak_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:oak_fence"
+        },
+        "P": {
+          "item": "minecraft:oak_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_oak_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-spruce-crib",
+    "name": "yellow spruce crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_spruce_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:spruce_fence"
+        },
+        "P": {
+          "item": "minecraft:spruce_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_spruce_crib"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-yellow-warped-crib",
+    "name": "yellow warped crib",
+    "source": "evidence-mca/mca-neoforge-7.7.36-beta.3+1.21.1.jar::data/mca/recipe/yellow_warped_crib.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:yellow_carpet"
+        },
+        "F": {
+          "item": "minecraft:warped_fence"
+        },
+        "P": {
+          "item": "minecraft:warped_planks"
+        }
+      },
+      "pattern": [
+        "F F",
+        "FCF",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "mca:yellow_warped_crib"
+      },
+      "show_notification": true
+    }
+  }
+]

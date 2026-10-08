@@ -351,11 +351,12 @@
     ]
   },
   "Minecraft Comes Alive": {
-    "cards": 2,
-    "rows": 3,
+    "cards": 3,
+    "rows": 7,
     "mobs": [
       "Grim Reaper",
-      "Raider"
+      "Raider",
+      "Villager Revive Tombstone"
     ]
   },
   "Mowzie’s Mobs": {

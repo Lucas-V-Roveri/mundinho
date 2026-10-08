@@ -1,0 +1,1606 @@
+[
+  {
+    "anchor": "receita-animal-dictionary",
+    "name": "data/alexsmobs/recipe/animal_dictionary.json",
+    "source": "data/alexsmobs/recipe/animal_dictionary.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "tag": "alexsmobs:animal_dictionary_ingredient"
+        },
+        {
+          "tag": "c:dyes/green"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:animal_dictionary"
+      }
+    }
+  },
+  {
+    "anchor": "receita-banana-slug-slime-block",
+    "name": "data/alexsmobs/recipe/banana_slug_slime_block.json",
+    "source": "data/alexsmobs/recipe/banana_slug_slime_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:banana_slug_slime"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:banana_slug_slime_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-banner-pattern-australia-0",
+    "name": "data/alexsmobs/recipe/banner_pattern_australia_0.json",
+    "source": "data/alexsmobs/recipe/banner_pattern_australia_0.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "alexsmobs:kangaroo_hide"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:banner_pattern_australia_0"
+      }
+    }
+  },
+  {
+    "anchor": "receita-banner-pattern-australia-1",
+    "name": "data/alexsmobs/recipe/banner_pattern_australia_1.json",
+    "source": "data/alexsmobs/recipe/banner_pattern_australia_1.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "alexsmobs:emu_feather"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:banner_pattern_australia_1"
+      }
+    }
+  },
+  {
+    "anchor": "receita-banner-pattern-bear",
+    "name": "data/alexsmobs/recipe/banner_pattern_bear.json",
+    "source": "data/alexsmobs/recipe/banner_pattern_bear.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "alexsmobs:bear_fur"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:banner_pattern_bear"
+      }
+    }
+  },
+  {
+    "anchor": "receita-banner-pattern-brazil",
+    "name": "data/alexsmobs/recipe/banner_pattern_brazil.json",
+    "source": "data/alexsmobs/recipe/banner_pattern_brazil.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "alexsmobs:shed_snake_skin"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:banner_pattern_brazil"
+      }
+    }
+  },
+  {
+    "anchor": "receita-banner-pattern-new-mexico",
+    "name": "data/alexsmobs/recipe/banner_pattern_new_mexico.json",
+    "source": "data/alexsmobs/recipe/banner_pattern_new_mexico.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:paper"
+        },
+        {
+          "item": "alexsmobs:tarantula_hawk_wing_fragment"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:banner_pattern_new_mexico"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bison-fur-block",
+    "name": "data/alexsmobs/recipe/bison_fur_block.json",
+    "source": "data/alexsmobs/recipe/bison_fur_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:bison_fur"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:bison_fur_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-bison-fur-to-wool",
+    "name": "data/alexsmobs/recipe/bison_fur_to_wool.json",
+    "source": "data/alexsmobs/recipe/bison_fur_to_wool.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FF",
+        "FF"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:bison_fur"
+        }
+      },
+      "result": {
+        "id": "minecraft:brown_wool",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-blood-sprayer",
+    "name": "data/alexsmobs/recipe/blood_sprayer.json",
+    "source": "data/alexsmobs/recipe/blood_sprayer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SS ",
+        "BBP",
+        "B  "
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:blood_sac"
+        },
+        "P": {
+          "item": "alexsmobs:mosquito_proboscis"
+        },
+        "B": {
+          "item": "minecraft:nether_brick"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:blood_sprayer",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-boiled-emu-egg",
+    "name": "data/alexsmobs/recipe/boiled_emu_egg.json",
+    "source": "data/alexsmobs/recipe/boiled_emu_egg.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexsmobs:emu_egg"
+      },
+      "result": {
+        "id": "alexsmobs:boiled_emu_egg"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-boiled-emu-egg-campfire",
+    "name": "data/alexsmobs/recipe/boiled_emu_egg_campfire.json",
+    "source": "data/alexsmobs/recipe/boiled_emu_egg_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexsmobs:emu_egg"
+      },
+      "result": {
+        "id": "alexsmobs:boiled_emu_egg"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-boiled-emu-egg-smoke",
+    "name": "data/alexsmobs/recipe/boiled_emu_egg_smoke.json",
+    "source": "data/alexsmobs/recipe/boiled_emu_egg_smoke.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexsmobs:emu_egg"
+      },
+      "result": {
+        "id": "alexsmobs:boiled_emu_egg"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-bonemeal-from-fish-bones",
+    "name": "data/alexsmobs/recipe/bonemeal_from_fish_bones.json",
+    "source": "data/alexsmobs/recipe/bonemeal_from_fish_bones.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexsmobs:fish_bones"
+        }
+      ],
+      "result": {
+        "id": "minecraft:bone_meal",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-centipede-leggings",
+    "name": "data/alexsmobs/recipe/centipede_leggings.json",
+    "source": "data/alexsmobs/recipe/centipede_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "S S",
+        "S S"
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:centipede_leg"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:centipede_leggings",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-chorus-on-a-stick",
+    "name": "data/alexsmobs/recipe/chorus_on_a_stick.json",
+    "source": "data/alexsmobs/recipe/chorus_on_a_stick.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:fishing_rod"
+        },
+        {
+          "item": "minecraft:chorus_fruit"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:chorus_on_a_stick"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cockroach-wing",
+    "name": "data/alexsmobs/recipe/cockroach_wing.json",
+    "source": "data/alexsmobs/recipe/cockroach_wing.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:cockroach_wing_fragment"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:cockroach_wing",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-catfish",
+    "name": "data/alexsmobs/recipe/cooked_catfish.json",
+    "source": "data/alexsmobs/recipe/cooked_catfish.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexsmobs:raw_catfish"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_catfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-catfish-campfire",
+    "name": "data/alexsmobs/recipe/cooked_catfish_campfire.json",
+    "source": "data/alexsmobs/recipe/cooked_catfish_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexsmobs:raw_catfish"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_catfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-catfish-smoke",
+    "name": "data/alexsmobs/recipe/cooked_catfish_smoke.json",
+    "source": "data/alexsmobs/recipe/cooked_catfish_smoke.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexsmobs:raw_catfish"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_catfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-kangaroo-meat",
+    "name": "data/alexsmobs/recipe/cooked_kangaroo_meat.json",
+    "source": "data/alexsmobs/recipe/cooked_kangaroo_meat.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexsmobs:kangaroo_meat"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_kangaroo_meat"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-kangaroo-meat-campfire",
+    "name": "data/alexsmobs/recipe/cooked_kangaroo_meat_campfire.json",
+    "source": "data/alexsmobs/recipe/cooked_kangaroo_meat_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexsmobs:kangaroo_meat"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_kangaroo_meat"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-kangaroo-meat-smoke",
+    "name": "data/alexsmobs/recipe/cooked_kangaroo_meat_smoke.json",
+    "source": "data/alexsmobs/recipe/cooked_kangaroo_meat_smoke.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexsmobs:kangaroo_meat"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_kangaroo_meat"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-lobster-tail",
+    "name": "data/alexsmobs/recipe/cooked_lobster_tail.json",
+    "source": "data/alexsmobs/recipe/cooked_lobster_tail.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexsmobs:lobster_tail"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_lobster_tail"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-lobster-tail-campfire",
+    "name": "data/alexsmobs/recipe/cooked_lobster_tail_campfire.json",
+    "source": "data/alexsmobs/recipe/cooked_lobster_tail_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexsmobs:lobster_tail"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_lobster_tail"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-lobster-tail-smoke",
+    "name": "data/alexsmobs/recipe/cooked_lobster_tail_smoke.json",
+    "source": "data/alexsmobs/recipe/cooked_lobster_tail_smoke.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexsmobs:lobster_tail"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_lobster_tail"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-moose-ribs",
+    "name": "data/alexsmobs/recipe/cooked_moose_ribs.json",
+    "source": "data/alexsmobs/recipe/cooked_moose_ribs.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexsmobs:moose_ribs"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_moose_ribs"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-moose-ribs-campfire",
+    "name": "data/alexsmobs/recipe/cooked_moose_ribs_campfire.json",
+    "source": "data/alexsmobs/recipe/cooked_moose_ribs_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexsmobs:moose_ribs"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_moose_ribs"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-moose-ribs-smoke",
+    "name": "data/alexsmobs/recipe/cooked_moose_ribs_smoke.json",
+    "source": "data/alexsmobs/recipe/cooked_moose_ribs_smoke.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexsmobs:moose_ribs"
+      },
+      "result": {
+        "id": "alexsmobs:cooked_moose_ribs"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-crocodile-chestplate",
+    "name": "data/alexsmobs/recipe/crocodile_chestplate.json",
+    "source": "data/alexsmobs/recipe/crocodile_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "S S",
+        "SSS",
+        "SSS"
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:crocodile_scute"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:crocodile_chestplate",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-dimensional-carver",
+    "name": "data/alexsmobs/recipe/dimensional_carver.json",
+    "source": "data/alexsmobs/recipe/dimensional_carver.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "MEM",
+        " X ",
+        " X "
+      ],
+      "key": {
+        "M": {
+          "item": "alexsmobs:void_worm_mandible"
+        },
+        "E": {
+          "item": "alexsmobs:void_worm_eye"
+        },
+        "X": {
+          "tag": "c:ingots/netherite"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:dimensional_carver",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-emu-leggings",
+    "name": "data/alexsmobs/recipe/emu_leggings.json",
+    "source": "data/alexsmobs/recipe/emu_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FKF",
+        "K K",
+        "F F"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:emu_feather"
+        },
+        "K": {
+          "item": "alexsmobs:kangaroo_hide"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:emu_leggings",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-enderiophage-rocket",
+    "name": "data/alexsmobs/recipe/enderiophage_rocket.json",
+    "source": "data/alexsmobs/recipe/enderiophage_rocket.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " C ",
+        " I ",
+        "EIE"
+      ],
+      "key": {
+        "C": {
+          "item": "alexsmobs:capsid"
+        },
+        "E": {
+          "item": "minecraft:end_stone"
+        },
+        "I": {
+          "tag": "c:nuggets/iron"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:enderiophage_rocket",
+        "count": 3
+      }
+    }
+  },
+  {
+    "anchor": "receita-falconry-glove",
+    "name": "data/alexsmobs/recipe/falconry_glove.json",
+    "source": "data/alexsmobs/recipe/falconry_glove.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " L ",
+        "LLL",
+        " H "
+      ],
+      "key": {
+        "H": {
+          "item": "alexsmobs:bear_fur"
+        },
+        "L": {
+          "item": "minecraft:leather"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:falconry_glove",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-falconry-hood",
+    "name": "data/alexsmobs/recipe/falconry_hood.json",
+    "source": "data/alexsmobs/recipe/falconry_hood.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " LF",
+        "L L"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:roadrunner_feather"
+        },
+        "L": {
+          "item": "minecraft:leather"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:falconry_hood",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-falconry-hood-alt",
+    "name": "data/alexsmobs/recipe/falconry_hood_alt.json",
+    "source": "data/alexsmobs/recipe/falconry_hood_alt.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FL ",
+        "L L"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:roadrunner_feather"
+        },
+        "L": {
+          "item": "minecraft:leather"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:falconry_hood",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-fish-oil",
+    "name": "data/alexsmobs/recipe/fish_oil.json",
+    "source": "data/alexsmobs/recipe/fish_oil.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:glass_bottle"
+        },
+        {
+          "item": "alexsmobs:blobfish"
+        },
+        {
+          "item": "alexsmobs:blobfish"
+        },
+        {
+          "item": "alexsmobs:blobfish"
+        },
+        {
+          "item": "alexsmobs:blobfish"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:fish_oil"
+      }
+    }
+  },
+  {
+    "anchor": "receita-flint-n-steel-dropbear-claw",
+    "name": "data/alexsmobs/recipe/flint_n_steel_dropbear_claw.json",
+    "source": "data/alexsmobs/recipe/flint_n_steel_dropbear_claw.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexsmobs:dropbear_claw"
+        },
+        {
+          "item": "minecraft:flint"
+        }
+      ],
+      "result": {
+        "id": "minecraft:flint_and_steel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-flying-fish-boots",
+    "name": "data/alexsmobs/recipe/flying_fish_boots.json",
+    "source": "data/alexsmobs/recipe/flying_fish_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "S S",
+        "F F"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:flying_fish"
+        },
+        "S": {
+          "tag": "c:strings"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:flying_fish_boots",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-frontier-cap",
+    "name": "data/alexsmobs/recipe/frontier_cap.json",
+    "source": "data/alexsmobs/recipe/frontier_cap.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "HHH",
+        "HCH",
+        "  T"
+      ],
+      "key": {
+        "H": {
+          "item": "alexsmobs:bear_fur"
+        },
+        "T": {
+          "item": "alexsmobs:raccoon_tail"
+        },
+        "C": {
+          "item": "minecraft:leather_helmet"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:frontier_cap",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-frontier-cap-alt",
+    "name": "data/alexsmobs/recipe/frontier_cap_alt.json",
+    "source": "data/alexsmobs/recipe/frontier_cap_alt.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "HHH",
+        "HCH",
+        "T  "
+      ],
+      "key": {
+        "H": {
+          "item": "alexsmobs:bear_fur"
+        },
+        "T": {
+          "item": "alexsmobs:raccoon_tail"
+        },
+        "C": {
+          "item": "minecraft:leather_helmet"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:frontier_cap",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-froststalker-helmet",
+    "name": "data/alexsmobs/recipe/froststalker_helmet.json",
+    "source": "data/alexsmobs/recipe/froststalker_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " H ",
+        "III",
+        "I I"
+      ],
+      "key": {
+        "H": {
+          "item": "alexsmobs:froststalker_horn"
+        },
+        "I": {
+          "item": "minecraft:packed_ice"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:froststalker_helmet",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-gustmaker",
+    "name": "data/alexsmobs/recipe/gustmaker.json",
+    "source": "data/alexsmobs/recipe/gustmaker.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "SES",
+        "SRS"
+      ],
+      "key": {
+        "E": {
+          "item": "alexsmobs:guster_eye"
+        },
+        "S": {
+          "item": "minecraft:cut_sandstone"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:gustmaker",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-hemolymph-blaster",
+    "name": "data/alexsmobs/recipe/hemolymph_blaster.json",
+    "source": "data/alexsmobs/recipe/hemolymph_blaster.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "CBP",
+        "M  "
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:hemolymph_sac"
+        },
+        "P": {
+          "item": "alexsmobs:mosquito_proboscis"
+        },
+        "M": {
+          "item": "alexsmobs:warped_muscle"
+        },
+        "C": {
+          "item": "alexsmobs:mimicream"
+        },
+        "B": {
+          "item": "alexsmobs:blood_sprayer"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:hemolymph_blaster",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-kangaroo-hide-to-leather",
+    "name": "data/alexsmobs/recipe/kangaroo_hide_to_leather.json",
+    "source": "data/alexsmobs/recipe/kangaroo_hide_to_leather.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexsmobs:kangaroo_hide"
+        },
+        {
+          "item": "alexsmobs:kangaroo_hide"
+        }
+      ],
+      "result": {
+        "id": "minecraft:leather"
+      }
+    }
+  },
+  {
+    "anchor": "receita-komodo-spit-bottle",
+    "name": "data/alexsmobs/recipe/komodo_spit_bottle.json",
+    "source": "data/alexsmobs/recipe/komodo_spit_bottle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:glass_bottle"
+        },
+        {
+          "item": "alexsmobs:komodo_spit"
+        },
+        {
+          "item": "alexsmobs:komodo_spit"
+        },
+        {
+          "item": "alexsmobs:komodo_spit"
+        },
+        {
+          "item": "alexsmobs:komodo_spit"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:komodo_spit_bottle"
+      }
+    }
+  },
+  {
+    "anchor": "receita-komodo-spit-to-slime",
+    "name": "data/alexsmobs/recipe/komodo_spit_to_slime.json",
+    "source": "data/alexsmobs/recipe/komodo_spit_to_slime.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexsmobs:komodo_spit"
+        },
+        {
+          "item": "alexsmobs:komodo_spit"
+        },
+        {
+          "item": "alexsmobs:komodo_spit"
+        }
+      ],
+      "result": {
+        "id": "minecraft:slime_ball"
+      }
+    }
+  },
+  {
+    "anchor": "receita-maraca",
+    "name": "data/alexsmobs/recipe/maraca.json",
+    "source": "data/alexsmobs/recipe/maraca.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " P ",
+        "PRP",
+        " S "
+      ],
+      "key": {
+        "P": {
+          "tag": "minecraft:planks"
+        },
+        "R": {
+          "item": "alexsmobs:rattlesnake_rattle"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:maraca",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-moose-headgear",
+    "name": "data/alexsmobs/recipe/moose_headgear.json",
+    "source": "data/alexsmobs/recipe/moose_headgear.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AIA",
+        "S S"
+      ],
+      "key": {
+        "A": {
+          "item": "alexsmobs:moose_antler"
+        },
+        "I": {
+          "tag": "c:ingots/iron"
+        },
+        "S": {
+          "tag": "c:strings"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:moose_headgear",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-mosquito-larva",
+    "name": "data/alexsmobs/recipe/mosquito_larva.json",
+    "source": "data/alexsmobs/recipe/mosquito_larva.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexsmobs:maggot"
+        },
+        {
+          "item": "alexsmobs:mosquito_proboscis"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:mosquito_larva"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mosquito-repellent-stew",
+    "name": "data/alexsmobs/recipe/mosquito_repellent_stew.json",
+    "source": "data/alexsmobs/recipe/mosquito_repellent_stew.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:bowl"
+        },
+        {
+          "item": "alexsmobs:triops_eggs"
+        },
+        {
+          "item": "alexsmobs:stink_bottle"
+        },
+        {
+          "item": "alexsmobs:triops_eggs"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:mosquito_repellent_stew"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pocket-sand",
+    "name": "data/alexsmobs/recipe/pocket_sand.json",
+    "source": "data/alexsmobs/recipe/pocket_sand.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "LEL",
+        "LLL"
+      ],
+      "key": {
+        "E": {
+          "item": "alexsmobs:guster_eye"
+        },
+        "L": {
+          "item": "minecraft:leather"
+        },
+        "S": {
+          "tag": "minecraft:sand"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:pocket_sand",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-pupfish-locator",
+    "name": "data/alexsmobs/recipe/pupfish_locator.json",
+    "source": "data/alexsmobs/recipe/pupfish_locator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SBS",
+        "BAB",
+        "SBS"
+      ],
+      "key": {
+        "A": {
+          "item": "alexsmobs:echolocator"
+        },
+        "S": {
+          "item": "minecraft:slime_ball"
+        },
+        "B": {
+          "item": "alexsmobs:fish_bones"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:pupfish_locator",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-rainbow-glass",
+    "name": "data/alexsmobs/recipe/rainbow_glass.json",
+    "source": "data/alexsmobs/recipe/rainbow_glass.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "GRG",
+        "GGG"
+      ],
+      "key": {
+        "R": {
+          "item": "alexsmobs:rainbow_jelly"
+        },
+        "G": {
+          "tag": "c:glass_blocks"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:rainbow_glass",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-roadrunner-boots",
+    "name": "data/alexsmobs/recipe/roadrunner_boots.json",
+    "source": "data/alexsmobs/recipe/roadrunner_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "F F",
+        "F F",
+        "SBS"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:roadrunner_feather"
+        },
+        "B": {
+          "item": "minecraft:leather_boots"
+        },
+        "S": {
+          "item": "minecraft:chiseled_sandstone"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:roadrunner_boots",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-rocky-chestplate",
+    "name": "data/alexsmobs/recipe/rocky_chestplate.json",
+    "source": "data/alexsmobs/recipe/rocky_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "S S",
+        "SSS",
+        "SSS"
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:rocky_shell"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:rocky_chestplate",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-sculk-boomer",
+    "name": "data/alexsmobs/recipe/sculk_boomer.json",
+    "source": "data/alexsmobs/recipe/sculk_boomer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "SSS",
+        "BBB"
+      ],
+      "key": {
+        "F": {
+          "item": "minecraft:sculk"
+        },
+        "S": {
+          "item": "alexsmobs:skreecher_soul"
+        },
+        "B": {
+          "item": "minecraft:bone_block"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:sculk_boomer",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-shark-tooth-arrow",
+    "name": "data/alexsmobs/recipe/shark_tooth_arrow.json",
+    "source": "data/alexsmobs/recipe/shark_tooth_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "T",
+        "S",
+        "K"
+      ],
+      "key": {
+        "T": {
+          "item": "alexsmobs:shark_tooth"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        },
+        "K": {
+          "item": "minecraft:kelp"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:shark_tooth_arrow",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-shield-of-the-deep",
+    "name": "data/alexsmobs/recipe/shield_of_the_deep.json",
+    "source": "data/alexsmobs/recipe/shield_of_the_deep.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "PHP",
+        "TPT"
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:serrated_shark_tooth"
+        },
+        "P": {
+          "item": "minecraft:prismarine_bricks"
+        },
+        "H": {
+          "item": "minecraft:heart_of_the_sea"
+        },
+        "T": {
+          "item": "alexsmobs:shark_tooth"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:shield_of_the_deep",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-sopa-de-macaco",
+    "name": "data/alexsmobs/recipe/sopa_de_macaco.json",
+    "source": "data/alexsmobs/recipe/sopa_de_macaco.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:bowl"
+        },
+        {
+          "item": "alexsmobs:banana_peel"
+        },
+        {
+          "item": "minecraft:brown_mushroom"
+        },
+        {
+          "item": "minecraft:bone"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:sopa_de_macaco"
+      }
+    }
+  },
+  {
+    "anchor": "receita-spiked-turtle-shell",
+    "name": "data/alexsmobs/recipe/spiked_turtle_shell.json",
+    "source": "data/alexsmobs/recipe/spiked_turtle_shell.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "HHH",
+        "HCH"
+      ],
+      "key": {
+        "H": {
+          "item": "alexsmobs:spiked_scute"
+        },
+        "C": {
+          "item": "minecraft:turtle_helmet"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:spiked_turtle_shell",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-squid-grapple",
+    "name": "data/alexsmobs/recipe/squid_grapple.json",
+    "source": "data/alexsmobs/recipe/squid_grapple.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "TTT",
+        "CBC",
+        " C "
+      ],
+      "key": {
+        "T": {
+          "item": "alexsmobs:lost_tentacle"
+        },
+        "B": {
+          "item": "minecraft:crossbow"
+        },
+        "C": {
+          "item": "minecraft:copper_ingot"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:squid_grapple",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-straddle-helmet",
+    "name": "data/alexsmobs/recipe/straddle_helmet.json",
+    "source": "data/alexsmobs/recipe/straddle_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " S ",
+        "S S",
+        "L L"
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:straddlite"
+        },
+        "L": {
+          "item": "minecraft:string"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:straddle_helmet",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-straddle-saddle",
+    "name": "data/alexsmobs/recipe/straddle_saddle.json",
+    "source": "data/alexsmobs/recipe/straddle_saddle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "EE",
+        "SS"
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:straddlite"
+        },
+        "E": {
+          "item": "minecraft:saddle"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:straddle_saddle",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-straddleboard",
+    "name": "data/alexsmobs/recipe/straddleboard.json",
+    "source": "data/alexsmobs/recipe/straddleboard.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " SN",
+        "SNS",
+        "NS "
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:straddlite"
+        },
+        "N": {
+          "tag": "c:ingots/netherite"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:straddleboard",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-straddlite-block",
+    "name": "data/alexsmobs/recipe/straddlite_block.json",
+    "source": "data/alexsmobs/recipe/straddlite_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "SSS",
+        "SSS"
+      ],
+      "key": {
+        "S": {
+          "item": "alexsmobs:straddlite"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:straddlite_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-tarantula-hawk-wing",
+    "name": "data/alexsmobs/recipe/tarantula_hawk_wing.json",
+    "source": "data/alexsmobs/recipe/tarantula_hawk_wing.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "key": {
+        "F": {
+          "item": "alexsmobs:tarantula_hawk_wing_fragment"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:tarantula_hawk_wing",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-tendon-whip",
+    "name": "data/alexsmobs/recipe/tendon_whip.json",
+    "source": "data/alexsmobs/recipe/tendon_whip.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " CC",
+        "TTC",
+        "ST "
+      ],
+      "key": {
+        "C": {
+          "item": "alexsmobs:dropbear_claw"
+        },
+        "T": {
+          "item": "alexsmobs:elastic_tendon"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:tendon_whip",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-transmutation-table",
+    "name": "data/alexsmobs/recipe/transmutation_table.json",
+    "source": "data/alexsmobs/recipe/transmutation_table.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " N ",
+        "S S",
+        "OOO"
+      ],
+      "key": {
+        "N": {
+          "item": "minecraft:nether_star"
+        },
+        "S": {
+          "item": "alexsmobs:farseer_arm"
+        },
+        "O": {
+          "item": "minecraft:obsidian"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:transmutation_table",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-vine-lasso",
+    "name": "data/alexsmobs/recipe/vine_lasso.json",
+    "source": "data/alexsmobs/recipe/vine_lasso.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " VL",
+        "VSV",
+        "SV "
+      ],
+      "key": {
+        "L": {
+          "item": "minecraft:lead"
+        },
+        "V": {
+          "item": "minecraft:vine"
+        },
+        "S": {
+          "item": "alexsmobs:shed_snake_skin"
+        }
+      },
+      "result": {
+        "id": "alexsmobs:vine_lasso",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-void-worm-beak",
+    "name": "data/alexsmobs/recipe/void_worm_beak.json",
+    "source": "data/alexsmobs/recipe/void_worm_beak.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexsmobs:void_worm_mandible"
+        },
+        {
+          "item": "alexsmobs:void_worm_mandible"
+        }
+      ],
+      "result": {
+        "id": "alexsmobs:void_worm_beak"
+      }
+    }
+  }
+]

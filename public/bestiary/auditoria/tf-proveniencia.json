@@ -1,0 +1,716 @@
+{
+  "images": [
+    {
+      "image": "rising-zombie.png",
+      "entity_id": "twilightforest:rising_zombie",
+      "mob": "Rising Zombie",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/rising-zombie.png"
+    },
+    {
+      "image": "roving-cube.png",
+      "entity_id": "twilightforest:roving_cube",
+      "mob": "Roving Cube",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/roving-cube.png"
+    },
+    {
+      "image": "ur-ghast.png",
+      "entity_id": "twilightforest:ur_ghast",
+      "mob": "Ur Ghast",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/ur-ghast.png"
+    },
+    {
+      "image": "lich.png",
+      "entity_id": "twilightforest:lich",
+      "mob": "Lich",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/lich.png"
+    },
+    {
+      "image": "alpha-yeti.png",
+      "entity_id": "twilightforest:alpha_yeti",
+      "mob": "Alpha Yeti",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/alpha-yeti.png"
+    },
+    {
+      "image": "minoshroom.png",
+      "entity_id": "twilightforest:minoshroom",
+      "mob": "Minoshroom",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/minoshroom.png"
+    },
+    {
+      "image": "knight-phantom-normal.png",
+      "entity_id": "twilightforest:knight_phantom",
+      "mob": "Knight Phantom",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/knight-phantom-normal.png"
+    },
+    {
+      "image": "snow-queen.png",
+      "entity_id": "twilightforest:snow_queen",
+      "mob": "Snow Queen",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/snow-queen.png"
+    },
+    {
+      "image": "knight-phantom-investida.png",
+      "entity_id": "twilightforest:knight_phantom",
+      "mob": "Knight Phantom",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/knight-phantom-investida.png"
+    },
+    {
+      "model": "KoboldModel.java",
+      "boxes": 10,
+      "image": "kobold.png",
+      "entity_id": "twilightforest:kobold",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/kobold.png"
+    },
+    {
+      "model": "HelmetCrabModel.java",
+      "boxes": 18,
+      "image": "helmet-crab-blue.png",
+      "entity_id": "twilightforest:helmet_crab",
+      "variant": "blue",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/helmet-crab-blue.png"
+    },
+    {
+      "model": "HelmetCrabModel.java",
+      "boxes": 18,
+      "image": "helmet-crab.png",
+      "entity_id": "twilightforest:helmet_crab",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/helmet-crab.png"
+    },
+    {
+      "model": "SlimeBeetleModel.java",
+      "boxes": 18,
+      "image": "slime-beetle.png",
+      "entity_id": "twilightforest:slime_beetle",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/slime-beetle.png"
+    },
+    {
+      "model": "FireBeetleModel.java",
+      "boxes": 19,
+      "image": "fire-beetle.png",
+      "entity_id": "twilightforest:fire_beetle",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/fire-beetle.png"
+    },
+    {
+      "model": "AdherentModel.java",
+      "boxes": 8,
+      "image": "adherent.png",
+      "entity_id": "twilightforest:adherent",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/adherent.png"
+    },
+    {
+      "model": "PinchBeetleModel.java",
+      "boxes": 25,
+      "image": "pinch-beetle.png",
+      "entity_id": "twilightforest:pinch_beetle",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/pinch-beetle.png"
+    },
+    {
+      "mob": "Redcap",
+      "entity_id": "twilightforest:redcap",
+      "image": "redcap.png",
+      "model": "RedcapModel.java",
+      "texture": "redcap.png",
+      "mesh_boxes": 11,
+      "selected_boxes": 11,
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/redcap.png"
+    },
+    {
+      "mob": "Yeti",
+      "entity_id": "twilightforest:yeti",
+      "image": "yeti.png",
+      "model": "YetiModel.java",
+      "texture": "yeti2.png",
+      "mesh_boxes": 12,
+      "selected_boxes": 10,
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/yeti.png"
+    },
+    {
+      "mob": "Redcap Sapper",
+      "entity_id": "twilightforest:redcap_sapper",
+      "image": "redcap-sapper.png",
+      "model": "RedcapModel.java",
+      "texture": "redcapsapper.png",
+      "mesh_boxes": 11,
+      "selected_boxes": 11,
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/redcap-sapper.png"
+    },
+    {
+      "mob": "Minotaur",
+      "entity_id": "twilightforest:minotaur",
+      "image": "minotaur.png",
+      "model": "MinotaurModel.java",
+      "texture": "minotaur.png",
+      "mesh_boxes": 11,
+      "selected_boxes": 11,
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/minotaur.png"
+    },
+    {
+      "mob": "Wraith",
+      "entity_id": "twilightforest:wraith",
+      "image": "wraith.png",
+      "model": "WraithModel.java",
+      "texture": "ghost.png",
+      "mesh_boxes": 8,
+      "selected_boxes": 6,
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/wraith.png"
+    },
+    {
+      "mob": "Carminite Golem",
+      "entity_id": "twilightforest:carminite_golem",
+      "image": "carminite-golem.png",
+      "model": "CarminiteGolemModel.java",
+      "texture": "carminitegolem.png",
+      "mesh_boxes": 22,
+      "selected_boxes": 22,
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/carminite-golem.png"
+    },
+    {
+      "mob": "Troll",
+      "entity_id": "twilightforest:troll",
+      "image": "troll.png",
+      "model": "TrollModel.java",
+      "texture": "troll.png",
+      "mesh_boxes": 7,
+      "selected_boxes": 7,
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/troll.png"
+    },
+    {
+      "mob": "Deer",
+      "image": "deer.png",
+      "model": "DeerModel.java",
+      "texture": "wilddeer.png",
+      "boxes": 31,
+      "entity_id": "twilightforest:deer",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/deer.png"
+    },
+    {
+      "mob": "Squirrel",
+      "image": "squirrel.png",
+      "model": "SquirrelModel.java",
+      "texture": "squirrel2.png",
+      "boxes": 12,
+      "entity_id": "twilightforest:squirrel",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/squirrel.png"
+    },
+    {
+      "mob": "Dwarf Rabbit — dutch",
+      "image": "dwarf-rabbit-dutch.png",
+      "model": "BunnyModel.java",
+      "texture": "bunnydutch.png",
+      "boxes": 9,
+      "entity_id": "twilightforest:dwarf_rabbit",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/dwarf-rabbit-dutch.png"
+    },
+    {
+      "mob": "Bighorn Sheep — lã marrom",
+      "image": "bighorn-sheep-wool.png",
+      "model": "BighornModel.java + SheepFurModel.createFurLayer()",
+      "texture": "bighorn.png + sheep_fur.png",
+      "boxes": 22,
+      "entity_id": "twilightforest:bighorn_sheep",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/bighorn-sheep-wool.png"
+    },
+    {
+      "mob": "Dwarf Rabbit — white",
+      "image": "dwarf-rabbit-white.png",
+      "model": "BunnyModel.java",
+      "texture": "bunnywhite.png",
+      "boxes": 9,
+      "entity_id": "twilightforest:dwarf_rabbit",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/dwarf-rabbit-white.png"
+    },
+    {
+      "mob": "Bighorn Sheep — tosquiado",
+      "image": "bighorn-sheep-sheared.png",
+      "model": "BighornModel.java",
+      "texture": "bighorn.png",
+      "boxes": 16,
+      "entity_id": "twilightforest:bighorn_sheep",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/bighorn-sheep-sheared.png"
+    },
+    {
+      "mob": "Dwarf Rabbit — brown",
+      "image": "dwarf-rabbit-brown.png",
+      "model": "BunnyModel.java",
+      "texture": "bunnybrown.png",
+      "boxes": 9,
+      "entity_id": "twilightforest:dwarf_rabbit",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/dwarf-rabbit-brown.png"
+    },
+    {
+      "mob": "Boar",
+      "image": "boar.png",
+      "model": "BoarModel.java",
+      "texture": "wildboar.png",
+      "boxes": 9,
+      "entity_id": "twilightforest:boar",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/boar.png"
+    },
+    {
+      "mob": "Penguin",
+      "image": "penguin.png",
+      "model": "PenguinModel.java",
+      "texture": "penguin.png",
+      "boxes": 7,
+      "entity_id": "twilightforest:penguin",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/penguin.png"
+    },
+    {
+      "image": "naga-completa.png",
+      "entity_id": "twilightforest:naga",
+      "mob": "Naga",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/naga-completa.png"
+    },
+    {
+      "image": "hydra-partes-reais-idle.png",
+      "entity_id": "twilightforest:hydra",
+      "mob": "Hydra",
+      "source_reports": [
+        "origem-roving-cube-rising-zombie.md",
+        "origem-naga-hydra-2026-10-01.md",
+        "origem-chefes-restantes-twilight-2026-10-01.md"
+      ],
+      "notes": "PNG anterior preservado. Pose, arquivos exatos e limites nos relatórios originais de auditoria/twilight; não é captura do jogo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/hydra-partes-reais-idle.png"
+    },
+    {
+      "entity_id": "twilightforest:harbinger_cube",
+      "image": "harbinger-cube.png",
+      "sources": [
+        "HarbingerCubeModel.java",
+        "apocalypse2.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/harbinger-cube.png"
+    },
+    {
+      "entity_id": "twilightforest:lower_goblin_knight",
+      "image": "lower-goblin-knight.png",
+      "sources": [
+        "LowerGoblinKnightModel.java",
+        "doublegoblin.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/lower-goblin-knight.png"
+    },
+    {
+      "entity_id": "twilightforest:upper_goblin_knight",
+      "image": "upper-goblin-knight.png",
+      "sources": [
+        "UpperGoblinKnightModel.java",
+        "doublegoblin.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/upper-goblin-knight.png"
+    },
+    {
+      "entity_id": "twilightforest:raven",
+      "image": "raven.png",
+      "sources": [
+        "RavenModel.java",
+        "raven.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/raven.png"
+    },
+    {
+      "entity_id": "twilightforest:skeleton_druid",
+      "image": "skeleton-druid.png",
+      "sources": [
+        "SkeletonDruidModel.java",
+        "skeletondruid.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/skeleton-druid.png"
+    },
+    {
+      "entity_id": "twilightforest:tiny_bird",
+      "image": "tiny-bird-blue.png",
+      "sources": [
+        "TinyBirdModel.java",
+        "tinybirdblue.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/tiny-bird-blue.png"
+    },
+    {
+      "entity_id": "twilightforest:tiny_bird",
+      "image": "tiny-bird-brown.png",
+      "sources": [
+        "TinyBirdModel.java",
+        "tinybirdbrown.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/tiny-bird-brown.png"
+    },
+    {
+      "entity_id": "twilightforest:tiny_bird",
+      "image": "tiny-bird-gold.png",
+      "sources": [
+        "TinyBirdModel.java",
+        "tinybirdgold.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/tiny-bird-gold.png"
+    },
+    {
+      "entity_id": "twilightforest:tiny_bird",
+      "image": "tiny-bird-red.png",
+      "sources": [
+        "TinyBirdModel.java",
+        "tinybirdred.png"
+      ],
+      "notes": "Malha create() padrão, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/tiny-bird-red.png"
+    },
+    {
+      "entity_id": "twilightforest:hedge_spider",
+      "image": "hedge-spider.png",
+      "sources": [
+        "vanilla/fxl.java",
+        "TFSpiderRenderer.java",
+        "hedgespider.png"
+      ],
+      "notes": "SpiderModel 1.21.1; pose setupAnim com movimento zero. Escala absoluta normalizada no enquadramento.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/hedge-spider.png"
+    },
+    {
+      "entity_id": "twilightforest:swarm_spider",
+      "image": "swarm-spider.png",
+      "sources": [
+        "vanilla/fxl.java",
+        "TFSpiderRenderer.java",
+        "swarmspider.png"
+      ],
+      "notes": "SpiderModel 1.21.1; pose setupAnim com movimento zero. Escala absoluta normalizada no enquadramento.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/swarm-spider.png"
+    },
+    {
+      "entity_id": "twilightforest:king_spider",
+      "image": "king-spider.png",
+      "sources": [
+        "vanilla/fxl.java",
+        "TFSpiderRenderer.java",
+        "kingspider.png"
+      ],
+      "notes": "SpiderModel 1.21.1; pose setupAnim com movimento zero. Escala absoluta normalizada no enquadramento.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/king-spider.png"
+    },
+    {
+      "entity_id": "twilightforest:carminite_broodling",
+      "image": "carminite-broodling.png",
+      "sources": [
+        "vanilla/fxl.java",
+        "TFSpiderRenderer.java",
+        "towerbroodling.png"
+      ],
+      "notes": "SpiderModel 1.21.1; pose setupAnim com movimento zero. Escala absoluta normalizada no enquadramento.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/carminite-broodling.png"
+    },
+    {
+      "entity_id": "twilightforest:hostile_wolf",
+      "image": "hostile-wolf.png",
+      "sources": [
+        "vanilla/fyb.java",
+        "HostileWolfModel.java",
+        "HostileWolfRenderer.java",
+        "vanilla/wolf_angry.png"
+      ],
+      "notes": "WolfModel 1.21.1, pose da malha; variante vanilla PALE agressiva, textura wolf_angry.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/hostile-wolf.png"
+    },
+    {
+      "entity_id": "twilightforest:winter_wolf",
+      "image": "winter-wolf.png",
+      "sources": [
+        "vanilla/fyb.java",
+        "HostileWolfModel.java",
+        "WinterWolfRenderer.java",
+        "winterwolf.png"
+      ],
+      "notes": "WolfModel 1.21.1, pose da malha; textura winterwolf da versão auditada.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/winter-wolf.png"
+    },
+    {
+      "entity_id": "twilightforest:mist_wolf",
+      "image": "mist-wolf.png",
+      "sources": [
+        "vanilla/fyb.java",
+        "HostileWolfModel.java",
+        "MistWolfRenderer.java",
+        "mistwolf.png"
+      ],
+      "notes": "WolfModel.createMeshDefinition 1.21.1; pose da malha. Mist Wolf representado em luminosidade máxima (alfa e RGB =1).",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/mist-wolf.png"
+    },
+    {
+      "entity_id": "twilightforest:towerwood_borer",
+      "image": "towerwood-borer.png",
+      "sources": [
+        "vanilla/fxe.java",
+        "ClientRegistrationEvents.java",
+        "towertermite.png"
+      ],
+      "notes": "SilverfishModel 1.21.1, pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/towerwood-borer.png"
+    },
+    {
+      "entity_id": "twilightforest:carminite_ghastling",
+      "image": "carminite-ghastling.png",
+      "sources": [
+        "TFGhastModel.java",
+        "TFGhastRenderer.java",
+        "CarminiteGhastRenderer.java",
+        "towerghast.png"
+      ],
+      "notes": "TFGhastModel.create, PRNG Java com seed original 1660. Estado normal; escala normalizada no enquadramento.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/carminite-ghastling.png"
+    },
+    {
+      "entity_id": "twilightforest:carminite_ghastguard",
+      "image": "carminite-ghastguard.png",
+      "sources": [
+        "TFGhastModel.java",
+        "TFGhastRenderer.java",
+        "CarminiteGhastRenderer.java",
+        "towerghast.png"
+      ],
+      "notes": "TFGhastModel.create, PRNG Java com seed original 1660. Estado normal; escala normalizada no enquadramento.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/carminite-ghastguard.png"
+    },
+    {
+      "entity_id": "twilightforest:lich_minion",
+      "image": "lich-minion.png",
+      "sources": [
+        "vanilla/fvx.java",
+        "LichMinionModel.java",
+        "ClientRegistrationEvents.java",
+        "vanilla/zombie.png"
+      ],
+      "notes": "HumanoidModel 1.21.1 adulto, sem equipamento. Lich Minion sem Strength; RGB conforme override do modelo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/lich-minion.png"
+    },
+    {
+      "entity_id": "twilightforest:loyal_zombie",
+      "image": "loyal-zombie.png",
+      "sources": [
+        "vanilla/fvx.java",
+        "LoyalZombieModel.java",
+        "ClientRegistrationEvents.java",
+        "vanilla/zombie.png"
+      ],
+      "notes": "HumanoidModel adulto, sem equipamento; RGB(.25,1,.25) conforme LoyalZombieModel.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/loyal-zombie.png"
+    },
+    {
+      "entity_id": "twilightforest:maze_slime",
+      "image": "maze-slime.png",
+      "sources": [
+        "vanilla/fxi.java",
+        "MazeSlimeRenderer.java",
+        "mazeslime.png"
+      ],
+      "notes": "SlimeModel.createInnerBodyLayer + createOuterBodyLayer, transparente; sem squish.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/maze-slime.png"
+    },
+    {
+      "entity_id": "twilightforest:ice_crystal",
+      "image": "ice-crystal.png",
+      "sources": [
+        "IceCrystalModel.java",
+        "UnstableIceCoreModel.java",
+        "icecrystal.png"
+      ],
+      "notes": "Entidade viva, tickCount20 partialTicks0; alfa .6 conforme modelo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/ice-crystal.png"
+    },
+    {
+      "entity_id": "twilightforest:stable_ice_core",
+      "image": "stable-ice-core.png",
+      "sources": [
+        "StableIceCoreModel.java",
+        "UnstableIceCoreModel.java",
+        "iceshooter.png"
+      ],
+      "notes": "Entidade viva, tickCount20 partialTicks0; alfa .6 conforme modelo.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/stable-ice-core.png"
+    },
+    {
+      "entity_id": "twilightforest:unstable_ice_core",
+      "image": "unstable-ice-core.png",
+      "sources": [
+        "UnstableIceCoreModel.java",
+        "iceexploder.png"
+      ],
+      "notes": "Pose vivante, tickCount20 partialTicks0. Alfa .6. Unstable: spike0 com divisões por zero na fonte tem transformação não finita e foi omitido.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/unstable-ice-core.png"
+    },
+    {
+      "entity_id": "twilightforest:death_tome",
+      "image": "death-tome.png",
+      "sources": [
+        "DeathTomeModel.java",
+        "ClientRegistrationEvents.java",
+        "vanilla/enchanting_table_book.png"
+      ],
+      "notes": "Estado voando, bounce0, flip0, pose conforme prepareMobModel/setupAnim; folhas soltas presentes.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/death-tome.png"
+    },
+    {
+      "entity_id": "twilightforest:quest_ram",
+      "image": "quest-ram.png",
+      "sources": [
+        "QuestRamModel.java",
+        "QuestRamRenderer.java",
+        "questram.png",
+        "questram_lines.png"
+      ],
+      "notes": "Sem cores entregues, count0. Camada luminosa do renderer ampliada1.025; segmentos invisíveis como no código.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/quest-ram.png"
+    },
+    {
+      "entity_id": "twilightforest:mosquito_swarm",
+      "image": "mosquito-swarm.png",
+      "sources": [
+        "MosquitoSwarmModel.java",
+        "MosquitoSwarmRenderer.java",
+        "mosquitoswarm.png"
+      ],
+      "notes": "103 cubos; algoritmo original com seed1660 escolhido para amostra reprodutível. Fonte usa seed não fixado; distribuição de uma instância real não confirmada. Pose inicial.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/mosquito-swarm.png"
+    },
+    {
+      "entity_id": "twilightforest:giant_miner",
+      "image": "giant-miner.png",
+      "sources": [
+        "TFGiantRenderer.java",
+        "GiantMiner.java",
+        "ArmoredGiant.java",
+        "giant_tool_base.json",
+        "giant_pickaxe.json",
+        "giant_sword.json",
+        "vanilla/fwp.java",
+        "vanilla/steve.png",
+        "vanilla/stone_pickaxe.png"
+      ],
+      "notes": "Skin vanilla Steve escolhida explicitamente, PlayerModel normal. Skin real dinâmica não confirmada. Equipamento padrão, sprite e transform giant_tool_base; pose inicial sem animação.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/giant-miner.png"
+    },
+    {
+      "entity_id": "twilightforest:armored_giant",
+      "image": "armored-giant.png",
+      "sources": [
+        "TFGiantRenderer.java",
+        "GiantMiner.java",
+        "ArmoredGiant.java",
+        "giant_tool_base.json",
+        "giant_pickaxe.json",
+        "giant_sword.json",
+        "vanilla/fwp.java",
+        "vanilla/steve.png",
+        "vanilla/iron_layer_1.png",
+        "vanilla/iron_layer_2.png",
+        "vanilla/stone_sword.png"
+      ],
+      "notes": "Skin vanilla Steve escolhida explicitamente, PlayerModel normal. Skin real dinâmica não confirmada. Equipamento padrão, sprite e transform giant_tool_base; pose inicial sem animação.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/armored-giant.png"
+    },
+    {
+      "entity_id": "twilightforest:snow_guardian",
+      "image": "snow-guardian.png",
+      "sources": [
+        "SnowGuardian.java",
+        "SnowGuardianRenderer.java",
+        "NoopModel.java",
+        "steeleaf_sword.json",
+        "vanilla/handheld.json",
+        "steeleaf_layer_1.png",
+        "steeleaf_sword.png"
+      ],
+      "notes": "Variante de equipamento steeleaf; capacete, peitoral e espada; corpo invisível; sem calças ou botas. Pose inicial e transform handheld.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/snow-guardian.png"
+    },
+    {
+      "entity_id": "twilightforest:blockchain_goblin",
+      "image": "block-and-chain-goblin.png",
+      "sources": [
+        "BlockChainGoblinModel.java",
+        "SpikeBlockModel.java",
+        "ChainModel.java",
+        "BlockChainGoblinRenderer.java",
+        "BlockChainGoblin.java",
+        "BlockChainRenderer.java",
+        "TFEntities.java",
+        "SpikeBlock.java",
+        "TFPart.java",
+        "vanilla/bsu.java",
+        "blockgoblin.png",
+        "block_and_chain.png"
+      ],
+      "notes": "Goblin + SpikeBlock + quatro links reais. Posição do bloco segue estado escolhido angle0/distance.9. Âncora com eyeHeight do goblin 1.4*.85 e do bloco .75*.85; interpolação vertical reduzida pela metade conforme renderer.",
+      "original_source": "output-final/twilight-imagens-completas.zip::imagens/block-and-chain-goblin.png"
+    }
+  ],
+  "commit": "008085c660f1f9fc9aad6376ea0dc8080b3c0629",
+  "method": "Representações técnicas anteriores preservadas; fontes e limitações nos relatórios originais"
+}

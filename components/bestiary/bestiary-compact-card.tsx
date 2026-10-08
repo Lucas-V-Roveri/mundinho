@@ -73,6 +73,8 @@ export function BestiaryCompactCard({
             )}
           </div>
           {revealed && hasImage && entry.imageSourceUrl ? <a href={entry.imageSourceUrl} target="_blank" rel="noreferrer" className="mt-2 block text-center font-label text-base text-blue-700 underline">Fonte da imagem</a> : null}
+          {revealed && entry.audit && !entry.imageUrl ? <p className="mt-2 text-xs leading-5 text-ink-700">{entry.audit.rows[0].Imagem}</p> : null}
+          {revealed && entry.audit?.rows[0]["Fonte da imagem"].startsWith("Exemplo") ? <p className="mt-2 text-xs leading-5 text-ink-700">Exemplo masculino; aparência e tipo real dependem da entidade restaurada.</p> : null}
           <div className="mt-2 flex flex-wrap gap-1">
             <Tag tone={seen ? "success" : "neutral"}>{seen ? "visto" : "não visto"}</Tag>
             {revealed ? <Tag tone={dangerTone(entry.danger)}>{entry.danger}</Tag> : null}
@@ -157,6 +159,8 @@ export function BestiaryCompactCard({
                   );
                 })}
               </div>
+
+              {entry.audit && entry.notes?.length ? <details className="mt-4 border-t-2 border-stone-500 pt-3"><summary className="cursor-pointer font-label text-lg text-wood-700">Notas de versão / limites</summary><ul className="mt-2 list-disc space-y-2 pl-5 text-xs leading-5">{entry.notes.map((note) => <li key={note}>{note}</li>)}</ul></details> : null}
 
               <details className="mt-4 border-t-2 border-stone-500 pt-3">
                 <summary className="cursor-pointer font-label text-lg text-wood-700">Fontes</summary>

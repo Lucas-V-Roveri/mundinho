@@ -27,6 +27,17 @@ function catalog(before = false) {
 const entries = catalog();
 const prior = catalog(true);
 const bomd = entries.filter(e => e.mod === 'Bosses of Mass Destruction');
+test('MCA keeps the unconfirmed Raider and distinguishes resurrection, inventory and unconfirmed native loot', () => {
+  const raider = entries.find(e => e.id === 'mca-raider');
+  const tombstone = entries.find(e => e.id === 'mca-villager-revive-tombstone');
+  if (!tombstone.audit) return;
+  assert.equal(raider.status, 'não documentado');
+  assert.equal(raider.imageUrl, undefined);
+  assert.ok(tombstone.imageAlt.includes('Exemplo masculino'));
+  assert.ok(tombstone.drops.some(d => d.condition.includes('Tipo final vem do NBT')));
+  assert.ok(tombstone.drops.some(d => d.namePt.includes('preexistentes')));
+  assert.ok(tombstone.drops.some(d => d.namePt.includes('drop ativo não confirmado') && d.confidenceDetail.includes('Exceção')));
+});
 test('each integrated group covers every audited mob and row without duplicate associations', () => {
   const coverage = JSON.parse(fs.readFileSync(path.join(root, 'data/bestiary-audit-coverage.json'), 'utf8'));
   const groups = new Map();
@@ -86,7 +97,7 @@ test('each integrated audit preserves its fourteen fields, reward uses and faith
     for (const drop of e.drops) if (drop.guideHref) assert.ok(drop.guideHref.startsWith('https://minecraft.wiki/'));
   }
 });
-test('the canary enriches existing IDs without recreating the catalog or changing other groups', () => {
+test('migration preserves all 431 IDs, registry IDs, tracking flags and unaudited cards', () => {
   assert.equal(entries.length, 431);
   assert.deepEqual(entries.map(e=>e.id), prior.map(e=>e.id));
   for (const e of entries) { const old = prior.find(x=>x.id===e.id); assert.equal(e.registryId, old.registryId); assert.deepEqual(e.track, old.track); if (!e.audit) assert.deepEqual(e, old); }
