@@ -1,0 +1,867 @@
+{
+  "project": "Mundinho pra sempre",
+  "mod": "The Aether",
+  "version": "1.5.10",
+  "tag": "1.21.1-1.5.10-neoforge",
+  "commit": "04875348b64822eb5c5dcd344cbc9dddfb39e06f",
+  "method": "Renderização técnica ortográfica das malhas Java originais com hierarquia, pivôs, espelhos, deformações, escalas UV e repetição de textura. Poses e estados selecionados estão descritos por mob. Whirlwinds são representações de partículas, sem corpo inventado.",
+  "limits": [
+    "Sem execução do jogo ou captura in-game.",
+    "Animações dinâmicas gerais, lightmap e pós-processamento do Minecraft não executados. Foram aplicadas correções de pose explicitamente descritas nos cards.",
+    "Camadas de brilho e transparência coplanares compostas no espaço UV; não reproduz integralmente os shaders.",
+    "Whirlwinds: trajetória e emissão com entidade imóvel, amostras válidas de vida/tamanho/cor; RNGJava, colisões e ordem do motor não reproduzidos.",
+    "Escala absoluta normalizada no enquadramento; Fire Minion e Sun Spirit compartilham malha/textura e permanecem em arquivos distintos.",
+    "Variantes clássicas, skins/perks, bebês, itens de montaria, estados críticos e outros easter eggs fora deste lote."
+  ],
+  "minecraft_reference": {
+    "version": "1.21.1",
+    "client_jar_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+    "source": "JAR oficial Mojang e mappings do cliente, decompilados com CFR0.152",
+    "decompiler_url": "https://www.benf.org/other/cfr/cfr-0.152.jar",
+    "decompiler_sha256": "f686e8f3ded377d7bc87d216a90e9e9512df4156e75b06c655a16648ae8765b2",
+    "classes": {
+      "PigModel": "fwm",
+      "CowModel": "fvd",
+      "QuadrupedModel": "fwu",
+      "SlimeModel": "fxi",
+      "CubeDefinition": "fyn",
+      "Particle": "gcn",
+      "SingleQuadParticle": "gda",
+      "TextureSheetParticle": "gdn",
+      "MutableSpriteSet": "gcp$b",
+      "AbstractTexture": "gpw",
+      "SimpleTexture": "gqe"
+    },
+    "files": {
+      "gpw.java": {
+        "sha256": "1dd6180c4d623d580624ff9e59fe2ef4680ec51b41726a0685210d6833709e9f"
+      },
+      "gcn.java": {
+        "sha256": "b1c363bac5585599996c48ddb5f4c57944e55259a79fc449d0a3cc4544eeb8a6"
+      },
+      "fyn.java": {
+        "sha256": "380d34ffc775307e987aab4a4ac57860443b043c959454a4426c5f770684abed"
+      },
+      "generic_7.png": {
+        "sha256": "858a9804aef73be823a616e0faf518ee425421a20ffbb68f2a686ac76c017ca3"
+      },
+      "gcp$b.class": {
+        "sha256": "05eb14eb9118c4075584cf45202a19bac589c09c9acb9f94eb4e2d8236ffcda8"
+      },
+      "generic_3.png": {
+        "sha256": "0988037438acb1dab7e583e6e17dbdc0d47c51721d237ea628311fc7ae3e355a"
+      },
+      "gqe.class": {
+        "sha256": "9ea2f66991597d4cb5765cd77cff4d76c4799b3e7b3f445809e3c184096fa806"
+      },
+      "fvd.java": {
+        "sha256": "6c8c4f9259c1e30b8e913a9975481eb7e9e74bd77d7f36bb9908f3e791790a25"
+      },
+      "fwm.class": {
+        "sha256": "ceb45bffe5eea02fc41575716916943c4142a74cf8aaa65815503d5a2a68ccc8"
+      },
+      "generic_0.png": {
+        "sha256": "040799acfd2e753632cef5642ab07e0182a973cc990cbfcb6bf7d201f10cfa03"
+      },
+      "fxi.class": {
+        "sha256": "85b48cdaa979f1d4da202f94a7107eb6d66361a37765792671854728aae6a3ca"
+      },
+      "generic_4.png": {
+        "sha256": "2cacbc3e1b3297b34997fdb46aa35bbc3597d4f1a608f7412aa843a22bfb4a28"
+      },
+      "gcn.class": {
+        "sha256": "ca916635130e768550fd98e81f519c2f08297eba7197a247078891a03a3b1b4c"
+      },
+      "gda.java": {
+        "sha256": "2ee750da436e67109bec4544873e13da13f9eba06f053c2ff3085d74f61fddde"
+      },
+      "gda.class": {
+        "sha256": "e4ca1646e15fc06c0f8dd0a496cd748af3ac5c21778d767f32838d8109277be5"
+      },
+      "gcp$b.java": {
+        "sha256": "c7f27bf740295c4b30517e1e6f10e42437689f6781d57b61e0dfb2fb4a56b869"
+      },
+      "fxi.java": {
+        "sha256": "5902515e7416c3d447e288a4df8e148d290b5626916008f20aaf5ed889569511"
+      },
+      "mappings-used.txt": {
+        "sha256": "cae2d13fbd8f85a75599bd1272e24f5523b864566b79cd32e8646f1040d84951"
+      },
+      "generic_5.png": {
+        "sha256": "ea3bb652d7604349517ceb17061b0007578ff70f86e1adc5e823da767a315fcf"
+      },
+      "fyn.class": {
+        "sha256": "5d3b0b8c7bc39a6bf56c949265b05d31733262a991d67ca6af85c5c5ff6e72e0"
+      },
+      "gdn.class": {
+        "sha256": "8bd934b27a03bdbf274f40c8f941f5425ed93db5b059e409006a4ed5b8ed4c23"
+      },
+      "gqe.java": {
+        "sha256": "6ca7ed9bd9e6e9edee5abc8adbf722e3f577c1d270a566d164b994e60e35f5ff"
+      },
+      "fwu.class": {
+        "sha256": "15685a0272e92183e729332d1cbab30f0858b9e626281f03893cb814edeeb12c"
+      },
+      "generic_1.png": {
+        "sha256": "85fb6789e97a9385e823a6da6f6fbdd376c6e8165a449e8f1613ef34592afb2e"
+      },
+      "fwm.java": {
+        "sha256": "6703f4f5db11c3686e43e67d49d84cd272fe352ba071ddc7a95b5c30e174aa00"
+      },
+      "generic_6.png": {
+        "sha256": "1d0bce47b910d93d60de34deca732abeeea2dcdf0d2ed16bf8881f1f2ee92442"
+      },
+      "generic_2.png": {
+        "sha256": "b685389739d5add8d9240511f15b60e3365262c9e557b80fc3bf352dc30564a2"
+      },
+      "fvd.class": {
+        "sha256": "0284db4635ade17ddd614406b458221fafa64a9eb103e05219acce1f6e8ae26f"
+      },
+      "fwu.java": {
+        "sha256": "efce2e3fb50a89c82e9bd4407177753ac8ab131fe8d82cdc38df749e221cfac3"
+      },
+      "gpw.class": {
+        "sha256": "6e406ab8769042956d6941d41c3fb38586adec8185edc55e257ad1a67e6599b4"
+      },
+      "gdn.java": {
+        "sha256": "81b3d6fdf05e61a0fef607eed68ef057b7fcb62170881a714cb6d6e4b4d1fb31"
+      }
+    }
+  },
+  "images": [
+    {
+      "mob": "Phyg",
+      "entity_id": "aether:phyg",
+      "image": "phyg.png",
+      "notes": "Adulto, sem sela ou easter egg. Corpo herdado do Minecraft1.21.1 (pig); asas abertas, wingFold=1, age=0. Geometria vanilla conferida no JAR oficial via CFR; não é uma simulação de voo. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/QuadrupedWingsModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/PhygRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/phyg/phyg.png",
+        "src/main/resources/assets/aether/textures/entity/mobs/phyg/phyg_wings.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/QuadrupedWingsLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "883a1d42ca5749e045f6f88fa0fee559e88284d6529cc632515d566e74359292"
+    },
+    {
+      "mob": "Flying Cow",
+      "entity_id": "aether:flying_cow",
+      "image": "flying-cow.png",
+      "notes": "Adulto, sem sela ou easter egg. Corpo herdado do Minecraft1.21.1 (cow); asas abertas, wingFold=1, age=0. Geometria vanilla conferida no JAR oficial via CFR; não é uma simulação de voo. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/QuadrupedWingsModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/FlyingCowRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/flying_cow/flying_cow.png",
+        "src/main/resources/assets/aether/textures/entity/mobs/flying_cow/flying_cow_wings.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/QuadrupedWingsLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "784fa0b1f0b5cbbbb7178038a2dec70e69517b62320d12e4bba59b67cecc0061"
+    },
+    {
+      "mob": "Sheepuff",
+      "entity_id": "aether:sheepuff",
+      "image": "sheepuff.png",
+      "notes": "Adulto, lã branca padrão (RGB230/255), não tosquiado e não inflado; pose estrutural e pernas herdadas de QuadrupedModel12. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SheepuffModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SheepuffWoolModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/SheepuffRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/sheepuff/sheepuff.png",
+        "src/main/resources/assets/aether/textures/entity/mobs/sheepuff/sheepuff_wool.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SheepuffWoolLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "700c262f13cba0f6492f424707545399c9b3ab34fdab9d76e36af0da76704c7c"
+    },
+    {
+      "mob": "Moa",
+      "entity_id": "aether:moa",
+      "image": "moa.png",
+      "notes": "Adulto azul, no chão, sem sela e sem skin de perk; geometria original BipedBirdModel e escalas UV0.5×0.5. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/BipedBirdModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/MoaModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/MoaRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/moa/blue_moa.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "2d5dd006c6346787f71fb307615be9180f566d25637de6716e059178e11269fd"
+    },
+    {
+      "mob": "Cockatrice",
+      "entity_id": "aether:cockatrice",
+      "image": "cockatrice.png",
+      "notes": "Adulto no chão, marcações emissivas originais compostas no espaço UV; geometria e UV originais. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/BipedBirdModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/CockatriceModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/CockatriceRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/cockatrice/cockatrice.png",
+        "src/main/resources/assets/aether/textures/entity/mobs/cockatrice/cockatrice_emissive.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/CockatriceMarkingsLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "9faa36fa187d3b1661254c0c0c8f256aff17b010c96fab5d33243f6d43851489"
+    },
+    {
+      "mob": "Aerbunny",
+      "entity_id": "aether:aerbunny",
+      "image": "aerbunny.png",
+      "notes": "Adulto, puffiness=0, pernas em repouso; translação adicional da camada puff aplicada conforme renderToBuffer. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/AerbunnyModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/AerbunnyRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/aerbunny/aerbunny.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "d4f88cb6c5f2dbf3d33dc6ef2e43457e927e6449d826ed5412788ea469c4936b"
+    },
+    {
+      "mob": "Aerwhale",
+      "entity_id": "aether:aerwhale",
+      "image": "aerwhale.png",
+      "notes": "Modelo moderno padrão, corpo completo; sem pack clássico. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/AerwhaleModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/AerwhaleRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/aerwhale/aerwhale.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "5ed4388c71f9b14e4ad0481d6244d6eef070ff04e19b5b8b7f12c36580b3afe4"
+    },
+    {
+      "mob": "Blue Swet",
+      "entity_id": "aether:blue_swet",
+      "image": "blue-swet.png",
+      "notes": "Sem passageiro; malha interna e camada externa translúcida do SlimeModel1.21.1; deformação dinâmica não executada. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/BlueSwetRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/swet/swet_blue.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SwetOuterLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/SwetRenderer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "dcff142c1a6799abfa67c5aaf077ce58259fecffaf91cb4490e0827b74ba2542"
+    },
+    {
+      "mob": "Golden Swet",
+      "entity_id": "aether:golden_swet",
+      "image": "golden-swet.png",
+      "notes": "Sem passageiro; malha interna e camada externa translúcida do SlimeModel1.21.1; deformação dinâmica não executada. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/GoldenSwetRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/swet/swet_golden.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SwetOuterLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/SwetRenderer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "4bf303833bec3f68d0d6373d65d2b9cdf177e83589c1bdd808d0d332e711a7e7"
+    },
+    {
+      "mob": "Aechor Plant",
+      "entity_id": "aether:aechor_plant",
+      "image": "aechor-plant.png",
+      "notes": "Sem alvo/dano, age=0/headPitch0; distribuição de10folhas,10pétalas e3estames segundo setupAnim. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/AechorPlantModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/AechorPlantRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/aechor_plant/aechor_plant.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "8533ecc7010a458494f12ff9e3716f0db115aa4288959d70f47c71a43d492d05"
+    },
+    {
+      "mob": "Zephyr",
+      "entity_id": "aether:zephyr",
+      "image": "zephyr.png",
+      "notes": "Modelo moderno, age=0/limbSwingAmount0, cauda ajustada por setupAnim; camada translúcida composta UV. Sem carga de ataque e sem pack clássico. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ZephyrModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/ZephyrRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/zephyr/zephyr.png",
+        "src/main/resources/assets/aether/textures/entity/mobs/zephyr/zephyr_layer.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/ZephyrTransparencyLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "f1e8d9c248ceef244d75f86b17d8fbaa4156dfb910c849520851ad71c97b1f2b"
+    },
+    {
+      "mob": "Mimic",
+      "entity_id": "aether:mimic",
+      "image": "mimic.png",
+      "notes": "Textura normal, tampa aberta em age=0 conforme setupAnim; sem retextura Lootr/Natal. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/MimicModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/MimicRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/mimic/normal.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "1a58e3508c69f98a33715bc27652884cea866becee6e58e548fe66ffab2ca9be"
+    },
+    {
+      "mob": "Sentry",
+      "entity_id": "aether:sentry",
+      "image": "sentry.png",
+      "notes": "Acordado, olho emissivo original; SlimeModel outer doMinecraft1.21.1. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/SentryRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/sentry/sentry_lit.png",
+        "src/main/resources/assets/aether/textures/entity/mobs/sentry/eye.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SentryGlowLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "11594ec3fd4e66147de6a60edd51ca92a68170b79047fc716a7e8e345eb85e0b"
+    },
+    {
+      "mob": "Slider",
+      "entity_id": "aether:slider",
+      "image": "slider.png",
+      "notes": "Acordado e não crítico; sem tombamento por movimento, brilho original composto UV. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SliderModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/SliderRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/slider/slider_awake.png",
+        "src/main/resources/assets/aether/textures/entity/mobs/slider/slider_awake_glow.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SliderGlowLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "2ce025b84ee1cd43b1f6df8e612da4fbfaedfb0bc114142b99bf8efe9875f5a7"
+    },
+    {
+      "mob": "Valkyrie",
+      "entity_id": "aether:valkyrie",
+      "image": "valkyrie.png",
+      "notes": "Sem ataque, no chão/age0; asas e espada integradas às malhas originais. Inclui cabelo, ombreiras e seis partes de saia. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieWingsModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/ValkyrieRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/valkyrie/valkyrie.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/ValkyrieWingsLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "1c3a3c5fed6d87a29ac6aed7f0234a43b6fa5420b734a7385134400dbe8c1d3b"
+    },
+    {
+      "mob": "Valkyrie Queen",
+      "entity_id": "aether:valkyrie_queen",
+      "image": "valkyrie-queen.png",
+      "notes": "Sem ataque, no chão/age0; asas e espada integradas às malhas originais. Inclui cabelo, ombreiras e seis partes de saia. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieWingsModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/ValkyrieQueenRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/valkyrie_queen/valkyrie_queen.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/ValkyrieWingsLayer.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "26ea160fa52fd06b3c7bb7b4da8f593140600c5a70ab5fb8478948a3be0d6a87"
+    },
+    {
+      "mob": "Fire Minion",
+      "entity_id": "aether:fire_minion",
+      "image": "fire-minion.png",
+      "notes": "Forma normal, iluminação máxima conforme renderer, sem easter egg congelado; pose estrutural em age0. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SunSpiritModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/FireMinionModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/FireMinionRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/sun_spirit/sun_spirit.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "60f0d8d699d79909a7903d3d0bd3153a00451234dcdf564df6018ee18617700f"
+    },
+    {
+      "mob": "Sun Spirit",
+      "entity_id": "aether:sun_spirit",
+      "image": "sun-spirit.png",
+      "notes": "Forma normal, iluminação máxima conforme renderer, sem easter egg congelado; pose estrutural em age0. Renderização técnica ortográfica; escala normalizada por mob, sem execução do jogo.",
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SunSpiritModel.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/SunSpiritRenderer.java",
+        "src/main/resources/assets/aether/textures/entity/mobs/sun_spirit/sun_spirit.png",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java",
+        "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+      ],
+      "sha256": "60f0d8d699d79909a7903d3d0bd3153a00451234dcdf564df6018ee18617700f"
+    },
+    {
+      "mob": "Whirlwind",
+      "entity_id": "aether:whirlwind",
+      "image": "whirlwind.png",
+      "notes": "Entidade sem malha própria: WhirlwindRenderer não desenha um corpo. Representação técnica da emissão e trajetória das partículas originais, whirlwind imóvel na origem, frame110, sem colisões. 62 partículas vivas; 2 emissões/tick; sprites Minecraft generic7→0. Sorteios válidos com seed1211 para dimensões, vida e cor branca padrão. Não é screenshot nem simulação completa do motor; ordem de desenho e iluminação do jogo não executadas.",
+      "particle_simulation": {
+        "seed": 1211,
+        "frame": 110,
+        "source": "AbstractWhirlwindParticle.tick",
+        "collision": "none",
+        "random": "Python.Random, amostras nos intervalos do código; não reproduz o RNG Java"
+      },
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/WhirlwindRenderer.java",
+        "src/main/java/com/aetherteam/aether/entity/monster/AbstractWhirlwind.java",
+        "src/main/java/com/aetherteam/aether/entity/monster/PassiveWhirlwind.java",
+        "src/main/java/com/aetherteam/aether/client/particle/AbstractWhirlwindParticle.java",
+        "src/main/java/com/aetherteam/aether/client/particle/PassiveWhirlwindParticle.java",
+        "src/main/resources/assets/aether/particles/passive_whirlwind.json",
+        "minecraft:assets/minecraft/textures/particle/generic_0.png",
+        "minecraft:assets/minecraft/textures/particle/generic_1.png",
+        "minecraft:assets/minecraft/textures/particle/generic_2.png",
+        "minecraft:assets/minecraft/textures/particle/generic_3.png",
+        "minecraft:assets/minecraft/textures/particle/generic_4.png",
+        "minecraft:assets/minecraft/textures/particle/generic_5.png",
+        "minecraft:assets/minecraft/textures/particle/generic_6.png",
+        "minecraft:assets/minecraft/textures/particle/generic_7.png"
+      ],
+      "sha256": "ce38832eebfea4a597fce1d1509656e4757054d227f6a83769007d1bda197c7d"
+    },
+    {
+      "mob": "Evil Whirlwind",
+      "entity_id": "aether:evil_whirlwind",
+      "image": "evil-whirlwind.png",
+      "notes": "Entidade sem malha própria: WhirlwindRenderer não desenha um corpo. Representação técnica da emissão e trajetória das partículas originais, whirlwind imóvel na origem, frame110, sem colisões. 152 partículas vivas; 3 emissões/tick; sprites Minecraft generic7→0. Sorteios válidos com seed1211 para dimensões, vida e tons cinza0–0.3. Não é screenshot nem simulação completa do motor; ordem de desenho e iluminação do jogo não executadas.",
+      "particle_simulation": {
+        "seed": 1211,
+        "frame": 110,
+        "source": "AbstractWhirlwindParticle.tick",
+        "collision": "none",
+        "random": "Python.Random, amostras nos intervalos do código; não reproduz o RNG Java"
+      },
+      "sources": [
+        "src/main/java/com/aetherteam/aether/client/renderer/entity/WhirlwindRenderer.java",
+        "src/main/java/com/aetherteam/aether/entity/monster/AbstractWhirlwind.java",
+        "src/main/java/com/aetherteam/aether/entity/monster/EvilWhirlwind.java",
+        "src/main/java/com/aetherteam/aether/client/particle/AbstractWhirlwindParticle.java",
+        "src/main/java/com/aetherteam/aether/client/particle/EvilWhirlwindParticle.java",
+        "src/main/resources/assets/aether/particles/evil_whirlwind.json",
+        "minecraft:assets/minecraft/textures/particle/generic_0.png",
+        "minecraft:assets/minecraft/textures/particle/generic_1.png",
+        "minecraft:assets/minecraft/textures/particle/generic_2.png",
+        "minecraft:assets/minecraft/textures/particle/generic_3.png",
+        "minecraft:assets/minecraft/textures/particle/generic_4.png",
+        "minecraft:assets/minecraft/textures/particle/generic_5.png",
+        "minecraft:assets/minecraft/textures/particle/generic_6.png",
+        "minecraft:assets/minecraft/textures/particle/generic_7.png"
+      ],
+      "sha256": "02ea66ef4274d51b4eed3781e2b7f9571be44c4bb03d9e91a74204bb2dce1293"
+    }
+  ],
+  "original_sources": {
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/QuadrupedWingsModel.java": {
+      "git_blob_sha1": "9405d2aea8a8b2fb1984f3db8e4880208454ea9b",
+      "sha256": "db082011a3054dc04f588619b0642bb1135fdefb949192421368c8412b85014c",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/QuadrupedWingsModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/PhygRenderer.java": {
+      "git_blob_sha1": "342d72f25e91ccc58e03578e2a6200101d4b1f46",
+      "sha256": "a86d2fae73c4304773e4bab8431648c3bfd791439a76dd8df827dbf995a28d58",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/PhygRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/phyg/phyg.png": {
+      "git_blob_sha1": "a36ee41b386e281c792286c419f76f5bf65701b4",
+      "sha256": "edec0ecc36d5b5deb69cba0ab50104a2bf1982baa4c6fe606b31fc6c59d71803",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/phyg/phyg.png"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/phyg/phyg_wings.png": {
+      "git_blob_sha1": "fdd7856033d79325998b94098752df8bdfd11b5e",
+      "sha256": "05445c70cb431a53bddc006524b167b53baa1f00f1fdef57d2e6eff07c5ad9e6",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/phyg/phyg_wings.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/QuadrupedWingsLayer.java": {
+      "git_blob_sha1": "56bc5593e95fb52b2c724c1c6290584a4b32e3eb",
+      "sha256": "10ccfc5cd209b786267a8af9f38d8e997560b4bffde42225c4f2c2f03c44b533",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/QuadrupedWingsLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java": {
+      "git_blob_sha1": "5474d8ac0d31547a8a1fb439482ea3a6010d37af",
+      "sha256": "44e728021833f35f27ff82a9d3f6c077f40165901962008487c9ddc027b4576d",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/AetherRenderers.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java": {
+      "git_blob_sha1": "03c34b05e7e2c0ff53c373b08b589b581a3476f5",
+      "sha256": "d73f6ab72c303624f89936bd25d5e808441dd89c4d0923d24eeb35e57859ced0",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/AetherModelLayers.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/FlyingCowRenderer.java": {
+      "git_blob_sha1": "e7bea7f83f77f2b460fb67928100ac2bdb5f574b",
+      "sha256": "c9c8a71778e1a73858446c44ee5683f6b51c3b2a490137ef63cf5e5260317954",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/FlyingCowRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/flying_cow/flying_cow.png": {
+      "git_blob_sha1": "39dd7a6f6b68ad84a72ef147308964577028ff88",
+      "sha256": "20449179b8bf06e4e9d92e4f98522bc0ef6cfeb01ae2dbd707234979b23f4c93",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/flying_cow/flying_cow.png"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/flying_cow/flying_cow_wings.png": {
+      "git_blob_sha1": "31977a66fb91289635f05861a9ef61b4d4f37595",
+      "sha256": "b7bb6a2c1067ee3bbc5e6d5361f7e464d40303fe25d3f8a1b0a725319131197f",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/flying_cow/flying_cow_wings.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SheepuffModel.java": {
+      "git_blob_sha1": "364f6550605727b738afb4cfd30507a82277acb2",
+      "sha256": "af77e2f3ee1000881f8aa43728c6b88c78f72e7a0609f246b3a521f6395cde29",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/SheepuffModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SheepuffWoolModel.java": {
+      "git_blob_sha1": "dc63214a1616a14951908446742889f75bbf3777",
+      "sha256": "9a36456af741c2cd6caab2e524f3b3f5f4586554b9b7273263a12f70b5957f50",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/SheepuffWoolModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/SheepuffRenderer.java": {
+      "git_blob_sha1": "8f657f516f0f5619d981244232161033f1b90684",
+      "sha256": "386229dc27db8b6cc4b7428e2876ee7b33bf96d137bf98e784e20d5052ca6ce1",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/SheepuffRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/sheepuff/sheepuff.png": {
+      "git_blob_sha1": "5019c05f21ef9cfe366d6baa9aef605d396b0a50",
+      "sha256": "a0e6f92bec472837d6e23a2743f4de6f2751019a5e501f3ff4cc03072c3ff629",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/sheepuff/sheepuff.png"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/sheepuff/sheepuff_wool.png": {
+      "git_blob_sha1": "1fa956fa093418935920b7b48f96888489b99d37",
+      "sha256": "239fafc1c25a0bcf779bb4ee7bff5442ddd2d2a57e0db08148ff5d94f02e1b05",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/sheepuff/sheepuff_wool.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SheepuffWoolLayer.java": {
+      "git_blob_sha1": "c89cefb6906ef713c533c6b80a56d4f23d6268f8",
+      "sha256": "96113a0329c7e2deed18c3a4f5ffe93b643b589cadbcd5a96c2d6712f8a13342",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SheepuffWoolLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/BipedBirdModel.java": {
+      "git_blob_sha1": "bb4bd94d574c2b3221e025590bed122734dfba06",
+      "sha256": "ee9d0546e1520f0f0c56b69c59f779fa42a800ab5532fbc93d69b0fdad2c6a9a",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/BipedBirdModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/MoaModel.java": {
+      "git_blob_sha1": "a301b8ddb86232bb6435c00b465c67391d60bbed",
+      "sha256": "d7c71f54981037e5a05f954190a51274bf4a620e7bfdb209f78453809e840768",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/MoaModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/MoaRenderer.java": {
+      "git_blob_sha1": "6550764d07e9d1c6769273ec816033edbc9e3421",
+      "sha256": "4136a9a53be96067ad3237775bb6473a4f0607cc3c27a224dd3ce2e433e8a764",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/MoaRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/moa/blue_moa.png": {
+      "git_blob_sha1": "23211403f1f783df200c289d4c5566d517280cff",
+      "sha256": "3f3f2c4edf907725dfc332c86ad8d69733e1ba224b524d6a12f1a4a5b846792c",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/moa/blue_moa.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/CockatriceModel.java": {
+      "git_blob_sha1": "78e6d29c75c2c427e89056119ea53d5450a711d1",
+      "sha256": "28333b16c8e2ca6204e8962f15cf3bb8893996228bc6379cdfe017e504510c61",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/CockatriceModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/CockatriceRenderer.java": {
+      "git_blob_sha1": "f20f78561ff3b152a27eb23107caaae6fb525e83",
+      "sha256": "7b3431fee745bc2756326d11b86181e78d5aa14337810de16c629be1e299f3a4",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/CockatriceRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/cockatrice/cockatrice.png": {
+      "git_blob_sha1": "05f6192b1e88ffa649f2a5f4212e9bf89ef2f53d",
+      "sha256": "f6e8cee1124050e5865190612bab9fa7a27c8fa1d2b4c98d768ea5048febafcf",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/cockatrice/cockatrice.png"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/cockatrice/cockatrice_emissive.png": {
+      "git_blob_sha1": "0f72ed3757e803a9831f5e0c76735d7da77d0e91",
+      "sha256": "ebb6aa4b4c3738ce127d578336149406a2d58a893d9444351f1af994c4cf5497",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/cockatrice/cockatrice_emissive.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/CockatriceMarkingsLayer.java": {
+      "git_blob_sha1": "3b744f7d8de2491d9c27a89f1e3f014310b3e768",
+      "sha256": "f57e57173173a2643ff9072b0e5416cddf24a7964afc8f6eac323f8980f15a36",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/CockatriceMarkingsLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/AerbunnyModel.java": {
+      "git_blob_sha1": "c2f0612c30638a745e48cf789dc40396b81aa4e7",
+      "sha256": "cb784699b3c573d8f5e05903ebd2353e803c0b769269c5c7579ad758d7e15bfa",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/AerbunnyModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/AerbunnyRenderer.java": {
+      "git_blob_sha1": "88b2f5af2a9c79416f854a85a465b69a98c981fd",
+      "sha256": "627c9664e9fa235f570dea45f18f1cc78f4a20adcf8ae360a78308e2c1193364",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/AerbunnyRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/aerbunny/aerbunny.png": {
+      "git_blob_sha1": "d87c6bf65a4626da644bf2be7859cc6b343ada65",
+      "sha256": "5137e8c26ef00b76bcf3b734d0c0087784df941f774c69d040556400a7eca6c9",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/aerbunny/aerbunny.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/AerwhaleModel.java": {
+      "git_blob_sha1": "7171d0fa1974a8851b13b5b0b1366709cb5a0c5e",
+      "sha256": "c9a3f694e54e021a73cc0ce449722029941dab93e5d944dcf4b6093dcd714f41",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/AerwhaleModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/AerwhaleRenderer.java": {
+      "git_blob_sha1": "126342e88e98db64edc224861039901dde0d2b53",
+      "sha256": "d549f83da9663a08cf5fe27f459222dba8a249e32f42b4ea0f026b2a6433d477",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/AerwhaleRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/aerwhale/aerwhale.png": {
+      "git_blob_sha1": "49cffd32cacf1a7533fa39444df5f3b9f9332827",
+      "sha256": "db777ee5895615caa6eeb66242d6a0d0a25e4de2c7db5386a3727b23e91c2699",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/aerwhale/aerwhale.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/BlueSwetRenderer.java": {
+      "git_blob_sha1": "cc808c416d393cac2c244fad81f60d7f60954588",
+      "sha256": "e23498af078b31750eb64282110bc8b458b1d4bda47e033333b0dd773c11ae88",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/BlueSwetRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/swet/swet_blue.png": {
+      "git_blob_sha1": "3926da6b915edc0db1f4e92a40b37aea58e9ca0c",
+      "sha256": "cb868c8d7f93873023100ffc10e49a8a3c9b03638841545fe9e30f8ce20fd6a4",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/swet/swet_blue.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SwetOuterLayer.java": {
+      "git_blob_sha1": "829c892cce7aabcd51feb16560473d21913f6541",
+      "sha256": "f2e6883be9b0b7d466a5250620907c25ecfdd4b478cd9f263e18d908c4519bc2",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SwetOuterLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/SwetRenderer.java": {
+      "git_blob_sha1": "63d01ea3afca15d0df03166e3329a29ada1bfef5",
+      "sha256": "9ecac673db00e151d4ed08686d3babfe48d121f84b7cc65d005a61150da018fa"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/GoldenSwetRenderer.java": {
+      "git_blob_sha1": "fde7993deefedd423f0db4204cfc6e4ab253fd39",
+      "sha256": "203c6b2f2c562c7d93961c6a218fc48c86de011bbd102450f920d66b96d16777",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/GoldenSwetRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/swet/swet_golden.png": {
+      "git_blob_sha1": "3c7d5ab21ba410aeee245279b7322c867a8a8071",
+      "sha256": "3226f2da1fae104917e99c65cbdbf9dfb496f198afd3a04b90637bdd57cbb348",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/swet/swet_golden.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/AechorPlantModel.java": {
+      "git_blob_sha1": "5b58e7fc95868ea90971af7cb16d42006af3fe74",
+      "sha256": "a8d16c7771f8446e4b8827b48515e2c3ee33471824d507341567176ae5a7f8c2",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/AechorPlantModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/AechorPlantRenderer.java": {
+      "git_blob_sha1": "1e162c7c323f9680fb577b500e8da6aad7d3dda8",
+      "sha256": "27bc3ba45f2f0a0911ab677db7eb1f8321d25df1468a07819d5d88f29e017878",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/AechorPlantRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/aechor_plant/aechor_plant.png": {
+      "git_blob_sha1": "9663d068b01f5c27959c1a0112364b7e7839a389",
+      "sha256": "7b26d9baf007f0df5fb76b223944f7402eacedbe2a9294606543bcf0d229da66",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/aechor_plant/aechor_plant.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ZephyrModel.java": {
+      "git_blob_sha1": "71fc03c6943dd2bc8e7f50c40c737638888334bb",
+      "sha256": "4af48e1fbc503106ae06aae2153b1b0c8a924b9516c43b1b3062bdb822aa21e2",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/ZephyrModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/ZephyrRenderer.java": {
+      "git_blob_sha1": "fd9f412e9892d1ca5aac38cef76413a81504ce02",
+      "sha256": "6a0dd89295b3c645fb2bd9e4f9be9185cc8b3c6165617e284063e2f60ab308f0",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/ZephyrRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/zephyr/zephyr.png": {
+      "git_blob_sha1": "6a82d1b5587316d818d7a8c0ddbab3f2c4334524",
+      "sha256": "ae2118e816654cff8161ab5c6c6b337e72a21f44778bc4d14836edfef66e3b9f",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/zephyr/zephyr.png"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/zephyr/zephyr_layer.png": {
+      "git_blob_sha1": "b8d76c79f37d8dc2926a6b34a197afecfe92971a",
+      "sha256": "02fffbbf0f31fdfd58250ab22a605c0b4804a58cc212fb3f7cb8317354acaf09",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/zephyr/zephyr_layer.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/ZephyrTransparencyLayer.java": {
+      "git_blob_sha1": "c7eddcd8294475df0a77e7c2b6d0d0895c5db306",
+      "sha256": "3b0b91602acfe3fa5716bfcd901b041a7900ec897e808688ac02c87b5cfdff7c",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/ZephyrTransparencyLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/MimicModel.java": {
+      "git_blob_sha1": "f3335ade49d9bab2c189472ba36b16f43d2fc7b5",
+      "sha256": "f4149a60625ebec8482bdb94f61a21106d1e17e0174ce79af5efe6bce04804aa",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/MimicModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/MimicRenderer.java": {
+      "git_blob_sha1": "ef376737727d173ff3cc406d2c06321e731a8900",
+      "sha256": "de3240385563cf77eef7bf56a4fd77f40765573ddf29a977d027a416b2caa154",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/MimicRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/mimic/normal.png": {
+      "git_blob_sha1": "9a1b021e3d1c508f385b5a15fc667cb5d5d4294c",
+      "sha256": "b9fb3201f2fae23eb7ba4e599a7e7824b0aaa49cb7d5245537e8773f50115521",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/mimic/normal.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/SentryRenderer.java": {
+      "git_blob_sha1": "a77cff728d84e0b1873a714b2c536be054ae6c26",
+      "sha256": "a1774c56d9231f90b3a0faad6e10e5a5ae41a4e75734bed05413267b838dbd21",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/SentryRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/sentry/sentry_lit.png": {
+      "git_blob_sha1": "88126b61e0fa0c706b0e9d15c464f96693a4738e",
+      "sha256": "0cc2ccc8d4aad40fd5b7a5cfc02b470a2ef22cb0549741fa1ba8eb15acf99f2f",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/sentry/sentry_lit.png"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/sentry/eye.png": {
+      "git_blob_sha1": "3bd08679110ac36e9448e06f2d19372c57a5e83e",
+      "sha256": "17a18caedd587352caf4d8b826609d3e9125cd7230318df32c4dfa92d1cd4e4d",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/sentry/eye.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SentryGlowLayer.java": {
+      "git_blob_sha1": "437850821f10256418c256671203efc10d838e22",
+      "sha256": "1888c13657da3fbf0c330a61acceb674013c517def36ac3ca6b22226a291f7b2",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SentryGlowLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SliderModel.java": {
+      "git_blob_sha1": "dbb14ed312c2d7c87fddb17019abacee347f33d9",
+      "sha256": "0727120dfb7712896c8a3ea2b7b2444788d08ba045a2bf19f5f93f9be4426a86",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/SliderModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/SliderRenderer.java": {
+      "git_blob_sha1": "1937feacf3900dac15551d17c3fd2c2366b72d60",
+      "sha256": "b3776bbd0734f17c2c97f20248865fe84024a0034bc01bae4bcc0d65d4f8ad2e",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/SliderRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/slider/slider_awake.png": {
+      "git_blob_sha1": "bd2996a5911fcb74d6499d93311236caa2b63247",
+      "sha256": "a1a7e04955711b8888fd102a5ab0152eacf14a5a541c4faeda121154231b2f2a",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/slider/slider_awake.png"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/slider/slider_awake_glow.png": {
+      "git_blob_sha1": "48a22081223ea97d348e2347373225b6efd37086",
+      "sha256": "062351b9614611dedb807c8dd4a0f9be8a64e2b08d88d32926fdead27f0014dd",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/slider/slider_awake_glow.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SliderGlowLayer.java": {
+      "git_blob_sha1": "106da1fc03024b644aa31c29ec4b671703fa6384",
+      "sha256": "190b75021578346773013e04d7437ea508305305b168b873578c6348bf1ed6dc",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/SliderGlowLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieModel.java": {
+      "git_blob_sha1": "c8aaac9e5f4ba92fec514c2a11ca8e8def9c9925",
+      "sha256": "55892911cc4e7c4a87ac9eb0170405eea7b32c72391d1a4a1a5a87d52ebfef8c",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieWingsModel.java": {
+      "git_blob_sha1": "a43df1b30fc3e1c10e478e44ab09b23a702323eb",
+      "sha256": "355ad50390c213a6e39b98e0533399cf9574224cc9a7771999d30ca23e0b3805",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/ValkyrieWingsModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/ValkyrieRenderer.java": {
+      "git_blob_sha1": "41eb24090575cf3fed72090d28ca691bb25ef9cb",
+      "sha256": "dcba264cf1426293657ecfc8aebaa63a068723170e3062cd40567cb2d14f9d38",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/ValkyrieRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/valkyrie/valkyrie.png": {
+      "git_blob_sha1": "81dfe296d13e6a84ff287535de70c597e37263d2",
+      "sha256": "ff359969745d6b744ebe6c5b3c81b7bd1bf3518f0bd71d1aab47eaa568d47df3",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/valkyrie/valkyrie.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/layers/ValkyrieWingsLayer.java": {
+      "git_blob_sha1": "973688f3f296ce15a536bb2ab506a74460175bcb",
+      "sha256": "af1ba8a2ad16f6002645360af5a2119c726e14e5be328607fa1e736925e8a92d",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/layers/ValkyrieWingsLayer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/ValkyrieQueenRenderer.java": {
+      "git_blob_sha1": "cb419dc9fb61d2b1982ae5b48f9d1ff0eb759ef5",
+      "sha256": "2933ebbfae43bcd920bba4297a5dd4a202ae9382f0451a81d630366288fb392d",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/ValkyrieQueenRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/valkyrie_queen/valkyrie_queen.png": {
+      "git_blob_sha1": "5e89537322509eccf418ada9db4b8b7fe3fcdd78",
+      "sha256": "c84ad72a08e69b72d8199ea7c1d55d75e81cfaaa9e277fa550ec1eccd9723fb0",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/valkyrie_queen/valkyrie_queen.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/SunSpiritModel.java": {
+      "git_blob_sha1": "73194aced67c06e0064271a6f902e46200e7fed3",
+      "sha256": "6ca049183445d22520f8a5fb9c78c7b0bcbeaa286d6f71268644ddd4e82e5541",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/SunSpiritModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/model/FireMinionModel.java": {
+      "git_blob_sha1": "547787932ba8322d0bcdd28814058348a313d0dd",
+      "sha256": "68fd06e14daeef3a50eb133845779685dec9be88522161018627bb6bae042598",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/model/FireMinionModel.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/FireMinionRenderer.java": {
+      "git_blob_sha1": "a27bf5527fffce1c1b7ec84484b04dd3d8fc0cf8",
+      "sha256": "598c429613d49e40fd92c5cad70f187dfc1f396e262771c838e60067e5700ee0",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/FireMinionRenderer.java"
+    },
+    "src/main/resources/assets/aether/textures/entity/mobs/sun_spirit/sun_spirit.png": {
+      "git_blob_sha1": "7cc5cc32a398e61586a80fdaac9d63fe6ebf2cde",
+      "sha256": "0d0a6578e34a809a0838cc4333d6196bdc6355eb0d7f0f33a0dd0b5cad207817",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/textures/entity/mobs/sun_spirit/sun_spirit.png"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/SunSpiritRenderer.java": {
+      "git_blob_sha1": "1ebda2207e7bba29b2925b77b4ecadafbdd1cb96",
+      "sha256": "7d1a6fabfcde6f6a090fb6b1eb58bbc59e23f08a82a60558d068191bde3aed51",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/SunSpiritRenderer.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/renderer/entity/WhirlwindRenderer.java": {
+      "git_blob_sha1": "029decfa3c2196a20177640d2837bd64af831b1d",
+      "sha256": "0be12d3e465d5aba6ed5d7dbd10abd2a9d72db7432cf3ba613e17331d7cc2b4b",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/renderer/entity/WhirlwindRenderer.java"
+    },
+    "src/main/java/com/aetherteam/aether/entity/monster/AbstractWhirlwind.java": {
+      "git_blob_sha1": "2c89e7edeffa7cef1119671b67ae193e1c447b6a",
+      "sha256": "acfa5abe51926ab029dbd0407657f11b78172a4d499a6cd3b2c2d305aa1f9731",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/entity/monster/AbstractWhirlwind.java"
+    },
+    "src/main/java/com/aetherteam/aether/entity/monster/PassiveWhirlwind.java": {
+      "git_blob_sha1": "bb50d75892966f0f3725e76b6b9fe86721766453",
+      "sha256": "c2c2bf445560c2899e4839fb3042d407d9fd6c2050608a683aa4b26750b726ef",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/entity/monster/PassiveWhirlwind.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/particle/AbstractWhirlwindParticle.java": {
+      "git_blob_sha1": "48dbb8cfd03689a76841d976356f43f841cf6e78",
+      "sha256": "9250e8902437d834f9be8631102133b78425b1fce0fa9d42f6b4a25cdf1580f7",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/particle/AbstractWhirlwindParticle.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/particle/PassiveWhirlwindParticle.java": {
+      "git_blob_sha1": "83e67b3c5f00b702bac4c2a3d319bdc35132bc5a",
+      "sha256": "49b824cf6fc40dc6470b62e3b9a98d8daa17120f604f445708b0131e146e6b8b",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/particle/PassiveWhirlwindParticle.java"
+    },
+    "src/main/resources/assets/aether/particles/passive_whirlwind.json": {
+      "git_blob_sha1": "271261099b2b7f2563042d9b12941fc3b35787b0",
+      "sha256": "6167163ecc541c935260294984013dc0d962e61bcdcbda24e31b2bf283505123",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/particles/passive_whirlwind.json"
+    },
+    "src/main/java/com/aetherteam/aether/entity/monster/EvilWhirlwind.java": {
+      "git_blob_sha1": "51d69eeed93891c9854f12a2b35bf5633740e41e",
+      "sha256": "09e88ebcd19d1ec2bf1dc4b9825a60e01cb97c2c7d1f4f9f79baad7687640943",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/entity/monster/EvilWhirlwind.java"
+    },
+    "src/main/java/com/aetherteam/aether/client/particle/EvilWhirlwindParticle.java": {
+      "git_blob_sha1": "0e652d3be927f709dfcc2d0c586a704b709f5b24",
+      "sha256": "b017b185f7b350ddeb1992080b35725d62f1d861d470f6bcc8fc33dd5f8e2c64",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/java/com/aetherteam/aether/client/particle/EvilWhirlwindParticle.java"
+    },
+    "src/main/resources/assets/aether/particles/evil_whirlwind.json": {
+      "git_blob_sha1": "271261099b2b7f2563042d9b12941fc3b35787b0",
+      "sha256": "6167163ecc541c935260294984013dc0d962e61bcdcbda24e31b2bf283505123",
+      "url": "https://github.com/The-Aether-Team/The-Aether/blob/04875348b64822eb5c5dcd344cbc9dddfb39e06f/src/main/resources/assets/aether/particles/evil_whirlwind.json"
+    },
+    "src/main/java/com/aetherteam/aether/entity/passive/Sheepuff.java": {
+      "git_blob_sha1": "e4b6de5b3295b75e8da5d14960bec3196b65530a",
+      "sha256": "a1143ae88c85adf121041c470448c5824e697e648815d657dea08b12e36b4a7f"
+    },
+    "src/main/java/com/aetherteam/aether/entity/passive/WingedAnimal.java": {
+      "git_blob_sha1": "5afb78f818f707c0bb31e9e04c1300b1279808cc",
+      "sha256": "20f50b8e16a478ca6892ff8cfffe24eff2bd5dbe56d8a21c9f985d77e68c1fa0"
+    }
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "version": "1.8.2 · NeoForge · Minecraft 1.21.1",
+  "status": "18 entradas representadas em 34 PNGs; limites técnicos por imagem preservados",
+  "method": "Malhas e texturas originais do JAR exato, com UV/hierarquia/pivôs. Representações estáticas técnicas, não capturas do jogo.",
+  "pending_entity_ids": [],
+  "pending_reason": null,
+  "limits": [
+    "Postura final do jogo não confirmada quando há correções ou controladores de código não executados; descritos por imagem.",
+    "Montagem adicional auditada com GeckoLib 4.9.2; log disponível é do servidor, não comprova a versão do cliente. Contrato GeoArmorRenderer comparado com 4.8.3.",
+    "Efeitos billboard/partículas não incluídos nas representações das malhas.",
+    "Enquadramento individual normalizado, luz técnica simplificada."
+  ],
+  "minecraft_reference": {
+    "version": "1.21.1",
+    "jar_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88"
+  },
+  "catalog_reference_commit": "7aa17309337cbd4102efc418cba12a4983b1540c",
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "xgAXTl17",
+    "project_id": "BFbX9xcm",
+    "author_id": "cw1lQnpC",
+    "featured": false,
+    "name": "Mowzie's Mobs - 1.8.2",
+    "version_number": "1.8.2",
+    "changelog": "+ Elokosa paws now close when on cooldown\n- Fixed subtitle groupings\n- Gave certain mobs improved water movement speed\n- Damage now only interrupts mob abilities if the damage amount is greater or equal to 3\n- Updated wroughtnaut chamber data version\n- Fix mob abilities being wiped after /data merge command runs\n- Fix baby foliaaths rendering as infants on relog\n- Updated Chinese translations",
+    "changelog_url": null,
+    "date_published": "2026-03-15T06:52:50.101583Z",
+    "downloads": 370704,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "jGFiJS9S",
+        "hashes": {
+          "sha1": "d64475cd77444b056ece6472c79d40293dc63c6c",
+          "sha512": "ab10d2f759df613d5094bac26c5a8bbe144786699018f7e4ae027fc4a86632aa7f96206f2c8be9970338eadef42539614a19b41d0d70b6216c3ed1c4c4421f0a"
+        },
+        "url": "https://cdn.modrinth.com/data/BFbX9xcm/versions/xgAXTl17/mowziesmobs-1.21.1-1.8.2.jar",
+        "filename": "mowziesmobs-1.21.1-1.8.2.jar",
+        "primary": true,
+        "size": 36042925,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "8BmcQJ2H",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  "jar_sha256": "b8e7e39fb6430326de7fbb193db56588ee8bd04d0054527924fe588f37131e4f",
+  "source_files_sha256": {
+    "assets/mowziesmobs/animations/bluff.animation.json": "a1375fee224436982ca55bb6f89bb2f1064c246f704e83a641cb2332644f70c3",
+    "assets/mowziesmobs/animations/elokosa.animation.json": "baa8ae12d560d96a172c66838e0284433ecc884825ec66dc408b07f55429ef76",
+    "assets/mowziesmobs/animations/sculptor.animation.json": "59c2e4bd9b32b49ac213d3654b6bbc71bb44f7bdc4daa8535f98cb215cde5836",
+    "assets/mowziesmobs/animations/umvuthi.animation.json": "23ae6ebacb3e373bbc447171fa05d8e133918ac82642f4986a3c2659670556fd",
+    "assets/mowziesmobs/geo/bluff.geo.json": "ceda25b7b22e88bc4e5353ab715fdb18f25b8bde9503b54ef843e18aae9d77bd",
+    "assets/mowziesmobs/geo/elokosa.geo.json": "74a3f13b537f82c9fbcc219d836aab43868a37a42a1aa2ab0870e68d09c64c5f",
+    "assets/mowziesmobs/geo/sculptor.geo.json": "2f9371774c70400df52abd80fd240c68bc23a1a36b9a2fd82cf570ede7290302",
+    "assets/mowziesmobs/geo/sculptor_staff.geo.json": "44e307ac7b3b2a6928339422446839b600037342cebe660184939bb2185b0a11",
+    "assets/mowziesmobs/geo/umvuthi.geo.json": "35ee50328c82786d6d56e14a85778c4fa85bfc756027c84a6e3ba18bccacfa53",
+    "assets/mowziesmobs/models/item/sculptor_staff.json": "f60d078f21a796044cbc7ec329be1a78f6af044660e11052d413bc04f6c98861",
+    "assets/mowziesmobs/textures/entity/bluff.png": "2eb10ee5e1b06aaf095e3858d389e09d710c296ebc1f9611fb832f66cf9b4044",
+    "assets/mowziesmobs/textures/entity/elokosa.png": "0177b97d6d3fbaa628a13e7408f88712b71bec333c66a9e33c39b0b2c8bd0717",
+    "assets/mowziesmobs/textures/entity/elokosa_elite.png": "07168937a2267173ac912e7ee46002700ab30c02f419cd2ecee58e76db1efb94",
+    "assets/mowziesmobs/textures/entity/elokosa_elite_glowmask.png": "402c664e565cb28102e3caf37e8c9e547e50de5b67d4474ed560b0e0d018f31b",
+    "assets/mowziesmobs/textures/entity/elokosa_glowmask.png": "1cab3e23e19fb1914e03228db66c1f1c7f7967f4a977e63cb86271ea8226e082",
+    "assets/mowziesmobs/textures/entity/elokosa_paw_full.png": "60e748544a4ac5cca4892d30857a117020928c77b8e8b3b702a711494728711a",
+    "assets/mowziesmobs/textures/entity/foliaath.png": "c0b4bdd6b9b85d10c126f4614a388e1e34160ab3db1bfabe2167e828e1ba6195",
+    "assets/mowziesmobs/textures/entity/foliaath_baby.png": "8c0e3a9b66c14e8089aba17553d97970f0e35adcf0dfb045d02406fd4d3a270e",
+    "assets/mowziesmobs/textures/entity/frostmaw.png": "1a70646321fe764f20c20e42797357db4035491ca4181d1573215b776057c168",
+    "assets/mowziesmobs/textures/entity/grottol.png": "32aa300735691c6b3b05715c16a6a4193d155383c351fb7f081e58a868e43b09",
+    "assets/mowziesmobs/textures/entity/grottol_blackpink.png": "be41dc22c669af7babc4417bd8480371a4142ca154dab4c8b11d0ec5dc4210e1",
+    "assets/mowziesmobs/textures/entity/grottol_deepslate.png": "301cb0acb6cee82153b20032f8c42368045b820dcf5bc343ebe2e11ea6d73102",
+    "assets/mowziesmobs/textures/entity/grottol_deepslate_blackpink.png": "fcabafc42f309339fea7ff356123050d84267e5cdce3a49b707792e39aee87c0",
+    "assets/mowziesmobs/textures/entity/mmlantern.png": "b4435a9910946a112ce875196bb8d68fb9e644f9a273d9dc42f33b36f4c9b919",
+    "assets/mowziesmobs/textures/entity/naga.png": "770a72dbbe4410f3d34cd4361042b70a685626ab1cfa76e5bfa346f8f963b4d2",
+    "assets/mowziesmobs/textures/entity/sculptor.png": "748a78a11cb3a25b80d1b29f598759d5de113fb7d433457602ca70fc9373fd30",
+    "assets/mowziesmobs/textures/entity/umvuthi.png": "ea4901e7ef16ed71bfe12c8e1dad992ab348081d53f507e02c6d30227afc007e",
+    "assets/mowziesmobs/textures/entity/wroughtnaut.png": "363093008582f8d3bc6e18dacb6a0556440d58bfb0a1b5f9687948985689ddf9",
+    "assets/mowziesmobs/textures/item/sculptor_staff.png": "b2de2038f41082dd842cb85766741f9d1abfd98dc355495c7f450a3c740a2ce4",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelBluff.class": "c06ad56f477900af3dbb4691b26b21ea7b3c3ea4c93608c93b6ab2238e597eb4",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelElokosa.class": "b5d56a59cce7c3b66681cc1d5c5a271f9645fde22130dcc30f532361842884c1",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelFoliaath.class": "b4516957fd4c6880648abc0e411655b59e7e643378d09bed82282323cdfd9beb",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelFoliaathBaby.class": "f47a6d80ded1f51aabe49591b42ef08d565c09b47baa37c8bffcbdfedb7fe938",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelFrostmaw.class": "0d0375942892caeb191931ea711f39f6156c086218b9024d698ec2fb898af249",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelGrottol.class": "f45d8ee7cc8a37cd325dc7d4cf9b52f33778a5a5f620aa8e28f2b9120c510c64",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelLantern.class": "8363ba30fdde4c00d1e60b87cce25c3f8f30f16d3df8466b5f47e76f32ab488a",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelNaga.class": "d9943dede0c65fc1d5ca76d53ad3813bb0587c9d46fe77574ed9f515a97c1543",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelSculptor.class": "1572c455593e63fbf4db4ed606d8ab928f5c64d94ba6f93844cfd5c2dddf143a",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelUmvuthi.class": "33d60f07e64d9b663f61707a3194120e19fd72940114e90ce09fb9e3f64fb9c0",
+    "com/bobmowzie/mowziesmobs/client/model/entity/ModelWroughtnaut.class": "889ac92a3d5e595cfdd363a028927f3c5fc6e53e5661474b5cfa964dffdc17f4",
+    "com/bobmowzie/mowziesmobs/client/model/item/ModelSculptorStaff.class": "14ea4717943d2384f2a533020edbc8ef6eb91cfb3a4b9a96e022b53ca97b5a5e",
+    "com/bobmowzie/mowziesmobs/client/render/MowzieRenderUtils.class": "fae99d528e255c8b54c186096483a0928baa52c366f92f46dc4aead34d317427",
+    "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class": "78ffb5e787a10d0e9e231126060c609b5db602989ae82cb20a4dba3f845d69a0",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderBluff.class": "81f9657b090d813b6d839f47cb4e702651ba477eaee72b2e350d7dfddff545a7",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderElokosa.class": "b59efaca1211fc41f3b5cff1481e12f3caf72439f75590ae3fbe76dd6fbb08a1",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderFoliaath.class": "e42720e420672ff067c3e510a3df5b9eb4febf8e4427a4f03580394076ac244f",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderFoliaathBaby.class": "e875135513e42748c11c6cbb248bfabf1d30a0dddfd02bd0de391a09d2f277ca",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderFrostmaw.class": "d80dfaefe732dcf89bba5eaae38ed775c442d7344e544b3548f4171536ef90df",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderGrottol.class": "91a6eb34bfd85aec50e75a2a6c329f9dfc2c913fd8fbc9e3969fdfc7ce7e53f7",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderLantern.class": "c31d503aed8f287a1b683ae4225a106bad2dc0054f197c24c6f62ded4786b1f3",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderNaga.class": "5a874f4e5b16f422951e3558ead8f6890f088f3e96620acfcecd77adf8e6abb8",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderSculptor.class": "cbb3e839c34c8ab7ad6e2386b45589ef96ea2e6d5e132cfc0e96d3197d518934",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderUmvuthi.class": "293aee78bb3997bd1036eff7a2c99cb4c330b74a17a15dd529f2bfabbc0fed53",
+    "com/bobmowzie/mowziesmobs/client/render/entity/RenderWroughtnaut.class": "d0bd01e2f5e23be989db8bbca95cb0f982ef486a707f9c978f702d77f7b2cddb",
+    "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaHandSymbolGeoLayer.class": "1279a7ed0e6dc55454a59df885a8051f9564e6b0b948cb2aced12952e83cc4a8",
+    "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaTransformGeoLayer.class": "98c6bb62e50be2ce58a1c96c70213944236f8258d86b30951ae207af3cccb044",
+    "com/bobmowzie/mowziesmobs/client/render/entity/layer/GeckoItemlayer.class": "93c8ee5e85487a22455bc187391238b7736f9c92cb533b11ec1bccf9b42b8e7f",
+    "com/bobmowzie/mowziesmobs/client/render/entity/layer/ItemLayer.class": "2d3a27fdf9d99e2457bc341d03a7e3012c2c94bf0035ac3db96e909d674dbb8c",
+    "com/bobmowzie/mowziesmobs/client/render/entity/layer/ItemLayerSculptorStaff.class": "e0b2ea2df2bc84242bf80608d506c7c68ced841397dc9bb60999145a83bc3eec",
+    "com/bobmowzie/mowziesmobs/client/render/entity/layer/LanternGelLayer.class": "50851debaa7d1a5e281c0db628ed11ef02d809b44a287e42e9c1e6f3c2446938",
+    "com/bobmowzie/mowziesmobs/client/render/entity/layer/WroughtnautEyesLayer.class": "7ef71bebf5c0e1c725c8b78864fa547a5bf84341cd28a452c722381879d43a04",
+    "com/bobmowzie/mowziesmobs/client/render/item/RenderSculptorStaff.class": "15ce1433479e6435925b7f891a4fce5126f69dca1c025cd2f4dac477e5bfac3a",
+    "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class": "d1d142688922446978a110b48e58d79c27c468bfb7978963c114f956b909cf32",
+    "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class": "ab72b42956bb272137d4c06e63708d9bca0e681d0a6de5d399921b3c5c8c9bc3"
+  },
+  "images": [
+    {
+      "mob": "Foliaath",
+      "entity_id": "mowziesmobs:foliaath",
+      "image": "foliaath.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelFoliaath.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderFoliaath.class",
+      "texture": "assets/mowziesmobs/textures/entity/foliaath.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Malha desenvolvida; activeProgress=1 para manter caule/cabeça em escala integral. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Baby Foliaath Infant",
+      "entity_id": "mowziesmobs:baby_foliaath",
+      "image": "baby-foliaath-infant.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelFoliaathBaby.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderFoliaathBaby.class",
+      "texture": "assets/mowziesmobs/textures/entity/foliaath_baby.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Estágio infant; somente a raiz correspondente visível; activate=0, boca fechada. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Baby Foliaath Juvenile",
+      "entity_id": "mowziesmobs:baby_foliaath",
+      "image": "baby-foliaath-juvenile.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelFoliaathBaby.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderFoliaathBaby.class",
+      "texture": "assets/mowziesmobs/textures/entity/foliaath_baby.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Estágio juvenile; somente a raiz correspondente visível; activate=0, boca fechada. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Grottol",
+      "entity_id": "mowziesmobs:grottol",
+      "image": "grottol.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelGrottol.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderGrottol.class",
+      "texture": "assets/mowziesmobs/textures/entity/grottol.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Variante de textura original normal. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Grottol Deepslate",
+      "entity_id": "mowziesmobs:grottol",
+      "image": "grottol-deepslate.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelGrottol.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderGrottol.class",
+      "texture": "assets/mowziesmobs/textures/entity/grottol_deepslate.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Variante de textura original _deepslate. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Grottol Blackpink",
+      "entity_id": "mowziesmobs:grottol",
+      "image": "grottol-blackpink.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelGrottol.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderGrottol.class",
+      "texture": "assets/mowziesmobs/textures/entity/grottol_blackpink.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Variante de textura original _blackpink. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Grottol Deepslate Blackpink",
+      "entity_id": "mowziesmobs:grottol",
+      "image": "grottol-deepslate-blackpink.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelGrottol.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderGrottol.class",
+      "texture": "assets/mowziesmobs/textures/entity/grottol_deepslate_blackpink.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Variante de textura original _deepslate_blackpink. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Lantern",
+      "entity_id": "mowziesmobs:lantern",
+      "image": "lantern.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelLantern.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderLantern.class",
+      "texture": "assets/mowziesmobs/textures/entity/mmlantern.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/LanternGelLayer.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. setDefaultAngles aplicado; duas camadas opaca/gel e opacidades 0.6/0.5/0.7 herdadas; scaleController=(1,1,1). Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Frostmaw",
+      "entity_id": "mowziesmobs:frostmaw",
+      "image": "frostmaw.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelFrostmaw.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderFrostmaw.class",
+      "texture": "assets/mowziesmobs/textures/entity/frostmaw.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Estado sem Ice Crystal, sem camada de item; pálpebras de construção ocultas. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Naga",
+      "entity_id": "mowziesmobs:naga",
+      "image": "naga.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelNaga.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderNaga.class",
+      "texture": "assets/mowziesmobs/textures/entity/naga.png",
+      "extra_sources": [
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer.class",
+        "com/ilexiconn/llibrary/client/model/tools/AdvancedModelRenderer$ModelBox.class"
+      ],
+      "notes": "Renderização técnica da geometria e textura originais da versão 1.8.2. Cauda original estática presente uma vez; simulação dinâmica da cadeia não executada. Pose de construção ajustada somente onde indicado; animações dinâmicas de código não executadas. A correspondência com uma pose final do jogo não está confirmada; falta executar a avaliação completa dos controladores de animação."
+    },
+    {
+      "mob": "Bluff",
+      "entity_id": "mowziesmobs:bluff",
+      "image": "bluff.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelBluff.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderBluff.class",
+      "texture": "assets/mowziesmobs/textures/entity/bluff.png",
+      "extra_sources": [
+        "assets/mowziesmobs/geo/bluff.geo.json",
+        "assets/mowziesmobs/animations/bluff.animation.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class"
+      ],
+      "notes": "Geometria/textura originais; animações idle avaliadas em t=0, incluindo expressões Molang com trigonometria em graus. Rotações/flutuação de código em frame=0 e olhar=0 têm contribuição zero. Render técnico ortográfico; dinâmica física, efeitos de partículas e correções de código não mencionadas não executadas. Correspondência com a pose final do jogo não confirmada; falta avaliação completa desses controladores."
+    },
+    {
+      "mob": "Umvuthi",
+      "entity_id": "mowziesmobs:umvuthi",
+      "image": "umvuthi.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelUmvuthi.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderUmvuthi.class",
+      "texture": "assets/mowziesmobs/textures/entity/umvuthi.png",
+      "extra_sources": [
+        "assets/mowziesmobs/geo/umvuthi.geo.json",
+        "assets/mowziesmobs/animations/umvuthi.animation.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class"
+      ],
+      "notes": "Geometria/textura originais; animações idle avaliadas em t=0, incluindo expressões Molang com trigonometria em graus. Malha integral com máscara própria. legsUp=0. Halo solar e alterações das penas por código não executados. Render técnico ortográfico; dinâmica física, efeitos de partículas e correções de código não mencionadas não executadas. Correspondência com a pose final do jogo não confirmada; falta avaliação completa desses controladores."
+    },
+    {
+      "mob": "Elokosa Follower Howler Day",
+      "entity_id": "mowziesmobs:elokosa_follower_howler",
+      "image": "elokosa-follower-howler-day.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelElokosa.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderElokosa.class",
+      "texture": "assets/mowziesmobs/textures/entity/elokosa.png",
+      "extra_sources": [
+        "assets/mowziesmobs/geo/elokosa.geo.json",
+        "assets/mowziesmobs/animations/elokosa.animation.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class",
+        "assets/mowziesmobs/textures/entity/elokosa_paw_full.png",
+        "assets/mowziesmobs/textures/entity/elokosa_glowmask.png",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaHandSymbolGeoLayer.class",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaTransformGeoLayer.class"
+      ],
+      "notes": "Geometria/textura originais; animações idle avaliadas em t=0, incluindo expressões Molang com trigonometria em graus. Forma day exclusiva; elite=False. Lua cheia na camada de patas; glowmask original; transformação inativa. Cauda estática original, sem duplicar a cadeia simulada. Render técnico ortográfico; dinâmica física, efeitos de partículas e correções de código não mencionadas não executadas. Correspondência com a pose final do jogo não confirmada; falta avaliação completa desses controladores."
+    },
+    {
+      "mob": "Elokosa Follower Howler Night",
+      "entity_id": "mowziesmobs:elokosa_follower_howler",
+      "image": "elokosa-follower-howler-night.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelElokosa.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderElokosa.class",
+      "texture": "assets/mowziesmobs/textures/entity/elokosa.png",
+      "extra_sources": [
+        "assets/mowziesmobs/geo/elokosa.geo.json",
+        "assets/mowziesmobs/animations/elokosa.animation.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class",
+        "assets/mowziesmobs/textures/entity/elokosa_paw_full.png",
+        "assets/mowziesmobs/textures/entity/elokosa_glowmask.png",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaHandSymbolGeoLayer.class",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaTransformGeoLayer.class"
+      ],
+      "notes": "Geometria/textura originais; animações idle avaliadas em t=0, incluindo expressões Molang com trigonometria em graus. Forma night exclusiva; elite=False. Lua cheia na camada de patas; glowmask original; transformação inativa. Cauda estática original, sem duplicar a cadeia simulada. Render técnico ortográfico; dinâmica física, efeitos de partículas e correções de código não mencionadas não executadas. Correspondência com a pose final do jogo não confirmada; falta avaliação completa desses controladores."
+    },
+    {
+      "mob": "Elokosa Howler Day",
+      "entity_id": "mowziesmobs:elokosa_howler",
+      "image": "elokosa-howler-day.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelElokosa.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderElokosa.class",
+      "texture": "assets/mowziesmobs/textures/entity/elokosa_elite.png",
+      "extra_sources": [
+        "assets/mowziesmobs/geo/elokosa.geo.json",
+        "assets/mowziesmobs/animations/elokosa.animation.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class",
+        "assets/mowziesmobs/textures/entity/elokosa_paw_full.png",
+        "assets/mowziesmobs/textures/entity/elokosa_elite_glowmask.png",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaHandSymbolGeoLayer.class",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaTransformGeoLayer.class"
+      ],
+      "notes": "Geometria/textura originais; animações idle avaliadas em t=0, incluindo expressões Molang com trigonometria em graus. Forma day exclusiva; elite=True. Lua cheia na camada de patas; glowmask original; transformação inativa. Cauda estática original, sem duplicar a cadeia simulada. Render técnico ortográfico; dinâmica física, efeitos de partículas e correções de código não mencionadas não executadas. Correspondência com a pose final do jogo não confirmada; falta avaliação completa desses controladores."
+    },
+    {
+      "mob": "Elokosa Howler Night",
+      "entity_id": "mowziesmobs:elokosa_howler",
+      "image": "elokosa-howler-night.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelElokosa.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderElokosa.class",
+      "texture": "assets/mowziesmobs/textures/entity/elokosa_elite.png",
+      "extra_sources": [
+        "assets/mowziesmobs/geo/elokosa.geo.json",
+        "assets/mowziesmobs/animations/elokosa.animation.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class",
+        "assets/mowziesmobs/textures/entity/elokosa_paw_full.png",
+        "assets/mowziesmobs/textures/entity/elokosa_elite_glowmask.png",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaHandSymbolGeoLayer.class",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ElokosaTransformGeoLayer.class"
+      ],
+      "notes": "Geometria/textura originais; animações idle avaliadas em t=0, incluindo expressões Molang com trigonometria em graus. Forma night exclusiva; elite=True. Lua cheia na camada de patas; glowmask original; transformação inativa. Cauda estática original, sem duplicar a cadeia simulada. Render técnico ortográfico; dinâmica física, efeitos de partículas e correções de código não mencionadas não executadas. Correspondência com a pose final do jogo não confirmada; falta avaliação completa desses controladores."
+    },
+    {
+      "mob": "Sculptor",
+      "entity_id": "mowziesmobs:sculptor",
+      "image": "sculptor.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelSculptor.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderSculptor.class",
+      "texture": "assets/mowziesmobs/textures/entity/sculptor.png",
+      "extra_sources": [
+        "assets/mowziesmobs/geo/sculptor.geo.json",
+        "assets/mowziesmobs/animations/sculptor.animation.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/MowzieGeoEntityRenderer.class",
+        "assets/mowziesmobs/geo/sculptor_staff.geo.json",
+        "assets/mowziesmobs/textures/item/sculptor_staff.png",
+        "assets/mowziesmobs/models/item/sculptor_staff.json",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ItemLayerSculptorStaff.class",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/GeckoItemlayer.class",
+        "com/bobmowzie/mowziesmobs/client/render/item/RenderSculptorStaff.class",
+        "com/bobmowzie/mowziesmobs/client/model/item/ModelSculptorStaff.class"
+      ],
+      "notes": "Geometria/textura originais; animações idle avaliadas em t=0, incluindo expressões Molang com trigonometria em graus. Mãos abertas, luva não montada; staffController=0, cajado nas costas com escala de osso 1.2 e transformações originais de item. Correção procedural de roupa/contas/barba não executada. Render técnico ortográfico; dinâmica física, efeitos de partículas e correções de código não mencionadas não executadas. Correspondência com a pose final do jogo não confirmada; falta avaliação completa desses controladores."
+    },
+    {
+      "mob": "Ferrous Wroughtnaut",
+      "entity_id": "mowziesmobs:ferrous_wroughtnaut",
+      "image": "ferrous-wroughtnaut.png",
+      "model": "com/bobmowzie/mowziesmobs/client/model/entity/ModelWroughtnaut.class",
+      "renderer": "com/bobmowzie/mowziesmobs/client/render/entity/RenderWroughtnaut.class",
+      "texture": "assets/mowziesmobs/textures/entity/wroughtnaut.png",
+      "extra_sources": [
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/ItemLayer.class",
+        "com/bobmowzie/mowziesmobs/client/render/MowzieRenderUtils.class",
+        "com/bobmowzie/mowziesmobs/client/render/entity/layer/WroughtnautEyesLayer.class"
+      ],
+      "notes": "Malha de construção original, incluindo machado, e espada de diamante extrudada da textura original do Minecraft 1.21.1. Socket da espada ajustado pelos valores constantes de setDefaultAngles; ItemDisplayContext.GROUND usa translação (0,2,0) e escala 0.5 herdados de item/generated. Olhos ativos. Animações de combate/ativação e outros ajustes de postura de setDefaultAngles não executados. Pose final do jogo não confirmada; falta avaliação completa dessas rotinas."
+    }
+  ],
+  "site_modified": false,
+  "mask_assembly_resolution": "EntityModel.young=true herdado pelo defaultBipedModel; HumanoidModel scaleHead=true, babyHeadScale=2, babyYHeadOffset=16. GeoArmorRenderer.applyBaseModel copia young e scaleModelForBaby aplica S(.75) T(0,16,0) antes de actuallyRender. Evidência: auditoria/mm-montagem."
+}

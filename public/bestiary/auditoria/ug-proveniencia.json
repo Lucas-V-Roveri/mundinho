@@ -1,0 +1,1477 @@
+{
+  "mod": "The Undergarden",
+  "version": "0.9.6 · NeoForge · Minecraft 1.21.1",
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "sY4KZ9q3",
+    "project_id": "Ejfl5qDL",
+    "author_id": "iQLGCK5p",
+    "featured": false,
+    "name": "The Undergarden 0.9.6",
+    "version_number": "0.9.6",
+    "changelog": "- changed mysterious pots to be more resiliant to despawning\n- fixed unique weapon abilities only working on player attackers\n- small tweaks to froststeel weapon sprites\n- added capability support to the infuser (thanks to rexlNico)\n- tweaked the utheric infection and gloomgourd overlays\n- added pt_br translation (thanks to PrincessStelllar)\n- added es_es translation (thanks to Diaburomon)",
+    "changelog_url": null,
+    "date_published": "2026-04-02T17:20:54.228421Z",
+    "downloads": 121233,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "YLOhNCrK",
+        "hashes": {
+          "sha512": "bb98ea4bb0755e0a1ae67bae3534f1002b91945f7b565b21a408fade678bbc1e9f2b564a00b7157e38ab5eb77d69070b9f16db66de3cd5b41d5c89cbef721bf4",
+          "sha1": "75f1753eefa0b7b8e3afd7377deaf9fe71392476"
+        },
+        "url": "https://cdn.modrinth.com/data/Ejfl5qDL/versions/sY4KZ9q3/The_Undergarden-1.21.1-0.9.6.jar",
+        "filename": "The_Undergarden-1.21.1-0.9.6.jar",
+        "primary": true,
+        "size": 45294936,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  "jar_sha256": "49e3db6ce2cf6864e9d45f0633de95bc3ef72cbd5ebffee493fca7198d30ccb0",
+  "source_files_sha256": {
+    "assets/undergarden/textures/entity/brute.png": "1f5a5731d7d586e292d3bc44d8473da8d51cd6e74a6fb9d6a551fecb7374af95",
+    "assets/undergarden/textures/entity/brute_eyes.png": "1cc2fe5c15c2a39b196fa7635be1c4ede09b18eeb618587b13d058ae144ae596",
+    "assets/undergarden/textures/entity/denizen.png": "f80eb56bf36e1f49be6686cc4c31a775a321146f9a2d4751bd339f87f4c510f9",
+    "assets/undergarden/textures/entity/denizen2.png": "9ddddf1d642741caf1351245ec194f2090ea45b687a715a691664b0cfc5329ee",
+    "assets/undergarden/textures/entity/denizen2_eyes.png": "dc83f206dfa3a533e7b9b7cb34d5f58a17f29108ab8260f68a0d4fe87ec530e6",
+    "assets/undergarden/textures/entity/denizen_eyes.png": "5d9d305ac70d4e33eec4ccc6c38e48c945db5a89daf04cdde91a1fc4a84894aa",
+    "assets/undergarden/textures/entity/dweller.png": "c9a293a87182971cf2fa3ad9d445dbaf9ffe3e1969f10f6d210c52c653bd089a",
+    "assets/undergarden/textures/entity/dweller_eyes.png": "d512e9da0ff1fca9e96b5c3eb3d1d983326b97cb8658310fd195bbe032e972a4",
+    "assets/undergarden/textures/entity/forgotten.png": "79a44d7b15e29be979f1c5c9b4b98b4697695240cdcdae07a08e212269065945",
+    "assets/undergarden/textures/entity/forgotten_eyes.png": "0707b4d18a06471f5550640d409930b767b83246cd48c0a13fff02624468e99c",
+    "assets/undergarden/textures/entity/forgotten_guardian.png": "e7a691b16585bd073c4eda24943adf195321627752dbf923d347e3d1784f55c1",
+    "assets/undergarden/textures/entity/forgotten_guardian_eyes.png": "6e56157dbafcf792322d558dc6f9d0de06fe7b46c41ab6789410a1a297eb3ad8",
+    "assets/undergarden/textures/entity/gloomper.png": "6681772154d96fea7634539368fa8b5bc9944ae73e669ec6e108e2e3f6771fa6",
+    "assets/undergarden/textures/entity/gloomper_eyes.png": "431f7f8978bef49b6cb0d99595d5893b7ffc95fa6e88332a8cb6f99878435ea2",
+    "assets/undergarden/textures/entity/greater_dweller.png": "10a15f7ec52d62b6045b5f6c2712048bf30e83418f3d75a41591f6c02f61b825",
+    "assets/undergarden/textures/entity/greater_dweller_eyes.png": "5d143a05a3d049959b24fd6ff84c24bad9b5a9e5ec4a18bbe2b2db6b34169b23",
+    "assets/undergarden/textures/entity/gwib.png": "94397a306728c967989886fe8003cce618940cc25e5c39858285c988321749cf",
+    "assets/undergarden/textures/entity/gwib_eyes.png": "2185459ed42d29537a3ed514cc25be32f6481feea35c66ca98dfbad1d480b285",
+    "assets/undergarden/textures/entity/gwibling.png": "162293eaafa4070d294110bad7a678cec474bbeb2d61e050b50c5cf0d8618236",
+    "assets/undergarden/textures/entity/gwibling_eyes.png": "fa4aa0058498f98be24656ab42ce2fc766dc9f028264cd28ef03ce31117dc303",
+    "assets/undergarden/textures/entity/minion.png": "cd46479efe5a741f6b31be80ca927332a2b8a4a4b4c16571ee30b16a874a6c84",
+    "assets/undergarden/textures/entity/minion_eye.png": "50816d13da3241c896bed9a33ac4be4d94c6af24b18ca43cab8731956240a1fa",
+    "assets/undergarden/textures/entity/mog.png": "aa3bf6dbc769776b04ce394641e1cee2e801a9ea86d3253293bf40de7b91c438",
+    "assets/undergarden/textures/entity/mog_eyes.png": "2002c3b47a72f8c3dd5d4bf330723c5575dfc287ccd0339b2406373b1d8ca1cb",
+    "assets/undergarden/textures/entity/muncher.png": "b93654834bf0d10300138107842eb6037659d2435cb1e75aca81b0506608171a",
+    "assets/undergarden/textures/entity/muncher_eyes.png": "6974122a2fa28167e2d30f9ec3c60d98ee30ffc07a199c15236dc763a192cfd8",
+    "assets/undergarden/textures/entity/nargoyle.png": "e74e5af2201069924317551680e18a8aa3a2c19efd77d0d8884cf1ee75dfc79d",
+    "assets/undergarden/textures/entity/potguy.png": "ca1fe5ae87a14675c55038bc488318d202f97da51922f7604c1c4cc21e480e16",
+    "assets/undergarden/textures/entity/potguy_eyes.png": "6425a45a297a8efa04dcf7038412f53d9d3d11efe89ba5fe2f75de6f9caed2a5",
+    "assets/undergarden/textures/entity/rotbeast.png": "be3b35aa28461099d0f6a31a8478fb5db77d7aa0524d472023a2f49450a7a2b8",
+    "assets/undergarden/textures/entity/rotbeast_eyes.png": "a3b3242d450c25fae8ec87bcd224f49c536d4d02e3e2dfdc5b51541a6ddf6796",
+    "assets/undergarden/textures/entity/rotbelcher.png": "cc5af08e72656a3fff8be1dc3daa1cc4ae495cbda266c0f58fd3438ea9dada31",
+    "assets/undergarden/textures/entity/rotbelcher_eyes.png": "c9284d6b007b50ce9814cb519f57d4f87a36dde1f7275c01b988daa3e0b597e7",
+    "assets/undergarden/textures/entity/rotling.png": "0236dde326953cb3d89a9b2fc5de638db44e41c0462eb04614d5c6c6a22ce00f",
+    "assets/undergarden/textures/entity/rotling_eyes.png": "fb793a050547f23912448e853c81a29e8c28335fe5bc35de396806a2650f126a",
+    "assets/undergarden/textures/entity/rotwalker.png": "11eba429f91fb4aceb020f3debb607ddf23ab431110882e23a9378e7f346cc30",
+    "assets/undergarden/textures/entity/rotwalker_eyes.png": "a7bf4996978a4c1614f8bf5b4f26fddf1b0614e2e33b4ce821994890c960a343",
+    "assets/undergarden/textures/entity/scintling.png": "db4d2beb4b0dec7ad6727e93432b37a42003d77f45cbd6205ab22733823ea487",
+    "assets/undergarden/textures/entity/scintling_glow.png": "c8c97c4ca09880bfe2a861d8a76b5323979194f9dab469b155c7bf560be9d95d",
+    "assets/undergarden/textures/entity/smog_mog.png": "b978a205bf60e140e944f07d927fc2ed7fd56225a336ce7d26782c663b4e6bd0",
+    "assets/undergarden/textures/entity/smog_mog_eyes.png": "9e2f095a23f9513c7f5cf71ce9e4a349ec0a70b34a12334ddfa9e3d3b30f9b99",
+    "assets/undergarden/textures/entity/sploogie.png": "7368634c77545cf5694723d113cab5f08fb47cf34eff660065a2af66af041f41",
+    "assets/undergarden/textures/entity/stoneborn.png": "72ac474bb7661766f7d45f49f12dfa877e5d8caf26df6c463101d8fa77e8424b",
+    "assets/undergarden/textures/entity/stoneborn_eyes.png": "6114b4404a2287e0b67e4dffa328ac566fa4be10cf822f85a0a021e2e4015d36",
+    "quek/undergarden/client/model/BruteModel.class": "f8e17412a97eebbdf4a9244cf7709e23a16c350e566a0ad6ee6074a48185fd5f",
+    "quek/undergarden/client/model/Denizen2Model.class": "8cade045499722a875c9078fa86ef9168125015cf6616fb3a6eb5845d9c91635",
+    "quek/undergarden/client/model/DenizenModel.class": "334e4b5e9db0f9fab6de127523a9472cd04cfe4af7f8f7e52367907d801ead93",
+    "quek/undergarden/client/model/DwellerModel.class": "468357f252b87d600667380137b292535e50f7f64ac2bf6f4ecf7c1ace126504",
+    "quek/undergarden/client/model/FixedHumanoidModel.class": "3a713176e49dd1fff9ebf8c40f90103c1f2919a41ed54faedf6ecfc3cc3187d2",
+    "quek/undergarden/client/model/ForgottenGuardianModel.class": "1480435695fc511be7ffbf22db2daa7f69e14e833db3131d7ac893d62b515544",
+    "quek/undergarden/client/model/ForgottenModel.class": "17f4d06a54a5c1971562fcb4a39663d5ec2bc344caf7c12a0141c09073ed86cc",
+    "quek/undergarden/client/model/GloomperModel.class": "9d4e741c33331f20a24825b2de7164d793a1b83c6a66129eae722e18cd8ab731",
+    "quek/undergarden/client/model/GreaterDwellerModel.class": "59ba70fe673a478e32da5eddcb95c388bf47172e775a8cd8f3ad87ef8d38d8ae",
+    "quek/undergarden/client/model/GwibModel.class": "6186205b13e040546e310acd97b6e0139efa256239590b67695cbdbc90540000",
+    "quek/undergarden/client/model/GwiblingModel.class": "bdd41332f55591e9945a23805884fdadbefee2c738b3125c13cbe65c7042a51c",
+    "quek/undergarden/client/model/MinionModel.class": "0dfbc66ce94bc0d377e929b8e532bd4850257359670c03022424ed0e07741964",
+    "quek/undergarden/client/model/MogModel.class": "2e6ac01b99395f7e5ddcecc93feba36f94247a8f863ae9f8eb6757ffb095674c",
+    "quek/undergarden/client/model/MuncherModel.class": "e835066f3668808b1b3391aee27045d2debbe9f9c4263e2fe62736f9f988ac8a",
+    "quek/undergarden/client/model/MysteriousPotModel.class": "f9f0ac0604a7936ae799b8fe644676ac58757f92eed8a6ca97ea86ec1bb27f39",
+    "quek/undergarden/client/model/NargoyleModel.class": "d4b95ac60b4df2aac11fd29bce0e050a0402342f79899e6850734aa3b8032ded",
+    "quek/undergarden/client/model/RotbeastModel.class": "ced8a42b1b55767a2c6e214f79315dc902ac9097d1c2032e40f89befe0a38093",
+    "quek/undergarden/client/model/RotbelcherModel.class": "9b50e1a4e89d92df953b1b2de7a4af6c180c3f708c2e9d340c65ca2568537f94",
+    "quek/undergarden/client/model/RotlingModel.class": "eaaf0fa41ca822ef6d9475418e7b026de1f8f16ddce9646e7fa5aff2bc2d9296",
+    "quek/undergarden/client/model/RotwalkerModel.class": "ced51867f9000f45cd9e7a5d0dd85a010ed687cb2b8f8a7f13321e5ef046e6d6",
+    "quek/undergarden/client/model/ScintlingModel.class": "ad1cd1abec202d741a52da34039cd610bd1f862f2d752c4dc4bf732d492d979a",
+    "quek/undergarden/client/model/SmogMogModel.class": "c461705c93d51a5111a9ce6fe05988b9e0a394c514c2aad25d9020ff8f651f8f",
+    "quek/undergarden/client/model/SploogieModel.class": "6f2a40439e7d2eee28adc3c8ec86d97307710eaae0338391d9089895be6f2b32",
+    "quek/undergarden/client/model/StonebornModel.class": "244efba7778cd8b01c4e12f178375e561a1b747b7ebd60797584022521879b60",
+    "quek/undergarden/client/render/entity/BruteRenderer.class": "2d4cb0e9d0484c5b97c1c96549bcd61238edb98e10289db95f4d5b0900bdf758",
+    "quek/undergarden/client/render/entity/DenizenRenderer.class": "d23847a18602f9f543124629e1ef732872d170263ea9a02d014ce6463cd1cc23",
+    "quek/undergarden/client/render/entity/DwellerRenderer.class": "29b46c7df5007afe0f41d990dd1203d17abe48e2f48d9cffcbf9f4a8b097fa6e",
+    "quek/undergarden/client/render/entity/ForgottenGuardianRenderer.class": "4d0c1a9e8c7418e5d222e1ad42c6b9edd8076ee2a889b5e6568c2fb2cbc6b81e",
+    "quek/undergarden/client/render/entity/ForgottenRenderer.class": "f1ed7a2e2f493b201c096b2a3a4e5b886977189ac6ead05566639b331b04ba7f",
+    "quek/undergarden/client/render/entity/GloomperRenderer.class": "3e55fb2e09fab8ac20fa31f0dc19ba7af756b41ba88a3037e0d21d43ed628052",
+    "quek/undergarden/client/render/entity/GreaterDwellerRenderer.class": "4f05005e10032997d2621221690454205abb1d4171859719eba568925a5f666d",
+    "quek/undergarden/client/render/entity/GwibRenderer.class": "44ebcf72fd7321b64e3c571e6e2bba73d1aae6f02648cbb84a6f26e01c5b6f49",
+    "quek/undergarden/client/render/entity/GwiblingRenderer.class": "6105510559cc94b54c7d91e055605b1ee653cecf852eb0ffa6aa594090fb7977",
+    "quek/undergarden/client/render/entity/MinionRenderer.class": "4e7370cf58e54413a1bc25fba188047b67a9397ffc8cedce020c1b625e2c6d0e",
+    "quek/undergarden/client/render/entity/MogRenderer.class": "bc22bf86bb8a659ff9d7f362b76e92a2642f8db5f517736dd2114de93f43fcee",
+    "quek/undergarden/client/render/entity/MuncherRenderer.class": "5161e836312e0ce242c755b73fdde961baebfdea38d428cd68df3f09fa963b53",
+    "quek/undergarden/client/render/entity/MysteriousPotRenderer.class": "966c5748e8a2a463415daeabf8d9fc4ed3b1bd2d7a88ded02e573327cc4dbfb6",
+    "quek/undergarden/client/render/entity/NargoyleRenderer.class": "754b1e6e20f00b9d99d7df64464f876263f457619346cbbb93f92337debe4b27",
+    "quek/undergarden/client/render/entity/RotbeastRenderer.class": "186e378e4bcce5176180a54d798332d23a5baf7f6fa0517343ba0816582fd6b1",
+    "quek/undergarden/client/render/entity/RotbelcherRenderer.class": "58eaf55e73c242b1df81320a221e5432f0bb7a7b6f0b8659c264a2284d5ee326",
+    "quek/undergarden/client/render/entity/RotlingRenderer.class": "1d34891f39c7217ae5e3f986ff8e8dc7c64f5da923200d4c3a9a8c205d7aa1ac",
+    "quek/undergarden/client/render/entity/RotwalkerRenderer.class": "c1e50d5cb4c69629b3dc52ab9c29bb6f0cade901e37ab6036a2453c79224f4aa",
+    "quek/undergarden/client/render/entity/ScintlingRenderer.class": "b0c4def7d02b7e01be42d619c72f9ae5670826264f5000afb7594fecf762a982",
+    "quek/undergarden/client/render/entity/SmogMogRenderer.class": "81459461c6580cb90a2f830df9f39e817703c08eb9fd697e68da5af283f40c75",
+    "quek/undergarden/client/render/entity/SploogieRenderer.class": "1a721b1578302db7143f3a6f8eef9ca0d5e297edca543edfecd38f864555df20",
+    "quek/undergarden/client/render/entity/StonebornRenderer.class": "dbed3b827b3fff4b865503031b25be1f434fc39260a4bcd67b859e7c02e6a6bc",
+    "quek/undergarden/client/render/layer/BasicEyesLayer.class": "209d8aa207fa51e2bb3084e0f80287c2768aa403c47c094b24bf4057b0b014b4",
+    "quek/undergarden/client/render/layer/DenizenEyesLayer.class": "70314ed68261309ae3358eaea96dc5c1e904f576c16a0d9c5602cf7693c6c105"
+  },
+  "images": [
+    {
+      "mob": "Rotling",
+      "entity_id": "undergarden:rotling",
+      "image": "rotling.png",
+      "cube_count": 7,
+      "model": "quek/undergarden/client/model/RotlingModel.class",
+      "renderer": "quek/undergarden/client/render/entity/RotlingRenderer.class",
+      "texture": "assets/undergarden/textures/entity/rotling.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/rotling_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/body/head",
+          "component": "xRot",
+          "value": -0.1745
+        },
+        {
+          "field": "leftArm",
+          "part": "root/body/leftArm",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/body/rightArm",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/body/rightArm",
+          "component": "zRot",
+          "value": 0.4363
+        },
+        {
+          "field": "leftArm",
+          "part": "root/body/leftArm",
+          "component": "zRot",
+          "value": -0.4363
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/body/leftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/body/rightLeg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/body/rightArm",
+          "component": "zRot",
+          "value": 0.5363
+        },
+        {
+          "field": "leftArm",
+          "part": "root/body/leftArm",
+          "component": "zRot",
+          "value": -0.5363
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "78ff6a604fed005e3e6047df70dcc16919e27a6fc54874354a30e6622b4a596b"
+    },
+    {
+      "mob": "Rotwalker",
+      "entity_id": "undergarden:rotwalker",
+      "image": "rotwalker.png",
+      "cube_count": 9,
+      "model": "quek/undergarden/client/model/RotwalkerModel.class",
+      "renderer": "quek/undergarden/client/render/entity/RotwalkerRenderer.class",
+      "texture": "assets/undergarden/textures/entity/rotwalker.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/rotwalker_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0873
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightLeg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "zRot",
+          "value": 0.1
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "zRot",
+          "value": -0.1
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "86490d5b664b550525e0945078ab6cd578e1fcbfcdc7ef7fa4150772074030cc"
+    },
+    {
+      "mob": "Rotbeast",
+      "entity_id": "undergarden:rotbeast",
+      "image": "rotbeast.png",
+      "cube_count": 9,
+      "model": "quek/undergarden/client/model/RotbeastModel.class",
+      "renderer": "quek/undergarden/client/render/entity/RotbeastRenderer.class",
+      "texture": "assets/undergarden/textures/entity/rotbeast.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/rotbeast_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "jaw",
+          "part": "root/head/jaw",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightLeg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "zRot",
+          "value": 0.1
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "zRot",
+          "value": -0.1
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "239fc487390d16ad12de1c1f0017b00fb3735e90b54345a2d0368d942dad747f"
+    },
+    {
+      "mob": "Rotbelcher",
+      "entity_id": "undergarden:rotbelcher",
+      "image": "rotbelcher.png",
+      "cube_count": 8,
+      "model": "quek/undergarden/client/model/RotbelcherModel.class",
+      "renderer": "quek/undergarden/client/render/entity/RotbelcherRenderer.class",
+      "texture": "assets/undergarden/textures/entity/rotbelcher.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/rotbelcher_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/root/torso/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/root/torso/head",
+          "component": "xRot",
+          "value": 0.0873
+        },
+        {
+          "field": "rightArm",
+          "part": "root/root/torso/rightArm",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/root/torso/leftArm",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/root/torso/rightArm",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/root/torso/leftArm",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/root/leftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/root/rightLeg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/root/torso/rightArm",
+          "component": "zRot",
+          "value": 0.1
+        },
+        {
+          "field": "leftArm",
+          "part": "root/root/torso/leftArm",
+          "component": "zRot",
+          "value": -0.1
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "618c7480f82ca7eabec603f2ad4a4b6eac41d996ec04a079b4a6174ab7b35207"
+    },
+    {
+      "mob": "Dweller",
+      "entity_id": "undergarden:dweller",
+      "image": "dweller.png",
+      "cube_count": 11,
+      "model": "quek/undergarden/client/model/DwellerModel.class",
+      "renderer": "quek/undergarden/client/render/entity/DwellerRenderer.class",
+      "texture": "assets/undergarden/textures/entity/dweller.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/dweller_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": -1.3963
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftLeg",
+          "component": "xRot",
+          "value": -0.6109
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightLeg",
+          "component": "xRot",
+          "value": -0.6109
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Sem sela; crina visível. torsoInflate=0.",
+      "sha256": "995b5498090c9fb87fffd1e2c547371e1fde0229d83eebd96c72f26b9bd704ab"
+    },
+    {
+      "mob": "Greater Dweller",
+      "entity_id": "undergarden:greater_dweller",
+      "image": "greater-dweller.png",
+      "cube_count": 14,
+      "model": "quek/undergarden/client/model/GreaterDwellerModel.class",
+      "renderer": "quek/undergarden/client/render/entity/GreaterDwellerRenderer.class",
+      "texture": "assets/undergarden/textures/entity/greater_dweller.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/greater_dweller_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.1745
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftLeg",
+          "component": "xRot",
+          "value": -0.2618
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightLeg",
+          "component": "xRot",
+          "value": -0.2618
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "aea62f7eae59c2605d1114225ff8f26c02e3087e636a42c5e417f9275d8fa543"
+    },
+    {
+      "mob": "Gwibling",
+      "entity_id": "undergarden:gwibling",
+      "image": "gwibling.png",
+      "cube_count": 5,
+      "model": "quek/undergarden/client/model/GwiblingModel.class",
+      "renderer": "quek/undergarden/client/render/entity/GwiblingRenderer.class",
+      "texture": "assets/undergarden/textures/entity/gwibling.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/gwibling_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "body",
+          "part": "root/body",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "body",
+          "part": "root/body",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "tail",
+          "part": "root/body/tail",
+          "component": "yRot",
+          "value": -0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Na água.",
+      "sha256": "3ef28a6e76c7c4beefda6760e463001368d00a42d0473b1fda6f7233ff8edf3d"
+    },
+    {
+      "mob": "Brute",
+      "entity_id": "undergarden:brute",
+      "image": "brute.png",
+      "cube_count": 14,
+      "model": "quek/undergarden/client/model/BruteModel.class",
+      "renderer": "quek/undergarden/client/render/entity/BruteRenderer.class",
+      "texture": "assets/undergarden/textures/entity/brute.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/brute_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftleg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightleg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftarm",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightarm",
+          "component": "xRot",
+          "value": -0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "2a69a5aeb20c000f323e9b45634f2d9a621e51905ecf0368ae98d9c2dc73a1bf"
+    },
+    {
+      "mob": "Scintling",
+      "entity_id": "undergarden:scintling",
+      "image": "scintling.png",
+      "cube_count": 6,
+      "model": "quek/undergarden/client/model/ScintlingModel.class",
+      "renderer": "quek/undergarden/client/render/entity/ScintlingRenderer.class",
+      "texture": "assets/undergarden/textures/entity/scintling.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/scintling_glow.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "torso",
+          "part": "root/torso",
+          "component": "yRot",
+          "value": -0.0
+        },
+        {
+          "field": "tail",
+          "part": "root/tail",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftStalk",
+          "part": "root/head/leftStalk",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightStalk",
+          "part": "root/head/rightStalk",
+          "component": "xRot",
+          "value": 0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "dfdd313f59b07bb0f571302831cc2c0346ca319d1b923e6fa15392f67af0abd2"
+    },
+    {
+      "mob": "Gloomper",
+      "entity_id": "undergarden:gloomper",
+      "image": "gloomper.png",
+      "cube_count": 9,
+      "model": "quek/undergarden/client/model/GloomperModel.class",
+      "renderer": "quek/undergarden/client/render/entity/GloomperRenderer.class",
+      "texture": "assets/undergarden/textures/entity/gloomper.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/gloomper_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "arms",
+          "part": "root/arms",
+          "component": "xRot",
+          "value": -0.19198621771937624
+        },
+        {
+          "field": "feet",
+          "part": "root/feet",
+          "component": "xRot",
+          "value": 0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "ba75dabf7d9a5137b0869ee190aa89a50cb10192a8cb62be7996434d5569906c"
+    },
+    {
+      "mob": "Nargoyle",
+      "entity_id": "undergarden:nargoyle",
+      "image": "nargoyle.png",
+      "cube_count": 17,
+      "model": "quek/undergarden/client/model/NargoyleModel.class",
+      "renderer": "quek/undergarden/client/render/entity/NargoyleRenderer.class",
+      "texture": "assets/undergarden/textures/entity/nargoyle.png",
+      "extra_sources": [],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/body/upperbody/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/body/upperbody/head",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/body/upperbody/head",
+          "component": "xRot",
+          "value": 0.4363
+        },
+        {
+          "field": "arms",
+          "part": "root/body/upperbody/arms",
+          "component": "xRot",
+          "value": 1.5708
+        },
+        {
+          "field": "legs",
+          "part": "root/body/lowerbody/legs",
+          "component": "xRot",
+          "value": -1.7017
+        },
+        {
+          "field": "jaw",
+          "part": "root/body/upperbody/head/jaw",
+          "component": "xRot",
+          "value": 0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "50185f101d6de021e8238445068eb370571c40a6a59398a97ee62dbef9cf755f"
+    },
+    {
+      "mob": "Muncher",
+      "entity_id": "undergarden:muncher",
+      "image": "muncher.png",
+      "cube_count": 8,
+      "model": "quek/undergarden/client/model/MuncherModel.class",
+      "renderer": "quek/undergarden/client/render/entity/MuncherRenderer.class",
+      "texture": "assets/undergarden/textures/entity/muncher.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/muncher_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "upperJaw",
+          "part": "root/upperJaw",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightLeg",
+          "component": "xRot",
+          "value": -0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "4aecbf5be094f7b022e66858413c485c5b0c0ff689045b1a8cad6c1f758a6909"
+    },
+    {
+      "mob": "Sploogie",
+      "entity_id": "undergarden:sploogie",
+      "image": "sploogie.png",
+      "cube_count": 11,
+      "model": "quek/undergarden/client/model/SploogieModel.class",
+      "renderer": "quek/undergarden/client/render/entity/SploogieRenderer.class",
+      "texture": "assets/undergarden/textures/entity/sploogie.png",
+      "extra_sources": [],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "x",
+          "value": 0.09232907831797003
+        },
+        {
+          "field": "bodySegment1",
+          "part": "root/bodySegment1",
+          "component": "yRot",
+          "value": 0.09232907831797003
+        },
+        {
+          "field": "bodySegment2",
+          "part": "root/bodySegment2",
+          "component": "yRot",
+          "value": 0.2799179490842982
+        },
+        {
+          "field": "bodySegment3",
+          "part": "root/bodySegment3",
+          "component": "yRot",
+          "value": 0.47123889803846897
+        },
+        {
+          "field": "bodySegment1",
+          "part": "root/bodySegment1",
+          "component": "x",
+          "value": 0.09232907831797003
+        },
+        {
+          "field": "bodySegment2",
+          "part": "root/bodySegment2",
+          "component": "x",
+          "value": 0.2799179490842982
+        },
+        {
+          "field": "bodySegment3",
+          "part": "root/bodySegment3",
+          "component": "x",
+          "value": 0.47123889803846897
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "2c3be990e8476eb582c529e20e97353387a5a6c74017b17a343e60c0eb6c0b1d"
+    },
+    {
+      "mob": "Gwib",
+      "entity_id": "undergarden:gwib",
+      "image": "gwib.png",
+      "cube_count": 9,
+      "model": "quek/undergarden/client/model/GwibModel.class",
+      "renderer": "quek/undergarden/client/render/entity/GwibRenderer.class",
+      "texture": "assets/undergarden/textures/entity/gwib.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/gwib_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "body",
+          "part": "root/body",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "body",
+          "part": "root/body",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "tail",
+          "part": "root/body/tail",
+          "component": "yRot",
+          "value": -0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Na água.",
+      "sha256": "ec5340b5c00cc6ad4a38997a191aba8b6417dc79da4cf7af6a62dfcbdb2781a9"
+    },
+    {
+      "mob": "Mog",
+      "entity_id": "undergarden:mog",
+      "image": "mog.png",
+      "cube_count": 8,
+      "model": "quek/undergarden/client/model/MogModel.class",
+      "renderer": "quek/undergarden/client/render/entity/MogRenderer.class",
+      "texture": "assets/undergarden/textures/entity/mog.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/mog_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "body",
+          "part": "root/body",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "frontLegLeft",
+          "part": "root/frontLegLeft",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "frontLegRight",
+          "part": "root/frontLegRight",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "backLegLeft",
+          "part": "root/backLegLeft",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "backLegRight",
+          "part": "root/backLegRight",
+          "component": "xRot",
+          "value": 0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Com musgo, conforme hasMoss=true.",
+      "sha256": "a2dc9d6017ec13dd11b168e905c360d3ffe78755c28075598ced02c204453426"
+    },
+    {
+      "mob": "S'Mog",
+      "entity_id": "undergarden:smog_mog",
+      "image": "smog-mog.png",
+      "cube_count": 8,
+      "model": "quek/undergarden/client/model/SmogMogModel.class",
+      "renderer": "quek/undergarden/client/render/entity/SmogMogRenderer.class",
+      "texture": "assets/undergarden/textures/entity/smog_mog.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/smog_mog_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "body",
+          "part": "root/body",
+          "component": "zRot",
+          "value": 0.0
+        },
+        {
+          "field": "frontLegLeft",
+          "part": "root/left_front_leg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "frontLegRight",
+          "part": "root/right_front_leg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "backLegLeft",
+          "part": "root/left_back_leg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "backLegRight",
+          "part": "root/right_back_leg",
+          "component": "xRot",
+          "value": 0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Com musgo, conforme hasMoss=true.",
+      "sha256": "2fe9205c7d96ee4fe9460cb7411c98df6c6ecf30ec6377b812775d4fe731a9cd"
+    },
+    {
+      "mob": "Forgotten",
+      "entity_id": "undergarden:forgotten",
+      "image": "forgotten.png",
+      "cube_count": 7,
+      "model": "quek/undergarden/client/model/ForgottenModel.class",
+      "renderer": "quek/undergarden/client/render/entity/ForgottenRenderer.class",
+      "texture": "assets/undergarden/textures/entity/forgotten.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/forgotten_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class",
+        "minecraft:HumanoidModel"
+      ],
+      "pose_overrides": [
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "yRot",
+          "value": 0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "zRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "yRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "zRot",
+          "value": 0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/right_leg",
+          "component": "yRot",
+          "value": 0.005
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/right_leg",
+          "component": "zRot",
+          "value": 0.005
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/left_leg",
+          "component": "yRot",
+          "value": -0.005
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/left_leg",
+          "component": "zRot",
+          "value": -0.005
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "zRot",
+          "value": 0.1
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "zRot",
+          "value": -0.1
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Cabeça, chapéu e torso herdados de HumanoidModel 1.21.1; sem armadura.",
+      "sha256": "6d5e91c454619a070fc31e3b8ed9ca6c9f3e7f41d007f6fbd59b32c8c9e24897"
+    },
+    {
+      "mob": "Denizen · short",
+      "entity_id": "undergarden:denizen",
+      "image": "denizen-short.png",
+      "cube_count": 8,
+      "model": "quek/undergarden/client/model/DenizenModel.class",
+      "renderer": "quek/undergarden/client/render/entity/DenizenRenderer.class",
+      "texture": "assets/undergarden/textures/entity/denizen.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/denizen_eyes.png",
+        "quek/undergarden/client/render/layer/DenizenEyesLayer.class",
+        "quek/undergarden/client/model/FixedHumanoidModel.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "yRot",
+          "value": 0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "zRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "yRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "zRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "zRot",
+          "value": 0.1
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "zRot",
+          "value": -0.1
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Variante SHORT original, em pé.",
+      "sha256": "aad4e8434b024e957c3267f367e732c75f058d759e1940587fc90d9d8f0aad30"
+    },
+    {
+      "mob": "Denizen · tall",
+      "entity_id": "undergarden:denizen",
+      "image": "denizen-tall.png",
+      "cube_count": 8,
+      "model": "quek/undergarden/client/model/Denizen2Model.class",
+      "renderer": "quek/undergarden/client/render/entity/DenizenRenderer.class",
+      "texture": "assets/undergarden/textures/entity/denizen2.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/denizen2_eyes.png",
+        "quek/undergarden/client/render/layer/DenizenEyesLayer.class",
+        "quek/undergarden/client/model/FixedHumanoidModel.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "yRot",
+          "value": 0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "zRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "yRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "zRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/right_arm",
+          "component": "zRot",
+          "value": 0.1
+        },
+        {
+          "field": "leftArm",
+          "part": "root/left_arm",
+          "component": "zRot",
+          "value": -0.1
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Variante TALL original, em pé.",
+      "sha256": "b3cce8056ff03a4a9f7ec94ff5c9f74fe554af92c3636cf40366a77ed1686290"
+    },
+    {
+      "mob": "Mysterious Pot",
+      "entity_id": "undergarden:mysterious_pot",
+      "image": "mysterious-pot.png",
+      "cube_count": 12,
+      "model": "quek/undergarden/client/model/MysteriousPotModel.class",
+      "renderer": "quek/undergarden/client/render/entity/MysteriousPotRenderer.class",
+      "texture": "assets/undergarden/textures/entity/potguy.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/potguy_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "front_right_leg",
+          "part": "root/front_right_leg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "front_left_leg",
+          "part": "root/front_left_leg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "back_right_leg",
+          "part": "root/back_right_leg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "back_left_leg",
+          "part": "root/back_left_leg",
+          "component": "xRot",
+          "value": 0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção. Ativo: modelo vivo com patas e olhos luminosos; estado inativo não mostrado.",
+      "sha256": "d7adb054b13a1f50b51e0f69155f0099a1404fc0117621f76fae6374df0b5063"
+    },
+    {
+      "mob": "Stoneborn",
+      "entity_id": "undergarden:stoneborn",
+      "image": "stoneborn.png",
+      "cube_count": 16,
+      "model": "quek/undergarden/client/model/StonebornModel.class",
+      "renderer": "quek/undergarden/client/render/entity/StonebornRenderer.class",
+      "texture": "assets/undergarden/textures/entity/stoneborn.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/stoneborn_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "zRot",
+          "value": -0.0436
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "zRot",
+          "value": 0.0436
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightLeg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/rightArm",
+          "component": "zRot",
+          "value": 0.056400000000000006
+        },
+        {
+          "field": "leftArm",
+          "part": "root/leftArm",
+          "component": "zRot",
+          "value": -0.056400000000000006
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "f93dacdc9188b97d4aae4ebb71f2b42572c2351eea8a377ab2b14f3f7285c9ea"
+    },
+    {
+      "mob": "Forgotten Minion",
+      "entity_id": "undergarden:minion",
+      "image": "minion.png",
+      "cube_count": 8,
+      "model": "quek/undergarden/client/model/MinionModel.class",
+      "renderer": "quek/undergarden/client/render/entity/MinionRenderer.class",
+      "texture": "assets/undergarden/textures/entity/minion.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/minion_eye.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "frontLeftLeg",
+          "part": "root/body/frontLeftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "frontRightLeg",
+          "part": "root/body/frontRightLeg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "backLeftLeg",
+          "part": "root/body/backLeftLeg",
+          "component": "xRot",
+          "value": -0.0
+        },
+        {
+          "field": "backRightLeg",
+          "part": "root/body/backRightLeg",
+          "component": "xRot",
+          "value": 0.0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "479cbafaee2839abe1c35bc5774d5b0fc4caf5be66bcaa0a9b81b18bb87b1838"
+    },
+    {
+      "mob": "Forgotten Guardian",
+      "entity_id": "undergarden:forgotten_guardian",
+      "image": "forgotten-guardian.png",
+      "cube_count": 16,
+      "model": "quek/undergarden/client/model/ForgottenGuardianModel.class",
+      "renderer": "quek/undergarden/client/render/entity/ForgottenGuardianRenderer.class",
+      "texture": "assets/undergarden/textures/entity/forgotten_guardian.png",
+      "extra_sources": [
+        "assets/undergarden/textures/entity/forgotten_guardian_eyes.png",
+        "quek/undergarden/client/render/layer/BasicEyesLayer.class"
+      ],
+      "pose_overrides": [
+        {
+          "field": "head",
+          "part": "root/body/head",
+          "component": "yRot",
+          "value": 0.0
+        },
+        {
+          "field": "head",
+          "part": "root/body/head",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftLeg",
+          "part": "root/leftLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "rightLeg",
+          "part": "root/rightLeg",
+          "component": "xRot",
+          "value": 0.0
+        },
+        {
+          "field": "leftArm",
+          "part": "root/body/leftArm",
+          "component": "xRot",
+          "value": 0
+        },
+        {
+          "field": "rightArm",
+          "part": "root/body/rightArm",
+          "component": "xRot",
+          "value": 0
+        }
+      ],
+      "notes": "Adulto parado, movimento/olhar zerados, ageInTicks=0, sem ataque, sem item equipado ou efeito de infecção.",
+      "sha256": "d03dee342f843d2737405f18863b4bcd3f8014f5406d1f48cd068d21c67a2e0b"
+    }
+  ],
+  "method": "Malhas Java decompiladas do JAR exato, preservando hierarquia, pivôs, deformações, espelhos e UVs. Texturas do mesmo JAR, amostragem por texel e enquadramento ortográfico. SetupAnim e PrepareMobModel avaliados para estados explicitados em cada imagem; campos substituídos estão registrados.",
+  "minecraft_reference": {
+    "version": "1.21.1",
+    "jar_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+    "decompiled_classes": {
+      "HumanoidModel": "fvx",
+      "AnimationUtils": "fuh"
+    },
+    "reason": "Cabeça, hat e corpo herdados pelo Forgotten; poses e bobArms usados por diferentes mobs."
+  },
+  "decompiler": {
+    "name": "CFR",
+    "version": "0.152",
+    "url": "https://www.benf.org/other/cfr/cfr-0.152.jar",
+    "sha256": "f686e8f3ded377d7bc87d216a90e9e9512df4156e75b06c655a16648ae8765b2",
+    "command": "java -jar cfr-0.152.jar PATH_TO_CLASS --silent true"
+  },
+  "limits": [
+    "Representações técnicas estáticas; não são capturas de Minecraft. Luz direcional simplificada, sem motor, lightmap, partículas ou interpolação temporal.",
+    "Camadas Eyes compostas no espaço UV com máscara emissiva da textura original; não reproduzem exatamente o shader aditivo e sua ordem de desenho.",
+    "Pose parada em t=0, sem agressividade, carga, ataque, montaria, item, armadura ou infecção. Adultos apenas. Peixes na água, Dweller sem sela, Mog e S’Mog com musgo e Mysterious Pot ativo.",
+    "Denizen SHORT e TALL em PNGs distintos; as demais variações de estado fora deste lote estão descritas nos cards.",
+    "Escala absoluta normalizada individualmente; as imagens não são uma comparação de tamanho entre mobs.",
+    "Cossenos e senos calculados com biblioteca matemática; não há promessa de reprodução bit a bit da tabela Mth do Minecraft."
+  ],
+  "catalog_reference_commit": "6d7f02deab3e2ad44692f7edf2dea1cca3ba747f",
+  "site_modified": false
+}

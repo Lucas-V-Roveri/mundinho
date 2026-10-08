@@ -1,0 +1,2585 @@
+[
+  {
+    "anchor": "receita-aerogel-slab",
+    "name": "data/aether/recipe/aerogel_slab.json",
+    "source": "data/aether/recipe/aerogel_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:aerogel"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:aerogel_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aerogel-slab-from-aerogel-stonecutting",
+    "name": "data/aether/recipe/aerogel_slab_from_aerogel_stonecutting.json",
+    "source": "data/aether/recipe/aerogel_slab_from_aerogel_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:aerogel"
+      },
+      "result": {
+        "count": 2,
+        "id": "aether:aerogel_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aerogel-stairs",
+    "name": "data/aether/recipe/aerogel_stairs.json",
+    "source": "data/aether/recipe/aerogel_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:aerogel"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "aether:aerogel_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aerogel-stairs-from-aerogel-stonecutting",
+    "name": "data/aether/recipe/aerogel_stairs_from_aerogel_stonecutting.json",
+    "source": "data/aether/recipe/aerogel_stairs_from_aerogel_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:aerogel"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:aerogel_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aerogel-wall",
+    "name": "data/aether/recipe/aerogel_wall.json",
+    "source": "data/aether/recipe/aerogel_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "aether:aerogel"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:aerogel_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aerogel-wall-from-aerogel-stonecutting",
+    "name": "data/aether/recipe/aerogel_wall_from_aerogel_stonecutting.json",
+    "source": "data/aether/recipe/aerogel_wall_from_aerogel_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:aerogel"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:aerogel_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aether-gold-nugget-from-blasting",
+    "name": "data/aether/recipe/aether_gold_nugget_from_blasting.json",
+    "source": "data/aether/recipe/aether_gold_nugget_from_blasting.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.1,
+      "group": "gold_nugget_from_blasting",
+      "ingredient": [
+        {
+          "item": "aether:golden_gloves"
+        },
+        {
+          "item": "aether:golden_pendant"
+        },
+        {
+          "item": "aether:golden_ring"
+        },
+        {
+          "item": "aether:victory_medal"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:gold_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aether-gold-nugget-from-smelting",
+    "name": "data/aether/recipe/aether_gold_nugget_from_smelting.json",
+    "source": "data/aether/recipe/aether_gold_nugget_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "group": "gold_nugget_from_smelting",
+      "ingredient": [
+        {
+          "item": "aether:golden_gloves"
+        },
+        {
+          "item": "aether:golden_pendant"
+        },
+        {
+          "item": "aether:golden_ring"
+        },
+        {
+          "item": "aether:victory_medal"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:gold_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aether-iron-nugget-from-blasting",
+    "name": "data/aether/recipe/aether_iron_nugget_from_blasting.json",
+    "source": "data/aether/recipe/aether_iron_nugget_from_blasting.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.1,
+      "group": "iron_nugget_from_blasting",
+      "ingredient": [
+        {
+          "item": "aether:iron_gloves"
+        },
+        {
+          "item": "aether:iron_pendant"
+        },
+        {
+          "item": "aether:iron_ring"
+        },
+        {
+          "item": "aether:chainmail_gloves"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aether-iron-nugget-from-smelting",
+    "name": "data/aether/recipe/aether_iron_nugget_from_smelting.json",
+    "source": "data/aether/recipe/aether_iron_nugget_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "group": "iron_nugget_from_smelting",
+      "ingredient": [
+        {
+          "item": "aether:iron_gloves"
+        },
+        {
+          "item": "aether:iron_pendant"
+        },
+        {
+          "item": "aether:iron_ring"
+        },
+        {
+          "item": "aether:chainmail_gloves"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aether-saddle",
+    "name": "data/aether/recipe/aether_saddle.json",
+    "source": "data/aether/recipe/aether_saddle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "L": {
+          "item": "minecraft:leather"
+        },
+        "S": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "LLL",
+        "LSL"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:saddle"
+      }
+    }
+  },
+  {
+    "anchor": "receita-altar",
+    "name": "data/aether/recipe/altar.json",
+    "source": "data/aether/recipe/altar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "H": {
+          "item": "aether:holystone"
+        },
+        "Z": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "HHH",
+        "HZH",
+        "HHH"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:altar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ambrosium-block",
+    "name": "data/aether/recipe/ambrosium_block.json",
+    "source": "data/aether/recipe/ambrosium_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:ambrosium_shard"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:ambrosium_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ambrosium-torch",
+    "name": "data/aether/recipe/ambrosium_torch.json",
+    "source": "data/aether/recipe/ambrosium_torch.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "/": {
+          "tag": "aether:skyroot_stick"
+        },
+        "A": {
+          "tag": "aether:gems/ambrosium"
+        }
+      },
+      "pattern": [
+        "A",
+        "/"
+      ],
+      "result": {
+        "count": 4,
+        "id": "aether:ambrosium_torch"
+      }
+    }
+  },
+  {
+    "anchor": "receita-angelic-slab",
+    "name": "data/aether/recipe/angelic_slab.json",
+    "source": "data/aether/recipe/angelic_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:angelic_stone"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:angelic_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-angelic-slab-from-angelic-stone-stonecutting",
+    "name": "data/aether/recipe/angelic_slab_from_angelic_stone_stonecutting.json",
+    "source": "data/aether/recipe/angelic_slab_from_angelic_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:angelic_stone"
+      },
+      "result": {
+        "count": 2,
+        "id": "aether:angelic_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-angelic-stairs",
+    "name": "data/aether/recipe/angelic_stairs.json",
+    "source": "data/aether/recipe/angelic_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:angelic_stone"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "aether:angelic_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-angelic-stairs-from-angelic-stone-stonecutting",
+    "name": "data/aether/recipe/angelic_stairs_from_angelic_stone_stonecutting.json",
+    "source": "data/aether/recipe/angelic_stairs_from_angelic_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:angelic_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:angelic_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-angelic-wall",
+    "name": "data/aether/recipe/angelic_wall.json",
+    "source": "data/aether/recipe/angelic_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "aether:angelic_stone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:angelic_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-angelic-wall-from-angelic-stone-stonecutting",
+    "name": "data/aether/recipe/angelic_wall_from_angelic_stone_stonecutting.json",
+    "source": "data/aether/recipe/angelic_wall_from_angelic_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:angelic_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:angelic_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blue-aercloud-freezing",
+    "name": "data/aether/recipe/blue_aercloud_freezing.json",
+    "source": "data/aether/recipe/blue_aercloud_freezing.json",
+    "recipe": {
+      "type": "aether:freezing",
+      "category": "freezable_blocks",
+      "cookingtime": 400,
+      "experience": 0.1,
+      "ingredient": {
+        "item": "aether:cold_aercloud"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:blue_aercloud"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blue-cape-blue-wool",
+    "name": "data/aether/recipe/blue_cape_blue_wool.json",
+    "source": "data/aether/recipe/blue_cape_blue_wool.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "group": "blue_cape",
+      "key": {
+        "#": {
+          "item": "minecraft:blue_wool"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:blue_cape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blue-cape-cyan-wool",
+    "name": "data/aether/recipe/blue_cape_cyan_wool.json",
+    "source": "data/aether/recipe/blue_cape_cyan_wool.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "group": "blue_cape",
+      "key": {
+        "#": {
+          "item": "minecraft:cyan_wool"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:blue_cape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blue-cape-light-blue-wool",
+    "name": "data/aether/recipe/blue_cape_light_blue_wool.json",
+    "source": "data/aether/recipe/blue_cape_light_blue_wool.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "group": "blue_cape",
+      "key": {
+        "#": {
+          "item": "minecraft:light_blue_wool"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:blue_cape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-book-of-lore",
+    "name": "data/aether/recipe/book_of_lore.json",
+    "source": "data/aether/recipe/book_of_lore.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "book_of_lore",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "tag": "aether:book_of_lore_materials"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:book_of_lore"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carved-slab",
+    "name": "data/aether/recipe/carved_slab.json",
+    "source": "data/aether/recipe/carved_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:carved_stone"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:carved_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carved-slab-from-carved-stone-stonecutting",
+    "name": "data/aether/recipe/carved_slab_from_carved_stone_stonecutting.json",
+    "source": "data/aether/recipe/carved_slab_from_carved_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:carved_stone"
+      },
+      "result": {
+        "count": 2,
+        "id": "aether:carved_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carved-stairs",
+    "name": "data/aether/recipe/carved_stairs.json",
+    "source": "data/aether/recipe/carved_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:carved_stone"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "aether:carved_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carved-stairs-from-carved-stone-stonecutting",
+    "name": "data/aether/recipe/carved_stairs_from_carved_stone_stonecutting.json",
+    "source": "data/aether/recipe/carved_stairs_from_carved_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:carved_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:carved_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carved-stone-from-sentry-stone-stonecutting",
+    "name": "data/aether/recipe/carved_stone_from_sentry_stone_stonecutting.json",
+    "source": "data/aether/recipe/carved_stone_from_sentry_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:sentry_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:carved_stone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carved-wall",
+    "name": "data/aether/recipe/carved_wall.json",
+    "source": "data/aether/recipe/carved_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "aether:carved_stone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:carved_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carved-wall-from-carved-stone-stonecutting",
+    "name": "data/aether/recipe/carved_wall_from_carved_stone_stonecutting.json",
+    "source": "data/aether/recipe/carved_wall_from_carved_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:carved_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:carved_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chainmail-boots-repairing",
+    "name": "data/aether/recipe/chainmail_boots_repairing.json",
+    "source": "data/aether/recipe/chainmail_boots_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_boots_repair",
+      "ingredient": {
+        "item": "minecraft:chainmail_boots"
+      },
+      "repairTime": 700
+    }
+  },
+  {
+    "anchor": "receita-chainmail-chestplate-repairing",
+    "name": "data/aether/recipe/chainmail_chestplate_repairing.json",
+    "source": "data/aether/recipe/chainmail_chestplate_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_chestplate_repair",
+      "ingredient": {
+        "item": "minecraft:chainmail_chestplate"
+      },
+      "repairTime": 700
+    }
+  },
+  {
+    "anchor": "receita-chainmail-gloves-repairing",
+    "name": "data/aether/recipe/chainmail_gloves_repairing.json",
+    "source": "data/aether/recipe/chainmail_gloves_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_gloves_repair",
+      "ingredient": {
+        "item": "aether:chainmail_gloves"
+      },
+      "repairTime": 700
+    }
+  },
+  {
+    "anchor": "receita-chainmail-helmet-repairing",
+    "name": "data/aether/recipe/chainmail_helmet_repairing.json",
+    "source": "data/aether/recipe/chainmail_helmet_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_helmet_repair",
+      "ingredient": {
+        "item": "minecraft:chainmail_helmet"
+      },
+      "repairTime": 700
+    }
+  },
+  {
+    "anchor": "receita-chainmail-leggings-repairing",
+    "name": "data/aether/recipe/chainmail_leggings_repairing.json",
+    "source": "data/aether/recipe/chainmail_leggings_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_leggings_repair",
+      "ingredient": {
+        "item": "minecraft:chainmail_leggings"
+      },
+      "repairTime": 700
+    }
+  },
+  {
+    "anchor": "receita-cold-parachute",
+    "name": "data/aether/recipe/cold_parachute.json",
+    "source": "data/aether/recipe/cold_parachute.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "aether:cold_aercloud"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:cold_parachute"
+      }
+    }
+  },
+  {
+    "anchor": "receita-enchanted-berry-enchanting",
+    "name": "data/aether/recipe/enchanted_berry_enchanting.json",
+    "source": "data/aether/recipe/enchanted_berry_enchanting.json",
+    "recipe": {
+      "type": "aether:enchanting",
+      "category": "enchanting_food",
+      "cookingtime": 250,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "aether:blue_berry"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:enchanted_berry"
+      }
+    }
+  },
+  {
+    "anchor": "receita-enchanted-dart-enchanting",
+    "name": "data/aether/recipe/enchanted_dart_enchanting.json",
+    "source": "data/aether/recipe/enchanted_dart_enchanting.json",
+    "recipe": {
+      "type": "aether:enchanting",
+      "category": "enchanting_misc",
+      "cookingtime": 50,
+      "experience": 0.15,
+      "ingredient": {
+        "item": "aether:golden_dart"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:enchanted_dart"
+      }
+    }
+  },
+  {
+    "anchor": "receita-enchanted-gravitite-enchanting",
+    "name": "data/aether/recipe/enchanted_gravitite_enchanting.json",
+    "source": "data/aether/recipe/enchanted_gravitite_enchanting.json",
+    "recipe": {
+      "type": "aether:enchanting",
+      "category": "enchanting_blocks",
+      "cookingtime": 750,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "aether:gravitite_ore"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:enchanted_gravitite"
+      }
+    }
+  },
+  {
+    "anchor": "receita-freezer",
+    "name": "data/aether/recipe/freezer.json",
+    "source": "data/aether/recipe/freezer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "H": {
+          "item": "aether:holystone"
+        },
+        "I": {
+          "item": "aether:icestone"
+        },
+        "P": {
+          "item": "aether:skyroot_planks"
+        }
+      },
+      "pattern": [
+        "HHH",
+        "HIH",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:freezer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-aercloud-enchanting",
+    "name": "data/aether/recipe/golden_aercloud_enchanting.json",
+    "source": "data/aether/recipe/golden_aercloud_enchanting.json",
+    "recipe": {
+      "type": "aether:enchanting",
+      "category": "enchanting_blocks",
+      "cookingtime": 1000,
+      "experience": 0.1,
+      "ingredient": {
+        "item": "aether:cold_aercloud"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:golden_aercloud"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-dart",
+    "name": "data/aether/recipe/golden_dart.json",
+    "source": "data/aether/recipe/golden_dart.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "/": {
+          "tag": "aether:skyroot_stick"
+        },
+        "F": {
+          "tag": "c:feathers"
+        },
+        "G": {
+          "item": "aether:golden_amber"
+        }
+      },
+      "pattern": [
+        "F",
+        "/",
+        "G"
+      ],
+      "result": {
+        "count": 4,
+        "id": "aether:golden_dart"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-dart-shooter",
+    "name": "data/aether/recipe/golden_dart_shooter.json",
+    "source": "data/aether/recipe/golden_dart_shooter.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "G": {
+          "item": "aether:golden_amber"
+        },
+        "P": {
+          "item": "aether:skyroot_planks"
+        }
+      },
+      "pattern": [
+        "P",
+        "P",
+        "G"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:golden_dart_shooter"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-pendant",
+    "name": "data/aether/recipe/golden_pendant.json",
+    "source": "data/aether/recipe/golden_pendant.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        },
+        "S": {
+          "tag": "c:strings"
+        }
+      },
+      "pattern": [
+        "SSS",
+        "S S",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:golden_pendant"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-ring",
+    "name": "data/aether/recipe/golden_ring.json",
+    "source": "data/aether/recipe/golden_ring.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        " # ",
+        "# #",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:golden_ring"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-sword-repairing",
+    "name": "data/aether/recipe/golden_sword_repairing.json",
+    "source": "data/aether/recipe/golden_sword_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_sword_repair",
+      "ingredient": {
+        "item": "minecraft:golden_sword"
+      },
+      "repairTime": 300
+    }
+  },
+  {
+    "anchor": "receita-gravitite-axe",
+    "name": "data/aether/recipe/gravitite_axe.json",
+    "source": "data/aether/recipe/gravitite_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "##",
+        "#/",
+        " /"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-axe-repairing",
+    "name": "data/aether/recipe/gravitite_axe_repairing.json",
+    "source": "data/aether/recipe/gravitite_axe_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_axe_repair",
+      "ingredient": {
+        "item": "aether:gravitite_axe"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-gravitite-boots",
+    "name": "data/aether/recipe/gravitite_boots.json",
+    "source": "data/aether/recipe/gravitite_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-boots-repairing",
+    "name": "data/aether/recipe/gravitite_boots_repairing.json",
+    "source": "data/aether/recipe/gravitite_boots_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_boots_repair",
+      "ingredient": {
+        "item": "aether:gravitite_boots"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-gravitite-chestplate",
+    "name": "data/aether/recipe/gravitite_chestplate.json",
+    "source": "data/aether/recipe/gravitite_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-chestplate-repairing",
+    "name": "data/aether/recipe/gravitite_chestplate_repairing.json",
+    "source": "data/aether/recipe/gravitite_chestplate_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_chestplate_repair",
+      "ingredient": {
+        "item": "aether:gravitite_chestplate"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-gravitite-gloves",
+    "name": "data/aether/recipe/gravitite_gloves.json",
+    "source": "data/aether/recipe/gravitite_gloves.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        }
+      },
+      "pattern": [
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_gloves"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-gloves-repairing",
+    "name": "data/aether/recipe/gravitite_gloves_repairing.json",
+    "source": "data/aether/recipe/gravitite_gloves_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_gloves_repair",
+      "ingredient": {
+        "item": "aether:gravitite_gloves"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-gravitite-helmet",
+    "name": "data/aether/recipe/gravitite_helmet.json",
+    "source": "data/aether/recipe/gravitite_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-helmet-repairing",
+    "name": "data/aether/recipe/gravitite_helmet_repairing.json",
+    "source": "data/aether/recipe/gravitite_helmet_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_helmet_repair",
+      "ingredient": {
+        "item": "aether:gravitite_helmet"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-gravitite-hoe",
+    "name": "data/aether/recipe/gravitite_hoe.json",
+    "source": "data/aether/recipe/gravitite_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "##",
+        " /",
+        " /"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-jukebox",
+    "name": "data/aether/recipe/gravitite_jukebox.json",
+    "source": "data/aether/recipe/gravitite_jukebox.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "minecraft:jukebox",
+      "key": {
+        "G": {
+          "tag": "aether:processed/gravitite"
+        },
+        "P": {
+          "tag": "minecraft:planks"
+        }
+      },
+      "pattern": [
+        "PPP",
+        "PGP",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:jukebox"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-leggings",
+    "name": "data/aether/recipe/gravitite_leggings.json",
+    "source": "data/aether/recipe/gravitite_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-leggings-repairing",
+    "name": "data/aether/recipe/gravitite_leggings_repairing.json",
+    "source": "data/aether/recipe/gravitite_leggings_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_leggings_repair",
+      "ingredient": {
+        "item": "aether:gravitite_leggings"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-gravitite-pickaxe",
+    "name": "data/aether/recipe/gravitite_pickaxe.json",
+    "source": "data/aether/recipe/gravitite_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "###",
+        " / ",
+        " / "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-pickaxe-repairing",
+    "name": "data/aether/recipe/gravitite_pickaxe_repairing.json",
+    "source": "data/aether/recipe/gravitite_pickaxe_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_pickaxe_repair",
+      "ingredient": {
+        "item": "aether:gravitite_pickaxe"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-gravitite-shovel",
+    "name": "data/aether/recipe/gravitite_shovel.json",
+    "source": "data/aether/recipe/gravitite_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "#",
+        "/",
+        "/"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-sword",
+    "name": "data/aether/recipe/gravitite_sword.json",
+    "source": "data/aether/recipe/gravitite_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:processed/gravitite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "/"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:gravitite_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravitite-sword-repairing",
+    "name": "data/aether/recipe/gravitite_sword_repairing.json",
+    "source": "data/aether/recipe/gravitite_sword_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_sword_repair",
+      "ingredient": {
+        "item": "aether:gravitite_sword"
+      },
+      "repairTime": 1500
+    }
+  },
+  {
+    "anchor": "receita-holystone-pickaxe-repairing",
+    "name": "data/aether/recipe/holystone_pickaxe_repairing.json",
+    "source": "data/aether/recipe/holystone_pickaxe_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_pickaxe_repair",
+      "ingredient": {
+        "item": "aether:holystone_pickaxe"
+      },
+      "repairTime": 500
+    }
+  },
+  {
+    "anchor": "receita-holystone-stonecutter",
+    "name": "data/aether/recipe/holystone_stonecutter.json",
+    "source": "data/aether/recipe/holystone_stonecutter.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "minecraft:stonecutter",
+      "key": {
+        "#": {
+          "item": "aether:holystone"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        " I ",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:stonecutter"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ice-ring-from-freezing",
+    "name": "data/aether/recipe/ice_ring_from_freezing.json",
+    "source": "data/aether/recipe/ice_ring_from_freezing.json",
+    "recipe": {
+      "type": "aether:freezing",
+      "category": "freezable_misc",
+      "cookingtime": 800,
+      "experience": 1.0,
+      "ingredient": {
+        "tag": "aether:freezable_rings"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:ice_ring"
+      }
+    }
+  },
+  {
+    "anchor": "receita-icestone-slab",
+    "name": "data/aether/recipe/icestone_slab.json",
+    "source": "data/aether/recipe/icestone_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:icestone"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:icestone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-icestone-slab-from-icestone-stonecutting",
+    "name": "data/aether/recipe/icestone_slab_from_icestone_stonecutting.json",
+    "source": "data/aether/recipe/icestone_slab_from_icestone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:icestone"
+      },
+      "result": {
+        "count": 2,
+        "id": "aether:icestone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-icestone-stairs",
+    "name": "data/aether/recipe/icestone_stairs.json",
+    "source": "data/aether/recipe/icestone_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:icestone"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "aether:icestone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-icestone-stairs-from-icestone-stonecutting",
+    "name": "data/aether/recipe/icestone_stairs_from_icestone_stonecutting.json",
+    "source": "data/aether/recipe/icestone_stairs_from_icestone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:icestone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:icestone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-icestone-wall",
+    "name": "data/aether/recipe/icestone_wall.json",
+    "source": "data/aether/recipe/icestone_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "aether:icestone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "aether:icestone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-icestone-wall-from-icestone-stonecutting",
+    "name": "data/aether/recipe/icestone_wall_from_icestone_stonecutting.json",
+    "source": "data/aether/recipe/icestone_wall_from_icestone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:icestone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:icestone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-incubator",
+    "name": "data/aether/recipe/incubator.json",
+    "source": "data/aether/recipe/incubator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "H": {
+          "item": "aether:holystone"
+        },
+        "T": {
+          "item": "aether:ambrosium_torch"
+        }
+      },
+      "pattern": [
+        "HHH",
+        "HTH",
+        "HHH"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:incubator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-pendant",
+    "name": "data/aether/recipe/iron_pendant.json",
+    "source": "data/aether/recipe/iron_pendant.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        },
+        "S": {
+          "tag": "c:strings"
+        }
+      },
+      "pattern": [
+        "SSS",
+        "S S",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:iron_pendant"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-ring",
+    "name": "data/aether/recipe/iron_ring.json",
+    "source": "data/aether/recipe/iron_ring.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        " # ",
+        "# #",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:iron_ring"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-sword-repairing",
+    "name": "data/aether/recipe/iron_sword_repairing.json",
+    "source": "data/aether/recipe/iron_sword_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_sword_repair",
+      "ingredient": {
+        "item": "minecraft:iron_sword"
+      },
+      "repairTime": 750
+    }
+  },
+  {
+    "anchor": "receita-light-angelic-stone-from-angelic-stone-stonecutting",
+    "name": "data/aether/recipe/light_angelic_stone_from_angelic_stone_stonecutting.json",
+    "source": "data/aether/recipe/light_angelic_stone_from_angelic_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:angelic_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:light_angelic_stone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-moa-egg-cake",
+    "name": "data/aether/recipe/moa_egg_cake.json",
+    "source": "data/aether/recipe/moa_egg_cake.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "minecraft:cake",
+      "key": {
+        "A": {
+          "item": "minecraft:milk_bucket"
+        },
+        "B": {
+          "item": "minecraft:sugar"
+        },
+        "C": {
+          "item": "minecraft:wheat"
+        },
+        "E": {
+          "tag": "aether:moa_eggs"
+        }
+      },
+      "pattern": [
+        "AAA",
+        "BEB",
+        "CCC"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:cake"
+      }
+    }
+  },
+  {
+    "anchor": "receita-moa-egg-pumpkin-pie",
+    "name": "data/aether/recipe/moa_egg_pumpkin_pie.json",
+    "source": "data/aether/recipe/moa_egg_pumpkin_pie.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "minecraft:pumpkin_pie",
+      "ingredients": [
+        {
+          "item": "minecraft:pumpkin"
+        },
+        {
+          "item": "minecraft:sugar"
+        },
+        {
+          "tag": "aether:moa_eggs"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:pumpkin_pie"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nature-staff",
+    "name": "data/aether/recipe/nature_staff.json",
+    "source": "data/aether/recipe/nature_staff.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "/": {
+          "tag": "aether:skyroot_stick"
+        },
+        "Z": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "Z",
+        "/"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:nature_staff"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pillar-from-angelic-stone-stonecutting",
+    "name": "data/aether/recipe/pillar_from_angelic_stone_stonecutting.json",
+    "source": "data/aether/recipe/pillar_from_angelic_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:angelic_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pillar-top-from-angelic-stone-stonecutting",
+    "name": "data/aether/recipe/pillar_top_from_angelic_stone_stonecutting.json",
+    "source": "data/aether/recipe/pillar_top_from_angelic_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:angelic_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:pillar_top"
+      }
+    }
+  },
+  {
+    "anchor": "receita-poison-dart",
+    "name": "data/aether/recipe/poison_dart.json",
+    "source": "data/aether/recipe/poison_dart.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "B": {
+          "item": "aether:skyroot_poison_bucket"
+        },
+        "D": {
+          "item": "aether:golden_dart"
+        }
+      },
+      "pattern": [
+        "DDD",
+        "DBD",
+        "DDD"
+      ],
+      "result": {
+        "count": 8,
+        "id": "aether:poison_dart"
+      }
+    }
+  },
+  {
+    "anchor": "receita-poison-dart-shooter",
+    "name": "data/aether/recipe/poison_dart_shooter.json",
+    "source": "data/aether/recipe/poison_dart_shooter.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "ingredients": [
+        {
+          "item": "aether:golden_dart_shooter"
+        },
+        {
+          "item": "aether:aechor_petal"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:poison_dart_shooter"
+      }
+    }
+  },
+  {
+    "anchor": "receita-red-cape",
+    "name": "data/aether/recipe/red_cape.json",
+    "source": "data/aether/recipe/red_cape.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:red_wool"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:red_cape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-remedy-bucket-enchanting",
+    "name": "data/aether/recipe/remedy_bucket_enchanting.json",
+    "source": "data/aether/recipe/remedy_bucket_enchanting.json",
+    "recipe": {
+      "type": "aether:enchanting",
+      "category": "enchanting_misc",
+      "cookingtime": 500,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "aether:skyroot_poison_bucket"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:skyroot_remedy_bucket"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sentry-stone-from-carved-stone-stonecutting",
+    "name": "data/aether/recipe/sentry_stone_from_carved_stone_stonecutting.json",
+    "source": "data/aether/recipe/sentry_stone_from_carved_stone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "aether:carved_stone"
+      },
+      "result": {
+        "count": 1,
+        "id": "aether:sentry_stone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-skyroot-fletching-table",
+    "name": "data/aether/recipe/skyroot_fletching_table.json",
+    "source": "data/aether/recipe/skyroot_fletching_table.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "minecraft:fletching_table",
+      "key": {
+        "F": {
+          "item": "minecraft:flint"
+        },
+        "P": {
+          "tag": "aether:planks_crafting"
+        }
+      },
+      "pattern": [
+        "FF",
+        "PP",
+        "PP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:fletching_table"
+      }
+    }
+  },
+  {
+    "anchor": "receita-skyroot-gravitite-jukebox",
+    "name": "data/aether/recipe/skyroot_gravitite_jukebox.json",
+    "source": "data/aether/recipe/skyroot_gravitite_jukebox.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "minecraft:jukebox",
+      "key": {
+        "G": {
+          "tag": "aether:processed/gravitite"
+        },
+        "P": {
+          "tag": "aether:planks_crafting"
+        }
+      },
+      "pattern": [
+        "PPP",
+        "PGP",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:jukebox"
+      }
+    }
+  },
+  {
+    "anchor": "receita-skyroot-milk-bucket-cake",
+    "name": "data/aether/recipe/skyroot_milk_bucket_cake.json",
+    "source": "data/aether/recipe/skyroot_milk_bucket_cake.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "minecraft:cake",
+      "key": {
+        "A": {
+          "item": "aether:skyroot_milk_bucket"
+        },
+        "B": {
+          "item": "minecraft:sugar"
+        },
+        "C": {
+          "item": "minecraft:wheat"
+        },
+        "E": {
+          "item": "minecraft:egg"
+        }
+      },
+      "pattern": [
+        "AAA",
+        "BEB",
+        "CCC"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:cake"
+      }
+    }
+  },
+  {
+    "anchor": "receita-skyroot-milk-bucket-moa-egg-cake",
+    "name": "data/aether/recipe/skyroot_milk_bucket_moa_egg_cake.json",
+    "source": "data/aether/recipe/skyroot_milk_bucket_moa_egg_cake.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "minecraft:cake",
+      "key": {
+        "A": {
+          "item": "aether:skyroot_milk_bucket"
+        },
+        "B": {
+          "item": "minecraft:sugar"
+        },
+        "C": {
+          "item": "minecraft:wheat"
+        },
+        "E": {
+          "tag": "aether:moa_eggs"
+        }
+      },
+      "pattern": [
+        "AAA",
+        "BEB",
+        "CCC"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:cake"
+      }
+    }
+  },
+  {
+    "anchor": "receita-skyroot-pickaxe-repairing",
+    "name": "data/aether/recipe/skyroot_pickaxe_repairing.json",
+    "source": "data/aether/recipe/skyroot_pickaxe_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_pickaxe_repair",
+      "ingredient": {
+        "item": "aether:skyroot_pickaxe"
+      },
+      "repairTime": 250
+    }
+  },
+  {
+    "anchor": "receita-skyroot-zanite-vanilla-shield",
+    "name": "data/aether/recipe/skyroot_zanite_vanilla_shield.json",
+    "source": "data/aether/recipe/skyroot_zanite_vanilla_shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "group": "minecraft:shield",
+      "key": {
+        "P": {
+          "tag": "aether:planks_crafting"
+        },
+        "Z": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "PZP",
+        "PPP",
+        " P "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-swet-lead",
+    "name": "data/aether/recipe/swet_lead.json",
+    "source": "data/aether/recipe/swet_lead.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "group": "minecraft:lead",
+      "key": {
+        "B": {
+          "tag": "aether:swet_balls"
+        },
+        "S": {
+          "tag": "c:strings"
+        }
+      },
+      "pattern": [
+        "SS ",
+        "SB ",
+        "  S"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:lead"
+      }
+    }
+  },
+  {
+    "anchor": "receita-swet-slime-block",
+    "name": "data/aether/recipe/swet_slime_block.json",
+    "source": "data/aether/recipe/swet_slime_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "group": "minecraft:slime_block",
+      "key": {
+        "B": {
+          "tag": "aether:swet_balls"
+        }
+      },
+      "pattern": [
+        "BBB",
+        "BBB",
+        "BBB"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:slime_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-swet-sticky-piston",
+    "name": "data/aether/recipe/swet_sticky_piston.json",
+    "source": "data/aether/recipe/swet_sticky_piston.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "group": "minecraft:sticky_piston",
+      "key": {
+        "B": {
+          "tag": "aether:swet_balls"
+        },
+        "P": {
+          "item": "minecraft:piston"
+        }
+      },
+      "pattern": [
+        "B",
+        "P"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:sticky_piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-white-cape",
+    "name": "data/aether/recipe/white_cape.json",
+    "source": "data/aether/recipe/white_cape.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:white_wool"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:white_cape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wood-zanite-vanilla-shield",
+    "name": "data/aether/recipe/wood_zanite_vanilla_shield.json",
+    "source": "data/aether/recipe/wood_zanite_vanilla_shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "group": "minecraft:shield",
+      "key": {
+        "P": {
+          "tag": "minecraft:planks"
+        },
+        "Z": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "PZP",
+        "PPP",
+        " P "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-yellow-cape",
+    "name": "data/aether/recipe/yellow_cape.json",
+    "source": "data/aether/recipe/yellow_cape.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:yellow_wool"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:yellow_cape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-axe",
+    "name": "data/aether/recipe/zanite_axe.json",
+    "source": "data/aether/recipe/zanite_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "##",
+        "#/",
+        " /"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-block",
+    "name": "data/aether/recipe/zanite_block.json",
+    "source": "data/aether/recipe/zanite_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "aether:zanite_gemstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-boots",
+    "name": "data/aether/recipe/zanite_boots.json",
+    "source": "data/aether/recipe/zanite_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-boots-repairing",
+    "name": "data/aether/recipe/zanite_boots_repairing.json",
+    "source": "data/aether/recipe/zanite_boots_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_boots_repair",
+      "ingredient": {
+        "item": "aether:zanite_boots"
+      },
+      "repairTime": 750
+    }
+  },
+  {
+    "anchor": "receita-zanite-chestplate",
+    "name": "data/aether/recipe/zanite_chestplate.json",
+    "source": "data/aether/recipe/zanite_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-chestplate-repairing",
+    "name": "data/aether/recipe/zanite_chestplate_repairing.json",
+    "source": "data/aether/recipe/zanite_chestplate_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_chestplate_repair",
+      "ingredient": {
+        "item": "aether:zanite_chestplate"
+      },
+      "repairTime": 750
+    }
+  },
+  {
+    "anchor": "receita-zanite-gloves",
+    "name": "data/aether/recipe/zanite_gloves.json",
+    "source": "data/aether/recipe/zanite_gloves.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_gloves"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-gloves-repairing",
+    "name": "data/aether/recipe/zanite_gloves_repairing.json",
+    "source": "data/aether/recipe/zanite_gloves_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_gloves_repair",
+      "ingredient": {
+        "item": "aether:zanite_gloves"
+      },
+      "repairTime": 750
+    }
+  },
+  {
+    "anchor": "receita-zanite-helmet",
+    "name": "data/aether/recipe/zanite_helmet.json",
+    "source": "data/aether/recipe/zanite_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-helmet-repairing",
+    "name": "data/aether/recipe/zanite_helmet_repairing.json",
+    "source": "data/aether/recipe/zanite_helmet_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_helmet_repair",
+      "ingredient": {
+        "item": "aether:zanite_helmet"
+      },
+      "repairTime": 750
+    }
+  },
+  {
+    "anchor": "receita-zanite-hoe",
+    "name": "data/aether/recipe/zanite_hoe.json",
+    "source": "data/aether/recipe/zanite_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "##",
+        " /",
+        " /"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-leggings",
+    "name": "data/aether/recipe/zanite_leggings.json",
+    "source": "data/aether/recipe/zanite_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-leggings-repairing",
+    "name": "data/aether/recipe/zanite_leggings_repairing.json",
+    "source": "data/aether/recipe/zanite_leggings_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_leggings_repair",
+      "ingredient": {
+        "item": "aether:zanite_leggings"
+      },
+      "repairTime": 750
+    }
+  },
+  {
+    "anchor": "receita-zanite-pendant",
+    "name": "data/aether/recipe/zanite_pendant.json",
+    "source": "data/aether/recipe/zanite_pendant.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        },
+        "S": {
+          "tag": "c:strings"
+        }
+      },
+      "pattern": [
+        "SSS",
+        "S S",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_pendant"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-pendant-repairing",
+    "name": "data/aether/recipe/zanite_pendant_repairing.json",
+    "source": "data/aether/recipe/zanite_pendant_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_pendant_repair",
+      "ingredient": {
+        "item": "aether:zanite_pendant"
+      },
+      "repairTime": 500
+    }
+  },
+  {
+    "anchor": "receita-zanite-pickaxe",
+    "name": "data/aether/recipe/zanite_pickaxe.json",
+    "source": "data/aether/recipe/zanite_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "###",
+        " / ",
+        " / "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-ring",
+    "name": "data/aether/recipe/zanite_ring.json",
+    "source": "data/aether/recipe/zanite_ring.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        }
+      },
+      "pattern": [
+        " # ",
+        "# #",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_ring"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-ring-repairing",
+    "name": "data/aether/recipe/zanite_ring_repairing.json",
+    "source": "data/aether/recipe/zanite_ring_repairing.json",
+    "recipe": {
+      "type": "aether:repairing",
+      "group": "altar_ring_repair",
+      "ingredient": {
+        "item": "aether:zanite_ring"
+      },
+      "repairTime": 500
+    }
+  },
+  {
+    "anchor": "receita-zanite-shovel",
+    "name": "data/aether/recipe/zanite_shovel.json",
+    "source": "data/aether/recipe/zanite_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "#",
+        "/",
+        "/"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-zanite-sword",
+    "name": "data/aether/recipe/zanite_sword.json",
+    "source": "data/aether/recipe/zanite_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "aether:gems/zanite"
+        },
+        "/": {
+          "tag": "aether:skyroot_stick"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "/"
+      ],
+      "result": {
+        "count": 1,
+        "id": "aether:zanite_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-inebriation",
+    "name": "data/jeed/recipe/inebriation.json",
+    "source": "data/jeed/recipe/inebriation.json",
+    "recipe": {
+      "neoforge:conditions": [
+        {
+          "type": "neoforge:mod_loaded",
+          "modid": "jeed"
+        }
+      ],
+      "type": "jeed:effect_provider",
+      "effect": "aether:inebriation",
+      "providers": [
+        {
+          "item": "aether:poison_dart"
+        },
+        {
+          "item": "aether:poison_dart_shooter"
+        },
+        {
+          "item": "aether:skyroot_poison_bucket"
+        }
+      ]
+    }
+  }
+]
