@@ -1,0 +1,2157 @@
+{
+  "version": "0.9.0+1.21.1+neoforge",
+  "method": "Malhas Java, hierarquia, UV e texturas do JAR exato; representações técnicas estáticas. IDLE amostrada no primeiro quadro quando existente. Variantes registradas nos JSON originais.",
+  "limits": [
+    "Não são capturas do jogo. Pose final não confirmada onde depende de ajustes adicionais de código; falta avaliar integralmente essas rotinas.",
+    "Luz, materiais translúcidos e emissão aproximados sem shaders/lightmap originais.",
+    "Gatekeeper com roupa externa original e Glistering Sword padrão; transformações de mão/item originais, sprite extrudido.",
+    "Lonestar Skeleton usa malha herdada vanilla 1.21.1, sem equipamento e deslocamento gaussiano da cabeça interna=0.",
+    "Seleção de 30 entidades aprovada anteriormente, corroborada pelo registro original. Checkout do catálogo anterior não estava disponível nesta etapa; não houve nova leitura ou alteração do site."
+  ],
+  "minecraft_reference": {
+    "version": "1.21.1",
+    "jar_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+    "classes": {
+      "SkeletonModel": "fxf",
+      "ItemInHandLayer": "goo"
+    }
+  },
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "zPYks5bS",
+    "project_id": "XvcfUGfB",
+    "author_id": "JtzysC0A",
+    "featured": false,
+    "name": "0.9.0+1.21.1+neoforge",
+    "version_number": "0.9.0+1.21.1+neoforge",
+    "changelog": "**Announcement:**<br/>\nI'm currently in my final year of high school, so I have a lot of schoolwork. That means mod updates will be much slower for a very long while, and there probably won't be major new features or frequent fixes in the near future. However, I want to make it clear that I haven't given up on the project. I'll keep working on it when I have time.<br/>\nFeel free to keep sending suggestions and bug reports. I'll try to check them when I can, but replies may be delayed. Thanks for your understanding.<br/>\nThank you all for your continued support.<br/>\n**Additions:**<br/>\nAdded Solaris Isles, a new sky island biome (along with Cradlewood, a new type of wood)<br/>\nAdded colored variants for Lunar Leaves<br/>\nAdded composter recipes for many items<br/>\nAdded Voidstone Spike, a new voidstone speleothem block<br/>\n**Tweaks:**<br/>\nSplit the huge creative mode tab into many smaller ones<br/>\nCursed Garden now adapts to nearby terrain<br/>\nNocturnal Millet no longer forces right-click harvesting<br/>\nThe Gatekeeper now only drops the Glimmering Tablet and the Orb of Prophecy after the first challenge (per player)<br/>\n**Fixes:**<br/>\nFixed Nocturnal Millet crashing the game<br/>\nFixed Nocturnal Millet cannot be planted on Nightfall Farmland<br/>\nEnhanced network security<br/>\nFixed a game crash that occurred when attempting to mine a loot chest while items were being ejected from it<br/>",
+    "changelog_url": null,
+    "date_published": "2026-08-17T11:28:21.594848Z",
+    "downloads": 21787,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "JMJ3gBnq",
+        "hashes": {
+          "sha512": "6563e063365b1ce810a68ea1bfbeb72498722b4901bcdd061102763b79d9c47126527547fab1126c2628b78a2598df0659b9a228520648281689403c0daeacca",
+          "sha1": "66b97fa352c1b5d065e49e7fe7119da3c5f62f3d"
+        },
+        "url": "https://cdn.modrinth.com/data/XvcfUGfB/versions/zPYks5bS/eternalstarlight-0.9.0%2B1.21.1%2Bneoforge.jar",
+        "filename": "eternalstarlight-0.9.0+1.21.1+neoforge.jar",
+        "primary": true,
+        "size": 53135932,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  "jar_sha256": "73e1b5e0f07c4e7962351250c2e597e735930df6e9161cd366469f8603146f38",
+  "source_files_sha256": {
+    "assets/eternal_starlight/models/item/glistering_sword.json": "c97fa7d1a6a35e36045c9bf8d683385b2057d16f91099ae12db32dac71958a67",
+    "assets/eternal_starlight/textures/entity/aethersent_golem.png": "660f919b1507f5278efa25c7ea056822a0d5d3e72de63799f368c1161a1d8408",
+    "assets/eternal_starlight/textures/entity/aurora_deer.png": "b3587ee9e75c043b9201b7691aa270400ee20cf9c86eced6b2028d2157b38c9b",
+    "assets/eternal_starlight/textures/entity/creteor.png": "3036488ac8a67d09975baddb2a48366d1a3817e461496d81d41b335b0e0b7a6f",
+    "assets/eternal_starlight/textures/entity/crystallized_moth.png": "d102faedace0c0eabc96bd17799f8e702ce3c17b25cff3ed1d49661fa66c0b58",
+    "assets/eternal_starlight/textures/entity/ent/banyin.png": "ee8c6aaf5d7e9e27fe748e8dd5f6f456da0c648f7e7c2bfae4c89040e6e1b484",
+    "assets/eternal_starlight/textures/entity/ent/cradlewood.png": "1c8daff8dc1f0d3efd013dd8afc8e6250e620bc2ad7753ae95e36e7aeaaf79bb",
+    "assets/eternal_starlight/textures/entity/ent/lunar.png": "10a67cd38f33a39aec2a26e28c62997b04e07eedcc13b8add7c4db37ea7576a0",
+    "assets/eternal_starlight/textures/entity/ent/northland.png": "716f3a29b7c21f2bb65e15e57699595781dc9f0dcc1ec2f4ade0f3d889d5924d",
+    "assets/eternal_starlight/textures/entity/ent/scarlet.png": "dd730af5a8121c45d8c14944e71ceee270ff18cc3fa34ad10b2fd1854c378a4d",
+    "assets/eternal_starlight/textures/entity/freeze.png": "6586333352b9cc9adbf6a87a6d5254ee3c67ce3a48ca0873710726dee801d5ea",
+    "assets/eternal_starlight/textures/entity/gleech.png": "c23e1ebec141ea96f16b1e8e1b8fc9e630e1187fe1f52f1b12de00b1d8a75ce2",
+    "assets/eternal_starlight/textures/entity/grimstone_golem.png": "ec77d4b11bf2f349ce249c7faee3981816625bfba227f8576ce77a6fc54189bc",
+    "assets/eternal_starlight/textures/entity/grimstone_golem_glow.png": "dfd822fe7c6393d873ecedcb532b99b9186c8711cdb716ed9d0ab015c6250540",
+    "assets/eternal_starlight/textures/entity/lonestar_skeleton.png": "bd238e9ec5c3084145b8db339a10c01f580f952621df749e8215c0d634f9dadd",
+    "assets/eternal_starlight/textures/entity/luminaris.png": "bef15c16a039fd16c47e6fdfa275ca6c2b718a6a592d78ded151801be24b5ec1",
+    "assets/eternal_starlight/textures/entity/luminaris_glow.png": "f199c2a5da94a8169742c84feab40d08b6127e34b2d27e1dbea6b75925c5d2ae",
+    "assets/eternal_starlight/textures/entity/luminofish.png": "f2f8a99ac38728b368c9b2fdc68f0de6341b3d400b10b55d5d0fed93bc6e94a8",
+    "assets/eternal_starlight/textures/entity/luminofish_glow.png": "4f4cf83276125669918f0fb2e33a2ee146735406f4c174968c01761336f0a870",
+    "assets/eternal_starlight/textures/entity/lunar_monstrosity.png": "b6c9cd8caafdc6c5f2e8b2eba437e52103a9d8d5b4a5401335ad17cbef7c83b9",
+    "assets/eternal_starlight/textures/entity/nightfall_spider.png": "5a4aa647d9dc0e6ff6c264d3ee74a80d79bf8eab0f0faf6bd01b4501dffbea96",
+    "assets/eternal_starlight/textures/entity/nightfall_spider_eyes.png": "3cfc1adf707a2ad27742f6a02ec3dc0c2766d2b92d4488853932df1f8269d1ca",
+    "assets/eternal_starlight/textures/entity/permafrost.png": "51066b26128fedc8e9e1605ca2319651c2e1797f4bd580c9c945f889cddc6ad0",
+    "assets/eternal_starlight/textures/entity/ratlin.png": "c3088b6a67aede261f87f09219b18553c30fad79efef1271f48d1591e789e4ea",
+    "assets/eternal_starlight/textures/entity/rookfish.png": "19ddb5c0ebabf6e75a20cd66c2ad9e0edc1a756a2b0217112af36fc75f31bd91",
+    "assets/eternal_starlight/textures/entity/seeker/lunar.png": "32d52aacc1abcc99a0657c2599e9c983c5b02e74d0be535ba0237827a6589188",
+    "assets/eternal_starlight/textures/entity/seeker/lunar_glow.png": "de285229e0582216df05f20f792f8b9681d7f81cb6992464ee11b5d9a6fc0740",
+    "assets/eternal_starlight/textures/entity/seeker/scarlet.png": "7cae5fbb6cda102a921a8ffd0b035041974d877f0823d6fb628d222d69672640",
+    "assets/eternal_starlight/textures/entity/seeker/scarlet_glow.png": "94d0dc47e43b4d2dd6eda114370c58aa11e550f07ec0d1057aa6141f2510d905",
+    "assets/eternal_starlight/textures/entity/shadow_snail.png": "d9b6196e7f9608a2c647df170f7e77a19e8d43feec34d2a0fd999835978d7207",
+    "assets/eternal_starlight/textures/entity/shimmer_lacewing/river.png": "2b27b60a4b793f624bf64a98c7fdab3e9545738d7fb4ef914dd5fb41196dc729",
+    "assets/eternal_starlight/textures/entity/shimmer_lacewing/swamp.png": "1c70932895a71df49ad0cd8dadc405e8b112d624b88914df8bff9e6c479093f7",
+    "assets/eternal_starlight/textures/entity/starfire_bird.png": "1b1a6358ef44aa66c52d3680b333904859fe7e5acbcba27bdd5adf9bb3d9d40a",
+    "assets/eternal_starlight/textures/entity/starfire_bird_baby.png": "e14a7422416003426f9808dd3d090937321f6bb630d7ed88b1eab95dbb895c4e",
+    "assets/eternal_starlight/textures/entity/starfire_bird_baby_special.png": "8d2cbc6640010bbf2fc02e838a905a645ab1ea61fa5cda8f6be51f12c28d2f27",
+    "assets/eternal_starlight/textures/entity/starfire_bird_special.png": "a0d165f4c4c0b89671fbb8a10fd29ab11f66f8fe98f510a551bdc9f1eebfa9e8",
+    "assets/eternal_starlight/textures/entity/starlight_golem/starlight_golem.png": "7e49a935c1c02f2f5e2c81e34f48b6188c9219e4cc37b0b243553dc0c28f319b",
+    "assets/eternal_starlight/textures/entity/starlight_golem/starlight_golem_cracked.png": "843e3c94c47d519f6ac5fdaf5824abe9b59f8a5cc24c1c17bb08e7b71a7a90e9",
+    "assets/eternal_starlight/textures/entity/starlight_golem/starlight_golem_eyes.png": "6aaf449a92584610258f077f3fd45619119fb1eceb37fe0aa5e0af2f33a8666c",
+    "assets/eternal_starlight/textures/entity/stranghoul.png": "6bbd9b37e9543123efcfa7816d1cc38711d4e1c2968560f592779435a3b9a755",
+    "assets/eternal_starlight/textures/entity/tangled.png": "44767943c71fe5dc442d0f8e68d1f325d4eb8ef8733b318f37579222bdb60c63",
+    "assets/eternal_starlight/textures/entity/tangled_blooming.png": "68a4ad96c87b07eb2c3c679be6d370f996cc4ed042cc56c22fe200b66ee2c41f",
+    "assets/eternal_starlight/textures/entity/tangled_glow.png": "5ceb715b12f9eb0be96c16bc174e9491b2d972061704f1a36d4ca50018219956",
+    "assets/eternal_starlight/textures/entity/tangled_lush.png": "3974150d33c626f1b28798ceeb8d1a25bb6d72f28a407385d0dcbaf06517f0fc",
+    "assets/eternal_starlight/textures/entity/tangled_skull.png": "27f1ea09a39317236cdcd69979dd0b4b2713218717d4411c158b1a57afe667c4",
+    "assets/eternal_starlight/textures/entity/the_gatekeeper.png": "11f8d2a4bf4bd562a8fbd9ddc96b300766266b81dfb0d10e9b40a5dacf895822",
+    "assets/eternal_starlight/textures/entity/the_gatekeeper_overlay.png": "90aa905488b7e6b15c87305b240cd848fa9763818867e072027e644a7f8c1697",
+    "assets/eternal_starlight/textures/entity/the_gatekeeper_overlay_slim.png": "87568370eac498520e09c1bad1d9bf300b545dfbcd2cf23f9fbf5ad0dee39200",
+    "assets/eternal_starlight/textures/entity/the_gatekeeper_slim.png": "fd431764b2639ec94867758c4280cdbca01d7f9dde1102f45315c82517cdd0cd",
+    "assets/eternal_starlight/textures/entity/thirst_walker.png": "8342d1543f252a66485fe3787b902c89e20866ebf090c5cbbcdb53f50df35088",
+    "assets/eternal_starlight/textures/entity/thirst_walker_eyes.png": "1cd4612dc09cd868dcc638099b480d2511340d65aa359c58eb4dc4d82b87ba16",
+    "assets/eternal_starlight/textures/entity/tiny_creteor.png": "e5ebbb54daa6fbbed6593099af74e06ee82ee53666303453281e3cfd142c5770",
+    "assets/eternal_starlight/textures/entity/twilight_gaze.png": "a56d0302d57b742438667dc2eb1147dd563f2842adefd124b61289cd380df97c",
+    "assets/eternal_starlight/textures/entity/twilight_gaze_eyes.png": "0c0995a5b2434b3278a0cdd8c0d140c70afd20b8e427d340fa8aa5bcdb745f24",
+    "assets/eternal_starlight/textures/entity/yeti.png": "33977df0cea8de9d61f1537f852c637d414262d29cda7b599f559d5adccbfacf",
+    "assets/eternal_starlight/textures/entity/zombified_ratlin.png": "299beabc4ab3e3753f8cc18e49845144eabacebb40a7357304e9da91f2d7651e",
+    "assets/eternal_starlight/textures/item/glistering_sword.png": "3d55f2625bab6f815f146ffcf2ac4befb39555396ebda496a3b2515d5178492d",
+    "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class": "ec4f0b620a4adfff26981c7da4666b65f0d247135f6cbc7a5c11040ff690fea1",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/AuroraDeerAnimation.class": "e3aa05db0806edc95ce3ef2aa6682b32203a79028b5d5007c69c91a965f1bbe1",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class": "2ac9cf87a9ad20a8ab3e462bcc19624733660292ef3317ee3895b7d18ea1a4b0",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class": "8108f6c0575fdec3ee799c7f27e79b952dd6b6a066730f2c8fe6b8579c24e6a3",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/FreezeAnimation.class": "2b82922eab85ed5e4178baf57683f7daeaf3508f52a194cb7d87323e02c995ce",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/GleechAnimation.class": "8cc5b5014155beabf32828a90bfb0f1618dcd4b2bfc59b78d93b944492321a45",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class": "98e26c194de673b102e250503a656869a80d1ef42313d76c047959dbfeddaea6",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class": "f9c74e85d91a1f73240c90c22d7d6ff0809948e552d8cfa6580afa61f7c3b6e0",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class": "aed914a5cf020f8d1e41b7d53959278825882231199d11d2eb61bec85738c73f",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class": "04fee2e69d839ba8b4c1300aa211d3a8690001d4efa19da46f2579785fd611ed",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class": "ee99e67879b85e90f3d4ef09d1e313b7e782d5c7f14904c84fd4e10c6920477d",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class": "fe9db0a1c5f30ec3c119e0d1608ca7316f3e1d875e49647002adc8ab791db4b8",
+    "cn/leolezury/eternalstarlight/common/client/model/animation/definition/YetiAnimation.class": "bf21b86c3cc5f61e7e41f5cc879156beb3e6522ad8f20b0f66cfe0ff5325f0d3",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/AethersentGolemModel.class": "c934e88a65b177cd1621af650445666effe2e7908486d0199ce2e1d395861d2e",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/AuroraDeerModel.class": "3ac73cb2d11a1648fe928b1de569338fcfa0d6c6dd0ff7aab4da5f7f32b6b508",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/CreteorModel.class": "1e78face5cc9dfd1e4b6bf297dee63a1b41f0f7e0c1732b822bb5016bd317c70",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/CrystallizedMothModel.class": "6ea986819f94cd7a91a25176ce1d9355bcac050c8d1a5627d81477fc590225b2",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/EntModel.class": "8ec8d1f495a1bab9ada30fbbeb31260346c14bca2e4d64d276909aef8c23b0a1",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/FreezeModel.class": "0f0a9467a2d17e969b476806d477c1d6c8398221754503f7234c2040cf7a26d3",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/GleechModel.class": "8492bfbab7ed2491468f412fb794385dd71cb19d9c4360eb7bba42b6f811beb6",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/GrimstoneGolemModel.class": "07db407b7064029bc61a0b068813a50e82337a25304f46724ea8cdb4f2700999",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/LonestarSkeletonModel.class": "77399fa87dc48fd3a196f40dd58f5b97cdd3126cdb158eaa5ce373dcd6e77ba1",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/LuminarisModel.class": "4deefee5739056c9a9fdbed6133da2bcc4395ff0bc409bc63d3505f50ad13b94",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/LuminoFishModel.class": "e0a8c7cd261276d514bdeb4dc4842c12f0e647ea966ae6ebdfe5d27cb1db9c00",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/LunarMonstrosityModel.class": "996ea91e6566477f0196f4af8356652651fe03f7d4dfbcee725e36f591236ca7",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/NightfallSpiderModel.class": "db39cf7d788e49ae8fba8ca3a13e6dc038cea9780052932062b51dea49543647",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/PermafrostModel.class": "ffd0f0893aae53c1049789a52b785656f6b7314105a5ac6ee7f05a0a37b65732",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/RatlinModel.class": "7fb77104dcca3d91afa473e5a0b3d61d17cea82a6f14178d336693d2afbc248a",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/RookfishModel.class": "92288da0b7b25cacf1e3d54eb90c1500f116b7e02db7e19a5ea7019c4a08c05c",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/SeekerModel.class": "b373043a486653fd1f9203cc18d728295fa3b4aa0286cc48c27f622bb76e43d1",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/ShadowSnailModel.class": "1d90defea8ead7ebc34e1c247f387fe3e8b2e611e2f1e7c730bfbb93a523669a",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/ShimmerLacewingModel.class": "49bd09d52e86fc4d42a9fb3d484c46fc50e19cf3de3ef990dba9347501cf36b1",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/StarfireBirdModel.class": "5e7c812eb0f185b1d1105165a5b8ff4b4633d73ee0bc67ed35c149fb73ae735f",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/StarlightGolemModel.class": "20c841e5009fbe31147b6c22ac66235830165829fbaa7da09594a23f85ebb2ab",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/StranghoulModel.class": "70d8d3a5d1ccf9d45203cd52e8540d28862f2ba54d9fe79f3f8cea47bdcfaf33",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/TangledModel.class": "0206fb8a382f03e70f66ee6848bd1da1825d74c4e9ff30deb425d0a95304363f",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/TangledSkullModel.class": "fca1a0e076030183cfc0108e8868ac329300291b22d8cd7f4b1f22050ab991f9",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/TheGatekeeperModel.class": "4d8998cf67cae6da6853f755c4cdbecfff6fe93478e5ebdae7b0b923cfe50b75",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/ThirstWalkerModel.class": "02c0b2685931f3d3e5e14203e93725bad2de88e2a78d1435b1c20d7e3af6bbcb",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/TinyCreteorModel.class": "7954cfbe62455d1f7df0f56ed59e4bdb606d7d1822906428326528677d8f004d",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/TwilightGazeModel.class": "f1cb24b8e3e7085637f70da8531d4604373bcdb8477ca1b727e425af49767d66",
+    "cn/leolezury/eternalstarlight/common/client/model/entity/YetiModel.class": "bb62c33a8ea28df2368e2738392f19cf60f0377e07ff6743b11704fda7500107",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/AethersentGolemRenderer.class": "7825f4a6424e3e31ed9ff2059ebbe7e488707f012c86b542d9a9ec302c96395e",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/AuroraDeerRenderer.class": "e811b0813feaa65c0bc698dc9353ff6652b170ff7da29316d8016e582db10bf0",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/CreteorRenderer.class": "017308f88a03877e50c274a7385c8f1c2aa3a438dbdca77d024c939d4871457b",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/CrystallizedMothRenderer.class": "e2e848e0b47c99d46f1bc54b3f89b218de96c74d0670b31f34056bb2efa679a2",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/EntRenderer.class": "c1ae0935639f4fbdc39dbbfa64b0b5885b3fa6746f0013e6f50a7c1a31164928",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/FreezeRenderer.class": "c2ba1ec94734709b884f268942003fa9b86e0d324786345e2e47cbbf6acd396a",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/GleechRenderer.class": "d570f1e4b38d9313838ce16053f501ba5484fa6408bc848905284d30bcf7a55b",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/GrimstoneGolemRenderer.class": "380867a6822ca36706eb3529b4a3e40d2cad2e0da8564e84db3291d2dde21eb0",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/LonestarSkeletonRenderer.class": "aa636109da83d42b7b4960a5dae135037a2d8a6154089e7a9671023c85edb742",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/LuminarisRenderer.class": "022ad472b93d10d7b75bf3fa8904f3c07f98d6ddd3d5f040fc0062f0dbed1513",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/LuminoFishRenderer.class": "809db0f9e09a0134c2cb72547b9095adc114c1c226b44f6f196e9f6e0ddb3d4d",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/LunarMonstrosityRenderer.class": "d555414c1dab6c720910049b9b47e0776cd4c2c137606605c51dc737dabb6ed4",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/NightfallSpiderRenderer.class": "77c5edf6d88a0d5ccab74d6ec90a06978eb7f18f315f195594b9f167da44d4b9",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/PermafrostRenderer.class": "bdefa8e800776f102009f594eb49295b1b25e5a4f49602b2a3c30051700004b0",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/RatlinRenderer.class": "3fa39223cca7ee2ff77d36ec1bf3219afc99694e26f34bb60e4e1eeba134246f",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/RookfishRenderer.class": "67a8daccf884e2d9fb75cc091752396b61563b76fcd31f3e1ba3fe6f91959b17",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/SeekerRenderer.class": "8d18e1bbb30cd004d00ffcd86c6d4676a26ab762719473a17a2f7a93f052ef5e",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/ShadowSnailRenderer.class": "6ef27db0f279fdee9acc3ff03e99db0a791ecf78751452c52e076b77ec052518",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/ShimmerLacewingRenderer.class": "2e9537f020e6f64fde8c314bdea7b1bd62686dfc09df42a001a32f27309223eb",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarfireBirdRenderer.class": "d2686856899ee76e508f21d2b5907121ec7ec5b9284f0bbe16baecc3da635039",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarlightGolemRenderer.class": "9713aeea3e7df87ba84c845f79671dc9e67b3099dcea8cb86e9efead048ece0b",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/StranghoulRenderer.class": "66b97a17b25b17803e2904510bd0dc7dc2cd30e75653350a1615838e401be2b0",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/TangledRenderer.class": "1137e0b63bd14d3af635dee909831231d015d03244037a1a2aeb33f9ba84fe40",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/TangledSkullRenderer.class": "b7620dcbdcea7596a76ac33a9885c947de468310f63a830c47d61b1bb002aaa2",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/TheGatekeeperRenderer.class": "2fee44873650dd0de9f1ee16d99db9e88a99bedeaddb3889793a2ba3bfc7e61f",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/ThirstWalkerRenderer.class": "129b0f60b9bfaa1af3f6b367fe6817e8957b0277c78150c62cf5a11b92e94ea7",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/TinyCreteorRenderer.class": "594cae47029a615311cff1011a1e87e3cef522c7ea7864c86f18df41b6e37f24",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/TwilightGazeRenderer.class": "59485392d99db80db2613f6f05dc75655097125a4f3744c177bb7464d003999d",
+    "cn/leolezury/eternalstarlight/common/client/renderer/entity/YetiRenderer.class": "d10f0aeba363aaf37e766a12f019cc03d897fa51998d3ae0a38f8f69291fd7e1",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/AuroraDeerSnowLayer.class": "ad1729418914287bf47b9fb9ff3d1ae774b5f5ed5c07496a201c3a84a91e0bc2",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/CreteorPowerLayer.class": "e23ca99674d9ca3679b668288755ad6a6fa02887231ee76fe202903ee5232391",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/CrystallizedMothGlowLayer.class": "4e246813b81f06da6d497aa61c35cc9215e26271b73d563ca36df1ec15ad0302",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/GrimstoneGolemGlowLayer.class": "c9588b1ad7db7ebf37df73542e8fbe54e8fea3e5cbecc68df209dce729620c10",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/LuminarisGlowLayer.class": "cae5bf30ae44ef770ed1915db2f951e89bf08a34a128b7a0857b0fdc22116834",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/LuminoFishGlowLayer.class": "c5647cc296034058fec91ade71f09674652f806afdd1f2ad471d5b7a4f867770",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/NightfallSpiderEyesLayer.class": "3ca2bb270efcceb08ddc43a796cb7d595b7592ef9910ffd5988c1fe8ae9c5f23",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/SeekerGlowLayer.class": "3e50fbaf0da13d17c5f12ee2414c29ac1ecdcdaa86f90026e667e20e68479236",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/ShimmerLacewingGlowLayer.class": "329d06d33970d4aacce5c4c83e9857977a2e72b883a758f21252dec4c195c2ee",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemEyesLayer.class": "21bddda4120564c80e19424b225b920ec39ba20821998871fd11f673da5ae83a",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemGlowLayer.class": "96f0582214400c26651277022269c7c8f086442a99e1b0925f722a52089ea59c",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemHalloweenLayer.class": "05bcf882f25d8498bb5489cc8feecd1da857fc7895ef3e317a01b6cb67c74cf2",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/TangledGlowLayer.class": "43d5156887e9c496515205860b410788fb571dc027d6b4faf990db060e378af9",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/TheGatekeeperClothingLayer.class": "8402140327b1a4bdef68bda08bc10505ad0b8dbc2e69dc60e2effc9ad6d5efe8",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/ThirstWalkerEyesLayer.class": "ad0be97cc32cd630e0b7bc5211180b12b85f0479fed1284ef224565b6b19d709",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/TinyCreteorPowerLayer.class": "c0f814233cc7bdfa0e0a29f6529868181b9296961231e106b5d3e2ac3e066d16",
+    "cn/leolezury/eternalstarlight/common/client/renderer/layer/TwilightGazeEyesLayer.class": "e28a5e089390a923b7f5cb78ab5cb7b1c9e3dab475818175f1b9a16fbe519022",
+    "cn/leolezury/eternalstarlight/common/entity/living/boss/gatekeeper/TheGatekeeper.class": "d4deab6d7f66c9d18790c7105a5b0e9bcf7e1320493bc4bc67695ee857d78f2d",
+    "cn/leolezury/eternalstarlight/common/registry/ESEntities.class": "c177c5da40c7acd1b82e041bda9fd827e0ea92f73bff563a48768fda2d6ea5e0",
+    "cn/leolezury/eternalstarlight/common/registry/ESItems.class": "4222d5865a5a8007cd35e4328d1b8eef0afef454b1617067aa8984884cc8a82b",
+    "data/eternal_starlight/eternal_starlight/ent_variant/banyin.json": "db5cab5222d69b936dbea21fbe66152befb618d971fd5ead26bd52dc120a7e9f",
+    "data/eternal_starlight/eternal_starlight/ent_variant/cradlewood.json": "d8892a0b6cd97800cd3786a1887cf0ede1cf4166f55c8d4216a2bc8c564f867f",
+    "data/eternal_starlight/eternal_starlight/ent_variant/lunar.json": "3caf1adadd260d59d28382f47a102915be1c987bb051f6df51b2d8e353d07620",
+    "data/eternal_starlight/eternal_starlight/ent_variant/northland.json": "01226b022e8091a0ac524d1c5e509309c9d85fe3a6f5a10e5622b234f3d8da1f",
+    "data/eternal_starlight/eternal_starlight/ent_variant/scarlet.json": "53a35774f4554a8be8ae6d3e004695e0b77873e77cf9caaaa79a1d0099b543e6",
+    "data/eternal_starlight/eternal_starlight/seeker_variant/lunar.json": "b2e19a0757e82fd68cacc76e96eb08675d8c20f7c17d12f4c3bb2397d55eeb5f",
+    "data/eternal_starlight/eternal_starlight/seeker_variant/scarlet.json": "ccbd82f8858fbf1e5946cfd277793fedb6c156f93547c5040a2a7b3c25b1d1f4",
+    "data/eternal_starlight/eternal_starlight/shimmer_lacewing_variant/river.json": "1e8b839b53ec0df606aa7fde86effcce71ed738b80fdc6601c38eff5394cc08e",
+    "data/eternal_starlight/eternal_starlight/shimmer_lacewing_variant/swamp.json": "fd301f5c6cfe2b3acaef9c242399c7b3c1bc8576f24318e140cd74767fbdb9a0"
+  },
+  "images": [
+    {
+      "mob": "Gleech",
+      "entity_id": "eternal_starlight:gleech",
+      "image": "gleech.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/GleechModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/GleechRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/gleech.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/GleechAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "root",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            -17.5,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/GleechAnimation.class"
+        },
+        {
+          "part": "body1",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            5.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/GleechAnimation.class"
+        },
+        {
+          "part": "body2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            2.5,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/GleechAnimation.class"
+        },
+        {
+          "part": "tail",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            2.5,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/GleechAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Lonestar Skeleton",
+      "entity_id": "eternal_starlight:lonestar_skeleton",
+      "image": "lonestar-skeleton.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/LonestarSkeletonModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/LonestarSkeletonRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/lonestar_skeleton.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Malha vanilla SkeletonModel 1.21.1 herdada, incluindo membros finos; deslocamento gaussiano da cabeça interna selecionado em zero; sem equipamento.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Seeker Lunar",
+      "entity_id": "eternal_starlight:seeker",
+      "image": "seeker-lunar.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/SeekerModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/SeekerRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/seeker/lunar.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/seeker/lunar_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/SeekerGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/seeker_variant/lunar.json",
+        "data/eternal_starlight/eternal_starlight/seeker_variant/scarlet.json"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Variante canônica lunar. Olho luminoso; sem tentáculo de ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Seeker Scarlet",
+      "entity_id": "eternal_starlight:seeker",
+      "image": "seeker-scarlet.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/SeekerModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/SeekerRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/seeker/scarlet.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/seeker/scarlet_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/SeekerGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/seeker_variant/lunar.json",
+        "data/eternal_starlight/eternal_starlight/seeker_variant/scarlet.json"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Variante canônica scarlet. Olho luminoso; sem tentáculo de ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Thirst Walker",
+      "entity_id": "eternal_starlight:thirst_walker",
+      "image": "thirst-walker.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/ThirstWalkerModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/ThirstWalkerRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/thirst_walker.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/thirst_walker_eyes.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/ThirstWalkerEyesLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        },
+        {
+          "part": "head",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        },
+        {
+          "part": "head",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        },
+        {
+          "part": "left_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        },
+        {
+          "part": "left_arm",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        },
+        {
+          "part": "right_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        },
+        {
+          "part": "right_arm",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ThirstWalkerAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Creteor",
+      "entity_id": "eternal_starlight:creteor",
+      "image": "creteor.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/CreteorModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/CreteorRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/creteor.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/CreteorPowerLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "root",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class"
+        },
+        {
+          "part": "right_leg",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class"
+        },
+        {
+          "part": "right_leg",
+          "channel": "POSITION",
+          "first_keyframe_time": 10.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class"
+        },
+        {
+          "part": "left_leg",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class"
+        },
+        {
+          "part": "left_leg",
+          "channel": "POSITION",
+          "first_keyframe_time": 10.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class"
+        },
+        {
+          "part": "right_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class"
+        },
+        {
+          "part": "left_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CreteorAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Estado sem camada de poder/armadura ativa.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Tiny Creteor",
+      "entity_id": "eternal_starlight:tiny_creteor",
+      "image": "tiny-creteor.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TinyCreteorModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TinyCreteorRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/tiny_creteor.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/TinyCreteorPowerLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Estado sem camada de poder/armadura ativa.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Stranghoul",
+      "entity_id": "eternal_starlight:stranghoul",
+      "image": "stranghoul.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/StranghoulModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/StranghoulRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/stranghoul.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Sem equipamento.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Ent Banyin",
+      "entity_id": "eternal_starlight:ent",
+      "image": "ent-banyin.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/EntModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/EntRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/ent/banyin.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/ent_variant/banyin.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/cradlewood.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/lunar.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/northland.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/scarlet.json"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Variante canônica banyin. Folhas presentes.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Ent Cradlewood",
+      "entity_id": "eternal_starlight:ent",
+      "image": "ent-cradlewood.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/EntModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/EntRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/ent/cradlewood.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/ent_variant/banyin.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/cradlewood.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/lunar.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/northland.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/scarlet.json"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Variante canônica cradlewood. Folhas presentes.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Ent Lunar",
+      "entity_id": "eternal_starlight:ent",
+      "image": "ent-lunar.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/EntModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/EntRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/ent/lunar.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/ent_variant/banyin.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/cradlewood.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/lunar.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/northland.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/scarlet.json"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Variante canônica lunar. Folhas presentes.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Ent Northland",
+      "entity_id": "eternal_starlight:ent",
+      "image": "ent-northland.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/EntModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/EntRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/ent/northland.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/ent_variant/banyin.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/cradlewood.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/lunar.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/northland.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/scarlet.json"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Variante canônica northland. Folhas presentes.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Ent Scarlet",
+      "entity_id": "eternal_starlight:ent",
+      "image": "ent-scarlet.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/EntModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/EntRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/ent/scarlet.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/ent_variant/banyin.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/cradlewood.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/lunar.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/northland.json",
+        "data/eternal_starlight/eternal_starlight/ent_variant/scarlet.json"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Variante canônica scarlet. Folhas presentes.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Ratlin",
+      "entity_id": "eternal_starlight:ratlin",
+      "image": "ratlin.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/RatlinModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/RatlinRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/ratlin.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        },
+        {
+          "part": "left_ear",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        },
+        {
+          "part": "right_ear",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Zombified Ratlin",
+      "entity_id": "eternal_starlight:zombified_ratlin",
+      "image": "zombified-ratlin.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/RatlinModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/RatlinRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/zombified_ratlin.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        },
+        {
+          "part": "left_ear",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        },
+        {
+          "part": "right_ear",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/RatlinAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Shadow Snail",
+      "entity_id": "eternal_starlight:shadow_snail",
+      "image": "shadow-snail.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/ShadowSnailModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/ShadowSnailRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/shadow_snail.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Yeti Fur",
+      "entity_id": "eternal_starlight:yeti",
+      "image": "yeti-fur.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/YetiModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/YetiRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/yeti.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/YetiAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "head",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/YetiAnimation.class"
+        },
+        {
+          "part": "head",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/YetiAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Somente a malha fur visível, conforme hasFur.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Yeti Shaved",
+      "entity_id": "eternal_starlight:yeti",
+      "image": "yeti-shaved.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/YetiModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/YetiRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/yeti.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/YetiAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "head",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/YetiAnimation.class"
+        },
+        {
+          "part": "head",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/YetiAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Somente a malha body visível, conforme hasFur.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Aurora Deer",
+      "entity_id": "eternal_starlight:aurora_deer",
+      "image": "aurora-deer.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/AuroraDeerModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/AuroraDeerRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/aurora_deer.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/AuroraDeerAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/AuroraDeerSnowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/AuroraDeerAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/AuroraDeerAnimation.class"
+        },
+        {
+          "part": "neck",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/AuroraDeerAnimation.class"
+        },
+        {
+          "part": "tail",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/AuroraDeerAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Ambos os chifres presentes, sem neve.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Crystallized Moth",
+      "entity_id": "eternal_starlight:crystallized_moth",
+      "image": "crystallized-moth.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/CrystallizedMothModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/CrystallizedMothRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/crystallized_moth.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/CrystallizedMothGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "left_wing",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class"
+        },
+        {
+          "part": "right_wing",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class"
+        },
+        {
+          "part": "left_wing_small",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class"
+        },
+        {
+          "part": "right_wing_small",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class"
+        },
+        {
+          "part": "root",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class"
+        },
+        {
+          "part": "root",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/CrystallizedMothAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Alpha da camada glow=0 em ageInTicks=0.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Shimmer Lacewing River",
+      "entity_id": "eternal_starlight:shimmer_lacewing",
+      "image": "shimmer-lacewing-river.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/ShimmerLacewingModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/ShimmerLacewingRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/shimmer_lacewing/river.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/ShimmerLacewingGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/shimmer_lacewing_variant/river.json",
+        "data/eternal_starlight/eternal_starlight/shimmer_lacewing_variant/swamp.json"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "wing3",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing1",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "body3",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing5",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing7",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing4",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing6",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing8",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Variante canônica river. Camada de brilho com alpha=0 em ageInTicks=0.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Shimmer Lacewing Swamp",
+      "entity_id": "eternal_starlight:shimmer_lacewing",
+      "image": "shimmer-lacewing-swamp.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/ShimmerLacewingModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/ShimmerLacewingRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/shimmer_lacewing/swamp.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/ShimmerLacewingGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class",
+        "data/eternal_starlight/eternal_starlight/shimmer_lacewing_variant/river.json",
+        "data/eternal_starlight/eternal_starlight/shimmer_lacewing_variant/swamp.json"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "wing3",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing1",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "body3",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing5",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing7",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing4",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing6",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        },
+        {
+          "part": "wing8",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/ShimmerLacewingAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Variante canônica swamp. Camada de brilho com alpha=0 em ageInTicks=0.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Starfire Bird Adult",
+      "entity_id": "eternal_starlight:starfire_bird",
+      "image": "starfire-bird-adult.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/StarfireBirdModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarfireBirdRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/starfire_bird.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "feather",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Estágio adulto e textura normal.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Starfire Bird Adult Special",
+      "entity_id": "eternal_starlight:starfire_bird",
+      "image": "starfire-bird-adult-special.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/StarfireBirdModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarfireBirdRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/starfire_bird_special.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "feather",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Estágio adulto e textura special.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Starfire Bird Baby",
+      "entity_id": "eternal_starlight:starfire_bird",
+      "image": "starfire-bird-baby.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/StarfireBirdModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarfireBirdRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/starfire_bird_baby.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "feather",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Estágio filhote e textura normal.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Starfire Bird Baby Special",
+      "entity_id": "eternal_starlight:starfire_bird",
+      "image": "starfire-bird-baby-special.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/StarfireBirdModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarfireBirdRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/starfire_bird_baby_special.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        },
+        {
+          "part": "feather",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/StarfireBirdAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Estágio filhote e textura special.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Grimstone Golem",
+      "entity_id": "eternal_starlight:grimstone_golem",
+      "image": "grimstone-golem.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/GrimstoneGolemModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/GrimstoneGolemRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/grimstone_golem.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/grimstone_golem_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/GrimstoneGolemGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Aethersent Golem",
+      "entity_id": "eternal_starlight:aethersent_golem",
+      "image": "aethersent-golem.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/AethersentGolemModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/AethersentGolemRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/aethersent_golem.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Rookfish",
+      "entity_id": "eternal_starlight:rookfish",
+      "image": "rookfish.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/RookfishModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/RookfishRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/rookfish.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Luminofish",
+      "entity_id": "eternal_starlight:luminofish",
+      "image": "luminofish.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/LuminoFishModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/LuminoFishRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/luminofish.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/luminofish_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/LuminoFishGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Luminaris",
+      "entity_id": "eternal_starlight:luminaris",
+      "image": "luminaris.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/LuminarisModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/LuminarisRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/luminaris.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/luminaris_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/LuminarisGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Twilight Gaze",
+      "entity_id": "eternal_starlight:twilight_gaze",
+      "image": "twilight-gaze.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TwilightGazeModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TwilightGazeRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/twilight_gaze.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/twilight_gaze_eyes.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/TwilightGazeEyesLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "The Gatekeeper Normal",
+      "entity_id": "eternal_starlight:the_gatekeeper",
+      "image": "the-gatekeeper-normal.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TheGatekeeperModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TheGatekeeperRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/the_gatekeeper.png",
+      "extra_sources": [
+        "assets/eternal_starlight/models/item/glistering_sword.json",
+        "assets/eternal_starlight/textures/entity/the_gatekeeper_overlay.png",
+        "assets/eternal_starlight/textures/item/glistering_sword.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/TheGatekeeperClothingLayer.class",
+        "cn/leolezury/eternalstarlight/common/entity/living/boss/gatekeeper/TheGatekeeper.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Sem perfil de jogador personalizado; roupa externa original com deformação 0.5 e Glistering Sword padrão na mão direita. ItemInHandLayer e transforms handheld originais.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Nightfall Spider",
+      "entity_id": "eternal_starlight:nightfall_spider",
+      "image": "nightfall-spider.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/NightfallSpiderModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/NightfallSpiderRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/nightfall_spider.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/nightfall_spider_eyes.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/NightfallSpiderEyesLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Rotações fixas das oito pernas aplicadas conforme setupAnim, limbSwingAmount=0.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "The Gatekeeper Slim",
+      "entity_id": "eternal_starlight:the_gatekeeper",
+      "image": "the-gatekeeper-slim.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TheGatekeeperModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TheGatekeeperRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/the_gatekeeper_slim.png",
+      "extra_sources": [
+        "assets/eternal_starlight/models/item/glistering_sword.json",
+        "assets/eternal_starlight/textures/entity/the_gatekeeper_overlay_slim.png",
+        "assets/eternal_starlight/textures/item/glistering_sword.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/TheGatekeeperClothingLayer.class",
+        "cn/leolezury/eternalstarlight/common/entity/living/boss/gatekeeper/TheGatekeeper.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Sem perfil de jogador personalizado; roupa externa original com deformação 0.5 e Glistering Sword padrão na mão direita. ItemInHandLayer e transforms handheld originais.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Starlight Golem Normal",
+      "entity_id": "eternal_starlight:starlight_golem",
+      "image": "starlight-golem-normal.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/StarlightGolemModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarlightGolemRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/starlight_golem/starlight_golem.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/starlight_golem/starlight_golem_eyes.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemEyesLayer.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemHalloweenLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Sem tema Halloween; olhos originais; alpha do glow pulsante=0 em t=0.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Starlight Golem Cracked",
+      "entity_id": "eternal_starlight:starlight_golem",
+      "image": "starlight-golem-cracked.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/StarlightGolemModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/StarlightGolemRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/starlight_golem/starlight_golem_cracked.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/starlight_golem/starlight_golem_eyes.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemEyesLayer.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/StarlightGolemHalloweenLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Sem tema Halloween; olhos originais; alpha do glow pulsante=0 em t=0.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Freeze",
+      "entity_id": "eternal_starlight:freeze",
+      "image": "freeze.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/FreezeModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/FreezeRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/freeze.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/FreezeAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "head",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/FreezeAnimation.class"
+        },
+        {
+          "part": "rods",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/FreezeAnimation.class"
+        },
+        {
+          "part": "rods",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/FreezeAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Permafrost",
+      "entity_id": "eternal_starlight:permafrost",
+      "image": "permafrost.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/PermafrostModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/PermafrostRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/permafrost.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "lower",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "wheel",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "root",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "right_chain",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -2.5189,
+            -0.4352,
+            4.9811
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "right_chain2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "right_rod",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "left_chain",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -2.5189,
+            -0.4352,
+            4.9811
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "left_chain2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "left_rod",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "forward_chain",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -2.5189,
+            -0.4352,
+            4.9811
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "forward_chain2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "forward_rod",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "backward_chain",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -2.5189,
+            -0.4352,
+            4.9811
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "backward_chain2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        },
+        {
+          "part": "backward_rod",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -5.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/PermafrostAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Lunar Monstrosity Phase 0",
+      "entity_id": "eternal_starlight:lunar_monstrosity",
+      "image": "lunar-monstrosity-phase-0.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/LunarMonstrosityModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/LunarMonstrosityRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/lunar_monstrosity.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Fase 0; visibilidade do olho conforme getPhase.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Lunar Monstrosity Phase 1",
+      "entity_id": "eternal_starlight:lunar_monstrosity",
+      "image": "lunar-monstrosity-phase-1.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/LunarMonstrosityModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/LunarMonstrosityRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/lunar_monstrosity.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque. Fase 1; visibilidade do olho conforme getPhase.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Tangled Normal",
+      "entity_id": "eternal_starlight:tangled",
+      "image": "tangled-normal.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TangledModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TangledRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/tangled.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/tangled_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/TangledGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "head",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "left_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "right_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Textura normal; cabeça presente.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Tangled Lush",
+      "entity_id": "eternal_starlight:tangled",
+      "image": "tangled-lush.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TangledModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TangledRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/tangled_lush.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/tangled_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/TangledGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "head",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "left_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "right_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Textura _lush; cabeça presente.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Tangled Blooming",
+      "entity_id": "eternal_starlight:tangled",
+      "image": "tangled-blooming.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TangledModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TangledRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/tangled_blooming.png",
+      "extra_sources": [
+        "assets/eternal_starlight/textures/entity/tangled_glow.png",
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class",
+        "cn/leolezury/eternalstarlight/common/client/renderer/layer/TangledGlowLayer.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "head",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "body",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "left_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        },
+        {
+          "part": "right_arm",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "source": "cn/leolezury/eternalstarlight/common/client/model/animation/definition/TangledAnimation.class"
+        }
+      ],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. IDLE amostrada em t=0. Adulto, vivo e sem ataque. Textura _blooming; cabeça presente.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    },
+    {
+      "mob": "Tangled Skull",
+      "entity_id": "eternal_starlight:tangled_skull",
+      "image": "tangled-skull.png",
+      "model": "cn/leolezury/eternalstarlight/common/client/model/entity/TangledSkullModel.class",
+      "renderer": "cn/leolezury/eternalstarlight/common/client/renderer/entity/TangledSkullRenderer.class",
+      "texture": "assets/eternal_starlight/textures/entity/tangled_skull.png",
+      "extra_sources": [
+        "cn/leolezury/eternalstarlight/common/client/handler/ESClientSetupHandler.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESEntities.class",
+        "cn/leolezury/eternalstarlight/common/registry/ESItems.class"
+      ],
+      "animation_at_t0": [],
+      "notes": "Geometria/UV/textura originais da build 0.9.0. Pose original de construção. Adulto, vivo e sem ataque.  Representação técnica com enquadramento individual; dinâmica adicional de código e shaders não executados. Pose final do jogo não confirmada quando depende desses ajustes; falta avaliar essas rotinas completamente."
+    }
+  ],
+  "site_modified": false
+}

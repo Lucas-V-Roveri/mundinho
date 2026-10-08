@@ -1,0 +1,3493 @@
+[
+  {
+    "anchor": "receita-abyssal-altar",
+    "name": "data/alexscaves/recipe/abyssal_altar.json",
+    "source": "data/alexscaves/recipe/abyssal_altar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " P ",
+        "AAA",
+        " A "
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine"
+        },
+        "P": {
+          "item": "alexscaves:pearl"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssal_altar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-brick-slab",
+    "name": "data/alexscaves/recipe/abyssmarine_brick_slab.json",
+    "source": "data/alexscaves/recipe/abyssmarine_brick_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine_bricks"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_brick_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-brick-stairs",
+    "name": "data/alexscaves/recipe/abyssmarine_brick_stairs.json",
+    "source": "data/alexscaves/recipe/abyssmarine_brick_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "A  ",
+        "AA ",
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine_bricks"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_brick_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-brick-wall",
+    "name": "data/alexscaves/recipe/abyssmarine_brick_wall.json",
+    "source": "data/alexscaves/recipe/abyssmarine_brick_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AAA",
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine_bricks"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_brick_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-bricks",
+    "name": "data/alexscaves/recipe/abyssmarine_bricks.json",
+    "source": "data/alexscaves/recipe/abyssmarine_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AA",
+        "AA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_bricks",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-pillar",
+    "name": "data/alexscaves/recipe/abyssmarine_pillar.json",
+    "source": "data/alexscaves/recipe/abyssmarine_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "A",
+        "A"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_pillar",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-slab",
+    "name": "data/alexscaves/recipe/abyssmarine_slab.json",
+    "source": "data/alexscaves/recipe/abyssmarine_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-stairs",
+    "name": "data/alexscaves/recipe/abyssmarine_stairs.json",
+    "source": "data/alexscaves/recipe/abyssmarine_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "A  ",
+        "AA ",
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-tiles",
+    "name": "data/alexscaves/recipe/abyssmarine_tiles.json",
+    "source": "data/alexscaves/recipe/abyssmarine_tiles.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AA",
+        "AA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine_bricks"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_tiles",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-wall",
+    "name": "data/alexscaves/recipe/abyssmarine_wall.json",
+    "source": "data/alexscaves/recipe/abyssmarine_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AAA",
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:abyssmarine"
+        }
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-alex-meal",
+    "name": "data/alexscaves/recipe/alex_meal.json",
+    "source": "data/alexscaves/recipe/alex_meal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:gingerbread_crumbs"
+        },
+        {
+          "item": "alexscaves:gingerbread_crumbs"
+        },
+        {
+          "item": "minecraft:baked_potato"
+        },
+        {
+          "item": "minecraft:carrot"
+        },
+        {
+          "item": "minecraft:honey_bottle"
+        },
+        {
+          "item": "minecraft:cooked_beef"
+        },
+        {
+          "item": "minecraft:bowl"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:alex_meal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polarity",
+    "name": "data/alexscaves/recipe/armortrim/polarity.json",
+    "source": "data/alexscaves/recipe/armortrim/polarity.json",
+    "recipe": {
+      "type": "minecraft:smithing_trim",
+      "addition": {
+        "tag": "minecraft:trim_materials"
+      },
+      "base": {
+        "tag": "minecraft:trimmable_armor"
+      },
+      "template": {
+        "item": "alexscaves:polarity_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-neodymium-ingot",
+    "name": "data/alexscaves/recipe/azure_neodymium_ingot.json",
+    "source": "data/alexscaves/recipe/azure_neodymium_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:raw_azure_neodymium"
+        },
+        {
+          "item": "alexscaves:raw_azure_neodymium"
+        },
+        {
+          "item": "alexscaves:raw_azure_neodymium"
+        },
+        {
+          "tag": "c:ingots/iron"
+        },
+        {
+          "tag": "c:ingots/iron"
+        },
+        {
+          "tag": "c:ingots/iron"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:azure_neodymium_ingot",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-neodymium-node",
+    "name": "data/alexscaves/recipe/azure_neodymium_node.json",
+    "source": "data/alexscaves/recipe/azure_neodymium_node.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " N ",
+        "NNN",
+        " N "
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:raw_azure_neodymium"
+        }
+      },
+      "result": {
+        "id": "alexscaves:azure_neodymium_node",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-neodymium-pillar",
+    "name": "data/alexscaves/recipe/azure_neodymium_pillar.json",
+    "source": "data/alexscaves/recipe/azure_neodymium_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NN",
+        "NN",
+        "NN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:raw_azure_neodymium"
+        }
+      },
+      "result": {
+        "id": "alexscaves:azure_neodymium_pillar",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-beholder",
+    "name": "data/alexscaves/recipe/beholder.json",
+    "source": "data/alexscaves/recipe/beholder.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "BEB",
+        " B "
+      ],
+      "key": {
+        "B": {
+          "item": "alexscaves:thornwood_branch"
+        },
+        "E": {
+          "item": "alexscaves:occult_gem"
+        }
+      },
+      "result": {
+        "id": "alexscaves:beholder"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bioluminescent-torch",
+    "name": "data/alexscaves/recipe/bioluminescent_torch.json",
+    "source": "data/alexscaves/recipe/bioluminescent_torch.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "B",
+        "S"
+      ],
+      "key": {
+        "B": {
+          "item": "alexscaves:bioluminesscence"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "result": {
+        "id": "alexscaves:bioluminescent_torch",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-biome-treat",
+    "name": "data/alexscaves/recipe/biome_treat.json",
+    "source": "data/alexscaves/recipe/biome_treat.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "RER",
+        "RER",
+        " C "
+      ],
+      "key": {
+        "R": {
+          "tag": "alexscaves:rock_candies"
+        },
+        "E": {
+          "item": "alexscaves:radiant_essence"
+        },
+        "C": {
+          "item": "alexscaves:candy_cane"
+        }
+      },
+      "result": {
+        "id": "alexscaves:biome_treat"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-wool-from-dark-tatters",
+    "name": "data/alexscaves/recipe/black_wool_from_dark_tatters.json",
+    "source": "data/alexscaves/recipe/black_wool_from_dark_tatters.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "DD",
+        "DD"
+      ],
+      "key": {
+        "D": {
+          "item": "alexscaves:dark_tatters"
+        }
+      },
+      "result": {
+        "id": "minecraft:black_wool",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-block-of-frosting",
+    "name": "data/alexscaves/recipe/block_of_frosting.json",
+    "source": "data/alexscaves/recipe/block_of_frosting.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "PP",
+        "PP"
+      ],
+      "key": {
+        "P": {
+          "item": "alexscaves:sweet_puff"
+        }
+      },
+      "result": {
+        "id": "alexscaves:block_of_frosting"
+      }
+    }
+  },
+  {
+    "anchor": "receita-block-of-pearl",
+    "name": "data/alexscaves/recipe/block_of_pearl.json",
+    "source": "data/alexscaves/recipe/block_of_pearl.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NNN",
+        "NNN",
+        "NNN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:pearl"
+        }
+      },
+      "result": {
+        "id": "alexscaves:block_of_pearl",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-block-of-uranium",
+    "name": "data/alexscaves/recipe/block_of_uranium.json",
+    "source": "data/alexscaves/recipe/block_of_uranium.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NNN",
+        "NNN",
+        "NNN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:uranium"
+        }
+      },
+      "result": {
+        "id": "alexscaves:block_of_uranium",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-meal-from-heavy-bone",
+    "name": "data/alexscaves/recipe/bone_meal_from_heavy_bone.json",
+    "source": "data/alexscaves/recipe/bone_meal_from_heavy_bone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:heavy_bone"
+        }
+      ],
+      "result": {
+        "id": "minecraft:bone_meal",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-meal-from-large-bone-blocks",
+    "name": "data/alexscaves/recipe/bone_meal_from_large_bone_blocks.json",
+    "source": "data/alexscaves/recipe/bone_meal_from_large_bone_blocks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "tag": "alexscaves:large_bone_blocks"
+        }
+      ],
+      "result": {
+        "id": "minecraft:bone_meal",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-burrowing-arrow",
+    "name": "data/alexscaves/recipe/burrowing_arrow.json",
+    "source": "data/alexscaves/recipe/burrowing_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "T",
+        "S",
+        "D"
+      ],
+      "key": {
+        "T": {
+          "item": "alexscaves:corrodent_teeth"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        },
+        "D": {
+          "item": "alexscaves:dark_tatters"
+        }
+      },
+      "result": {
+        "id": "alexscaves:burrowing_arrow",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-candy-cane-block",
+    "name": "data/alexscaves/recipe/candy_cane_block.json",
+    "source": "data/alexscaves/recipe/candy_cane_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "CC",
+        "CC"
+      ],
+      "key": {
+        "C": {
+          "item": "alexscaves:candy_cane"
+        }
+      },
+      "result": {
+        "id": "alexscaves:candy_cane_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-candy-cane-hook",
+    "name": "data/alexscaves/recipe/candy_cane_hook.json",
+    "source": "data/alexscaves/recipe/candy_cane_hook.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "L S",
+        " L ",
+        "P L"
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:sharpened_candy_cane"
+        },
+        "L": {
+          "item": "alexscaves:licoroot_vine"
+        },
+        "P": {
+          "item": "alexscaves:candy_cane_pole"
+        }
+      },
+      "result": {
+        "id": "alexscaves:candy_cane_hook"
+      }
+    }
+  },
+  {
+    "anchor": "receita-candy-cane-pole",
+    "name": "data/alexscaves/recipe/candy_cane_pole.json",
+    "source": "data/alexscaves/recipe/candy_cane_pole.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "C",
+        "C",
+        "C"
+      ],
+      "key": {
+        "C": {
+          "item": "alexscaves:candy_cane"
+        }
+      },
+      "result": {
+        "id": "alexscaves:candy_cane_pole"
+      }
+    }
+  },
+  {
+    "anchor": "receita-caramel-apple",
+    "name": "data/alexscaves/recipe/caramel_apple.json",
+    "source": "data/alexscaves/recipe/caramel_apple.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "CCC",
+        "CAC",
+        "CCC"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:apple"
+        },
+        "C": {
+          "item": "alexscaves:caramel"
+        }
+      },
+      "result": {
+        "id": "alexscaves:caramel_apple"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cave-book",
+    "name": "data/alexscaves/recipe/cave_book.json",
+    "source": "data/alexscaves/recipe/cave_book.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "alexscaves:cave_tablet"
+        },
+        {
+          "tag": "c:nuggets/gold"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:cave_book"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chocolate-ice-cream",
+    "name": "data/alexscaves/recipe/chocolate_ice_cream.json",
+    "source": "data/alexscaves/recipe/chocolate_ice_cream.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "II",
+        "II"
+      ],
+      "key": {
+        "I": {
+          "item": "alexscaves:chocolate_ice_cream_scoop"
+        }
+      },
+      "result": {
+        "id": "alexscaves:chocolate_ice_cream"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cloak-of-darkness",
+    "name": "data/alexscaves/recipe/cloak_of_darkness.json",
+    "source": "data/alexscaves/recipe/cloak_of_darkness.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "D D",
+        "DOD",
+        "DDD"
+      ],
+      "key": {
+        "D": {
+          "item": "alexscaves:shadow_silk"
+        },
+        "O": {
+          "item": "alexscaves:occult_gem"
+        }
+      },
+      "result": {
+        "id": "alexscaves:cloak_of_darkness"
+      }
+    }
+  },
+  {
+    "anchor": "receita-confection-oven",
+    "name": "data/alexscaves/recipe/confection_oven.json",
+    "source": "data/alexscaves/recipe/confection_oven.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GEG",
+        "CSC",
+        "GRG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gingerbread_crumbs"
+        },
+        "E": {
+          "item": "alexscaves:radiant_essence"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "S": {
+          "item": "minecraft:smoker"
+        },
+        "C": {
+          "item": "alexscaves:candy_cane"
+        }
+      },
+      "result": {
+        "id": "alexscaves:confection_oven"
+      }
+    }
+  },
+  {
+    "anchor": "receita-conversion-crucible",
+    "name": "data/alexscaves/recipe/conversion_crucible.json",
+    "source": "data/alexscaves/recipe/conversion_crucible.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GCG",
+        "GEG",
+        "GGG"
+      ],
+      "key": {
+        "E": {
+          "item": "alexscaves:radiant_essence"
+        },
+        "C": {
+          "item": "minecraft:cauldron"
+        },
+        "G": {
+          "tag": "c:storage_blocks/gold"
+        }
+      },
+      "result": {
+        "id": "alexscaves:conversion_crucible",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-copper-valve",
+    "name": "data/alexscaves/recipe/copper_valve.json",
+    "source": "data/alexscaves/recipe/copper_valve.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "CSC",
+        " C ",
+        " C "
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:scrap_metal"
+        },
+        "C": {
+          "item": "minecraft:copper_ingot"
+        }
+      },
+      "result": {
+        "id": "alexscaves:copper_valve"
+      }
+    }
+  },
+  {
+    "anchor": "receita-darkened-apple",
+    "name": "data/alexscaves/recipe/darkened_apple.json",
+    "source": "data/alexscaves/recipe/darkened_apple.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " D ",
+        "DPD",
+        " D "
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:apple"
+        },
+        "D": {
+          "item": "alexscaves:pure_darkness"
+        }
+      },
+      "result": {
+        "id": "alexscaves:darkened_apple"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deep-sea-sushi-roll",
+    "name": "data/alexscaves/recipe/deep_sea_sushi_roll.json",
+    "source": "data/alexscaves/recipe/deep_sea_sushi_roll.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:tripodfish"
+        },
+        {
+          "item": "alexscaves:sea_pig"
+        },
+        {
+          "item": "alexscaves:lanternfish"
+        },
+        {
+          "item": "minecraft:dried_kelp"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:deep_sea_sushi_roll",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-depth-glass",
+    "name": "data/alexscaves/recipe/depth_glass.json",
+    "source": "data/alexscaves/recipe/depth_glass.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "ISI",
+        "SSS",
+        "ISI"
+      ],
+      "key": {
+        "I": {
+          "tag": "c:ingots/iron"
+        },
+        "S": {
+          "item": "alexscaves:sea_glass_shards"
+        }
+      },
+      "result": {
+        "id": "alexscaves:depth_glass",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-drain",
+    "name": "data/alexscaves/recipe/drain.json",
+    "source": "data/alexscaves/recipe/drain.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "BBB",
+        "DRD",
+        "BBB"
+      ],
+      "key": {
+        "D": {
+          "item": "alexscaves:depth_charge"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "B": {
+          "item": "minecraft:bucket"
+        }
+      },
+      "result": {
+        "id": "alexscaves:drain",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-dreadbow",
+    "name": "data/alexscaves/recipe/dreadbow.json",
+    "source": "data/alexscaves/recipe/dreadbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " VS",
+        "P S",
+        " VS"
+      ],
+      "key": {
+        "P": {
+          "item": "alexscaves:pure_darkness"
+        },
+        "V": {
+          "item": "alexscaves:vesper_wing"
+        },
+        "S": {
+          "item": "alexscaves:shadow_silk"
+        }
+      },
+      "result": {
+        "id": "alexscaves:dreadbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-energized-galena-azure",
+    "name": "data/alexscaves/recipe/energized_galena_azure.json",
+    "source": "data/alexscaves/recipe/energized_galena_azure.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "GNG",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:galena"
+        },
+        "N": {
+          "item": "alexscaves:raw_azure_neodymium"
+        }
+      },
+      "result": {
+        "id": "alexscaves:energized_galena_azure",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-energized-galena-scarlet",
+    "name": "data/alexscaves/recipe/energized_galena_scarlet.json",
+    "source": "data/alexscaves/recipe/energized_galena_scarlet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "GNG",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:galena"
+        },
+        "N": {
+          "item": "alexscaves:raw_scarlet_neodymium"
+        }
+      },
+      "result": {
+        "id": "alexscaves:energized_galena_scarlet",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-extinction-spear",
+    "name": "data/alexscaves/recipe/extinction_spear.json",
+    "source": "data/alexscaves/recipe/extinction_spear.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " T ",
+        "TST",
+        "ABA"
+      ],
+      "key": {
+        "T": {
+          "item": "alexscaves:tectonic_shard"
+        },
+        "S": {
+          "item": "alexscaves:limestone_spear"
+        },
+        "A": {
+          "item": "alexscaves:amber_curiosity"
+        },
+        "B": {
+          "item": "alexscaves:heavy_bone"
+        }
+      },
+      "result": {
+        "id": "alexscaves:extinction_spear"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fern-thatch",
+    "name": "data/alexscaves/recipe/fern_thatch.json",
+    "source": "data/alexscaves/recipe/fern_thatch.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FF",
+        "FF"
+      ],
+      "key": {
+        "F": {
+          "tag": "alexscaves:ferns"
+        }
+      },
+      "result": {
+        "id": "alexscaves:fern_thatch"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fertilizer",
+    "name": "data/alexscaves/recipe/fertilizer.json",
+    "source": "data/alexscaves/recipe/fertilizer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:guano"
+        },
+        {
+          "item": "alexscaves:guano"
+        },
+        {
+          "item": "minecraft:bone_meal"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:fertilizer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-floater",
+    "name": "data/alexscaves/recipe/floater.json",
+    "source": "data/alexscaves/recipe/floater.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " B ",
+        "BBB",
+        "PPP"
+      ],
+      "key": {
+        "B": {
+          "item": "alexscaves:bioluminesscence"
+        },
+        "P": {
+          "item": "alexscaves:ping_pong_sponge"
+        }
+      },
+      "result": {
+        "id": "alexscaves:floater"
+      }
+    }
+  },
+  {
+    "anchor": "receita-forsaken-idol",
+    "name": "data/alexscaves/recipe/forsaken_idol.json",
+    "source": "data/alexscaves/recipe/forsaken_idol.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "BTB",
+        "TPT",
+        "TTT"
+      ],
+      "key": {
+        "B": {
+          "item": "alexscaves:thornwood_branch"
+        },
+        "T": {
+          "item": "alexscaves:thornwood_log"
+        },
+        "P": {
+          "item": "alexscaves:occult_gem"
+        }
+      },
+      "result": {
+        "id": "alexscaves:forsaken_idol"
+      }
+    }
+  },
+  {
+    "anchor": "receita-frostmint",
+    "name": "data/alexscaves/recipe/frostmint.json",
+    "source": "data/alexscaves/recipe/frostmint.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "PPP",
+        "PIP",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "alexscaves:peppermint_powder"
+        },
+        "I": {
+          "item": "minecraft:blue_ice"
+        }
+      },
+      "result": {
+        "id": "alexscaves:frostmint",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-frostmint-spear",
+    "name": "data/alexscaves/recipe/frostmint_spear.json",
+    "source": "data/alexscaves/recipe/frostmint_spear.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " F ",
+        "FCF",
+        " C "
+      ],
+      "key": {
+        "F": {
+          "item": "alexscaves:frostmint"
+        },
+        "C": {
+          "item": "alexscaves:candy_cane"
+        }
+      },
+      "result": {
+        "id": "alexscaves:frostmint_spear",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-dinosaur-chop-campfire",
+    "name": "data/alexscaves/recipe/furnace/cooked_dinosaur_chop_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_dinosaur_chop_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:dinosaur_chop"
+      },
+      "result": {
+        "id": "alexscaves:cooked_dinosaur_chop"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-dinosaur-chop-smelting",
+    "name": "data/alexscaves/recipe/furnace/cooked_dinosaur_chop_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_dinosaur_chop_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:dinosaur_chop"
+      },
+      "result": {
+        "id": "alexscaves:cooked_dinosaur_chop"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-dinosaur-chop-smoking",
+    "name": "data/alexscaves/recipe/furnace/cooked_dinosaur_chop_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_dinosaur_chop_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:dinosaur_chop"
+      },
+      "result": {
+        "id": "alexscaves:cooked_dinosaur_chop"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-lanternfish-campfire",
+    "name": "data/alexscaves/recipe/furnace/cooked_lanternfish_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_lanternfish_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:lanternfish"
+      },
+      "result": {
+        "id": "alexscaves:cooked_lanternfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-lanternfish-smelting",
+    "name": "data/alexscaves/recipe/furnace/cooked_lanternfish_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_lanternfish_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:lanternfish"
+      },
+      "result": {
+        "id": "alexscaves:cooked_lanternfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-lanternfish-smoking",
+    "name": "data/alexscaves/recipe/furnace/cooked_lanternfish_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_lanternfish_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:lanternfish"
+      },
+      "result": {
+        "id": "alexscaves:cooked_lanternfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-mussel-campfire",
+    "name": "data/alexscaves/recipe/furnace/cooked_mussel_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_mussel_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:mussel"
+      },
+      "result": {
+        "id": "alexscaves:cooked_mussel"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-mussel-smelting",
+    "name": "data/alexscaves/recipe/furnace/cooked_mussel_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_mussel_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:mussel"
+      },
+      "result": {
+        "id": "alexscaves:cooked_mussel"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-mussel-smoking",
+    "name": "data/alexscaves/recipe/furnace/cooked_mussel_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_mussel_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:mussel"
+      },
+      "result": {
+        "id": "alexscaves:cooked_mussel"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-radgill-campfire",
+    "name": "data/alexscaves/recipe/furnace/cooked_radgill_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_radgill_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:radgill"
+      },
+      "result": {
+        "id": "alexscaves:cooked_radgill"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-radgill-smelting",
+    "name": "data/alexscaves/recipe/furnace/cooked_radgill_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_radgill_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:radgill"
+      },
+      "result": {
+        "id": "alexscaves:cooked_radgill"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-radgill-smoking",
+    "name": "data/alexscaves/recipe/furnace/cooked_radgill_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_radgill_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:radgill"
+      },
+      "result": {
+        "id": "alexscaves:cooked_radgill"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-trilocaris-tail-campfire",
+    "name": "data/alexscaves/recipe/furnace/cooked_trilocaris_tail_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_trilocaris_tail_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:trilocaris_tail"
+      },
+      "result": {
+        "id": "alexscaves:cooked_trilocaris_tail"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-trilocaris-tail-smelting",
+    "name": "data/alexscaves/recipe/furnace/cooked_trilocaris_tail_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_trilocaris_tail_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:trilocaris_tail"
+      },
+      "result": {
+        "id": "alexscaves:cooked_trilocaris_tail"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-trilocaris-tail-smoking",
+    "name": "data/alexscaves/recipe/furnace/cooked_trilocaris_tail_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_trilocaris_tail_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:trilocaris_tail"
+      },
+      "result": {
+        "id": "alexscaves:cooked_trilocaris_tail"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-cooked-tripodfish-campfire",
+    "name": "data/alexscaves/recipe/furnace/cooked_tripodfish_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_tripodfish_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:tripodfish"
+      },
+      "result": {
+        "id": "alexscaves:cooked_tripodfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-cooked-tripodfish-smelting",
+    "name": "data/alexscaves/recipe/furnace/cooked_tripodfish_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_tripodfish_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:tripodfish"
+      },
+      "result": {
+        "id": "alexscaves:cooked_tripodfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-cooked-tripodfish-smoking",
+    "name": "data/alexscaves/recipe/furnace/cooked_tripodfish_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/cooked_tripodfish_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:tripodfish"
+      },
+      "result": {
+        "id": "alexscaves:cooked_tripodfish"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-gelatin-blue-campfire",
+    "name": "data/alexscaves/recipe/furnace/gelatin_blue_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_blue_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_blue"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_blue"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-gelatin-blue-smelting",
+    "name": "data/alexscaves/recipe/furnace/gelatin_blue_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_blue_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_blue"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_blue"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-gelatin-blue-smoking",
+    "name": "data/alexscaves/recipe/furnace/gelatin_blue_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_blue_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_blue"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_blue"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-gelatin-green-campfire",
+    "name": "data/alexscaves/recipe/furnace/gelatin_green_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_green_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_green"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_green"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-gelatin-green-smelting",
+    "name": "data/alexscaves/recipe/furnace/gelatin_green_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_green_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_green"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_green"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-gelatin-green-smoking",
+    "name": "data/alexscaves/recipe/furnace/gelatin_green_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_green_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_green"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_green"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-gelatin-pink-campfire",
+    "name": "data/alexscaves/recipe/furnace/gelatin_pink_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_pink_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_pink"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_pink"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-gelatin-pink-smelting",
+    "name": "data/alexscaves/recipe/furnace/gelatin_pink_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_pink_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_pink"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_pink"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-gelatin-pink-smoking",
+    "name": "data/alexscaves/recipe/furnace/gelatin_pink_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_pink_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_pink"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_pink"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-gelatin-red-campfire",
+    "name": "data/alexscaves/recipe/furnace/gelatin_red_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_red_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_red"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_red"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-gelatin-red-smelting",
+    "name": "data/alexscaves/recipe/furnace/gelatin_red_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_red_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_red"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_red"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-gelatin-red-smoking",
+    "name": "data/alexscaves/recipe/furnace/gelatin_red_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_red_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_red"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_red"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-gelatin-yellow-campfire",
+    "name": "data/alexscaves/recipe/furnace/gelatin_yellow_campfire.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_yellow_campfire.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_yellow"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_yellow"
+      },
+      "experience": 0.15,
+      "cookingtime": 600
+    }
+  },
+  {
+    "anchor": "receita-gelatin-yellow-smelting",
+    "name": "data/alexscaves/recipe/furnace/gelatin_yellow_smelting.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_yellow_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_yellow"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_yellow"
+      },
+      "experience": 0.15,
+      "cookingtime": 200
+    }
+  },
+  {
+    "anchor": "receita-gelatin-yellow-smoking",
+    "name": "data/alexscaves/recipe/furnace/gelatin_yellow_smoking.json",
+    "source": "data/alexscaves/recipe/furnace/gelatin_yellow_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "ingredient": {
+        "item": "alexscaves:sweetish_fish_yellow"
+      },
+      "result": {
+        "id": "alexscaves:gelatin_yellow"
+      },
+      "experience": 0.15,
+      "cookingtime": 100
+    }
+  },
+  {
+    "anchor": "receita-galena-gauntlet",
+    "name": "data/alexscaves/recipe/galena_gauntlet.json",
+    "source": "data/alexscaves/recipe/galena_gauntlet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "PPP",
+        "PTP",
+        "SNS"
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:ferrouslime_ball"
+        },
+        "P": {
+          "item": "alexscaves:packed_galena"
+        },
+        "T": {
+          "item": "alexscaves:telecore"
+        },
+        "N": {
+          "item": "alexscaves:scarlet_neodymium_ingot"
+        }
+      },
+      "result": {
+        "id": "alexscaves:galena_gauntlet",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-gingerbarrel",
+    "name": "data/alexscaves/recipe/gingerbarrel.json",
+    "source": "data/alexscaves/recipe/gingerbarrel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gingerbread_crumbs"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gingerbarrel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gingerbread-block",
+    "name": "data/alexscaves/recipe/gingerbread_block.json",
+    "source": "data/alexscaves/recipe/gingerbread_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GG",
+        "GG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gingerbread_crumbs"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gingerbread_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glass-from-sea-glass-shards",
+    "name": "data/alexscaves/recipe/glass_from_sea_glass_shards.json",
+    "source": "data/alexscaves/recipe/glass_from_sea_glass_shards.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SS",
+        "SS"
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:sea_glass_shards"
+        }
+      },
+      "result": {
+        "id": "minecraft:glass"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gobthumper",
+    "name": "data/alexscaves/recipe/gobthumper.json",
+    "source": "data/alexscaves/recipe/gobthumper.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "PPP",
+        " L "
+      ],
+      "key": {
+        "G": {
+          "tag": "alexscaves:gelatins"
+        },
+        "P": {
+          "item": "alexscaves:gumball_pile"
+        },
+        "L": {
+          "item": "alexscaves:sharpened_candy_cane"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gobthumper",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-guano-block",
+    "name": "data/alexscaves/recipe/guano_block.json",
+    "source": "data/alexscaves/recipe/guano_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NN",
+        "NN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:guano"
+        }
+      },
+      "result": {
+        "id": "alexscaves:guano_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-gummy-ring-blue",
+    "name": "data/alexscaves/recipe/gummy_ring_blue.json",
+    "source": "data/alexscaves/recipe/gummy_ring_blue.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gelatin_blue"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gummy_ring_blue",
+        "count": 3
+      }
+    }
+  },
+  {
+    "anchor": "receita-gummy-ring-green",
+    "name": "data/alexscaves/recipe/gummy_ring_green.json",
+    "source": "data/alexscaves/recipe/gummy_ring_green.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gelatin_green"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gummy_ring_green",
+        "count": 3
+      }
+    }
+  },
+  {
+    "anchor": "receita-gummy-ring-pink",
+    "name": "data/alexscaves/recipe/gummy_ring_pink.json",
+    "source": "data/alexscaves/recipe/gummy_ring_pink.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gelatin_pink"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gummy_ring_pink",
+        "count": 3
+      }
+    }
+  },
+  {
+    "anchor": "receita-gummy-ring-red",
+    "name": "data/alexscaves/recipe/gummy_ring_red.json",
+    "source": "data/alexscaves/recipe/gummy_ring_red.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gelatin_red"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gummy_ring_red",
+        "count": 3
+      }
+    }
+  },
+  {
+    "anchor": "receita-gummy-ring-yellow",
+    "name": "data/alexscaves/recipe/gummy_ring_yellow.json",
+    "source": "data/alexscaves/recipe/gummy_ring_yellow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:gelatin_yellow"
+        }
+      },
+      "result": {
+        "id": "alexscaves:gummy_ring_yellow",
+        "count": 3
+      }
+    }
+  },
+  {
+    "anchor": "receita-holocoder",
+    "name": "data/alexscaves/recipe/holocoder.json",
+    "source": "data/alexscaves/recipe/holocoder.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "R",
+        "T",
+        "N"
+      ],
+      "key": {
+        "R": {
+          "item": "alexscaves:notor_gizmo"
+        },
+        "N": {
+          "item": "alexscaves:azure_neodymium_ingot"
+        },
+        "T": {
+          "item": "alexscaves:telecore"
+        }
+      },
+      "result": {
+        "id": "alexscaves:holocoder",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-hologram-projector",
+    "name": "data/alexscaves/recipe/hologram_projector.json",
+    "source": "data/alexscaves/recipe/hologram_projector.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GGG",
+        "NNN",
+        "III"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:notor_gizmo"
+        },
+        "G": {
+          "tag": "c:glass/colorless"
+        },
+        "I": {
+          "tag": "c:ingots/iron"
+        }
+      },
+      "result": {
+        "id": "alexscaves:hologram_projector",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-hood-of-darkness",
+    "name": "data/alexscaves/recipe/hood_of_darkness.json",
+    "source": "data/alexscaves/recipe/hood_of_darkness.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "DOD",
+        "D D"
+      ],
+      "key": {
+        "D": {
+          "item": "alexscaves:shadow_silk"
+        },
+        "O": {
+          "item": "alexscaves:occult_gem"
+        }
+      },
+      "result": {
+        "id": "alexscaves:hood_of_darkness"
+      }
+    }
+  },
+  {
+    "anchor": "receita-hot-chocolate-bottle",
+    "name": "data/alexscaves/recipe/hot_chocolate_bottle.json",
+    "source": "data/alexscaves/recipe/hot_chocolate_bottle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:block_of_chocolate"
+        },
+        {
+          "item": "alexscaves:block_of_chocolate"
+        },
+        {
+          "item": "minecraft:sugar"
+        },
+        {
+          "item": "minecraft:glass_bottle"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:hot_chocolate_bottle"
+      }
+    }
+  },
+  {
+    "anchor": "receita-magnetic-activator",
+    "name": "data/alexscaves/recipe/magnetic_activator.json",
+    "source": "data/alexscaves/recipe/magnetic_activator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        "SRS",
+        "SSS"
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:scrap_metal"
+        },
+        "R": {
+          "tag": "c:storage_blocks/redstone"
+        }
+      },
+      "result": {
+        "id": "alexscaves:magnetic_activator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-magnetic-light",
+    "name": "data/alexscaves/recipe/magnetic_light.json",
+    "source": "data/alexscaves/recipe/magnetic_light.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "R",
+        "I"
+      ],
+      "key": {
+        "R": {
+          "item": "alexscaves:notor_gizmo"
+        },
+        "I": {
+          "tag": "c:ingots/iron"
+        }
+      },
+      "result": {
+        "id": "alexscaves:magnetic_light",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-magnetic-quarry",
+    "name": "data/alexscaves/recipe/magnetic_quarry.json",
+    "source": "data/alexscaves/recipe/magnetic_quarry.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SDS",
+        "NHN",
+        "SDS"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:azure_neodymium_ingot"
+        },
+        "S": {
+          "item": "alexscaves:scrap_metal_plate"
+        },
+        "D": {
+          "tag": "c:gems/diamond"
+        },
+        "H": {
+          "item": "alexscaves:heart_of_iron"
+        }
+      },
+      "result": {
+        "id": "alexscaves:quarry",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-metal-barrel",
+    "name": "data/alexscaves/recipe/metal_barrel.json",
+    "source": "data/alexscaves/recipe/metal_barrel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " S ",
+        "SBS",
+        " S "
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:scrap_metal"
+        },
+        "B": {
+          "tag": "c:barrels/wooden"
+        }
+      },
+      "result": {
+        "id": "alexscaves:metal_barrel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-metal-rebar",
+    "name": "data/alexscaves/recipe/metal_rebar.json",
+    "source": "data/alexscaves/recipe/metal_rebar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "S",
+        "S",
+        "S"
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:scrap_metal"
+        }
+      },
+      "result": {
+        "id": "alexscaves:metal_rebar",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-metal-scaffolding",
+    "name": "data/alexscaves/recipe/metal_scaffolding.json",
+    "source": "data/alexscaves/recipe/metal_scaffolding.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "TTT",
+        "S S",
+        "S S"
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:metal_rebar"
+        },
+        "T": {
+          "item": "alexscaves:scrap_metal"
+        }
+      },
+      "result": {
+        "id": "alexscaves:metal_scaffolding",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-metal-swarf",
+    "name": "data/alexscaves/recipe/metal_swarf.json",
+    "source": "data/alexscaves/recipe/metal_swarf.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:ferrouslime_ball"
+        },
+        {
+          "tag": "c:raw_materials/iron"
+        },
+        {
+          "tag": "c:gravel"
+        },
+        {
+          "tag": "c:gravel"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:metal_swarf",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-moth-ball",
+    "name": "data/alexscaves/recipe/moth_ball.json",
+    "source": "data/alexscaves/recipe/moth_ball.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:moth_dust"
+        },
+        {
+          "item": "alexscaves:guano"
+        },
+        {
+          "item": "minecraft:string"
+        },
+        {
+          "item": "minecraft:string"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:moth_ball"
+      }
+    }
+  },
+  {
+    "anchor": "receita-music-disc-fusion",
+    "name": "data/alexscaves/recipe/music_disc_fusion.json",
+    "source": "data/alexscaves/recipe/music_disc_fusion.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "key": {
+        "F": {
+          "item": "alexscaves:disc_fragment_fusion"
+        }
+      },
+      "result": {
+        "id": "alexscaves:music_disc_fusion"
+      }
+    }
+  },
+  {
+    "anchor": "receita-music-disc-tasty",
+    "name": "data/alexscaves/recipe/music_disc_tasty.json",
+    "source": "data/alexscaves/recipe/music_disc_tasty.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "FFF",
+        "FFF",
+        "FFF"
+      ],
+      "key": {
+        "F": {
+          "item": "alexscaves:disc_fragment_tasty"
+        }
+      },
+      "result": {
+        "id": "alexscaves:music_disc_tasty"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nuclear-bomb",
+    "name": "data/alexscaves/recipe/nuclear_bomb.json",
+    "source": "data/alexscaves/recipe/nuclear_bomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "IFI",
+        "UBU",
+        "IFI"
+      ],
+      "key": {
+        "U": {
+          "item": "alexscaves:uranium_rod"
+        },
+        "B": {
+          "tag": "c:storage_blocks/uranium"
+        },
+        "F": {
+          "item": "alexscaves:fissile_core"
+        },
+        "I": {
+          "tag": "c:storage_blocks/iron"
+        }
+      },
+      "result": {
+        "id": "alexscaves:nuclear_bomb",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-nuclear-furnace-component",
+    "name": "data/alexscaves/recipe/nuclear_furnace_component.json",
+    "source": "data/alexscaves/recipe/nuclear_furnace_component.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "UCU",
+        "CFC",
+        "UCU"
+      ],
+      "key": {
+        "C": {
+          "item": "alexscaves:charred_remnant"
+        },
+        "U": {
+          "tag": "c:raw_materials/uranium"
+        },
+        "F": {
+          "item": "minecraft:blast_furnace"
+        }
+      },
+      "result": {
+        "id": "alexscaves:nuclear_furnace_component",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-nuclear-siren",
+    "name": "data/alexscaves/recipe/nuclear_siren.json",
+    "source": "data/alexscaves/recipe/nuclear_siren.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "CUC",
+        " I ",
+        " I "
+      ],
+      "key": {
+        "C": {
+          "item": "alexscaves:charred_remnant"
+        },
+        "U": {
+          "tag": "c:raw_materials/uranium"
+        },
+        "I": {
+          "tag": "c:ingots/iron"
+        }
+      },
+      "result": {
+        "id": "alexscaves:nuclear_siren"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ominous-catalyst",
+    "name": "data/alexscaves/recipe/ominous_catalyst.json",
+    "source": "data/alexscaves/recipe/ominous_catalyst.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "BBB",
+        "BAB",
+        "BBB"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:amber_curiosity"
+        },
+        "B": {
+          "item": "alexscaves:heavy_bone"
+        }
+      },
+      "result": {
+        "id": "alexscaves:ominous_catalyst"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pearl-from-gazing-pearl",
+    "name": "data/alexscaves/recipe/pearl_from_gazing_pearl.json",
+    "source": "data/alexscaves/recipe/pearl_from_gazing_pearl.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:gazing_pearl"
+        },
+        {
+          "item": "alexscaves:marine_snow"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:pearl",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-peering-coprolith",
+    "name": "data/alexscaves/recipe/peering_coprolith.json",
+    "source": "data/alexscaves/recipe/peering_coprolith.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AAA",
+        "ATA",
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:porous_coprolith"
+        },
+        "T": {
+          "item": "alexscaves:pure_darkness"
+        }
+      },
+      "result": {
+        "id": "alexscaves:peering_coprolith",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-peppermint-powder-from-candy-cane",
+    "name": "data/alexscaves/recipe/peppermint_powder_from_candy_cane.json",
+    "source": "data/alexscaves/recipe/peppermint_powder_from_candy_cane.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:candy_cane"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:peppermint_powder",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-peppermint-powder-from-sharpened-candy-cane",
+    "name": "data/alexscaves/recipe/peppermint_powder_from_sharpened_candy_cane.json",
+    "source": "data/alexscaves/recipe/peppermint_powder_from_sharpened_candy_cane.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:sharpened_candy_cane"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:peppermint_powder",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-pewen-hanging-sign",
+    "name": "data/alexscaves/recipe/pewen_hanging_sign.json",
+    "source": "data/alexscaves/recipe/pewen_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "group": "wooden_sign",
+      "key": {
+        "C": {
+          "item": "minecraft:chain"
+        },
+        "#": {
+          "item": "alexscaves:stripped_pewen_log"
+        }
+      },
+      "pattern": [
+        "C C",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 3,
+        "id": "alexscaves:pewen_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polarity-armor-trim-smithing-template",
+    "name": "data/alexscaves/recipe/polarity_armor_trim_smithing_template.json",
+    "source": "data/alexscaves/recipe/polarity_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "alexscaves:galena"
+        },
+        "S": {
+          "item": "alexscaves:polarity_armor_trim_smithing_template"
+        }
+      },
+      "result": {
+        "id": "alexscaves:polarity_armor_trim_smithing_template",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-polymer-plate",
+    "name": "data/alexscaves/recipe/polymer_plate.json",
+    "source": "data/alexscaves/recipe/polymer_plate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:toxic_paste"
+        },
+        {
+          "item": "alexscaves:radon_bottle"
+        },
+        {
+          "item": "alexscaves:sulfur_dust"
+        },
+        {
+          "tag": "c:ingots/iron"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:polymer_plate",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-primitive-club",
+    "name": "data/alexscaves/recipe/primitive_club.json",
+    "source": "data/alexscaves/recipe/primitive_club.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "  C",
+        " C ",
+        "B  "
+      ],
+      "key": {
+        "B": {
+          "item": "alexscaves:heavy_bone"
+        },
+        "C": {
+          "item": "alexscaves:cycad"
+        }
+      },
+      "result": {
+        "id": "alexscaves:primitive_club"
+      }
+    }
+  },
+  {
+    "anchor": "receita-primordial-helmet",
+    "name": "data/alexscaves/recipe/primordial_helmet.json",
+    "source": "data/alexscaves/recipe/primordial_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "BHB",
+        "E E"
+      ],
+      "key": {
+        "H": {
+          "item": "alexscaves:tough_hide"
+        },
+        "B": {
+          "item": "minecraft:bone_block"
+        },
+        "E": {
+          "item": "alexscaves:heavy_bone"
+        }
+      },
+      "result": {
+        "id": "alexscaves:primordial_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-primordial-pants",
+    "name": "data/alexscaves/recipe/primordial_pants.json",
+    "source": "data/alexscaves/recipe/primordial_pants.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "HHH",
+        "H H",
+        "B B"
+      ],
+      "key": {
+        "H": {
+          "item": "alexscaves:tough_hide"
+        },
+        "B": {
+          "item": "minecraft:bone_block"
+        }
+      },
+      "result": {
+        "id": "alexscaves:primordial_pants"
+      }
+    }
+  },
+  {
+    "anchor": "receita-primordial-tunic",
+    "name": "data/alexscaves/recipe/primordial_tunic.json",
+    "source": "data/alexscaves/recipe/primordial_tunic.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "B B",
+        "HHH",
+        "HHH"
+      ],
+      "key": {
+        "H": {
+          "item": "alexscaves:tough_hide"
+        },
+        "B": {
+          "item": "minecraft:bone_block"
+        }
+      },
+      "result": {
+        "id": "alexscaves:primordial_tunic"
+      }
+    }
+  },
+  {
+    "anchor": "receita-quarry-smasher",
+    "name": "data/alexscaves/recipe/quarry_smasher.json",
+    "source": "data/alexscaves/recipe/quarry_smasher.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "AAA",
+        "CCC",
+        "SHS"
+      ],
+      "key": {
+        "C": {
+          "item": "minecraft:chain"
+        },
+        "A": {
+          "item": "alexscaves:azure_neodymium_ingot"
+        },
+        "S": {
+          "item": "alexscaves:scarlet_neodymium_ingot"
+        },
+        "H": {
+          "item": "alexscaves:heavyweight"
+        }
+      },
+      "result": {
+        "id": "alexscaves:quarry_smasher",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-radrock",
+    "name": "data/alexscaves/recipe/radrock.json",
+    "source": "data/alexscaves/recipe/radrock.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NNN",
+        "NPN",
+        "NNN"
+      ],
+      "key": {
+        "N": {
+          "item": "minecraft:cobblestone"
+        },
+        "P": {
+          "item": "alexscaves:toxic_paste"
+        }
+      },
+      "result": {
+        "id": "alexscaves:radrock",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-rainbounce-boots",
+    "name": "data/alexscaves/recipe/rainbounce_boots.json",
+    "source": "data/alexscaves/recipe/rainbounce_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "G G",
+        "S S"
+      ],
+      "key": {
+        "G": {
+          "tag": "alexscaves:gelatins"
+        },
+        "S": {
+          "item": "alexscaves:sundrop"
+        }
+      },
+      "result": {
+        "id": "alexscaves:rainbounce_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-raygun",
+    "name": "data/alexscaves/recipe/raygun.json",
+    "source": "data/alexscaves/recipe/raygun.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "PPP",
+        "FUU",
+        "P  "
+      ],
+      "key": {
+        "P": {
+          "item": "alexscaves:polymer_plate"
+        },
+        "U": {
+          "item": "alexscaves:uranium_rod"
+        },
+        "F": {
+          "item": "alexscaves:fissile_core"
+        }
+      },
+      "result": {
+        "id": "alexscaves:raygun",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-remote-detonator",
+    "name": "data/alexscaves/recipe/remote_detonator.json",
+    "source": "data/alexscaves/recipe/remote_detonator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " F ",
+        "PRP",
+        " P "
+      ],
+      "key": {
+        "F": {
+          "item": "alexscaves:fissile_core"
+        },
+        "R": {
+          "tag": "c:storage_blocks/redstone"
+        },
+        "P": {
+          "item": "alexscaves:polymer_plate"
+        }
+      },
+      "result": {
+        "id": "alexscaves:remote_detonator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-resistor-shield",
+    "name": "data/alexscaves/recipe/resistor_shield.json",
+    "source": "data/alexscaves/recipe/resistor_shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SSS",
+        " H ",
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:azure_neodymium_ingot"
+        },
+        "H": {
+          "item": "alexscaves:heart_of_iron"
+        },
+        "S": {
+          "item": "alexscaves:scarlet_neodymium_ingot"
+        }
+      },
+      "result": {
+        "id": "alexscaves:resistor_shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sack-of-sating",
+    "name": "data/alexscaves/recipe/sack_of_sating.json",
+    "source": "data/alexscaves/recipe/sack_of_sating.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "LTL",
+        "G G",
+        "GGG"
+      ],
+      "key": {
+        "G": {
+          "tag": "alexscaves:gelatins"
+        },
+        "L": {
+          "item": "alexscaves:licoroot_vine"
+        },
+        "T": {
+          "item": "alexscaves:sweet_tooth"
+        }
+      },
+      "result": {
+        "id": "alexscaves:sack_of_sating"
+      }
+    }
+  },
+  {
+    "anchor": "receita-scarlet-neodymium-ingot",
+    "name": "data/alexscaves/recipe/scarlet_neodymium_ingot.json",
+    "source": "data/alexscaves/recipe/scarlet_neodymium_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:raw_scarlet_neodymium"
+        },
+        {
+          "item": "alexscaves:raw_scarlet_neodymium"
+        },
+        {
+          "item": "alexscaves:raw_scarlet_neodymium"
+        },
+        {
+          "tag": "c:ingots/iron"
+        },
+        {
+          "tag": "c:ingots/iron"
+        },
+        {
+          "tag": "c:ingots/iron"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:scarlet_neodymium_ingot",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-scarlet-neodymium-node",
+    "name": "data/alexscaves/recipe/scarlet_neodymium_node.json",
+    "source": "data/alexscaves/recipe/scarlet_neodymium_node.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " N ",
+        "NNN",
+        " N "
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:raw_scarlet_neodymium"
+        }
+      },
+      "result": {
+        "id": "alexscaves:scarlet_neodymium_node",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-scarlet-neodymium-pillar",
+    "name": "data/alexscaves/recipe/scarlet_neodymium_pillar.json",
+    "source": "data/alexscaves/recipe/scarlet_neodymium_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NN",
+        "NN",
+        "NN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:raw_scarlet_neodymium"
+        }
+      },
+      "result": {
+        "id": "alexscaves:scarlet_neodymium_pillar",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-scrap-metal-plate",
+    "name": "data/alexscaves/recipe/scrap_metal_plate.json",
+    "source": "data/alexscaves/recipe/scrap_metal_plate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GG",
+        "GG"
+      ],
+      "key": {
+        "G": {
+          "item": "alexscaves:scrap_metal"
+        }
+      },
+      "result": {
+        "id": "alexscaves:scrap_metal_plate",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-seething-stew",
+    "name": "data/alexscaves/recipe/seething_stew.json",
+    "source": "data/alexscaves/recipe/seething_stew.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:cooked_dinosaur_chop"
+        },
+        {
+          "item": "alexscaves:flytrap"
+        },
+        {
+          "item": "alexscaves:heavy_bone"
+        },
+        {
+          "item": "minecraft:bowl"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:seething_stew"
+      }
+    }
+  },
+  {
+    "anchor": "receita-serene-salad",
+    "name": "data/alexscaves/recipe/serene_salad.json",
+    "source": "data/alexscaves/recipe/serene_salad.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:fiddlehead"
+        },
+        {
+          "item": "alexscaves:tree_star"
+        },
+        {
+          "item": "alexscaves:pine_nuts"
+        },
+        {
+          "item": "minecraft:bowl"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:serene_salad"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shadow-silk",
+    "name": "data/alexscaves/recipe/shadow_silk.json",
+    "source": "data/alexscaves/recipe/shadow_silk.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "MDM",
+        "DPD",
+        "MDM"
+      ],
+      "key": {
+        "D": {
+          "item": "alexscaves:dark_tatters"
+        },
+        "P": {
+          "item": "alexscaves:pure_darkness"
+        },
+        "M": {
+          "item": "alexscaves:moth_dust"
+        }
+      },
+      "result": {
+        "id": "alexscaves:shadow_silk",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-shot-gum",
+    "name": "data/alexscaves/recipe/shot_gum.json",
+    "source": "data/alexscaves/recipe/shot_gum.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "SPP",
+        "III",
+        "IN "
+      ],
+      "key": {
+        "S": {
+          "item": "alexscaves:sugar_glass"
+        },
+        "P": {
+          "item": "alexscaves:gumball_pile"
+        },
+        "I": {
+          "tag": "c:ingots/iron"
+        },
+        "N": {
+          "tag": "c:nuggets/iron"
+        }
+      },
+      "result": {
+        "id": "alexscaves:shot_gum",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-brick-slab-from-abyssmarine-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_brick_slab_from_abyssmarine_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_brick_slab_from_abyssmarine_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 2,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-brick-stairs-from-abyssmarine-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_brick_stairs_from_abyssmarine_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_brick_stairs_from_abyssmarine_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-brick-wall-from-abyssmarine-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_brick_wall_from_abyssmarine_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_brick_wall_from_abyssmarine_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-bricks-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_bricks_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_bricks_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-pillar-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_pillar_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_pillar_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-slab-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_slab_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_slab_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 2,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-stairs-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_stairs_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_stairs_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-tiles-from-abyssmarine-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_tiles_from_abyssmarine_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_tiles_from_abyssmarine_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssmarine-wall-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/abyssmarine_wall_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/abyssmarine_wall_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": {
+        "item": "alexscaves:abyssmarine"
+      },
+      "result": {
+        "id": "alexscaves:abyssmarine_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-scrap-metal-plate-stonecutting",
+    "name": "data/alexscaves/recipe/stonecutter/scrap_metal_plate_stonecutting.json",
+    "source": "data/alexscaves/recipe/stonecutter/scrap_metal_plate_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 2,
+      "ingredient": {
+        "item": "alexscaves:scrap_metal"
+      },
+      "result": {
+        "id": "alexscaves:scrap_metal_plate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sundae",
+    "name": "data/alexscaves/recipe/sundae.json",
+    "source": "data/alexscaves/recipe/sundae.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "ABC",
+        "DEF",
+        " G "
+      ],
+      "key": {
+        "A": {
+          "item": "alexscaves:candy_cane"
+        },
+        "B": {
+          "item": "alexscaves:caramel"
+        },
+        "C": {
+          "tag": "alexscaves:sweet_berries"
+        },
+        "D": {
+          "item": "alexscaves:vanilla_ice_cream_scoop"
+        },
+        "E": {
+          "item": "alexscaves:chocolate_ice_cream_scoop"
+        },
+        "F": {
+          "item": "alexscaves:sweetberry_ice_cream_scoop"
+        },
+        "G": {
+          "item": "minecraft:bowl"
+        }
+      },
+      "result": {
+        "id": "alexscaves:sundae"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sundrop",
+    "name": "data/alexscaves/recipe/sundrop.json",
+    "source": "data/alexscaves/recipe/sundrop.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "GCG",
+        "CRC",
+        "GCG"
+      ],
+      "key": {
+        "G": {
+          "tag": "alexscaves:gelatins"
+        },
+        "C": {
+          "item": "alexscaves:caramel"
+        },
+        "R": {
+          "item": "alexscaves:radiant_essence"
+        }
+      },
+      "result": {
+        "id": "alexscaves:sundrop",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-sweetberry-ice-cream",
+    "name": "data/alexscaves/recipe/sweetberry_ice_cream.json",
+    "source": "data/alexscaves/recipe/sweetberry_ice_cream.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "II",
+        "II"
+      ],
+      "key": {
+        "I": {
+          "item": "alexscaves:sweetberry_ice_cream_scoop"
+        }
+      },
+      "result": {
+        "id": "alexscaves:sweetberry_ice_cream"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tesla-bulb",
+    "name": "data/alexscaves/recipe/tesla_bulb.json",
+    "source": "data/alexscaves/recipe/tesla_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NNN",
+        "NCN",
+        "NNN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:energized_galena_neutral"
+        },
+        "C": {
+          "item": "alexscaves:telecore"
+        }
+      },
+      "result": {
+        "id": "alexscaves:tesla_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thornwood-hanging-sign",
+    "name": "data/alexscaves/recipe/thornwood_hanging_sign.json",
+    "source": "data/alexscaves/recipe/thornwood_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "group": "wooden_sign",
+      "key": {
+        "C": {
+          "item": "minecraft:chain"
+        },
+        "#": {
+          "item": "alexscaves:stripped_thornwood_log"
+        }
+      },
+      "pattern": [
+        "C C",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 3,
+        "id": "alexscaves:thornwood_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-totem-of-possession",
+    "name": "data/alexscaves/recipe/totem_of_possession.json",
+    "source": "data/alexscaves/recipe/totem_of_possession.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "DED",
+        "DBD",
+        "DBD"
+      ],
+      "key": {
+        "B": {
+          "item": "alexscaves:thornwood_branch"
+        },
+        "E": {
+          "item": "alexscaves:occult_gem"
+        },
+        "D": {
+          "item": "alexscaves:moth_dust"
+        }
+      },
+      "result": {
+        "id": "alexscaves:totem_of_possession"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tremorzilla-egg",
+    "name": "data/alexscaves/recipe/tremorzilla_egg.json",
+    "source": "data/alexscaves/recipe/tremorzilla_egg.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " T ",
+        "TIT",
+        "TET"
+      ],
+      "key": {
+        "T": {
+          "item": "alexscaves:tectonic_shard"
+        },
+        "I": {
+          "item": "alexscaves:immortal_embryo"
+        },
+        "E": {
+          "item": "alexscaves:tremorsaurus_egg"
+        }
+      },
+      "result": {
+        "id": "alexscaves:tremorzilla_egg"
+      }
+    }
+  },
+  {
+    "anchor": "receita-unrefined-waste",
+    "name": "data/alexscaves/recipe/unrefined_waste.json",
+    "source": "data/alexscaves/recipe/unrefined_waste.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NNN",
+        "NNN",
+        "NNN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:toxic_paste"
+        }
+      },
+      "result": {
+        "id": "alexscaves:unrefined_waste",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-uranium-from-shard",
+    "name": "data/alexscaves/recipe/uranium_from_shard.json",
+    "source": "data/alexscaves/recipe/uranium_from_shard.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "NNN",
+        "NNN",
+        "NNN"
+      ],
+      "key": {
+        "N": {
+          "item": "alexscaves:uranium_shard"
+        }
+      },
+      "result": {
+        "id": "alexscaves:uranium",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-uranium-shard-from-uranium",
+    "name": "data/alexscaves/recipe/uranium_shard_from_uranium.json",
+    "source": "data/alexscaves/recipe/uranium_shard_from_uranium.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:uranium"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:uranium_shard",
+        "count": 9
+      }
+    }
+  },
+  {
+    "anchor": "receita-vanilla-ice-cream",
+    "name": "data/alexscaves/recipe/vanilla_ice_cream.json",
+    "source": "data/alexscaves/recipe/vanilla_ice_cream.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "II",
+        "II"
+      ],
+      "key": {
+        "I": {
+          "item": "alexscaves:vanilla_ice_cream_scoop"
+        }
+      },
+      "result": {
+        "id": "alexscaves:vanilla_ice_cream"
+      }
+    }
+  },
+  {
+    "anchor": "receita-vesper-stew",
+    "name": "data/alexscaves/recipe/vesper_stew.json",
+    "source": "data/alexscaves/recipe/vesper_stew.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "alexscaves:vesper_wing"
+        },
+        {
+          "item": "alexscaves:thornwood_branch"
+        },
+        {
+          "item": "minecraft:brown_mushroom"
+        },
+        {
+          "item": "minecraft:bowl"
+        }
+      ],
+      "result": {
+        "id": "alexscaves:vesper_stew"
+      }
+    }
+  }
+]

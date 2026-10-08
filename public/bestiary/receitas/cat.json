@@ -1,0 +1,6136 @@
+[
+  {
+    "anchor": "receita-abyssal-sacrifice",
+    "name": "abyssal_sacrifice",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/abyssal_sacrifice.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:nautilus_shell"
+        },
+        {
+          "item": "cataclysm:athame"
+        },
+        {
+          "item": "cataclysm:crystallized_coral"
+        },
+        {
+          "item": "minecraft:diamond_block"
+        },
+        {
+          "item": "minecraft:heart_of_the_sea"
+        },
+        {
+          "item": "minecraft:emerald_block"
+        },
+        {
+          "item": "minecraft:iron_block"
+        },
+        {
+          "item": "minecraft:amethyst_block"
+        },
+        {
+          "item": "minecraft:gold_block"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:abyssal_sacrifice",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyssal-sacrifice2",
+    "name": "abyssal_sacrifice2",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/abyssal_sacrifice2.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:nautilus_shell"
+        },
+        {
+          "item": "cataclysm:athame"
+        },
+        {
+          "item": "cataclysm:coral_chunk"
+        },
+        {
+          "item": "minecraft:diamond_block"
+        },
+        {
+          "item": "minecraft:heart_of_the_sea"
+        },
+        {
+          "item": "minecraft:emerald_block"
+        },
+        {
+          "item": "minecraft:iron_block"
+        },
+        {
+          "item": "minecraft:amethyst_block"
+        },
+        {
+          "item": "minecraft:gold_block"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:abyssal_sacrifice",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-abyss-eye",
+    "name": "abyss_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/abyss_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#O#",
+        "OEO",
+        "#O#"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:crying_obsidian"
+        },
+        "O": {
+          "item": "minecraft:obsidian"
+        },
+        "E": {
+          "item": "minecraft:ender_eye"
+        }
+      },
+      "result": {
+        "id": "cataclysm:abyss_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-blessed-amethyst-crab-meat",
+    "name": "blessed_amethyst_crab_meat",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/amethyst_bless/blessed_amethyst_crab_meat.json",
+    "recipe": {
+      "type": "cataclysm:amethyst_bless",
+      "ingredient": {
+        "item": "cataclysm:amethyst_crab_meat"
+      },
+      "result": {
+        "id": "cataclysm:blessed_amethyst_crab_meat"
+      },
+      "time": 120
+    }
+  },
+  {
+    "anchor": "receita-ancient-metal-block",
+    "name": "ancient_metal_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ancient_metal_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:ancient_metal_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:ancient_metal_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-ancient-metal-ingot",
+    "name": "ancient_metal_ingot",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ancient_metal_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "cataclysm:ancient_metal_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "cataclysm:ancient_metal_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ancient-metal-ingot-from-nuggets",
+    "name": "ancient_metal_ingot_from_nuggets",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ancient_metal_ingot_from_nuggets.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "cataclysm:ancient_metal_nugget"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "cataclysm:ancient_metal_ingot"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-ancient-metal-nugget",
+    "name": "ancient_metal_nugget",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ancient_metal_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "cataclysm:ancient_metal_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "cataclysm:ancient_metal_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ancient-metal-nugget-from-smelting",
+    "name": "ancient_metal_nugget_from_smelting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ancient_metal_nugget_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "ingredient": [
+        {
+          "item": "cataclysm:khopesh"
+        },
+        {
+          "item": "cataclysm:ancient_spear"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:ancient_metal_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ancient-spear",
+    "name": "ancient_spear",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ancient_spear.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "R": {
+          "item": "cataclysm:ancient_metal_ingot"
+        }
+      },
+      "pattern": [
+        " R ",
+        " RR",
+        "R  "
+      ],
+      "result": {
+        "id": "cataclysm:ancient_spear"
+      }
+    }
+  },
+  {
+    "anchor": "receita-astrape",
+    "name": "astrape",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/astrape.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "cataclysm:lacrima"
+        },
+        "X": {
+          "item": "cataclysm:essence_of_the_storm"
+        }
+      },
+      "pattern": [
+        " X#",
+        " #X",
+        "#  "
+      ],
+      "result": {
+        "id": "cataclysm:astrape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone",
+    "name": "azure_seastone",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "E": {
+          "item": "cataclysm:lacrima"
+        }
+      },
+      "pattern": [
+        "###",
+        "#E#",
+        "###"
+      ],
+      "result": {
+        "count": 8,
+        "id": "cataclysm:azure_seastone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-bricks",
+    "name": "azure_seastone_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_bricks",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-brick-slab",
+    "name": "azure_seastone_brick_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_brick_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_brick_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-brick-stairs",
+    "name": "azure_seastone_brick_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_brick_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_brick_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-brick-wall",
+    "name": "azure_seastone_brick_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_brick_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_brick_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-mural-empty",
+    "name": "azure_seastone_mural_empty",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_mural_empty.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone"
+        }
+      },
+      "pattern": [
+        " # ",
+        " # ",
+        " # "
+      ],
+      "result": {
+        "count": 6,
+        "id": "cataclysm:azure_seastone_mural_empty"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-pillar",
+    "name": "azure_seastone_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone"
+        }
+      },
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:azure_seastone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-pillar-wall",
+    "name": "azure_seastone_pillar_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_pillar_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone_pillar"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_pillar_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-slab",
+    "name": "azure_seastone_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-stairs",
+    "name": "azure_seastone_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-tiles",
+    "name": "azure_seastone_tiles",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_tiles.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_tiles",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-wall",
+    "name": "azure_seastone_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_seastone_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:azure_seastone_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-sea-shield",
+    "name": "azure_sea_shield",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/azure_sea_shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_nugget"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        },
+        "Z": {
+          "item": "cataclysm:lacrima"
+        }
+      },
+      "pattern": [
+        "#Z#",
+        "ZXZ",
+        "#Z#"
+      ],
+      "result": {
+        "id": "cataclysm:azure_sea_shield"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-belt-of-beginner",
+    "name": "belt_of_beginner",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/belt_of_beginner.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "R": {
+          "item": "minecraft:leather"
+        },
+        "n": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "   ",
+        "RnR",
+        "   "
+      ],
+      "result": {
+        "id": "cataclysm:belt_of_beginner"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-pillar",
+    "name": "blackstone_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/blackstone_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "minecraft:polished_blackstone"
+        }
+      },
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:blackstone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-axe",
+    "name": "black_steel_axe",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "cataclysm:black_steel_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        "X#",
+        " #"
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-block",
+    "name": "black_steel_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:black_steel_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-fence",
+    "name": "black_steel_fence",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_fence.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "group": "wooden_fence",
+      "pattern": [
+        "W#W",
+        "W#W"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_ingot"
+        },
+        "W": {
+          "item": "cataclysm:black_steel_block"
+        }
+      },
+      "result": {
+        "id": "cataclysm:black_steel_fence",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-hoe",
+    "name": "black_steel_hoe",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "cataclysm:black_steel_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        " #",
+        " #"
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-ingot-from-block",
+    "name": "black_steel_ingot_from_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_ingot_from_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "cataclysm:black_steel_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "cataclysm:black_steel_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-ingot-from-nuggets",
+    "name": "black_steel_ingot_from_nuggets",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_ingot_from_nuggets.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_nugget"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_ingot"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-steel-nugget",
+    "name": "black_steel_nugget",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "cataclysm:black_steel_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "cataclysm:black_steel_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-nugget-from-smelting",
+    "name": "black_steel_nugget_from_smelting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_nugget_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "ingredient": [
+        {
+          "item": "cataclysm:black_steel_axe"
+        },
+        {
+          "item": "cataclysm:black_steel_sword"
+        },
+        {
+          "item": "cataclysm:black_steel_shovel"
+        },
+        {
+          "item": "cataclysm:black_steel_hoe"
+        },
+        {
+          "item": "cataclysm:black_steel_pickaxe"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-pickaxe",
+    "name": "black_steel_pickaxe",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "cataclysm:black_steel_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        " # ",
+        " # "
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-shovel",
+    "name": "black_steel_shovel",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "cataclysm:black_steel_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "#",
+        "#"
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-sword",
+    "name": "black_steel_sword",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "cataclysm:black_steel_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "X",
+        "#"
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-targe",
+    "name": "black_steel_targe",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_targe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_nugget"
+        },
+        "X": {
+          "item": "cataclysm:black_steel_ingot"
+        },
+        "Z": {
+          "tag": "minecraft:planks"
+        }
+      },
+      "pattern": [
+        "#Z#",
+        "ZXZ",
+        "#Z#"
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_targe"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-black-steel-wall",
+    "name": "black_steel_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/black_steel_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "   ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_block"
+        }
+      },
+      "result": {
+        "id": "cataclysm:black_steel_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-ancient-metal-nugget-from-blasting",
+    "name": "ancient_metal_nugget_from_blasting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/blasting/ancient_metal_nugget_from_blasting.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.1,
+      "ingredient": [
+        {
+          "item": "cataclysm:khopesh"
+        },
+        {
+          "item": "cataclysm:ancient_spear"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:ancient_metal_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-steel-nugget-from-blasting",
+    "name": "black_steel_nugget_from_blasting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/blasting/black_steel_nugget_from_blasting.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.1,
+      "ingredient": [
+        {
+          "item": "cataclysm:black_steel_axe"
+        },
+        {
+          "item": "cataclysm:black_steel_sword"
+        },
+        {
+          "item": "cataclysm:black_steel_shovel"
+        },
+        {
+          "item": "cataclysm:black_steel_hoe"
+        },
+        {
+          "item": "cataclysm:black_steel_pickaxe"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:black_steel_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blazing-grips",
+    "name": "blazing_grips",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/blazing_grips.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#E#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:nether_brick"
+        },
+        "E": {
+          "item": "cataclysm:ignitium_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:blazing_grips",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-bloom-stone-pauldrons",
+    "name": "bloom_stone_pauldrons",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/bloom_stone_pauldrons.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "cataclysm:amethyst_crab_shell"
+        }
+      },
+      "pattern": [
+        "X X",
+        "XXX",
+        "XXX"
+      ],
+      "result": {
+        "id": "cataclysm:bloom_stone_pauldrons"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-meal",
+    "name": "bone_meal",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/bone_meal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "bonemeal",
+      "ingredients": [
+        {
+          "item": "cataclysm:koboleton_bone"
+        }
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:bone_meal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-reptile-chestplate",
+    "name": "bone_reptile_chestplate",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/bone_reptile_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "R": {
+          "item": "cataclysm:ancient_metal_ingot"
+        },
+        "n": {
+          "item": "cataclysm:koboleton_bone"
+        }
+      },
+      "pattern": [
+        "R R",
+        "nnn",
+        "RnR"
+      ],
+      "result": {
+        "id": "cataclysm:bone_reptile_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-reptile-helmet",
+    "name": "bone_reptile_helmet",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/bone_reptile_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "i": {
+          "item": "cataclysm:kobolediator_skull"
+        },
+        "R": {
+          "item": "cataclysm:ancient_metal_ingot"
+        },
+        "n": {
+          "item": "cataclysm:koboleton_bone"
+        }
+      },
+      "pattern": [
+        "R R",
+        "nin",
+        "   "
+      ],
+      "result": {
+        "id": "cataclysm:bone_reptile_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bulwark-of-the-flame",
+    "name": "bulwark_of_the_flame",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/bulwark_of_the_flame.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#Q#",
+        "/S/",
+        "#Q#"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:nether_brick"
+        },
+        "Q": {
+          "item": "cataclysm:ignitium_ingot"
+        },
+        "/": {
+          "item": "minecraft:blaze_rod"
+        },
+        "S": {
+          "item": "minecraft:shield"
+        }
+      },
+      "result": {
+        "id": "cataclysm:bulwark_of_the_flame",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-burning-ashes",
+    "name": "burning_ashes",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/burning_ashes.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:dying_ember"
+        }
+      },
+      "result": {
+        "id": "cataclysm:burning_ashes",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-ceraunus",
+    "name": "ceraunus",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ceraunus.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "cataclysm:lacrima"
+        },
+        "X": {
+          "item": "cataclysm:essence_of_the_storm"
+        }
+      },
+      "pattern": [
+        "X#X",
+        " # ",
+        " # "
+      ],
+      "result": {
+        "id": "cataclysm:ceraunus"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-azure-seastone-pillar",
+    "name": "chiseled_azure_seastone_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chiseled_azure_seastone_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone_bricks"
+        }
+      },
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:chiseled_azure_seastone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-azure-seastone-pillar-wall",
+    "name": "chiseled_azure_seastone_pillar_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chiseled_azure_seastone_pillar_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:chiseled_azure_seastone_pillar"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chiseled_azure_seastone_pillar_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-end-stone-bricks",
+    "name": "chiseled_end_stone_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chiseled_end_stone_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:end_stone_brick_slab"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chiseled_end_stone_bricks",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-obsidian-bricks",
+    "name": "chiseled_obsidian_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chiseled_obsidian_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:obsidian_brick_slab"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chiseled_obsidian_bricks",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-purpur-block",
+    "name": "chiseled_purpur_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chiseled_purpur_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:purpur_tile_slab"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chiseled_purpur_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-seastone",
+    "name": "chiseled_seastone",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chiseled_seastone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone_slab"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chiseled_azure_seastone",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-stone-brick-pillar",
+    "name": "chiseled_stone_brick_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chiseled_stone_brick_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "minecraft:chiseled_stone_bricks"
+        }
+      },
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:chiseled_stone_brick_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chorus-fence",
+    "name": "chorus_fence",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chorus_fence.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "group": "wooden_fence",
+      "pattern": [
+        "W#W",
+        "W#W"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "W": {
+          "item": "cataclysm:chorus_planks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chorus_fence",
+        "count": 3
+      }
+    }
+  },
+  {
+    "anchor": "receita-chorus-planks",
+    "name": "chorus_planks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chorus_planks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "cataclysm:chorus_stem"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:chorus_planks",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-chorus-slab",
+    "name": "chorus_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chorus_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:chorus_planks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chorus_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-chorus-stairs",
+    "name": "chorus_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chorus_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:chorus_planks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chorus_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-chorus-stem",
+    "name": "chorus_stem",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chorus_stem.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:chorus_fruit"
+        }
+      },
+      "result": {
+        "id": "cataclysm:chorus_stem",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-chorus-trapdoor",
+    "name": "chorus_trapdoor",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/chorus_trapdoor.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "group": "wooden_trapdoor",
+      "key": {
+        "#": {
+          "item": "cataclysm:chorus_planks"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:chorus_trapdoor"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crystallized-coral",
+    "name": "crystallized_coral",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/crystallized_coral.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:crystallized_coral_fragments"
+        }
+      },
+      "result": {
+        "id": "cataclysm:crystallized_coral",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursed-bow",
+    "name": "cursed_bow",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/cursed_bow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_ingot"
+        },
+        "X": {
+          "item": "cataclysm:cursium_ingot"
+        },
+        "S": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        " XS",
+        "X S",
+        " #S"
+      ],
+      "result": {
+        "id": "cataclysm:cursed_bow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursed-eye",
+    "name": "cursed_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/cursed_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "gBg",
+        "PEP",
+        "gRg"
+      ],
+      "key": {
+        "g": {
+          "item": "minecraft:gold_ingot"
+        },
+        "B": {
+          "item": "minecraft:bone"
+        },
+        "P": {
+          "item": "minecraft:phantom_membrane"
+        },
+        "E": {
+          "item": "minecraft:ender_eye"
+        },
+        "R": {
+          "item": "minecraft:rotten_flesh"
+        }
+      },
+      "result": {
+        "id": "cataclysm:cursed_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursium-block",
+    "name": "cursium_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/cursium_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:cursium_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:cursium_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursium-ingot",
+    "name": "cursium_ingot",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/cursium_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "cataclysm:cursium_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "cataclysm:cursium_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursium-upgrade-smithing-template",
+    "name": "cursium_upgrade_smithing_template",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/cursium_upgrade_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "NON",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        },
+        "N": {
+          "item": "cataclysm:black_steel_ingot"
+        },
+        "O": {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      },
+      "result": {
+        "id": "cataclysm:cursium_upgrade_smithing_template",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-desert-eye",
+    "name": "desert_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/desert_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "gCE",
+        "DOG",
+        "RCB"
+      ],
+      "key": {
+        "g": {
+          "item": "minecraft:gold_ingot"
+        },
+        "C": {
+          "item": "minecraft:chiseled_sandstone"
+        },
+        "E": {
+          "item": "minecraft:emerald"
+        },
+        "D": {
+          "item": "minecraft:dead_bush"
+        },
+        "O": {
+          "item": "minecraft:ender_eye"
+        },
+        "G": {
+          "item": "minecraft:cactus"
+        },
+        "R": {
+          "item": "minecraft:rotten_flesh"
+        },
+        "B": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:desert_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-end-stone-pillar",
+    "name": "end_stone_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/end_stone_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:end_stone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:end_stone_pillar",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-end-stone-teleport-trap-bricks",
+    "name": "end_stone_teleport_trap_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/end_stone_teleport_trap_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#C#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:end_stone_bricks"
+        },
+        "C": {
+          "item": "cataclysm:void_stone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:end_stone_teleport_trap_bricks",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-flame-eye",
+    "name": "flame_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/flame_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "NEN",
+        "SSS"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:blaze_powder"
+        },
+        "N": {
+          "item": "minecraft:netherite_scrap"
+        },
+        "E": {
+          "item": "minecraft:ender_eye"
+        },
+        "S": {
+          "item": "minecraft:soul_sand"
+        }
+      },
+      "result": {
+        "id": "cataclysm:flame_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted-stone-bricks",
+    "name": "frosted_stone_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/frosted_stone_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "minecraft:stone_bricks"
+        },
+        "E": {
+          "item": "minecraft:snow_block"
+        }
+      },
+      "pattern": [
+        "###",
+        "#E#",
+        "###"
+      ],
+      "result": {
+        "count": 8,
+        "id": "cataclysm:frosted_stone_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted-stone-brick-slab",
+    "name": "frosted_stone_brick_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/frosted_stone_brick_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:frosted_stone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:frosted_stone_brick_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted-stone-brick-stairs",
+    "name": "frosted_stone_brick_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/frosted_stone_brick_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:frosted_stone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:frosted_stone_brick_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted-stone-brick-wall",
+    "name": "frosted_stone_brick_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/frosted_stone_brick_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:frosted_stone_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:frosted_stone_brick_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-block",
+    "name": "ignitium_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ignitium_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:ignitium_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:ignitium_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-ingot",
+    "name": "ignitium_ingot",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ignitium_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "cataclysm:ignitium_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "cataclysm:ignitium_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-upgrade-smithing-template",
+    "name": "ignitium_upgrade_smithing_template",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/ignitium_upgrade_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "N#N",
+        "#O#",
+        "N#N"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:blaze_powder"
+        },
+        "N": {
+          "item": "minecraft:nether_bricks"
+        },
+        "O": {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      },
+      "result": {
+        "id": "cataclysm:ignitium_upgrade_smithing_template",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-laser-gatling",
+    "name": "laser_gatling",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/laser_gatling.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#i ",
+        "iRn",
+        " ni"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:redstone"
+        },
+        "i": {
+          "item": "minecraft:iron_ingot"
+        },
+        "R": {
+          "item": "minecraft:redstone_block"
+        },
+        "n": {
+          "item": "cataclysm:witherite_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:laser_gatling",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-meat-shredder",
+    "name": "meat_shredder",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/meat_shredder.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " #I",
+        " n#",
+        "n  "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:redstone"
+        },
+        "I": {
+          "item": "minecraft:iron_block"
+        },
+        "n": {
+          "item": "cataclysm:witherite_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:meat_shredder",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-mechanical-fusion-anvil",
+    "name": "mechanical_fusion_anvil",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/mechanical_fusion_anvil.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "RAR",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:witherite_ingot"
+        },
+        "R": {
+          "item": "minecraft:redstone_block"
+        },
+        "A": {
+          "item": "minecraft:anvil"
+        }
+      },
+      "result": {
+        "id": "cataclysm:mechanical_fusion_anvil",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-mech-eye",
+    "name": "mech_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/mech_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#i#",
+        "iEi",
+        "#i#"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_block"
+        },
+        "i": {
+          "item": "minecraft:iron_ingot"
+        },
+        "E": {
+          "item": "minecraft:ender_eye"
+        }
+      },
+      "result": {
+        "id": "cataclysm:mech_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-monstrous-eye",
+    "name": "monstrous_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/monstrous_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#N#",
+        "GEG",
+        "#N#"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:lava_bucket"
+        },
+        "N": {
+          "item": "minecraft:netherite_scrap"
+        },
+        "G": {
+          "item": "minecraft:blackstone"
+        },
+        "E": {
+          "item": "minecraft:ender_eye"
+        }
+      },
+      "result": {
+        "id": "cataclysm:monstrous_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-effigy",
+    "name": "netherite_effigy",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/netherite_effigy.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "n#R",
+        "#c#",
+        "i#i"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:nether_brick"
+        },
+        "i": {
+          "item": "minecraft:gold_ingot"
+        },
+        "R": {
+          "item": "minecraft:redstone_block"
+        },
+        "n": {
+          "item": "minecraft:netherite_ingot"
+        },
+        "c": {
+          "item": "minecraft:totem_of_undying"
+        }
+      },
+      "result": {
+        "id": "cataclysm:netherite_effigy",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-bricks",
+    "name": "obsidian_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/obsidian_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:obsidian"
+        }
+      },
+      "result": {
+        "id": "cataclysm:obsidian_bricks",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-brick-slab",
+    "name": "obsidian_brick_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/obsidian_brick_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:obsidian_brick_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-brick-stairs",
+    "name": "obsidian_brick_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/obsidian_brick_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:obsidian_brick_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-brick-wall",
+    "name": "obsidian_brick_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/obsidian_brick_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:obsidian_brick_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-explosion-trap-bricks",
+    "name": "obsidian_explosion_trap_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/obsidian_explosion_trap_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#C#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:obsidian_bricks"
+        },
+        "C": {
+          "item": "cataclysm:void_stone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:obsidian_explosion_trap_bricks",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-pillar",
+    "name": "obsidian_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/obsidian_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:obsidian_pillar",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone",
+    "name": "polished_azure_seastone",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/polished_azure_seastone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:polished_azure_seastone",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone-slab",
+    "name": "polished_azure_seastone_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/polished_azure_seastone_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:polished_azure_seastone_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone-stairs",
+    "name": "polished_azure_seastone_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/polished_azure_seastone_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:polished_azure_seastone_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone-wall",
+    "name": "polished_azure_seastone_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/polished_azure_seastone_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:polished_azure_seastone_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-obsidian-slab",
+    "name": "polished_obsidian_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/polished_obsidian_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:polished_obsidian"
+        }
+      },
+      "result": {
+        "id": "cataclysm:polished_obsidian_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-obsidian-stairs",
+    "name": "polished_obsidian_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/polished_obsidian_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:polished_obsidian"
+        }
+      },
+      "result": {
+        "id": "cataclysm:polished_obsidian_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-obsidian-wall",
+    "name": "polished_obsidian_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/polished_obsidian_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:polished_obsidian"
+        }
+      },
+      "result": {
+        "id": "cataclysm:polished_obsidian_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-prismarine-brick-fence",
+    "name": "prismarine_brick_fence",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/prismarine_brick_fence.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:prismarine_shard"
+        },
+        "W": {
+          "item": "minecraft:prismarine_bricks"
+        }
+      },
+      "pattern": [
+        "W#W",
+        "W#W"
+      ],
+      "result": {
+        "count": 6,
+        "id": "cataclysm:prismarine_brick_fence"
+      }
+    }
+  },
+  {
+    "anchor": "receita-prismarine-brick-wall",
+    "name": "prismarine_brick_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/prismarine_brick_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "W": {
+          "item": "minecraft:prismarine_bricks"
+        }
+      },
+      "pattern": [
+        "WWW",
+        "WWW"
+      ],
+      "result": {
+        "count": 6,
+        "id": "cataclysm:prismarine_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-bricks",
+    "name": "purpur_bricks",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/purpur_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:purpur_block"
+        }
+      },
+      "result": {
+        "id": "cataclysm:purpur_tiles",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-pillar",
+    "name": "purpur_tile_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/purpur_tile_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:purpur_tiles"
+        }
+      },
+      "result": {
+        "id": "cataclysm:purpur_tile_pillar",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-slab",
+    "name": "purpur_tile_slab",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/purpur_tile_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:purpur_tiles"
+        }
+      },
+      "result": {
+        "id": "cataclysm:purpur_tile_slab",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-stairs",
+    "name": "purpur_tile_stairs",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/purpur_tile_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:purpur_tiles"
+        }
+      },
+      "result": {
+        "id": "cataclysm:purpur_tile_stairs",
+        "count": 4
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-wall",
+    "name": "purpur_tile_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/purpur_tile_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:purpur_tiles"
+        }
+      },
+      "result": {
+        "id": "cataclysm:purpur_tile_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-void-rune-trap-block",
+    "name": "purpur_void_rune_trap_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/purpur_void_rune_trap_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#C#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:purpur_block"
+        },
+        "C": {
+          "item": "cataclysm:void_stone"
+        }
+      },
+      "result": {
+        "id": "cataclysm:purpur_void_rune_trap_block",
+        "count": 8
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-wall",
+    "name": "purpur_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/purpur_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:purpur_block"
+        }
+      },
+      "result": {
+        "id": "cataclysm:purpur_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-quartz-brick-wall",
+    "name": "quartz_brick_wall",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/quartz_brick_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:quartz_bricks"
+        }
+      },
+      "result": {
+        "id": "cataclysm:quartz_brick_wall",
+        "count": 6
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursium-boots",
+    "name": "cursium_boots",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/cursium_boots.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:cursium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_boots"
+      },
+      "result": {
+        "id": "cataclysm:cursium_boots"
+      },
+      "template": {
+        "item": "cataclysm:cursium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursium-chestplate",
+    "name": "cursium_chestplate",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/cursium_chestplate.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:cursium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_chestplate"
+      },
+      "result": {
+        "id": "cataclysm:cursium_chestplate"
+      },
+      "template": {
+        "item": "cataclysm:cursium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursium-helmet",
+    "name": "cursium_helmet",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/cursium_helmet.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:cursium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_helmet"
+      },
+      "result": {
+        "id": "cataclysm:cursium_helmet"
+      },
+      "template": {
+        "item": "cataclysm:cursium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cursium-leggings",
+    "name": "cursium_leggings",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/cursium_leggings.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:cursium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_leggings"
+      },
+      "result": {
+        "id": "cataclysm:cursium_leggings"
+      },
+      "template": {
+        "item": "cataclysm:cursium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-boots",
+    "name": "ignitium_boots",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/ignitium_boots.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:ignitium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_boots"
+      },
+      "result": {
+        "id": "cataclysm:ignitium_boots"
+      },
+      "template": {
+        "item": "cataclysm:ignitium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-chestplate",
+    "name": "ignitium_chestplate",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/ignitium_chestplate.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:ignitium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_chestplate"
+      },
+      "result": {
+        "id": "cataclysm:ignitium_chestplate"
+      },
+      "template": {
+        "item": "cataclysm:ignitium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-helmet",
+    "name": "ignitium_helmet",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/ignitium_helmet.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:ignitium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_helmet"
+      },
+      "result": {
+        "id": "cataclysm:ignitium_helmet"
+      },
+      "template": {
+        "item": "cataclysm:ignitium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-leggings",
+    "name": "ignitium_leggings",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/ignitium_leggings.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:ignitium_ingot"
+      },
+      "base": {
+        "item": "minecraft:netherite_leggings"
+      },
+      "result": {
+        "id": "cataclysm:ignitium_leggings"
+      },
+      "template": {
+        "item": "cataclysm:ignitium_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-monstrous-helm",
+    "name": "monstrous_helm",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/smithing/monstrous_helm.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "cataclysm:monstrous_horn"
+      },
+      "base": {
+        "item": "minecraft:netherite_helmet"
+      },
+      "result": {
+        "id": "cataclysm:monstrous_helm"
+      },
+      "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-soul-render",
+    "name": "soul_render",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/soul_render.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_ingot"
+        },
+        "X": {
+          "item": "cataclysm:cursium_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        "X#",
+        " #"
+      ],
+      "result": {
+        "id": "cataclysm:soul_render"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sticky-gloves",
+    "name": "sticky_gloves",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/sticky_gloves.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "minecraft:string"
+        },
+        {
+          "item": "minecraft:leather"
+        },
+        {
+          "item": "minecraft:slime_ball"
+        },
+        {
+          "item": "minecraft:rabbit_hide"
+        }
+      ],
+      "result": {
+        "id": "cataclysm:sticky_gloves",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-bricks-from-stonecutting",
+    "name": "azure_seastone_bricks_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_bricks_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-brick-slab-from-stonecutting",
+    "name": "azure_seastone_brick_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_brick_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone_bricks"
+        },
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:azure_seastone_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-brick-stairs-from-stonecutting",
+    "name": "azure_seastone_brick_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_brick_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone_bricks"
+        },
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-brick-wall-from-stonecutting",
+    "name": "azure_seastone_brick_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_brick_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone_bricks"
+        },
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-fence-from-stonecutting",
+    "name": "azure_seastone_fence_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_fence_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_fence"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-pillar-from-stonecutting",
+    "name": "azure_seastone_pillar_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_pillar_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-pillar-wall-from-stonecutting",
+    "name": "azure_seastone_pillar_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_pillar_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:azure_seastone_pillar"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_pillar_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-slab-from-stonecutting",
+    "name": "azure_seastone_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:azure_seastone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-stairs-from-stonecutting",
+    "name": "azure_seastone_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-tiles-from-stonecutting",
+    "name": "azure_seastone_tiles_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_tiles_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:azure_seastone_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-azure-seastone-wall-from-stonecutting",
+    "name": "azure_seastone_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/azure_seastone_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:azure_seastone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-pillar-from-stonecutting",
+    "name": "blackstone_pillar_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/blackstone_pillar_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "minecraft:polished_blackstone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:blackstone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-azure-seastone-from-stonecutting",
+    "name": "chiseled_azure_seastone_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/chiseled_azure_seastone_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:chiseled_azure_seastone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-azure-seastone-pillar-from-stonecutting",
+    "name": "chiseled_azure_seastone_pillar_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/chiseled_azure_seastone_pillar_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:azure_seastone_bricks"
+        },
+        {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:chiseled_azure_seastone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-azure-seastone-pillar-wall-from-stonecutting",
+    "name": "chiseled_azure_seastone_pillar_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/chiseled_azure_seastone_pillar_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:azure_seastone_bricks"
+        },
+        {
+          "item": "cataclysm:polished_azure_seastone"
+        },
+        {
+          "item": "cataclysm:chiseled_azure_seastone_pillar"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:chiseled_azure_seastone_pillar_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-end-stone-bricks-from-stonecutting",
+    "name": "chiseled_end_stone_bricks_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/chiseled_end_stone_bricks_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:end_stone"
+        },
+        {
+          "item": "minecraft:end_stone_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:chiseled_end_stone_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-obsidian-bricks-from-stonecutting",
+    "name": "chiseled_obsidian_bricks_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/chiseled_obsidian_bricks_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        },
+        {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:chiseled_obsidian_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-purpur-block-from-stonecutting",
+    "name": "chiseled_purpur_block_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/chiseled_purpur_block_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:purpur_block"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:chiseled_purpur_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-stone-brick-pillar-from-stonecutting",
+    "name": "chiseled_stone_brick_pillar_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/chiseled_stone_brick_pillar_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "minecraft:stone_bricks"
+        },
+        {
+          "item": "minecraft:stone"
+        },
+        {
+          "item": "minecraft:chiseled_stone_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:chiseled_stone_brick_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-cindaria-1",
+    "name": "curved_azure_seastone_cindaria_1",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_cindaria_1.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_cindaria_1"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-cindaria-2",
+    "name": "curved_azure_seastone_cindaria_2",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_cindaria_2.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_cindaria_2"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-cindaria-3",
+    "name": "curved_azure_seastone_cindaria_3",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_cindaria_3.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_cindaria_3"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-cindaria-4",
+    "name": "curved_azure_seastone_cindaria_4",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_cindaria_4.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_cindaria_4"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-clawdian-1",
+    "name": "curved_azure_seastone_clawdian_1",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_clawdian_1.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_clawdian_1"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-clawdian-2",
+    "name": "curved_azure_seastone_clawdian_2",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_clawdian_2.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_clawdian_2"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-clawdian-3",
+    "name": "curved_azure_seastone_clawdian_3",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_clawdian_3.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_clawdian_3"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-clawdian-4",
+    "name": "curved_azure_seastone_clawdian_4",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_clawdian_4.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_clawdian_4"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-hippocamtus-1",
+    "name": "curved_azure_seastone_hippocamtus_1",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_hippocamtus_1.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_hippocamtus_1"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-hippocamtus-2",
+    "name": "curved_azure_seastone_hippocamtus_2",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_hippocamtus_2.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_hippocamtus_2"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-hippocamtus-3",
+    "name": "curved_azure_seastone_hippocamtus_3",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_hippocamtus_3.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_hippocamtus_3"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-hippocamtus-4",
+    "name": "curved_azure_seastone_hippocamtus_4",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_hippocamtus_4.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_hippocamtus_4"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-1",
+    "name": "curved_azure_seastone_scylla_1",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_1.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_1"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-2",
+    "name": "curved_azure_seastone_scylla_2",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_2.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_2"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-3",
+    "name": "curved_azure_seastone_scylla_3",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_3.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_3"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-4",
+    "name": "curved_azure_seastone_scylla_4",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_4.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_4"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-5",
+    "name": "curved_azure_seastone_scylla_5",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_5.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_5"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-6",
+    "name": "curved_azure_seastone_scylla_6",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_6.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_6"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-7",
+    "name": "curved_azure_seastone_scylla_7",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_7.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_7"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-8",
+    "name": "curved_azure_seastone_scylla_8",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_8.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_8"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-scylla-9",
+    "name": "curved_azure_seastone_scylla_9",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_scylla_9.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_scylla_9"
+      }
+    }
+  },
+  {
+    "anchor": "receita-curved-azure-seastone-urchinkin",
+    "name": "curved_azure_seastone_urchinkin",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/curved_azure_seastone_urchinkin.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:curved_azure_seastone_urchinkin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-end-stone-pillar-from-stonecutting",
+    "name": "end_stone_pillar_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/end_stone_pillar_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:end_stone"
+        },
+        {
+          "item": "minecraft:end_stone_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:end_stone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted-stone-brick-slab-from-stonecutting",
+    "name": "frosted_stone_brick_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/frosted_stone_brick_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:frosted_stone_bricks"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:frosted_stone_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted-stone-brick-stairs-from-stonecutting",
+    "name": "frosted_stone_brick_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/frosted_stone_brick_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:frosted_stone_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:frosted_stone_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-frosted-stone-brick-wall-from-stonecutting",
+    "name": "frosted_stone_brick_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/frosted_stone_brick_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:frosted_stone_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:frosted_stone_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-bricks-from-stonecutting",
+    "name": "obsidian_bricks_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/obsidian_bricks_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:obsidian_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-brick-slab-from-stonecutting",
+    "name": "obsidian_brick_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/obsidian_brick_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        },
+        {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:obsidian_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-brick-stairs-from-stonecutting",
+    "name": "obsidian_brick_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/obsidian_brick_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        },
+        {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:obsidian_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-obsidian-brick-wall-from-stonecutting",
+    "name": "obsidian_brick_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/obsidian_brick_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        },
+        {
+          "item": "cataclysm:obsidian_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:obsidian_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone-from-stonecutting",
+    "name": "polished_azure_seastone_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_azure_seastone_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_azure_seastone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone-slab-from-stonecutting",
+    "name": "polished_azure_seastone_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_azure_seastone_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:polished_azure_seastone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone-stairs-from-stonecutting",
+    "name": "polished_azure_seastone_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_azure_seastone_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_azure_seastone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-azure-seastone-wall-from-stonecutting",
+    "name": "polished_azure_seastone_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_azure_seastone_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "cataclysm:azure_seastone"
+        },
+        {
+          "item": "cataclysm:polished_azure_seastone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_azure_seastone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-end-stone-from-stonecutting",
+    "name": "polished_end_stone_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_end_stone_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:end_stone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_end_stone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-end-stone-slab-from-stonecutting",
+    "name": "polished_end_stone_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_end_stone_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:end_stone"
+        },
+        {
+          "item": "cataclysm:polished_end_stone"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:polished_end_stone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-end-stone-stairs-from-stonecutting",
+    "name": "polished_end_stone_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_end_stone_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:end_stone"
+        },
+        {
+          "item": "cataclysm:polished_end_stone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_end_stone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-obsidian-from-stonecutting",
+    "name": "polished_obsidian_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_obsidian_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_obsidian"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-obsidian-slab-from-stonecutting",
+    "name": "polished_obsidian_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_obsidian_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        },
+        {
+          "item": "cataclysm:polished_obsidian"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:polished_obsidian_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-obsidian-stairs-from-stonecutting",
+    "name": "polished_obsidian_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_obsidian_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        },
+        {
+          "item": "cataclysm:polished_obsidian"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_obsidian_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-obsidian-wall-from-stonecutting",
+    "name": "polished_obsidian_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/polished_obsidian_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:obsidian"
+        },
+        {
+          "item": "cataclysm:polished_obsidian"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:polished_obsidian_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tiles-from-stonecutting",
+    "name": "purpur_tiles_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/purpur_tiles_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:purpur_block"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:purpur_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-pillar-from-stonecutting",
+    "name": "purpur_tile_pillar_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/purpur_tile_pillar_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:purpur_block"
+        },
+        {
+          "item": "cataclysm:purpur_tiles"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:purpur_tile_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-slab-from-stonecutting",
+    "name": "purpur_tile_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/purpur_tile_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:purpur_block"
+        },
+        {
+          "item": "cataclysm:purpur_tiles"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:purpur_tile_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-stairs-from-stonecutting",
+    "name": "purpur_tile_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/purpur_tile_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:purpur_block"
+        },
+        {
+          "item": "cataclysm:purpur_tiles"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:purpur_tile_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-tile-wall-from-stonecutting",
+    "name": "purpur_tile_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/purpur_tile_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:purpur_block"
+        },
+        {
+          "item": "cataclysm:purpur_tiles"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:purpur_tile_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purpur-wall-from-stonecutting",
+    "name": "purpur_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/purpur_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:purpur_block"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:purpur_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-quartz-brick-wall-from-stonecutting",
+    "name": "quartz_brick_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/quartz_brick_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:quartz_bricks"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:quartz_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-pillar-from-stonecutting",
+    "name": "stone_pillar_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/stone_pillar_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "minecraft:stone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:stone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-tiles-from-stonecutting",
+    "name": "stone_tiles_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/stone_tiles_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "count": 1,
+      "ingredient": [
+        {
+          "item": "minecraft:stone_bricks"
+        },
+        {
+          "item": "minecraft:stone"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:stone_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-tile-slab-from-stonecutting",
+    "name": "stone_tile_slab_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/stone_tile_slab_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:stone"
+        },
+        {
+          "item": "cataclysm:stone_tiles"
+        }
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:stone_tile_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-tile-stairs-from-stonecutting",
+    "name": "stone_tile_stairs_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/stone_tile_stairs_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:stone"
+        },
+        {
+          "item": "cataclysm:stone_tiles"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:stone_tile_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-tile-wall-from-stonecutting",
+    "name": "stone_tile_wall_from_stonecutting",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stonecutting/stone_tile_wall_from_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": [
+        {
+          "item": "minecraft:stone"
+        },
+        {
+          "item": "cataclysm:stone_tiles"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "cataclysm:stone_tile_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-pillar",
+    "name": "stone_pillar",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stone_pillar.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        }
+      },
+      "pattern": [
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "cataclysm:stone_pillar"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-tiles",
+    "name": "stone_tiles",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/stone_tiles.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "S": {
+          "item": "minecraft:stone_bricks"
+        }
+      },
+      "pattern": [
+        "SS",
+        "SS"
+      ],
+      "result": {
+        "count": 4,
+        "id": "cataclysm:stone_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-storm-eye",
+    "name": "storm_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/storm_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#L#",
+        "EVE",
+        "CWC"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:prismarine_shard"
+        },
+        "W": {
+          "item": "minecraft:water_bucket"
+        },
+        "E": {
+          "item": "minecraft:diamond"
+        },
+        "V": {
+          "item": "minecraft:ender_eye"
+        },
+        "C": {
+          "item": "minecraft:prismarine_crystals"
+        },
+        "L": {
+          "item": "minecraft:lightning_rod"
+        }
+      },
+      "result": {
+        "id": "cataclysm:storm_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-the-annihilator",
+    "name": "the_annihilator",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/the_annihilator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "cataclysm:black_steel_ingot"
+        },
+        "X": {
+          "item": "cataclysm:cursium_ingot"
+        }
+      },
+      "pattern": [
+        " X",
+        " X",
+        " #"
+      ],
+      "result": {
+        "id": "cataclysm:the_annihilator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-the-incinerator",
+    "name": "the_incinerator",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/the_incinerator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " /#",
+        "/#/",
+        "N/ "
+      ],
+      "key": {
+        "/": {
+          "item": "minecraft:blaze_rod"
+        },
+        "#": {
+          "item": "cataclysm:ignitium_ingot"
+        },
+        "N": {
+          "item": "minecraft:netherite_sword"
+        }
+      },
+      "result": {
+        "id": "cataclysm:the_incinerator",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-void-eye",
+    "name": "void_eye",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/void_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#S#",
+        "EVE",
+        "PSP"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:purpur_pillar"
+        },
+        "S": {
+          "item": "minecraft:shulker_shell"
+        },
+        "E": {
+          "item": "minecraft:end_stone_bricks"
+        },
+        "V": {
+          "item": "minecraft:ender_eye"
+        },
+        "P": {
+          "item": "minecraft:purpur_block"
+        }
+      },
+      "result": {
+        "id": "cataclysm:void_eye",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-void-purpur-tiles",
+    "name": "void_purpur_tiles",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/void_purpur_tiles.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "key": {
+        "#": {
+          "item": "cataclysm:purpur_tiles"
+        },
+        "E": {
+          "item": "cataclysm:void_stone"
+        }
+      },
+      "pattern": [
+        "###",
+        "#E#",
+        "###"
+      ],
+      "result": {
+        "count": 8,
+        "id": "cataclysm:void_purpur_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-void-scatter-arrow",
+    "name": "void_scatter_arrow",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/void_scatter_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "S"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:void_jaw"
+        },
+        "S": {
+          "item": "minecraft:spectral_arrow"
+        }
+      },
+      "result": {
+        "id": "cataclysm:void_scatter_arrow",
+        "count": 2
+      }
+    }
+  },
+  {
+    "anchor": "receita-brontes",
+    "name": "brontes",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/brontes.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:infernal_forge"
+      },
+      "addition": {
+        "item": "cataclysm:astrape"
+      },
+      "result": {
+        "id": "cataclysm:brontes"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gauntlet-of-bulwark",
+    "name": "gauntlet_of_bulwark",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/gauntlet_of_bulwark.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:gauntlet_of_guard"
+      },
+      "addition": {
+        "item": "cataclysm:bulwark_of_the_flame"
+      },
+      "result": {
+        "id": "cataclysm:gauntlet_of_bulwark"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gauntlet-of-maelstrom",
+    "name": "gauntlet_of_maelstrom",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/gauntlet_of_maelstrom.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:gauntlet_of_guard"
+      },
+      "addition": {
+        "item": "cataclysm:sandstorm_in_a_bottle"
+      },
+      "result": {
+        "id": "cataclysm:gauntlet_of_maelstrom"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ignitium-elytra-chestplate",
+    "name": "ignitium_elytra_chestplate",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/ignitium_elytra_chestplate.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:ignitium_chestplate"
+      },
+      "addition": {
+        "item": "minecraft:elytra"
+      },
+      "result": {
+        "id": "cataclysm:ignitium_elytra_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-the-immolator",
+    "name": "the_immolator",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/the_immolator.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:the_annihilator"
+      },
+      "addition": {
+        "item": "cataclysm:ignitium_ingot"
+      },
+      "result": {
+        "id": "cataclysm:the_immolator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-void-assault-shoulder-weapon",
+    "name": "void_assault_shoulder_weapon",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/void_assault_shoulder_weapon.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:wither_assault_shoulder_weapon"
+      },
+      "addition": {
+        "item": "cataclysm:void_core"
+      },
+      "result": {
+        "id": "cataclysm:void_assault_shoulder_weapon"
+      }
+    }
+  },
+  {
+    "anchor": "receita-void-forge",
+    "name": "void_forge",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/void_forge.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:infernal_forge"
+      },
+      "addition": {
+        "item": "cataclysm:void_core"
+      },
+      "result": {
+        "id": "cataclysm:void_forge"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wrath-of-the-desert",
+    "name": "wrath_of_the_desert",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/weapon_infusion/wrath_of_the_desert.json",
+    "recipe": {
+      "type": "cataclysm:weapon_fusion",
+      "base": {
+        "item": "cataclysm:cursed_bow"
+      },
+      "addition": {
+        "item": "cataclysm:sandstorm_in_a_bottle"
+      },
+      "result": {
+        "id": "cataclysm:wrath_of_the_desert"
+      }
+    }
+  },
+  {
+    "anchor": "receita-witherite-block",
+    "name": "witherite_block",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/witherite_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "cataclysm:witherite_ingot"
+        }
+      },
+      "result": {
+        "id": "cataclysm:witherite_block",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-witherite-ingot",
+    "name": "witherite_ingot",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/witherite_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "cataclysm:witherite_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "cataclysm:witherite_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wither-assault-shoulder-weapon",
+    "name": "wither_assault_shoulder_weapon",
+    "source": "evidence-cat/L_Ender's Cataclysm 1.21.1-3.33.jar::data/cataclysm/recipe/wither_assault_shoulder_weapon.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "nG ",
+        "GRG",
+        " Gn"
+      ],
+      "key": {
+        "n": {
+          "item": "cataclysm:witherite_ingot"
+        },
+        "G": {
+          "item": "minecraft:gunpowder"
+        },
+        "R": {
+          "item": "minecraft:redstone_block"
+        }
+      },
+      "result": {
+        "id": "cataclysm:wither_assault_shoulder_weapon",
+        "count": 1
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-meal",
+    "name": "bone_meal",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/bone_meal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "bonemeal",
+      "ingredients": [
+        {
+          "item": "minecraft:bone"
+        }
+      ],
+      "result": {
+        "count": 3,
+        "id": "minecraft:bone_meal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-conduit",
+    "name": "conduit",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/conduit.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:nautilus_shell"
+        },
+        "X": {
+          "item": "minecraft:heart_of_the_sea"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:conduit"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-block",
+    "name": "bone_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/bone_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:bone_meal"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:bone_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-white-dye",
+    "name": "white_dye",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/white_dye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "white_dye",
+      "ingredients": [
+        {
+          "item": "minecraft:bone_meal"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:white_dye"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-dye",
+    "name": "black_dye",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/black_dye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "black_dye",
+      "ingredients": [
+        {
+          "item": "minecraft:ink_sac"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:black_dye"
+      }
+    }
+  },
+  {
+    "anchor": "receita-writable-book",
+    "name": "writable_book",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/writable_book.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:ink_sac"
+        },
+        {
+          "item": "minecraft:feather"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:writable_book"
+      }
+    }
+  },
+  {
+    "anchor": "receita-clock",
+    "name": "clock",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/clock.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " # ",
+        "#X#",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:clock"
+      }
+    }
+  },
+  {
+    "anchor": "receita-compass",
+    "name": "compass",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/compass.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " # ",
+        "#X#",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:compass"
+      }
+    }
+  },
+  {
+    "anchor": "receita-copper-bulb",
+    "name": "copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:copper_block"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crafter",
+    "name": "crafter",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/crafter.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:crafting_table"
+        },
+        "D": {
+          "item": "minecraft:dropper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "#C#",
+        "RDR"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:crafter"
+      }
+    }
+  },
+  {
+    "anchor": "receita-detector-rail",
+    "name": "detector_rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/detector_rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stone_pressure_plate"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X#X",
+        "XRX"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:detector_rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dispenser",
+    "name": "dispenser",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/dispenser.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "X": {
+          "item": "minecraft:bow"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "#R#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:dispenser"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dropper",
+    "name": "dropper",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/dropper.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "#R#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:dropper"
+      }
+    }
+  },
+  {
+    "anchor": "receita-exposed-copper-bulb",
+    "name": "exposed_copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/exposed_copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:exposed_copper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:exposed_copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-note-block",
+    "name": "note_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/note_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "tag": "minecraft:planks"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:note_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-observer",
+    "name": "observer",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/observer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "Q": {
+          "item": "minecraft:quartz"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "RRQ",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:observer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-oxidized-copper-bulb",
+    "name": "oxidized_copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/oxidized_copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:oxidized_copper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:oxidized_copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-piston",
+    "name": "piston",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/piston.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "T": {
+          "tag": "minecraft:planks"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "TTT",
+        "#X#",
+        "#R#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-powered-rail",
+    "name": "powered_rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/powered_rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X#X",
+        "XRX"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:powered_rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-redstone-block",
+    "name": "redstone_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/redstone_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:redstone_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-redstone-lamp",
+    "name": "redstone_lamp",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/redstone_lamp.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "G": {
+          "item": "minecraft:glowstone"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " R ",
+        "RGR",
+        " R "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:redstone_lamp"
+      }
+    }
+  },
+  {
+    "anchor": "receita-redstone-torch",
+    "name": "redstone_torch",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/redstone_torch.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "X",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:redstone_torch"
+      }
+    }
+  },
+  {
+    "anchor": "receita-repeater",
+    "name": "repeater",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/repeater.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_torch"
+        },
+        "I": {
+          "item": "minecraft:stone"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "#X#",
+        "III"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:repeater"
+      }
+    }
+  },
+  {
+    "anchor": "receita-target",
+    "name": "target",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/target.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "H": {
+          "item": "minecraft:hay_block"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " R ",
+        "RHR",
+        " R "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:target"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-copper-bulb",
+    "name": "waxed_copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/waxed_copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:waxed_copper_block"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:waxed_copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-exposed-copper-bulb",
+    "name": "waxed_exposed_copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/waxed_exposed_copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:waxed_exposed_copper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:waxed_exposed_copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-oxidized-copper-bulb",
+    "name": "waxed_oxidized_copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/waxed_oxidized_copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:waxed_oxidized_copper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:waxed_oxidized_copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-weathered-copper-bulb",
+    "name": "waxed_weathered_copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/waxed_weathered_copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:waxed_weathered_copper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:waxed_weathered_copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-weathered-copper-bulb",
+    "name": "weathered_copper_bulb",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/weathered_copper_bulb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "minecraft:blaze_rod"
+        },
+        "C": {
+          "item": "minecraft:weathered_copper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " C ",
+        "CBC",
+        " R "
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:weathered_copper_bulb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-activator-rail",
+    "name": "activator_rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/activator_rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_torch"
+        },
+        "S": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XSX",
+        "X#X",
+        "XSX"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:activator_rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-anvil",
+    "name": "anvil",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/anvil.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "I": {
+          "item": "minecraft:iron_block"
+        },
+        "i": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "III",
+        " i ",
+        "iii"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:anvil"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blast-furnace",
+    "name": "blast_furnace",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blast_furnace.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:smooth_stone"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "X": {
+          "item": "minecraft:furnace"
+        }
+      },
+      "pattern": [
+        "III",
+        "IXI",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:blast_furnace"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bucket",
+    "name": "bucket",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/bucket.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "# #",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:bucket"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cauldron",
+    "name": "cauldron",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/cauldron.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:cauldron"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chain",
+    "name": "chain",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/chain.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "N": {
+          "item": "minecraft:iron_nugget"
+        }
+      },
+      "pattern": [
+        "N",
+        "I",
+        "N"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:chain"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crossbow",
+    "name": "crossbow",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/crossbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "$": {
+          "item": "minecraft:tripwire_hook"
+        },
+        "&": {
+          "item": "minecraft:iron_ingot"
+        },
+        "~": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "#&#",
+        "~$~",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:crossbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-flint-and-steel",
+    "name": "flint_and_steel",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/flint_and_steel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_ingot"
+        },
+        {
+          "item": "minecraft:flint"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:flint_and_steel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-heavy-weighted-pressure-plate",
+    "name": "heavy_weighted_pressure_plate",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/heavy_weighted_pressure_plate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:heavy_weighted_pressure_plate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-hopper",
+    "name": "hopper",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/hopper.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "C": {
+          "item": "minecraft:chest"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "I I",
+        "ICI",
+        " I "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:hopper"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-axe",
+    "name": "iron_axe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        "X#",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-bars",
+    "name": "iron_bars",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_bars.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:iron_bars"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-block",
+    "name": "iron_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-boots",
+    "name": "iron_boots",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-chestplate",
+    "name": "iron_chestplate",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "XXX",
+        "XXX"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-door",
+    "name": "iron_door",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_door.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 3,
+        "id": "minecraft:iron_door"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-helmet",
+    "name": "iron_helmet",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-hoe",
+    "name": "iron_hoe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        " #",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-leggings",
+    "name": "iron_leggings",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-nugget",
+    "name": "iron_nugget",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "minecraft:iron_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-pickaxe",
+    "name": "iron_pickaxe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        " # ",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-shovel",
+    "name": "iron_shovel",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-sword",
+    "name": "iron_sword",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "X",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-trapdoor",
+    "name": "iron_trapdoor",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_trapdoor.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_trapdoor"
+      }
+    }
+  },
+  {
+    "anchor": "receita-minecart",
+    "name": "minecart",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/minecart.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:minecart"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rail",
+    "name": "rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X#X",
+        "X X"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shears",
+    "name": "shears",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/shears.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        " #",
+        "# "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shears"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shield",
+    "name": "shield",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "W": {
+          "tag": "minecraft:planks"
+        },
+        "o": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "WoW",
+        "WWW",
+        " W "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smithing-table",
+    "name": "smithing_table",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/smithing_table.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "minecraft:planks"
+        },
+        "@": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "@@",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:smithing_table"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stonecutter",
+    "name": "stonecutter",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/stonecutter.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        " I ",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:stonecutter"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tripwire-hook",
+    "name": "tripwire_hook",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/tripwire_hook.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "tag": "minecraft:planks"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "S": {
+          "item": "minecraft:stick"
+        }
+      },
+      "pattern": [
+        "I",
+        "S",
+        "#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:tripwire_hook"
+      }
+    }
+  },
+  {
+    "anchor": "receita-carrot-on-a-stick",
+    "name": "carrot_on_a_stick",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/carrot_on_a_stick.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:fishing_rod"
+        },
+        "X": {
+          "item": "minecraft:carrot"
+        }
+      },
+      "pattern": [
+        "# ",
+        " X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:carrot_on_a_stick"
+      }
+    }
+  },
+  {
+    "anchor": "receita-warped-fungus-on-a-stick",
+    "name": "warped_fungus_on_a_stick",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/warped_fungus_on_a_stick.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:fishing_rod"
+        },
+        "X": {
+          "item": "minecraft:warped_fungus"
+        }
+      },
+      "pattern": [
+        "# ",
+        " X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:warped_fungus_on_a_stick"
+      }
+    }
+  }
+]

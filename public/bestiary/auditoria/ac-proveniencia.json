@@ -1,0 +1,1874 @@
+{
+  "project": "Mundinho pra sempre",
+  "mod": "Alex’s Caves port 2.0.10",
+  "repository": "https://github.com/Raguto/AlexsCaves-1.21.1",
+  "commit": "d2a7b05998d85e602d86c4999e53340fb1ee9b06",
+  "method": "Renderizações técnicas das geometrias dos construtores e texturas originais. Não são capturas do jogo. Rasterização ortográfica; escala de enquadramento normalizada por mob.",
+  "limitations": [
+    "setupAnim e animações de combate não executados; poses e estados selecionados descritos individualmente.",
+    "Pós-processamento ghostly não reproduzido integralmente.",
+    "Raycat: camada NO_DEPTH_TEST não reproduz ossos ocultos por outras faces.",
+    "Deep One Knight: equipamento de spawn não representado.",
+    "Variantes não listadas não fazem parte deste lote."
+  ],
+  "minecraft_chain": {
+    "version": "1.21.1",
+    "asset": "assets/minecraft/textures/block/chain.png",
+    "client_jar_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+    "texture_sha256": "44c712141c2914ef9d49143d5236b9f138810f947ab9c9992618e3b11d902ef4"
+  },
+  "images": [
+    {
+      "mob": "Teletor",
+      "entity_id": "alexscaves:teletor",
+      "image": "teletor.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Pernas cruzadas; sem arma controlada. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/TeletorModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TeletorRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/teletor.png",
+        "src/main/resources/assets/alexscaves/textures/entity/teletor_glow.png"
+      ],
+      "sha256": "ee32dbcd2589ac2a1d4c461362488fdc336b78e65ca7b6b6f01aef9fdf0dd9ef"
+    },
+    {
+      "mob": "Magnetron",
+      "entity_id": "alexscaves:magnetron",
+      "image": "magnetron.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Estado não formado; partes de blocos não se aplicam. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/MagnetronModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/MagnetronRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/magnetron.png",
+        "src/main/resources/assets/alexscaves/textures/entity/magnetron_glow_blue.png",
+        "src/main/resources/assets/alexscaves/textures/entity/magnetron_glow_red.png",
+        "src/main/resources/assets/alexscaves/textures/entity/magnetron_glow_eyes.png"
+      ],
+      "sha256": "b8aeadca6526ec5d5c5dba66bc603a131f2c446eb93ecc8af69616b7d82cb557"
+    },
+    {
+      "mob": "Notor",
+      "entity_id": "alexscaves:notor",
+      "image": "notor.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Sem holograma ativo; camada ghostly com máscara original. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/NotorModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/NotorRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/notor.png",
+        "src/main/resources/assets/alexscaves/textures/entity/notor_glow.png",
+        "src/main/resources/assets/alexscaves/textures/entity/notor_eyes.png"
+      ],
+      "sha256": "2fcb32702fb8c2e52fc74fc5871dfae045c49b2230735413d92e6f3ad525aec9"
+    },
+    {
+      "mob": "Subterranodon",
+      "entity_id": "alexscaves:subterranodon",
+      "image": "subterranodon.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/SubterranodonModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/SubterranodonRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/subterranodon.png"
+      ],
+      "sha256": "a51a3454e11a812307b533b60cf0a2a5aa53735abc6520738a67362ae5ef3b6c"
+    },
+    {
+      "mob": "Vallumraptor",
+      "entity_id": "alexscaves:vallumraptor",
+      "image": "vallumraptor.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/VallumraptorModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/VallumraptorRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/vallumraptor.png"
+      ],
+      "sha256": "1041f1aee3e836dbd406486774a6eff9834cd554aa3b15b74f395c86785681ff"
+    },
+    {
+      "mob": "Grottoceratops",
+      "entity_id": "alexscaves:grottoceratops",
+      "image": "grottoceratops.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GrottoceratopsModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GrottoceratopsRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/grottoceratops.png"
+      ],
+      "sha256": "97ecbdcd7e7019cee2c175fb54d6542a2b5c84259ba6bc36c328590afc21ab3a"
+    },
+    {
+      "mob": "Trilocaris",
+      "entity_id": "alexscaves:trilocaris",
+      "image": "trilocaris.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/TrilocarisModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TrilocarisRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/trilocaris.png"
+      ],
+      "sha256": "5600b45bee175091ebda71242d2e5b01cc9b83f8fdfdcc22dfc68064463054ae"
+    },
+    {
+      "mob": "Tremorsaurus",
+      "entity_id": "alexscaves:tremorsaurus",
+      "image": "tremorsaurus.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/TremorsaurusModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TremorsaurusRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/tremorsaurus.png"
+      ],
+      "sha256": "960f980126e1d6dbfefc04a15f08858234f98306a953c7d9c9e0db7a01464776"
+    },
+    {
+      "mob": "Relicheirus",
+      "entity_id": "alexscaves:relicheirus",
+      "image": "relicheirus.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/RelicheirusModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/RelicheirusRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/relicheirus.png"
+      ],
+      "sha256": "ae83c2d948f167c21330043d5ae17ef0ad74b18f6051243473547a9c83b3443a"
+    },
+    {
+      "mob": "Luxtructosaurus",
+      "entity_id": "alexscaves:luxtructosaurus",
+      "image": "luxtructosaurus.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/LuxtructosaurusModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/LuxtructosaurusRenderer.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/SauropodBaseModel.java",
+        "src/main/resources/assets/alexscaves/textures/entity/luxtructosaurus.png"
+      ],
+      "sha256": "84f6cade4c96612d7228e6e0c63b34052f10487a4a4d8d420304bbebc2fe1615"
+    },
+    {
+      "mob": "Atlatitan",
+      "entity_id": "alexscaves:atlatitan",
+      "image": "atlatitan.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/AtlatitanModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/AtlatitanRenderer.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/SauropodBaseModel.java",
+        "src/main/resources/assets/alexscaves/textures/entity/atlatitan.png"
+      ],
+      "sha256": "fa4b2ed43caf725dc3bd4c41bd851a77c78db5cbfe2910cb3dca858ad0c776be"
+    },
+    {
+      "mob": "Radgill",
+      "entity_id": "alexscaves:radgill",
+      "image": "radgill.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/RadgillModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/RadgillRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/radgill.png",
+        "src/main/resources/assets/alexscaves/textures/entity/radgill_eyes.png"
+      ],
+      "sha256": "b2ce72b5b39f6b183191c94e9e1baf018cbd8a1598cf12ce87d7e6dfb165be30"
+    },
+    {
+      "mob": "Brainiac",
+      "entity_id": "alexscaves:brainiac",
+      "image": "brainiac.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Sem ataque de língua e sem barril. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/BrainiacModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/BrainiacRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/brainiac.png",
+        "src/main/resources/assets/alexscaves/textures/entity/brainiac_glow.png"
+      ],
+      "sha256": "f7dde3943939a3edfb62aa173aa42c0d7f83d1df4534a05ea1c048a45f794913"
+    },
+    {
+      "mob": "Gammaroach",
+      "entity_id": "alexscaves:gammaroach",
+      "image": "gammaroach.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GammaroachModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GammaroachRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gammaroach.png",
+        "src/main/resources/assets/alexscaves/textures/entity/gammaroach_eyes.png"
+      ],
+      "sha256": "ebca669af0c87d88e6276264d4cf3c4af9492d991135d3f7c21a83caa6d54970"
+    },
+    {
+      "mob": "Tremorzilla",
+      "entity_id": "alexscaves:tremorzilla",
+      "image": "tremorzilla.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Não energizado, ageInTicks0, sem feixe. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/TremorzillaModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TremorzillaRenderer.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/misc/HideableModelBoxWithChildren.java",
+        "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla.png",
+        "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_glow.png"
+      ],
+      "sha256": "390891e045e1b41e4333c696e2aa696ad858fd13967f074dad6cfcb4e6c112a3"
+    },
+    {
+      "mob": "Lanternfish",
+      "entity_id": "alexscaves:lanternfish",
+      "image": "lanternfish.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/LanternfishModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/LanternfishRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/lanternfish.png",
+        "src/main/resources/assets/alexscaves/textures/entity/lanternfish_glow.png"
+      ],
+      "sha256": "06fde3fa105ac4dedf48064ebd6583b3d0dbed911518dee1d9c82990e23306d7"
+    },
+    {
+      "mob": "SeaPig",
+      "entity_id": "alexscaves:sea_pig",
+      "image": "sea-pig.png",
+      "notes": "Adulto, pose estrutural padrão. Camada interna original e camada externa translúcida; variante vermelha para Gummy Bear, tamanho pequeno para Caramel Cube; sem digestão/objeto carregado.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/SeaPigModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/SeaPigRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/sea_pig_innards.png",
+        "src/main/resources/assets/alexscaves/textures/entity/sea_pig.png"
+      ],
+      "sha256": "531b06ed4811e32c0b4fc0ef2bd230fca779e551025dad0e3c684f33f540aaf7"
+    },
+    {
+      "mob": "Hullbreaker",
+      "entity_id": "alexscaves:hullbreaker",
+      "image": "hullbreaker.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. PulseAmount0. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/HullbreakerModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/HullbreakerRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/hullbreaker.png",
+        "src/main/resources/assets/alexscaves/textures/entity/hullbreaker_glow.png"
+      ],
+      "sha256": "c99f5de20e531931919f96354019042dac6b6e8609f9dffe8c16a657c731844e"
+    },
+    {
+      "mob": "GossamerWorm",
+      "entity_id": "alexscaves:gossamer_worm",
+      "image": "gossamer-worm.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GossamerWormModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GossamerWormRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gossamer_worm.png"
+      ],
+      "sha256": "1131cb62e7bab3cd65145bc234a47b701ef4506702f233f87d9324a65941d1db"
+    },
+    {
+      "mob": "Tripodfish",
+      "entity_id": "alexscaves:tripodfish",
+      "image": "tripodfish.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/TripodfishModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TripodfishRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/tripodfish.png"
+      ],
+      "sha256": "2ecc316ecbfcf3197735a25ea3183248bdb19b340c0f472b842d0646c74c52cf"
+    },
+    {
+      "mob": "DeepOne",
+      "entity_id": "alexscaves:deep_one",
+      "image": "deep-one.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/DeepOneModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/DeepOneRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one.png",
+        "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_glow.png"
+      ],
+      "sha256": "545af486cff4aa0dad243062ff33df1bd757a1ccd9fdb8b8818601dd3f5d4741"
+    },
+    {
+      "mob": "DeepOneKnight",
+      "entity_id": "alexscaves:deep_one_knight",
+      "image": "deep-one-knight.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV. Sem arma empunhada; equipamento de spawn não representado.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/DeepOneKnightModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/DeepOneKnightRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_knight.png",
+        "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_knight_glow.png"
+      ],
+      "sha256": "96d362b4e94c1aa4b35af4ec1cb9e04b04b0f5931cecabc01556472cd32c66dc"
+    },
+    {
+      "mob": "DeepOneMage",
+      "entity_id": "alexscaves:deep_one_mage",
+      "image": "deep-one-mage.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. LayerGlow usa TEXTURE, não TEXTURE_GLOW, na build auditada; pós-processamento ghostly não reproduzido.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/DeepOneMageModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/DeepOneMageRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_mage.png"
+      ],
+      "sha256": "7e59fc1a3b98e2c0930b3349413f1a52aa00101b296bdbe288baff04922094a8"
+    },
+    {
+      "mob": "MineGuardian",
+      "entity_id": "alexscaves:mine_guardian",
+      "image": "mine-guardian.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Acordado, sem carga de explosão. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/MineGuardianModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/MineGuardianRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/mine_guardian.png",
+        "src/main/resources/assets/alexscaves/textures/entity/mine_guardian_eye.png"
+      ],
+      "sha256": "9e2a788436da82282b9c398cc3fa2f8718ac9e656f8d7d4dc6433141856dfca8"
+    },
+    {
+      "mob": "Gloomoth",
+      "entity_id": "alexscaves:gloomoth",
+      "image": "gloomoth.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GloomothModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GloomothRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gloomoth.png",
+        "src/main/resources/assets/alexscaves/textures/entity/gloomoth_eyespots.png"
+      ],
+      "sha256": "6e930deea1db28e003632ad344f62030fce670513e11fa48a21b98dd5df09449"
+    },
+    {
+      "mob": "Underzealot",
+      "entity_id": "alexscaves:underzealot",
+      "image": "underzealot.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/UnderzealotModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/UnderzealotRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/underzealot.png"
+      ],
+      "sha256": "e87bb68f8b502638e7600b86b14b4645fdbb7a3f903483fac98958648e099a1a"
+    },
+    {
+      "mob": "Watcher",
+      "entity_id": "alexscaves:watcher",
+      "image": "watcher.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/WatcherModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/WatcherRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/watcher.png",
+        "src/main/resources/assets/alexscaves/textures/entity/watcher_moth.png",
+        "src/main/resources/assets/alexscaves/textures/entity/watcher_eyespots.png"
+      ],
+      "sha256": "c54756d9de434bfd97825ec84bed447d60dfcb733328ea99ce6ac79591940129"
+    },
+    {
+      "mob": "Corrodent",
+      "entity_id": "alexscaves:corrodent",
+      "image": "corrodent.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Camadas de brilho compostas no espaço UV.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/CorrodentModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CorrodentRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/corrodent.png",
+        "src/main/resources/assets/alexscaves/textures/entity/corrodent_eyes.png"
+      ],
+      "sha256": "e6758859a850b6c9f146173c6c0663dd4f174823649da00f680b69dd1c00bd8d"
+    },
+    {
+      "mob": "Vesper",
+      "entity_id": "alexscaves:vesper",
+      "image": "vesper.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/VesperModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/VesperRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/vesper.png"
+      ],
+      "sha256": "c52b156900eeaa33712f11b7eeefbfa17566f71bc36be83703219f8dd60a8fe2"
+    },
+    {
+      "mob": "Forsaken",
+      "entity_id": "alexscaves:forsaken",
+      "image": "forsaken.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/ForsakenModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/ForsakenRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/forsaken.png"
+      ],
+      "sha256": "55810f9d7728b1c058fb97f35b8ae8a5e706b89f7b5240319e8ee7727cc530e3"
+    },
+    {
+      "mob": "SweetishFish",
+      "entity_id": "alexscaves:sweetish_fish",
+      "image": "sweetish-fish.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/SweetishFishModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/SweetishFishRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/sweetish_fish_red.png"
+      ],
+      "sha256": "5d8d476d1b46746714bc7c7b6c91fbcda8e2d3293183b08b172874b3da73f93e"
+    },
+    {
+      "mob": "Caniac",
+      "entity_id": "alexscaves:caniac",
+      "image": "caniac.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/CaniacModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CaniacRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/caniac.png"
+      ],
+      "sha256": "f7331e257b83c9181008e48e61acfbf45e515bda40610223e5fbfea047289524"
+    },
+    {
+      "mob": "CaramelCube",
+      "entity_id": "alexscaves:caramel_cube",
+      "image": "caramel-cube.png",
+      "notes": "Adulto, pose estrutural padrão. Camada interna original e camada externa translúcida; variante vermelha para Gummy Bear, tamanho pequeno para Caramel Cube; sem digestão/objeto carregado.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/CaramelCubeModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CaramelCubeRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_small.png",
+        "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_small_outside.png"
+      ],
+      "sha256": "004e712fadb6c61b3b78ed372a8e05fb810ced27d4ed99366ccafa64cf4d4b0c"
+    },
+    {
+      "mob": "GummyBear",
+      "entity_id": "alexscaves:gummy_bear",
+      "image": "gummy-bear.png",
+      "notes": "Adulto, pose estrutural padrão. Camada interna original e camada externa translúcida; variante vermelha para Gummy Bear, tamanho pequeno para Caramel Cube; sem digestão/objeto carregado.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GummyBearModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GummyBearRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_innards.png",
+        "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_red.png"
+      ],
+      "sha256": "5dbf27eb52c8a656d6412c8542e2566b4e1bb5eefc6b90e61f7bd87532e0b7b4"
+    },
+    {
+      "mob": "Licowitch",
+      "entity_id": "alexscaves:licowitch",
+      "image": "licowitch.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/LicowitchModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/LicowitchRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/licowitch.png"
+      ],
+      "sha256": "182f972c0d2316065945251337f74e1f5bff58cd2c298ddaef8cd2245ef331c6"
+    },
+    {
+      "mob": "GingerbreadMan",
+      "entity_id": "alexscaves:gingerbread_man",
+      "image": "gingerbread-man.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Variante0, íntegro, sem equipe e sem item.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GingerbreadManModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GingerbreadManRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_0.png"
+      ],
+      "sha256": "0a45af69a1448cb113e6e51b41ec82f693bbbfed1c20dc5a9670d796c975bba5"
+    },
+    {
+      "mob": "Nucleeper",
+      "entity_id": "alexscaves:nucleeper",
+      "image": "nucleeper.png",
+      "notes": "Pose estrutural padrão, ageInTicks0, explosão0, sem possessão/absorção ativa. Camadas coplanares originais compostas em UV. Raycat: emissão dos ossos visíveis; camada NO_DEPTH_TEST não reproduz os ossos ocultos por outras faces.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/NucleeperModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/NucleeperRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper.png",
+        "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_glow.png",
+        "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_glass.png",
+        "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_buttons_0.png"
+      ],
+      "sha256": "291d72ad37bb5b04f7d7d340ce79d1676521b40f0c1841c1443b255c7b5b393e"
+    },
+    {
+      "mob": "Gumbeeper",
+      "entity_id": "alexscaves:gumbeeper",
+      "image": "gumbeeper.png",
+      "notes": "Pose estrutural padrão, ageInTicks0, explosão0, sem possessão/absorção ativa. Camadas coplanares originais compostas em UV. Raycat: emissão dos ossos visíveis; camada NO_DEPTH_TEST não reproduz os ossos ocultos por outras faces.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GumbeeperModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GumbeeperRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gumbeeper.png",
+        "src/main/resources/assets/alexscaves/textures/entity/gumbeeper_glass.png"
+      ],
+      "sha256": "6c0859f45c85effcdf3de2250b70293612b7d4de2b063fc4041d26d9b51babe4"
+    },
+    {
+      "mob": "Raycat",
+      "entity_id": "alexscaves:raycat",
+      "image": "raycat.png",
+      "notes": "Pose estrutural padrão, ageInTicks0, explosão0, sem possessão/absorção ativa. Camadas coplanares originais compostas em UV. Raycat: emissão dos ossos visíveis; camada NO_DEPTH_TEST não reproduz os ossos ocultos por outras faces.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/RaycatModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/RaycatRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/raycat_body.png",
+        "src/main/resources/assets/alexscaves/textures/entity/raycat.png",
+        "src/main/resources/assets/alexscaves/textures/entity/raycat_eyes.png"
+      ],
+      "sha256": "0da09f80a79d97b15a8c175d712e1e57bae61706b93dcce4ac362f37eec044d7"
+    },
+    {
+      "mob": "Ferrouslime",
+      "entity_id": "alexscaves:ferrouslime",
+      "image": "ferrouslime.png",
+      "notes": "Uma cabeça, mergeProgress1, ageInTicks0, ataque0. Gel com 6 faces do renderer, tamanho1.0; deslocamento orbital da cabeça conforme código. Shader gel amostra textura original; iluminação técnica sem névoa.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/FerrouslimeModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/FerrouslimeRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/ferrouslime.png",
+        "src/main/resources/assets/alexscaves/textures/entity/ferrouslime_eyes.png",
+        "src/main/resources/assets/alexscaves/textures/entity/ferrouslime_gel.png",
+        "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/FerrouslimeEntity.java",
+        "src/main/resources/assets/alexscaves/shaders/core/rendertype_ferrouslime_gel.fsh"
+      ],
+      "sha256": "02507d24e19a7bf765808aacb8ffe608aed366b0fbb42d560bb0c266ff2ef9eb"
+    },
+    {
+      "mob": "Boundroid",
+      "entity_id": "alexscaves:boundroid",
+      "image": "boundroid.png",
+      "notes": "Estado inicial: cabeça + winch criado a .5 bloco acima, conforme construtor BoundroidWinchEntity. Pose estrutural padrão. Corrente com âncoras confirmadas do registro(.75) e model.getChainPosition(0,.1,0); não é estado de teto.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/BoundroidModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/BoundroidRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/boundroid.png",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/BoundroidWinchModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/BoundroidWinchRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/boundroid_winch.png",
+        "src/main/resources/assets/alexscaves/textures/entity/boundroid_winch_glow.png",
+        "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/BoundroidWinchEntity.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/server/entity/ACEntityRegistry.java",
+        "minecraft:assets/minecraft/textures/block/chain.png"
+      ],
+      "sha256": "87b38814d5c792e8380e620a794776030e8962a92cdf3b063f39df302110d73f"
+    },
+    {
+      "mob": "Candicorn",
+      "entity_id": "alexscaves:candicorn",
+      "image": "candicorn.png",
+      "notes": "Malha integral da pose padrão do construtor, adulto, textura comum. Animação de setupAnim não executada; escala absoluta normalizada no enquadramento. Variante0, sem sela.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/CandicornModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CandicornRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/candicorn_0.png"
+      ],
+      "sha256": "4be0bb998926d315fd6eedd0ef7bcb3947f48190437ff53026f0a7a676c47136"
+    },
+    {
+      "mob": "GumWorm",
+      "entity_id": "alexscaves:gum_worm",
+      "image": "gum-worm.png",
+      "notes": "Corpo completo, 15 segmentos válidos (fonte sorteia15–19), tick0, headDelta0, repouso. Posições getIdealPosition, alternância de três texturas, extremidades e conectores originais. Pose da cabeça é a estrutural do construtor.",
+      "sources": [
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GumWormModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GumWormRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gum_worm.png",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/model/GumWormSegmentModel.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GumWormSegmentRenderer.java",
+        "src/main/resources/assets/alexscaves/textures/entity/gum_worm_segment_0.png",
+        "src/main/resources/assets/alexscaves/textures/entity/gum_worm_segment_1.png",
+        "src/main/resources/assets/alexscaves/textures/entity/gum_worm_segment_2.png",
+        "src/main/resources/assets/alexscaves/textures/entity/gum_worm_connection.png",
+        "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GumWormEntity.java",
+        "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GumWormSegmentEntity.java"
+      ],
+      "sha256": "6ac752620d08db5be735785d14bcc878e0f2b0a0d56ab22352aa9797222d66e3"
+    }
+  ],
+  "original_sources": {
+    "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_blue.png": {
+      "git_blob_sha1": "252b0118e9dd6987bb954b0852a738d7e7285ac9",
+      "sha256": "f20a56c3524cfc23c94d9f4bec08d16b05111d7b11a02fbbbc413175479f0341"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gloomoth_eyespots.png": {
+      "git_blob_sha1": "0e94add0fce406a388a25f34e245e3f25968cec0",
+      "sha256": "72ecbe29453a87c8a8b15a7c11468ddeaa5828be82eccdf26b217b076ebf9294"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/hullbreaker_glow.png": {
+      "git_blob_sha1": "bc86492ad41d7743b9c7b8c84879e6fdd4898bdd",
+      "sha256": "8c3e76f5aeccf52fdde183b226b77700e354b0e76ed39f5f60c9fed8034ecb05"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/relicheirus.png": {
+      "git_blob_sha1": "51e8dcdbf39362a1289c29e5b71be12362d75426",
+      "sha256": "eca6b4a3d8c017df6375626d9af1fd9c79e1ac1b27e41fce54a4826eed3375be"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/sweetish_fish_green.png": {
+      "git_blob_sha1": "29e018ea664c5e97211d2317a1079865ed513a04",
+      "sha256": "c7a65980b920993bd2efa552bac12a8983705173cb1ce1c2650e6ecda6d2401d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/forsaken_darkness.png": {
+      "git_blob_sha1": "75ea51737f310437cb760d388b8b5fb9dea1c15a",
+      "sha256": "52db43af541a93327288103d5cb46034caffa2ff33d78ad357458a148f094dad"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorsaurus_princess.png": {
+      "git_blob_sha1": "8cf202d956f7c6f85683c8230db55faeca78c929",
+      "sha256": "81efa770dd65a09f0c0b27f3eecab9c197111ac993ca540cf4981b110472b3b3"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/atlatitan_retro.png": {
+      "git_blob_sha1": "2dac76835981d2d39b1b93dba4a79b5870aadefa",
+      "sha256": "bdf2b7489a6bd1576a74be15941333226dd4f55e40778ef3334d19c81d9e2b89"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/watcher_eyespots.png": {
+      "git_blob_sha1": "b53865ad40ca206654f507fd126ac1faf461ded0",
+      "sha256": "fc9bbec93a0bafd5980c4f8cc7070022596a7dd2b6b7260f0b0070a20e5ec1a4"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gammaroach.png": {
+      "git_blob_sha1": "4c26ac0fe9306cd7a952e77f9614b4e2b43497a1",
+      "sha256": "a190f4054ce17045107784aae80a3cd0c4bc5da5159a61171181e433800a8b8d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube_small.png": {
+      "git_blob_sha1": "31dc57c731bd511ec940fe6e025742f2760ceaa4",
+      "sha256": "b1453f017ea00f54ee8d914ed0f16e14ae40c5ac010c238ca5925be7a6cbc3c8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor_retro.png": {
+      "git_blob_sha1": "f91cf2b9d746c3a1ac75319c02c840ecbbb3fd5e",
+      "sha256": "625c1191ad7544a49336f34e99627895159de5a41b303d999a589d7a0a093915"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gossamer_worm.png": {
+      "git_blob_sha1": "eefc9ef9f33b9ac1a3e1907dcfc5b9186b2ac561",
+      "sha256": "a0c075fd9fa4b11c79768667968ed3390773a79ae5aedcff787c2cc7632a99f8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorsaurus_retro.png": {
+      "git_blob_sha1": "7a0c504a8cea79af7297061108a6e2b4ab26238a",
+      "sha256": "533027d3af6c87b30a69984f9e3235022787c441759c3859cbe51b282faee275"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/candicorn_1.png": {
+      "git_blob_sha1": "b735ddf9e0227a4b7672652167835eca84852c15",
+      "sha256": "1c6123d5afc8217a93c7ca9c5c03d2f458ff69e7c1d1b3b5d7c26a4857a77020"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/mine_guardian.png": {
+      "git_blob_sha1": "b41da75d0bc0372e0a1e7ad0a6f3a71749499e4e",
+      "sha256": "f2775478eb24e9519e58272e3362a00da284a3221f7e6a4b4a6ba29f0fc9dc67"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/raycat.png": {
+      "git_blob_sha1": "dbd389c490a6609348aa5b672466fc468aa20953",
+      "sha256": "11099a6f0b04b84a556d87089a4885a1bd94a4d55b5a5505910dbc41bd328a29"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/sea_pig_innards.png": {
+      "git_blob_sha1": "35d17df9f1056d26bbacbf6dba73eb2ba4f99760",
+      "sha256": "1ea8af0c995416d5fd7fed3305f7431921699b23da49a8ef465e9108cc37b6c5"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/luxtructosaurus.png": {
+      "git_blob_sha1": "b7b42fe85afdc61a5eead8f99a73a60f1d717b59",
+      "sha256": "cfab3d5791d06b958f3437a3d0959c6f714af189e599db10e9f7b9f92584a297"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/relicheirus_tectonic.png": {
+      "git_blob_sha1": "2a754ea7f40ed56a28005ad1e0d8aa0eb4573dd0",
+      "sha256": "2886bb1d18cc43f13e456f99674ae0f8c7441517c605991f7e9d09bc5e4271b3"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorsaurus.png": {
+      "git_blob_sha1": "95f4506da3a1eaf4574c5e555319047e83b05944",
+      "sha256": "c45beb60a2f8a14506cda9a341d4702a9379bf81ce3bb924e0b57403ce057196"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/candicorn_3.png": {
+      "git_blob_sha1": "3826bc377ecc2fda952dee190dd999e34167c104",
+      "sha256": "9fdeb945397aca3bfd9872abe4daf865079bd778dacfda3f2bcde50a1b86d1d8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caniac.png": {
+      "git_blob_sha1": "2e589d2f82864e73f33141d485fe043a559acc2f",
+      "sha256": "c88680ab8c92dee542eb3028f536dc82ef0a06ada8e724475d10614af9293ac5"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gammaroach_eyes.png": {
+      "git_blob_sha1": "a25e5661fbec48881e479ba519eecbdb0aea7f9b",
+      "sha256": "94529ce9b5a281a16d289fc06d12e479a5aeaf9494aca8f7265b6b21161e3bfd"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/grottoceratops_retro_baby.png": {
+      "git_blob_sha1": "cd5f6c96bc4949ab7b2b3a6b594d054259a8e5c4",
+      "sha256": "fa58497391219335d6ac9b8ec55f7e06a6aa974fa53f88b83fd02a9663822777"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gum_worm_segment_1.png": {
+      "git_blob_sha1": "7e131c78f2047fcca0fa0af6b9523b4677349794",
+      "sha256": "c1626fe61ef6d9a694a17960da76aaf77c30621e766974b03a5bf76170d23040"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/atlatitan.png": {
+      "git_blob_sha1": "edd5373e990842d7d65b9efd819836011aa8b67a",
+      "sha256": "99c193bd16abf12f922c897c16007e0372dbbde051a6e3209f3b3159ffc2c12a"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/grottoceratops.png": {
+      "git_blob_sha1": "684abd9a1f2c005aa3cd13601470faaaf2d5e647",
+      "sha256": "b228fb05befee18f9a33bb6358bb84b31b96d6e44eac4644e82640f2d781474d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor.png": {
+      "git_blob_sha1": "4bd7fee29bb32bfbfec6e7993f3e25a22a5504f7",
+      "sha256": "774cf3c25c8dbe6e589877b3a413e8f91a2d6f3a196e2518ada6d98cf047dac4"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/boundroid_scared.png": {
+      "git_blob_sha1": "152ca65c0aeb6010512337045d647a06c83c81f3",
+      "sha256": "b73ff40c9437e31e1a05b7356afc47052e9da4e2146fb974c1c746c8167ea2ac"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gumbeeper_glass.png": {
+      "git_blob_sha1": "5ddd9e3b8a0e3bf001b6096a1c154584d79c28e2",
+      "sha256": "6d164fafb9bcc8f75de68a81c501b776d78510e25f22545d9675c552629be5e3"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/magnetron_glow_eyes.png": {
+      "git_blob_sha1": "cf10c3d3304a33c5e352197e9743da7bfc9709e4",
+      "sha256": "518b913de3ca33492a1c94195ae6a45fbcaad944c4c8b6d0d1272f8125d6c38f"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor_elder.png": {
+      "git_blob_sha1": "9dd57d3d7c35651a3f1afac21554a95b8924e77d",
+      "sha256": "48113cd552f7428b7da0ec3634a4575a7f1c14b670baa6f6057f82215ee7f94d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor_tectonic.png": {
+      "git_blob_sha1": "1186f745a2259dec0a7acbde851ffbfc922b3f77",
+      "sha256": "db7d2cab35876b8c3c4dcf012d13ae8b8ccdb2e4556bb3146642e9496168c156"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/mine_guardian_eye.png": {
+      "git_blob_sha1": "98553db7ecf311aec6e01705727bb824650d89e3",
+      "sha256": "7404d72cba63b325d586537a785fcc1b53d50fbfcb041f7171dad35777b2d3ca"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_red.png": {
+      "git_blob_sha1": "cc839fb03926ff5b94c4bc7268f2e8eb47ed2032",
+      "sha256": "be55f3f308784760bef27ab10315968e2c1c25dba705a4a5bbdf5f33aeb387d6"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/grottoceratops_tectonic_baby.png": {
+      "git_blob_sha1": "30751c105f727a62f77d50609bac2508a2bf624f",
+      "sha256": "c20e2c718d754eab73e08700ce971b95e631752ac0ec2625d542efd158384d85"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/magnetron_glow_blue.png": {
+      "git_blob_sha1": "c7210c52ae774b6910618dd81541b21d7151f99d",
+      "sha256": "f412f3863582a743a34e7e2d9187902889a37fdb078a7c4b7bdb2f994f04ef00"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/subterranodon_retro.png": {
+      "git_blob_sha1": "af671acd7889ec4a17b4d603827c82b4d10e6a49",
+      "sha256": "2dc643d0e37190813a88eb5b80ca2e212f8a49d1d10365e9adfa2af3aa3ab1a8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vesper.png": {
+      "git_blob_sha1": "fab333d4088821b37fb11c6a2fa1deeaa9dfc138",
+      "sha256": "471ab90b159c50e6b5831285ce393fc7f7c92da55961d38e14818ef578bad101"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_green.png": {
+      "git_blob_sha1": "a00f0bc3a0e3cfed3f7f872d093461806bb245c9",
+      "sha256": "dd73261d9d9536ff06e5c38ecd4cb19ede51e4cbf6098c71908dc8fb6375192f"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/relicheirus_retro.png": {
+      "git_blob_sha1": "36fb38ba896e2fb6839edcad29a86d0d26d5b5de",
+      "sha256": "be83806502ee50715bc5e1602a1f7d1cc2c9712f57f01039cc775d4cedc444d3"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/magnetron.png": {
+      "git_blob_sha1": "bed142344e9b55f9379cc2bd081b626b97f8fc7f",
+      "sha256": "fb95e95b9404a961ba5889e7e0cf99a463b590e318df56850d15d2ce1f3ed427"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/lanternfish_glow.png": {
+      "git_blob_sha1": "aff1cb0a8baebf01be7ea08a190e189dfce2fc60",
+      "sha256": "d2da9978838ddcc44ecb103e2183a1aca1ae1397661051d2999f3ac2e6689333"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/forsaken.png": {
+      "git_blob_sha1": "0dcd66d4ac8624126e3d259b2ec118db11c14247",
+      "sha256": "055f4481f218a590196a954202cd78f1d1e3350e2144306cfb61ff354487f6d1"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/luxtructosaurus_enraged_glow.png": {
+      "git_blob_sha1": "d3c6268b0db805f431db8dd014f0e3f9a920ea94",
+      "sha256": "f3dce64fa3243448646f3c0a80531878b294dff000048b90f14040a910927de1"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/notor.png": {
+      "git_blob_sha1": "6ea8cbedd856aa2aa14110f79c414d770c48ba18",
+      "sha256": "e868a77c140ded01c4486f70b5593e13848d145aa700f33d37867b0368ccd267"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/mine_guardian_explode.png": {
+      "git_blob_sha1": "579c085c69f3450c4a55e40370d260df247c9a0b",
+      "sha256": "8c2a664ad6268ecb180e941e9a35f5af16408fe6df06ada32f6ada40485edd1e"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/licowitch.png": {
+      "git_blob_sha1": "2e5182d85e7b040ef4afd5d9091c8d4ddc250865",
+      "sha256": "c17b3ddb77376d7ea61006e495ed7462e5219af93a7cd23e883d6ded52b610ae"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/grottoceratops_baby.png": {
+      "git_blob_sha1": "9b709ad564d7c708050d0bd2c05e3a09e152cfd2",
+      "sha256": "4203d76003eafbb3f0c96e1dab4083cc2629a179169e2c08d629d44306f20823"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/ferrouslime.png": {
+      "git_blob_sha1": "c969e49f8b4d099e7c48f78ef60c776a33f6451f",
+      "sha256": "7e91fecc026b3499f6b24990856674b31598eb7b4731859a64c6d791acaa8301"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/corrodent.png": {
+      "git_blob_sha1": "f83b6ceee196bdd894401948417a605e28916c0c",
+      "sha256": "2df99050754f9bd917ff7788cdef9054ea22b7195c50320eb9bd2d266d80adc6"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/boundroid.png": {
+      "git_blob_sha1": "4b7962838fb4d6171d0eb2ee264496800d784ab5",
+      "sha256": "1d0b27e0389089092ffc2bf849e1678ece3002efe42ed67f17ba4ec4e70b776a"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/atlatitan_tectonic.png": {
+      "git_blob_sha1": "2b2a561f543a52cf6e9baa8bde7d358b5bab7b05",
+      "sha256": "40f7e5a5270d222b79a194b2c077ab2010fdeabb4f04884274d4e2fbdb3b4ab2"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_yellow.png": {
+      "git_blob_sha1": "84bdef05a913bfb44f272595d3dd0adb4e400836",
+      "sha256": "e56be73d3f2a564e2cff81ab993732c2d6b2055aaf75ca5371cb5a0581532b2d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/forsaken_eyes.png": {
+      "git_blob_sha1": "79f42ae607b71e0fd1a8a06fc714d8a99f0842de",
+      "sha256": "d7238d0b3011d7a8989f4a41b99fdb1d3613f97d183ecedb9ad49bc12145cccf"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gloomoth.png": {
+      "git_blob_sha1": "df6f41223d734ffede9c6fc89f89580b5e9c4756",
+      "sha256": "a653b834cbde55310d8d4684507034f7d3541cfcd144dce769d24b537adb0378"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tripodfish.png": {
+      "git_blob_sha1": "de15e326c0adb3af9242a3d672fdaf115c0f3276",
+      "sha256": "37f1e120f49080bf09be2834a313faf639a27e6db560e2384f224d3ebdddd7e2"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/sea_pig.png": {
+      "git_blob_sha1": "3143f6c2b3de01bd14a9667e1bfdf91502b1138c",
+      "sha256": "0dad395ccdabcdbab4b9dcfb072edf95360f0b335792e7a9bf23f6f3e771171d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/brainiac.png": {
+      "git_blob_sha1": "182267caef0b9741cdbeb7cb56a02a23995269f7",
+      "sha256": "ac888039f24030cd2836abe34cee033e8b7ca4a5a8f0c53ebc2eaeb97880218a"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/watcher_moth.png": {
+      "git_blob_sha1": "41563249c74b1e563dfaee88d898d41b35c05efe",
+      "sha256": "5042151c54046ddd5991d229980355818e73fa644a8ed3d0c50727e1b8496538"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/magnetron_glow_red.png": {
+      "git_blob_sha1": "7daf82c7f59683352403034ab3b219d3c9b9b193",
+      "sha256": "0a09850c0f1a3d0b4b08de6d49e1bd8209e64c48baf4376cd6efba6ba07fcaf8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/lanternfish.png": {
+      "git_blob_sha1": "9e57f963014d5310eb50c12c59ec2369b0286cdd",
+      "sha256": "2e1a5540fa7ed8ff3d4f71f41aadd9ded82b7754c6804c9b30dcb9910d5a4edd"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gum_worm_connection.png": {
+      "git_blob_sha1": "98245c30d9dfecffe8833a5c6faa0187670debd8",
+      "sha256": "119e7e9fc63efc194742afa556b49759abb267229d075ffc2d2061ef667cd8d4"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/radgill.png": {
+      "git_blob_sha1": "926fd4bbac2c68ba306b1c69bbb70f7f6dd1f26d",
+      "sha256": "527f18fa545f8958795b98ebbc7d29216013732146cc9ea885127ea9248b25f7"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gum_worm.png": {
+      "git_blob_sha1": "9f11aedd914e51b4aad3e9ebea156617c8619f67",
+      "sha256": "0eec1ef9006f6f00da54618af2f06e06b06310839917beb75b394acaf3cdaa1d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor_alan_elder.png": {
+      "git_blob_sha1": "3defcaf21e202398ee26fe59e376a16a87a3c9d2",
+      "sha256": "154277d46d0bcfd05afaaace7dcb5342c746a846635eb6ca5442442fb8b92535"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/radgill_eyes.png": {
+      "git_blob_sha1": "2dd3cceda6a6661cc547fde12c5ea7fdf1fc294f",
+      "sha256": "205ccc6d2fac0ca118b22bd9684bed164aba822c789f2316b2d2ff4a2c65eda8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/grottoceratops_retro.png": {
+      "git_blob_sha1": "4176b3df1d46cf44af93d1f2434d9f71cefd46e4",
+      "sha256": "008567b00d15d755ebd8a4d339001c77de27014d8f3b7141039cf354f78e63b2"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/boundroid_winch_glow.png": {
+      "git_blob_sha1": "ac5d6049d09b10c6c8a60de4ba2607c83a955e9a",
+      "sha256": "98fb3bfd82ac1fb0d8193415ffda6b54ecfa2b22f94408945336f18e9c53dff4"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/candicorn_0.png": {
+      "git_blob_sha1": "0f4f79bb750a83c894a107cdd3d930058106776e",
+      "sha256": "e9187a5a32227c89dad81b35e4010548da2435a89d39b5a68ae0c779f3224332"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/candicorn_2.png": {
+      "git_blob_sha1": "4c2f89815feef6a4282b7fab603f37a6159cf21f",
+      "sha256": "68fb8bba7c29a1f0ce279df04e88315fd0749ca80a1cc7f156c99375290b6cc7"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor_tectonic_elder.png": {
+      "git_blob_sha1": "97a9592ad073e18fa15826d75ba1d441e71c9375",
+      "sha256": "c89824e6d8c8c82504b4b218ee83cbec3c029527b17ffcc8ad8488db638a93fb"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/ferrouslime_gel.png": {
+      "git_blob_sha1": "2525568d3cc3ebd7d9c15ef65a1d4a1e8f904a6f",
+      "sha256": "d9d5b3536db938923340a42e8356d20e912538c64ad7c86664b9daf1f1f02537"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor_alan.png": {
+      "git_blob_sha1": "257a0436cd3cda304db6b6a162e81e834144c183",
+      "sha256": "ec91bf5abbed71a051c432317f8c34e618ba4846865a259e1c63d774f951c2d3"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorsaurus_tectonic.png": {
+      "git_blob_sha1": "e9b1c919ef331f62c56a458fe11cff2487be0d3e",
+      "sha256": "93890379af050a685121fdece55ebbd0312dd1433647b4b4d3bc73a9168a9c01"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/notor_glow.png": {
+      "git_blob_sha1": "9a79a2a21bb06ded01c6f43515c16be652dd18ea",
+      "sha256": "163e0b61f37660ff187ea66b7a9f2b2f7df3fc1af43fede48b1b0ac6c7de4dfd"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/trilocaris.png": {
+      "git_blob_sha1": "f1a2aa209f08846490049919513f4fc83d167a0e",
+      "sha256": "c7b917c71730b6f8de85981bd4c05ab5a06735a60302487dc2bc2a432da9fa11"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/watcher.png": {
+      "git_blob_sha1": "9e6e8fb402bab737069aaaa9748a7fc504dbe51d",
+      "sha256": "0168b547036d808e0b9344cdd4135ccce65586d7f90d4fa6ce694f9f096c65b7"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_pink.png": {
+      "git_blob_sha1": "00ab2887daede0919a55eaff48f870df4efb9240",
+      "sha256": "ff73054d13983bae90d6728bc35c48f3905fdb09cbc6fb0e5beedad3284cde70"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/vallumraptor_retro_elder.png": {
+      "git_blob_sha1": "789dd122e17677598e5b05eb1c0d14d06b56afe8",
+      "sha256": "e84aa5df56029d45422c03bd8f6c6dd5e9d65b0bbce7fc02fa13dd81dbc5bcad"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gum_worm_segment_2.png": {
+      "git_blob_sha1": "29d0698823c605915d8a93b553b7aec1f66e15bf",
+      "sha256": "7bc50ba695d51322ebf2ff3a81c14d2c3cc1e43dfc0b39049214a496136a8f31"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/teletor_glow.png": {
+      "git_blob_sha1": "7c538510144b611587883e8702990f2d30026823",
+      "sha256": "5a608b4ffaf6d398000f34e64ba9baf5633998906503acfea8a4383dcb4a809b"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/subterranodon.png": {
+      "git_blob_sha1": "2eeb7bc861967dbc252d212563fe0b8302d2cd44",
+      "sha256": "10fbc18fa27244b152bdc18dd425504ade81ed42ca0037b3b1405addae33ab5b"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/sweetish_fish_red.png": {
+      "git_blob_sha1": "4c316170659245f2ad8d64ec9d4628fb58dad795",
+      "sha256": "a63e131a1f78b9b337ad9823ce25b2118bd9d1ba85ca73474daf2c59f65282a0"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gumbeeper_possessed.png": {
+      "git_blob_sha1": "0a0184142de196ba4358b640065d490abb6f95fd",
+      "sha256": "f18e0ffdcf51369bd84993616b2fe5e98e54a751c3af8c6283191ac2c15d28ca"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/raycat_eyes.png": {
+      "git_blob_sha1": "52b3851d7bebcc64c67b34047bb574d490412d46",
+      "sha256": "eeb6a0aad4cf752b160c62b1f0041828c892a3a7b98662da011fcc9a94140f82"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/corrodent_eyes.png": {
+      "git_blob_sha1": "206d734b601735d8b665c843ed7170d148b744ae",
+      "sha256": "eb01fb94a23568104e382d4df47cdea3b414ef526c8e54ac72c264a1b4d2c758"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/underzealot.png": {
+      "git_blob_sha1": "283d200af4e7ac059f23cb0445577a4e4d7a1f1b",
+      "sha256": "a8e4e116fb7f0dbd404a0a1cb32f6dbb826da39595f67ab3c5ada81040f869e4"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/luxtructosaurus_enraged.png": {
+      "git_blob_sha1": "4c71f9401d8efd03369600bb1a092470c786915a",
+      "sha256": "151d96a76887e96a545cea3145ea627f7252f009fa262a7355ce44c3b2ce6720"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/teletor.png": {
+      "git_blob_sha1": "49a9ce9f181898d6c1bec8e3447a313ce8d7d93d",
+      "sha256": "ac8b15885c5159e74a3ece2e027134eb8a2681beeac4a57cae3201dde76ae670"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/sweetish_fish_blue.png": {
+      "git_blob_sha1": "35fd092465241142650a01b2add71a62b575d971",
+      "sha256": "757059eae84bea319f9e5560c4b9093ddea31e0485e5c7e16e1967d84e608d99"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/candicorn_4.png": {
+      "git_blob_sha1": "65a72ed327ec4e2f249bec614cc6684926a325f1",
+      "sha256": "33a3b2b45b2b532e42c05e59fd1723e01392fc0c90419070db0d21787bd823ab"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/notor_eyes.png": {
+      "git_blob_sha1": "b78fe5a7544b096ebd1a4a95e1f771ddc5ade48d",
+      "sha256": "58c456cca0ff5374b76b094453330aad795dd318ceb24f54336d00f942939a9e"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/mine_guardian_sleeping.png": {
+      "git_blob_sha1": "475adbb522138bb98045a57c018c3610a2414bae",
+      "sha256": "5341079955ecac2b3f884f4303cabb3e66624631e0dcc5ba4ce9bfde1ff1efc5"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/boundroid_winch.png": {
+      "git_blob_sha1": "27e275e0d80e8e478b1f5e5cfdfeab6cdf70b283",
+      "sha256": "94bac860a051eff4ff1d1e1eb9c57fdef40dd57b34511a1312b11b7beb7986e0"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/brainiac_glow.png": {
+      "git_blob_sha1": "e48e95c3ab05a096508d902ee1335e0839766305",
+      "sha256": "cc4fa57dca5d495d8ea912142a686b77c6782e9fb4f932c167b5121555800538"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gummy_bear_innards.png": {
+      "git_blob_sha1": "1cd640e29f939e18ec980a7e1e33fbedba52d265",
+      "sha256": "1ca7126be3903d29f8e42337a1951f5fdb89ec777b94cf69efc9bb75ccf41ab1"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/subterranodon_tectonic.png": {
+      "git_blob_sha1": "0db262f4f126df27de0689705950b98e7065135e",
+      "sha256": "abda8c117d54898cf0ed4e6ce7de22c334073932c7749e0b4ed304c7c4c28407"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gum_worm_segment_0.png": {
+      "git_blob_sha1": "4c54cabecd2c6388e94ddd7de2341a72312552f4",
+      "sha256": "9bb1d63bfe10044969ccd81d69093d530b787ffdf809407ac2165da7ce851bf8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gumbeeper_explode.png": {
+      "git_blob_sha1": "e4b55ef82572a535554b83e90b0afcb5667db79d",
+      "sha256": "6284895371d69699fc855a37551303b224ae4e9af27cd7fff6c20450a54987bf"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gumbeeper.png": {
+      "git_blob_sha1": "cf33ffcaed4060e736156c80ec915ec0aacf1949",
+      "sha256": "8944f7cc20c6083596bc6b82eb68cb74a7fc12b88359d007d146409e34231b21"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/sweetish_fish_pink.png": {
+      "git_blob_sha1": "24bc9d7c412555183940efc0077fa852bd9d91dd",
+      "sha256": "832eb2090212fe3689e0102664453e3e42b98fe050a7f4ce253017db3c666bfd"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/grottoceratops_tectonic.png": {
+      "git_blob_sha1": "1422adbaf6d37402ee86ae285d05daa767349b0c",
+      "sha256": "f774df89b3d11d82583b5a519b6455ed97363ef8258fcb04f6bc785298d8bd79"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/raycat_body.png": {
+      "git_blob_sha1": "379dafb39464152cbdb75f0e73666b76ce3b3f4a",
+      "sha256": "b9c573e7c5db04ca74adb1242f99a1d7e94e6c4dff66a5bde1db5e5aa0e2fce4"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/hullbreaker.png": {
+      "git_blob_sha1": "ff22ac5626dc3e118a3badf2edd4bedf791ac257",
+      "sha256": "fd62574c80f5a8904e396e0d5e7ff9331aa0b0a046e174dc020d4458b2f5abee"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/ferrouslime_eyes.png": {
+      "git_blob_sha1": "c9e49f0488a9d3dd72c277abbd8ae3af623544c6",
+      "sha256": "a07dc7135c056ecfd3cdf8b587addb6e7fd29de203615297b47d4bf15c8aad20"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/sweetish_fish_yellow.png": {
+      "git_blob_sha1": "474f893e5b1fe1f31b7d05a439c65bfec882dbcb",
+      "sha256": "5624669b52e827166786ba4c066abc544b090d958781870917135c3d1a81690f"
+    },
+    "src/main/resources/assets/alexscaves/textures/particle/teletor_trail.png": {
+      "git_blob_sha1": "3de5a97ff23882d89d16f308574103f23d248f09",
+      "sha256": "cfbc0610ed7d86303a066ea512cf9075d70944299d5ca1e060760cf439b74a70"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/melted_caramel.png": {
+      "git_blob_sha1": "cd11e4a6cd6d91196e381e0b90feb8f08d6e059a",
+      "sha256": "b0328b4377207c04dafa9a2319497c1ef6eeb5b3f54abac768ab7e69cfe98275"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_small.png": {
+      "git_blob_sha1": "51747f8f5495a733e429f5b8f7c3e5cfce44c1ba",
+      "sha256": "4ec1a33a108e3b95f68f464c72b4bd28ab0a24fdbd89d75b6b2fb16ed5380956"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_small_outside.png": {
+      "git_blob_sha1": "f3ecb06c101e34421a8c1c5293794b4941fc3158",
+      "sha256": "e575453fe742b937739ccabce8ead2a487792002fc7333303fdf1259e720e713"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_large_outside.png": {
+      "git_blob_sha1": "3788e35a04a623c94861f23a6ac6175904b67402",
+      "sha256": "7391f87694539a3fdf61ceb257af430aa69464a723c1b018d7b3880095097347"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_medium_outside.png": {
+      "git_blob_sha1": "11af007ba4a5c8f76013ed4eff49f50b85489c43",
+      "sha256": "6259a92ee7a4164b4df2a9b315baa9c1ebb9ca2964cdedb0d21027fd745c89ef"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_medium.png": {
+      "git_blob_sha1": "fdf1489df355d3535e880999d4a963fd9ec87b24",
+      "sha256": "66941949a42c0c66ee5eeba8a5c473ccfbe1b7509bac84824debe4fb9c455f18"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/caramel_cube/caramel_cube_large.png": {
+      "git_blob_sha1": "13e7d498aa33311239f5730e1bafe0e258ef316c",
+      "sha256": "b01b8865de65096288e0282e373efe50e585055e49fbbee3cb89cc9e4605e9ed"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic_beam_end_1.png": {
+      "git_blob_sha1": "3a418a50cd4370dcd7144f2c33d818ad77f720d9",
+      "sha256": "858c242cc894ffcdd87bf92c361f346f5163e6f1560b07bbd3e69200147d59ac"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic_glow.png": {
+      "git_blob_sha1": "77af36186fb45d5fb401e69781e646c11fb51f18",
+      "sha256": "16db6f46a66286882bfb56804c23a3634c03ff2ee65205a68f2feeed51bf95bc"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro_beam_inner.png": {
+      "git_blob_sha1": "6d546129c05a27df7b164b8514b1b8de7b9884da",
+      "sha256": "6145157564f5eabec1f936398e877531ac8e23360594c17938e0922537ed6ea4"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_glow_powered.png": {
+      "git_blob_sha1": "e54dfb25e87f2db193a30dab0b53b53a2ca3d9f1",
+      "sha256": "6d682b0955f727c224ca5a1c59a36a708b91450a4ac210f75632dab262447476"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_beam_outer.png": {
+      "git_blob_sha1": "2a6c37e05ae3179ff8eb163298263d160fb63531",
+      "sha256": "c7a022ad41dc0584e964f73ed28f0dd294e80d7e72c271bcf459913a52b58f22"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro_beam_end_0.png": {
+      "git_blob_sha1": "49b625ea472ad6e11ae1deccaa4e426796a65bf8",
+      "sha256": "a6947c67f9793cb808895cfde8fa7a3b51122ecbbd452b84ceec1a642f9ec7e5"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic_beam_outer.png": {
+      "git_blob_sha1": "8404b3ede884c237c3e05363424cc69977053b02",
+      "sha256": "56119fec9f01d3ddd07bd40f1bea25f62dbfe55b14928978a308aa00cdc16c3e"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic_beam_inner.png": {
+      "git_blob_sha1": "e764794e375af61d62bc41e0d736f35c53e1ff44",
+      "sha256": "a7c826076f71ad597d263e78a5c00941e210ecb60fc07d6112b07146de72d6a1"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic_glow_powered.png": {
+      "git_blob_sha1": "ae0b2a69f9c7ffaeb8116f61b3ba48d35f67cd18",
+      "sha256": "7c6c2c822c3624354cc7f27c4ea486683a542a14afe66e41501fe5c25ba2866f"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro_glow_powered.png": {
+      "git_blob_sha1": "82186a9c891641214315f5055208d2223b3c8fcd",
+      "sha256": "662425f5ae3c9932e0dd736b30d8bd72a19d8d043437dd53ea387b6869c38ace"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro.png": {
+      "git_blob_sha1": "e242061016e1380a32f6ccfebee2943c0b9f87ba",
+      "sha256": "9040f7c283b9f759168e67f10b4e0d78ac9564196185ae8d32fb11b116a8e41d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro_beam_outer.png": {
+      "git_blob_sha1": "a6793e8ae0b75d3f6920aff90d5abb0e3c86a42b",
+      "sha256": "dced82a42323d7f4bdeeed1a80945bae49d6f1936b79e4e0f5507a8baa3ada74"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_beam_inner.png": {
+      "git_blob_sha1": "1569559b6e71ceb750e3bf3bbc98d1b17abd1dce",
+      "sha256": "ecbd7defab27815f29028342c86c51a64bdb5c48aa886a17f04f4dbc906564c2"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro_glow.png": {
+      "git_blob_sha1": "c83f7fb7925336f9faf82f4acc861968e489f795",
+      "sha256": "784cf1e7b64df7d1313f6557ba8d631f4b809e4f621da3568dceb5e41bda07d7"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro_beam_end_2.png": {
+      "git_blob_sha1": "b5faac33701ef339947c676ef7b007e954ab5f50",
+      "sha256": "3813d0aff6de3e6061cc42a196c908fa8ab1b57bdd0b8f62fab709c667306177"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla.png": {
+      "git_blob_sha1": "a58242beb68b2b70fe6e71c0358d44650a352bea",
+      "sha256": "3dc75c3e496fe77385d54045b75bf851ad2db124f493d504d92a23d8e80b29da"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_beam_end_1.png": {
+      "git_blob_sha1": "f8d826ca99dafb471c15cd2ae80b7901dd9658d7",
+      "sha256": "6ec4c2d69067081c0671c76560635034e82c7e90df8670a678688ba6bd7e77d2"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic_beam_end_2.png": {
+      "git_blob_sha1": "8299d2a1fc7df080221c3cd189b7819719163c6f",
+      "sha256": "917008259f88b9c95804e11b9129874dc859061583a5856537cf8b9f0e4b5565"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_beam_end_0.png": {
+      "git_blob_sha1": "1184e6fe8df3333c8cf6ff48291c2e6d77717cf9",
+      "sha256": "7990a1b65b175b6b843fc7dfe860ae07296e4a1cdf36d6960c39f1d7be6870e5"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic.png": {
+      "git_blob_sha1": "58cb5e54ac268ca5b0a20f592c3ca38260ae6784",
+      "sha256": "ba48449f36b3ace4104ad5fcbb5cb995bc41ee2ab7532ea6d01356c8645f40ee"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_tectonic_beam_end_0.png": {
+      "git_blob_sha1": "bcb13af6288161f031518cc97cfdc00d7b1990d3",
+      "sha256": "89e72138744443b065745b7eeb8fdcf4293919013bd69756a6a9042d738da14d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_glow.png": {
+      "git_blob_sha1": "7e6da19d7a95798e8c43bfb93c1603ef3fe9c5f0",
+      "sha256": "4fa89622ce04adde6466017bf1006d288e8a33ac0046db62211d191d12ab1652"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_beam_end_2.png": {
+      "git_blob_sha1": "b5b07b9bc59d05e767cb94cd546c2bc6553475b4",
+      "sha256": "a9118fcae85671ee320e1794e4b0d932c08ea5f4f95224ebb919e45246889841"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/tremorzilla/tremorzilla_retro_beam_end_1.png": {
+      "git_blob_sha1": "d1247d134478f1457490a715c643060129c90aa4",
+      "sha256": "92081413922638347c9b30e686db3ca36bcfc235fa17eb18c2ee3a118a8106bc"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_buttons_0.png": {
+      "git_blob_sha1": "9889ed4d1dd8834b17609a7159fd60e797b1b69a",
+      "sha256": "72e9f571b0a44abe371c5fff3c87e09780f2f59a2589f88682f0e4c51dd4723c"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_glow.png": {
+      "git_blob_sha1": "7a008dd093a71899efdec77d2aecbd6b0589d22c",
+      "sha256": "1b99603cd9cd04b55e863ec0c83e8a74fba3c3b1f5c478c7f3461bf65b0b5ec5"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_buttons_1.png": {
+      "git_blob_sha1": "7cbad09c8feff66707fddce8553154a1157ef8b2",
+      "sha256": "4c85e9749ef2ed07c325631f53d267d28c3ff8491773d78df6556ef04c99dc5f"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_buttons_2.png": {
+      "git_blob_sha1": "1741c09654d582b2370ed5da95434c93676b57cf",
+      "sha256": "4a7facc64246e3d932a3be897879c04acadd72679a8679bc00324b09ac49d2d1"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_glass.png": {
+      "git_blob_sha1": "ca9fa8f108eefbd8ed9229260e79e4a3fc5a0273",
+      "sha256": "4f4fa6674a6d6d894bbfcbb00508377f204d9a42a9301070ddcd29bfdf4d6a8c"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper_explode.png": {
+      "git_blob_sha1": "8be16a977bb73ce775520530b1e203a52dfa21bb",
+      "sha256": "6dce1fcdb55d33242211c6ef464d80201a4f6aae6286493ec91c5b57e22017ab"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/nucleeper/nucleeper.png": {
+      "git_blob_sha1": "936384be80f4bdfdb5151a2b791953d34ad08edd",
+      "sha256": "8b2094c61dee225dbc40fbd220cbe1e8b41e201860ecc482f8a39b2a7746c352"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_mage.png": {
+      "git_blob_sha1": "c713e9f415fa90363b41d9f6ca32fbc55a916a27",
+      "sha256": "7c240e38b94c83260b471155291db6fba0890ef882c6bdd79132c92ca034436f"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_knight.png": {
+      "git_blob_sha1": "81b394bc654cb96ae35438ad611727b8c63c0d63",
+      "sha256": "96fac8b7ee4c462d66b34f82c31385ac845c5dbd981efb9c85412d69026524d1"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_glow.png": {
+      "git_blob_sha1": "ce1022ddd77b3ee44437798c9b3ac6512bbd8c3f",
+      "sha256": "f312f9a377d4ccca5efb5c96f9856beb48a20a95c7aec9528de7a8217e37be76"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one.png": {
+      "git_blob_sha1": "0929a9ddafadd41f69490bc3dfaac4f62a1dabfd",
+      "sha256": "4df9cf09738a17c8f9d2f824a34b5d6959e2578fafd7d71cce08064be1b8dae8"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_knight_noon.png": {
+      "git_blob_sha1": "0476143caeda503b2c654044fe0527109c287b33",
+      "sha256": "8002a1518cafef66cdca5834070298bc3e1486751feeaa86243370ed4cd10afb"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_knight_glow.png": {
+      "git_blob_sha1": "224254a9f44176d5d629526e4bb3a0e5f0fed217",
+      "sha256": "8a7b30d4931bf5b664873d2df897fc34f0427d64cdd49092b452674b9763d861"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/deep_one/deep_one_mage_glow.png": {
+      "git_blob_sha1": "8ac8918df0230b1e43240fa38c37b47eacadc045",
+      "sha256": "8b7891e44444bc6187e353c427b20cef72215805eeff35ff53fbb9622b54958c"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_holiday.png": {
+      "git_blob_sha1": "48d3598a0352a5bc4618ef58049b2cddf127cc35",
+      "sha256": "bcfcfedb417f960463a863392d259ba35cdf12f66e1394e21fdd9260c5f2de01"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_blank.png": {
+      "git_blob_sha1": "28ddc8a7445d447968064205f96778793102e7fd",
+      "sha256": "33a943cf6ef555d5235d37e5891eb0ee0d4c504b12f4998f0ae6dd4892a2f498"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_3.png": {
+      "git_blob_sha1": "7314106452c58e81613858f0fcb4ce3440b7af1a",
+      "sha256": "c65ac2b2870f29fd68fd11f7f7e0c56924d979911eb78a8915b1be8d18dc25af"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_carro.png": {
+      "git_blob_sha1": "fac228f8e760f4c3c175c59fdcb74c8274133828",
+      "sha256": "f37380eeff4c5099f29ab54a611d9ae5ff99df15ab9667bccf3f718f40a4905d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_7.png": {
+      "git_blob_sha1": "5a7badd3cb1ffb7916621f9e1113cb37e60c81ff",
+      "sha256": "feb6478b49257c546e307626b6848c8a59d8bd99ec49e840af3aa8b39ecae15d"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_6.png": {
+      "git_blob_sha1": "642ed41219c475469397a6983f209eb44aed2502",
+      "sha256": "c8399336f7687727c5a980ac360e5bb01a4c3961ac12e62d32636157f23857b2"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_2.png": {
+      "git_blob_sha1": "9dfd12b33b4aaeb30ec7a38e703cec8030d59ae0",
+      "sha256": "ae21b989c2965ea1573604c31bff584e29e5e23ff806ba33189bfd03fbedc34e"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_alex.png": {
+      "git_blob_sha1": "31e77b562ca76f29aba78b355b8daa6dcd63898a",
+      "sha256": "387ed84cb6a281547a810dcaa75db4d478c11ea4ef7daf3141bef5009c21f559"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_5.png": {
+      "git_blob_sha1": "cede765461443245e79cce0874cae02d42bd5043",
+      "sha256": "3a710b64760585c177829362af284893aa1b9971dc313f772cc7f3f04a243e40"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_1.png": {
+      "git_blob_sha1": "e75c725ef75d02b457587449b89f5848ea46b5f4",
+      "sha256": "d23fee0014d64d6f9e3e0d41ad6287c9e16ba3018c1e8764be8116270a970738"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_4.png": {
+      "git_blob_sha1": "161ad661a90edd1d46d60bcc3697857c11661d4d",
+      "sha256": "0f05c49a17b7c6ad9e0ced818749ddaa53a4be13f614ac6139921f0bdc2f7dd3"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_8.png": {
+      "git_blob_sha1": "a992d0d09010599694df869aea62778305f3e3de",
+      "sha256": "ea647407ee90f064efe971ec0c41b9853db38a436f41615f8a1a045151c35572"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_gatetoh.png": {
+      "git_blob_sha1": "3ef0cd126916c1d040aee4b3b2cf8a941715c09b",
+      "sha256": "5c26733da2c39f1a8d9575f252f6992106b7fc707a7765585355c823355e1eab"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_vaky.png": {
+      "git_blob_sha1": "66bedc00c61e774889d19b7f393745f4a7bb8d0d",
+      "sha256": "882ad25be7b0923a5d4b00881dc9fbfbb197bd3232a49c68eb13b11b6b0a5938"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_plummet.png": {
+      "git_blob_sha1": "658293ff0b5b1c13ec2cc998ce16b4788b17adf5",
+      "sha256": "adf445e10a288c4c9c4ae03e9a974c9c7f6b403293321d75aa6fe37fd0707511"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_deno.png": {
+      "git_blob_sha1": "d5536f235813afe8f1056f10b83a16018d853628",
+      "sha256": "661770b6f08a3fd02242b5390a5800bfc8f0b4ffc5fbe6274a8a13e959af24f0"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_0.png": {
+      "git_blob_sha1": "46a09613cb6c4f7fbf6a4c4bc58749830b943bc9",
+      "sha256": "a5ab3f9d80583a337b4764f9b5c0c057b9361653552ce944aa864be8908e4cab"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_team_overlay.png": {
+      "git_blob_sha1": "1fcaf7a3f4062d9cbc10ef505d5f8f0127700b63",
+      "sha256": "6c862694d694d6b635a9f8b83d475b2f5093e933c6a59c7046c2c48272a9923b"
+    },
+    "src/main/resources/assets/alexscaves/textures/entity/gingerbread_man/gingerbread_man_pinky.png": {
+      "git_blob_sha1": "00eaa18527e39e3bf3b6ce1ca5a4dba50a278f6e",
+      "sha256": "cb4f9212df9cccaf43cc34304c3bb40deb1b45b8b6d424ad095af16a8a25436a"
+    },
+    "src/main/resources/assets/alexscaves/shaders/core/rendertype_ferrouslime_gel.vsh": {
+      "git_blob_sha1": "600b1239daa8590d03889e4894de53124b044300",
+      "sha256": "d9b67caf28b2001d5ef0d31358230a9ef76cf3643d168411fadafa0b3ac214e6"
+    },
+    "src/main/resources/assets/alexscaves/shaders/core/rendertype_ferrouslime_gel.json": {
+      "git_blob_sha1": "d1b7a4e4aa4268e96479940661ecf09b52093b57",
+      "sha256": "1f9616adfd4bc90f4a4794f394ef09d4049e26e019e3f8f5bdee0ffa37754b5c"
+    },
+    "src/main/resources/assets/alexscaves/shaders/core/rendertype_ferrouslime_gel.fsh": {
+      "git_blob_sha1": "9f35ffb944d5bdb34c3b0ea65d76874c93bf3cb2",
+      "sha256": "05af797273b1fcba6a9c447c25dc9097cb22becfd4621ef01c43be15f79e599b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/ClientProxy.java": {
+      "git_blob_sha1": "57e194c15a2050625070783ed7decf88a29849a0",
+      "sha256": "77598387b57d19db19305b650ea5a1d2aaf4d8643cf4e6ea136d3cf314203424"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/ACEntityRegistry.java": {
+      "git_blob_sha1": "79f525beeea0cfb6a84e716263b082c20a8e699c",
+      "sha256": "88c7bfb5a02eb80f3b47e5a75f167fa305aba3e41f27eddc48067fb35b753058"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/NucleeperEntity.java": {
+      "git_blob_sha1": "3f172e529db276799e38a3953a8f4dc4bdb3b5de",
+      "sha256": "4f2339be646ac1b926338aa0bd3edd1e8ed74ecd7ef2312d374fe4d96f43c4b0"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GumbeeperEntity.java": {
+      "git_blob_sha1": "d1541a95992fd0bb0f1994b5bd8471bedd38eff5",
+      "sha256": "840877ebbafdfcfcc3b0dbe883b8cd8fae1c8115654ecc7ede6c6bc6fc243094"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/LanternfishEntity.java": {
+      "git_blob_sha1": "70e6b92f352e063c4d841be1cf001fb26d4aa735",
+      "sha256": "963fc3fb43246199bfec0e8595872cff9c13df056bd3bb81c1fc23915d07bec6"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GummyBearEntity.java": {
+      "git_blob_sha1": "2c4abf40a734d82e0401f560de369c837c2a9fff",
+      "sha256": "b63b764d71ff91cee7a47c6267beb7576c95213b1eb05125af31b6e1263b9abd"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/VesperEntity.java": {
+      "git_blob_sha1": "fee853dced5382c08f1f28d99ba1856b828d41db",
+      "sha256": "ea3dcb098fb8877fa50ce3b55d5f5d84cfd0a57f33c80e5003602fb2245cdffd"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/LicowitchEntity.java": {
+      "git_blob_sha1": "1532b932d59d52beadc0953bd894be13af778662",
+      "sha256": "063bcfb422609a0f25934deb5a93995afcb280b1635255ad8b0f66e5fcbe35ac"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/RelicheirusEntity.java": {
+      "git_blob_sha1": "cd912c3ac927fb9888e7745ea152dc9e8d8c19be",
+      "sha256": "477e0f4a898ab34b2770cc9cbce6f4591d17f9d376bed23ccfaef7b72e76cb1d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GrottoceratopsEntity.java": {
+      "git_blob_sha1": "7a080c320892bb3c17f0d83c90377214628390f4",
+      "sha256": "e10f789a51d3fb110c60dceb8f2242ed487947cfd2781deb58622cee68d1e1ec"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/SubterranodonEntity.java": {
+      "git_blob_sha1": "5dadc2f899de07848856006454818bc119cf50d8",
+      "sha256": "55a7615e857bbee285c8f10bfbb1f60ad6b0d3db9506078876be06f1b9debb86"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/VallumraptorEntity.java": {
+      "git_blob_sha1": "49ddf18a6a711c59eb94b7dc1a718f055ab63e00",
+      "sha256": "289639ccaceffdfd3d895e111f54272a8d6b3580d5a8b62a551f5bc1b0e2d177"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GumWormSegmentEntity.java": {
+      "git_blob_sha1": "8593af749d4fd3ef77e8c405050e524bf3346e33",
+      "sha256": "a4017fd37a08951363c8c9b3528936d19e80168837d6b7ee60eacb76d017b8d3"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/LuxtructosaurusEntity.java": {
+      "git_blob_sha1": "8d5a3cd303cc9a3754316022a2e261d7352c4aa7",
+      "sha256": "3c3102135a4638f010f75997ad43b82d474084d698b004ba411b76ddb8aeaa2d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/CaniacEntity.java": {
+      "git_blob_sha1": "30e3950dc904561316983c7e60f2b5fd2885e62e",
+      "sha256": "f2ec84ec150abc56a0a540e42f37a9e263f99dd01f71bc898f536d48d0fac84d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GumWormEntity.java": {
+      "git_blob_sha1": "4c95905887b2e52ab1daa593013e63235b52f8eb",
+      "sha256": "3e39b27087c17e4bbc5140162ac5debfca81687b8c94c1591da8742d1c1815dc"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/FerrouslimeEntity.java": {
+      "git_blob_sha1": "7b7c230e7f3e48b0ea45de010a6e2c94287fe785",
+      "sha256": "0a3fc898f3675b197efa0ba73da856b0cf26a6527a95fb895ae158caee882100"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/SeaPigEntity.java": {
+      "git_blob_sha1": "1aefde9dc951d3f42c776a4d172d59fc9acbf2f6",
+      "sha256": "b868dd8f272b3872e310d77931a8e71b2eea00400d93de97c3229994a532eb82"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/TrilocarisEntity.java": {
+      "git_blob_sha1": "266df05980a90e8eb4d70cc3bfaaae8941656a08",
+      "sha256": "feeaf260abcd65eda8db0d55a23dd8c459100e81af8a3461f162ff2449260056"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/MineGuardianEntity.java": {
+      "git_blob_sha1": "5d7d96e708492b733e06689b351e43dc792c0955",
+      "sha256": "7dd97e50492013b0d37a981fac57a118c1a6aba26c30c53e1066faef42c588d8"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/SweetishFishEntity.java": {
+      "git_blob_sha1": "7e813d40223224cf69bdaafc2edd36e899e8e419",
+      "sha256": "9e8e29f398f69948400c79dda54a08cf7e4adfc17f1bf678add1356e08e2a1c1"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GloomothEntity.java": {
+      "git_blob_sha1": "44fae46445165168673a07ab6b34c960fee851f8",
+      "sha256": "590e32bcb7f9618aed6cf843bc4a66241c83598eeef0f6235b5ecd1d40366dc2"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/WatcherEntity.java": {
+      "git_blob_sha1": "afe1d10a0bebbdab3eaefed33d43e8c843125a6f",
+      "sha256": "f6705c88418e484aeb869b968182243c502753a313219a5dc55a3c74581a00c7"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/CorrodentEntity.java": {
+      "git_blob_sha1": "ac8b346a46965b0a33798b46ac4c7ee58989172c",
+      "sha256": "21a6df0c172606e468f7685b1d112026fb04a13af5acbaffca53c92a11e78328"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/ForsakenEntity.java": {
+      "git_blob_sha1": "b28494245a53fd5e1582231880a5995509431542",
+      "sha256": "7fa7182b102763bcf093b559e429abc90a6399792ce5064eb564c53767a09d9c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/TremorzillaEntity.java": {
+      "git_blob_sha1": "bf1e98308281855a0e4b44f414966232c7bc7c57",
+      "sha256": "e2a1628b3e159672a41c152e5683ae8fb426ff66fc8eb871d9f1af1bb632d8b6"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GingerbreadManEntity.java": {
+      "git_blob_sha1": "e63c1eaf5484ed0ce1a94ad53453ee4cd992e53d",
+      "sha256": "5bf21fab052a3a58fd7aa41301427687f9e94e351a8bc5f6ae5c37c67159e24e"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/DeepOneEntity.java": {
+      "git_blob_sha1": "77ca4c46a550823dfcf78f478dc9dea2c48f7d12",
+      "sha256": "22db42892320e4790f7cfa45b8238a4e4025addc61e33ada8b94914511ec8f0c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/TremorsaurusEntity.java": {
+      "git_blob_sha1": "ae2ae09ba1a87a4a26330db7a80f69c68aed693a",
+      "sha256": "059dd94a701acb9ee448094f465b836631da92f34f7ef85b5932ce29f883f016"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/UnderzealotEntity.java": {
+      "git_blob_sha1": "9fe2db143882f691dfb281f20a1d42bed3ce8d01",
+      "sha256": "ba79e5d2514e3403902948773bcb4c82f6aee55c4d2551e3b845afdef1f531a9"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/TeletorEntity.java": {
+      "git_blob_sha1": "6cc6eba0e2c09595beb8e2e1258658d66daa3a2a",
+      "sha256": "43f6c556839f81e39044132c9cb63216b03f2161c1b738820085632ecd79296d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/RaycatEntity.java": {
+      "git_blob_sha1": "c9441e001da8d3f576ac6be708b2f8f1320d1e52",
+      "sha256": "6eb1b2aca3d3878a257dea4468dcfad5d6d76bb8d17691cf067c244a63666973"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/HullbreakerEntity.java": {
+      "git_blob_sha1": "f4e026a71b59fcacfa4a0e6196844df6b24e7c36",
+      "sha256": "1361a23abf8938f41b570f20ad506b11321d75e3e93299d45839eee6100f6c20"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/BoundroidEntity.java": {
+      "git_blob_sha1": "bceb9d38ce56aba6bcbc9eeff3c4beda66f1f4a2",
+      "sha256": "781f37ae5d4d6aa7f69abf8c10c7690266fe17c0ea05e42e463ed1ac602c25ed"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/AtlatitanEntity.java": {
+      "git_blob_sha1": "f8dbc03d8f2e77dd0039010dbe6194649eaa2ec3",
+      "sha256": "daf194a980fc6994a046d5535ed8c185673ff77de9ea6eba5a26f2cdd65abcec"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/CandicornEntity.java": {
+      "git_blob_sha1": "b0b52759b3c905a95e51eadaf7a3dc7093a6dc30",
+      "sha256": "17e26a5111f47ecc132148aa35a8e8a619b4bf68c157f8ffc16835c9ce25afe2"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/CaramelCubeEntity.java": {
+      "git_blob_sha1": "a3b8abd9d87d0bb08f7aeb6b70b80ebe0614f2af",
+      "sha256": "84814f222c55974a4f25d78f04c2e2e55dce6a7bb176d5a200ff5edf31edce91"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/BrainiacEntity.java": {
+      "git_blob_sha1": "6c067a203d2eb265d6a8a8c889ae6874e17db27d",
+      "sha256": "cc190421bedc89b163dfa23bce71ebeec5a252c1a30238bd905f9d3082834bbd"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/TripodfishEntity.java": {
+      "git_blob_sha1": "d066cb07a87b4843f65c8df6523ae689f2331bb8",
+      "sha256": "b93906c7a8056e5cac7795e9d0b983a8f9b2f4c1037bc02280a16f0f087c4f8e"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/NotorEntity.java": {
+      "git_blob_sha1": "76e2b57f952cab7dd8db393e153729bb7af3c946",
+      "sha256": "1a73e0c1b6e05b734481c5b971a1270a008a4d000df3a58327ac27e5c61999ff"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/DeepOneMageEntity.java": {
+      "git_blob_sha1": "bfc9d0fbfc822cb7d518d79a4e5af19abc03f353",
+      "sha256": "5c46f5ee434a263133f8503fcda540bbe00737e1ac55ce6d977ef7663395502b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/DeepOneKnightEntity.java": {
+      "git_blob_sha1": "9f7cdb8544c15b086fcea3d9b5363714c1054c84",
+      "sha256": "b6f377b8905904b6936148fe1da5474deaf47781ce28934b4784ef36da77aa46"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GossamerWormEntity.java": {
+      "git_blob_sha1": "b8e64bf64fed00deb425a039280f82b98af5fae6",
+      "sha256": "4c9d4de7a53ab0ee4e65c999c3d235fd5534354cefaafc29977d96e91c329049"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/BoundroidWinchEntity.java": {
+      "git_blob_sha1": "d5cc023da517d6cc2f57c5011e10b4468061034a",
+      "sha256": "8b50b0017b178187f3d34d2ff7c06646887e3aef9480dc27efdb0788462de405"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/GammaroachEntity.java": {
+      "git_blob_sha1": "6b6c9e4ee4d0215fffc79ba17a2f31627f940d8a",
+      "sha256": "fda745d181a6db9fb5ea4e88f7638efbd66948ea96cbfc4dfc21cf4c930ccc46"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/RadgillEntity.java": {
+      "git_blob_sha1": "35199743e0fa8c2b021ac30df9af30b1107f6c5e",
+      "sha256": "2db04db66b8499ae4340188db10cb48a4ec12a4157874eae77af7e1dbc311d83"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/server/entity/living/MagnetronEntity.java": {
+      "git_blob_sha1": "a97aaabde747fce07263921aeba8d504a3b5c2dd",
+      "sha256": "d7cab29abd780f4fcd969ac159741bfd86e17528d91ec3c9f6f52d9bd0470186"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/ACRenderTypes.java": {
+      "git_blob_sha1": "62f2402cdc81aebe14a6226bd181e5223726761e",
+      "sha256": "e6597c5896663bf0291772602c51bbc14044d95e16a37ad764a912d1ed8c8d24"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/MineGuardianModel.java": {
+      "git_blob_sha1": "f9a1d9e5a434f5b4fd0304c019e6712845c74e78",
+      "sha256": "df0fc53360b3f856518afb2bf8e71d7a1a10919e1c3245f05f21e1722dc5d4e7"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/DeepOneModel.java": {
+      "git_blob_sha1": "89882e8908448a0fec932f5404d663f35822a064",
+      "sha256": "7fded83bb448e9151c170729cdbbbc09dda5edaed234c9e6f05436c9e7999185"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GloomothModel.java": {
+      "git_blob_sha1": "c7fcee0e1267653808a0bb4176c39a3014ea7412",
+      "sha256": "e959f927745c06f23d767d63b01cd635ed270f47e5aff1589a468c1626167a26"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/WatcherModel.java": {
+      "git_blob_sha1": "d7ac7a9f1487293d537a076e0cc5c26ce9d42f24",
+      "sha256": "cd62249177df7460bcc97bcb02f9cca3b3e36607866e5cb138502ce216efdd74"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/HullbreakerModel.java": {
+      "git_blob_sha1": "f2c1770a1859004320b6226883c2880520a2c76c",
+      "sha256": "29c50b56b6a28f8a3e9f29d6882b996c65debd21b1b7d68ba60f7343e7b42874"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GingerbreadManModel.java": {
+      "git_blob_sha1": "446b3d5761defd76865e8ed8811320fc12bd0cae",
+      "sha256": "8cf1b97d0c20276057fa2beb987674b00c235e39e3931bea987c06bf0c32d95c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/DeepOneKnightModel.java": {
+      "git_blob_sha1": "827965f7639fc36fb716305af4238e96c85a4e94",
+      "sha256": "bdeeae503e4738fb1e701e7edbf192949fe087a44ac763d2fbced6fa033c5a5e"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/RelicheirusModel.java": {
+      "git_blob_sha1": "8072a48beda61b73c363548c608dd0c7a858ff0b",
+      "sha256": "1d5550464323c9c84b859af60f87f53f903ad26b85e0ed1c06594cec2271d1e8"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/CaramelCubeModel.java": {
+      "git_blob_sha1": "013882568ec4c35fca6fa6a06d76085cc7807068",
+      "sha256": "57ae581ecc1278e7dcdf6cc98a05bb606f7deb5d9c424ce6ad356b1c0efc13af"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/AtlatitanModel.java": {
+      "git_blob_sha1": "2ccb910603320853e676d29e535bb491c0bfec22",
+      "sha256": "201e42252ddc87ec036dbf2820d287adb870dceaab76318b075eaca2f3803396"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/TeletorModel.java": {
+      "git_blob_sha1": "9ba5d09ca27edb68cf87f4b09078fa9a99048789",
+      "sha256": "6b2073fbe490cea3557166be27a21f6d3e5dba1d6ce2636d738ef6aefab5683a"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GumbeeperModel.java": {
+      "git_blob_sha1": "6f368e29bf2804c7a8f4ef009e9c5d613085e2a9",
+      "sha256": "64c2dab11466b8f4b99c19b4c52a5abe3ab390c6ee8144f40d6f86b5fc8a2c80"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/MagnetronModel.java": {
+      "git_blob_sha1": "c350b1706b2786e1833bc4bd528b34e9cc6c5561",
+      "sha256": "76faf4474bc1169971004d37ffd5c40643a49355094f3253d655e50defd43d97"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/LicowitchModel.java": {
+      "git_blob_sha1": "f8a6620bac74226950e70f010fc2901415cfbf5a",
+      "sha256": "ca14f8025f7d3e7d377edfdf490f7a7491d341a825125233bb4791ab743d6b3f"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/CorrodentModel.java": {
+      "git_blob_sha1": "259ef25360b9cb83462cc42c00faf1d6ac8b74c7",
+      "sha256": "8016e47a9746d10dca99d392f2e47dbbb2710ef915081d242db878793a78f911"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/VallumraptorModel.java": {
+      "git_blob_sha1": "726afbdd1ebf44a051b985a7b3b84bb4e64e6efc",
+      "sha256": "4a61185400f137215c03e8028d45a1b5060c2ec2f3396a0a8375c8281ed78781"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/TripodfishModel.java": {
+      "git_blob_sha1": "0f31b0c69e70aed3f5d3e36e0918713ca8eaf0f9",
+      "sha256": "7080bc3f6275dd5846539ae103a19ce3d79398c1dc5fb5b12b43ae0502f56869"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/TremorzillaModel.java": {
+      "git_blob_sha1": "983afd3c3e13768fa68c4c95ed530fe345c267ff",
+      "sha256": "b4cc363cf6fa3e4d1d990bbaa5d6c8f887b6e866a9c2b3e1641433f8ac64beee"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/RaycatModel.java": {
+      "git_blob_sha1": "f9060c56cb30e40fe33c0330f27c67ae2089dadc",
+      "sha256": "a9b1475f4b5a83009f8438138a8582fb43d7e1c3f12953973b7726875de40fed"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/CandicornModel.java": {
+      "git_blob_sha1": "f804a3fd0455fea2c8407e7a2a35ae7f339102e5",
+      "sha256": "fe2e837f39c4d02d4c9d76a387b0951e6add5d3ee904c531f0b513bc03128d6b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/SauropodBaseModel.java": {
+      "git_blob_sha1": "45f0b9d79850b3e2eeef376673d5da7ea0c11835",
+      "sha256": "9e6644e96f84e984c1ebe188d30504f2ea2d828355f81713a195ab1e1f7e1a11"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GummyBearModel.java": {
+      "git_blob_sha1": "59d4e513690cdd1f69b6029d818bac1ff295f782",
+      "sha256": "3454d90faa7143dc58d7dc5afd7349cdccaa83abe311986e57de9baef1819cf2"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/CaniacModel.java": {
+      "git_blob_sha1": "a1a5a104da7708ef0520d9fabc9b0e7fdb56acdd",
+      "sha256": "1005fa1de6fc2aa2724daaa0e4c8cb764ecbef9537e8f0846d82e362ed2c8e76"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/FerrouslimeModel.java": {
+      "git_blob_sha1": "3f92730dd6548aec65a5379adf4cde5aef5a9fec",
+      "sha256": "79c8be413b8a07c956155c60f0d695a7cf30cb31a8f90eae4283438b24cbb8e8"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/SubterranodonModel.java": {
+      "git_blob_sha1": "29b589fdb95a0a45527c889362a0b3826f9dcd12",
+      "sha256": "7192f8e56356998eaeb8699eab6e2fcddd22bf050f2e02e5d533c7b936c6e387"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GrottoceratopsModel.java": {
+      "git_blob_sha1": "4a64a2a7a18f3373f9816d92aa7bea2a699991fa",
+      "sha256": "ce2cdd63afc1a5baf976114478a91036513fd86e7994ed13e454e6799d8d2091"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/ForsakenModel.java": {
+      "git_blob_sha1": "26045861192eb03c2ea7b67edf3a373c5bd93d70",
+      "sha256": "61b242141fa8479457c211fff1ce1c244a4072564620282aaff7293860a7a535"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/TremorzillaBeamModel.java": {
+      "git_blob_sha1": "ab2258a253e0723e97414ecef34066ebf1ee7fc5",
+      "sha256": "c88679b16e5d8fb92fe7cd5fea65de3dd158004f66a991a02aaf313918e2d64c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GumWormModel.java": {
+      "git_blob_sha1": "62506eb134d4cc0685ea0a797e2a5460571e579d",
+      "sha256": "c6d43ff6e1f360fb17b06781505588ad10100892d0546773a3cd70697a182396"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GumWormSegmentModel.java": {
+      "git_blob_sha1": "8d424cf8cb1ee4612995576521fd70c0122a4f37",
+      "sha256": "3da8dd1331b033f7bdad0a7960f35072364851759eed772600b777b29fe74edb"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/TremorsaurusModel.java": {
+      "git_blob_sha1": "7e3c98abe4d88cc5ac7be0caf7554931ecb814ff",
+      "sha256": "ac27932d6fb2caf5110481db7c5e9e7a2f456253b0a3d285e3709ea7c556ee0c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GossamerWormModel.java": {
+      "git_blob_sha1": "60eb804c7f010191687d32165a2279185e1ba12a",
+      "sha256": "9a8af7050a8f40b084431fbd6bf15129fdfe052783477fd266672e0c0d032d12"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/SeaPigModel.java": {
+      "git_blob_sha1": "a1bf1fd26786ad6f1c3bb376afdbf2b1c4fbd538",
+      "sha256": "ec60dd17473d89ab91d283fadcb41a9e959b7e3f941d6549c58b7bc7f010f182"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/NucleeperModel.java": {
+      "git_blob_sha1": "bcbefc3ab1ab61aaf89e9dbf5df7ad1a057ae54f",
+      "sha256": "eca9b9786b0f945fb62a7d7989a41087ded6468bfe7229f6b20cc953f0341373"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/LanternfishModel.java": {
+      "git_blob_sha1": "17214d6f7c23ac26711c9d438196588191ef74d0",
+      "sha256": "841489310afd66c448e7fe7d701b980104b59a54fb1611957fb043794e81aa8b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/NotorModel.java": {
+      "git_blob_sha1": "965d1db0b4c3b59061a3309609da6270f59b94b1",
+      "sha256": "ead8bf9c8d1862f346243869a7b7935ba9b9a7e11415ccebe40f98b839f5004e"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/DeepOneMageModel.java": {
+      "git_blob_sha1": "caa93cfc8ebb4aa0aeecc3c5cd34524628deb29d",
+      "sha256": "da6304954a19098107c16224172ac162f1c09fbe6a79b7af6e7531df2d9deb9e"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/BrainiacModel.java": {
+      "git_blob_sha1": "436676af677f388f63fd6c53cf196a9b4694fb0f",
+      "sha256": "71e76118659c5484da844e58f62b0ea301f1857a274367eff800a3eb7bad87e7"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/SweetishFishModel.java": {
+      "git_blob_sha1": "01d283cfebf34ed403c527b050d085a800f31a9c",
+      "sha256": "49284f420f14fc0d399d683afdb70b8d46b73470bc25f085c9133251ffe5cc02"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/TrilocarisModel.java": {
+      "git_blob_sha1": "4ab34284413e72a8cf2d28ad406c7a211b676aae",
+      "sha256": "385b0438b6283634e1865a572b4ff96e72af0d3f5ebf5699b3b869e5e1e85a02"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/RadgillModel.java": {
+      "git_blob_sha1": "c0b854505b3eb2a579fcff0c08f4bfc8126ed2bf",
+      "sha256": "edd2a80d510cba7349c59af43190f3568419bed5e8781cbf701f5d58aba765ae"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/BoundroidModel.java": {
+      "git_blob_sha1": "0dca2e8445c0225139104bb58aae40a2bfe477d5",
+      "sha256": "4338e95883971a458b1a404c25aa1ddc32a950c2928a477d19cf9c4a69260e4b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/VesperModel.java": {
+      "git_blob_sha1": "52f656311cb1ae40cd31b5533fcd25129515ce7f",
+      "sha256": "45c4082d389ccabae0aa8c519a00f1313fcc3334a46ff0d3d8ab4bbe9ba0b8da"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/LuxtructosaurusModel.java": {
+      "git_blob_sha1": "2e9bde7ca85a6a0c47818e00e54278aff85c35dd",
+      "sha256": "641802edb918ace33461ad883507a8bf05b669a9f1b2fb6af319472f9a73a3a5"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/BoundroidWinchModel.java": {
+      "git_blob_sha1": "72a7dcec9dbad89c5ce01985ecaeca53ef7563f8",
+      "sha256": "4f56be617c8fc50eb49bf4661171dd0c4c4b50b74b4809d54fd033f46580e5cf"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/UnderzealotModel.java": {
+      "git_blob_sha1": "304184d3d5c2d97547f4d8e757395a161e747bdb",
+      "sha256": "9721336325b5d398041fc5a64cc1f89a6467984a7ce4d6cc22bd231813f426ac"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/GammaroachModel.java": {
+      "git_blob_sha1": "36c2eebc367a795f8c40dbb9f58cd6f267b7375c",
+      "sha256": "414512fc5b1ce421510c0a74a83c8abe9e13669a26b6dcbfd13d14a84b0ccd70"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TremorsaurusRenderer.java": {
+      "git_blob_sha1": "7c7d8c9980f48e266268365d9c7b9db252ff980f",
+      "sha256": "8df4da80f8ed2990f191636ac8d79311f4fa9f4a2ee46066088622def8d3be8d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/DeepOneRenderer.java": {
+      "git_blob_sha1": "0fe88911785f294800bbdd4c902131ef2bdbb02d",
+      "sha256": "7acf98aba42be524e75b995862d7d2ad628c932a1672a8d7a75f049f10747ec2"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/BrainiacRenderer.java": {
+      "git_blob_sha1": "1d25ea9d25604ba75b66132e619124f2ee02f444",
+      "sha256": "657a01590fc63b6063d7c21610cb5d35a1ef8c09a986d633c873db020a8594e5"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/VesperRenderer.java": {
+      "git_blob_sha1": "a148df54eab6f6587dc258f2da0d96a59b664269",
+      "sha256": "2025b2641b7edd387bc54cba9c22faf8b81a77e7816c28bf08eeff3a6e047401"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GummyBearRenderer.java": {
+      "git_blob_sha1": "758acdc4a0e3d9f2fe96a4332729292ca4fc0bfb",
+      "sha256": "95ad94a35adfa0cab8b7d4f25f236e908feff43e8147a208891e2a5275384817"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/MagnetronRenderer.java": {
+      "git_blob_sha1": "472ab7a899013cae756fc550470d6812405ecab6",
+      "sha256": "88f6d568981061104105e9a26c215b4fbe2836c22af3dcd5bd1667498b15bfe9"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TrilocarisRenderer.java": {
+      "git_blob_sha1": "7154b4537c0d775d2d49384d098fd96b326cf7ad",
+      "sha256": "5be5671f46066682e2e8adb4c14c9d4dc7a296a94a69ea18f84ee513b1044c37"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/RaycatRenderer.java": {
+      "git_blob_sha1": "86bc36dc6b9dabf23b2881ef89f1ebd563489899",
+      "sha256": "149efd94994f1e1d759525c80ba8ccd539a1b3d9d1b9f51483cca71e292eaadc"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CaniacRenderer.java": {
+      "git_blob_sha1": "79bb926060a14c7795ef6280b6f29f98f6634ad9",
+      "sha256": "ff2679ad19ade2de3cf59e61bcefd2f38cd3610ce46d87fb5900cc78091305a1"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TripodfishRenderer.java": {
+      "git_blob_sha1": "16b1ce84942600e1d69f3d4e1a3eb31b043cc6b6",
+      "sha256": "2153736a7d9808dc68326af46bd8195be622657db6fbe78adc04302b9566e671"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/RadgillRenderer.java": {
+      "git_blob_sha1": "838c7662d0d4fb31ac1e098b81e7b81e7cd13c74",
+      "sha256": "83567e996d5aaed0101395dffd03c3c460c1899e19dbdb8a4ac3a2ecd092088b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/LicowitchRenderer.java": {
+      "git_blob_sha1": "8090985afd57b0ea9b42604350959f748bd0c53b",
+      "sha256": "6cb9b0f0dd11d6239b326d48923d91e61948153ca50c7ad2078321f223926d43"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/UnderzealotRenderer.java": {
+      "git_blob_sha1": "ce0d59ace8e3ddc8c3c4b6ae3bbd75a37243e845",
+      "sha256": "9820e688c4d10ea467fc7caa0c5ebd7c7e4510680a363166232d6264b29c3fa8"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/VallumraptorRenderer.java": {
+      "git_blob_sha1": "a0a108dc0d8e7cb956152b96649c1fb09a78db20",
+      "sha256": "1aa194f472c5dc7f786ee0ffbfa6972897477a175916d86317d6e39242d9bcc2"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/LuxtructosaurusRenderer.java": {
+      "git_blob_sha1": "8aa53db5a2d86c6b54d12e3be3e50ae7e5cad8b1",
+      "sha256": "e38babc804922304f7cd7fc113391898e58d267ad50fc578171f2cb9554eaccd"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/LanternfishRenderer.java": {
+      "git_blob_sha1": "014dbb40db06990ab4e62d08e80198d429c6841a",
+      "sha256": "c9763eb74cc4d8a385d4c99acd297a18c350b8337afacf9f57bed0b070050f7a"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CaramelCubeRenderer.java": {
+      "git_blob_sha1": "5d7d7822d83e958306b4d3cab1fa1233063d6e47",
+      "sha256": "fc8804cc7137200a166bb2f6e526fcec09c4ef9cd195a2fb940d7e74d954ca85"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/BoundroidRenderer.java": {
+      "git_blob_sha1": "862281d3022562032b05b608ed15850608d8c74d",
+      "sha256": "f8f5628955197290d419ab80adb382300177c799223233c4914153f8beef2c05"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/SweetishFishRenderer.java": {
+      "git_blob_sha1": "8558fcc696c46e64b6fa747b55700fdd251603ad",
+      "sha256": "1ac4e7f84e2b700c1e5200c4119504a5368621e02c38238ab9fde82ba1285e81"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/SeaPigRenderer.java": {
+      "git_blob_sha1": "61fdbe364dd80c304584d0e73106ae0f7af926c5",
+      "sha256": "5a8e900a686e1df7a06fd0aacf6401502afdbf28c74901ffd0c695edb5aff96c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/RelicheirusRenderer.java": {
+      "git_blob_sha1": "ee88bfb113007d01bf1ea308a86d676e80875974",
+      "sha256": "d68b6cc22a65bb41813fc123a635b884e77bf8686a2642a41c0081c6ae5c52df"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GossamerWormRenderer.java": {
+      "git_blob_sha1": "c450ff42ffd0cbc44b783f5f3b6a6fc6c52539db",
+      "sha256": "ef78ac8a2b665e4049d619a3cd03e3ef3d00977bcfbb138d7a613daaa6900af0"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TeletorRenderer.java": {
+      "git_blob_sha1": "85f5cf844f65cf5564d57a445da0e614c32af2db",
+      "sha256": "492e50f98c7ed310dc5fd64c332f92cf37c68b2a42aecfa0c9bd85b87ac02315"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GumWormSegmentRenderer.java": {
+      "git_blob_sha1": "af8bd3d25db8443149529d895e307ed5052a5da6",
+      "sha256": "1640bf96bfebc3dbd2d12daabf2a8c9f008ae7572544ca595a0f49dcf93e4011"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GrottoceratopsRenderer.java": {
+      "git_blob_sha1": "1eabab652929c1f145fa88091a55e78cb313caef",
+      "sha256": "ce3371f427e91b08b4f4dcab57e1bd817e039d6e05e3f920fbdb626969aea419"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/WatcherRenderer.java": {
+      "git_blob_sha1": "4157e7ca7b9d28c9a8282b0e20349aba2792343d",
+      "sha256": "81c0813bf8b5eec644f42bd6e51ae84b8946b5690a31abc293869d02f38bd24d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GingerbreadManRenderer.java": {
+      "git_blob_sha1": "e4898739aa3284b301bb6087f0cd1c0f35c06a49",
+      "sha256": "3f7d8a3a8f21c97f94469007d26491511b5205b32d40480dadaa5845ee3dec6a"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/MineGuardianRenderer.java": {
+      "git_blob_sha1": "8c7fb2a83c83dba822c1deae4fe923f8a732daf3",
+      "sha256": "bd4001d57547dab74c45236074305cc394c4452eaf24df8151422722b5d5371d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CorrodentRenderer.java": {
+      "git_blob_sha1": "96e61052c877eeb0372953b1e670e4e3cba532c8",
+      "sha256": "c59608ad461e872a46c676b02f4119cc601ccf5fd3df55e74e041e5e0b77bef8"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/CandicornRenderer.java": {
+      "git_blob_sha1": "b8a69b5b0423419709c65d465743776b80efde24",
+      "sha256": "7f88f874a50ecda19a99c8146de0fb29e2a829e72ee8d3cf082d315954bc434b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/NotorRenderer.java": {
+      "git_blob_sha1": "7082b1cec80412d1a4f1a8a7eb67e8ce1053d091",
+      "sha256": "95dc8f4145af3619809ba5119cdab9683d4e5d01345eda78fa38f36a9c47a98d"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GammaroachRenderer.java": {
+      "git_blob_sha1": "924445ec6bb37c31feea5dd850b72bcdb7b87ea7",
+      "sha256": "7b1b9f0eada0d766016d0134c50736f33dbf247fd3a0f287c811334569c6d914"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/BoundroidWinchRenderer.java": {
+      "git_blob_sha1": "c1043b2edbdd7626ab11c10faa1f8738f4e70f06",
+      "sha256": "325aff00adb1a66d26355c6db1b3fcbb3015d38dcbd13292d3c48af19721f6ea"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/FerrouslimeRenderer.java": {
+      "git_blob_sha1": "a663813c080395a9ca97f3cb5152e1ca8ce1b133",
+      "sha256": "2b9a2390e4118c04cea665c1af02c338cbd07e66baa302baf00f1e93d715e54f"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/AtlatitanRenderer.java": {
+      "git_blob_sha1": "14be501ac55c56efd04e37b5f8f376c559ab0477",
+      "sha256": "24a8c01c59aa2799347d208eba120155b18ba55bbaf5508b79e983ff0e6f257c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/HullbreakerRenderer.java": {
+      "git_blob_sha1": "cffd681f146747c542891932f3f0ec64aee19c03",
+      "sha256": "d896f0160af09baf292c68810c0626482ab8829a4c8aee671729f530092d7c06"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/TremorzillaRenderer.java": {
+      "git_blob_sha1": "33774c891dbfba7d4a8a252feba45fb4805ddeec",
+      "sha256": "0cc807bb3130525f750e50028544e7a37a076bd4471835f7c5c1b51f8ab46be9"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GumWormRenderer.java": {
+      "git_blob_sha1": "016be2a24012fa817e1d7f94e0504e6d9ae5ee41",
+      "sha256": "cf2626476c572b64e004170a8fb09f2a51260a2288c3e8a751e28bcb84370d6a"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/DeepOneKnightRenderer.java": {
+      "git_blob_sha1": "af58daba07bfcb72f942354e303689811f2ff92a",
+      "sha256": "d6b91a2b6efe5dd0a8e096910e0f1b055db1c93bb14ae95443c72ec8c857e312"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/SubterranodonRenderer.java": {
+      "git_blob_sha1": "6f64df531d5872ff40cf48ffe16cb20bda4259c7",
+      "sha256": "3516c7eee6451d244e7b187c031b0e7a85b21be2260ea4af5807ecd124720ece"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GloomothRenderer.java": {
+      "git_blob_sha1": "5edb4f9c94b015db738224f99b6dc8b2ffc218ce",
+      "sha256": "ed61185352f26ceec202dbc30699d7a6a4db06b6a78825069ef76364be3c4ca2"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/ForsakenRenderer.java": {
+      "git_blob_sha1": "97d8df55a7b0d9d12ffdfe91b967a8c597a52cb8",
+      "sha256": "3c4ee294d943cbdfcefec33887a4f414abf458b2385f39dc49b31985236d97e9"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/DeepOneMageRenderer.java": {
+      "git_blob_sha1": "36fdb41007e95112a33abf697de30f93e66360f1",
+      "sha256": "847f83e57d8221f1f6bbd17ee224c555a6ca3781965fbbf7665c6ba98b8bc79c"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/GumbeeperRenderer.java": {
+      "git_blob_sha1": "ca5e9ac942500ab39ccd73e412fbca3fc042882d",
+      "sha256": "1e728835addc316547e2aa53f8c647d3fe0e18c2751f109afde93c72a04622b8"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/NucleeperRenderer.java": {
+      "git_blob_sha1": "cb10ad8dbd23b8944983fc8da8b4f814ad9fd787",
+      "sha256": "5ae740ea6e9a892374ae73728fab1d937ec547ade3a686d9770bb53c74d9948b"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/render/entity/layer/TremorzillaRiderLayer.java": {
+      "git_blob_sha1": "0585b00090cf40cf5d4573280b5870c7ac84efce",
+      "sha256": "0af82148ea2cc8ab0d7aed9442a853180fa285c1b49da53ee25d23947f932f19"
+    },
+    "src/main/java/com/github/alexmodguy/alexscaves/client/model/misc/HideableModelBoxWithChildren.java": {
+      "git_blob_sha1": "25cec69d26313c3174419643d31174d87555dda9",
+      "sha256": "21bbbbfe6dc14d06a3d558ebb889c15283427b7c623ae25e8916e1895d319f18"
+    },
+    "LICENSE": {
+      "git_blob_sha1": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "build.gradle": {
+      "git_blob_sha1": "6b3e8008547b7b2bf628e465eae5b60f9b20b685",
+      "sha256": "2bcee8831358e938cb8014b679ef26970787eb68888466ebff8e42a27752b727"
+    },
+    "gradle.properties": {
+      "git_blob_sha1": "9e28338352deb17670d2cf4209ce945b1cadcca9",
+      "sha256": "3076e7828f62093c8bbfefc4144052e18950d8e73e3aa8b773914e2f2ea37d5d"
+    }
+  }
+}

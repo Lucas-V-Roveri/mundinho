@@ -1,0 +1,6176 @@
+[
+  {
+    "anchor": "receita-aethersent-block",
+    "name": "data/eternal_starlight/recipe/aethersent_block.json",
+    "source": "data/eternal_starlight/recipe/aethersent_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:aethersent_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aethersent_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aethersent-boots",
+    "name": "data/eternal_starlight/recipe/aethersent_boots.json",
+    "source": "data/eternal_starlight/recipe/aethersent_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "A": {
+          "tag": "c:ingots/aethersent"
+        },
+        "H": {
+          "item": "eternal_starlight:creteor_hide"
+        }
+      },
+      "pattern": [
+        "A A",
+        "H H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aethersent_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aethersent-bottoms",
+    "name": "data/eternal_starlight/recipe/aethersent_bottoms.json",
+    "source": "data/eternal_starlight/recipe/aethersent_bottoms.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "A": {
+          "tag": "c:ingots/aethersent"
+        },
+        "H": {
+          "item": "eternal_starlight:creteor_hide"
+        }
+      },
+      "pattern": [
+        "HHH",
+        "A A",
+        "H H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aethersent_bottoms"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aethersent-cape",
+    "name": "data/eternal_starlight/recipe/aethersent_cape.json",
+    "source": "data/eternal_starlight/recipe/aethersent_cape.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "A": {
+          "tag": "c:ingots/aethersent"
+        },
+        "H": {
+          "item": "eternal_starlight:creteor_hide"
+        }
+      },
+      "pattern": [
+        "A A",
+        "HAH",
+        "HHH"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aethersent_cape"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aethersent-hood",
+    "name": "data/eternal_starlight/recipe/aethersent_hood.json",
+    "source": "data/eternal_starlight/recipe/aethersent_hood.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "A": {
+          "tag": "c:ingots/aethersent"
+        },
+        "H": {
+          "item": "eternal_starlight:creteor_hide"
+        }
+      },
+      "pattern": [
+        "HAH",
+        "A A"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aethersent_hood"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aethersent-ingot-blasting-from-raw-aethersent",
+    "name": "data/eternal_starlight/recipe/aethersent_ingot_blasting_from_raw_aethersent.json",
+    "source": "data/eternal_starlight/recipe/aethersent_ingot_blasting_from_raw_aethersent.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:raw_aethersent"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aethersent_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aethersent-ingot-smelting-from-raw-aethersent",
+    "name": "data/eternal_starlight/recipe/aethersent_ingot_smelting_from_raw_aethersent.json",
+    "source": "data/eternal_starlight/recipe/aethersent_ingot_smelting_from_raw_aethersent.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:raw_aethersent"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aethersent_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aethersent-nugget",
+    "name": "data/eternal_starlight/recipe/aethersent_nugget.json",
+    "source": "data/eternal_starlight/recipe/aethersent_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:aethersent_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "eternal_starlight:aethersent_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-air-sac-arrow",
+    "name": "data/eternal_starlight/recipe/air_sac_arrow.json",
+    "source": "data/eternal_starlight/recipe/air_sac_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "D": {
+          "item": "eternal_starlight:dusted_shard"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        },
+        "T": {
+          "item": "eternal_starlight:rookfish_air_sac"
+        }
+      },
+      "pattern": [
+        "D",
+        "S",
+        "T"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:air_sac_arrow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-air-sac-boots",
+    "name": "data/eternal_starlight/recipe/air_sac_boots.json",
+    "source": "data/eternal_starlight/recipe/air_sac_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:rookfish_air_sac"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:air_sac_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-air-sac-mask",
+    "name": "data/eternal_starlight/recipe/air_sac_mask.json",
+    "source": "data/eternal_starlight/recipe/air_sac_mask.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "B": {
+          "item": "eternal_starlight:velvetumoss_ball"
+        },
+        "L": {
+          "item": "eternal_starlight:jinglestem_log"
+        },
+        "M": {
+          "item": "eternal_starlight:amaramber_mask"
+        },
+        "S": {
+          "item": "eternal_starlight:rookfish_air_sac"
+        }
+      },
+      "pattern": [
+        "LLL",
+        "LML",
+        "SBS"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:air_sac_mask"
+      }
+    }
+  },
+  {
+    "anchor": "receita-alchemist-mask",
+    "name": "data/eternal_starlight/recipe/alchemist_mask.json",
+    "source": "data/eternal_starlight/recipe/alchemist_mask.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:leather"
+        },
+        "S": {
+          "tag": "c:gems/thioquartz"
+        }
+      },
+      "pattern": [
+        "###",
+        "S S"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:alchemist_mask"
+      }
+    }
+  },
+  {
+    "anchor": "receita-alchemist-robe",
+    "name": "data/eternal_starlight/recipe/alchemist_robe.json",
+    "source": "data/eternal_starlight/recipe/alchemist_robe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:leather"
+        },
+        "S": {
+          "tag": "c:gems/thioquartz"
+        }
+      },
+      "pattern": [
+        "S S",
+        "#S#",
+        "#S#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:alchemist_robe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-from-ores",
+    "name": "data/eternal_starlight/recipe/alloy/deepsilver_from_ores.json",
+    "source": "data/eternal_starlight/recipe/alloy/deepsilver_from_ores.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:ores/deepsilver"
+        },
+        {
+          "item": "eternal_starlight:saltpeter_powder"
+        }
+      ],
+      "results": [
+        {
+          "amount": 2,
+          "item": {
+            "id": "eternal_starlight:deepsilver_ingot"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-from-raw-materials",
+    "name": "data/eternal_starlight/recipe/alloy/deepsilver_from_raw_materials.json",
+    "source": "data/eternal_starlight/recipe/alloy/deepsilver_from_raw_materials.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:raw_materials/deepsilver"
+        },
+        {
+          "tag": "c:raw_materials/deepsilver"
+        },
+        {
+          "item": "eternal_starlight:saltpeter_powder"
+        }
+      ],
+      "results": [
+        {
+          "amount": 3,
+          "item": {
+            "id": "eternal_starlight:deepsilver_ingot"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-gold-from-ores",
+    "name": "data/eternal_starlight/recipe/alloy/gold_from_ores.json",
+    "source": "data/eternal_starlight/recipe/alloy/gold_from_ores.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:ores/gold"
+        },
+        {
+          "tag": "c:ores/gold"
+        },
+        {
+          "item": "eternal_starlight:starcore"
+        },
+        {
+          "item": "eternal_starlight:saltpeter_powder"
+        }
+      ],
+      "results": [
+        {
+          "amount": 3,
+          "item": {
+            "id": "minecraft:gold_ingot"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 3,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 3,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-gold-from-raw-materials",
+    "name": "data/eternal_starlight/recipe/alloy/gold_from_raw_materials.json",
+    "source": "data/eternal_starlight/recipe/alloy/gold_from_raw_materials.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:raw_materials/gold"
+        },
+        {
+          "tag": "c:raw_materials/gold"
+        },
+        {
+          "tag": "c:raw_materials/gold"
+        },
+        {
+          "item": "eternal_starlight:starcore"
+        },
+        {
+          "item": "eternal_starlight:saltpeter_powder"
+        }
+      ],
+      "results": [
+        {
+          "amount": 4,
+          "item": {
+            "id": "minecraft:gold_ingot"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 3,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 3,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-golem-steel",
+    "name": "data/eternal_starlight/recipe/alloy/golem_steel.json",
+    "source": "data/eternal_starlight/recipe/alloy/golem_steel.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:ingots/deepsilver"
+        },
+        {
+          "tag": "c:ingots/deepsilver"
+        },
+        {
+          "tag": "c:ingots/deepsilver"
+        },
+        {
+          "tag": "c:nuggets/golem_steel"
+        },
+        {
+          "tag": "c:nuggets/golem_steel"
+        }
+      ],
+      "results": [
+        {
+          "amount": 1,
+          "item": {
+            "id": "eternal_starlight:golem_steel_ingot"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-iron-from-ores",
+    "name": "data/eternal_starlight/recipe/alloy/iron_from_ores.json",
+    "source": "data/eternal_starlight/recipe/alloy/iron_from_ores.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:ores/iron"
+        },
+        {
+          "item": "eternal_starlight:saltpeter_powder"
+        }
+      ],
+      "results": [
+        {
+          "amount": 2,
+          "item": {
+            "id": "minecraft:iron_ingot"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-iron-from-raw-materials",
+    "name": "data/eternal_starlight/recipe/alloy/iron_from_raw_materials.json",
+    "source": "data/eternal_starlight/recipe/alloy/iron_from_raw_materials.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:raw_materials/iron"
+        },
+        {
+          "tag": "c:raw_materials/iron"
+        },
+        {
+          "item": "eternal_starlight:saltpeter_powder"
+        }
+      ],
+      "results": [
+        {
+          "amount": 3,
+          "item": {
+            "id": "minecraft:iron_ingot"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        },
+        {
+          "amount": {
+            "type": "minecraft:uniform",
+            "max_inclusive": 2,
+            "min_inclusive": 0
+          },
+          "item": {
+            "id": "eternal_starlight:dimslag"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-unrealium",
+    "name": "data/eternal_starlight/recipe/alloy/unrealium.json",
+    "source": "data/eternal_starlight/recipe/alloy/unrealium.json",
+    "recipe": {
+      "type": "eternal_starlight:alloy",
+      "burn_time": 400,
+      "ingredients": [
+        {
+          "tag": "c:ingots/deepsilver"
+        },
+        {
+          "tag": "c:ingots/golem_steel"
+        },
+        {
+          "tag": "c:gems/malarite"
+        },
+        {
+          "item": "eternal_starlight:soul_dew"
+        }
+      ],
+      "results": [
+        {
+          "amount": 1,
+          "item": {
+            "id": "eternal_starlight:unrealium_ingot"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "anchor": "receita-amaramber-candle",
+    "name": "data/eternal_starlight/recipe/amaramber_candle.json",
+    "source": "data/eternal_starlight/recipe/amaramber_candle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "A": {
+          "tag": "c:raw_materials/amaramber"
+        },
+        "S": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "S",
+        "A"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:amaramber_candle"
+      }
+    }
+  },
+  {
+    "anchor": "receita-amaramber-lantern-from-deepsilver-nuggets",
+    "name": "data/eternal_starlight/recipe/amaramber_lantern_from_deepsilver_nuggets.json",
+    "source": "data/eternal_starlight/recipe/amaramber_lantern_from_deepsilver_nuggets.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "A": {
+          "item": "eternal_starlight:amaramber_candle"
+        },
+        "N": {
+          "tag": "c:nuggets/deepsilver"
+        }
+      },
+      "pattern": [
+        "NNN",
+        "NAN",
+        "NNN"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:amaramber_lantern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blast-furnace-from-cinder-brick",
+    "name": "data/eternal_starlight/recipe/blast_furnace_from_cinder_brick.json",
+    "source": "data/eternal_starlight/recipe/blast_furnace_from_cinder_brick.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:cinder_brick"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "X": {
+          "item": "minecraft:furnace"
+        }
+      },
+      "pattern": [
+        "III",
+        "IXI",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:blast_furnace"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blaze-crystal",
+    "name": "data/eternal_starlight/recipe/blaze_crystal.json",
+    "source": "data/eternal_starlight/recipe/blaze_crystal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "tag": "eternal_starlight:blaze_crystal_ingredients"
+        },
+        "S": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        }
+      },
+      "pattern": [
+        " S ",
+        "SCS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:blaze_crystal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blooming-armor-trim-smithing-template",
+    "name": "data/eternal_starlight/recipe/blooming_armor_trim_smithing_template.json",
+    "source": "data/eternal_starlight/recipe/blooming_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/amaramber"
+        },
+        "C": {
+          "item": "eternal_starlight:grimstone"
+        },
+        "S": {
+          "item": "eternal_starlight:blooming_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:blooming_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blooming-armor-trim-smithing-template-smithing-trim",
+    "name": "data/eternal_starlight/recipe/blooming_armor_trim_smithing_template_smithing_trim.json",
+    "source": "data/eternal_starlight/recipe/blooming_armor_trim_smithing_template_smithing_trim.json",
+    "recipe": {
+      "type": "minecraft:smithing_trim",
+      "addition": {
+        "tag": "minecraft:trim_materials"
+      },
+      "base": {
+        "tag": "minecraft:trimmable_armor"
+      },
+      "template": {
+        "item": "eternal_starlight:blooming_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blooming-trim-from-twining-trim",
+    "name": "data/eternal_starlight/recipe/blooming_trim_from_twining_trim.json",
+    "source": "data/eternal_starlight/recipe/blooming_trim_from_twining_trim.json",
+    "recipe": {
+      "type": "eternal_starlight:tool_modification",
+      "category": "misc",
+      "input": "eternal_starlight:twining_armor_trim_smithing_template",
+      "output": {
+        "count": 1,
+        "id": "eternal_starlight:blooming_armor_trim_smithing_template"
+      },
+      "tool": "minecraft:shears"
+    }
+  },
+  {
+    "anchor": "receita-blue-starlight-crystal-lantern",
+    "name": "data/eternal_starlight/recipe/blue_starlight_crystal_lantern.json",
+    "source": "data/eternal_starlight/recipe/blue_starlight_crystal_lantern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "S": {
+          "item": "eternal_starlight:blue_starlight_crystal_shard"
+        },
+        "T": {
+          "item": "minecraft:torch"
+        }
+      },
+      "pattern": [
+        " S ",
+        "STS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:blue_starlight_crystal_lantern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bucket-from-deepsilver-ingot",
+    "name": "data/eternal_starlight/recipe/bucket_from_deepsilver_ingot.json",
+    "source": "data/eternal_starlight/recipe/bucket_from_deepsilver_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        }
+      },
+      "pattern": [
+        "# #",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:bucket"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cauldron-from-deepsilver-ingot",
+    "name": "data/eternal_starlight/recipe/cauldron_from_deepsilver_ingot.json",
+    "source": "data/eternal_starlight/recipe/cauldron_from_deepsilver_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:cauldron"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chain-of-souls",
+    "name": "data/eternal_starlight/recipe/chain_of_souls.json",
+    "source": "data/eternal_starlight/recipe/chain_of_souls.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "N": {
+          "tag": "c:nuggets"
+        },
+        "P": {
+          "item": "eternal_starlight:tenacious_petal"
+        },
+        "S": {
+          "item": "eternal_starlight:soul_dew"
+        },
+        "V": {
+          "item": "eternal_starlight:tenacious_vine"
+        }
+      },
+      "pattern": [
+        "P  ",
+        "SVV",
+        "P N"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:chain_of_souls"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-grimstone-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/chiseled_grimstone_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/chiseled_grimstone_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:chiseled_grimstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-grimstone-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/chiseled_grimstone_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/chiseled_grimstone_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:chiseled_grimstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobbled-grimstone-slab",
+    "name": "data/eternal_starlight/recipe/cobbled_grimstone_slab.json",
+    "source": "data/eternal_starlight/recipe/cobbled_grimstone_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:cobbled_grimstone"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "eternal_starlight:cobbled_grimstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobbled-grimstone-slab-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/cobbled_grimstone_slab_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/cobbled_grimstone_slab_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:cobbled_grimstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobbled-grimstone-stairs",
+    "name": "data/eternal_starlight/recipe/cobbled_grimstone_stairs.json",
+    "source": "data/eternal_starlight/recipe/cobbled_grimstone_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:cobbled_grimstone"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:cobbled_grimstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobbled-grimstone-stairs-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/cobbled_grimstone_stairs_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/cobbled_grimstone_stairs_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cobbled_grimstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobbled-grimstone-wall",
+    "name": "data/eternal_starlight/recipe/cobbled_grimstone_wall.json",
+    "source": "data/eternal_starlight/recipe/cobbled_grimstone_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:cobbled_grimstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "eternal_starlight:cobbled_grimstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobbled-grimstone-wall-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/cobbled_grimstone_wall_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/cobbled_grimstone_wall_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cobbled_grimstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-comparator-from-cinder-brick-and-nightfall-spider-eye",
+    "name": "data/eternal_starlight/recipe/comparator_from_cinder_brick_and_nightfall_spider_eye.json",
+    "source": "data/eternal_starlight/recipe/comparator_from_cinder_brick_and_nightfall_spider_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_torch"
+        },
+        "I": {
+          "item": "eternal_starlight:cinder_brick"
+        },
+        "X": {
+          "item": "eternal_starlight:nightfall_spider_eye"
+        }
+      },
+      "pattern": [
+        " # ",
+        "#X#",
+        "III"
+      ],
+      "result": {
+        "count": 3,
+        "id": "minecraft:comparator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-comparator-from-nightfall-spider-eye",
+    "name": "data/eternal_starlight/recipe/comparator_from_nightfall_spider_eye.json",
+    "source": "data/eternal_starlight/recipe/comparator_from_nightfall_spider_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_torch"
+        },
+        "I": {
+          "item": "minecraft:stone"
+        },
+        "X": {
+          "item": "eternal_starlight:nightfall_spider_eye"
+        }
+      },
+      "pattern": [
+        " # ",
+        "#X#",
+        "III"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:comparator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-aurora-deer-steak-from-campfire-cooking",
+    "name": "data/eternal_starlight/recipe/cooked_aurora_deer_steak_from_campfire_cooking.json",
+    "source": "data/eternal_starlight/recipe/cooked_aurora_deer_steak_from_campfire_cooking.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:aurora_deer_steak"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_aurora_deer_steak"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-aurora-deer-steak-from-smoking",
+    "name": "data/eternal_starlight/recipe/cooked_aurora_deer_steak_from_smoking.json",
+    "source": "data/eternal_starlight/recipe/cooked_aurora_deer_steak_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:aurora_deer_steak"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_aurora_deer_steak"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-aurora-deer-steak-smelting-from-aurora-deer-steak",
+    "name": "data/eternal_starlight/recipe/cooked_aurora_deer_steak_smelting_from_aurora_deer_steak.json",
+    "source": "data/eternal_starlight/recipe/cooked_aurora_deer_steak_smelting_from_aurora_deer_steak.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:aurora_deer_steak"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_aurora_deer_steak"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-luminaris-from-campfire-cooking",
+    "name": "data/eternal_starlight/recipe/cooked_luminaris_from_campfire_cooking.json",
+    "source": "data/eternal_starlight/recipe/cooked_luminaris_from_campfire_cooking.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:luminaris"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_luminaris"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-luminaris-from-smoking",
+    "name": "data/eternal_starlight/recipe/cooked_luminaris_from_smoking.json",
+    "source": "data/eternal_starlight/recipe/cooked_luminaris_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:luminaris"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_luminaris"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-luminaris-smelting-from-luminaris",
+    "name": "data/eternal_starlight/recipe/cooked_luminaris_smelting_from_luminaris.json",
+    "source": "data/eternal_starlight/recipe/cooked_luminaris_smelting_from_luminaris.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:luminaris"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_luminaris"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-luminofish-from-campfire-cooking",
+    "name": "data/eternal_starlight/recipe/cooked_luminofish_from_campfire_cooking.json",
+    "source": "data/eternal_starlight/recipe/cooked_luminofish_from_campfire_cooking.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:luminofish"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_luminofish"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-luminofish-from-smoking",
+    "name": "data/eternal_starlight/recipe/cooked_luminofish_from_smoking.json",
+    "source": "data/eternal_starlight/recipe/cooked_luminofish_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:luminofish"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_luminofish"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-luminofish-smelting-from-luminofish",
+    "name": "data/eternal_starlight/recipe/cooked_luminofish_smelting_from_luminofish.json",
+    "source": "data/eternal_starlight/recipe/cooked_luminofish_smelting_from_luminofish.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:luminofish"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_luminofish"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-ratlin-meat-from-campfire-cooking",
+    "name": "data/eternal_starlight/recipe/cooked_ratlin_meat_from_campfire_cooking.json",
+    "source": "data/eternal_starlight/recipe/cooked_ratlin_meat_from_campfire_cooking.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:ratlin_meat"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_ratlin_meat"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-ratlin-meat-from-smoking",
+    "name": "data/eternal_starlight/recipe/cooked_ratlin_meat_from_smoking.json",
+    "source": "data/eternal_starlight/recipe/cooked_ratlin_meat_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:ratlin_meat"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_ratlin_meat"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-ratlin-meat-smelting-from-ratlin-meat",
+    "name": "data/eternal_starlight/recipe/cooked_ratlin_meat_smelting_from_ratlin_meat.json",
+    "source": "data/eternal_starlight/recipe/cooked_ratlin_meat_smelting_from_ratlin_meat.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:ratlin_meat"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_ratlin_meat"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-rookfish-from-campfire-cooking",
+    "name": "data/eternal_starlight/recipe/cooked_rookfish_from_campfire_cooking.json",
+    "source": "data/eternal_starlight/recipe/cooked_rookfish_from_campfire_cooking.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:rookfish"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_rookfish"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-rookfish-from-smoking",
+    "name": "data/eternal_starlight/recipe/cooked_rookfish_from_smoking.json",
+    "source": "data/eternal_starlight/recipe/cooked_rookfish_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:rookfish"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_rookfish"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-rookfish-smelting-from-rookfish",
+    "name": "data/eternal_starlight/recipe/cooked_rookfish_smelting_from_rookfish.json",
+    "source": "data/eternal_starlight/recipe/cooked_rookfish_smelting_from_rookfish.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:rookfish"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_rookfish"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-shadow-snail-meat-from-campfire-cooking",
+    "name": "data/eternal_starlight/recipe/cooked_shadow_snail_meat_from_campfire_cooking.json",
+    "source": "data/eternal_starlight/recipe/cooked_shadow_snail_meat_from_campfire_cooking.json",
+    "recipe": {
+      "type": "minecraft:campfire_cooking",
+      "category": "food",
+      "cookingtime": 600,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:shadow_snail_meat"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_shadow_snail_meat"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-shadow-snail-meat-from-smoking",
+    "name": "data/eternal_starlight/recipe/cooked_shadow_snail_meat_from_smoking.json",
+    "source": "data/eternal_starlight/recipe/cooked_shadow_snail_meat_from_smoking.json",
+    "recipe": {
+      "type": "minecraft:smoking",
+      "category": "food",
+      "cookingtime": 100,
+      "experience": 0.35,
+      "ingredient": {
+        "item": "eternal_starlight:shadow_snail_meat"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_shadow_snail_meat"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cooked-shadow-snail-meat-smelting-from-shadow-snail-meat",
+    "name": "data/eternal_starlight/recipe/cooked_shadow_snail_meat_smelting_from_shadow_snail_meat.json",
+    "source": "data/eternal_starlight/recipe/cooked_shadow_snail_meat_smelting_from_shadow_snail_meat.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "food",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:shadow_snail_meat"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cooked_shadow_snail_meat"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crescent-spear",
+    "name": "data/eternal_starlight/recipe/crescent_spear.json",
+    "source": "data/eternal_starlight/recipe/crescent_spear.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "P": {
+          "item": "eternal_starlight:tenacious_petal"
+        },
+        "S": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "V": {
+          "item": "eternal_starlight:tenacious_vine"
+        }
+      },
+      "pattern": [
+        "S S",
+        "PSP",
+        " V "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:crescent_spear"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crystal-crossbow",
+    "name": "data/eternal_starlight/recipe/crystal_crossbow.json",
+    "source": "data/eternal_starlight/recipe/crystal_crossbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "B": {
+          "item": "eternal_starlight:blue_starlight_crystal_shard"
+        },
+        "G": {
+          "tag": "c:ingots/golem_steel"
+        },
+        "R": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        },
+        "S": {
+          "item": "minecraft:string"
+        },
+        "T": {
+          "item": "minecraft:tripwire_hook"
+        }
+      },
+      "pattern": [
+        "BGB",
+        "STS",
+        " R "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:crystal_crossbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crystal-greatsword",
+    "name": "data/eternal_starlight/recipe/crystal_greatsword.json",
+    "source": "data/eternal_starlight/recipe/crystal_greatsword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "B": {
+          "item": "eternal_starlight:blue_starlight_crystal_shard"
+        },
+        "G": {
+          "tag": "c:ingots/golem_steel"
+        },
+        "L": {
+          "item": "eternal_starlight:shivering_gel"
+        },
+        "R": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        " LR",
+        " GB",
+        "SG "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:crystal_greatsword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crystalborn-catalyst",
+    "name": "data/eternal_starlight/recipe/crystalborn_catalyst.json",
+    "source": "data/eternal_starlight/recipe/crystalborn_catalyst.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "B": {
+          "item": "eternal_starlight:cinder_brick"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "T": {
+          "item": "eternal_starlight:tooth_of_hunger"
+        }
+      },
+      "pattern": [
+        "BTB",
+        "TRT",
+        "BTB"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:crystalborn_catalyst"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dagger-of-hunger",
+    "name": "data/eternal_starlight/recipe/dagger_of_hunger.json",
+    "source": "data/eternal_starlight/recipe/dagger_of_hunger.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:tooth_of_hunger"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:dagger_of_hunger"
+      }
+    }
+  },
+  {
+    "anchor": "receita-daylight-detector-from-nightfall-spider-eye",
+    "name": "data/eternal_starlight/recipe/daylight_detector_from_nightfall_spider_eye.json",
+    "source": "data/eternal_starlight/recipe/daylight_detector_from_nightfall_spider_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "G": {
+          "item": "minecraft:glass"
+        },
+        "Q": {
+          "item": "eternal_starlight:nightfall_spider_eye"
+        },
+        "W": {
+          "tag": "minecraft:wooden_slabs"
+        }
+      },
+      "pattern": [
+        "GGG",
+        "QQQ",
+        "WWW"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:daylight_detector"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-axe",
+    "name": "data/eternal_starlight/recipe/deepsilver_axe.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        "#H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-bars",
+    "name": "data/eternal_starlight/recipe/deepsilver_bars.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_bars.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:deepsilver_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "eternal_starlight:deepsilver_bars"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-block",
+    "name": "data/eternal_starlight/recipe/deepsilver_block.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:deepsilver_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-boots",
+    "name": "data/eternal_starlight/recipe/deepsilver_boots.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-brush",
+    "name": "data/eternal_starlight/recipe/deepsilver_brush.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_brush.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "I": {
+          "tag": "c:rods/wooden"
+        },
+        "X": {
+          "tag": "eternal_starlight:arrow_feathers"
+        }
+      },
+      "pattern": [
+        "X",
+        "#",
+        "I"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_brush"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-chestplate",
+    "name": "data/eternal_starlight/recipe/deepsilver_chestplate.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-helmet",
+    "name": "data/eternal_starlight/recipe/deepsilver_helmet.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-hoe",
+    "name": "data/eternal_starlight/recipe/deepsilver_hoe.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        " H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-ingot-from-nuggets",
+    "name": "data/eternal_starlight/recipe/deepsilver_ingot_from_nuggets.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_ingot_from_nuggets.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "deepsilver_ingot",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:deepsilver_nugget"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-leggings",
+    "name": "data/eternal_starlight/recipe/deepsilver_leggings.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-nugget",
+    "name": "data/eternal_starlight/recipe/deepsilver_nugget.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:deepsilver_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "eternal_starlight:deepsilver_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-pickaxe",
+    "name": "data/eternal_starlight/recipe/deepsilver_pickaxe.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        " H ",
+        " H "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-shovel",
+    "name": "data/eternal_starlight/recipe/deepsilver_shovel.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "H",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-sickle",
+    "name": "data/eternal_starlight/recipe/deepsilver_sickle.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_sickle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        " #",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_sickle"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepsilver-sword",
+    "name": "data/eternal_starlight/recipe/deepsilver_sword.json",
+    "source": "data/eternal_starlight/recipe/deepsilver_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:deepsilver_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-leather-from-rotten-flesh",
+    "name": "data/eternal_starlight/recipe/drying/leather_from_rotten_flesh.json",
+    "source": "data/eternal_starlight/recipe/drying/leather_from_rotten_flesh.json",
+    "recipe": {
+      "type": "eternal_starlight:drying",
+      "duration_ticks": 2400,
+      "fire_below": false,
+      "input": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "output": {
+        "count": 1,
+        "id": "minecraft:leather"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rotten-flesh-jerky",
+    "name": "data/eternal_starlight/recipe/drying/rotten_flesh_jerky.json",
+    "source": "data/eternal_starlight/recipe/drying/rotten_flesh_jerky.json",
+    "recipe": {
+      "type": "eternal_starlight:drying",
+      "duration_ticks": 600,
+      "fire_below": true,
+      "input": {
+        "item": "minecraft:rotten_flesh"
+      },
+      "output": {
+        "count": 1,
+        "id": "eternal_starlight:rotten_flesh_jerky"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-black-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_black_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_black_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:black_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:black_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-blue-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_blue_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_blue_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:blue_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:blue_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-brown-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_brown_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_brown_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:brown_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:brown_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-cyan-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_cyan_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_cyan_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:cyan_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:cyan_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-gray-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_gray_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_gray_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:gray_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:gray_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-green-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_green_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_green_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:green_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:green_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-light-blue-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_light_blue_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_light_blue_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:light_blue_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:light_blue_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-light-gray-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_light_gray_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_light_gray_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:light_gray_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:light_gray_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-lime-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_lime_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_lime_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:lime_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:lime_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-magenta-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_magenta_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_magenta_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:magenta_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:magenta_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-orange-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_orange_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_orange_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:orange_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:orange_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-pink-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_pink_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_pink_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:pink_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:pink_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-purple-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_purple_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_purple_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:purple_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:purple_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-red-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_red_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_red_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:red_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:yellow_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:red_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dye-yellow-yeti-fur",
+    "name": "data/eternal_starlight/recipe/dye_yellow_yeti_fur.json",
+    "source": "data/eternal_starlight/recipe/dye_yellow_yeti_fur.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "building",
+      "group": "yeti_fur",
+      "ingredients": [
+        {
+          "item": "minecraft:yellow_dye"
+        },
+        [
+          {
+            "item": "eternal_starlight:black_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:brown_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:cyan_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:green_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_blue_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:light_gray_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:lime_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:magenta_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:orange_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:pink_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:purple_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:red_yeti_fur"
+          },
+          {
+            "item": "eternal_starlight:white_yeti_fur"
+          }
+        ]
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:yellow_yeti_fur"
+      }
+    }
+  },
+  {
+    "anchor": "receita-etheric-eye",
+    "name": "data/eternal_starlight/recipe/etheric_eye.json",
+    "source": "data/eternal_starlight/recipe/etheric_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "S": {
+          "item": "eternal_starlight:seeking_eye"
+        },
+        "T": {
+          "tag": "c:gems/thioquartz"
+        }
+      },
+      "pattern": [
+        " T ",
+        "TST",
+        " T "
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:etheric_eye"
+      }
+    }
+  },
+  {
+    "anchor": "receita-flowglaze-upgrade-smithing-template",
+    "name": "data/eternal_starlight/recipe/flowglaze_upgrade_smithing_template.json",
+    "source": "data/eternal_starlight/recipe/flowglaze_upgrade_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        },
+        "C": {
+          "item": "eternal_starlight:eternal_ice"
+        },
+        "S": {
+          "item": "eternal_starlight:flowglaze_upgrade_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:flowglaze_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-forge-armor-trim-smithing-template",
+    "name": "data/eternal_starlight/recipe/forge_armor_trim_smithing_template.json",
+    "source": "data/eternal_starlight/recipe/forge_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "C": {
+          "item": "eternal_starlight:voidstone"
+        },
+        "S": {
+          "item": "eternal_starlight:forge_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:forge_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-forge-armor-trim-smithing-template-smithing-trim",
+    "name": "data/eternal_starlight/recipe/forge_armor_trim_smithing_template_smithing_trim.json",
+    "source": "data/eternal_starlight/recipe/forge_armor_trim_smithing_template_smithing_trim.json",
+    "recipe": {
+      "type": "minecraft:smithing_trim",
+      "addition": {
+        "tag": "minecraft:trim_materials"
+      },
+      "base": {
+        "tag": "minecraft:trimmable_armor"
+      },
+      "template": {
+        "item": "eternal_starlight:forge_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-frozen-bomb",
+    "name": "data/eternal_starlight/recipe/frozen_bomb.json",
+    "source": "data/eternal_starlight/recipe/frozen_bomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "A": {
+          "tag": "c:gems/starcore"
+        },
+        "G": {
+          "tag": "c:gems/glacite"
+        },
+        "S": {
+          "item": "eternal_starlight:ashen_snowball"
+        }
+      },
+      "pattern": [
+        "SG ",
+        "GAG",
+        " G "
+      ],
+      "result": {
+        "count": 12,
+        "id": "eternal_starlight:frozen_bomb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-galactic-quiver",
+    "name": "data/eternal_starlight/recipe/galactic_quiver.json",
+    "source": "data/eternal_starlight/recipe/galactic_quiver.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "H": {
+          "item": "eternal_starlight:creteor_hide"
+        }
+      },
+      "pattern": [
+        "H H",
+        " H "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:galactic_quiver"
+      }
+    }
+  },
+  {
+    "anchor": "receita-voidstone-from-grimstone",
+    "name": "data/eternal_starlight/recipe/geyser_smoking/voidstone_from_grimstone.json",
+    "source": "data/eternal_starlight/recipe/geyser_smoking/voidstone_from_grimstone.json",
+    "recipe": {
+      "type": "eternal_starlight:geyser_smoking",
+      "input": "eternal_starlight:grimstone",
+      "input_count": 3,
+      "output": {
+        "count": 2,
+        "id": "eternal_starlight:voidstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-arrow",
+    "name": "data/eternal_starlight/recipe/glacite_arrow.json",
+    "source": "data/eternal_starlight/recipe/glacite_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "F": {
+          "tag": "eternal_starlight:arrow_feathers"
+        },
+        "G": {
+          "tag": "c:gems/glacite"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "G",
+        "S",
+        "F"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:glacite_arrow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-axe",
+    "name": "data/eternal_starlight/recipe/glacite_axe.json",
+    "source": "data/eternal_starlight/recipe/glacite_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        "#H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-block",
+    "name": "data/eternal_starlight/recipe/glacite_block.json",
+    "source": "data/eternal_starlight/recipe/glacite_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:glacite_shard"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-boots",
+    "name": "data/eternal_starlight/recipe/glacite_boots.json",
+    "source": "data/eternal_starlight/recipe/glacite_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-chestplate",
+    "name": "data/eternal_starlight/recipe/glacite_chestplate.json",
+    "source": "data/eternal_starlight/recipe/glacite_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-helmet",
+    "name": "data/eternal_starlight/recipe/glacite_helmet.json",
+    "source": "data/eternal_starlight/recipe/glacite_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-hoe",
+    "name": "data/eternal_starlight/recipe/glacite_hoe.json",
+    "source": "data/eternal_starlight/recipe/glacite_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        " H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-leggings",
+    "name": "data/eternal_starlight/recipe/glacite_leggings.json",
+    "source": "data/eternal_starlight/recipe/glacite_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-pickaxe",
+    "name": "data/eternal_starlight/recipe/glacite_pickaxe.json",
+    "source": "data/eternal_starlight/recipe/glacite_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        " H ",
+        " H "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-scythe",
+    "name": "data/eternal_starlight/recipe/glacite_scythe.json",
+    "source": "data/eternal_starlight/recipe/glacite_scythe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        "  H",
+        "  H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_scythe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-shield",
+    "name": "data/eternal_starlight/recipe/glacite_shield.json",
+    "source": "data/eternal_starlight/recipe/glacite_shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "P": {
+          "tag": "minecraft:planks"
+        },
+        "S": {
+          "tag": "c:gems/glacite"
+        }
+      },
+      "pattern": [
+        "PSP",
+        "PPP",
+        " P "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-shovel",
+    "name": "data/eternal_starlight/recipe/glacite_shovel.json",
+    "source": "data/eternal_starlight/recipe/glacite_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "H",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glacite-sword",
+    "name": "data/eternal_starlight/recipe/glacite_sword.json",
+    "source": "data/eternal_starlight/recipe/glacite_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/glacite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:glacite_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golem-steel-crate",
+    "name": "data/eternal_starlight/recipe/golem_steel_crate.json",
+    "source": "data/eternal_starlight/recipe/golem_steel_crate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "minecraft:chest"
+        },
+        "G": {
+          "item": "eternal_starlight:oxidized_golem_steel_ingot"
+        },
+        "S": {
+          "item": "eternal_starlight:deepsilver_ingot"
+        }
+      },
+      "pattern": [
+        "SGS",
+        "SCS",
+        "SGS"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:golem_steel_crate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golem-steel-ingot-blasting-from-oxidized-golem-steel-ingot",
+    "name": "data/eternal_starlight/recipe/golem_steel_ingot_blasting_from_oxidized_golem_steel_ingot.json",
+    "source": "data/eternal_starlight/recipe/golem_steel_ingot_blasting_from_oxidized_golem_steel_ingot.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:oxidized_golem_steel_ingot"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:golem_steel_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golem-steel-ingot-smelting-from-oxidized-golem-steel-ingot",
+    "name": "data/eternal_starlight/recipe/golem_steel_ingot_smelting_from_oxidized_golem_steel_ingot.json",
+    "source": "data/eternal_starlight/recipe/golem_steel_ingot_smelting_from_oxidized_golem_steel_ingot.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:oxidized_golem_steel_ingot"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:golem_steel_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golem-steel-nugget-blasting-from-oxidized-golem-steel-nugget",
+    "name": "data/eternal_starlight/recipe/golem_steel_nugget_blasting_from_oxidized_golem_steel_nugget.json",
+    "source": "data/eternal_starlight/recipe/golem_steel_nugget_blasting_from_oxidized_golem_steel_nugget.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 15,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:oxidized_golem_steel_nugget"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:golem_steel_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golem-steel-nugget-smelting-from-oxidized-golem-steel-nugget",
+    "name": "data/eternal_starlight/recipe/golem_steel_nugget_smelting_from_oxidized_golem_steel_nugget.json",
+    "source": "data/eternal_starlight/recipe/golem_steel_nugget_smelting_from_oxidized_golem_steel_nugget.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 30,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:oxidized_golem_steel_nugget"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:golem_steel_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-brick-slab-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_brick_slab_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_brick_slab_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:grimstone_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-brick-slab-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_brick_slab_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_brick_slab_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:grimstone_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-brick-stairs-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_brick_stairs_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_brick_stairs_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-brick-stairs-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_brick_stairs_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_brick_stairs_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-brick-wall-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_brick_wall_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_brick_wall_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-brick-wall-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_brick_wall_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_brick_wall_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-bricks-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_bricks_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_bricks_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-bricks-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_bricks_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_bricks_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-slab",
+    "name": "data/eternal_starlight/recipe/grimstone_slab.json",
+    "source": "data/eternal_starlight/recipe/grimstone_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:grimstone"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "eternal_starlight:grimstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-slab-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_slab_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_slab_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:grimstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-smelting-from-cobbled-grimstone",
+    "name": "data/eternal_starlight/recipe/grimstone_smelting_from_cobbled_grimstone.json",
+    "source": "data/eternal_starlight/recipe/grimstone_smelting_from_cobbled_grimstone.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "blocks",
+      "cookingtime": 200,
+      "experience": 1.0,
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-stairs",
+    "name": "data/eternal_starlight/recipe/grimstone_stairs.json",
+    "source": "data/eternal_starlight/recipe/grimstone_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:grimstone"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:grimstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-stairs-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_stairs_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_stairs_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tile-slab-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tile_slab_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tile_slab_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:grimstone_tile_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tile-slab-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tile_slab_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tile_slab_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:grimstone_tile_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tile-stairs-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tile_stairs_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tile_stairs_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_tile_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tile-stairs-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tile_stairs_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tile_stairs_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_tile_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tile-wall-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tile_wall_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tile_wall_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_tile_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tile-wall-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tile_wall_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tile_wall_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_tile_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tiles-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tiles_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tiles_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-tiles-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_tiles_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_tiles_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-wall",
+    "name": "data/eternal_starlight/recipe/grimstone_wall.json",
+    "source": "data/eternal_starlight/recipe/grimstone_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:grimstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "eternal_starlight:grimstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-grimstone-wall-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/grimstone_wall_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/grimstone_wall_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:grimstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-keeper-armor-trim-smithing-template",
+    "name": "data/eternal_starlight/recipe/keeper_armor_trim_smithing_template.json",
+    "source": "data/eternal_starlight/recipe/keeper_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "C": {
+          "item": "eternal_starlight:grimstone"
+        },
+        "S": {
+          "item": "eternal_starlight:keeper_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:keeper_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-keeper-armor-trim-smithing-template-smithing-trim",
+    "name": "data/eternal_starlight/recipe/keeper_armor_trim_smithing_template_smithing_trim.json",
+    "source": "data/eternal_starlight/recipe/keeper_armor_trim_smithing_template_smithing_trim.json",
+    "recipe": {
+      "type": "minecraft:smithing_trim",
+      "addition": {
+        "tag": "minecraft:trim_materials"
+      },
+      "base": {
+        "tag": "minecraft:trimmable_armor"
+      },
+      "template": {
+        "item": "eternal_starlight:keeper_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lever-from-cinder-brick",
+    "name": "data/eternal_starlight/recipe/lever_from_cinder_brick.json",
+    "source": "data/eternal_starlight/recipe/lever_from_cinder_brick.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:cinder_brick"
+        },
+        "X": {
+          "item": "minecraft:stick"
+        }
+      },
+      "pattern": [
+        "X",
+        "#"
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:lever"
+      }
+    }
+  },
+  {
+    "anchor": "receita-light-crystal",
+    "name": "data/eternal_starlight/recipe/light_crystal.json",
+    "source": "data/eternal_starlight/recipe/light_crystal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "tag": "eternal_starlight:light_crystal_ingredients"
+        },
+        "S": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        }
+      },
+      "pattern": [
+        " S ",
+        "SCS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:light_crystal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lunar-crystal",
+    "name": "data/eternal_starlight/recipe/lunar_crystal.json",
+    "source": "data/eternal_starlight/recipe/lunar_crystal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "tag": "eternal_starlight:lunar_crystal_ingredients"
+        },
+        "S": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        }
+      },
+      "pattern": [
+        " S ",
+        "SCS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:lunar_crystal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lunar-mosaic",
+    "name": "data/eternal_starlight/recipe/lunar_mosaic.json",
+    "source": "data/eternal_starlight/recipe/lunar_mosaic.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:tenacious_petal"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 12,
+        "id": "eternal_starlight:lunar_mosaic"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-arrow",
+    "name": "data/eternal_starlight/recipe/malarite_arrow.json",
+    "source": "data/eternal_starlight/recipe/malarite_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "A": {
+          "tag": "c:gems/malarite"
+        },
+        "F": {
+          "tag": "eternal_starlight:arrow_feathers"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "A",
+        "S",
+        "F"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:malarite_arrow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-axe",
+    "name": "data/eternal_starlight/recipe/malarite_axe.json",
+    "source": "data/eternal_starlight/recipe/malarite_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        "#H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-block",
+    "name": "data/eternal_starlight/recipe/malarite_block.json",
+    "source": "data/eternal_starlight/recipe/malarite_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:malarite"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-hoe",
+    "name": "data/eternal_starlight/recipe/malarite_hoe.json",
+    "source": "data/eternal_starlight/recipe/malarite_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        " H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-pickaxe",
+    "name": "data/eternal_starlight/recipe/malarite_pickaxe.json",
+    "source": "data/eternal_starlight/recipe/malarite_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        " H ",
+        " H "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-shovel",
+    "name": "data/eternal_starlight/recipe/malarite_shovel.json",
+    "source": "data/eternal_starlight/recipe/malarite_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "H",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-sickle",
+    "name": "data/eternal_starlight/recipe/malarite_sickle.json",
+    "source": "data/eternal_starlight/recipe/malarite_sickle.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        " #",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_sickle"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-spear",
+    "name": "data/eternal_starlight/recipe/malarite_spear.json",
+    "source": "data/eternal_starlight/recipe/malarite_spear.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "  #",
+        " H ",
+        "H  "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_spear"
+      }
+    }
+  },
+  {
+    "anchor": "receita-malarite-sword",
+    "name": "data/eternal_starlight/recipe/malarite_sword.json",
+    "source": "data/eternal_starlight/recipe/malarite_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:malarite_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mechanical-crossbow",
+    "name": "data/eternal_starlight/recipe/mechanical_crossbow.json",
+    "source": "data/eternal_starlight/recipe/mechanical_crossbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:rods/wooden"
+        },
+        "$": {
+          "item": "minecraft:tripwire_hook"
+        },
+        "&": {
+          "tag": "c:ingots/golem_steel"
+        },
+        "~": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "#&#",
+        "~$~",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:mechanical_crossbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-moonring-greatsword",
+    "name": "data/eternal_starlight/recipe/moonring_greatsword.json",
+    "source": "data/eternal_starlight/recipe/moonring_greatsword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "P": {
+          "item": "eternal_starlight:tenacious_petal"
+        },
+        "S": {
+          "item": "eternal_starlight:soul_dew"
+        },
+        "V": {
+          "item": "eternal_starlight:tenacious_vine"
+        }
+      },
+      "pattern": [
+        "  P",
+        " VP",
+        "VS "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:moonring_greatsword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nebulaite",
+    "name": "data/eternal_starlight/recipe/nebulaite.json",
+    "source": "data/eternal_starlight/recipe/nebulaite.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:raw_aethersent"
+        },
+        "$": {
+          "item": "minecraft:deepslate"
+        }
+      },
+      "pattern": [
+        "$#",
+        "#$"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:nebulaite"
+      }
+    }
+  },
+  {
+    "anchor": "receita-observer-from-cinder-brick-and-nightfall-spider-eye",
+    "name": "data/eternal_starlight/recipe/observer_from_cinder_brick_and_nightfall_spider_eye.json",
+    "source": "data/eternal_starlight/recipe/observer_from_cinder_brick_and_nightfall_spider_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:cinder_brick"
+        },
+        "Q": {
+          "item": "eternal_starlight:nightfall_spider_eye"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "RRQ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:observer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-observer-from-nightfall-spider-eye",
+    "name": "data/eternal_starlight/recipe/observer_from_nightfall_spider_eye.json",
+    "source": "data/eternal_starlight/recipe/observer_from_nightfall_spider_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "Q": {
+          "item": "eternal_starlight:nightfall_spider_eye"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "RRQ",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:observer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-orb-of-prophecy",
+    "name": "data/eternal_starlight/recipe/orb_of_prophecy.json",
+    "source": "data/eternal_starlight/recipe/orb_of_prophecy.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "item": "eternal_starlight:blue_starlight_crystal_shard"
+        },
+        "G": {
+          "item": "minecraft:glass"
+        }
+      },
+      "pattern": [
+        "GCG",
+        "CCC",
+        "GCG"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:orb_of_prophecy"
+      }
+    }
+  },
+  {
+    "anchor": "receita-oxidized-golem-steel-bars",
+    "name": "data/eternal_starlight/recipe/oxidized_golem_steel_bars.json",
+    "source": "data/eternal_starlight/recipe/oxidized_golem_steel_bars.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:oxidized_golem_steel_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "eternal_starlight:oxidized_golem_steel_bars"
+      }
+    }
+  },
+  {
+    "anchor": "receita-oxidized-golem-steel-block",
+    "name": "data/eternal_starlight/recipe/oxidized_golem_steel_block.json",
+    "source": "data/eternal_starlight/recipe/oxidized_golem_steel_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:oxidized_golem_steel_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:oxidized_golem_steel_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-oxidized-golem-steel-ingot-from-nuggets",
+    "name": "data/eternal_starlight/recipe/oxidized_golem_steel_ingot_from_nuggets.json",
+    "source": "data/eternal_starlight/recipe/oxidized_golem_steel_ingot_from_nuggets.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "oxidized_golem_steel_ingot",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:oxidized_golem_steel_nugget"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:oxidized_golem_steel_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-oxidized-golem-steel-nugget",
+    "name": "data/eternal_starlight/recipe/oxidized_golem_steel_nugget.json",
+    "source": "data/eternal_starlight/recipe/oxidized_golem_steel_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:oxidized_golem_steel_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "eternal_starlight:oxidized_golem_steel_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-petal-scythe",
+    "name": "data/eternal_starlight/recipe/petal_scythe.json",
+    "source": "data/eternal_starlight/recipe/petal_scythe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "P": {
+          "item": "eternal_starlight:tenacious_petal"
+        },
+        "V": {
+          "item": "eternal_starlight:tenacious_vine"
+        }
+      },
+      "pattern": [
+        "PPP",
+        " VP",
+        "V  "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:petal_scythe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-piston-from-cinder-brick",
+    "name": "data/eternal_starlight/recipe/piston_from_cinder_brick.json",
+    "source": "data/eternal_starlight/recipe/piston_from_cinder_brick.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:cinder_brick"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "T": {
+          "tag": "minecraft:planks"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "TTT",
+        "#X#",
+        "#R#"
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone",
+    "name": "data/eternal_starlight/recipe/polished_grimstone.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:grimstone"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:polished_grimstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-slab-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_slab_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_slab_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:polished_grimstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-slab-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_slab_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_slab_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:polished_grimstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-stairs-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_stairs_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_stairs_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-stairs-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_stairs_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_stairs_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tile-slab-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tile_slab_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tile_slab_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:polished_grimstone_tile_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tile-slab-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tile_slab_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tile_slab_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:polished_grimstone_tile_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tile-stairs-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tile_stairs_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tile_stairs_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_tile_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tile-stairs-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tile_stairs_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tile_stairs_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_tile_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tile-wall-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tile_wall_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tile_wall_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_tile_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tile-wall-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tile_wall_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tile_wall_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_tile_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tiles-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tiles_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tiles_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-tiles-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_tiles_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_tiles_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-wall-from-cobbled-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_wall_from_cobbled_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_wall_from_cobbled_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:cobbled_grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-grimstone-wall-from-grimstone-stonecutting",
+    "name": "data/eternal_starlight/recipe/polished_grimstone_wall_from_grimstone_stonecutting.json",
+    "source": "data/eternal_starlight/recipe/polished_grimstone_wall_from_grimstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "eternal_starlight:grimstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:polished_grimstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pungency-fruit-axe-smithing",
+    "name": "data/eternal_starlight/recipe/pungency_fruit_axe_smithing.json",
+    "source": "data/eternal_starlight/recipe/pungency_fruit_axe_smithing.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "eternal_starlight:pungency_fruit"
+      },
+      "base": {
+        "item": "eternal_starlight:malarite_axe"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:pungency_fruit_axe"
+      },
+      "template": {
+        "item": "eternal_starlight:pungency_fruit_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pungency-fruit-spear-smithing",
+    "name": "data/eternal_starlight/recipe/pungency_fruit_spear_smithing.json",
+    "source": "data/eternal_starlight/recipe/pungency_fruit_spear_smithing.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "eternal_starlight:pungency_fruit"
+      },
+      "base": {
+        "item": "eternal_starlight:malarite_spear"
+      },
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:pungency_fruit_spear"
+      },
+      "template": {
+        "item": "eternal_starlight:pungency_fruit_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pungency-fruit-upgrade-smithing-template",
+    "name": "data/eternal_starlight/recipe/pungency_fruit_upgrade_smithing_template.json",
+    "source": "data/eternal_starlight/recipe/pungency_fruit_upgrade_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:gems/malarite"
+        },
+        "C": {
+          "item": "eternal_starlight:nightfall_mud_bricks"
+        },
+        "S": {
+          "item": "eternal_starlight:pungency_fruit_upgrade_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:pungency_fruit_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rage-of-stars",
+    "name": "data/eternal_starlight/recipe/rage_of_stars.json",
+    "source": "data/eternal_starlight/recipe/rage_of_stars.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/aethersent"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:rage_of_stars"
+      }
+    }
+  },
+  {
+    "anchor": "receita-raw-aethersent-block",
+    "name": "data/eternal_starlight/recipe/raw_aethersent_block.json",
+    "source": "data/eternal_starlight/recipe/raw_aethersent_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:raw_aethersent"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:raw_aethersent_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-red-starlight-crystal-lantern",
+    "name": "data/eternal_starlight/recipe/red_starlight_crystal_lantern.json",
+    "source": "data/eternal_starlight/recipe/red_starlight_crystal_lantern.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "S": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        },
+        "T": {
+          "item": "minecraft:torch"
+        }
+      },
+      "pattern": [
+        " S ",
+        "STS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:red_starlight_crystal_lantern"
+      }
+    }
+  },
+  {
+    "anchor": "receita-reinforced-ice",
+    "name": "data/eternal_starlight/recipe/reinforced_ice.json",
+    "source": "data/eternal_starlight/recipe/reinforced_ice.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "G": {
+          "tag": "c:gems/glacite"
+        },
+        "I": {
+          "item": "minecraft:ice"
+        }
+      },
+      "pattern": [
+        "GIG",
+        "III",
+        "GIG"
+      ],
+      "result": {
+        "count": 8,
+        "id": "eternal_starlight:reinforced_ice"
+      }
+    }
+  },
+  {
+    "anchor": "receita-saltpeter-matchbox",
+    "name": "data/eternal_starlight/recipe/saltpeter_matchbox.json",
+    "source": "data/eternal_starlight/recipe/saltpeter_matchbox.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "P": {
+          "tag": "c:dusts/saltpeter"
+        },
+        "S": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "SSS",
+        "PPP",
+        "SSS"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:saltpeter_matchbox"
+      }
+    }
+  },
+  {
+    "anchor": "receita-aetherstrike-rocket",
+    "name": "data/eternal_starlight/recipe/shapeless/aetherstrike_rocket.json",
+    "source": "data/eternal_starlight/recipe/shapeless/aetherstrike_rocket.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:creteor_hide"
+        },
+        {
+          "item": "eternal_starlight:starcore"
+        },
+        {
+          "item": "minecraft:paper"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:aetherstrike_rocket"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crinoa-ball",
+    "name": "data/eternal_starlight/recipe/shapeless/crinoa_ball.json",
+    "source": "data/eternal_starlight/recipe/shapeless/crinoa_ball.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:crinoa"
+        },
+        {
+          "item": "eternal_starlight:crinoa"
+        },
+        {
+          "item": "eternal_starlight:lunar_berries"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:crinoa_ball"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pungency-stew",
+    "name": "data/eternal_starlight/recipe/shapeless/pungency_stew.json",
+    "source": "data/eternal_starlight/recipe/shapeless/pungency_stew.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:pungency_fruit"
+        },
+        {
+          "item": "minecraft:rotten_flesh"
+        },
+        {
+          "item": "minecraft:bowl"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:pungency_stew"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rookfish-skewer",
+    "name": "data/eternal_starlight/recipe/shapeless/rookfish_skewer.json",
+    "source": "data/eternal_starlight/recipe/shapeless/rookfish_skewer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:cooked_rookfish"
+        },
+        {
+          "item": "minecraft:stick"
+        },
+        {
+          "item": "minecraft:stick"
+        },
+        {
+          "item": "minecraft:stick"
+        }
+      ],
+      "result": {
+        "count": 3,
+        "id": "eternal_starlight:rookfish_skewer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shadow-escargot",
+    "name": "data/eternal_starlight/recipe/shapeless/shadow_escargot.json",
+    "source": "data/eternal_starlight/recipe/shapeless/shadow_escargot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:velvetumoss_ball"
+        },
+        {
+          "item": "eternal_starlight:cooked_shadow_snail_meat"
+        },
+        {
+          "item": "eternal_starlight:shadow_snail_shell"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:shadow_escargot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shadow-snail-shell-powder",
+    "name": "data/eternal_starlight/recipe/shapeless/shadow_snail_shell_powder.json",
+    "source": "data/eternal_starlight/recipe/shapeless/shadow_snail_shell_powder.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:shadow_snail_shell"
+        }
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:shadow_snail_shell_powder"
+      }
+    }
+  },
+  {
+    "anchor": "receita-soulit-spectator",
+    "name": "data/eternal_starlight/recipe/shapeless/soulit_spectator.json",
+    "source": "data/eternal_starlight/recipe/shapeless/soulit_spectator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "eternal_starlight:soul_dew"
+        },
+        {
+          "item": "eternal_starlight:nightfall_spider_eye"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:soulit_spectator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shears-from-deepsilver-ingot",
+    "name": "data/eternal_starlight/recipe/shears_from_deepsilver_ingot.json",
+    "source": "data/eternal_starlight/recipe/shears_from_deepsilver_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        }
+      },
+      "pattern": [
+        "# ",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shears"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shield-from-deepsilver-ingot",
+    "name": "data/eternal_starlight/recipe/shield_from_deepsilver_ingot.json",
+    "source": "data/eternal_starlight/recipe/shield_from_deepsilver_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "P": {
+          "tag": "minecraft:planks"
+        }
+      },
+      "pattern": [
+        "P#P",
+        "PPP",
+        " P "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-silver-pungency-fruit",
+    "name": "data/eternal_starlight/recipe/silver_pungency_fruit.json",
+    "source": "data/eternal_starlight/recipe/silver_pungency_fruit.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "F": {
+          "item": "eternal_starlight:pungency_fruit"
+        },
+        "S": {
+          "item": "eternal_starlight:deepsilver_ingot"
+        }
+      },
+      "pattern": [
+        "SSS",
+        "SFS",
+        "SSS"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:silver_pungency_fruit"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sonar-bomb",
+    "name": "data/eternal_starlight/recipe/sonar_bomb.json",
+    "source": "data/eternal_starlight/recipe/sonar_bomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "G": {
+          "item": "eternal_starlight:shivering_gel"
+        },
+        "N": {
+          "tag": "c:nuggets/deepsilver"
+        }
+      },
+      "pattern": [
+        " N ",
+        "NGN",
+        " N "
+      ],
+      "result": {
+        "count": 12,
+        "id": "eternal_starlight:sonar_bomb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-starfall-longbow",
+    "name": "data/eternal_starlight/recipe/starfall_longbow.json",
+    "source": "data/eternal_starlight/recipe/starfall_longbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "A": {
+          "tag": "c:ingots/aethersent"
+        },
+        "H": {
+          "item": "eternal_starlight:creteor_hide"
+        },
+        "S": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        " AS",
+        "H S",
+        " AS"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:starfall_longbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-starfire-upgrade-smithing-template",
+    "name": "data/eternal_starlight/recipe/starfire_upgrade_smithing_template.json",
+    "source": "data/eternal_starlight/recipe/starfire_upgrade_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "C": {
+          "item": "eternal_starlight:starcore_block"
+        },
+        "S": {
+          "item": "eternal_starlight:starfire_upgrade_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:starfire_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-starlit-painting",
+    "name": "data/eternal_starlight/recipe/starlit_painting.json",
+    "source": "data/eternal_starlight/recipe/starlit_painting.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "F": {
+          "tag": "eternal_starlight:yeti_fur"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "SSS",
+        "SFS",
+        "SSS"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:starlit_painting"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tear-bomb",
+    "name": "data/eternal_starlight/recipe/tear_bomb.json",
+    "source": "data/eternal_starlight/recipe/tear_bomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "F": {
+          "item": "eternal_starlight:pungency_fruit"
+        },
+        "G": {
+          "tag": "c:gunpowders"
+        },
+        "M": {
+          "tag": "c:gems/malarite"
+        }
+      },
+      "pattern": [
+        "FGF",
+        "GMG",
+        "FGF"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:tear_bomb"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tentacle-spike",
+    "name": "data/eternal_starlight/recipe/tentacle_spike.json",
+    "source": "data/eternal_starlight/recipe/tentacle_spike.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:seeker_tentacle"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        "  H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:tentacle_spike"
+      }
+    }
+  },
+  {
+    "anchor": "receita-terra-crystal",
+    "name": "data/eternal_starlight/recipe/terra_crystal.json",
+    "source": "data/eternal_starlight/recipe/terra_crystal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "tag": "eternal_starlight:terra_crystal_ingredients"
+        },
+        "S": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        }
+      },
+      "pattern": [
+        " S ",
+        "SCS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:terra_crystal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-axe",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_axe.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        "#H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-boots",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_boots.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-chestplate",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_chestplate.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-hammer",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_hammer.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_hammer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        "#H#",
+        " H "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_hammer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-helmet",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_helmet.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-hoe",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_hoe.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "##",
+        " H",
+        " H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-leggings",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_leggings.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "# #",
+        "# #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-pickaxe",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_pickaxe.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        " H ",
+        " H "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-scythe",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_scythe.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_scythe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "###",
+        "  H",
+        "  H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_scythe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-shovel",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_shovel.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "H",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-thermal-springstone-sword",
+    "name": "data/eternal_starlight/recipe/thermal_springstone_sword.json",
+    "source": "data/eternal_starlight/recipe/thermal_springstone_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:ingots/thermal_springstone"
+        },
+        "H": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "#",
+        "H"
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:thermal_springstone_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tinted-glass-from-nightfall-spider-eye",
+    "name": "data/eternal_starlight/recipe/tinted_glass_from_nightfall_spider_eye.json",
+    "source": "data/eternal_starlight/recipe/tinted_glass_from_nightfall_spider_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "E": {
+          "item": "eternal_starlight:nightfall_spider_eye"
+        },
+        "G": {
+          "item": "minecraft:glass"
+        }
+      },
+      "pattern": [
+        " E ",
+        "EGE",
+        " E "
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:tinted_glass"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tooth-of-hunger-tiles",
+    "name": "data/eternal_starlight/recipe/tooth_of_hunger_tiles.json",
+    "source": "data/eternal_starlight/recipe/tooth_of_hunger_tiles.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:tooth_of_hunger"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:tooth_of_hunger_tiles"
+      }
+    }
+  },
+  {
+    "anchor": "receita-torch-from-saltpeter-matchbox",
+    "name": "data/eternal_starlight/recipe/torch_from_saltpeter_matchbox.json",
+    "source": "data/eternal_starlight/recipe/torch_from_saltpeter_matchbox.json",
+    "recipe": {
+      "type": "eternal_starlight:tool_modification",
+      "category": "misc",
+      "input": "minecraft:stick",
+      "output": {
+        "count": 4,
+        "id": "minecraft:torch"
+      },
+      "tool": "eternal_starlight:saltpeter_matchbox"
+    }
+  },
+  {
+    "anchor": "receita-tripwire-hook-from-deepsilver-ingot",
+    "name": "data/eternal_starlight/recipe/tripwire_hook_from_deepsilver_ingot.json",
+    "source": "data/eternal_starlight/recipe/tripwire_hook_from_deepsilver_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/deepsilver"
+        },
+        "P": {
+          "tag": "minecraft:planks"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        }
+      },
+      "pattern": [
+        "#",
+        "S",
+        "P"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:tripwire_hook"
+      }
+    }
+  },
+  {
+    "anchor": "receita-twining-armor-trim-smithing-template",
+    "name": "data/eternal_starlight/recipe/twining_armor_trim_smithing_template.json",
+    "source": "data/eternal_starlight/recipe/twining_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "c:ingots/amaramber"
+        },
+        "C": {
+          "item": "eternal_starlight:grimstone"
+        },
+        "S": {
+          "item": "eternal_starlight:twining_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "eternal_starlight:twining_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-twining-armor-trim-smithing-template-smithing-trim",
+    "name": "data/eternal_starlight/recipe/twining_armor_trim_smithing_template_smithing_trim.json",
+    "source": "data/eternal_starlight/recipe/twining_armor_trim_smithing_template_smithing_trim.json",
+    "recipe": {
+      "type": "minecraft:smithing_trim",
+      "addition": {
+        "tag": "minecraft:trim_materials"
+      },
+      "base": {
+        "tag": "minecraft:trimmable_armor"
+      },
+      "template": {
+        "item": "eternal_starlight:twining_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-unrealium-crossbow",
+    "name": "data/eternal_starlight/recipe/unrealium_crossbow.json",
+    "source": "data/eternal_starlight/recipe/unrealium_crossbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:rods/wooden"
+        },
+        "$": {
+          "item": "minecraft:tripwire_hook"
+        },
+        "&": {
+          "tag": "c:ingots/unrealium"
+        },
+        "~": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "#&#",
+        "~$~",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:unrealium_crossbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-voracious-arrow",
+    "name": "data/eternal_starlight/recipe/voracious_arrow.json",
+    "source": "data/eternal_starlight/recipe/voracious_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "F": {
+          "tag": "eternal_starlight:arrow_feathers"
+        },
+        "S": {
+          "tag": "c:rods/wooden"
+        },
+        "T": {
+          "item": "eternal_starlight:tooth_of_hunger"
+        }
+      },
+      "pattern": [
+        "T",
+        "S",
+        "F"
+      ],
+      "result": {
+        "count": 4,
+        "id": "eternal_starlight:voracious_arrow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-water-crystal",
+    "name": "data/eternal_starlight/recipe/water_crystal.json",
+    "source": "data/eternal_starlight/recipe/water_crystal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "tag": "eternal_starlight:water_crystal_ingredients"
+        },
+        "S": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        }
+      },
+      "pattern": [
+        " S ",
+        "SCS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:water_crystal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-white-bed",
+    "name": "data/eternal_starlight/recipe/white_bed.json",
+    "source": "data/eternal_starlight/recipe/white_bed.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "bed",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:white_yeti_fur"
+        },
+        "X": {
+          "tag": "minecraft:planks"
+        }
+      },
+      "pattern": [
+        "###",
+        "XXX"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:white_bed"
+      }
+    }
+  },
+  {
+    "anchor": "receita-white-yeti-fur-carpet",
+    "name": "data/eternal_starlight/recipe/white_yeti_fur_carpet.json",
+    "source": "data/eternal_starlight/recipe/white_yeti_fur_carpet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "carpet",
+      "key": {
+        "#": {
+          "item": "eternal_starlight:white_yeti_fur"
+        }
+      },
+      "pattern": [
+        "##"
+      ],
+      "result": {
+        "count": 3,
+        "id": "eternal_starlight:white_yeti_fur_carpet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wilted-crossbow",
+    "name": "data/eternal_starlight/recipe/wilted_crossbow.json",
+    "source": "data/eternal_starlight/recipe/wilted_crossbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "tag": "c:rods/wooden"
+        },
+        "$": {
+          "item": "eternal_starlight:red_velvetumoss_flower"
+        },
+        "&": {
+          "tag": "c:ingots/golem_steel"
+        },
+        "~": {
+          "item": "eternal_starlight:tenacious_vine"
+        }
+      },
+      "pattern": [
+        "#&#",
+        "~$~",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:wilted_crossbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wind-crystal",
+    "name": "data/eternal_starlight/recipe/wind_crystal.json",
+    "source": "data/eternal_starlight/recipe/wind_crystal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "C": {
+          "tag": "eternal_starlight:wind_crystal_ingredients"
+        },
+        "S": {
+          "item": "eternal_starlight:red_starlight_crystal_shard"
+        }
+      },
+      "pattern": [
+        " S ",
+        "SCS",
+        " S "
+      ],
+      "result": {
+        "count": 1,
+        "id": "eternal_starlight:wind_crystal"
+      }
+    }
+  }
+]
