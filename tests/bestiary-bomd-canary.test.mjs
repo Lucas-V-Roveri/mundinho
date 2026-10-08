@@ -27,6 +27,26 @@ function catalog(before = false) {
 const entries = catalog();
 const prior = catalog(true);
 const bomd = entries.filter(e => e.mod === 'Bosses of Mass Destruction');
+test('all published audit groups have valid images or documented exceptions and functioning recipe anchors', () => {
+  const corrupt = /(?:[^;\s];\s*){8,}[^;\s]/;
+  for (const e of entries.filter(e => e.audit)) {
+    assert.ok(!corrupt.test(JSON.stringify(e.audit)));
+    assert.ok(e.audit.rows.every(r => Object.keys(r).length === 14 && Object.values(r).every(v => typeof v === 'string' && v.trim())));
+    assert.ok(e.drops.every(d => d.use && d.mechanism && d.confidenceDetail && d.sourceDetail));
+    if (e.imageUrl) {
+      assert.ok(e.imageUrl.startsWith('/images/bestiary/audited/'));
+      const b = fs.readFileSync(path.join(root, 'public', e.imageUrl));
+      assert.equal(b.subarray(1, 4).toString(), 'PNG');
+      assert.ok(b.readUInt32BE(16) > 64 && b.readUInt32BE(20) > 64);
+    } else assert.match(e.audit.rows[0].Imagem, /não confirmad|exceção/i);
+    for (const drop of e.drops) if (drop.guideHref?.startsWith('/bestiary/receitas/')) {
+      const [file, anchor] = drop.guideHref.split('#');
+      const page = fs.readFileSync(path.join(root, 'public', file), 'utf8');
+      assert.ok(page.includes(`id="${anchor}"`), `${e.id}: ${drop.guideHref}`);
+      assert.equal(page.split(`id="${anchor}"`).length - 1, 1);
+    }
+  }
+});
 test('each integrated audit preserves its fourteen fields, reward uses and faithful local images', () => {
   const integrated = JSON.parse(fs.readFileSync(path.join(root, 'data/bestiary-integrated-audits.json'), 'utf8'));
   assert.equal(Object.keys(integrated).length, 8);

@@ -1,0 +1,4252 @@
+[
+  {
+    "anchor": "receita-upgrade-elytra",
+    "name": "upgrade_elytra",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/incendium/recipe/upgrade_elytra.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "base": "minecraft:jigsaw",
+      "addition": "minecraft:elytra",
+      "result": {
+        "id": "minecraft:elytra"
+      }
+    }
+  },
+  {
+    "anchor": "receita-observer",
+    "name": "observer",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/minecraft/recipe/observer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "RRQ",
+        "###"
+      ],
+      "key": {
+        "Q": "minecraft:quartz",
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:observer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-repeater",
+    "name": "repeater",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/minecraft/recipe/repeater.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#X#",
+        "III"
+      ],
+      "key": {
+        "#": "minecraft:redstone_torch",
+        "X": "minecraft:redstone",
+        "I": "#incendium:smooth_stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:repeater"
+      }
+    }
+  },
+  {
+    "anchor": "receita-piston",
+    "name": "piston",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/minecraft/recipe/piston.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "TTT",
+        "#X#",
+        "#R#"
+      ],
+      "key": {
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials",
+        "T": "#minecraft:planks",
+        "X": "minecraft:iron_ingot"
+      },
+      "result": {
+        "id": "minecraft:piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lever",
+    "name": "lever",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/minecraft/recipe/lever.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "X",
+        "#"
+      ],
+      "key": {
+        "#": "#minecraft:stone_crafting_materials",
+        "X": "minecraft:stick"
+      },
+      "result": {
+        "id": "minecraft:lever"
+      }
+    }
+  },
+  {
+    "anchor": "receita-comparator",
+    "name": "comparator",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/minecraft/recipe/comparator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "#X#",
+        "III"
+      ],
+      "key": {
+        "#": "minecraft:redstone_torch",
+        "X": "minecraft:quartz",
+        "I": "#incendium:smooth_stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:comparator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dropper",
+    "name": "dropper",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/minecraft/recipe/dropper.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "#R#"
+      ],
+      "key": {
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:dropper"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dispenser",
+    "name": "dispenser",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-2-overlay/data/minecraft/recipe/dispenser.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#X#",
+        "#R#"
+      ],
+      "key": {
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials",
+        "X": "minecraft:bow"
+      },
+      "result": {
+        "id": "minecraft:dispenser"
+      }
+    }
+  },
+  {
+    "anchor": "receita-upgrade-elytra",
+    "name": "upgrade_elytra",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/incendium/recipe/upgrade_elytra.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "base": "minecraft:jigsaw",
+      "addition": "minecraft:elytra",
+      "result": {
+        "id": "minecraft:elytra"
+      }
+    }
+  },
+  {
+    "anchor": "receita-observer",
+    "name": "observer",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/minecraft/recipe/observer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "RRQ",
+        "###"
+      ],
+      "key": {
+        "Q": "minecraft:quartz",
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:observer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-repeater",
+    "name": "repeater",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/minecraft/recipe/repeater.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#X#",
+        "III"
+      ],
+      "key": {
+        "#": "minecraft:redstone_torch",
+        "X": "minecraft:redstone",
+        "I": "#incendium:smooth_stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:repeater"
+      }
+    }
+  },
+  {
+    "anchor": "receita-piston",
+    "name": "piston",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/minecraft/recipe/piston.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "TTT",
+        "#X#",
+        "#R#"
+      ],
+      "key": {
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials",
+        "T": "#minecraft:planks",
+        "X": "minecraft:iron_ingot"
+      },
+      "result": {
+        "id": "minecraft:piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lever",
+    "name": "lever",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/minecraft/recipe/lever.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "X",
+        "#"
+      ],
+      "key": {
+        "#": "#minecraft:stone_crafting_materials",
+        "X": "minecraft:stick"
+      },
+      "result": {
+        "id": "minecraft:lever"
+      }
+    }
+  },
+  {
+    "anchor": "receita-comparator",
+    "name": "comparator",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/minecraft/recipe/comparator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "#X#",
+        "III"
+      ],
+      "key": {
+        "#": "minecraft:redstone_torch",
+        "X": "minecraft:quartz",
+        "I": "#incendium:smooth_stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:comparator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dropper",
+    "name": "dropper",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/minecraft/recipe/dropper.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "#R#"
+      ],
+      "key": {
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials"
+      },
+      "result": {
+        "id": "minecraft:dropper"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dispenser",
+    "name": "dispenser",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::1-21-4-overlay/data/minecraft/recipe/dispenser.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#X#",
+        "#R#"
+      ],
+      "key": {
+        "R": "minecraft:redstone",
+        "#": "#minecraft:stone_crafting_materials",
+        "X": "minecraft:bow"
+      },
+      "result": {
+        "id": "minecraft:dispenser"
+      }
+    }
+  },
+  {
+    "anchor": "receita-upgrade-elytra",
+    "name": "upgrade_elytra",
+    "source": "evidence-inc/Incendium_1.21_UNSUPPORTED_PORT_v5.4.4.zip::data/incendium/recipe/upgrade_elytra.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "template": [],
+      "base": {
+        "item": "minecraft:jigsaw"
+      },
+      "addition": {
+        "item": "minecraft:elytra"
+      },
+      "result": {
+        "id": "minecraft:elytra"
+      }
+    }
+  },
+  {
+    "anchor": "receita-observer",
+    "name": "observer",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/observer.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "RRQ",
+        "###"
+      ],
+      "key": {
+        "Q": {
+          "item": "minecraft:quartz"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "#": {
+          "tag": "minecraft:stone_crafting_materials"
+        }
+      },
+      "result": {
+        "id": "minecraft:observer"
+      }
+    }
+  },
+  {
+    "anchor": "receita-repeater",
+    "name": "repeater",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/repeater.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#X#",
+        "III"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_torch"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        },
+        "I": {
+          "tag": "incendium:smooth_stone_crafting_materials"
+        }
+      },
+      "result": {
+        "id": "minecraft:repeater"
+      }
+    }
+  },
+  {
+    "anchor": "receita-piston",
+    "name": "piston",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/piston.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "T": {
+          "tag": "minecraft:planks"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "TTT",
+        "#X#",
+        "#R#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lever",
+    "name": "lever",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/lever.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "X",
+        "#"
+      ],
+      "key": {
+        "#": {
+          "tag": "minecraft:stone_crafting_materials"
+        },
+        "X": {
+          "item": "minecraft:stick"
+        }
+      },
+      "result": {
+        "id": "minecraft:lever"
+      }
+    }
+  },
+  {
+    "anchor": "receita-comparator",
+    "name": "comparator",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/comparator.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "#X#",
+        "III"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_torch"
+        },
+        "X": {
+          "item": "minecraft:quartz"
+        },
+        "I": {
+          "tag": "incendium:smooth_stone_crafting_materials"
+        }
+      },
+      "result": {
+        "id": "minecraft:comparator"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dropper",
+    "name": "dropper",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/dropper.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "#R#"
+      ],
+      "key": {
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "#": {
+          "tag": "minecraft:stone_crafting_materials"
+        }
+      },
+      "result": {
+        "id": "minecraft:dropper"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dispenser",
+    "name": "dispenser",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/dispenser.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#X#",
+        "#R#"
+      ],
+      "key": {
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "#": {
+          "tag": "minecraft:stone_crafting_materials"
+        },
+        "X": {
+          "item": "minecraft:bow"
+        }
+      },
+      "result": {
+        "id": "minecraft:dispenser"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bookshelf",
+    "name": "bookshelf",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/bookshelf.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "tag": "minecraft:planks"
+        },
+        "X": {
+          "item": "minecraft:book"
+        }
+      },
+      "pattern": [
+        "###",
+        "XXX",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:bookshelf"
+      }
+    }
+  },
+  {
+    "anchor": "receita-enchanting-table",
+    "name": "enchanting_table",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/enchanting_table.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:obsidian"
+        },
+        "B": {
+          "item": "minecraft:book"
+        },
+        "D": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        " B ",
+        "D#D",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:enchanting_table"
+      }
+    }
+  },
+  {
+    "anchor": "receita-writable-book",
+    "name": "writable_book",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/writable_book.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:book"
+        },
+        {
+          "item": "minecraft:ink_sac"
+        },
+        {
+          "item": "minecraft:feather"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:writable_book"
+      }
+    }
+  },
+  {
+    "anchor": "receita-green-stained-glass-pane",
+    "name": "green_stained_glass_pane",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/green_stained_glass_pane.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "stained_glass_pane",
+      "key": {
+        "#": {
+          "item": "minecraft:green_stained_glass"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:green_stained_glass_pane"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lime-stained-glass-pane",
+    "name": "lime_stained_glass_pane",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/lime_stained_glass_pane.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "stained_glass_pane",
+      "key": {
+        "#": {
+          "item": "minecraft:lime_stained_glass"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:lime_stained_glass_pane"
+      }
+    }
+  },
+  {
+    "anchor": "receita-yellow-stained-glass-pane",
+    "name": "yellow_stained_glass_pane",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/yellow_stained_glass_pane.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "stained_glass_pane",
+      "key": {
+        "#": {
+          "item": "minecraft:yellow_stained_glass"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:yellow_stained_glass_pane"
+      }
+    }
+  },
+  {
+    "anchor": "receita-green-glazed-terracotta",
+    "name": "green_glazed_terracotta",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/green_glazed_terracotta.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "blocks",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "ingredient": {
+        "item": "minecraft:green_terracotta"
+      },
+      "result": {
+        "id": "minecraft:green_glazed_terracotta"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lime-glazed-terracotta",
+    "name": "lime_glazed_terracotta",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/lime_glazed_terracotta.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "blocks",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "ingredient": {
+        "item": "minecraft:lime_terracotta"
+      },
+      "result": {
+        "id": "minecraft:lime_glazed_terracotta"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-nugget-from-blasting",
+    "name": "iron_nugget_from_blasting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_nugget_from_blasting.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 0.1,
+      "ingredient": [
+        {
+          "item": "minecraft:iron_pickaxe"
+        },
+        {
+          "item": "minecraft:iron_shovel"
+        },
+        {
+          "item": "minecraft:iron_axe"
+        },
+        {
+          "item": "minecraft:iron_hoe"
+        },
+        {
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "item": "minecraft:iron_helmet"
+        },
+        {
+          "item": "minecraft:iron_chestplate"
+        },
+        {
+          "item": "minecraft:iron_leggings"
+        },
+        {
+          "item": "minecraft:iron_boots"
+        },
+        {
+          "item": "minecraft:iron_horse_armor"
+        },
+        {
+          "item": "minecraft:chainmail_helmet"
+        },
+        {
+          "item": "minecraft:chainmail_chestplate"
+        },
+        {
+          "item": "minecraft:chainmail_leggings"
+        },
+        {
+          "item": "minecraft:chainmail_boots"
+        }
+      ],
+      "result": {
+        "id": "minecraft:iron_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-nugget-from-smelting",
+    "name": "iron_nugget_from_smelting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_nugget_from_smelting.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "ingredient": [
+        {
+          "item": "minecraft:iron_pickaxe"
+        },
+        {
+          "item": "minecraft:iron_shovel"
+        },
+        {
+          "item": "minecraft:iron_axe"
+        },
+        {
+          "item": "minecraft:iron_hoe"
+        },
+        {
+          "item": "minecraft:iron_sword"
+        },
+        {
+          "item": "minecraft:iron_helmet"
+        },
+        {
+          "item": "minecraft:iron_chestplate"
+        },
+        {
+          "item": "minecraft:iron_leggings"
+        },
+        {
+          "item": "minecraft:iron_boots"
+        },
+        {
+          "item": "minecraft:iron_horse_armor"
+        },
+        {
+          "item": "minecraft:chainmail_helmet"
+        },
+        {
+          "item": "minecraft:chainmail_chestplate"
+        },
+        {
+          "item": "minecraft:chainmail_leggings"
+        },
+        {
+          "item": "minecraft:chainmail_boots"
+        }
+      ],
+      "result": {
+        "id": "minecraft:iron_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-acacia-hanging-sign",
+    "name": "acacia_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/acacia_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_acacia_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:acacia_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bamboo-hanging-sign",
+    "name": "bamboo_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/bamboo_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_bamboo_block"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:bamboo_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-birch-hanging-sign",
+    "name": "birch_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/birch_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_birch_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:birch_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cherry-hanging-sign",
+    "name": "cherry_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/cherry_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_cherry_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:cherry_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crimson-hanging-sign",
+    "name": "crimson_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/crimson_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_crimson_stem"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:crimson_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-oak-hanging-sign",
+    "name": "dark_oak_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/dark_oak_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_dark_oak_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:dark_oak_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-jungle-hanging-sign",
+    "name": "jungle_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/jungle_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_jungle_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:jungle_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mangrove-hanging-sign",
+    "name": "mangrove_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/mangrove_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_mangrove_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:mangrove_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-oak-hanging-sign",
+    "name": "oak_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/oak_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_oak_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:oak_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-spruce-hanging-sign",
+    "name": "spruce_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/spruce_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_spruce_log"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:spruce_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-warped-hanging-sign",
+    "name": "warped_hanging_sign",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/warped_hanging_sign.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "hanging_sign",
+      "key": {
+        "#": {
+          "item": "minecraft:stripped_warped_stem"
+        },
+        "X": {
+          "item": "minecraft:chain"
+        }
+      },
+      "pattern": [
+        "X X",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:warped_hanging_sign"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lead",
+    "name": "lead",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/lead.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "O": {
+          "item": "minecraft:slime_ball"
+        },
+        "~": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "~~ ",
+        "~O ",
+        "  ~"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:lead"
+      }
+    }
+  },
+  {
+    "anchor": "receita-magma-cream",
+    "name": "magma_cream",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/magma_cream.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:blaze_powder"
+        },
+        {
+          "item": "minecraft:slime_ball"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:magma_cream"
+      }
+    }
+  },
+  {
+    "anchor": "receita-slime-block",
+    "name": "slime_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/slime_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:slime_ball"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:slime_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sticky-piston",
+    "name": "sticky_piston",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/sticky_piston.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "P": {
+          "item": "minecraft:piston"
+        },
+        "S": {
+          "item": "minecraft:slime_ball"
+        }
+      },
+      "pattern": [
+        "S",
+        "P"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:sticky_piston"
+      }
+    }
+  },
+  {
+    "anchor": "receita-slime-ball",
+    "name": "slime_ball",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/slime_ball.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:slime_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "minecraft:slime_ball"
+      }
+    }
+  },
+  {
+    "anchor": "receita-beacon",
+    "name": "beacon",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/beacon.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "G": {
+          "item": "minecraft:glass"
+        },
+        "O": {
+          "item": "minecraft:obsidian"
+        },
+        "S": {
+          "item": "minecraft:nether_star"
+        }
+      },
+      "pattern": [
+        "GGG",
+        "GSG",
+        "OOO"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:beacon"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ender-chest",
+    "name": "ender_chest",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/ender_chest.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:obsidian"
+        },
+        "E": {
+          "item": "minecraft:ender_eye"
+        }
+      },
+      "pattern": [
+        "###",
+        "#E#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:ender_chest"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-basalt",
+    "name": "polished_basalt",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_basalt.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "S": {
+          "item": "minecraft:basalt"
+        }
+      },
+      "pattern": [
+        "SS",
+        "SS"
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:polished_basalt"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-basalt-from-basalt-stonecutting",
+    "name": "polished_basalt_from_basalt_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_basalt_from_basalt_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:basalt"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:polished_basalt"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smooth-basalt",
+    "name": "smooth_basalt",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/smooth_basalt.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "blocks",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "ingredient": {
+        "item": "minecraft:basalt"
+      },
+      "result": {
+        "id": "minecraft:smooth_basalt"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-slab",
+    "name": "blackstone_slab",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blackstone_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:blackstone"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:blackstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-slab-from-blackstone-stonecutting",
+    "name": "blackstone_slab_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blackstone_slab_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:blackstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-stairs",
+    "name": "blackstone_stairs",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blackstone_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:blackstone"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:blackstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-stairs-from-blackstone-stonecutting",
+    "name": "blackstone_stairs_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blackstone_stairs_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:blackstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-wall",
+    "name": "blackstone_wall",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blackstone_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:blackstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:blackstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-wall-from-blackstone-stonecutting",
+    "name": "blackstone_wall_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blackstone_wall_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:blackstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-polished-blackstone-from-blackstone-stonecutting",
+    "name": "chiseled_polished_blackstone_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/chiseled_polished_blackstone_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:chiseled_polished_blackstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone",
+    "name": "polished_blackstone",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "S": {
+          "item": "minecraft:blackstone"
+        }
+      },
+      "pattern": [
+        "SS",
+        "SS"
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:polished_blackstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-brick-slab-from-blackstone-stonecutting",
+    "name": "polished_blackstone_brick_slab_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_brick_slab_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:polished_blackstone_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-brick-stairs-from-blackstone-stonecutting",
+    "name": "polished_blackstone_brick_stairs_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_brick_stairs_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:polished_blackstone_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-brick-wall-from-blackstone-stonecutting",
+    "name": "polished_blackstone_brick_wall_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_brick_wall_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:polished_blackstone_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-bricks-from-blackstone-stonecutting",
+    "name": "polished_blackstone_bricks_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_bricks_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:polished_blackstone_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-from-blackstone-stonecutting",
+    "name": "polished_blackstone_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:polished_blackstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-slab-from-blackstone-stonecutting",
+    "name": "polished_blackstone_slab_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_slab_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:polished_blackstone_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-stairs-from-blackstone-stonecutting",
+    "name": "polished_blackstone_stairs_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_stairs_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:polished_blackstone_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-polished-blackstone-wall-from-blackstone-stonecutting",
+    "name": "polished_blackstone_wall_from_blackstone_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/polished_blackstone_wall_from_blackstone_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:blackstone"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:polished_blackstone_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-snout-armor-trim-smithing-template",
+    "name": "snout_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/snout_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:blackstone"
+        },
+        "S": {
+          "item": "minecraft:snout_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:snout_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-activator-rail",
+    "name": "activator_rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/activator_rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:redstone_torch"
+        },
+        "S": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XSX",
+        "X#X",
+        "XSX"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:activator_rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-anvil",
+    "name": "anvil",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/anvil.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "I": {
+          "item": "minecraft:iron_block"
+        },
+        "i": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "III",
+        " i ",
+        "iii"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:anvil"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blast-furnace",
+    "name": "blast_furnace",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/blast_furnace.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:smooth_stone"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "X": {
+          "item": "minecraft:furnace"
+        }
+      },
+      "pattern": [
+        "III",
+        "IXI",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:blast_furnace"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bucket",
+    "name": "bucket",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/bucket.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "# #",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:bucket"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cauldron",
+    "name": "cauldron",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/cauldron.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "# #",
+        "# #",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:cauldron"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chain",
+    "name": "chain",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/chain.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "N": {
+          "item": "minecraft:iron_nugget"
+        }
+      },
+      "pattern": [
+        "N",
+        "I",
+        "N"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:chain"
+      }
+    }
+  },
+  {
+    "anchor": "receita-compass",
+    "name": "compass",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/compass.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " # ",
+        "#X#",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:compass"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crafter",
+    "name": "crafter",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/crafter.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:crafting_table"
+        },
+        "D": {
+          "item": "minecraft:dropper"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        "###",
+        "#C#",
+        "RDR"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:crafter"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crossbow",
+    "name": "crossbow",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/crossbow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "$": {
+          "item": "minecraft:tripwire_hook"
+        },
+        "&": {
+          "item": "minecraft:iron_ingot"
+        },
+        "~": {
+          "item": "minecraft:string"
+        }
+      },
+      "pattern": [
+        "#&#",
+        "~$~",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:crossbow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-detector-rail",
+    "name": "detector_rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/detector_rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stone_pressure_plate"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X#X",
+        "XRX"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:detector_rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-flint-and-steel",
+    "name": "flint_and_steel",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/flint_and_steel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "equipment",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_ingot"
+        },
+        {
+          "item": "minecraft:flint"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:flint_and_steel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-heavy-weighted-pressure-plate",
+    "name": "heavy_weighted_pressure_plate",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/heavy_weighted_pressure_plate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:heavy_weighted_pressure_plate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-hopper",
+    "name": "hopper",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/hopper.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "C": {
+          "item": "minecraft:chest"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "I I",
+        "ICI",
+        " I "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:hopper"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-axe",
+    "name": "iron_axe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        "X#",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-bars",
+    "name": "iron_bars",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_bars.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:iron_bars"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-block",
+    "name": "iron_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-boots",
+    "name": "iron_boots",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-chestplate",
+    "name": "iron_chestplate",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "XXX",
+        "XXX"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-door",
+    "name": "iron_door",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_door.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 3,
+        "id": "minecraft:iron_door"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-helmet",
+    "name": "iron_helmet",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-hoe",
+    "name": "iron_hoe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        " #",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-leggings",
+    "name": "iron_leggings",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-nugget",
+    "name": "iron_nugget",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:iron_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "minecraft:iron_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-pickaxe",
+    "name": "iron_pickaxe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        " # ",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-shovel",
+    "name": "iron_shovel",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-sword",
+    "name": "iron_sword",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "X",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-iron-trapdoor",
+    "name": "iron_trapdoor",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/iron_trapdoor.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:iron_trapdoor"
+      }
+    }
+  },
+  {
+    "anchor": "receita-minecart",
+    "name": "minecart",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/minecart.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "# #",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:minecart"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rail",
+    "name": "rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X#X",
+        "X X"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shears",
+    "name": "shears",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/shears.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        " #",
+        "# "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shears"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shield",
+    "name": "shield",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "W": {
+          "tag": "minecraft:planks"
+        },
+        "o": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "WoW",
+        "WWW",
+        " W "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:shield"
+      }
+    }
+  },
+  {
+    "anchor": "receita-smithing-table",
+    "name": "smithing_table",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/smithing_table.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "minecraft:planks"
+        },
+        "@": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        "@@",
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:smithing_table"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stonecutter",
+    "name": "stonecutter",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/stonecutter.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stone"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "pattern": [
+        " I ",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:stonecutter"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tripwire-hook",
+    "name": "tripwire_hook",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/tripwire_hook.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "tag": "minecraft:planks"
+        },
+        "I": {
+          "item": "minecraft:iron_ingot"
+        },
+        "S": {
+          "item": "minecraft:stick"
+        }
+      },
+      "pattern": [
+        "I",
+        "S",
+        "#"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:tripwire_hook"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glistering-melon-slice",
+    "name": "glistering_melon_slice",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/glistering_melon_slice.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_nugget"
+        },
+        "X": {
+          "item": "minecraft:melon_slice"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:glistering_melon_slice"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gold-ingot-from-nuggets",
+    "name": "gold_ingot_from_nuggets",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/gold_ingot_from_nuggets.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "gold_ingot",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_nugget"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:gold_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-carrot",
+    "name": "golden_carrot",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_carrot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_nugget"
+        },
+        "X": {
+          "item": "minecraft:carrot"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_carrot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-brick-fence",
+    "name": "nether_brick_fence",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_brick_fence.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:nether_brick"
+        },
+        "W": {
+          "item": "minecraft:nether_bricks"
+        }
+      },
+      "pattern": [
+        "W#W",
+        "W#W"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:nether_brick_fence"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-bricks",
+    "name": "nether_bricks",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:nether_brick"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:nether_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-red-nether-bricks",
+    "name": "red_nether_bricks",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/red_nether_bricks.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "N": {
+          "item": "minecraft:nether_brick"
+        },
+        "W": {
+          "item": "minecraft:nether_wart"
+        }
+      },
+      "pattern": [
+        "NW",
+        "WN"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:red_nether_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bolt-armor-trim-smithing-template",
+    "name": "bolt_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/bolt_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": [
+          {
+            "item": "minecraft:copper_block"
+          },
+          {
+            "item": "minecraft:waxed_copper_block"
+          }
+        ],
+        "S": {
+          "item": "minecraft:bolt_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:bolt_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-coast-armor-trim-smithing-template",
+    "name": "coast_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/coast_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        },
+        "S": {
+          "item": "minecraft:coast_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:coast_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-axe",
+    "name": "diamond_axe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "XX",
+        "X#",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-block",
+    "name": "diamond_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-boots",
+    "name": "diamond_boots",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-chestplate",
+    "name": "diamond_chestplate",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "X X",
+        "XXX",
+        "XXX"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-helmet",
+    "name": "diamond_helmet",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-hoe",
+    "name": "diamond_hoe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "XX",
+        " #",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-leggings",
+    "name": "diamond_leggings",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-pickaxe",
+    "name": "diamond_pickaxe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "XXX",
+        " # ",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-shovel",
+    "name": "diamond_shovel",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "X",
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-diamond-sword",
+    "name": "diamond_sword",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/diamond_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "X",
+        "X",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:diamond_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dune-armor-trim-smithing-template",
+    "name": "dune_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/dune_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:sandstone"
+        },
+        "S": {
+          "item": "minecraft:dune_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:dune_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-eye-armor-trim-smithing-template",
+    "name": "eye_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/eye_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:end_stone"
+        },
+        "S": {
+          "item": "minecraft:eye_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:eye_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-flow-armor-trim-smithing-template",
+    "name": "flow_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/flow_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:breeze_rod"
+        },
+        "S": {
+          "item": "minecraft:flow_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:flow_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-host-armor-trim-smithing-template",
+    "name": "host_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/host_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:terracotta"
+        },
+        "S": {
+          "item": "minecraft:host_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:host_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-jukebox",
+    "name": "jukebox",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/jukebox.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "tag": "minecraft:planks"
+        },
+        "X": {
+          "item": "minecraft:diamond"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:jukebox"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-upgrade-smithing-template",
+    "name": "netherite_upgrade_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_upgrade_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:netherrack"
+        },
+        "S": {
+          "item": "minecraft:netherite_upgrade_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-raiser-armor-trim-smithing-template",
+    "name": "raiser_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/raiser_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:terracotta"
+        },
+        "S": {
+          "item": "minecraft:raiser_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:raiser_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-rib-armor-trim-smithing-template",
+    "name": "rib_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/rib_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:netherrack"
+        },
+        "S": {
+          "item": "minecraft:rib_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:rib_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sentry-armor-trim-smithing-template",
+    "name": "sentry_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/sentry_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        },
+        "S": {
+          "item": "minecraft:sentry_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:sentry_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-shaper-armor-trim-smithing-template",
+    "name": "shaper_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/shaper_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:terracotta"
+        },
+        "S": {
+          "item": "minecraft:shaper_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:shaper_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-silence-armor-trim-smithing-template",
+    "name": "silence_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/silence_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:cobbled_deepslate"
+        },
+        "S": {
+          "item": "minecraft:silence_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:silence_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-spire-armor-trim-smithing-template",
+    "name": "spire_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/spire_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:purpur_block"
+        },
+        "S": {
+          "item": "minecraft:spire_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:spire_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-tide-armor-trim-smithing-template",
+    "name": "tide_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/tide_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:prismarine"
+        },
+        "S": {
+          "item": "minecraft:tide_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:tide_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-vex-armor-trim-smithing-template",
+    "name": "vex_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/vex_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:cobblestone"
+        },
+        "S": {
+          "item": "minecraft:vex_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:vex_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ward-armor-trim-smithing-template",
+    "name": "ward_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/ward_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:cobbled_deepslate"
+        },
+        "S": {
+          "item": "minecraft:ward_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:ward_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wayfinder-armor-trim-smithing-template",
+    "name": "wayfinder_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/wayfinder_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:terracotta"
+        },
+        "S": {
+          "item": "minecraft:wayfinder_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:wayfinder_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wild-armor-trim-smithing-template",
+    "name": "wild_armor_trim_smithing_template",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/wild_armor_trim_smithing_template.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:diamond"
+        },
+        "C": {
+          "item": "minecraft:mossy_cobblestone"
+        },
+        "S": {
+          "item": "minecraft:wild_armor_trim_smithing_template"
+        }
+      },
+      "pattern": [
+        "#S#",
+        "#C#",
+        "###"
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:wild_armor_trim_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-clock",
+    "name": "clock",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/clock.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        },
+        "X": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " # ",
+        "#X#",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:clock"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gold-block",
+    "name": "gold_block",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/gold_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:gold_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gold-nugget",
+    "name": "gold_nugget",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/gold_nugget.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "item": "minecraft:gold_ingot"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "minecraft:gold_nugget"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-apple",
+    "name": "golden_apple",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_apple.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        },
+        "X": {
+          "item": "minecraft:apple"
+        }
+      },
+      "pattern": [
+        "###",
+        "#X#",
+        "###"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_apple"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-axe",
+    "name": "golden_axe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_axe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        "X#",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_axe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-boots",
+    "name": "golden_boots",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_boots.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_boots"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-chestplate",
+    "name": "golden_chestplate",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_chestplate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "XXX",
+        "XXX"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_chestplate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-helmet",
+    "name": "golden_helmet",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_helmet.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_helmet"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-hoe",
+    "name": "golden_hoe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_hoe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "XX",
+        " #",
+        " #"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_hoe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-leggings",
+    "name": "golden_leggings",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_leggings.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        "X X",
+        "X X"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_leggings"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-pickaxe",
+    "name": "golden_pickaxe",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_pickaxe.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "XXX",
+        " # ",
+        " # "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_pickaxe"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-shovel",
+    "name": "golden_shovel",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_shovel.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "#",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_shovel"
+      }
+    }
+  },
+  {
+    "anchor": "receita-golden-sword",
+    "name": "golden_sword",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/golden_sword.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "X",
+        "X",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:golden_sword"
+      }
+    }
+  },
+  {
+    "anchor": "receita-light-weighted-pressure-plate",
+    "name": "light_weighted_pressure_plate",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/light_weighted_pressure_plate.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "#": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:light_weighted_pressure_plate"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-ingot",
+    "name": "netherite_ingot",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "netherite_ingot",
+      "ingredients": [
+        {
+          "item": "minecraft:netherite_scrap"
+        },
+        {
+          "item": "minecraft:netherite_scrap"
+        },
+        {
+          "item": "minecraft:netherite_scrap"
+        },
+        {
+          "item": "minecraft:netherite_scrap"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        },
+        {
+          "item": "minecraft:gold_ingot"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:netherite_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-powered-rail",
+    "name": "powered_rail",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/powered_rail.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        },
+        "X": {
+          "item": "minecraft:gold_ingot"
+        }
+      },
+      "pattern": [
+        "X X",
+        "X#X",
+        "XRX"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:powered_rail"
+      }
+    }
+  },
+  {
+    "anchor": "receita-redstone",
+    "name": "redstone",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/redstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "minecraft:redstone_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "minecraft:redstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-chiseled-nether-bricks-from-nether-bricks-stonecutting",
+    "name": "chiseled_nether_bricks_from_nether_bricks_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/chiseled_nether_bricks_from_nether_bricks_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:nether_bricks"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:chiseled_nether_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cracked-nether-bricks",
+    "name": "cracked_nether_bricks",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/cracked_nether_bricks.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "blocks",
+      "cookingtime": 200,
+      "experience": 0.1,
+      "ingredient": {
+        "item": "minecraft:nether_bricks"
+      },
+      "result": {
+        "id": "minecraft:cracked_nether_bricks"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-brick-slab",
+    "name": "nether_brick_slab",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_brick_slab.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:nether_bricks"
+        }
+      },
+      "pattern": [
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:nether_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-brick-slab-from-nether-bricks-stonecutting",
+    "name": "nether_brick_slab_from_nether_bricks_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_brick_slab_from_nether_bricks_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:nether_bricks"
+      },
+      "result": {
+        "count": 2,
+        "id": "minecraft:nether_brick_slab"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-brick-stairs",
+    "name": "nether_brick_stairs",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_brick_stairs.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:nether_bricks"
+        }
+      },
+      "pattern": [
+        "#  ",
+        "## ",
+        "###"
+      ],
+      "result": {
+        "count": 4,
+        "id": "minecraft:nether_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-brick-stairs-from-nether-bricks-stonecutting",
+    "name": "nether_brick_stairs_from_nether_bricks_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_brick_stairs_from_nether_bricks_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:nether_bricks"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:nether_brick_stairs"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-brick-wall",
+    "name": "nether_brick_wall",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_brick_wall.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "#": {
+          "item": "minecraft:nether_bricks"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 6,
+        "id": "minecraft:nether_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-nether-brick-wall-from-nether-bricks-stonecutting",
+    "name": "nether_brick_wall_from_nether_bricks_stonecutting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/nether_brick_wall_from_nether_bricks_stonecutting.json",
+    "recipe": {
+      "type": "minecraft:stonecutting",
+      "ingredient": {
+        "item": "minecraft:nether_bricks"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:nether_brick_wall"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-pickaxe-smithing",
+    "name": "netherite_pickaxe_smithing",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_pickaxe_smithing.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "base": {
+        "item": "minecraft:diamond_pickaxe"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:netherite_pickaxe"
+      },
+      "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-shovel-smithing",
+    "name": "netherite_shovel_smithing",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_shovel_smithing.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "base": {
+        "item": "minecraft:diamond_shovel"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:netherite_shovel"
+      },
+      "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-axe-smithing",
+    "name": "netherite_axe_smithing",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_axe_smithing.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "base": {
+        "item": "minecraft:diamond_axe"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:netherite_axe"
+      },
+      "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-sword-smithing",
+    "name": "netherite_sword_smithing",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_sword_smithing.json",
+    "recipe": {
+      "type": "minecraft:smithing_transform",
+      "addition": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "base": {
+        "item": "minecraft:diamond_sword"
+      },
+      "result": {
+        "count": 1,
+        "id": "minecraft:netherite_sword"
+      },
+      "template": {
+        "item": "minecraft:netherite_upgrade_smithing_template"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-scrap",
+    "name": "netherite_scrap",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_scrap.json",
+    "recipe": {
+      "type": "minecraft:smelting",
+      "category": "misc",
+      "cookingtime": 200,
+      "experience": 2.0,
+      "ingredient": {
+        "item": "minecraft:ancient_debris"
+      },
+      "result": {
+        "id": "minecraft:netherite_scrap"
+      }
+    }
+  },
+  {
+    "anchor": "receita-netherite-scrap-from-blasting",
+    "name": "netherite_scrap_from_blasting",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/netherite_scrap_from_blasting.json",
+    "recipe": {
+      "type": "minecraft:blasting",
+      "category": "misc",
+      "cookingtime": 100,
+      "experience": 2.0,
+      "ingredient": {
+        "item": "minecraft:ancient_debris"
+      },
+      "result": {
+        "id": "minecraft:netherite_scrap"
+      }
+    }
+  },
+  {
+    "anchor": "receita-respawn-anchor",
+    "name": "respawn_anchor",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/respawn_anchor.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "G": {
+          "item": "minecraft:glowstone"
+        },
+        "O": {
+          "item": "minecraft:crying_obsidian"
+        }
+      },
+      "pattern": [
+        "OOO",
+        "GGG",
+        "OOO"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:respawn_anchor"
+      }
+    }
+  },
+  {
+    "anchor": "receita-glowstone",
+    "name": "glowstone",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/glowstone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "building",
+      "key": {
+        "#": {
+          "item": "minecraft:glowstone_dust"
+        }
+      },
+      "pattern": [
+        "##",
+        "##"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:glowstone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-spectral-arrow",
+    "name": "spectral_arrow",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/spectral_arrow.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:glowstone_dust"
+        },
+        "X": {
+          "item": "minecraft:arrow"
+        }
+      },
+      "pattern": [
+        " # ",
+        "#X#",
+        " # "
+      ],
+      "result": {
+        "count": 2,
+        "id": "minecraft:spectral_arrow"
+      }
+    }
+  },
+  {
+    "anchor": "receita-redstone-lamp",
+    "name": "redstone_lamp",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/redstone_lamp.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "key": {
+        "G": {
+          "item": "minecraft:glowstone"
+        },
+        "R": {
+          "item": "minecraft:redstone"
+        }
+      },
+      "pattern": [
+        " R ",
+        "RGR",
+        " R "
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:redstone_lamp"
+      }
+    }
+  },
+  {
+    "anchor": "receita-magenta-stained-glass-pane",
+    "name": "magenta_stained_glass_pane",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/magenta_stained_glass_pane.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "stained_glass_pane",
+      "key": {
+        "#": {
+          "item": "minecraft:magenta_stained_glass"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:magenta_stained_glass_pane"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purple-stained-glass-pane",
+    "name": "purple_stained_glass_pane",
+    "source": "evidence/minecraft-1.21.1-client.jar::data/minecraft/recipe/purple_stained_glass_pane.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "group": "stained_glass_pane",
+      "key": {
+        "#": {
+          "item": "minecraft:purple_stained_glass"
+        }
+      },
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "result": {
+        "count": 16,
+        "id": "minecraft:purple_stained_glass_pane"
+      }
+    }
+  }
+]

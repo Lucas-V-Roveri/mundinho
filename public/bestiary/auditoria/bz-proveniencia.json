@@ -1,0 +1,727 @@
+{
+  "version": "7.15.3 · NeoForge · Minecraft 1.21.1",
+  "method": "Modelos Java do JAR exato com hierarquia, pivôs, UV e estado descrito por imagem. Animações IDLE amostradas em t=0. Bee/Slime usam as malhas vanilla oficiais 1.21.1. Poppy usa o modelo cross e textura vanilla, com transformação exata da FlowerBlockLayer.",
+  "limits": [
+    "Representações técnicas estáticas, sem capturar ou executar Minecraft. Enquadramento normalizado individualmente.",
+    "16 variantes padrão conforme BzGeneralConfigs, calmas e sem néctar; estados angry/nectar fora do lote.",
+    "Beehemoth no solo, sem sela e coroa; offsets de joelho selecionados em 0, valor permitido pela entidade.",
+    "Rootmin IDLE com Poppy permitido pelo tag default_flowers; grass_color=7600187 do Hive Pillar. Sem escudo ou efeito de nome.",
+    "Cosmic Crystal IDLE com vida completa, sem laser/escudo/carga. Material transparente e luz máxima aproximados com composição estática, sem shader/lightmap.",
+    "Honey Slime com mel e squish=0; transparência aproximada com ordenação estática.",
+    "Mth senos/cossenos aproximados pela biblioteca matemática, sem equivalência bit a bit."
+  ],
+  "minecraft_reference": {
+    "version": "1.21.1",
+    "jar_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+    "classes": {
+      "BeeModel": "fuo",
+      "SlimeModel": "fxi"
+    }
+  },
+  "catalog_reference_commit": "78c52256e38a537a31839b264e6058138e6cb4e8",
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "jHtMMEiy",
+    "project_id": "38tpSycf",
+    "author_id": "IjLEI1nA",
+    "featured": false,
+    "name": "The Bumblezone v7.15.3 (1.21.1 MC Neoforge)",
+    "version_number": "7.15.3+1.21.1-neoforge",
+    "changelog": "### **(V.7.15.3 Changes) (1.21.1 Minecraft)**\r\n\r\n#### Fluids:\r\nHoney Fluid and Royal Jelly Fluid will not replaced waterlogged blocks that have a collision shape anymore when touching.\r\n\r\nPlacing Amethyst Cluster block into Sugar Water will waterlog the Amethyst Cluster block.\r\n\r\n#### Lang:\r\nes_ar.json lang file updated by Texaliuz\r\n",
+    "changelog_url": null,
+    "date_published": "2026-07-31T15:57:55.074702Z",
+    "downloads": 25233,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Zax8kFmY",
+        "hashes": {
+          "sha1": "d15559a5a29b2976d8f7f29aecf1a6b75ebe7c7d",
+          "sha512": "7fd04ccddfdc55f9c9112aa0ec2f4003d07953c0d45721bf5160a4daddd4aedafbc16917d9f4a45bc8726b63b69679d528f65b9b55885b01ca5561e9f4aad78b"
+        },
+        "url": "https://cdn.modrinth.com/data/38tpSycf/versions/jHtMMEiy/the_bumblezone-7.15.3%2B1.21.1-neoforge.jar",
+        "filename": "the_bumblezone-7.15.3+1.21.1-neoforge.jar",
+        "primary": true,
+        "size": 69672269,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "G1hIVOrD",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "Q2OqKxDG",
+        "file_name": null,
+        "dependency_type": "optional"
+      }
+    ]
+  },
+  "jar_sha256": "049b688a43886a3a5f70e8c0f195db7e33335e20adc1124c981a377a8b511101",
+  "source_files_sha256": {
+    "assets/the_bumblezone/textures/entity/bee_queen.png": "fc7236ce2d9a89f5dd880df6d7b2a02a93fd1837be076ec12171827a64dcde5e",
+    "assets/the_bumblezone/textures/entity/bee_variants/agender_bee/bee.png": "7196ec55129e777aaf7465b1b9fb439965d5c8e78e72b0948ac003901c07659b",
+    "assets/the_bumblezone/textures/entity/bee_variants/aroace_bee/bee.png": "a6116947f6722a9d33169de48dd62bb5f9899ec6b96ad178f387272aea37090e",
+    "assets/the_bumblezone/textures/entity/bee_variants/aromantic_bee/bee.png": "6da5b84bfcc4366d381e32c2ef1f1791a960d0c40ea79f82550035e83fb9df49",
+    "assets/the_bumblezone/textures/entity/bee_variants/asexual_bee/bee.png": "9a2d17e7dca6d1e616d95e84f5ef194cce1b147ed423481015894ff96e935d8d",
+    "assets/the_bumblezone/textures/entity/bee_variants/bisexual_bee/bee.png": "50c709e40e6521c5b3e7150daaab06c27299d0e86194bb4c63c6786e62219f8f",
+    "assets/the_bumblezone/textures/entity/bee_variants/blue_bee/bee.png": "cd58b7c7bb570f986ddead72ac6744db17b4a71d2890946553c7ba04a7215a47",
+    "assets/the_bumblezone/textures/entity/bee_variants/enby_bee/bee.png": "ea4ee6fb89b32c67a865607eb9e8e351260ac40858f4999a0b4613d6b55d1cd6",
+    "assets/the_bumblezone/textures/entity/bee_variants/green_bee/bee.png": "b0a1b24def4ed6083889fe8b799b36d4a1a43eb0a8223cecdc5405feca0d857b",
+    "assets/the_bumblezone/textures/entity/bee_variants/neapolitan_bee/bee.png": "73c9af360462bbd558de7b36227c7a7db2b06824f6c85654d1a2dd3beebaa7ac",
+    "assets/the_bumblezone/textures/entity/bee_variants/pan_bee/bee.png": "85db7747447da68e22ee91f47c874a793aa95e15ab135e1c64400a43217759fa",
+    "assets/the_bumblezone/textures/entity/bee_variants/rainbow_bee/bee.png": "d21e9cec3d15bedcefd86f5230012b5c19dca7ca1d9997b0f043d72d7e351331",
+    "assets/the_bumblezone/textures/entity/bee_variants/redtail_bee/bee.png": "2396cc2804ddd1bd080e0b5b4a83b3c7664439234ee9118f7702ff19dc3997f3",
+    "assets/the_bumblezone/textures/entity/bee_variants/reverse_bee/bee.png": "fa7ae2814e96b7252a65fa6b4b2be842df2efb05e1d3fdc51df6b20fd6baf1b8",
+    "assets/the_bumblezone/textures/entity/bee_variants/trans_bee/bee.png": "88d9aa416a3ab05e344c2a667f3f59e6cd58e15fe9f8f355278800d7dedc4d25",
+    "assets/the_bumblezone/textures/entity/bee_variants/ukraine_bee/bee.png": "86a8b7a4ca86d98c88e5bafe9475742d37dc34e5825d5e8233e1a1bad719c6f6",
+    "assets/the_bumblezone/textures/entity/bee_variants/white_bee/bee.png": "be4357a515efd21cf5b0141da4bd32583c34b4281c6a9a6dee3f06391779f993",
+    "assets/the_bumblezone/textures/entity/beehemoth.png": "bd92bc94cc59f55c71c1651c3b3229dbd825e7e1250fff3968fd3c3ca1f6d990",
+    "assets/the_bumblezone/textures/entity/cosmic_crystal.png": "668bdc55727267015bf1b08288ee7b63a51d6dc470651fa5ef2042843d6d5bb8",
+    "assets/the_bumblezone/textures/entity/honey_slime.png": "eaa2feb2a320e375a9e9e53343b1aad8731510b9c6f3986ea9871e113627867c",
+    "assets/the_bumblezone/textures/entity/rootmin.png": "438b4ce1d25dee44f6ea99a1aa43fdac1df3bbd060d10bc21b0459ab48d49b13",
+    "assets/the_bumblezone/textures/entity/rootmin_grass.png": "68d512d3f437b4cbc8df8ccdba493dc43aa91e1e41755a91e68ba1976fa67d84",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/beehemoth/BeehemothModel.class": "2f88f619c5b268202088c5992ee89e4901678cd9abf41523b6240b0bf587f1bf",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/beehemoth/BeehemothRenderer.class": "95edaf02670519e17a61163a81668958a14dc53801a72eacddd8e4a893626e72",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/beequeen/BeeQueenAnimations.class": "5400e369b3e33097b4aa5cd6fd7850820d16d3f977f35ca41ef24ef5af1801b8",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/beequeen/BeeQueenModel.class": "9a41fe525382b02ab79f0498b862019547d93c5c9f30f271f83acd09f22546b2",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/beequeen/BeeQueenRenderer.class": "3d4397e5208715006a81931f303cbebaab7526c3941c09e462ee83a1bb049021",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/cosmiccrystal/CosmicCrystalAnimation.class": "8bc1e1a20e97bac9c29fbf94ea25ea15bfeb00304033088588c36061fe77b2aa",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/cosmiccrystal/CosmicCrystalModel.class": "32c90e69cfefcb7ed79a04595c6ff37705c449538d834e2230a59aed8f8e9162",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/cosmiccrystal/CosmicCrystalRenderer.class": "3cc8e72c51cb3a95546db64bb99621e811e07d7aaa93ed1d0297e70a5c30655d",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/honeyslime/HoneySlimeRendering.class": "7bf6ce68df64d67af6a338711ce6e06fd03b2c1725a1664212966184667bcb98",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminAnimations.class": "b2bc6a73e8033b06cd18e2a2f7b9f0d2992b10454ce2812f6e183caf81fadf5c",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminGrassRenderer.class": "88d9fad9a8245a6d56b84eb141d983454bbe580b67bf3ec64364dc556b15a897",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminModel.class": "39c69e0d4dcb2969fad7475a5e82c1e44c804bc8e9a91d1d97f24bfc7383ee6b",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminRenderer.class": "b22e8e0faa779a7545359f1a4e8c9b6c2231821f407c2fbb2ba427a287af46ae",
+    "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class": "eeacaa1180e2b568eeb749547ea5c11ec604526f07e190285b71c8acf842f105",
+    "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class": "3d3513e783f6fcce429efedf1858b0880d74c1037c6c635fa2d187a7f01cf0b6",
+    "com/telepathicgrunt/the_bumblezone/entities/mobs/RootminEntity.class": "760fb2df5339b7eecd98edb39229c7533fd08a8f5622775ee10ccc6f17c66837",
+    "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class": "6dad8b568c427eb05857f2c6d6ace7531acd4860de1168c4439d9c8762b3de7d",
+    "data/the_bumblezone/tags/block/rootmin/default_flowers.json": "f6049da6a10fde6a06ca8991c7957e869fe9d7f260733fa49e8bfc17b628ceaf",
+    "data/the_bumblezone/worldgen/biome/hive_pillar.json": "463f9efdfa8561e979d2f69df2f787f4a352401190864e218d4d2da594eb0d6d"
+  },
+  "images": [
+    {
+      "mob": "Variant Bee · redtail_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-redtail-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/redtail_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante redtail_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "c5d4b6a316e7470f85b1885b6bfa5b43ea5800451bc7a480e294a6088250b3c2"
+    },
+    {
+      "mob": "Variant Bee · green_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-green-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/green_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante green_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "9f3f3ccac58bb19e4a9a3164e4a6fc8886811b7893e87d5419cb8c08183492f7"
+    },
+    {
+      "mob": "Variant Bee · blue_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-blue-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/blue_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante blue_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "b2d853b3016a07f39854ffed0ce0bbc5948369b2d6aaab392de428accdfe8415"
+    },
+    {
+      "mob": "Variant Bee · white_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-white-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/white_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante white_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "4d932ad59256b1ea2a6c263baa97dc99d64844efade871cff7485d258559c91d"
+    },
+    {
+      "mob": "Variant Bee · ukraine_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-ukraine-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/ukraine_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante ukraine_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "5c65c494d165e49645f6cc8c2e8538d089915fd0c826e6cf5408c19d0caea1fa"
+    },
+    {
+      "mob": "Variant Bee · trans_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-trans-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/trans_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante trans_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "f8c52cead674cf18d4a88db3e0205441374ef40dc03244b265f202c4cc2a7402"
+    },
+    {
+      "mob": "Variant Bee · asexual_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-asexual-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/asexual_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante asexual_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "e916c640ea917064262acb4e109365c3ca4bd252aa03ff1a064d9f47b706724f"
+    },
+    {
+      "mob": "Variant Bee · agender_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-agender-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/agender_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante agender_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "2861d38dc83f253195fdde97cdd9cd797f1a2a820d4119a46afa8efdb379042e"
+    },
+    {
+      "mob": "Variant Bee · aroace_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-aroace-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/aroace_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante aroace_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "571bcf329f860cf5bd102a800f1761b5fec994f3ec0fffa2ceede65abaf4694d"
+    },
+    {
+      "mob": "Variant Bee · aromantic_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-aromantic-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/aromantic_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante aromantic_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "a8017224bdb7d2927420f1e11d8b5c7a0c59fa162fffd1168398d93be3723970"
+    },
+    {
+      "mob": "Variant Bee · bisexual_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-bisexual-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/bisexual_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante bisexual_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "c796e1ae88e05842c5b06593ca2e76383afc2911c0ed93290d6be70c992a324e"
+    },
+    {
+      "mob": "Variant Bee · pan_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-pan-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/pan_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante pan_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "91151eec080c202030da22d833e0c9364129c92ed3cededd87353078ca119ae1"
+    },
+    {
+      "mob": "Variant Bee · enby_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-enby-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/enby_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante enby_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "d2e02e698573933405382d9e86e0966daddc3fc0adc142aff2c9da090728673e"
+    },
+    {
+      "mob": "Variant Bee · reverse_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-reverse-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/reverse_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante reverse_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "bc7c5e3f276ed7dbca709dd5c04bd092115bd31e2621ed8061f5a4ea17a561d2"
+    },
+    {
+      "mob": "Variant Bee · neapolitan_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-neapolitan-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/neapolitan_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante neapolitan_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "234971b14424b14f1a65986aa74eca80b188f23f92c5d30890b19b442e515237"
+    },
+    {
+      "mob": "Variant Bee · rainbow_bee",
+      "entity_id": "the_bumblezone:variant_bee",
+      "image": "variant-bee-rainbow-bee.png",
+      "model": "minecraft:BeeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/variantbee/VariantBeeRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_variants/rainbow_bee/bee.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/configs/BzGeneralConfigs.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/VariantBeeEntity.class"
+      ],
+      "animation_at_t0": [],
+      "cube_count": 9,
+      "notes": "Variante rainbow_bee com malha vanilla 1.21.1; adulta, calma, sem néctar, ferrão visível, pousada e parada.",
+      "sha256": "ee6aec8706d99bba81054e5a32a5d720fbb2b3e25caca3a86d95ca64571bbc86"
+    },
+    {
+      "mob": "Honey Slime",
+      "entity_id": "the_bumblezone:honey_slime",
+      "image": "honey-slime.png",
+      "model": "minecraft:SlimeModel",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/honeyslime/HoneySlimeRendering.class",
+      "texture": "assets/the_bumblezone/textures/entity/honey_slime.png",
+      "extra_sources": [],
+      "animation_at_t0": [],
+      "cube_count": 4,
+      "notes": "Adulto com mel (isInHoney=true), squish=0; corpo interior e casca transparente vanilla originais. Enquadramento normalizado.",
+      "sha256": "267fea393872b1d37c03b6b3e9984f8240f71fb392515ea2f2ebad2b94fdfa6d"
+    },
+    {
+      "mob": "Beehemoth",
+      "entity_id": "the_bumblezone:beehemoth",
+      "image": "beehemoth.png",
+      "model": "com/telepathicgrunt/the_bumblezone/client/rendering/beehemoth/BeehemothModel.class",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/beehemoth/BeehemothRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/beehemoth.png",
+      "extra_sources": [],
+      "animation_at_t0": [],
+      "cube_count": 22,
+      "notes": "Modelo e textura da build exata; pose parada, sem ataque. Adulto no solo, sem sela/coroa, não sentado, age=0 e offsets de joelhos=0 (valores válidos do intervalo da entidade).",
+      "sha256": "24d69500265d67706d3148d4996f3840d083eeae2ef1d3d54f1a27825a58cd59"
+    },
+    {
+      "mob": "BeeQueen",
+      "entity_id": "the_bumblezone:bee_queen",
+      "image": "bee-queen.png",
+      "model": "com/telepathicgrunt/the_bumblezone/client/rendering/beequeen/BeeQueenModel.class",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/beequeen/BeeQueenRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/bee_queen.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/client/rendering/beequeen/BeeQueenAnimations.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "segment3",
+          "channel": "SCALE",
+          "first_keyframe_time": 0.5,
+          "vector": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "part": "segment2",
+          "channel": "SCALE",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "part": "segment1",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "rightwing",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "legs1",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -1.0,
+            0.0,
+            -3.0
+          ]
+        },
+        {
+          "part": "head",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "head",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "legs3",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "antenna",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "legs2",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "upperbody",
+          "channel": "POSITION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "upperbody",
+          "channel": "SCALE",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "part": "leftwing",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "cube_count": 16,
+      "notes": "Modelo e textura da build exata; pose parada, sem ataque. IDLE em t=0, calma.",
+      "sha256": "c62b1b3fecb46e4e37dbb80eadde47284996cd6865f02539ea8f07b21e86cc37"
+    },
+    {
+      "mob": "CosmicCrystal",
+      "entity_id": "the_bumblezone:cosmic_crystal_entity",
+      "image": "cosmic-crystal-entity.png",
+      "model": "com/telepathicgrunt/the_bumblezone/client/rendering/cosmiccrystal/CosmicCrystalModel.class",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/cosmiccrystal/CosmicCrystalRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/cosmic_crystal.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/client/rendering/cosmiccrystal/CosmicCrystalAnimation.class"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "insideB",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "outsideB",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "insideM",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "outsideM",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "insideT",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "outsideT",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "spikes",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "charging",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "cube_count": 11,
+      "notes": "Modelo e textura da build exata; pose parada, sem ataque. MODEL_IDLE em t=0, vida completa, sem laser/carga/escudo/efeito, orientação vertical (xRot=90°); iluminação máxima conforme renderer.",
+      "sha256": "e6f2148954bc307b102ad1d5dd10de7ab8512e98d8f8fdc8eee6a3434fa9123d"
+    },
+    {
+      "mob": "Rootmin",
+      "entity_id": "the_bumblezone:rootmin",
+      "image": "rootmin.png",
+      "model": "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminModel.class",
+      "renderer": "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminRenderer.class",
+      "texture": "assets/the_bumblezone/textures/entity/rootmin.png",
+      "extra_sources": [
+        "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminAnimations.class",
+        "com/telepathicgrunt/the_bumblezone/client/rendering/rootmin/RootminGrassRenderer.class",
+        "com/telepathicgrunt/the_bumblezone/entities/mobs/RootminEntity.class",
+        "assets/the_bumblezone/textures/entity/rootmin_grass.png",
+        "data/the_bumblezone/worldgen/biome/hive_pillar.json",
+        "data/the_bumblezone/tags/block/rootmin/default_flowers.json",
+        "minecraft:assets/minecraft/models/block/cross.json",
+        "minecraft:assets/minecraft/models/block/poppy.json",
+        "minecraft:assets/minecraft/textures/block/poppy.png"
+      ],
+      "animation_at_t0": [
+        {
+          "part": "body",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "mouth",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            -1.5,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "root",
+          "channel": "ROTATION",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "shut_eyes",
+          "channel": "SCALE",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "slightly_shut_eyes",
+          "channel": "SCALE",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "part": "almost_shut_eyes",
+          "channel": "SCALE",
+          "first_keyframe_time": 0.0,
+          "vector": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ],
+      "cube_count": 14,
+      "notes": "Modelo e textura da build exata; pose parada, sem ataque. IDLE em t=0, com Poppy; cor de grama do bioma Hive Pillar (7600187), sem escudo.",
+      "sha256": "f4447718fbe88c0d95387449215ff8859278f3fa1ce599d7bd9fa24e6420c121"
+    }
+  ],
+  "site_modified": false
+}

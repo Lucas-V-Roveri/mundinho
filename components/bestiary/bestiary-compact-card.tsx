@@ -138,6 +138,8 @@ export function BestiaryCompactCard({
                 )}
               </section>
 
+              {entry.audit?.recipeGuideHref ? <a href={entry.audit.recipeGuideHref} className="mt-4 inline-block font-label text-lg text-blue-700 underline">Ver todas as receitas auditadas do mod</a> : null}
+
               {(entry.progressionHref || entry.guideHref) ? (
                 <div className="mt-4 flex flex-wrap gap-2">
                   {entry.progressionHref ? <a className="pixel-control border-2 border-night-950 bg-paper-50 px-3 py-2 font-label text-base text-blue-800" href={entry.progressionHref}>Abrir na Progressão</a> : null}

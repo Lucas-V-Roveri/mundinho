@@ -1,0 +1,354 @@
+{
+  "version": "0.0.6-NeoForge-v1.21 · NeoForge · Minecraft 1.21.1",
+  "catalog_reference": "Lucas-V-Roveri/mundinho@de517bc",
+  "method": "Malhas Java originais, pivôs, hierarquia, UV e texturas da build exata; estados e ajustes documentados por imagem.",
+  "limits": [
+    "Representações técnicas estáticas sem execução do jogo. Limites de pose e configuração detalhados em cada imagem.",
+    "Enquadramento normalizado e luz simplificada.",
+    "Sem equipamentos externos, partículas ou efeitos de ataque, salvo partes originais expressamente documentadas."
+  ],
+  "build": {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "gz6BfcyM",
+    "project_id": "jEnrr5I7",
+    "author_id": "h5B2JUNg",
+    "featured": false,
+    "name": "Spider Overhaul 0.0.6-NeoForge-v1.21",
+    "version_number": "0.0.6-NeoForge-v1.21",
+    "changelog": "",
+    "changelog_url": null,
+    "date_published": "2026-08-26T19:31:33.533875Z",
+    "downloads": 5969,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "3AlmBPRo",
+        "hashes": {
+          "sha1": "2d25af4949c25c31c34849d8eafe720d05c5871e",
+          "sha512": "930eb71305d6a307493a6dca401a000021ba2d34a8aec3455d519a8c9b9149bc7fc58661ebfa00327484632d43ddfd3270970bfc84ce7a2bcc926245c214610e"
+        },
+        "url": "https://cdn.modrinth.com/data/jEnrr5I7/versions/gz6BfcyM/SpiderOverhaul-0.0.6-NeoForge-v1.21.jar",
+        "filename": "SpiderOverhaul-0.0.6-NeoForge-v1.21.jar",
+        "primary": true,
+        "size": 521177,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "9s6osm5g",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  "jar_sha256": "2ae1220c34d4bd23fd0a45a9390cbf508501b179e9c8f485ddaddd51f2cb514e",
+  "source_files_sha256": {
+    "assets/spider_overhaul/textures/model/birch_spider.png": "32ed6d9d09fe06da5af8fe60321c9ce608ce43e3d6efdc01bba1f56cac67cc18",
+    "assets/spider_overhaul/textures/model/cavern_spider/amethyst.png": "d2a53c799e8ce097c4bb1b13d6e743ea72846391b000fbfaa7699dc3f81ac3c2",
+    "assets/spider_overhaul/textures/model/cavern_spider/diamond.png": "f427d51fd7dd69b7dbc1e37fd54468cb695e62e2343caf5165cba8f244996d9b",
+    "assets/spider_overhaul/textures/model/cavern_spider/emerald.png": "8f6ad46525561506812b326a182e00920e1a6246ac5ef68e13e180f1054f3492",
+    "assets/spider_overhaul/textures/model/desert_spider.png": "1a6435a2d98e4a5aa55c2f179311cdac0dc913a08147189fcd28eaff859b4f98",
+    "assets/spider_overhaul/textures/model/ice_spider.png": "75d6ce98e53125b4263a7ab89f99d18aee05c35cb0fc0dd2ae8827b02ebd7b8e",
+    "assets/spider_overhaul/textures/model/jungle_spider.png": "1d27cc68a5bc026fbfa64593ac454702c5573389d1f13dbf739155e513c6bcae",
+    "assets/spider_overhaul/textures/model/swamp_spider.png": "9d41cbd3ace99a13a5a45f812ca71e6f69f17383aca785d778a7758ad119a4ab",
+    "assets/spider_overhaul/textures/model/v_birch_spider.png": "1315038c5fbebe907e50c3d955a9cc4e0c164686cc562008e81438a4737c03ee",
+    "assets/spider_overhaul/textures/model/v_cavern_spider/amethyst.png": "6706b839d8d95258e6c9009e52cd616a581f2273c4398041681b52fcedcd45d0",
+    "assets/spider_overhaul/textures/model/v_cavern_spider/diamond.png": "a12a1d071f615cdb508cad87bb86e22de82b292d0d2168fc067ee6ebca276db4",
+    "assets/spider_overhaul/textures/model/v_cavern_spider/emerald.png": "043d2dd07d660a5dc141314e3adf38a678ee8773955566b531e4fe5e93ca7c86",
+    "assets/spider_overhaul/textures/model/v_desert_spider.png": "a91a79b2ceae04cadb1deb4a58208faa57b0b0d874a7c9c772b789547182be1c",
+    "assets/spider_overhaul/textures/model/v_ice_spider.png": "54bd7c8ba231fc7d303f77610b5624664033f6f01abbb0b5300d0f2b6eacf0e0",
+    "assets/spider_overhaul/textures/model/v_jungle_spider.png": "c3851d940ffb6d4c681040ab40b2983b1d86e7c714582b2b7c43f2723340dc55",
+    "assets/spider_overhaul/textures/model/v_swamp_spider.png": "a7de06c8fd3dbc5f1126ffab9bbb3b8602c8fe9926e90645c55097441a997e26",
+    "dev/chybx/spideroverhaul/client/render/BirchSpiderModelWrapper.class": "ef386131e4eb2b75318cb7f19ba2a2e54ee544f9344be4aea75081e4033c51c0",
+    "dev/chybx/spideroverhaul/client/render/BirchSpiderRenderer.class": "557cc3f6e4bd3bb2517c4c98e430b1a98c92e544c36b18dd7833fbea7fce0715",
+    "dev/chybx/spideroverhaul/client/render/CavernSpiderModelWrapper.class": "f3ef850ccacf75ce9a13c097e3c10c29c2d465affec16154f29e2f981c600ed9",
+    "dev/chybx/spideroverhaul/client/render/CavernSpiderRenderer.class": "0631aa609e958311cf9b14b81943fb73105c5c55cd97d140f17fe3b755186d34",
+    "dev/chybx/spideroverhaul/client/render/DesertSpiderModelWrapper.class": "264afae5fe31f8be487f86379a90011237018b0e9a98160d665a07cb65a396b8",
+    "dev/chybx/spideroverhaul/client/render/DesertSpiderRenderer.class": "8f6b1fd0a4ed7db76649487374a7c0a75479fa3f1b4f68ec5604c3c6880458f5",
+    "dev/chybx/spideroverhaul/client/render/IceSpiderModelWrapper.class": "7fac1a72b4e93a15d40dbffb41b289b3f41869b71988486734a54473b6e3601b",
+    "dev/chybx/spideroverhaul/client/render/IceSpiderRenderer.class": "e11b7dd6451282079d28d457439724a40b4cdcde38b1e5d51208c16bfdf9bc52",
+    "dev/chybx/spideroverhaul/client/render/JungleSpiderModelWrapper.class": "1a48642d00ac6359d251f6daa1d5ba844241fbd2b077b189f2e5421efde5451e",
+    "dev/chybx/spideroverhaul/client/render/JungleSpiderRenderer.class": "846a91b0c3f9b73c3ef8a430ffd16ae1713c8c5b966720ed7b608f9e97ba5195",
+    "dev/chybx/spideroverhaul/client/render/SwampSpiderModelWrapper.class": "07399a69b5de97e30592bccdff7ea81dd16ebde3712d552393510750cdcd1fb2",
+    "dev/chybx/spideroverhaul/client/render/SwampSpiderRenderer.class": "98d2ef0b4b38e65d52e84324d8982cc99d096b9a9f35555b24cf51c2c60e7824",
+    "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class": "61efc628ed312c98d1bd8adc2ea8beebfc8c49705c9fce2a3b38414f70ff1ab3",
+    "dev/chybx/spideroverhaul/entity/models/birch_spider/birch_spider.class": "605bc9b1e45c86c2680c234792f360c0b5509609afbffe4c9cff16052fade9d2",
+    "dev/chybx/spideroverhaul/entity/models/birch_spider/birch_spider_anim.class": "137cde92b7b11f94e9649b9392755c1efe2396143d700752a57d56a5a72cc8be",
+    "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider.class": "dc2554fbab34a31e33b99a38c81ed21202e41543b3eed4ddf4a80b9d9a8f0d18",
+    "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider_anim.class": "437041484f32b28a62dc9b8e876b1c61ef30dd3dc478069faad4eebfc84c8b04",
+    "dev/chybx/spideroverhaul/entity/models/desert_spider/desert_spider.class": "943521c7ae270b1278b6cb9a44b8f0bec16d2df76b47c539578e266892cfd508",
+    "dev/chybx/spideroverhaul/entity/models/desert_spider/desert_spider_anim.class": "5fbfb3ee10613498f2b7192c1ad573986d9a31a424cf87d5c739f1f6af46fbb9",
+    "dev/chybx/spideroverhaul/entity/models/ice_spider/ice_spider.class": "c36ffc9daf8fd64a7ac42f0d5eca06185250fdf64916f51b24e7bfc08de8ae36",
+    "dev/chybx/spideroverhaul/entity/models/ice_spider/ice_spider_anim.class": "b88428ae4e792381cf4208a8ef79af28e90a7388142a3cf2a008f9d7fbfdd87a",
+    "dev/chybx/spideroverhaul/entity/models/jungle_spider/jungle_spider.class": "d829d0efbbab22191c025fd5d831dfd732a7dd5d8f74baef5e162f22ffbf8c2f",
+    "dev/chybx/spideroverhaul/entity/models/jungle_spider/jungle_spider_anim.class": "27287db84c3854ca85add326cb4202765a21c2eb9f6302537acd6e82e5bad62b",
+    "dev/chybx/spideroverhaul/entity/models/swamp_spider/swamp_spider.class": "7def31ded3826433afefdde1e9d7c3f0542d2b3b8da72d6808717ac80ec36553",
+    "dev/chybx/spideroverhaul/entity/models/swamp_spider/swamp_spider_anim.class": "f2c5806a5f56f8700e36afdadc965155626bfb6f26131c9d905780ccb063110a",
+    "dev/chybx/spideroverhaul/entity/v_models/birch_spider/v_birch_spider.class": "cf90b88eb0bdecad4c50a980168a78fc520738f2b77bbf3bf331e32b2f422186",
+    "dev/chybx/spideroverhaul/entity/v_models/birch_spider/v_birch_spider_anim.class": "68595a81617fc42405275319a06ace8d14122ee13dcf615c275d4c09f0d80007",
+    "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider.class": "f5643e475e5c6a425332673fa555b5bb87ea9e45fc34a6f9472cda11b9cd9b13",
+    "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider_anim.class": "4c9ed992ca7acd1802f57056e568c113c1d399c792dd25a48e2dd3f3f631b1ed",
+    "dev/chybx/spideroverhaul/entity/v_models/desert_spider/v_dessert_spider.class": "3a5f19da6ee79db79a68918410f6d41c0d3e779a7cba2cdae0543993b5c3f4f4",
+    "dev/chybx/spideroverhaul/entity/v_models/desert_spider/v_dessert_spider_anim.class": "66dd0925cba0fb5a4f4aed0d8a8d6876945b9cf0d2a0b33ae07986eace0b8ddf",
+    "dev/chybx/spideroverhaul/entity/v_models/ice_spider/v_ice_spider.class": "d411719663b58ca229a552b000f5a5c0f4ed8f1e070decc2b270ca4d65bf25eb",
+    "dev/chybx/spideroverhaul/entity/v_models/ice_spider/v_ice_spider_anim.class": "eb8c2ee833893104b9114b020b13768a70fb706e471d6b74cddb0e59eef69484",
+    "dev/chybx/spideroverhaul/entity/v_models/jungle_spider/v_jungle_spider.class": "9586cfe4084a8eb3a7323a0592c910f0e7a192ade794bfb1fb337a16a85f97c6",
+    "dev/chybx/spideroverhaul/entity/v_models/jungle_spider/v_jungle_spider_anim.class": "552041e208690ae02f04b0c3c221839f80460473bd77358134f530aaa6f86ded",
+    "dev/chybx/spideroverhaul/entity/v_models/swamp_spider/v_swamp_spider.class": "460c8c595b4cad72cb530733e120d82ec82184027aebe39fa7e4e80bd6189da2",
+    "dev/chybx/spideroverhaul/entity/v_models/swamp_spider/v_swamp_spider_anim.class": "6ea380989ab0e2e1fe697a5dc73eace0082f88f9e4e49d185e3f06cccdf7ac5c"
+  },
+  "images": [
+    {
+      "entity_id": "spider_overhaul:birch_spider",
+      "mob": "Birch Spider · alternativo",
+      "image": "birch-spider-alternativo.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/birch_spider/birch_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/BirchSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/birch_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/BirchSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/birch_spider/birch_spider_anim.class"
+      ],
+      "boxes": 33,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    },
+    {
+      "entity_id": "spider_overhaul:birch_spider",
+      "mob": "Birch Spider · vanilla",
+      "image": "birch-spider-vanilla.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/birch_spider/v_birch_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/BirchSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_birch_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/BirchSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/birch_spider/v_birch_spider_anim.class"
+      ],
+      "boxes": 17,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    },
+    {
+      "entity_id": "spider_overhaul:desert_spider",
+      "mob": "Desert Spider · alternativo",
+      "image": "desert-spider-alternativo.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/desert_spider/desert_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/DesertSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/desert_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/DesertSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/desert_spider/desert_spider_anim.class"
+      ],
+      "boxes": 44,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    },
+    {
+      "entity_id": "spider_overhaul:desert_spider",
+      "mob": "Desert Spider · vanilla",
+      "image": "desert-spider-vanilla.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/desert_spider/v_dessert_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/DesertSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_desert_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/DesertSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/desert_spider/v_dessert_spider_anim.class"
+      ],
+      "boxes": 27,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    },
+    {
+      "entity_id": "spider_overhaul:swamp_spider",
+      "mob": "Swamp Spider · alternativo",
+      "image": "swamp-spider-alternativo.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/swamp_spider/swamp_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/SwampSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/swamp_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/SwampSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/swamp_spider/swamp_spider_anim.class"
+      ],
+      "boxes": 36,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. Cor aplicada ao nenúfar não confirmada: faltaram coordenadas, bioma e cores vizinhas do mundo. A imagem conserva os texels originais sem essa tintagem contextual."
+    },
+    {
+      "entity_id": "spider_overhaul:swamp_spider",
+      "mob": "Swamp Spider · vanilla",
+      "image": "swamp-spider-vanilla.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/swamp_spider/v_swamp_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/SwampSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_swamp_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/SwampSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/swamp_spider/v_swamp_spider_anim.class"
+      ],
+      "boxes": 20,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. Cor aplicada ao nenúfar não confirmada: faltaram coordenadas, bioma e cores vizinhas do mundo. A imagem conserva os texels originais sem essa tintagem contextual."
+    },
+    {
+      "entity_id": "spider_overhaul:cavern_spider",
+      "mob": "Cavern Spider · alternativo · diamond",
+      "image": "cavern-spider-alternativo.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/CavernSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/cavern_spider/diamond.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/CavernSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider_anim.class"
+      ],
+      "boxes": 37,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. CavernType=DIAMOND."
+    },
+    {
+      "entity_id": "spider_overhaul:cavern_spider",
+      "mob": "Cavern Spider · alternativo · emerald",
+      "image": "cavern-spider-alternativo-emerald.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/CavernSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/cavern_spider/emerald.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/CavernSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider_anim.class"
+      ],
+      "boxes": 37,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. CavernType=EMERALD."
+    },
+    {
+      "entity_id": "spider_overhaul:cavern_spider",
+      "mob": "Cavern Spider · alternativo · amethyst",
+      "image": "cavern-spider-alternativo-amethyst.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/CavernSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/cavern_spider/amethyst.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/CavernSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/cavern_spider/cavern_spider_anim.class"
+      ],
+      "boxes": 37,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. CavernType=EMERALD."
+    },
+    {
+      "entity_id": "spider_overhaul:cavern_spider",
+      "mob": "Cavern Spider · vanilla · diamond",
+      "image": "cavern-spider-vanilla.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/CavernSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_cavern_spider/diamond.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/CavernSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider_anim.class"
+      ],
+      "boxes": 21,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. CavernType=DIAMOND."
+    },
+    {
+      "entity_id": "spider_overhaul:cavern_spider",
+      "mob": "Cavern Spider · vanilla · emerald",
+      "image": "cavern-spider-vanilla-emerald.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/CavernSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_cavern_spider/emerald.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/CavernSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider_anim.class"
+      ],
+      "boxes": 21,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. CavernType=EMERALD."
+    },
+    {
+      "entity_id": "spider_overhaul:cavern_spider",
+      "mob": "Cavern Spider · vanilla · amethyst",
+      "image": "cavern-spider-vanilla-amethyst.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/CavernSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_cavern_spider/amethyst.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/CavernSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/cavern_spider/v_cavern_spider_anim.class"
+      ],
+      "boxes": 21,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada. CavernType=EMERALD."
+    },
+    {
+      "entity_id": "spider_overhaul:jungle_spider",
+      "mob": "Jungle Spider · alternativo",
+      "image": "jungle-spider-alternativo.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/jungle_spider/jungle_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/JungleSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/jungle_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/JungleSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/jungle_spider/jungle_spider_anim.class"
+      ],
+      "boxes": 32,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    },
+    {
+      "entity_id": "spider_overhaul:jungle_spider",
+      "mob": "Jungle Spider · vanilla",
+      "image": "jungle-spider-vanilla.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/jungle_spider/v_jungle_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/JungleSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_jungle_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/JungleSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/jungle_spider/v_jungle_spider_anim.class"
+      ],
+      "boxes": 16,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    },
+    {
+      "entity_id": "spider_overhaul:ice_spider",
+      "mob": "Ice Spider · alternativo",
+      "image": "ice-spider-alternativo.png",
+      "model": "dev/chybx/spideroverhaul/entity/models/ice_spider/ice_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/IceSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/ice_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/IceSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/models/ice_spider/ice_spider_anim.class"
+      ],
+      "boxes": 38,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo alternativo; useVanillaModels=false, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    },
+    {
+      "entity_id": "spider_overhaul:ice_spider",
+      "mob": "Ice Spider · vanilla",
+      "image": "ice-spider-vanilla.png",
+      "model": "dev/chybx/spideroverhaul/entity/v_models/ice_spider/v_ice_spider.class",
+      "renderer": "dev/chybx/spideroverhaul/client/render/IceSpiderRenderer.class",
+      "texture": "assets/spider_overhaul/textures/model/v_ice_spider.png",
+      "extra_sources": [
+        "dev/chybx/spideroverhaul/client/render/IceSpiderModelWrapper.class",
+        "dev/chybx/spideroverhaul/config/SpiderOverhaulConfig.class",
+        "dev/chybx/spideroverhaul/entity/v_models/ice_spider/v_ice_spider_anim.class"
+      ],
+      "boxes": 22,
+      "notes": "Geometria, pivôs, UV e textura originais. Modelo vanilla; useVanillaModels=true, hideSpiderLegs=false. O padrão da build é useVanillaModels=true; configuração personalizada do mundo não fornecida. IDLE original no instante 0, incluindo rotação das pernas; sem ataque ou caminhada. Transições dos controladores não executadas. Luz simplificada."
+    }
+  ],
+  "site_modified": false
+}

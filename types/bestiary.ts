@@ -54,7 +54,7 @@ export type BestiaryAuditRecipe = {
 };
 
 export type BestiaryEntry = {
-  audit?: { rows: BestiaryAuditRow[]; recipes: BestiaryAuditRecipe[] };
+  audit?: { rows: BestiaryAuditRow[]; recipes: BestiaryAuditRecipe[]; recipeGuideHref?: string };
   id: string;
   namePt: string;
   nameEn: string;

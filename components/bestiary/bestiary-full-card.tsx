@@ -197,7 +197,7 @@ export function BestiaryCard({
 
               {entry.audit?.recipes.length ? (
                 <section id={`mob-${entry.id}-recipes`} className="mt-5 scroll-mt-28">
-                  <h3 className="font-label text-xl text-wood-700">Crafting auditado · BOMD 1.3.3</h3>
+                  <h3 className="font-label text-xl text-wood-700">Crafting auditado · {entry.mod} {entry.version}</h3>
                   <p className="mt-2 text-sm leading-6">Receitas da versão auditada. Os ingredientes podem vir de encontros diferentes; não são recompensas adicionais deste boss.</p>
                   <div className="mt-3 grid gap-3 sm:grid-cols-2">
                     {entry.audit.recipes.map((recipe) => (
@@ -211,6 +211,8 @@ export function BestiaryCard({
                   </div>
                 </section>
               ) : null}
+
+              {entry.audit?.recipeGuideHref ? <a href={entry.audit.recipeGuideHref} className="mt-4 inline-block font-label text-lg text-blue-700 underline">Ver todas as receitas auditadas do mod</a> : null}
 
               {(guideHref || progressionHref) ? (
                 <section className="mt-5 flex flex-wrap gap-2" aria-label={`Ligações de ${entry.namePt}`}>
