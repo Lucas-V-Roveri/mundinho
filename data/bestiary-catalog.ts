@@ -1,3 +1,4 @@
+import { integrateBestiaryAudits } from "@/data/bestiary-integrated-audits";
 import { AETHER_BESTIARY_5B } from "@/data/bestiary-aether-5b";
 import { ALEXS_CAVES_BESTIARY_5C } from "@/data/bestiary-alexs-caves-5c";
 import { ALEXS_MOBS_BESTIARY_5C } from "@/data/bestiary-alexs-mobs-5c";
@@ -118,7 +119,7 @@ export const BESTIARY_LOT_5E_INCENDIUM_DETAILED = INCENDIUM_BESTIARY_5E_COUNT;
 export const BESTIARY_LOT_5E_INCENDIUM_FULL = INCENDIUM_BESTIARY_5E_FULL;
 export const BESTIARY_LOT_5E_INCENDIUM_COMPACT = INCENDIUM_BESTIARY_5E_COMPACT;
 
-export const BESTIARY_ENTRIES = enrichBestiaryEntries([
+export const BESTIARY_ENTRIES = integrateBestiaryAudits(enrichBestiaryEntries([
   ...BESTIARY_LOT_5A_ENTRIES,
   ...AETHER_BESTIARY_5B,
   ...ALEXS_MOBS_BESTIARY_5C,
@@ -135,7 +136,7 @@ export const BESTIARY_ENTRIES = enrichBestiaryEntries([
   ...MCA_BESTIARY_5E,
   ...ECOLOGICS_BESTIARY_5E,
   ...INCENDIUM_BESTIARY_5E,
-]);
+]));
 export const BESTIARY_DETAILED_TOTAL = BESTIARY_ENTRIES.length;
 
 const LOT_5D_AUDIT: BestiaryModAudit[] = [

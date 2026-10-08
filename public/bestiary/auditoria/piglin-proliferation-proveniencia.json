@@ -1,0 +1,92 @@
+{
+  "version": "2.0.15 · NeoForge · Minecraft 1.21.1",
+  "catalog_reference": "Lucas-V-Roveri/mundinho@de517bc",
+  "method": "Malhas Java originais, pivôs, hierarquia, UV e texturas da build exata; estados e ajustes documentados por imagem.",
+  "limits": [
+    "Representações técnicas estáticas sem execução do jogo. Limites de pose e configuração detalhados em cada imagem.",
+    "Enquadramento normalizado e luz simplificada.",
+    "Sem equipamentos externos, partículas ou efeitos de ataque, salvo partes originais expressamente documentadas."
+  ],
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "NsVkx365",
+    "project_id": "iRE67WIn",
+    "author_id": "9vwtx5vp",
+    "featured": false,
+    "name": "2.0.15",
+    "version_number": "2.0.15",
+    "changelog": "\n- [CHANGE] fix #56 (visual glitch with buckler when using First Person Model mod)\n",
+    "changelog_url": null,
+    "date_published": "2026-06-19T20:55:36.706053Z",
+    "downloads": 15063,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "61vk05lH",
+        "hashes": {
+          "sha1": "e6573a4e1132f4cad59476405502a2f5a7d84767",
+          "sha512": "bc13e37709d8466da392ab869aa352143b42c8c93107e0b6b99695cd990ea474d0229accd4a36ac721505f0520898f14e75d894f1b5e6147648f4fa387bde610"
+        },
+        "url": "https://cdn.modrinth.com/data/iRE67WIn/versions/NsVkx365/piglinproliferation-1.21.1-2.0.15.jar",
+        "filename": "piglinproliferation-1.21.1-2.0.15.jar",
+        "primary": true,
+        "size": 2504303,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  "jar_sha256": "82a76af2f9fda447dcbd0aa152cea9ef4aa540bf076c2be9e24a868ec2937a30",
+  "source_files_sha256": {
+    "assets/piglinproliferation/textures/entity/piglin/alchemist/alchemist.png": "bfa6f00e3585a682131332d29d8088571595280123377449cbaf093d0306580f",
+    "assets/piglinproliferation/textures/entity/piglin/alchemist/belt.png": "444435e5c9474292712a3ca9142a6e1c4b2acde6eb766f54d29507fb18601251",
+    "assets/piglinproliferation/textures/entity/piglin/traveler/traveler.png": "23832865267e08cdca97193cc2b3ac1216971eca7c6ee025f75565baa2961467",
+    "tallestred/piglinproliferation/client/models/PiglinAlchemistModel.class": "9623765bf973bc4ee80744f2024db12d57f7b5aed684febdcee166f00a983659",
+    "tallestred/piglinproliferation/client/models/PiglinTravelerModel.class": "017076c2a804f971a11bcf7156a0129452ceede702051e0ced89943b2d32cb9e",
+    "tallestred/piglinproliferation/client/renderers/PPRenderSetupEvents.class": "3c48d5c20e797ff0a3e524b0ca8390ebe872322208e23de02237f6463cd8bccc",
+    "tallestred/piglinproliferation/client/renderers/PiglinAlchemistRenderer.class": "ee7442cd3eea9c4b7e76174b6acc721002b62daeeeed7711f5e7d41875902484",
+    "tallestred/piglinproliferation/client/renderers/PiglinTravelerRenderer.class": "e1a71386174aed17261c2352f8298e83c8c743e422ebf60807f517551f922648",
+    "tallestred/piglinproliferation/client/renderers/layers/BeltRenderLayer.class": "52ef84d487ef8283abdc90cb0faecff475084dacdb26662e2c081de4f34e8f79",
+    "tallestred/piglinproliferation/common/entities/PiglinAlchemist.class": "7535c902146650609f8582c4f3acf21d7d4cf9d2fd0c52e6aaba925f73b92d90",
+    "tallestred/piglinproliferation/common/entities/PiglinTraveler.class": "0a965ad22c4b85ad22d3d8d1d5ac3f2155bbc46b7a3b531be99725d39382fd11"
+  },
+  "images": [
+    {
+      "entity_id": "piglinproliferation:piglin_alchemist",
+      "mob": "PiglinAlchemist",
+      "image": "piglin-alchemist.png",
+      "model": "tallestred/piglinproliferation/client/models/PiglinAlchemistModel.class",
+      "renderer": "tallestred/piglinproliferation/client/renderers/PiglinAlchemistRenderer.class",
+      "texture": "assets/piglinproliferation/textures/entity/piglin/alchemist/alchemist.png",
+      "extra_sources": [
+        "tallestred/piglinproliferation/client/renderers/PPRenderSetupEvents.class",
+        "tallestred/piglinproliferation/common/entities/PiglinAlchemist.class",
+        "tallestred/piglinproliferation/client/renderers/layers/BeltRenderLayer.class",
+        "assets/piglinproliferation/textures/entity/piglin/alchemist/belt.png"
+      ],
+      "notes": "Adulto parado, ageInTicks=limbSwing=limbSwingAmount=0, olhar neutro, sem armadura, arma ou itens externos. Orelhas com oscilação original no instante 0. HumanoidModel repõe cabeça/corpo Y=0 e braços Y=2; mangas, calças e jacket copiam as partes correspondentes. Inclui cinturão e sua camada original; inventário do cinturão vazio, bodyForLeggings e bodyForChest invisíveis. Luz simplificada; demais estados do jogo não executados."
+    },
+    {
+      "entity_id": "piglinproliferation:piglin_traveler",
+      "mob": "PiglinTraveler",
+      "image": "piglin-traveler.png",
+      "model": "tallestred/piglinproliferation/client/models/PiglinTravelerModel.class",
+      "renderer": "tallestred/piglinproliferation/client/renderers/PiglinTravelerRenderer.class",
+      "texture": "assets/piglinproliferation/textures/entity/piglin/traveler/traveler.png",
+      "extra_sources": [
+        "tallestred/piglinproliferation/client/renderers/PPRenderSetupEvents.class",
+        "tallestred/piglinproliferation/common/entities/PiglinTraveler.class"
+      ],
+      "notes": "Adulto parado, ageInTicks=limbSwing=limbSwingAmount=0, olhar neutro, sem armadura, arma ou itens externos. Orelhas com oscilação original no instante 0. HumanoidModel repõe cabeça/corpo Y=0 e braços Y=2; mangas, calças e jacket copiam as partes correspondentes. isSitting=false, kickTicks=0 e hat_brim visível, sem capacete. Luz simplificada; demais estados do jogo não executados."
+    }
+  ],
+  "site_modified": false
+}

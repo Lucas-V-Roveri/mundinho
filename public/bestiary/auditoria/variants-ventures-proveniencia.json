@@ -1,0 +1,223 @@
+{
+  "version": "1.0.26 · NeoForge · Minecraft 1.21.1",
+  "catalog_reference": "Lucas-V-Roveri/mundinho@de517bc",
+  "method": "Malhas Java originais, pivôs, hierarquia, UV e texturas da build exata; estados e ajustes documentados por imagem.",
+  "limits": [
+    "Representações técnicas estáticas sem execução do jogo. Limites de pose e configuração detalhados em cada imagem.",
+    "Enquadramento normalizado e luz simplificada.",
+    "Sem equipamentos externos, partículas ou efeitos de ataque, salvo partes originais expressamente documentadas."
+  ],
+  "build": {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "wLMxDfqm",
+    "project_id": "lNDRiXkY",
+    "author_id": "CGl7vZ8J",
+    "featured": false,
+    "name": "Variants&Ventures 1.0.26",
+    "version_number": "neoforge-1.0.26+mc1.21.1",
+    "changelog": "- Fixed crash related to \"Not Enough Trials\" mod\n",
+    "changelog_url": null,
+    "date_published": "2026-06-03T10:43:30.155033Z",
+    "downloads": 65105,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "N9UYiwST",
+        "hashes": {
+          "sha512": "e8f9fdd5566dc8a6f3d8556394963b990a452d576b8d1d974af0ca19daeb15ea1fdbb7b0ed2401a58d083cb6376a044396af985eaa5d1745692aae1f3516ae10",
+          "sha1": "7c4dff6d6f9f472edfc25813c920742d5e382ee0"
+        },
+        "url": "https://cdn.modrinth.com/data/lNDRiXkY/versions/wLMxDfqm/variantsandventures-neoforge-1.0.26%2Bmc1.21.1.jar",
+        "filename": "variantsandventures-neoforge-1.0.26+mc1.21.1.jar",
+        "primary": true,
+        "size": 1082397,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "1eAoo2KR",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "G1hIVOrD",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  "jar_sha256": "7cdbd2a4503142c5900066bbbf4c06a813b06322fbb3088e41d059e22d8dfc19",
+  "source_files_sha256": {
+    "assets/variantsandventures/textures/entity/gelid/gelid.png": "04c90d64c704efeeacc55cf9428b5c69c1652d47309f3c0db24bd0a969329649",
+    "assets/variantsandventures/textures/entity/gelid/gelid_overlay.png": "737f8d8e6251908d9cf667dd7fa75991f95f0a5b3efb18702dcf91227888bcd4",
+    "assets/variantsandventures/textures/entity/murk/murk_purple.png": "ce5e1b0658a0c6fd8455afed6645f3f9531bb8c869b10f0d6360bc276a5ccb07",
+    "assets/variantsandventures/textures/entity/murk/murk_red.png": "33cd0ae8a168c0b74a041c2159a3cdee56f4c046c5f159021200a1fe025d2710",
+    "assets/variantsandventures/textures/entity/murk/murk_yellow.png": "eea2604feb8288824a78333af44756e9923d32c32fdd4d8fa3d0fa285e37fb8b",
+    "assets/variantsandventures/textures/entity/thicket/thicket.png": "b8eacd3652fc63af6e06a3b2464c319df60ffddc738f7bb3e1fe82d16988d9f6",
+    "assets/variantsandventures/textures/entity/thicket/thicket_overlay.png": "4c26eaba6469242253beb2609763f1fd8b25d894326f59ad70bf424f86060a8c",
+    "assets/variantsandventures/textures/entity/verdant/verdant.png": "09dd18f58e473c4dbe6bcb83f2787a390cda5a24cef1e34b52dd8c94d54b1daf",
+    "com/faboslav/variantsandventures/common/client/model/GelidEntityModel.class": "3a8acd316db68a54b308fe9cefdf960770a8707a2bd002e88867c2efc6eefea3",
+    "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class": "debe6fca2e35b1da33124250493fb0e137dad9f9a6273d6df3d6178fac4aa48f",
+    "com/faboslav/variantsandventures/common/client/model/ThicketEntityModel.class": "f154f1720ece482f0903638c1fa080514d9675b9ecc00d474936abe84131470b",
+    "com/faboslav/variantsandventures/common/client/model/VerdantEntityModel.class": "7a8650f0fc74c7ae6b83693a42fd29c7fa219a4aff57a0f81f8c72c12548daff",
+    "com/faboslav/variantsandventures/common/client/render/entity/GelidEntityRenderer.class": "2fd28857a7883854b30cb4c2cd8955ea9be005dc658893db99120045193e6e7d",
+    "com/faboslav/variantsandventures/common/client/render/entity/MurkEntityRenderer.class": "4e4a41682550aebf659d460b26f0b1349137cf496205b1cc6783de59b8c044c5",
+    "com/faboslav/variantsandventures/common/client/render/entity/ThicketEntityRenderer.class": "7f6f8a65e159355cfdf02c7ce198369a475a57f9394ca77f56b9e5fb082d8ac4",
+    "com/faboslav/variantsandventures/common/client/render/entity/VerdantEntityRenderer.class": "fe25c58b154fc52895007c58db9faac08489fbe02006b1156000be26e48254bb",
+    "com/faboslav/variantsandventures/common/client/render/entity/feature/GelidOverlayFeatureRenderer.class": "580171dac2a8216c3604573c91e1bae4c0758d96a43041c3d0437a2ea20216c7",
+    "com/faboslav/variantsandventures/common/client/render/entity/feature/ThicketOverlayFeatureRenderer.class": "6dd23164ab1805f39660fa794c5f0e9fb860a7dcbeafc418474e113d5fe3aecb",
+    "com/faboslav/variantsandventures/common/entity/mob/MurkEntity.class": "dae2ab668fdb6ceaf9ccf1f77966b98afd23f33ed88d7e4762bcb975640228c6",
+    "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class": "bd407d464d750a1e89fead8672073a6565353141d9f2b9e0b75143466add2f42"
+  },
+  "images": [
+    {
+      "entity_id": "variantsandventures:gelid",
+      "mob": "Gelid · adulto parado, não agressivo; attackTime=ageInTicks=0; overlay original de inflação 0,25",
+      "image": "gelid.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/GelidEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/GelidEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/gelid/gelid.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/GelidEntityModel.class",
+        "com/faboslav/variantsandventures/common/client/render/entity/feature/GelidOverlayFeatureRenderer.class",
+        "assets/variantsandventures/textures/entity/gelid/gelid_overlay.png"
+      ],
+      "boxes": 7,
+      "notes": "Malha e texturas originais; adulto parado, não agressivo; attackTime=ageInTicks=0; overlay original de inflação 0,25. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:thicket",
+      "mob": "Thicket · adulto parado, não agressivo; attackTime=ageInTicks=0; overlay original de inflação 0,25",
+      "image": "thicket.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/ThicketEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/ThicketEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/thicket/thicket.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/ThicketEntityModel.class",
+        "com/faboslav/variantsandventures/common/client/render/entity/feature/ThicketOverlayFeatureRenderer.class",
+        "assets/variantsandventures/textures/entity/thicket/thicket_overlay.png"
+      ],
+      "boxes": 7,
+      "notes": "Malha e texturas originais; adulto parado, não agressivo; attackTime=ageInTicks=0; overlay original de inflação 0,25. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:verdant",
+      "mob": "Verdant · adulto parado, sem pose de arma; ageInTicks=0",
+      "image": "verdant.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/VerdantEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/VerdantEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/verdant/verdant.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/VerdantEntityModel.class"
+      ],
+      "boxes": 7,
+      "notes": "Malha e texturas originais; adulto parado, sem pose de arma; ageInTicks=0. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:murk",
+      "mob": "Murk · purple, com corais",
+      "image": "murk-purple.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/MurkEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/murk/murk_purple.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+        "com/faboslav/variantsandventures/common/entity/mob/MurkEntity.class"
+      ],
+      "boxes": 9,
+      "notes": "Malha e texturas originais; purple, com corais. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:murk",
+      "mob": "Murk · purple, tosquiado",
+      "image": "murk-purple-sheared.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/MurkEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/murk/murk_purple.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+        "com/faboslav/variantsandventures/common/entity/mob/MurkEntity.class"
+      ],
+      "boxes": 9,
+      "notes": "Malha e texturas originais; purple, tosquiado. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:murk",
+      "mob": "Murk · red, com corais",
+      "image": "murk-red.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/MurkEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/murk/murk_red.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+        "com/faboslav/variantsandventures/common/entity/mob/MurkEntity.class"
+      ],
+      "boxes": 9,
+      "notes": "Malha e texturas originais; red, com corais. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:murk",
+      "mob": "Murk · red, tosquiado",
+      "image": "murk-red-sheared.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/MurkEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/murk/murk_red.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+        "com/faboslav/variantsandventures/common/entity/mob/MurkEntity.class"
+      ],
+      "boxes": 9,
+      "notes": "Malha e texturas originais; red, tosquiado. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:murk",
+      "mob": "Murk · yellow, com corais",
+      "image": "murk-yellow.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/MurkEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/murk/murk_yellow.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+        "com/faboslav/variantsandventures/common/entity/mob/MurkEntity.class"
+      ],
+      "boxes": 9,
+      "notes": "Malha e texturas originais; yellow, com corais. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    },
+    {
+      "entity_id": "variantsandventures:murk",
+      "mob": "Murk · yellow, tosquiado",
+      "image": "murk-yellow-sheared.png",
+      "model": "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+      "renderer": "com/faboslav/variantsandventures/common/client/render/entity/MurkEntityRenderer.class",
+      "texture": "assets/variantsandventures/textures/entity/murk/murk_yellow.png",
+      "extra_sources": [
+        "com/faboslav/variantsandventures/common/init/VariantsAndVenturesModelLayers.class",
+        "com/faboslav/variantsandventures/common/client/model/MurkEntityModel.class",
+        "com/faboslav/variantsandventures/common/entity/mob/MurkEntity.class"
+      ],
+      "boxes": 9,
+      "notes": "Malha e texturas originais; yellow, tosquiado. HumanoidModel/SkeletonModel e animateZombieArms/bobArms de Minecraft 1.21.1 usados nos valores neutros. Sem equipamentos externos. Representação técnica com luz simplificada; demais estados e transições não executados."
+    }
+  ],
+  "site_modified": false
+}

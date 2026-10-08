@@ -1,0 +1,90 @@
+{
+  "mod": "Ecologics",
+  "version": "2.3.7 · NeoForge · Minecraft 1.21.1",
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "ihEiqSv4",
+    "project_id": "NCKpPR0Z",
+    "author_id": "ZiHvtiB9",
+    "featured": false,
+    "name": "Ecologics 2.3.7 (NeoForge 1.21.1)",
+    "version_number": "2.3.7-NeoForge",
+    "changelog": "* Backported several languages.\n* Flowering Azalea logs can now be sheared with Crab Claws or items tagged with c:shears\n* Adjusted the ordering of creative tab to match vanilla ordering of wooden products.\n* Restored functionality of Prickly Pear item.\n* Cooked Prickly Pear now restores slightly more hunger and has the same great effect of removing Wither without the damage.\n* There is now dedicated mod foods entry instead of borrowing from vanilla foods. The food has been changed to use the new food registry entries.\n* Coconut Husk is now tagged under c:bowls tag. The vanilla bowls also use that tag.\n* Coconut Husks can be crafted into bowls if you're intending to use recipes that strictly use vanilla bowls.\n* Tropical Stew no longer effectively duplicates bowl. Now consuming the Tropical Stew leaves you with a coconut husk.\n* Fixed an issue where Ecologics signs and hanging signs wouldn't drop.\n* Fixed some oddities with placing Moss Carpets onto Moss Layers.\n* (NeoForge) Fixed an error with compostables data map.",
+    "changelog_url": null,
+    "date_published": "2026-07-11T23:51:41.665089Z",
+    "downloads": 48138,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Jo5p3Wv3",
+        "hashes": {
+          "sha1": "3cf395ba5facd56917accc6563f7819f4e39c941",
+          "sha512": "eb62eb7e7838259c6494d3ee64854f4bd78029dcc39eec434f1e7be3521f73223a8a3bd994623512477132d6c54045576231fd7772161b94602f72bba3003599"
+        },
+        "url": "https://cdn.modrinth.com/data/NCKpPR0Z/versions/ihEiqSv4/ecologics-1.21.1-2.3.7.jar",
+        "filename": "ecologics-1.21.1-2.3.7.jar",
+        "primary": true,
+        "size": 1909490,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  "jar_sha1": "3cf395ba5facd56917accc6563f7819f4e39c941",
+  "jar_sha256": "1fb3ce04b425018154a63d8719bfcf1418734ea7e36b71bd10e7aa0c773cbeae",
+  "extracted_files_sha256": {
+    "META-INF/neoforge.mods.toml": "ceaf98e43474c77438d27c1520af0afb2a4d1ddec96c899eb4841914aa61b06d",
+    "assets/ecologics/textures/entity/baby_penguin.png": "7d2cef7b528c9c180348ea178c44c16b6bb35fa62d36f3ad98ee943d09a59ae9",
+    "assets/ecologics/textures/entity/penguin.png": "d25cae43143d796cc55e4094e9d535b6d139e5c38f44ec84096fc91dc145fe55",
+    "assets/ecologics/textures/entity/squirrel.png": "020a145bbb3cb35bcce2009b16bea85b706dc8f1e61027aa6d09beccf6d64f4b",
+    "samebutdifferent/ecologics/client/model/PenguinModel.class": "f9da35bbb57e238ac11e0d3c222fcb68dff2fdc6890d4fab6d57d4aa5f22186e",
+    "samebutdifferent/ecologics/client/model/SquirrelModel.class": "56e4fc65f54f2343102319d3a514f5f3ca169cefbfa65edb03a2dff0b32b4321",
+    "samebutdifferent/ecologics/client/renderer/entity/PenguinRenderer.class": "6c7e611a014f2415a9f4d6651f8e4d1f765e095a9f6d25fc1ac6de7080c3fea8",
+    "samebutdifferent/ecologics/client/renderer/entity/SquirrelRenderer.class": "b6038df67d4cfd3cc04673fe09fb805b84e1d3bfc8fd0439a2a5d5ba13fbfc3c",
+    "samebutdifferent/ecologics/client/renderer/entity/layers/PenguinHeldItemLayer.class": "e93254fb8e9ffad08dc6bf703f794af737c11ccc06429847275e435e4cae1971"
+  },
+  "images": [
+    {
+      "mob": "Penguin",
+      "entity_id": "ecologics:penguin",
+      "image": "penguin.png",
+      "model_class": "samebutdifferent/ecologics/client/model/PenguinModel.class",
+      "renderer_class": "samebutdifferent/ecologics/client/renderer/entity/PenguinRenderer.class",
+      "texture": "assets/ecologics/textures/entity/penguin.png",
+      "boxes_total": 8,
+      "pose": "Adulto parado, limbSwing=limbSwingAmount=headPitch=netHeadYaw=0; Penguin não gestante, sem item segurado; Squirrel inclui rotação de -5° nos dois braços conforme setupAnim.",
+      "sha256": "54a5cca671d55da4cd21490fd7ba09d5d77c9db6116be2458a1d1391c8910180"
+    },
+    {
+      "mob": "Squirrel",
+      "entity_id": "ecologics:squirrel",
+      "image": "squirrel.png",
+      "model_class": "samebutdifferent/ecologics/client/model/SquirrelModel.class",
+      "renderer_class": "samebutdifferent/ecologics/client/renderer/entity/SquirrelRenderer.class",
+      "texture": "assets/ecologics/textures/entity/squirrel.png",
+      "boxes_total": 12,
+      "pose": "Adulto parado, limbSwing=limbSwingAmount=headPitch=netHeadYaw=0; Penguin não gestante, sem item segurado; Squirrel inclui rotação de -5° nos dois braços conforme setupAnim.",
+      "sha256": "3373078529d50b7c6f84a3c80ce93347b7ee1cd4afb529e56958711557cc5ec4"
+    }
+  ],
+  "method": "CFR 0.152 decompila as classes do JAR exato; geometria, pivôs, deformações, espelhos, UVs e hierarquia usados na renderização ortográfica com texturas do mesmo JAR. Filtragem por texel, fundo transparente.",
+  "decompiler_sha256": "f686e8f3ded377d7bc87d216a90e9e9512df4156e75b06c655a16648ae8765b2",
+  "limits": [
+    "Renderização técnica estática, sem executar Minecraft, animações ou shaders/lightmap do motor.",
+    "Adultos apenas: Penguin não gestante, sem item; Squirrel parado. Filhotes e estados de ação não representados.",
+    "Enquadramentos normalizados individualmente; imagens não mostram escala comparativa entre mobs."
+  ],
+  "catalog_source_divergence": {
+    "catalog_commit": "cfd79749690ac87228da05d5e0930f8b48efa669",
+    "catalog_source_version": "2.1.13 · Minecraft 1.19.3",
+    "resolution": "Fonte antiga não usada para gerar estas imagens. Modelos e texturas foram extraídos da build exata 2.3.7 NeoForge e conferidos pelos hashes SHA1 e SHA512 publicados no Modrinth. Site e catálogo não alterados."
+  }
+}

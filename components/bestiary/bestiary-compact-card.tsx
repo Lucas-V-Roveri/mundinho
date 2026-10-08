@@ -72,6 +72,7 @@ export function BestiaryCompactCard({
               </div>
             )}
           </div>
+          {revealed && hasImage && entry.imageSourceUrl ? <a href={entry.imageSourceUrl} target="_blank" rel="noreferrer" className="mt-2 block text-center font-label text-base text-blue-700 underline">Fonte da imagem</a> : null}
           <div className="mt-2 flex flex-wrap gap-1">
             <Tag tone={seen ? "success" : "neutral"}>{seen ? "visto" : "não visto"}</Tag>
             {revealed ? <Tag tone={dangerTone(entry.danger)}>{entry.danger}</Tag> : null}
@@ -117,14 +118,17 @@ export function BestiaryCompactCard({
                 <h3 className="font-label text-lg text-wood-700">Drops</h3>
                 {entry.drops.length ? (
                   <ul className="mt-2 space-y-2 text-sm">
-                    {entry.drops.map((drop) => (
-                      <li key={`${entry.id}-${drop.nameEn ?? drop.namePt}`} className="border border-stone-500 bg-paper-100 p-2">
+                    {entry.drops.map((drop, dropIndex) => (
+                      <li key={`${entry.id}-${dropIndex}-${drop.nameEn ?? drop.namePt}`} className="border border-stone-500 bg-paper-100 p-2">
+                        {drop.mechanism ? <p className="mb-1 font-semibold text-blue-800">{drop.mechanism}</p> : null}
                         <strong>{drop.namePt}</strong>{drop.nameEn && drop.nameEn !== drop.namePt ? <span className="text-ink-700"> · {drop.nameEn}</span> : null}
                         <p className="mt-1 text-xs leading-5 text-ink-700">{[drop.quantity, drop.chance, drop.condition].filter(Boolean).join(" · ") || "quantidade/condição não documentada"}</p>
                         <p className="mt-1 leading-5"><strong>Para que serve:</strong> {drop.use || "Uso não documentado — conferir no JEI como último recurso."}</p>
+                        {drop.confidenceDetail ? <p className="mt-2 text-xs leading-5"><strong>Confiança:</strong> {drop.confidenceDetail}</p> : null}
+                        {drop.sourceDetail ? <details className="mt-2 text-xs leading-5"><summary className="cursor-pointer">Fontes da recompensa</summary><p className="mt-2 break-words">{drop.sourceDetail}</p></details> : null}
                         <div className="mt-2 flex flex-wrap items-center gap-2">
                           {drop.useConfidence ? <Tag tone={drop.useConfidence === "Alta" ? "success" : drop.useConfidence === "Baixa-conferir" ? "danger" : "neutral"}>uso: {drop.useConfidence}</Tag> : null}
-                          {drop.guideHref ? <a href={drop.guideHref} className="font-label text-base text-blue-700 underline underline-offset-2">ver crafting em Mods</a> : null}
+                          {drop.guideHref ? <a href={drop.guideHref} className="font-label text-base text-blue-700 underline underline-offset-2">ver crafting / receitas</a> : null}
                         </div>
                       </li>
                     ))}

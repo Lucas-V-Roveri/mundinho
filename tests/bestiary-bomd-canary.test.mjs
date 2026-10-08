@@ -27,10 +27,35 @@ function catalog(before = false) {
 const entries = catalog();
 const prior = catalog(true);
 const bomd = entries.filter(e => e.mod === 'Bosses of Mass Destruction');
+test('each integrated audit preserves its fourteen fields, reward uses and faithful local images', () => {
+  const integrated = JSON.parse(fs.readFileSync(path.join(root, 'data/bestiary-integrated-audits.json'), 'utf8'));
+  assert.equal(Object.keys(integrated).length, 8);
+  assert.equal(Object.values(integrated).reduce((n, a) => n + a.rows.length, 0), 85);
+  const corrupt = /(?:[^;\s];\s*){8,}[^;\s]/;
+  for (const [id, audit] of Object.entries(integrated)) {
+    const e = entries.find(e => e.id === id);
+    assert.ok(e);
+    assert.deepEqual(e.audit.rows, audit.rows);
+    assert.equal(e.drops.length, audit.rows.length);
+    assert.ok(!corrupt.test(JSON.stringify(e.audit)));
+    for (const row of audit.rows) {
+      assert.equal(Object.keys(row).length, 14);
+      assert.ok(Object.values(row).every(v => typeof v === 'string' && v.trim()));
+    }
+    assert.ok(e.drops.every(d => d.use && d.mechanism && d.confidenceDetail && d.sourceDetail));
+    assert.ok(e.imageUrl.startsWith('/images/bestiary/audited/'));
+    assert.ok(!e.imageUrl.includes('/textures/'));
+    const b = fs.readFileSync(path.join(root, 'public', e.imageUrl));
+    assert.equal(b.subarray(1, 4).toString(), 'PNG');
+    assert.ok(b.readUInt32BE(16) > 64 && b.readUInt32BE(20) > 64);
+    assert.ok(fs.existsSync(path.join(root, 'public', e.imageSourceUrl)));
+    for (const drop of e.drops) if (drop.guideHref) assert.ok(drop.guideHref.startsWith('https://minecraft.wiki/'));
+  }
+});
 test('the canary enriches existing IDs without recreating the catalog or changing other groups', () => {
   assert.equal(entries.length, 431);
   assert.deepEqual(entries.map(e=>e.id), prior.map(e=>e.id));
-  assert.deepEqual(entries.filter(e=>e.mod!=='Bosses of Mass Destruction'), prior.filter(e=>e.mod!=='Bosses of Mass Destruction'));
+  for (const e of entries) { const old = prior.find(x=>x.id===e.id); assert.equal(e.registryId, old.registryId); assert.deepEqual(e.track, old.track); if (!e.audit) assert.deepEqual(e, old); }
   assert.equal(bomd.length,4);
   for (const e of bomd) {
     const old = prior.find(x=>x.id===e.id);
