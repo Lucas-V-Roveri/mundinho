@@ -1,0 +1,964 @@
+{
+  "mod": "Deeper and Darker",
+  "version": "1.4.1 · NeoForge · Minecraft 1.21.1",
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "TuD0Zvi3",
+    "project_id": "fnAffV0n",
+    "author_id": "lvPc6zz6",
+    "featured": false,
+    "name": "[NeoForge 1.21.1] 1.4.1",
+    "version_number": "1.4.1-neoforge-1.21.1",
+    "changelog": "A minor update for v1.4. This update fixes a server crash for improperly generated Crystallized Amber blocks.\n\n**The full changelog can be found here**: https://github.com/KyaniteMods/DeeperAndDarker/releases/tag/v1.4.1",
+    "changelog_url": null,
+    "date_published": "2026-06-05T17:56:22.995603Z",
+    "downloads": 192249,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "kUgxBFoD",
+        "hashes": {
+          "sha512": "38d8d87878f39a063feb029db17702bedadf7554233ae56db6018c21225b6dff4d4cc31f4b0995254fd488e2a687f3b15bf9647c59dd42b9032791d34316ed0c",
+          "sha1": "b6094adde68bd4b909bc75c64901e1f3fb99ad8f"
+        },
+        "url": "https://cdn.modrinth.com/data/fnAffV0n/versions/TuD0Zvi3/deeperdarker-neoforge-1.21.1-1.4.1.jar",
+        "filename": "deeperdarker-neoforge-1.21.1-1.4.1.jar",
+        "primary": true,
+        "size": 3906057,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  "jar_sha256": "eee3f51222b0bcc714def002ff089ac9e131d3cae4575b542fd0a7dd101fe0af",
+  "source_files_sha256": {
+    "assets/deeperdarker/textures/entity/anger_pot.png": "0c43ce265f861d8d452c89a11247b3e0b60baf00fbe94590c1977335be131384",
+    "assets/deeperdarker/textures/entity/angler_fish.png": "fa674140cbcc28ae5217970cfcc56749b179194306efc3b29883aad8b8a5a9f1",
+    "assets/deeperdarker/textures/entity/angler_fish_glow.png": "21b13a71e12a8d1f39f444eb85d62c6276473885f2d1c558c26c863cf0600792",
+    "assets/deeperdarker/textures/entity/fear_pot.png": "8492df290cb5b5b13312bf3eeed736fd66cc00fe94748fd3bbe9f01192af8779",
+    "assets/deeperdarker/textures/entity/sculk_centipede.png": "6954e600654242377f16a06e008bdbc0b705ad53d830d4eef4e1267daa206927",
+    "assets/deeperdarker/textures/entity/sculk_leech.png": "f26aee5e5775185d728421ae8019e39b32a860415a1132d8c2bde7794caf8704",
+    "assets/deeperdarker/textures/entity/sculk_snapper.png": "5ec762a9badc1cdcc29b764c9fbb8cc4893adc1218b2aedc8fddd05a2639860b",
+    "assets/deeperdarker/textures/entity/shattered.png": "5ddbda03fb28ea317ebeff1b54c4a4f84918816ce45c434335334079867552f1",
+    "assets/deeperdarker/textures/entity/shriek_worm.png": "f67b65d9c296c4239661899aff7e64509645a5917e87f81457a4830225309154",
+    "assets/deeperdarker/textures/entity/sludge.png": "64709c60f909b2709fba6c9d8e1977838c92b861b6300a7a491e4e5eb116a5f3",
+    "assets/deeperdarker/textures/entity/sorrow_pot.png": "0d773bef5e6686b56793d9b3176d427254a3bfd8c6785d661963e184368462ec",
+    "assets/deeperdarker/textures/entity/stalker.png": "25f276e8d6160d9ab725e875cac38990b78411740ac0e5f414381315b6956683",
+    "com/kyanite/deeperdarker/client/model/AngerPotModel.class": "b230c3093d0c17705ce27a4e11710d08a5a1ec9849416aee89da0c42855f2c60",
+    "com/kyanite/deeperdarker/client/model/AnglerFishModel.class": "b6c167ff9271adfa8892407ebc862ae132f4fda450fc24f24c4ddd3ace966e94",
+    "com/kyanite/deeperdarker/client/model/FearPotModel.class": "d981ba32b1988c58a03291b0d24c14e8b26eb4774149296c08e02084ffd6d478",
+    "com/kyanite/deeperdarker/client/model/SculkCentipedeModel.class": "aa227b84efc2745e8a109bb0a4b909c25ce9504e32771ca030bafb5ef24e8a9f",
+    "com/kyanite/deeperdarker/client/model/SculkLeechModel.class": "3fc79c07fb1605b9cd522b304d364ff9583b2211b44fbaa21c3231e7e50852a0",
+    "com/kyanite/deeperdarker/client/model/SculkSnapperModel.class": "bc839cfe3a681ee77eb3b47259735f3d23e29bcef4ce5d75e42f2cbf7a440189",
+    "com/kyanite/deeperdarker/client/model/ShatteredModel.class": "0da45bfc21c8133f22e5ee4fb2ba14160f571d965209e6244a748cd6036178cf",
+    "com/kyanite/deeperdarker/client/model/ShriekWormModel.class": "03b40de31e7f04d998925b4efac1bd47d036f9b54ffa882a3b67d4ee1d3c4720",
+    "com/kyanite/deeperdarker/client/model/SludgeModel.class": "17f8200e3f5a7c0b151dcbd3403c06ee0001d6e2c7010d6c012cd793b17206eb",
+    "com/kyanite/deeperdarker/client/model/SorrowPotModel.class": "13880380ec0177d57c1e46d174fdf830b680bc7afd379ad3f9038ccf6c00eae4",
+    "com/kyanite/deeperdarker/client/model/StalkerModel.class": "d4ad0e7f365ad871bf0c5d6be9a2ac2adbf9f4c70020e2cb0c31058bae2267eb",
+    "com/kyanite/deeperdarker/client/render/AngerPotRenderer.class": "94ede3a95585413507511a54b6cfeac63e3697908f45dace5ec9ee0eae955e0f",
+    "com/kyanite/deeperdarker/client/render/AnglerFishGlowRenderer.class": "8d5177394f456445d86ad596e502b32fe7fbefb59efb2d744a1b28c9ee80737c",
+    "com/kyanite/deeperdarker/client/render/AnglerFishRenderer.class": "e7b57495caf75935e764e4c46180d777dabd675195cea6e222830c30cc2a0ba7",
+    "com/kyanite/deeperdarker/client/render/FearPotRenderer.class": "72094841f49f601402504656abed20111d30b52e847b5b2239213201388b6172",
+    "com/kyanite/deeperdarker/client/render/SculkCentipedeRenderer.class": "8ed90cb7558a7e790fceeb5b27f63e1f1d7e785aaaea7e5acc7e7218c741de89",
+    "com/kyanite/deeperdarker/client/render/SculkLeechRenderer.class": "f14c1a164a2bc87b1f387198f17c1cc928da97dc4ca485f619883c35b093daa7",
+    "com/kyanite/deeperdarker/client/render/SculkSnapperRenderer.class": "e4466112507d1fbd3463a6d5a36941527eb2492350006483096a1c748ee0f250",
+    "com/kyanite/deeperdarker/client/render/ShatteredRenderer.class": "9e4c1d928a2024b09090d86714171ea7b2b92d3c8863343e77279fc39f7ea047",
+    "com/kyanite/deeperdarker/client/render/ShriekWormRenderer.class": "ffb9f54a1cf607a0fbdccde4595bfd7f9c7dc9ebdd93276a398497d034896ec8",
+    "com/kyanite/deeperdarker/client/render/SludgeOuterLayer.class": "4903860f33515273c172029df1216fea3012b2ee6c5c545b0da3ae719a83b8af",
+    "com/kyanite/deeperdarker/client/render/SludgeRenderer.class": "f310a757cd3fed0abc49b55b6c0710469550a68d55e4ce17923a9a0d2a6c73e8",
+    "com/kyanite/deeperdarker/client/render/SorrowPotRenderer.class": "60e1cfdb1ff9e1c39b37392369826c1dc39d1fd049fc65d80bf741dd4d7b2d38",
+    "com/kyanite/deeperdarker/client/render/StalkerRenderer.class": "bb37ff1179317307048770f7d082d1938e0ac4438a0449114b8a9d7adf78c9c1",
+    "com/kyanite/deeperdarker/content/entities/animations/SculkSnapperAnimation.class": "77c6bcea5c6f4e24c5dbeb6e30fe0134ffa4309c09660dcccef67cc20395af38",
+    "com/kyanite/deeperdarker/content/entities/animations/ShatteredAnimation.class": "186ffc9e2d0a0644e8a4751bf4e43baef22760b6c0c7681d0c2e31aa5f911d5f",
+    "com/kyanite/deeperdarker/content/entities/animations/ShriekWormAnimation.class": "8f0897bb162c219279da521cfdafd4b5c69003ebc44f80a75c8f10331a94b385",
+    "com/kyanite/deeperdarker/content/entities/animations/StalkerAnimation.class": "d3a16ce55e4c74f508631941caea996ff0f9b7aee13d8230f49b2f1dbc82e9d9"
+  },
+  "images": [
+    {
+      "mob": "Angler Fish",
+      "entity_id": "deeperdarker:angler_fish",
+      "image": "angler-fish.png",
+      "cube_count": 12,
+      "model": "com/kyanite/deeperdarker/client/model/AnglerFishModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/AnglerFishRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/angler_fish.png",
+      "extra_sources": [
+        "assets/deeperdarker/textures/entity/angler_fish_glow.png",
+        "com/kyanite/deeperdarker/client/render/AnglerFishGlowRenderer.class"
+      ],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": []
+      },
+      "notes": "Pose parada, sem ataque; movimento e rotação da cabeça zerados. Estado na água, brilho composto da textura emissiva original.",
+      "sha256": "1127135c6c1addfec7859cb14501c197452d708f66f473430a9a5986040a994e"
+    },
+    {
+      "mob": "Anger Pot",
+      "entity_id": "deeperdarker:anger_pot",
+      "image": "anger-pot.png",
+      "cube_count": 4,
+      "model": "com/kyanite/deeperdarker/client/model/AngerPotModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/AngerPotRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/anger_pot.png",
+      "extra_sources": [],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": []
+      },
+      "notes": "Pose parada, sem ataque; movimento e rotação da cabeça zerados.",
+      "sha256": "21ae6540dd4cd481443074ee177ac9c6998ec49b6901cacc71b52020b504abeb"
+    },
+    {
+      "mob": "Fear Pot",
+      "entity_id": "deeperdarker:fear_pot",
+      "image": "fear-pot.png",
+      "cube_count": 6,
+      "model": "com/kyanite/deeperdarker/client/model/FearPotModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/FearPotRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/fear_pot.png",
+      "extra_sources": [],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": []
+      },
+      "notes": "Pose parada, sem ataque; movimento e rotação da cabeça zerados.",
+      "sha256": "d5ecc22adb9aece8451912166bf05c91ba4bc4725937dc879a5b5011d05aa0b3"
+    },
+    {
+      "mob": "Sorrow Pot",
+      "entity_id": "deeperdarker:sorrow_pot",
+      "image": "sorrow-pot.png",
+      "cube_count": 4,
+      "model": "com/kyanite/deeperdarker/client/model/SorrowPotModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/SorrowPotRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/sorrow_pot.png",
+      "extra_sources": [],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": []
+      },
+      "notes": "Pose parada, sem ataque; movimento e rotação da cabeça zerados.",
+      "sha256": "6e6c5565f7276523316866c02695212be4558c9d799a4a45647ca09c84fab9a7"
+    },
+    {
+      "mob": "Sculk Centipede",
+      "entity_id": "deeperdarker:sculk_centipede",
+      "image": "sculk-centipede.png",
+      "cube_count": 25,
+      "model": "com/kyanite/deeperdarker/client/model/SculkCentipedeModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/SculkCentipedeRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/sculk_centipede.png",
+      "extra_sources": [],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": []
+      },
+      "notes": "Pose parada, sem ataque; movimento e rotação da cabeça zerados.",
+      "sha256": "ac008ee2850bd7dbed8adc40c54f8c5ad6ba962a3513dc9bb367de402ca94ae1"
+    },
+    {
+      "mob": "Sculk Leech",
+      "entity_id": "deeperdarker:sculk_leech",
+      "image": "sculk-leech.png",
+      "cube_count": 15,
+      "model": "com/kyanite/deeperdarker/client/model/SculkLeechModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/SculkLeechRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/sculk_leech.png",
+      "extra_sources": [],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": []
+      },
+      "notes": "Pose parada, sem ataque; movimento e rotação da cabeça zerados.",
+      "sha256": "df96d2abbff34f87e605ae96af11ac02607015e9d7e8f4e02f3933a821e54e54"
+    },
+    {
+      "mob": "Sculk Snapper",
+      "entity_id": "deeperdarker:sculk_snapper",
+      "image": "sculk-snapper.png",
+      "cube_count": 16,
+      "model": "com/kyanite/deeperdarker/client/model/SculkSnapperModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/SculkSnapperRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/sculk_snapper.png",
+      "extra_sources": [
+        "com/kyanite/deeperdarker/content/entities/animations/SculkSnapperAnimation.class"
+      ],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": [
+          {
+            "part": "root",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              -2.5,
+              0.0
+            ],
+            "rendered": false,
+            "reason": "O renderer do modelo chama diretamente root.getChild(\"root\").render e não aplica a transformação do ModelPart raiz retornado por HierarchicalModel.root()."
+          },
+          {
+            "part": "body",
+            "channel": "ROTATION",
+            "vector": [
+              -2.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "head",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "jaw",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      "notes": "Pose IDLE amostrada em t=0, sem ataque; movimento e rotação de observação zerados.",
+      "sha256": "c86cbc3083bb35ccf21d641861c7f3a6a3690ae491f18b4112804024a3b77a8a"
+    },
+    {
+      "mob": "Shattered",
+      "entity_id": "deeperdarker:shattered",
+      "image": "shattered.png",
+      "cube_count": 13,
+      "model": "com/kyanite/deeperdarker/client/model/ShatteredModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/ShatteredRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/shattered.png",
+      "extra_sources": [
+        "com/kyanite/deeperdarker/content/entities/animations/ShatteredAnimation.class"
+      ],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": [
+          {
+            "part": "body",
+            "channel": "ROTATION",
+            "vector": [
+              -5.0,
+              0.22,
+              2.49
+            ]
+          },
+          {
+            "part": "head",
+            "channel": "ROTATION",
+            "vector": [
+              9.96,
+              -0.87,
+              4.92
+            ]
+          },
+          {
+            "part": "right_arm",
+            "channel": "ROTATION",
+            "vector": [
+              5.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "left_arm",
+            "channel": "ROTATION",
+            "vector": [
+              5.0,
+              0.22,
+              -2.49
+            ]
+          },
+          {
+            "part": "right_leg",
+            "channel": "ROTATION",
+            "vector": [
+              2.5,
+              0.0,
+              2.5
+            ]
+          },
+          {
+            "part": "left_leg",
+            "channel": "ROTATION",
+            "vector": [
+              -2.5,
+              0.0,
+              -2.5
+            ]
+          }
+        ]
+      },
+      "notes": "Pose IDLE amostrada em t=0, sem ataque; movimento e rotação de observação zerados.",
+      "sha256": "0635fcbac1f11daf89ed2f2447be867b2649152bf63bc5a196f350619ef1f11c"
+    },
+    {
+      "mob": "Shriek Worm",
+      "entity_id": "deeperdarker:shriek_worm",
+      "image": "shriek-worm.png",
+      "cube_count": 70,
+      "model": "com/kyanite/deeperdarker/client/model/ShriekWormModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/ShriekWormRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/shriek_worm.png",
+      "extra_sources": [
+        "com/kyanite/deeperdarker/content/entities/animations/ShriekWormAnimation.class"
+      ],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": [
+          {
+            "part": "segment_1",
+            "channel": "ROTATION",
+            "vector": [
+              -5.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "segment_2",
+            "channel": "ROTATION",
+            "vector": [
+              -10.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "segment_3",
+            "channel": "ROTATION",
+            "vector": [
+              -10.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "segment_4",
+            "channel": "ROTATION",
+            "vector": [
+              10.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "segment_5",
+            "channel": "ROTATION",
+            "vector": [
+              12.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "segment_6",
+            "channel": "ROTATION",
+            "vector": [
+              10.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "segment_7",
+            "channel": "ROTATION",
+            "vector": [
+              22.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "segment_8",
+            "channel": "ROTATION",
+            "vector": [
+              25.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "head",
+            "channel": "ROTATION",
+            "vector": [
+              50.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "front_bottom_flap",
+            "channel": "ROTATION",
+            "vector": [
+              7.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "front_middle_flap",
+            "channel": "ROTATION",
+            "vector": [
+              -12.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "front_top_flap",
+            "channel": "ROTATION",
+            "vector": [
+              -10.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "right_bottom_flap",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              -7.5
+            ]
+          },
+          {
+            "part": "right_middle_flap",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              17.5
+            ]
+          },
+          {
+            "part": "right_top_flap",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              7.5
+            ]
+          },
+          {
+            "part": "left_bottom_flap",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              7.5
+            ]
+          },
+          {
+            "part": "left_middle_flap",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              -17.5
+            ]
+          },
+          {
+            "part": "left_top_flap",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              -10.0
+            ]
+          },
+          {
+            "part": "back_bottom_flap",
+            "channel": "ROTATION",
+            "vector": [
+              -7.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "back_middle_flap",
+            "channel": "ROTATION",
+            "vector": [
+              12.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "back_top_flap",
+            "channel": "ROTATION",
+            "vector": [
+              12.5,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      },
+      "notes": "Pose IDLE amostrada em t=0, sem ataque; movimento e rotação de observação zerados.",
+      "sha256": "52cf4674ac08a07eaefc05bfaba8f368431d2f88ad7aeead59d607a2a390c832"
+    },
+    {
+      "mob": "Sludge",
+      "entity_id": "deeperdarker:sludge",
+      "image": "sludge.png",
+      "cube_count": 4,
+      "model": "com/kyanite/deeperdarker/client/model/SludgeModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/SludgeRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/sludge.png",
+      "extra_sources": [
+        "com/kyanite/deeperdarker/client/render/SludgeOuterLayer.class"
+      ],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": []
+      },
+      "notes": "Pose parada, sem ataque; movimento e rotação da cabeça zerados. Corpo interno e camada exterior translúcida originais; squish=0, tamanho normalizado.",
+      "sha256": "affb85a2c1ac6111ccce66e8baa097b4b10c49956d5b9df913cee899ba68db62"
+    },
+    {
+      "mob": "Stalker",
+      "entity_id": "deeperdarker:stalker",
+      "image": "stalker.png",
+      "cube_count": 23,
+      "model": "com/kyanite/deeperdarker/client/model/StalkerModel.class",
+      "renderer": "com/kyanite/deeperdarker/client/render/StalkerRenderer.class",
+      "texture": "assets/deeperdarker/textures/entity/stalker.png",
+      "extra_sources": [
+        "com/kyanite/deeperdarker/content/entities/animations/StalkerAnimation.class"
+      ],
+      "animation_at_seconds": {
+        "time": 0,
+        "channels": [
+          {
+            "part": "waist",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "waist",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "waist",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "body",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "body",
+            "channel": "ROTATION",
+            "vector": [
+              7.49,
+              -0.33,
+              2.48
+            ]
+          },
+          {
+            "part": "body",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "head",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "head",
+            "channel": "ROTATION",
+            "vector": [
+              -5.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "head",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "right_arm",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "right_arm",
+            "channel": "ROTATION",
+            "vector": [
+              -7.5,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "right_arm",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "left_arm",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "left_arm",
+            "channel": "ROTATION",
+            "vector": [
+              -7.49,
+              0.33,
+              -2.52
+            ]
+          },
+          {
+            "part": "left_arm",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "upper_right_tooth",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "upper_right_tooth",
+            "channel": "ROTATION",
+            "vector": [
+              40.0,
+              0.0,
+              -45.0
+            ]
+          },
+          {
+            "part": "upper_right_tooth",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "upper_left_tooth",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "upper_left_tooth",
+            "channel": "ROTATION",
+            "vector": [
+              30.0,
+              0.0,
+              45.0
+            ]
+          },
+          {
+            "part": "upper_left_tooth",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "lower_right_tooth",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "lower_right_tooth",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              -37.5,
+              -45.0
+            ]
+          },
+          {
+            "part": "lower_right_tooth",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "lower_left_tooth",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "lower_left_tooth",
+            "channel": "ROTATION",
+            "vector": [
+              -1080.0,
+              40.0,
+              -1035.0
+            ]
+          },
+          {
+            "part": "lower_left_tooth",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "upper_back",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "upper_back",
+            "channel": "ROTATION",
+            "vector": [
+              -5.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "upper_back",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "lower_back",
+            "channel": "POSITION",
+            "vector": [
+              -1.5,
+              1.75,
+              0.0
+            ]
+          },
+          {
+            "part": "lower_back",
+            "channel": "ROTATION",
+            "vector": [
+              7.75,
+              -7.66,
+              89.25
+            ]
+          },
+          {
+            "part": "lower_back",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "middle_back",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "middle_back",
+            "channel": "ROTATION",
+            "vector": [
+              0.0,
+              -5.0,
+              0.0
+            ]
+          },
+          {
+            "part": "middle_back",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "right_leg",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "right_leg",
+            "channel": "ROTATION",
+            "vector": [
+              -2.39,
+              2.61,
+              2.5
+            ]
+          },
+          {
+            "part": "right_leg",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          },
+          {
+            "part": "left_leg",
+            "channel": "POSITION",
+            "vector": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "part": "left_leg",
+            "channel": "ROTATION",
+            "vector": [
+              0.22,
+              -5.0,
+              -2.51
+            ]
+          },
+          {
+            "part": "left_leg",
+            "channel": "SCALE",
+            "vector": [
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "notes": "Pose IDLE amostrada em t=0, sem ataque; movimento e rotação de observação zerados.",
+      "sha256": "24aed80bedf7796c6dc2d1cdb5d0d4b3b5b03164b25dc1a10b65414ffd6f4809"
+    }
+  ],
+  "method": "Geometria Java decompilada das classes do JAR exato, com hierarquia, pivôs, espelhos, deformações e UV originais. Renderização ortográfica técnica com texturas do mesmo JAR. Estados descritos em cada imagem.",
+  "minecraft_reference": {
+    "version": "1.21.1",
+    "jar_sha1": "30c73b1c5da787909b2f73340419fdf13b9def88",
+    "decompiled_classes": {
+      "KeyframeAnimations": "fhf",
+      "HierarchicalModel": "fvt"
+    },
+    "reason": "Confirmar conversão posVec/degreeVec/scaleVec e resolução especial do canal root nas animações vanilla."
+  },
+  "decompiler": {
+    "name": "CFR",
+    "version": "0.152",
+    "url": "https://www.benf.org/other/cfr/cfr-0.152.jar",
+    "sha256": "f686e8f3ded377d7bc87d216a90e9e9512df4156e75b06c655a16648ae8765b2",
+    "command": "java -jar cfr-0.152.jar PATH_TO_CLASS --silent true"
+  },
+  "limits": [
+    "Não são capturas do Minecraft. Renderizações estáticas; luz direcional simplificada e enquadramento normalizado por mob.",
+    "IDLE amostrado em t=0 para Snapper, Shattered, Shriek Worm e Stalker. Sem interpolação temporal, colisões, estado de ataque ou partículas. Outros mobs parados com movimento zero.",
+    "Angler Fish na água: textura de brilho e cor compostas no UV original; não executa o shader entityTranslucentEmissive nem efeitos de iluminação no mundo.",
+    "Sludge com malhas interior e exterior originais, blending da textura alfa e squish=0; ordenação estática de transparência aproximada, sem executar o renderer vanilla.",
+    "Os modelos deste mod renderizam diretamente root.getChild(\"root\"), ignorando transformações da raiz externa. O canal root do IDLE do Snapper foi preservado no registro mas não aplicado à imagem, conforme HierarchicalModel e o renderToBuffer do modelo."
+  ],
+  "catalog_reference_commit": "f7ba235d078411a1165a8cac184adfe0ccc8cebe",
+  "site_modified": false
+}

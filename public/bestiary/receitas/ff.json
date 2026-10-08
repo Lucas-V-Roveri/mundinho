@@ -1,0 +1,519 @@
+[
+  {
+    "anchor": "receita-acacia-beehive",
+    "name": "acacia beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/acacia_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:acacia_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:acacia_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bamboo-beehive",
+    "name": "bamboo beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/bamboo_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:bamboo_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:bamboo_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-birch-beehive",
+    "name": "birch beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/birch_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:birch_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:birch_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cherry-beehive",
+    "name": "cherry beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/cherry_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:cherry_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:cherry_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-copper-button",
+    "name": "copper button",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/copper_button.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "redstone",
+      "pattern": [
+        "C",
+        "C"
+      ],
+      "key": {
+        "C": {
+          "item": "minecraft:copper_ingot"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:copper_button"
+      }
+    }
+  },
+  {
+    "anchor": "receita-crimson-beehive",
+    "name": "crimson beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/crimson_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:crimson_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:crimson_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-oak-beehive",
+    "name": "dark oak beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/dark_oak_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:dark_oak_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:dark_oak_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-jungle-beehive",
+    "name": "jungle beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/jungle_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:jungle_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:jungle_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mangrove-beehive",
+    "name": "mangrove beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/mangrove_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:mangrove_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:mangrove_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-spruce-beehive",
+    "name": "spruce beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/spruce_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:spruce_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:spruce_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-warped-beehive",
+    "name": "warped beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/warped_beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "key": {
+        "P": {
+          "item": "minecraft:warped_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:warped_beehive"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-copper-button-from-honeycomb",
+    "name": "waxed copper button from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_copper_button_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:copper_button"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_copper_button"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-exposed-copper-button-from-honeycomb",
+    "name": "waxed exposed copper button from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_exposed_copper_button_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:exposed_copper_button"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_exposed_copper_button"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-exposed-lightning-rod-from-honeycomb",
+    "name": "waxed exposed lightning rod from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_exposed_lightning_rod_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:exposed_lightning_rod"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_exposed_lightning_rod"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-lightning-rod-from-honeycomb",
+    "name": "waxed lightning rod from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_lightning_rod_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "minecraft:lightning_rod"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_lightning_rod"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-oxidized-copper-button-from-honeycomb",
+    "name": "waxed oxidized copper button from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_oxidized_copper_button_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:oxidized_copper_button"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_oxidized_copper_button"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-oxidized-lightning-rod-from-honeycomb",
+    "name": "waxed oxidized lightning rod from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_oxidized_lightning_rod_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:oxidized_lightning_rod"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_oxidized_lightning_rod"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-weathered-copper-button-from-honeycomb",
+    "name": "waxed weathered copper button from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_weathered_copper_button_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:weathered_copper_button"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_weathered_copper_button"
+      }
+    }
+  },
+  {
+    "anchor": "receita-waxed-weathered-lightning-rod-from-honeycomb",
+    "name": "waxed weathered lightning rod from honeycomb",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/waxed_weathered_lightning_rod_from_honeycomb.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "redstone",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:weathered_lightning_rod"
+        },
+        {
+          "item": "minecraft:honeycomb"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:waxed_weathered_lightning_rod"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wildfire-crown",
+    "name": "wildfire crown",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/wildfire_crown.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "C": {
+          "item": "friendsandfoes:wildfire_crown_fragment"
+        }
+      },
+      "pattern": [
+        "CCC",
+        "C C"
+      ],
+      "result": {
+        "count": 1,
+        "id": "friendsandfoes:wildfire_crown"
+      }
+    }
+  },
+  {
+    "anchor": "receita-yellow-dye-from-buttercup",
+    "name": "yellow dye from buttercup",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/friendsandfoes/recipe/yellow_dye_from_buttercup.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "group": "yellow_dye",
+      "ingredients": [
+        {
+          "item": "friendsandfoes:buttercup"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:yellow_dye"
+      }
+    }
+  },
+  {
+    "anchor": "receita-beehive",
+    "name": "beehive",
+    "source": "evidence-ff/friendsandfoes-neoforge-4.0.27+mc1.21.1.jar::data/minecraft/recipe/beehive.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "misc",
+      "key": {
+        "P": {
+          "item": "minecraft:oak_planks"
+        },
+        "H": {
+          "item": "minecraft:honeycomb"
+        }
+      },
+      "pattern": [
+        "PPP",
+        "HHH",
+        "PPP"
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:beehive"
+      }
+    }
+  }
+]

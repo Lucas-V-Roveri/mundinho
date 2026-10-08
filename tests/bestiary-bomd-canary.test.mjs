@@ -15,7 +15,7 @@ function catalog(before = false) {
     if (!path.extname(file)) file += '.ts';
     if (cache.has(file)) return cache.get(file).exports;
     const relative = path.relative(root, file);
-    const text = before ? cp.execFileSync('git', ['show', `HEAD:${relative}`], { cwd: root, encoding: 'utf8' }) : fs.readFileSync(file, 'utf8');
+    const text = before ? cp.execFileSync('git', ['show', `HEAD:${relative}`], { cwd: root, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }) : fs.readFileSync(file, 'utf8');
     if (file.endsWith('.json')) return JSON.parse(text);
     const loaded = { exports: {} }; cache.set(file, loaded);
     const js = ts.transpileModule(text, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true } }).outputText;

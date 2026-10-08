@@ -1,0 +1,586 @@
+{
+  "version": "4.0.27 · NeoForge · Minecraft 1.21.1",
+  "catalog_reference": "Lucas-V-Roveri/mundinho@de517bc · catalog-reference/data/bestiary-lote-5d.ts",
+  "method": "Geometrias, hierarquia, pivôs, UV e texturas do JAR exato; estados e valores documentados por imagem.",
+  "limits": [
+    "Representações técnicas estáticas, sem executar o jogo. Transições de animação e shaders não executados.",
+    "Enquadramento normalizado e luz/emissão simplificados.",
+    "Informações não confirmadas e estados omitidos indicados junto à imagem."
+  ],
+  "build": {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "zeGwtTNo",
+    "project_id": "BOCJKD49",
+    "author_id": "CGl7vZ8J",
+    "featured": true,
+    "name": "Friends&Foes 4.0.27",
+    "version_number": "neoforge-4.0.27+mc1.21.1",
+    "changelog": "- Fixed tall plant flower rendering on the mooblooms\n- Fixed iceologer sitting in the boat\n- Updated es_ar translations (Thanks to Texaliuz)\n",
+    "changelog_url": null,
+    "date_published": "2026-08-06T15:35:09.328412Z",
+    "downloads": 46026,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "WxigZUeP",
+        "hashes": {
+          "sha1": "3967c4e91662e3997318329b13af19816968b56a",
+          "sha512": "7575f340d8021b8da09674163b8ef8ea8f52b7e2b76da302a04c70f7ae552429a65853ea65fd513a65d9f43ba84f524a2957cc37f22e0f0265f331c6bcb4bfc4"
+        },
+        "url": "https://cdn.modrinth.com/data/BOCJKD49/versions/zeGwtTNo/friendsandfoes-neoforge-4.0.27%2Bmc1.21.1.jar",
+        "filename": "friendsandfoes-neoforge-4.0.27+mc1.21.1.jar",
+        "primary": true,
+        "size": 5096836,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "1eAoo2KR",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "G1hIVOrD",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  "jar_sha256": "40f6129d9124bcd0052a348813425fc223b7b6ef16b81928f5edcb89ea62cfd1",
+  "source_files_sha256": {
+    "assets/friendsandfoes/models/block/buttercup.json": "16b145b4c024d27168db97e10d25f83cba7d6e0989eaf321e6a9cafcd723c124",
+    "assets/friendsandfoes/textures/block/buttercup.png": "321c94323ce9ce98046a7c391eab4a51bbd9f6d7ede5e3a81637f18bdb089b7f",
+    "assets/friendsandfoes/textures/entity/copper_golem/copper_golem.png": "2fd2fbc8bfa70986b98dd0d993061c06e4090234e5da41ae612bc78682e55477",
+    "assets/friendsandfoes/textures/entity/copper_golem/exposed_copper_golem.png": "3d5238f8bbdd2d7afe639990e4e28299b39782a70a48f63eca3428e2978a55d8",
+    "assets/friendsandfoes/textures/entity/copper_golem/oxidized_copper_golem.png": "d32c647a0b0d0ce9b62cf583c7b2d627738d4d74ea48f9204173a7edeaba9d83",
+    "assets/friendsandfoes/textures/entity/copper_golem/weathered_copper_golem.png": "6ace7fbaccb03bb364fc72ef9fe89147a6114ddb177caabab7efb79c32c3aea7",
+    "assets/friendsandfoes/textures/entity/crab/crab.png": "7519ffc1c6d49435cd76cf03393d814f5148dcbd2bf5ef67166e00421ed3643b",
+    "assets/friendsandfoes/textures/entity/glare/glare.png": "c1cb0b9275607247dff89647c7d0764f932a80333e90d82e1bb1b07fc9ae8aae",
+    "assets/friendsandfoes/textures/entity/illager/iceologer.png": "c55984b98ddafc0220fe6fc9f7ae99f116ca0cc9430439e36b076061a6e2f0f6",
+    "assets/friendsandfoes/textures/entity/illusioner/illusioner.png": "cb12f52e12f33b7fb0b815f8e5a341410e7fb22cdac075ca9a9a644aa51bdbfc",
+    "assets/friendsandfoes/textures/entity/mauler/mauler_badlands.png": "26eff1cf0e637d60149969c8d2d14e4411f2411caf3fb2fd6f7ccf0761d2493f",
+    "assets/friendsandfoes/textures/entity/moobloom/moobloom_buttercup.png": "086c322665cfe5f8b33445fbd52b6eb1c2206b87583211f4c0c5769f2464a43a",
+    "assets/friendsandfoes/textures/entity/rascal/rascal.png": "4837d1fe75c490953c02fa1c9cfee5320a3131b7c0796d4bb5a0615a2ac66659",
+    "assets/friendsandfoes/textures/entity/tuff_golem/black.png": "b09e78b1ff654bdf04485b37d82da7f0feb64d9bc274a16eacbabeb00dd309e8",
+    "assets/friendsandfoes/textures/entity/tuff_golem/blue.png": "3263bbba5d9b6a7ba80eba6c1799e9819ab40c758752d9779856b0622e826ed3",
+    "assets/friendsandfoes/textures/entity/tuff_golem/brown.png": "5c0900e79c023279a9d062c091f837cb155b0d821e535764773d54bbdf05a8e5",
+    "assets/friendsandfoes/textures/entity/tuff_golem/cyan.png": "5dc459b5f1b6acfee1ade650fd8b8f35bf7beb0a9b431b0c0822894a657b9f7f",
+    "assets/friendsandfoes/textures/entity/tuff_golem/gray.png": "54e1979b578d2b6e6c2c0e226b86d2c63aa47f70606f88f68e568091ca0d8fa6",
+    "assets/friendsandfoes/textures/entity/tuff_golem/green.png": "f040237bf44bb8a572d930b25baea117d2a221e003aa8f9c6f39fac2fe1b3aee",
+    "assets/friendsandfoes/textures/entity/tuff_golem/light_blue.png": "9fcd54ceccd1a3d884d281fc1f19ba78e742fa67a2cdb2998d9edd38da5a9bde",
+    "assets/friendsandfoes/textures/entity/tuff_golem/light_gray.png": "2f7255a12ed7849d3b347c34de91a2951a07ce7e8204fa64518837519da547c9",
+    "assets/friendsandfoes/textures/entity/tuff_golem/lime.png": "7d95e39d04cf1ddb9e97c111b3a9acd654180ae2b470e4b36be450b04be36076",
+    "assets/friendsandfoes/textures/entity/tuff_golem/magenta.png": "1dad92e0330c2de33e4c5a5e452df7f391672e1ba27b7ca2683225c43698cbcd",
+    "assets/friendsandfoes/textures/entity/tuff_golem/orange.png": "676529311d2eaecdacb3600db1f65abe3a9bbf9a513bb788a2fc639e79a67fdc",
+    "assets/friendsandfoes/textures/entity/tuff_golem/pink.png": "d6ad05f4f886b37d2cca148df9cd41dad20e20772b7c71674b5433699a5f9ee6",
+    "assets/friendsandfoes/textures/entity/tuff_golem/purple.png": "ef202fa66e5fdfb1c0d057dc929636baac9bd60960920cda4a56ed13f1f39714",
+    "assets/friendsandfoes/textures/entity/tuff_golem/red.png": "8dcd868deeede543adcc49aaf4e1a56e7dffd3f991192147814e0ac027cb77c0",
+    "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png": "b16b91d257af091774ccb981e4b342d343573c3c8de8c198192c38fd84017946",
+    "assets/friendsandfoes/textures/entity/tuff_golem/white.png": "12ae09f5828d88ba41fdf96d19738bd65e2a04b9a2226dca24d7462fb3513a2f",
+    "assets/friendsandfoes/textures/entity/tuff_golem/yellow.png": "7d17b4b2c6cf95f81a2e887d1969b7216d2d31c66e0cfd99719b2148f517c83c",
+    "assets/friendsandfoes/textures/entity/wildfire/wildfire.png": "e67a6584d58346aaeab26569bf5d98890f53f9a087ab9370e70fb9a52f1a4691",
+    "com/faboslav/friendsandfoes/common/api/MoobloomVariantManager.class": "5a7a97b151cd2ddd70f76532888c4ff5a0eea3f25b76d35361a5016deabf51b8",
+    "com/faboslav/friendsandfoes/common/client/render/entity/feature/MoobloomFlowerFeatureRenderer.class": "ab0cc063c547ee2230ca142512b1344c6216809feda14760af8d9ab19aeced5a",
+    "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class": "46ef59400cae5930be089f76d8d6b27d8142c22325eb388687db7edd8e11b95d",
+    "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class": "83b311e128b67e5368e924941478781c4c9906a0d0a54a9b7f42baa574728e40",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/CopperGolemEntityModel.class": "f7b4134bf538714b1e53c8a83d6fd1fdbeaddd22705a7743b0e84c0e85b10783",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/CrabEntityModel.class": "23f69432147dbe11fd1e8b9c357667470c5682841b377456fc6d69ca75d34572",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/GlareEntityModel.class": "4e22346ffea88f56903367a8d12539ccdcbc43b0bbcb733f82128c24bcc34b51",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/MaulerEntityModel.class": "aeb796a0f05dd5e9ba6d4075d615451d3970baedf0603742591ac7ba5920bada",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/RascalEntityModel.class": "e31aa9d1f03618ec538304d593c4b7a67d13ab890d42c8e999d636775028278d",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class": "4a4536674292d7ec4cdced6d61cfb3e409393573e00783d86e5df76de864b4c4",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/WildfireEntityModel.class": "3bbcbceaf93f22b7dc7cefac9361c57974c747a3e5c4fbc8992dc1f49345d308",
+    "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class": "79ea95346e8d11dd0bfab065b75479a25ab3ae82069a75dde3e73374a05850bf",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/CopperGolemEntityRenderer.class": "178f79e88f26f84c65061cd8beb1491db02ca1d4b1e03a582a9812903ddd745b",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/CrabEntityRenderer.class": "f6ed00da4d08ed79bcfe209970ecf71ee975af24dafc432ee1c30f2051f0f99f",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/GlareEntityRenderer.class": "05bee0e6effb9903f6695ffdf44fdbe4bde547f2222ced285f252b0b5f60fe9e",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/IceologerEntityRenderer.class": "4ccdb4151b30027be608156be3f328da9d4e5c7045f4bf7814522575f6641da4",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/IllusionerEntityRenderer.class": "1bebac220f416bfe5cade6d1273ec13a40b86c6e6b9a32af7870a90c0915ae35",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/MaulerEntityRenderer.class": "7ebfb99ed4451e1f50d9f0bc467d35af53a730883f33a122dcead7ffcceb8a72",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/MoobloomEntityRenderer.class": "5d496e6c47939c8b80a1e529820bb0e0c93dd666bcbf334dd69f11d37499dca8",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/RascalEntityRenderer.class": "108bec483a7dcd3cc8f090e763221c7c4dc97a27d0b900bbfd05aef8d6bfdfb2",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class": "df4d740e630683da92b6b73bc5f3bccc66c8ed6b167e5ea279533b375e1f0b1d",
+    "com/faboslav/friendsandfoes/common/client/render/entity/renderer/WildfireEntityRenderer.class": "ee007af0d8584936d47ef45299ddfeb034112d6c25313c208cbd50812d43996e",
+    "com/faboslav/friendsandfoes/common/entity/CopperGolemEntity.class": "646de0b2b54ed1e0971435656ef0d4ef92b5138cb05652fcd098d378c4f5cdbb",
+    "com/faboslav/friendsandfoes/common/entity/CrabEntity.class": "641f82fed50def4c7cc89aa64b0a2c1ac12949e5743c61fbb1dde5d5366ce92c",
+    "com/faboslav/friendsandfoes/common/entity/GlareEntity.class": "de10a814fe72047b62c9aaa757c68f150858ceef20e19375813e8c2f6a487bbe",
+    "com/faboslav/friendsandfoes/common/entity/IceologerEntity.class": "0815fc289b126eb8058edaad761bb29669ff2911fadb16b75d5fcbaffd71a076",
+    "com/faboslav/friendsandfoes/common/entity/IllusionerEntity.class": "acc20a7a2089b33bd46b6649490700133f2c736605e7c799404f63f9da858eb9",
+    "com/faboslav/friendsandfoes/common/entity/MaulerEntity.class": "9eee613578ed954257c943d01af555c6047bb8607aaea3dd507799f49c506b18",
+    "com/faboslav/friendsandfoes/common/entity/RascalEntity.class": "48a5c452048e617ce0456f80168c5e240dda01c244a7e21919f6e831a29f315c",
+    "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class": "a06514af15d08b058a33703d07d0dc1ffabc6defea6e252ad72e58d6a42d6b95",
+    "com/faboslav/friendsandfoes/common/entity/WildfireEntity.class": "cedb3de796a864b63502bfda46548bb8e79595a9dbd2d2c974e374bbb7262c3e",
+    "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class": "0e977ce935bb7cfeb506f546fd7ff938df75e21ed2512eae50a7eaaecfeda24b",
+    "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class": "96d86206013a7a6d5a219fa27f91e8fda32931cc9daf5def705f5834e6853c02",
+    "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class": "eff32ce71f5e08300718f9681a10fd6ef8d55014b0fc5db3c276e17bad867f8a",
+    "data/friendsandfoes/friendsandfoes/animations/entity/copper_golem/idle.json": "fcac03b3633ba60c1a2b21d79f8cbb039e95baecc73c62f1e6402a068449b400",
+    "data/friendsandfoes/friendsandfoes/animations/entity/crab/idle.json": "80256db2dfb919dc5fbad6c5db32afc7926de95db0f34ae8b8c3dd104194a418",
+    "data/friendsandfoes/friendsandfoes/animations/entity/mauler/idle.json": "782f8a6b4f2ba4589d7a16a9c38562bc455353e6c3f462020c104b54c03be8da",
+    "data/friendsandfoes/friendsandfoes/animations/entity/rascal/idle.json": "7551251de7da00571a9306bd4310c9ab29e5895a7c1719270452f747034f0dc4",
+    "data/friendsandfoes/friendsandfoes/animations/entity/wildfire/idle.json": "fce7ef71687314845479b20b3242b7b019220abbba29a1b18746b6b858361f96",
+    "data/friendsandfoes/friendsandfoes/animations/entity/wildfire/shield_rotation.json": "efcde9157f9a49ef33405e4a6e142bc63d9076b4f8b0d007e48db7474e2c729d"
+  },
+  "images": [
+    {
+      "entity_id": "friendsandfoes:copper_golem",
+      "mob": "Copper Golem · unaffected",
+      "image": "copper-golem-unaffected.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/CopperGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/CopperGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/copper_golem/copper_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/CopperGolemEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/copper_golem/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0. Oxidação unaffected. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:copper_golem",
+      "mob": "Copper Golem · exposed",
+      "image": "copper-golem-exposed.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/CopperGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/CopperGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/copper_golem/exposed_copper_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/CopperGolemEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/copper_golem/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0. Oxidação exposed. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:copper_golem",
+      "mob": "Copper Golem · weathered",
+      "image": "copper-golem-weathered.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/CopperGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/CopperGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/copper_golem/weathered_copper_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/CopperGolemEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/copper_golem/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0. Oxidação weathered. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:copper_golem",
+      "mob": "Copper Golem · oxidized",
+      "image": "copper-golem-oxidized.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/CopperGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/CopperGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/copper_golem/oxidized_copper_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/CopperGolemEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/copper_golem/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0. Oxidação oxidized. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:crab",
+      "mob": "Crab",
+      "image": "crab.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/CrabEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/CrabEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/crab/crab.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/CrabEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/crab/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0.  Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:glare",
+      "mob": "Glare",
+      "image": "glare.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/GlareEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/GlareEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/glare/glare.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/GlareEntity.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Calmo, sem flor segurada, olhos na posição de construção; flutuação no instante 0 (head.x=1, head.y=0). Interpolação contextual do corpo/olhos não confirmada: faltou executar AnimationContextTracker; pivôs iniciais conservados nessas partes.  Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:mauler",
+      "mob": "Mauler",
+      "image": "mauler.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/MaulerEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/MaulerEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/mauler/mauler_badlands.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/MaulerEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/mauler/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0.  Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:rascal",
+      "mob": "Rascal",
+      "image": "rascal.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/RascalEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/RascalEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/rascal/rascal.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/RascalEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/rascal/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0.  Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · white",
+      "image": "tuff-golem-white.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/white.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=white. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · orange",
+      "image": "tuff-golem-orange.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/orange.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=orange. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · magenta",
+      "image": "tuff-golem-magenta.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/magenta.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=magenta. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · light_blue",
+      "image": "tuff-golem-light_blue.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/light_blue.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=light_blue. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · yellow",
+      "image": "tuff-golem-yellow.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/yellow.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=yellow. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · lime",
+      "image": "tuff-golem-lime.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/lime.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=lime. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · pink",
+      "image": "tuff-golem-pink.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/pink.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=pink. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · gray",
+      "image": "tuff-golem-gray.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/gray.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=gray. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · light_gray",
+      "image": "tuff-golem-light_gray.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/light_gray.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=light_gray. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · cyan",
+      "image": "tuff-golem-cyan.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/cyan.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=cyan. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · purple",
+      "image": "tuff-golem-purple.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/purple.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=purple. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · blue",
+      "image": "tuff-golem-blue.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/blue.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=blue. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · brown",
+      "image": "tuff-golem-brown.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/brown.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=brown. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · green",
+      "image": "tuff-golem-green.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/green.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=green. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · red",
+      "image": "tuff-golem-red.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/red.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=red. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:tuff_golem",
+      "mob": "Tuff Golem · black",
+      "image": "tuff-golem-black.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/TuffGolemEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/TuffGolemEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/tuff_golem/tuff_golem.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/TuffGolemEntity.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClothFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/TuffGolemClosedEyesRenderer.class",
+        "assets/friendsandfoes/textures/entity/tuff_golem/black.png"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. Acordado, sem item e clothColor=black. Pose de construção; animações de sono e transporte não se aplicam. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:wildfire",
+      "mob": "Wildfire",
+      "image": "wildfire.png",
+      "model": "com/faboslav/friendsandfoes/common/client/render/entity/model/WildfireEntityModel.class",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/WildfireEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/wildfire/wildfire.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/WildfireEntity.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/wildfire/idle.json",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/AnimationTarget.class",
+        "com/faboslav/friendsandfoes/common/entity/animation/animator/loader/json/AnimationParser.class",
+        "com/faboslav/friendsandfoes/common/client/render/entity/model/animation/KeyframeModelAnimator.class",
+        "data/friendsandfoes/friendsandfoes/animations/entity/wildfire/shield_rotation.json"
+      ],
+      "notes": "Adulto parado, olhar neutro, sem itens externos. IDLE original no instante 0. Quatro escudos ativos e rotação original no instante 0.  Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:iceologer",
+      "mob": "Iceologer",
+      "image": "iceologer.png",
+      "model": "minecraft:net.minecraft.client.model.IllagerModel",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/IceologerEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/illager/iceologer.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/IceologerEntity.class"
+      ],
+      "notes": "Adulto parado, CROSSED, sem conjuração, invisibilidade ou ilusões. Chapéu visível conforme renderer original. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:illusioner",
+      "mob": "Illusioner",
+      "image": "illusioner.png",
+      "model": "minecraft:net.minecraft.client.model.IllagerModel",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/IllusionerEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/illusioner/illusioner.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/init/FriendsAndFoesEntityModelLayers.class",
+        "com/faboslav/friendsandfoes/common/entity/IllusionerEntity.class"
+      ],
+      "notes": "Adulto parado, CROSSED, sem conjuração, invisibilidade ou ilusões. Chapéu visível conforme renderer original. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    },
+    {
+      "entity_id": "friendsandfoes:moobloom",
+      "mob": "Moobloom · buttercup",
+      "image": "moobloom-buttercup.png",
+      "model": "minecraft:net.minecraft.client.model.CowModel",
+      "renderer": "com/faboslav/friendsandfoes/common/client/render/entity/renderer/MoobloomEntityRenderer.class",
+      "texture": "assets/friendsandfoes/textures/entity/moobloom/moobloom_buttercup.png",
+      "extra_sources": [
+        "com/faboslav/friendsandfoes/common/client/render/entity/feature/MoobloomFlowerFeatureRenderer.class",
+        "com/faboslav/friendsandfoes/common/api/MoobloomVariantManager.class",
+        "assets/friendsandfoes/models/block/buttercup.json",
+        "assets/friendsandfoes/textures/block/buttercup.png",
+        "minecraft:assets/minecraft/models/block/cross.json"
+      ],
+      "notes": "Variante padrão buttercup, adulta e não tosquiada. Inclui as quatro flores do renderer original, com escala 0.8 e transformações originais. Representação técnica estática; luz simplificada, transições de controladores e shaders do jogo não executados."
+    }
+  ],
+  "site_modified": false
+}

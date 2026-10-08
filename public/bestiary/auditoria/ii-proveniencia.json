@@ -1,0 +1,295 @@
+{
+  "version": "21.1.6 · NeoForge · Minecraft 1.21.1",
+  "catalog_reference": "Lucas-V-Roveri/mundinho@de517bc",
+  "method": "Malhas Java originais, pivôs, hierarquia, UV e texturas da build exata; estados e ajustes documentados por imagem.",
+  "limits": [
+    "Representações técnicas estáticas sem execução do jogo. Limites de pose e configuração detalhados em cada imagem.",
+    "Enquadramento normalizado e luz simplificada.",
+    "Sem equipamentos externos, partículas ou efeitos de ataque, salvo partes originais expressamente documentadas."
+  ],
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "9bEpNrvK",
+    "project_id": "jSV9w0J5",
+    "author_id": "rHdGpxOA",
+    "featured": false,
+    "name": "[NEOFORGE] [1.21.1] IllagerInvasion-v21.1.6",
+    "version_number": "v21.1.6-1.21.1-NeoForge",
+    "changelog": "# Changelog\nAll notable changes to this project will be documented in this file.\n\nThe format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),\nand this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\n\n## [v21.1.6-1.21.1] - 2025-05-03\n### Fixed\n- Add new illagers to `minecraft:illagers` entity type tag\n\n## [v21.1.5-1.21.1] - 2025-05-03\n### Fixed\n- Add a missing ominous bottle drop to marauder raid captains\n\n## [v21.1.4-1.21.1] - 2025-03-30\n### Fixed\n- Fix new illagers not spawning in woodland mansions\n\n## [v21.1.3-1.21.1] - 2025-02-14\n### Changed\n- Allow invokers to spawn in high tier raids (disabled by default)\n\n## [v21.1.2-1.21.1] - 2024-09-17\n### Changed\n- Update to Puzzles Lib v21.1.7\n\n## [v21.1.1-1.21.1] - 2024-09-16\n### Changed\n- Update bundled Extensible Enums library to v21.1.1 to fix a crash during raids on NeoForge\n\n## [v21.1.0-1.21.1] - 2024-09-12\n- Port to Minecraft 1.21.1\n### Changed\n- Update primal essence texture thanks to Rosie from the Lunapixel Studios Discord\n### Fixed\n- Fix magic fire unable to burn up after some time\n- Fix `Illusioner::onSyncedDataUpdated` not calling super method\n",
+    "changelog_url": null,
+    "date_published": "2025-05-03T20:29:51.632887Z",
+    "downloads": 592732,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "hRkA1n2k",
+        "hashes": {
+          "sha512": "5ad618c60d78ab9196ef386c63d5855f3eab2f90006156b786d5b4f4ea7e6bcc1fd9f61dfa45b7b2df44dd900fe9747c9ac1ccac6fdb11814e2f4a7e53d93107",
+          "sha1": "48bea606f6e3f10e2100349de2c6c65c76c20786"
+        },
+        "url": "https://cdn.modrinth.com/data/jSV9w0J5/versions/9bEpNrvK/IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+        "filename": "IllagerInvasion-v21.1.6-1.21.1-NeoForge.jar",
+        "primary": true,
+        "size": 2361701,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "QAGBst4M",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "5WeWGLoJ",
+        "file_name": null,
+        "dependency_type": "optional"
+      }
+    ]
+  },
+  "jar_sha256": "5adfdd0df0c5dbe81e4458da50442b58863f9db9f22abc182f81e487eef0e6db",
+  "source_files_sha256": {
+    "assets/illagerinvasion/textures/entity/alchemist.png": "b759e74c019f044c51e787678a64f980bbdafcbcb995168524cf20428d6c583b",
+    "assets/illagerinvasion/textures/entity/archivist.png": "7b8e4418a37854005aa8a637a4b245e3213bbbe6b2d61daab3617c9c1871c956",
+    "assets/illagerinvasion/textures/entity/basher.png": "eca3458228503985a2b62012bc7ec3957102012729f86f93dc72d775810d9da4",
+    "assets/illagerinvasion/textures/entity/firecaller.png": "269b67bd751e6fc80319002f09dde29f25c0c192e142180ad11f1b780673b6e0",
+    "assets/illagerinvasion/textures/entity/inquisitor.png": "73fac3fa3bea5f8d578aaccd4fbed0385bc09c7bb4e8e83f6c58b1814cd04ea6",
+    "assets/illagerinvasion/textures/entity/invoker.png": "bedca57f75853cb5f6e25d2de71542e762d1b080cfb5f8c99528c410f7c5b5a2",
+    "assets/illagerinvasion/textures/entity/necromancer.png": "1984a620fa2b9c6e2ff492e7671dc3c0e2429b7a389d5f1b32a12489a6b4d7f1",
+    "assets/illagerinvasion/textures/entity/provoker.png": "057bfc05cadf421f92aa9477f41f0c0410b9e8be75541c0a4e23e86f08a327e3",
+    "assets/illagerinvasion/textures/entity/savager.png": "d6eef899132187352371532adfc3fdad87b2a20e3bd6694e0759565104055f9b",
+    "assets/illagerinvasion/textures/entity/sorcerer.png": "59401429eca588ba33fde3caf9c9664ff3871854e0584a6ad882e010bbffc0b5",
+    "assets/illagerinvasion/textures/entity/surrendered.png": "c8f7dc68a3f7756281d0d60c07988010da6c676f6c246d3661e4ec6aa30f186b",
+    "assets/illagerinvasion/textures/entity/surrendered_charge.png": "c2c081509b701baff5fd1f94519fa53348aa50d9deff486faabb14b4c9020645",
+    "fuzs/illagerinvasion/client/IllagerInvasionClient.class": "73a6cfaf9e361d9150084302251537ecadc191902293a6683e7a88282ec808ba",
+    "fuzs/illagerinvasion/client/init/ClientModRegistry.class": "bedd2c23995f588bf0c3807a9e47890f7a5d1f8a4e927aa507a4083953b1f49a",
+    "fuzs/illagerinvasion/client/model/ArmoredIllagerEntityModel.class": "ae525ed356d9458261657a5b8ece8d935ee160e2121be9292b613890fc53aaa8",
+    "fuzs/illagerinvasion/client/model/BrimmedHatIllagerEntityModel.class": "9eb5b0db8bb25b2bbdcef1bab5c3a96aa56cb4ad7d9f41d8141fe9f2ec900f67",
+    "fuzs/illagerinvasion/client/model/HatIllagerEntityModel.class": "0b66b2379f410335179baf7e44fd05fef99c77bd2fcc8ac60a6b7c7accaeefec",
+    "fuzs/illagerinvasion/client/model/IllagerWithStaffEntityModel.class": "fa81dc6536063d0bd4594d2dec89c3998b82c2645ee19287a6e2468dfe7a84b2",
+    "fuzs/illagerinvasion/client/model/InvokerEntityModel.class": "4478186c0a77cb2aa6f4948f038b83dd2c1bbb9b70ea734459de96f7ebad3b08",
+    "fuzs/illagerinvasion/client/model/SurrenderedModel.class": "e694edaa344462de65b32607a66fb6afd19a57541e872349175507ecf1847a60",
+    "fuzs/illagerinvasion/client/render/entity/AlchemistRender.class": "1b5be2e174ae02caaced61c0c00ec72c699ca3e3803cf48c51e596af2e20feff",
+    "fuzs/illagerinvasion/client/render/entity/ArchivistRender.class": "874c0bccff85418cf6f7cb3f8350ecc8d6787d8161d9ea3e5ef93d9224d224b8",
+    "fuzs/illagerinvasion/client/render/entity/BasherRender.class": "35e637e0e1e2eeac4bc0027e3f123849c0290b4a44e65b14bc2f713f78e4c5b9",
+    "fuzs/illagerinvasion/client/render/entity/FirecallerRender.class": "0a6b2276c339b54b939e0564bd9d286a49e9e61395d65b559ae88eac0e0c2386",
+    "fuzs/illagerinvasion/client/render/entity/InquisitorRender.class": "6a13d21d56ca632467199b568718fdc1ba495df97e03e722a595a71317ee01c7",
+    "fuzs/illagerinvasion/client/render/entity/InvokerRender.class": "61e46312866869cd0514510b130506975a083377d81707933a8da91b4ad45724",
+    "fuzs/illagerinvasion/client/render/entity/MarauderRender.class": "6173f77a05f2f8fa63bd3fdbee5d07efeb6f7d747ace94d5a2cf64bea49041ac",
+    "fuzs/illagerinvasion/client/render/entity/NecromancerRender.class": "3345dbd2125dc767fdf090208aaa465ab99cda79bec6c37405868a0731c88277",
+    "fuzs/illagerinvasion/client/render/entity/ProvokerRender.class": "17ea80d190ac8a60e823082a0f960bde680b6f3302194d17db282ccb8de98c39",
+    "fuzs/illagerinvasion/client/render/entity/SorcererRender.class": "39d18a7846cf5e6ea377d579aa1d2bf52feb70eb6345f590fd699a2453eafcfd",
+    "fuzs/illagerinvasion/client/render/entity/SurrenderedRender.class": "99d7f81af79341c23b65f36bb75278f10a72cde47752dd1f2a77390185409e80",
+    "fuzs/illagerinvasion/world/entity/monster/Alchemist.class": "bd060df736533f0c857d449659f9665fe7099ea4865cffb41c7b8e27bfe394ae",
+    "fuzs/illagerinvasion/world/entity/monster/Archivist.class": "fe745a4fa423c2630017ccd5b775aa29d1573de610a31868b07f27a9982e159b",
+    "fuzs/illagerinvasion/world/entity/monster/Basher.class": "d67df07fb84b4206eff1ad6503efa988734d89385c5e617e02db03bd5d852dd7",
+    "fuzs/illagerinvasion/world/entity/monster/Firecaller.class": "0506de1007c0b43f01eda303afb1af75818200163704fc839922ebbf63061a5a",
+    "fuzs/illagerinvasion/world/entity/monster/Inquisitor.class": "8b315ac8b647cf74ab843db282c64d0feb58c4aaf3e23a9d33fdd251e88b4da5",
+    "fuzs/illagerinvasion/world/entity/monster/Invoker.class": "a58abab9ab77aea77203f32f4c07d85bf4ba93c6ffe906915d870fcf82938108",
+    "fuzs/illagerinvasion/world/entity/monster/Marauder.class": "2a36418b28b66cbd8584b824d7ed5da9765724a76cd5e202ce5f8ae505a6f5e9",
+    "fuzs/illagerinvasion/world/entity/monster/Necromancer.class": "3c0b01da3a169b9637182030fee3d27fa37a5d077487b525176c92ffd6805d0f",
+    "fuzs/illagerinvasion/world/entity/monster/Provoker.class": "e349333a8e37e9f6c2dc5a65decfea0bdc7f87e42bb672fe3321a6033652da6f",
+    "fuzs/illagerinvasion/world/entity/monster/Sorcerer.class": "b526fe80c8eac6dddf4dc9e87372a03967f637fb91a7a995f8accdffead938d0",
+    "fuzs/illagerinvasion/world/entity/monster/Surrendered.class": "25cef81f2c4693bf97845f7ef5dfba787037c578f6b251ac7ee7d8961734447a"
+  },
+  "images": [
+    {
+      "entity_id": "illagerinvasion:alchemist",
+      "mob": "Alchemist · normal",
+      "image": "alchemist.png",
+      "model": "fuzs/illagerinvasion/client/model/BrimmedHatIllagerEntityModel.class",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/AlchemistRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/alchemist.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Alchemist.class"
+      ],
+      "boxes": 13,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:archivist",
+      "mob": "Archivist · normal",
+      "image": "archivist.png",
+      "model": "minecraft:net.minecraft.client.model.IllagerModel",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/ArchivistRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/archivist.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Archivist.class",
+        "minecraft:1.21.1-client.jar!/fvy.class",
+        "minecraft:1.21.1-client.jar!/fus.class",
+        "minecraft:assets/minecraft/textures/entity/enchanting_table_book.png"
+      ],
+      "boxes": 12,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Inclui livro original fechado: BookModel.setupAnim(0,0,0,0), translação (0,0.362,-0.5) e rotação Y 270°. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:basher",
+      "mob": "Basher · normal",
+      "image": "basher.png",
+      "model": "minecraft:net.minecraft.client.model.IllagerModel",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/BasherRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/basher.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Basher.class",
+        "minecraft:1.21.1-client.jar!/fvy.class"
+      ],
+      "boxes": 12,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:firecaller",
+      "mob": "Firecaller · normal",
+      "image": "firecaller.png",
+      "model": "fuzs/illagerinvasion/client/model/IllagerWithStaffEntityModel.class",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/FirecallerRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/firecaller.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Firecaller.class"
+      ],
+      "boxes": 10,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Inclui cajado integrante da malha; corpo X=0.2, braço esquerdo X=-1.2 rad. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:inquisitor",
+      "mob": "Inquisitor · normal",
+      "image": "inquisitor.png",
+      "model": "fuzs/illagerinvasion/client/model/ArmoredIllagerEntityModel.class",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/InquisitorRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/inquisitor.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Inquisitor.class"
+      ],
+      "boxes": 14,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; NEUTRAL nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:invoker",
+      "mob": "Invoker · normal",
+      "image": "invoker.png",
+      "model": "fuzs/illagerinvasion/client/model/InvokerEntityModel.class",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/InvokerRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/invoker.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Invoker.class"
+      ],
+      "boxes": 12,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:marauder",
+      "mob": "Marauder · normal",
+      "image": "marauder.png",
+      "model": "minecraft:net.minecraft.client.model.IllagerModel",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/MarauderRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/savager.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Marauder.class",
+        "minecraft:1.21.1-client.jar!/fvy.class"
+      ],
+      "boxes": 12,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; NEUTRAL nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:necromancer",
+      "mob": "Necromancer · normal",
+      "image": "necromancer.png",
+      "model": "minecraft:net.minecraft.client.model.IllagerModel",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/NecromancerRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/necromancer.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Necromancer.class",
+        "minecraft:1.21.1-client.jar!/fvy.class"
+      ],
+      "boxes": 12,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:provoker",
+      "mob": "Provoker · normal",
+      "image": "provoker.png",
+      "model": "minecraft:net.minecraft.client.model.IllagerModel",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/ProvokerRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/provoker.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Provoker.class",
+        "minecraft:1.21.1-client.jar!/fvy.class"
+      ],
+      "boxes": 12,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:sorcerer",
+      "mob": "Sorcerer · normal",
+      "image": "sorcerer.png",
+      "model": "fuzs/illagerinvasion/client/model/HatIllagerEntityModel.class",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/SorcererRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/sorcerer.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Sorcerer.class"
+      ],
+      "boxes": 15,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; normal; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:surrendered",
+      "mob": "Surrendered · normal",
+      "image": "surrendered.png",
+      "model": "fuzs/illagerinvasion/client/model/SurrenderedModel.class",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/SurrenderedRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/surrendered.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Surrendered.class"
+      ],
+      "boxes": 7,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; charging=false; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    },
+    {
+      "entity_id": "illagerinvasion:surrendered",
+      "mob": "Surrendered · charging=true",
+      "image": "surrendered-charge.png",
+      "model": "fuzs/illagerinvasion/client/model/SurrenderedModel.class",
+      "renderer": "fuzs/illagerinvasion/client/render/entity/SurrenderedRender.class",
+      "texture": "assets/illagerinvasion/textures/entity/surrendered_charge.png",
+      "extra_sources": [
+        "fuzs/illagerinvasion/client/IllagerInvasionClient.class",
+        "fuzs/illagerinvasion/client/init/ClientModRegistry.class",
+        "fuzs/illagerinvasion/world/entity/monster/Surrendered.class"
+      ],
+      "boxes": 7,
+      "notes": "Adulto parado, olhar neutro e sem equipamentos externos; charging=true; CROSSED nos illagers, fora de combate e sem conjuração. Pose neutra aplicada pelos modelos originais. Escudos de energia, partículas e efeitos de conjuração não representados. Luz simplificada; jogo não executado."
+    }
+  ],
+  "site_modified": false
+}
