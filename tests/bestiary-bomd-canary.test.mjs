@@ -3,29 +3,11 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import cp from 'node:child_process';
-import ts from 'typescript';
 import { fileURLToPath } from 'node:url';
-import { createRequire } from 'node:module';
-const loadPackage = createRequire(import.meta.url);
+import { catalog, CANARY_REF } from './helpers/bestiary-catalog.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-function catalog(before = false) {
-  const cache = new Map();
-  function load(spec) {
-    let file = path.resolve(root, spec.replace(/^@\//, ''));
-    if (!path.extname(file)) file += '.ts';
-    if (cache.has(file)) return cache.get(file).exports;
-    const relative = path.relative(root, file);
-    const text = before ? cp.execFileSync('git', ['show', `HEAD:${relative}`], { cwd: root, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 }) : fs.readFileSync(file, 'utf8');
-    if (file.endsWith('.json')) return JSON.parse(text);
-    const loaded = { exports: {} }; cache.set(file, loaded);
-    const js = ts.transpileModule(text, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022, esModuleInterop: true } }).outputText;
-    new Function('require', 'module', 'exports', js)((id) => id.startsWith('@/') ? load(id) : loadPackage(id), loaded, loaded.exports);
-    return loaded.exports;
-  }
-  return load('@/data/bestiary-catalog').BESTIARY_ENTRIES;
-}
 const entries = catalog();
-const prior = catalog(true);
+const prior = catalog(CANARY_REF);
 const bomd = entries.filter(e => e.mod === 'Bosses of Mass Destruction');
 test('MCA keeps the unconfirmed Raider and distinguishes resurrection, inventory and unconfirmed native loot', () => {
   const raider = entries.find(e => e.id === 'mca-raider');
@@ -39,6 +21,8 @@ test('MCA keeps the unconfirmed Raider and distinguishes resurrection, inventory
   assert.ok(tombstone.drops.some(d => d.namePt.includes('drop ativo não confirmado') && d.confidenceDetail.includes('Exceção')));
 });
 test('each integrated group covers every audited mob and row without duplicate associations', () => {
+  assert.equal(entries.filter(e => e.audit).length, 431);
+  assert.equal(entries.reduce((n, e) => n + e.audit.rows.length, 0), 2715);
   const coverage = JSON.parse(fs.readFileSync(path.join(root, 'data/bestiary-audit-coverage.json'), 'utf8'));
   const groups = new Map();
   for (const e of entries.filter(e => e.audit)) {
@@ -125,5 +109,5 @@ test('all new rewards have usable local crafting anchors and honest mechanism/so
 test('images are separate render PNGs and persistence implementation remains byte-identical',()=>{
   assert.equal(new Set(bomd.map(e=>e.imageUrl)).size,4);
   for(const e of bomd){assert.ok(!e.imageUrl.includes('/textures/'));const b=fs.readFileSync(path.join(root,'public',e.imageUrl));assert.equal(b.subarray(1,4).toString(),'PNG');assert.ok(b.readUInt32BE(16)>64&&b.readUInt32BE(20)>64);}
-  for(const name of ['lib/bestiary-state.ts','lib/supabase/browser.ts','types/content.ts']) assert.equal(fs.readFileSync(path.join(root,name),'utf8'),cp.execFileSync('git',['show',`HEAD:${name}`],{cwd:root,encoding:'utf8'}));
+  for(const name of ['lib/bestiary-state.ts','lib/supabase/browser.ts','types/content.ts']) assert.equal(fs.readFileSync(path.join(root,name),'utf8'),cp.execFileSync('git',['show',`${CANARY_REF}:${name}`],{cwd:root,encoding:'utf8'}));
 });

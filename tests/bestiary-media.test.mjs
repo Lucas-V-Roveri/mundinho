@@ -6,6 +6,8 @@ import { bestiaryHrefForCatalogItem, bestiaryHrefForEncounter } from "../lib/bes
 import { enrichBestiaryEntries } from "../data/bestiary-drop-uses.ts";
 import { ENCOUNTER_CATALOG, itemById } from "../data/wiki-catalog.ts";
 
+import { catalog } from "./helpers/bestiary-catalog.mjs";
+
 const base = {
   id: "test-mob",
   namePt: "Mob",
@@ -79,8 +81,14 @@ test("drop com crafting documentado em Mods ganha link sem duplicar receita", ()
 });
 
 test("catálogo publicado mantém enriquecimento global de drops", () => {
-  const catalog = readFileSync(new URL("../data/bestiary-catalog.ts", import.meta.url), "utf8");
-  assert.match(catalog, /BESTIARY_ENTRIES\s*=\s*enrichBestiaryEntries\(\[/);
+  const entries = catalog();
+  assert.equal(entries.length, 431);
+  for (const entry of entries) {
+    for (const drop of entry.drops) {
+      assert.ok(drop.use?.trim(), `${entry.id}: uso ausente`);
+      assert.ok(drop.useConfidence, `${entry.id}: confiança ausente`);
+    }
+  }
 });
 
 test("renderer compacto exibe uso, confiança e link de crafting", () => {
