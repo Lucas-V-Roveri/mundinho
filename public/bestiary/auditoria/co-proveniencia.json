@@ -1,0 +1,606 @@
+{
+  "version": "4.0.6 · NeoForge · Minecraft 1.21.1",
+  "catalog_reference": "Lucas-V-Roveri/mundinho@de517bc",
+  "method": "Geometrias GeckoLib originais, hierarquia, pivôs, UV e texturas da build exata. IDLE no instante 0.",
+  "limits": [
+    "Representações técnicas estáticas sem execução do jogo; transições dos controladores não executadas.",
+    "Luz e emissão simplificadas; shaders e partículas não executados.",
+    "Imagens separadas por mob e por estado selecionado. Não representam todos os estados de combate ou todas as cosméticas opcionais."
+  ],
+  "geckolib_pack_version": "4.9.2",
+  "build": {
+    "game_versions": [
+      "1.21",
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "HNrAYCLH",
+    "project_id": "MI1LWe93",
+    "author_id": "K86yjB3D",
+    "featured": false,
+    "name": "Creeper Overhaul 4.0.6",
+    "version_number": "4.0.6",
+    "changelog": "",
+    "changelog_url": null,
+    "date_published": "2025-01-04T03:31:11.740412Z",
+    "downloads": 671405,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "O2Uj8RgI",
+        "hashes": {
+          "sha512": "880ca9d8d23b527d3583cbe7fa399b2a26421b6ccba1deacd666cf9b61f4af4378157f404ab3789a7ae9c3c8693e2b7f6c8c532e703e5bb0e1881b9cc2879a6e",
+          "sha1": "5a07cc032df790e7d110ad3dedb7a76253ffd565"
+        },
+        "url": "https://cdn.modrinth.com/data/MI1LWe93/versions/HNrAYCLH/CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+        "filename": "CreeperOverhaul-neoforge-1.21.1-4.0.6.jar",
+        "primary": true,
+        "size": 1185088,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "G1hIVOrD",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "8BmcQJ2H",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "M1953qlQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  "jar_sha256": "ed83bea2826667fca80a6a8067f89fe7b97eb8b3213bbcb7f0f4e6a6898c0bc9",
+  "source_files_sha256": {
+    "assets/creeperoverhaul/animations/badlands.animation.json": "46437feabd426ee5150516ecedd60526e692f2173da9e2cb8dcec918f2365f23",
+    "assets/creeperoverhaul/animations/bamboo.animation.json": "c9253f95b482c1106328433f63dacb369478fbec1adda1290d060a7be9c6991d",
+    "assets/creeperoverhaul/animations/beach.animation.json": "c6f86bbe71574089fce14820dd0ebb16f02f86659ef6d65f7b79735d3a210054",
+    "assets/creeperoverhaul/animations/birch.animation.json": "30be2e95998aecc17fb8a2f48feb2e69b8562763d6ebdc7ab3475ce782be3aa8",
+    "assets/creeperoverhaul/animations/cave.animation.json": "cfa2abd7cc9b283c1566f7f598c17ff1692aa80e298b82781fc80c8ba5576d94",
+    "assets/creeperoverhaul/animations/dark_oak.animation.json": "8829bbbd0f874490e340eb889268cbe29726d75dc6389490e863d85ba7bd2ac4",
+    "assets/creeperoverhaul/animations/desert.animation.json": "13b3105e1bd5eb50771c7eeef320b2197f5dbccda9d90e06e042208c3c1c53e7",
+    "assets/creeperoverhaul/animations/dripstone.animation.json": "5e143e0d1a76958a10b50d34cbc405313952c2b5a3e237088e785d6f81f52d9f",
+    "assets/creeperoverhaul/animations/hills.animation.json": "c629e91f716d28e14b590f561f6ef4e738578eed45f301bee85c8c6a3336d4ac",
+    "assets/creeperoverhaul/animations/jungle.animation.json": "1807408adc61c1bbfaae6e32362a51266a85b7aef2fe2c62dd3d8ea8f51b52c4",
+    "assets/creeperoverhaul/animations/mushroom.animation.json": "8b4c923e1aa33e1608e90d28ea8e5722415b7cacd7ab399d64eeee4dbffad94f",
+    "assets/creeperoverhaul/animations/ocean.animation.json": "f59fe760043cc562a7f03417316cde728dab8d8775d0363a15afe22a257a9860",
+    "assets/creeperoverhaul/animations/savannah.animation.json": "56bd55261c351e124472503d36063649a9a07c910e62976cb2e3ca3270fe8384",
+    "assets/creeperoverhaul/animations/snowy.animation.json": "afcf0f8dd39c1df2ed321480416a0dbbbd40f5f1cd08fac9952b976aac68c2ca",
+    "assets/creeperoverhaul/animations/spruce.animation.json": "ae1d7f812333ba4076223e7c7b3fd6178c097e0846be9b06469148dedf5e212b",
+    "assets/creeperoverhaul/animations/swamp.animation.json": "7a37a949b84ec1d4e40a3fac9021ef38146ecd7f86bf67640ee32f1953f7cc88",
+    "assets/creeperoverhaul/geo/badlands.geo.json": "2a9140932a9de8b00fbc1c8268849e128f39abb4a2322c95675cb402fbe28acf",
+    "assets/creeperoverhaul/geo/badlands_sheared.geo.json": "81c4cca21bc8fdf9551a1786f1c07409d6fadca341136640c61de742f91b866c",
+    "assets/creeperoverhaul/geo/bamboo.geo.json": "a0fa7aaa9855be171af416e71c8c5fbd77d9cbfd2ad8d0f9c62ba1dcbf0a6d31",
+    "assets/creeperoverhaul/geo/beach.geo.json": "a67eeaa718bc5129628329a34e37fa0d180bdd9d587b6c48bee171c0c0f31b91",
+    "assets/creeperoverhaul/geo/birch.geo.json": "9a67fd266b16a7270a74154dcc4aee1e6402b8831241a648fc688331a9ca945d",
+    "assets/creeperoverhaul/geo/cave.geo.json": "9eefeafc1e6401a929f3d4df30a0a6bae4c311074244e412c44fdf738e36ea2f",
+    "assets/creeperoverhaul/geo/dark_oak.geo.json": "307735e71dbfa1f1bbdf1043b5354b54c35d5d99beeeff64fdb37ff83f10be94",
+    "assets/creeperoverhaul/geo/desert.geo.json": "9dca01a3d0d857b8674e98bdf111e67e4581a5744faaf6cc70f44cf21328c7d8",
+    "assets/creeperoverhaul/geo/desert_sheared.geo.json": "69bfcf80129f69ead59080f003e15df788bb2b37c5c2704d87c22552bf10bfe5",
+    "assets/creeperoverhaul/geo/dripstone.geo.json": "05b24419536ad68b092562a43f01e2cca9da01193e209edcfff49932feb85267",
+    "assets/creeperoverhaul/geo/hills.geo.json": "6c2057a7e217dfaffdbc932c1a8841106a8e58d040618f6d395efc19ea8397fb",
+    "assets/creeperoverhaul/geo/jungle.geo.json": "d668a8d4d019b727b2d3bac5a0f1f2dab0aaaf6f353297a7e7975abc1a6ac58a",
+    "assets/creeperoverhaul/geo/mushroom.geo.json": "198980b30a7894c77834560e494e33f5c800c6886fdf10bd9e56b29c23fd39ab",
+    "assets/creeperoverhaul/geo/ocean_1.geo.json": "1a9c76dd9b13fddf33b1fb6e900b6d8a8d703ad35be41d5035fe15a243536521",
+    "assets/creeperoverhaul/geo/ocean_2.geo.json": "6b2dcfc2647dca5271d1f0effbad7f38db319809fd440a4901ac8323488dd9ad",
+    "assets/creeperoverhaul/geo/ocean_3.geo.json": "7cf24bea8139063be6af84a2a5b5c0619531a6e1f45e60eb81ce0e85d18f4bba",
+    "assets/creeperoverhaul/geo/savannah.geo.json": "6718013d7d81b6de65243346ed18f99d978664abba2543b9e0b108b5ea1aa94e",
+    "assets/creeperoverhaul/geo/snowy.geo.json": "d0e7c60057e45fe073d3c7e10d2b921444337e881ae064fb9cfe79c371b47796",
+    "assets/creeperoverhaul/geo/spruce.geo.json": "f1917320e4ef2b7936b5dad407d44e33475d9d14731e448475583ae7f9db181e",
+    "assets/creeperoverhaul/geo/swamp.geo.json": "794b96d05641fc0c86abcd3c32c1113c57e9e7b1b0b5b65a7eda5dd3264fb14c",
+    "assets/creeperoverhaul/textures/entity/badlands/badlands_creeper.png": "cacc33af9b6eb1121c0d08d4f6a5acc1520772cb56f64332f5cc4cc9964f804b",
+    "assets/creeperoverhaul/textures/entity/bamboo/bamboo_creeper.png": "e27fa13aad7a288836cdc5c8d92875622aee7c9aab5ff561c0c33d158bcbb894",
+    "assets/creeperoverhaul/textures/entity/beach/beach_creeper.png": "09043edbe4b242ebc5e409e6cd8bb26cb43c57409536b5042802c50b3db8ec98",
+    "assets/creeperoverhaul/textures/entity/birch/birch_creeper.png": "23c7121f06fd5582589e959a7124112a15108d930b803dd611b69a0b924fb7aa",
+    "assets/creeperoverhaul/textures/entity/cave/cave_creeper.png": "f48a144a01b8fb251a0df515fcdc48f6b8dfaaa7f7b2baea1c65b94528453b4d",
+    "assets/creeperoverhaul/textures/entity/dark_oak/dark_oak_creeper.png": "d1788b9d7818f3f0b4994eb2071210ad2bc46aecec645a428cc0558d47967f5d",
+    "assets/creeperoverhaul/textures/entity/desert/desert_creeper.png": "48814cb011fdfe5bd13765bd503913026d4ee242b6454fe508921a8886eb75d6",
+    "assets/creeperoverhaul/textures/entity/dripstone/dripstone_creeper.png": "dd5086ff584926c67aacd1c200699f9258383467c47d5b02eea5a27494330ecd",
+    "assets/creeperoverhaul/textures/entity/hills/hills_creeper.png": "d646e0885bc9d519529cec055ba9356e6f6515734779b22174a1fccd8ad2be60",
+    "assets/creeperoverhaul/textures/entity/jungle/jungle_creeper.png": "22a22da97f9cd96fe78b8a4ce8fc07c1336d680844fa1efd0e53b111a494e4f0",
+    "assets/creeperoverhaul/textures/entity/mushroom/mushroom_creeper.png": "ababadc6df55ab4e42803ac19fce39d4ceaf7dfc255c0fbc0e9c45abb2d6da4a",
+    "assets/creeperoverhaul/textures/entity/ocean/brown_1.png": "d8bbf266f34b74c1f6b482bc9e9888a4a1faed474c5b2dffee8463b239d39f2e",
+    "assets/creeperoverhaul/textures/entity/ocean/brown_2.png": "71a3fa54b493b7217d123f9e33a856a72d076020110238520e35f479ab9220d9",
+    "assets/creeperoverhaul/textures/entity/ocean/brown_3.png": "ecb334f7aede9fff59563a1d5691d3463632e5b81e948963d3829079d2bf14b8",
+    "assets/creeperoverhaul/textures/entity/ocean/teal_1.png": "9fff92a7a6fa76e436c4b94d74c7d0b5af974f08dc757f930077c1a7ad1c315b",
+    "assets/creeperoverhaul/textures/entity/ocean/teal_2.png": "b6a8a2119d0753957a9604f3d89240f87fdc4ad471fd311cc19028d821ad7a04",
+    "assets/creeperoverhaul/textures/entity/ocean/teal_3.png": "def5839393c2bc76cd9edecdcd501fd0cf8f25198636d283dbb5f05e88055dd2",
+    "assets/creeperoverhaul/textures/entity/savannah/savannah_creeper.png": "e9fbc571bd9225bf4f85b035a6ad2218a1198fe11c535a4521e5940d7fbc0429",
+    "assets/creeperoverhaul/textures/entity/snowy/snowy_creeper.png": "b1a66a44a2c74588c761bb4a181de526e631ddab5df549f465247e913647f1bf",
+    "assets/creeperoverhaul/textures/entity/spruce/spruce_creeper.png": "4ad494dbea0a869d78ca36b52649637531f4f9ef40e5457a1eddc4d72963ade2",
+    "assets/creeperoverhaul/textures/entity/swamp/swamp_creeper.png": "9fa77ca92d94cbae60ae68be1329bcd4dd046f974bc732e98501fa29cfb74489",
+    "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class": "3cda60865efba354428549db4debd25edb60fc211b9f9153200647c3d681f52b",
+    "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class": "f1539be1b1228659eb1e1c23544c46eadce517c6d245877297f0cadd42217a38",
+    "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class": "f99dd50a620cf1f69095e568cc27c78cf49f50e97a46ff9e0c7a8d0d993eb598",
+    "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class": "6d66f34ec2d4055196b49b5f2bae24f899a6dde8e6796272ac565317f4a8b94c",
+    "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class": "6568c0423e8f67c80ea5149d908e1deb86fbf57b69ee5a673b22998775ff1c1e",
+    "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class": "4a96a25c8d268f980dbcc5a858c3dc8995ed87714d5ad03f61a9d16ae9c4f5f2",
+    "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class": "6e19d12374461959a1ba7f6561a69f9d001b73eb81f045e2bc4e49e84443a4cb",
+    "tech/thatgravyboat/creeperoverhaul/common/entity/custom/PufferfishCreeper.class": "78eea45d18e42fe52a02f077ab5239dbd9b07f0c88d5d8e0fed6ed3d9429ec96",
+    "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class": "0ed40b62d813b4c22384c237f73f93c052e38ff9c228a521591ac1997e394ad6"
+  },
+  "images": [
+    {
+      "entity_id": "creeperoverhaul:jungle_creeper",
+      "mob": "Jungle Creeper · normal",
+      "image": "jungle.png",
+      "model": "assets/creeperoverhaul/geo/jungle.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/jungle/jungle_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/jungle.animation.json"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:bamboo_creeper",
+      "mob": "Bamboo Creeper · normal",
+      "image": "bamboo.png",
+      "model": "assets/creeperoverhaul/geo/bamboo.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/bamboo/bamboo_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/bamboo.animation.json"
+      ],
+      "boxes": 14,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:desert_creeper",
+      "mob": "Desert Creeper · normal",
+      "image": "desert.png",
+      "model": "assets/creeperoverhaul/geo/desert.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/desert/desert_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/desert.animation.json"
+      ],
+      "boxes": 14,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:desert_creeper",
+      "mob": "Desert Creeper · tosquiado",
+      "image": "desert-sheared.png",
+      "model": "assets/creeperoverhaul/geo/desert_sheared.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/desert/desert_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/desert.animation.json"
+      ],
+      "boxes": 11,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: tosquiado."
+    },
+    {
+      "entity_id": "creeperoverhaul:badlands_creeper",
+      "mob": "Badlands Creeper · normal",
+      "image": "badlands.png",
+      "model": "assets/creeperoverhaul/geo/badlands.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/badlands/badlands_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/badlands.animation.json"
+      ],
+      "boxes": 13,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:badlands_creeper",
+      "mob": "Badlands Creeper · tosquiado",
+      "image": "badlands-sheared.png",
+      "model": "assets/creeperoverhaul/geo/badlands_sheared.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/badlands/badlands_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/badlands.animation.json"
+      ],
+      "boxes": 10,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: tosquiado."
+    },
+    {
+      "entity_id": "creeperoverhaul:hills_creeper",
+      "mob": "Hills Creeper · normal",
+      "image": "hills.png",
+      "model": "assets/creeperoverhaul/geo/hills.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/hills/hills_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/hills.animation.json"
+      ],
+      "boxes": 11,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:savannah_creeper",
+      "mob": "Savannah Creeper · normal",
+      "image": "savannah.png",
+      "model": "assets/creeperoverhaul/geo/savannah.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/savannah/savannah_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/savannah.animation.json"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:mushroom_creeper",
+      "mob": "Mushroom Creeper · normal",
+      "image": "mushroom.png",
+      "model": "assets/creeperoverhaul/geo/mushroom.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/mushroom/mushroom_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/mushroom.animation.json"
+      ],
+      "boxes": 14,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:swamp_creeper",
+      "mob": "Swamp Creeper · normal",
+      "image": "swamp.png",
+      "model": "assets/creeperoverhaul/geo/swamp.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/swamp/swamp_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/swamp.animation.json"
+      ],
+      "boxes": 20,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:dripstone_creeper",
+      "mob": "Dripstone Creeper · normal",
+      "image": "dripstone.png",
+      "model": "assets/creeperoverhaul/geo/dripstone.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/dripstone/dripstone_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/dripstone.animation.json"
+      ],
+      "boxes": 14,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:cave_creeper",
+      "mob": "Cave Creeper · normal",
+      "image": "cave.png",
+      "model": "assets/creeperoverhaul/geo/cave.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/cave/cave_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/cave.animation.json"
+      ],
+      "boxes": 12,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:dark_oak_creeper",
+      "mob": "Dark Oak Creeper · normal",
+      "image": "dark_oak.png",
+      "model": "assets/creeperoverhaul/geo/dark_oak.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/dark_oak/dark_oak_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/dark_oak.animation.json"
+      ],
+      "boxes": 16,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:spruce_creeper",
+      "mob": "Spruce Creeper · normal",
+      "image": "spruce.png",
+      "model": "assets/creeperoverhaul/geo/spruce.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/spruce/spruce_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/spruce.animation.json"
+      ],
+      "boxes": 14,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:beach_creeper",
+      "mob": "Beach Creeper · normal",
+      "image": "beach.png",
+      "model": "assets/creeperoverhaul/geo/beach.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/beach/beach_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/beach.animation.json"
+      ],
+      "boxes": 14,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:snowy_creeper",
+      "mob": "Snowy Creeper · normal",
+      "image": "snowy.png",
+      "model": "assets/creeperoverhaul/geo/snowy.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/snowy/snowy_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/snowy.animation.json"
+      ],
+      "boxes": 25,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    },
+    {
+      "entity_id": "creeperoverhaul:ocean_creeper",
+      "mob": "Ocean Creeper · brown, inflação 1",
+      "image": "ocean-brown-1.png",
+      "model": "assets/creeperoverhaul/geo/ocean_1.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/ocean/brown_1.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/ocean.animation.json",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/custom/PufferfishCreeper.class"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: brown, inflação 1."
+    },
+    {
+      "entity_id": "creeperoverhaul:ocean_creeper",
+      "mob": "Ocean Creeper · brown, inflação 2",
+      "image": "ocean-brown-2.png",
+      "model": "assets/creeperoverhaul/geo/ocean_2.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/ocean/brown_2.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/ocean.animation.json",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/custom/PufferfishCreeper.class"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: brown, inflação 2."
+    },
+    {
+      "entity_id": "creeperoverhaul:ocean_creeper",
+      "mob": "Ocean Creeper · brown, inflação 3",
+      "image": "ocean-brown-3.png",
+      "model": "assets/creeperoverhaul/geo/ocean_3.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/ocean/brown_3.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/ocean.animation.json",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/custom/PufferfishCreeper.class"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: brown, inflação 3."
+    },
+    {
+      "entity_id": "creeperoverhaul:ocean_creeper",
+      "mob": "Ocean Creeper · teal, inflação 1",
+      "image": "ocean-teal-1.png",
+      "model": "assets/creeperoverhaul/geo/ocean_1.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/ocean/teal_1.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/ocean.animation.json",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/custom/PufferfishCreeper.class"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: teal, inflação 1."
+    },
+    {
+      "entity_id": "creeperoverhaul:ocean_creeper",
+      "mob": "Ocean Creeper · teal, inflação 2",
+      "image": "ocean-teal-2.png",
+      "model": "assets/creeperoverhaul/geo/ocean_2.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/ocean/teal_2.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/ocean.animation.json",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/custom/PufferfishCreeper.class"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: teal, inflação 2."
+    },
+    {
+      "entity_id": "creeperoverhaul:ocean_creeper",
+      "mob": "Ocean Creeper · teal, inflação 3",
+      "image": "ocean-teal-3.png",
+      "model": "assets/creeperoverhaul/geo/ocean_3.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/ocean/teal_3.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/ocean.animation.json",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/custom/PufferfishCreeper.class"
+      ],
+      "boxes": 17,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: teal, inflação 3."
+    },
+    {
+      "entity_id": "creeperoverhaul:birch_creeper",
+      "mob": "Birch Creeper · normal",
+      "image": "birch.png",
+      "model": "assets/creeperoverhaul/geo/birch.geo.json",
+      "renderer": "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperRenderer.class",
+      "texture": "assets/creeperoverhaul/textures/entity/birch/birch_creeper.png",
+      "extra_sources": [
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperModel.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/CreeperTypes.class",
+        "tech/thatgravyboat/creeperoverhaul/common/entity/base/BaseCreeper.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperGlowLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/client/renderer/normal/CreeperPowerLayer.class",
+        "tech/thatgravyboat/creeperoverhaul/common/registry/ModEntities.class",
+        "tech/thatgravyboat/creeperoverhaul/client/CreepersClient.class",
+        "assets/creeperoverhaul/animations/birch.animation.json"
+      ],
+      "boxes": 22,
+      "notes": "IDLE original no instante 0; cabeça neutra, swelling=0 e powered=false. Camadas de brilho de explosão e carga não se aplicam. Pose técnica estática; transições do controlador e iluminação do jogo não executadas. Estado: normal."
+    }
+  ],
+  "site_modified": false
+}

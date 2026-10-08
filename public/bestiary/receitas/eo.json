@@ -1,0 +1,98 @@
+[
+  {
+    "anchor": "receita-corrupted-blade",
+    "name": "corrupted blade",
+    "source": "evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/corrupted_blade.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "#": {
+          "item": "minecraft:stick"
+        },
+        "X": {
+          "item": "endermanoverhaul:enderman_tooth"
+        }
+      },
+      "pattern": [
+        "X",
+        "X",
+        "#"
+      ],
+      "result": {
+        "count": 1,
+        "id": "endermanoverhaul:corrupted_blade"
+      },
+      "show_notification": true
+    }
+  },
+  {
+    "anchor": "receita-ender-eye",
+    "name": "ender eye",
+    "source": "evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/ender_eye.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "endermanoverhaul:ender_pearls"
+        },
+        {
+          "item": "minecraft:blaze_powder"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:ender_eye"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ender-pearl",
+    "name": "ender pearl",
+    "source": "evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/ender_pearl.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "category": "misc",
+      "ingredients": [
+        {
+          "tag": "endermanoverhaul:ender_pearls"
+        }
+      ],
+      "result": {
+        "count": 1,
+        "id": "minecraft:ender_pearl"
+      }
+    }
+  },
+  {
+    "anchor": "receita-corrupted-shield",
+    "name": "corrupted shield",
+    "source": "evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/corrupted_shield.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "category": "equipment",
+      "key": {
+        "W": {
+          "tag": "minecraft:planks"
+        },
+        "o": {
+          "item": "minecraft:iron_ingot"
+        },
+        "T": {
+          "item": "endermanoverhaul:enderman_tooth"
+        }
+      },
+      "pattern": [
+        "ToT",
+        "oWo",
+        "ToT"
+      ],
+      "result": {
+        "count": 1,
+        "id": "endermanoverhaul:corrupted_shield"
+      },
+      "show_notification": true
+    }
+  }
+]

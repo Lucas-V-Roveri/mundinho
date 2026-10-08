@@ -1,0 +1,1771 @@
+[
+  {
+    "anchor": "receita-acacia-coffin",
+    "name": "acacia coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/acacia_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:acacia_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:acacia_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bamboo-coffin",
+    "name": "bamboo coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/bamboo_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:bamboo_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:bamboo_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-birch-coffin",
+    "name": "birch coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/birch_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:birch_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:birch_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-black-urn",
+    "name": "black urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/black_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:black_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:black_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blackstone-gravestone",
+    "name": "blackstone gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/blackstone_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:blackstone"
+        }
+      },
+      "result": {
+        "id": "graveyard:blackstone_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-blue-urn",
+    "name": "blue urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/blue_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:blue_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:blue_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-dagger",
+    "name": "bone dagger",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/bone_dagger.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        " # ",
+        " # "
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:bone"
+        }
+      },
+      "result": {
+        "id": "graveyard:bone_dagger"
+      }
+    }
+  },
+  {
+    "anchor": "receita-bone-remains-from-bone-carving",
+    "name": "bone remains from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/bone_remains_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:bone_remains"
+    }
+  },
+  {
+    "anchor": "receita-bricks-gravestone",
+    "name": "bricks gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/bricks_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:bricks"
+        }
+      },
+      "result": {
+        "id": "graveyard:bricks_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-brown-urn",
+    "name": "brown urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/brown_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:brown_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:brown_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-candle-holder",
+    "name": "candle holder",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/candle_holder.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "   ",
+        " # ",
+        " # "
+      ],
+      "key": {
+        "#": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "graveyard:candle_holder"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cherry-coffin",
+    "name": "cherry coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/cherry_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cherry_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:cherry_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cobblestone-gravestone",
+    "name": "cobblestone gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/cobblestone_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobblestone"
+        }
+      },
+      "result": {
+        "id": "graveyard:cobblestone_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cracked-blackstone-gravestone",
+    "name": "cracked blackstone gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/cracked_blackstone_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cracked_polished_blackstone_bricks"
+        }
+      },
+      "result": {
+        "id": "graveyard:cracked_blackstone_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-creeper-skeleton-from-bone-carving",
+    "name": "creeper skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/creeper_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:creeper_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-crimson-coffin",
+    "name": "crimson coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/crimson_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:crimson_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:crimson_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-cyan-urn",
+    "name": "cyan urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/cyan_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cyan_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:cyan_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-iron-bars",
+    "name": "dark iron bars",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/dark_iron_bars.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "count": 16,
+        "id": "graveyard:dark_iron_bars"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-iron-block",
+    "name": "dark iron block",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/dark_iron_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:dark_iron_block"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-iron-door",
+    "name": "dark iron door",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/dark_iron_door.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "##",
+        "##",
+        "##"
+      ],
+      "key": {
+        "#": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "count": 3,
+        "id": "graveyard:dark_iron_door"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-iron-ingot",
+    "name": "dark iron ingot",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/dark_iron_ingot.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "graveyard:corruption"
+        },
+        {
+          "item": "minecraft:iron_ingot"
+        }
+      ],
+      "result": {
+        "id": "graveyard:dark_iron_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-iron-ingot-from-dark-iron-block",
+    "name": "dark iron ingot from dark iron block",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/dark_iron_ingot_from_dark_iron_block.json",
+    "recipe": {
+      "type": "minecraft:crafting_shapeless",
+      "ingredients": [
+        {
+          "item": "graveyard:dark_iron_block"
+        }
+      ],
+      "result": {
+        "count": 9,
+        "id": "graveyard:dark_iron_ingot"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-iron-trapdoor",
+    "name": "dark iron trapdoor",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/dark_iron_trapdoor.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "## ",
+        "## "
+      ],
+      "key": {
+        "#": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "count": 2,
+        "id": "graveyard:dark_iron_trapdoor"
+      }
+    }
+  },
+  {
+    "anchor": "receita-dark-oak-coffin",
+    "name": "dark oak coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/dark_oak_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:dark_oak_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:dark_oak_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-deepslate-gravestone",
+    "name": "deepslate gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/deepslate_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:deepslate"
+        }
+      },
+      "result": {
+        "id": "graveyard:deepslate_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-fire-brazier",
+    "name": "fire brazier",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/fire_brazier.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "   ",
+        "#Y#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "graveyard:dark_iron_ingot"
+        },
+        "Y": {
+          "tag": "minecraft:logs"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "graveyard:fire_brazier"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gilded-blackstone-gravestone",
+    "name": "gilded blackstone gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/gilded_blackstone_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:gilded_blackstone"
+        }
+      },
+      "result": {
+        "id": "graveyard:gilded_blackstone_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gravestone",
+    "name": "gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:polished_basalt"
+        }
+      },
+      "result": {
+        "id": "graveyard:gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-gray-urn",
+    "name": "gray urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/gray_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:gray_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:gray_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-green-urn",
+    "name": "green urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/green_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:green_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:green_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-hanged-skeleton-from-bone-carving",
+    "name": "hanged skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/hanged_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:hanged_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-hanged-wither-skeleton-from-bone-carving",
+    "name": "hanged wither skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/hanged_wither_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:hanged_wither_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-jungle-coffin",
+    "name": "jungle coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/jungle_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:jungle_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:jungle_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-laterally-lying-skeleton-from-bone-carving",
+    "name": "laterally lying skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/laterally_lying_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:laterally_lying_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-laterally-lying-wither-skeleton-from-bone-carving",
+    "name": "laterally lying wither skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/laterally_lying_wither_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:laterally_lying_wither_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-leaning-skeleton-from-bone-carving",
+    "name": "leaning skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/leaning_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:leaning_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-leaning-wither-skeleton-from-bone-carving",
+    "name": "leaning wither skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/leaning_wither_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:leaning_wither_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-light-blue-urn",
+    "name": "light blue urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/light_blue_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:light_blue_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:light_blue_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-light-gray-urn",
+    "name": "light gray urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/light_gray_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:light_gray_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:light_gray_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lime-urn",
+    "name": "lime urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/lime_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:lime_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:lime_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-lying-skeleton-from-bone-carving",
+    "name": "lying skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/lying_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:lying_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-lying-wither-skeleton-from-bone-carving",
+    "name": "lying wither skeleton from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/lying_wither_skeleton_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:lying_wither_skeleton"
+    }
+  },
+  {
+    "anchor": "receita-magenta-urn",
+    "name": "magenta urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/magenta_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:magenta_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:magenta_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mangrove-coffin",
+    "name": "mangrove coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/mangrove_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:mangrove_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:mangrove_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mossy-cobblestone-gravestone",
+    "name": "mossy cobblestone gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/mossy_cobblestone_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:mossy_cobblestone"
+        }
+      },
+      "result": {
+        "id": "graveyard:mossy_cobblestone_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-mossy-stone-bricks-gravestone",
+    "name": "mossy stone bricks gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/mossy_stone_bricks_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:mossy_stone_bricks"
+        }
+      },
+      "result": {
+        "id": "graveyard:mossy_stone_bricks_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-oak-coffin",
+    "name": "oak coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/oak_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:oak_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:oak_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-orange-urn",
+    "name": "orange urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/orange_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:orange_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:orange_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-ossuary",
+    "name": "ossuary",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/ossuary.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "YYY",
+        "XYX"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:bone"
+        },
+        "Y": {
+          "item": "graveyard:corruption"
+        },
+        "X": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:black_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pedestal",
+    "name": "pedestal",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/pedestal.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        " # ",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobbled_deepslate"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "graveyard:pedestal"
+      }
+    }
+  },
+  {
+    "anchor": "receita-pink-urn",
+    "name": "pink urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/pink_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:pink_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:pink_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-purple-urn",
+    "name": "purple urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/purple_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:purple_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:purple_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-quartz-bricks-gravestone",
+    "name": "quartz bricks gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/quartz_bricks_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:quartz_bricks"
+        }
+      },
+      "result": {
+        "id": "graveyard:quartz_bricks_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-red-sandstone-gravestone",
+    "name": "red sandstone gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/red_sandstone_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:red_sandstone"
+        }
+      },
+      "result": {
+        "id": "graveyard:red_sandstone_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-red-urn",
+    "name": "red urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/red_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:red_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:red_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sandstone-gravestone",
+    "name": "sandstone gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/sandstone_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:sandstone"
+        }
+      },
+      "result": {
+        "id": "graveyard:sandstone_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-sarcophagus",
+    "name": "sarcophagus",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/sarcophagus.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cobbled_deepslate"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:sarcophagus"
+      }
+    }
+  },
+  {
+    "anchor": "receita-skeleton-hand-from-bone-carving",
+    "name": "skeleton hand from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/skeleton_hand_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:skeleton_hand"
+    }
+  },
+  {
+    "anchor": "receita-skull-on-pike-from-bone-carving",
+    "name": "skull on pike from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/skull_on_pike_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:skull_on_pike"
+    }
+  },
+  {
+    "anchor": "receita-skull-pile-from-bone-carving",
+    "name": "skull pile from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/skull_pile_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:skull_pile"
+    }
+  },
+  {
+    "anchor": "receita-skull-with-rib-cage-bone-carving",
+    "name": "skull with rib cage bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/skull_with_rib_cage_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:skull_with_rib_cage"
+    }
+  },
+  {
+    "anchor": "receita-small-black-urn",
+    "name": "small black urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_black_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:black_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_black_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-blue-urn",
+    "name": "small blue urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_blue_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:blue_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_blue_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-brown-urn",
+    "name": "small brown urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_brown_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:brown_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_brown_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-cyan-urn",
+    "name": "small cyan urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_cyan_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:cyan_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_cyan_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-gray-urn",
+    "name": "small gray urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_gray_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:gray_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_gray_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-green-urn",
+    "name": "small green urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_green_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:green_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_green_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-light-blue-urn",
+    "name": "small light blue urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_light_blue_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:light_blue_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_light_blue_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-light-gray-urn",
+    "name": "small light gray urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_light_gray_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:light_gray_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_light_gray_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-lime-urn",
+    "name": "small lime urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_lime_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:lime_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_lime_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-magenta-urn",
+    "name": "small magenta urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_magenta_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:magenta_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_magenta_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-orange-urn",
+    "name": "small orange urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_orange_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:orange_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_orange_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-pink-urn",
+    "name": "small pink urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_pink_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:pink_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_pink_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-purple-urn",
+    "name": "small purple urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_purple_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:purple_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_purple_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-red-urn",
+    "name": "small red urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_red_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:red_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_red_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-white-urn",
+    "name": "small white urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_white_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:white_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_white_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-small-yellow-urn",
+    "name": "small yellow urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/small_yellow_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:yellow_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:small_yellow_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-soul-fire-brazier",
+    "name": "soul fire brazier",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/soul_fire_brazier.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "   ",
+        "#Y#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "graveyard:dark_iron_ingot"
+        },
+        "Y": {
+          "item": "minecraft:soul_soil"
+        }
+      },
+      "result": {
+        "count": 1,
+        "id": "graveyard:soul_fire_brazier"
+      }
+    }
+  },
+  {
+    "anchor": "receita-spruce-coffin",
+    "name": "spruce coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/spruce_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:spruce_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:spruce_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-stone-bricks-gravestone",
+    "name": "stone bricks gravestone",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/stone_bricks_gravestone.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        " # ",
+        "###",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:stone_bricks"
+        }
+      },
+      "result": {
+        "id": "graveyard:stone_bricks_gravestone"
+      }
+    }
+  },
+  {
+    "anchor": "receita-torso-pile-from-bone-carving",
+    "name": "torso pile from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/torso_pile_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:torso_pile"
+    }
+  },
+  {
+    "anchor": "receita-warped-coffin",
+    "name": "warped coffin",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/warped_coffin.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "#Z#",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:warped_planks"
+        },
+        "Z": {
+          "item": "graveyard:dark_iron_ingot"
+        }
+      },
+      "result": {
+        "id": "graveyard:warped_coffin"
+      }
+    }
+  },
+  {
+    "anchor": "receita-white-urn",
+    "name": "white urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/white_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:white_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:white_urn"
+      }
+    }
+  },
+  {
+    "anchor": "receita-wither-bone-remains-from-bone-carving",
+    "name": "wither bone remains from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/wither_bone_remains_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:wither_bone_remains"
+    }
+  },
+  {
+    "anchor": "receita-wither-skeleton-hand-from-bone-carving",
+    "name": "wither skeleton hand from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/wither_skeleton_hand_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:wither_skeleton_hand"
+    }
+  },
+  {
+    "anchor": "receita-wither-skull-on-pike-from-bone-carving",
+    "name": "wither skull on pike from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/wither_skull_on_pike_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:wither_skull_on_pike"
+    }
+  },
+  {
+    "anchor": "receita-wither-skull-pile-from-bone-carving",
+    "name": "wither skull pile from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/wither_skull_pile_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:wither_skull_pile"
+    }
+  },
+  {
+    "anchor": "receita-wither-skull-with-rib-cage-bone-carving",
+    "name": "wither skull with rib cage bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/wither_skull_with_rib_cage_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:wither_skull_with_rib_cage"
+    }
+  },
+  {
+    "anchor": "receita-wither-torso-pile-from-bone-carving",
+    "name": "wither torso pile from bone carving",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/wither_torso_pile_from_bone_carving.json",
+    "recipe": {
+      "type": "graveyard:ossuary_carving",
+      "count": 1,
+      "ingredient": {
+        "item": "minecraft:bone_block"
+      },
+      "result": "graveyard:wither_torso_pile"
+    }
+  },
+  {
+    "anchor": "receita-yellow-urn",
+    "name": "yellow urn",
+    "source": "evidence-gy/graveyard-2.6.2 NeoForge 1.21.1.jar::data/graveyard/recipe/yellow_urn.json",
+    "recipe": {
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "###",
+        "# #",
+        "###"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:yellow_glazed_terracotta"
+        }
+      },
+      "result": {
+        "id": "graveyard:yellow_urn"
+      }
+    }
+  }
+]

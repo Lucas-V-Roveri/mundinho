@@ -1,0 +1,536 @@
+{
+  "version": "2.6.2 · NeoForge · Minecraft 1.21.1",
+  "catalog_reference": "Lucas-V-Roveri/mundinho@de517bc · catalog-reference/data/bestiary-graveyard-5e.ts",
+  "method": "Geometrias, hierarquia, pivôs, UV e texturas do JAR exato; estados e valores documentados por imagem.",
+  "limits": [
+    "Representações técnicas estáticas, sem executar o jogo. Transições de animação e shaders não executados.",
+    "Enquadramento normalizado e luz/emissão simplificados.",
+    "Informações não confirmadas e estados omitidos indicados junto à imagem."
+  ],
+  "build": {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "neoforge"
+    ],
+    "environment": "client_and_server",
+    "id": "3fmcJgpp",
+    "project_id": "hEydzhit",
+    "author_id": "BKXFbSA5",
+    "featured": false,
+    "name": "The Graveyard (Unofficial Port) 2.6.2",
+    "version_number": "2.6.2",
+    "changelog": "",
+    "changelog_url": null,
+    "date_published": "2026-06-07T22:33:50.169700Z",
+    "downloads": 7810,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "4sIqTsv8",
+        "hashes": {
+          "sha1": "5f39b42da116986d36768e9a47c54986f5317fdc",
+          "sha512": "c4e7cf2b531ccf04dca104c6bffe68d6c107138bb9b797dcc61b370842d83b5ac5045de19bd1b22a8ebcbc0e26282735611af4f2fd6e56c6206d7d8870e9500a"
+        },
+        "url": "https://cdn.modrinth.com/data/hEydzhit/versions/3fmcJgpp/graveyard-2.6.2%20NeoForge%201.21.1.jar",
+        "filename": "graveyard-2.6.2 NeoForge 1.21.1.jar",
+        "primary": true,
+        "size": 14895616,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  "jar_sha256": "69dd4501da1fcc596d8ab7e09f32259ad1beee7e031fd5ab2d9c6cff4a8c8b2b",
+  "source_files_sha256": {
+    "assets/graveyard/animations/falling_corpse/falling_corpse.animation.json": "840cb95aa9712daea677dbb63d1c37fd4bc489b23adf148e6f95497b40c3cd45",
+    "assets/graveyard/animations/ghoul/ghoul.animation.json": "41d4d68cb66fd8ce2ac1974197f09883a07c5e479a66f805ccba476ddd5c06aa",
+    "assets/graveyard/animations/ghouling/ghouling.animation.json": "c778a882b15e75f1dfbf3fdc9209564549d42b6dcb965b61827141f066a00ff0",
+    "assets/graveyard/animations/lich/lich.animation.json": "f97b96e75bdbd3ea35daf0d101bf79bed332b355ad679f45dd1d98c35a4be94b",
+    "assets/graveyard/animations/nameless_hanged/nameless_hanged.animation.json": "b78ebe1f9b9d1925b05b0ca1a063a6e5601066fc076a3db4ad073566631fa616",
+    "assets/graveyard/animations/nightmare/nightmare.animation.json": "5fc615ad5b747807ba8f581bbcde2b915da9739e31f9aa3ecebbca8b8e0ee352",
+    "assets/graveyard/animations/reaper/reaper.animation.json": "3cbf4f11e0a27776ce449d408f16f3714377e30ddcc532fea5e542716ad7120b",
+    "assets/graveyard/animations/revenant/revenant.animation.json": "052d3b99917725c5814b78f5af193bb9e9ce5abff00de31807a7cb9f36a094c4",
+    "assets/graveyard/animations/wraith/wraith.animation.json": "2876f1d05ab700f96ebc09e46204f56c7daf713540478d82f0e8cb7e8ec79788",
+    "assets/graveyard/geo/falling_corpse.geo.json": "d68facc296c156187c71863767dc6b29dc579fb0332d651181394d1e498af5f8",
+    "assets/graveyard/geo/ghoul.geo.json": "54160af1dab45f7de6378c64fde33cc03850f9156366c5016db61096a54758d3",
+    "assets/graveyard/geo/ghouling.geo.json": "1f3b150d61144f0a07f7a30338f0bcb70b09052ebbe75d8c51c7016b34f90a36",
+    "assets/graveyard/geo/lich.geo.json": "72e60880802cb9b48aace0366e9b27d9e90c6a3425605ba2ef0aed4f5ec7b286",
+    "assets/graveyard/geo/nameless_hanged.geo.json": "40f4deaf695d991044450ddd68754ba00c176735796a32fb963a822ae4c87a5b",
+    "assets/graveyard/geo/nightmare.geo.json": "a90ab63780ec7a56b463d875eff048b1c965ea0ff00073e0e8f34aa07546e8a3",
+    "assets/graveyard/geo/reaper.geo.json": "c94bdbe633ef67116691bc437f55d4bd5b712fa41646d4a8b6d44595f21e43d7",
+    "assets/graveyard/geo/revenant.geo.json": "82f88fb3f21ebec39629f34f896c1818229a777c3d7e815c9d8b4f3c3412145d",
+    "assets/graveyard/geo/wraith.geo.json": "b95f8f70dd0e436af8d0eba47d1d038388fa63e6579b502830adb79858efe62b",
+    "assets/graveyard/textures/entity/1_ghouling.png": "507342cee32028493c446d2bbd881947c1036912264a40233c1348e40928e03d",
+    "assets/graveyard/textures/entity/2_ghouling.png": "e3d6cab2efb6872dcba63fd92419b3fdbe7401ea3ef5b4cc87325a3816d71235",
+    "assets/graveyard/textures/entity/3_ghouling.png": "6c17f00975f75a4e6bd1dfacb2f95f5e6683228d97f9f2ea9462328906448f36",
+    "assets/graveyard/textures/entity/4_ghouling.png": "226a2ba6be76d93d68b045aaea38625de5fa716b74f5bc5eaf87c0a9770d5aaf",
+    "assets/graveyard/textures/entity/5_ghouling.png": "f178da3bfd2b1e256ace02c169fc1b822ec4e85ab35b579e48847e2e10268666",
+    "assets/graveyard/textures/entity/acolyte.png": "38795ff8ad9117818f9d3da55f76316d96f87c03082ec418f0f59b6a7771f8b4",
+    "assets/graveyard/textures/entity/acolyte_eyes.png": "700c759b6b7bc814f59e7c5e790a3c309207cec5556bd3cf62f841e448318439",
+    "assets/graveyard/textures/entity/corrupted_pillager.png": "72b38004777db24aeeb63d45791a037719a7398642d00d91bd363b8a8b2ce75f",
+    "assets/graveyard/textures/entity/corrupted_vindicator.png": "8ecf8d2dc7199f087ed6de5dae39e9d702019d5615d4975e20b25ec58b4b0797",
+    "assets/graveyard/textures/entity/ghoul_skin1.png": "be07edbbdfa7a2109aad4ab8cd94b3b3c6a0c93d5591b7fbde2d7746e21bd950",
+    "assets/graveyard/textures/entity/ghoul_skin2.png": "2ce6aac9ebb9988f75ed0d54dd9e47dab1720a6fa6c86c9466a16de8b59e3097",
+    "assets/graveyard/textures/entity/ghoul_skin3.png": "23af4e43b33eb6dd4d62eeb182648bf89689ea7d3fc8778d3d71f60379e49dc7",
+    "assets/graveyard/textures/entity/ghoul_skin4.png": "28b2cc955a474b185158b8054be3eb5268363e8d468542d787b4c21007672fb9",
+    "assets/graveyard/textures/entity/ghoul_skin5.png": "522173a1407bd48d513d492a0fb3e5866c7772dd60e0273d2c9b24dbdbaca6e9",
+    "assets/graveyard/textures/entity/ghoul_skin6.png": "728b85171337be2b03c3bfa99f2f7e0c4fdfa22e4d399b933964806866f26151",
+    "assets/graveyard/textures/entity/ghoul_skin7.png": "ed31695f4d3f70372966d0a223a716a9328bab039048a686c93c494b7cf523fd",
+    "assets/graveyard/textures/entity/ghoul_skin8.png": "0b5fcc767dadf1cb7f1a51566435b41133af5aa62ec73792bdf5996d75645cd3",
+    "assets/graveyard/textures/entity/lich_eye_texture.png": "5444e10eab50f1cdea8bbc113b5038c66b2e6b9e04668686f25cb2dd747a26b7",
+    "assets/graveyard/textures/entity/lich_texture.png": "b965e9ff7eabbd028b19439da57791346de1735dc98f3acbe2db2a146f5bdd55",
+    "assets/graveyard/textures/entity/nameless_hanged.png": "975480d4def538e8c9e5f7cec13ace2a260618b15821ac887c8606ae2be43774",
+    "assets/graveyard/textures/entity/nightmare.png": "f78f134608bf7ae82c77c8f59fa57b084ed7525f7fe8c2d6262968c7b1abf59c",
+    "assets/graveyard/textures/entity/reaper.png": "103db8fbbe202718ed7aca263fe2ec8ac9221c8ff6deb1701e26806418226e7e",
+    "assets/graveyard/textures/entity/reaper_eyes.png": "bb7acde84a85dc3e6f79618ee245285e16a7e08393660cf4b59833191612028e",
+    "assets/graveyard/textures/entity/revenant.png": "70519008a2d81edbc06cdf0a3a63e5b6741d324cd08c47ba4f78d0d1a00495d1",
+    "assets/graveyard/textures/entity/revenant_eyes.png": "9c6de7e5355d150ef455c735b3bd92feedc546477338060fd6d17e4fdacc80b9",
+    "assets/graveyard/textures/entity/skeleton_creeper.png": "6aa75c71c8420d658c9751938a3ff9bd0ba59f2f797dfa31757d5497cbf407db",
+    "assets/graveyard/textures/entity/skeleton_creeper_eyes.png": "80402ace0ff2081f9bd249a1cbea29b57318458ec7adadae3cc13e5ba2e510f1",
+    "assets/graveyard/textures/entity/wraith_eyes.png": "22949603be8ab2a0b4d90728d16d78a869d95788a2b1c1bfb99ea094dce47039",
+    "assets/graveyard/textures/entity/wraith_opaque.png": "d9f74b8414388df0383889f1853bcf6747a4e8b23f63bbf51300a28f810cd8c6",
+    "com/finallion/graveyard/entities/CorruptedIllager.class": "fd3ec35ba0eda6e32d5620fbb986fe5fbe831ed4a6566ec31b1dfcd9c240f929",
+    "com/finallion/graveyard/entities/CorruptedPillager.class": "067f94a6e1cfc2aeb6991d3b20b9d2006f21d9f82223055cef812fb6b60e1217",
+    "com/finallion/graveyard/entities/CorruptedVindicator.class": "0f4232399b8df3f211a5701c74df3792cb9d66f0bb67adf5e10528629387cdc2",
+    "com/finallion/graveyard/entities/FallingCorpse.class": "4a42c223d618bbf4f7c4d5cc8137d7f7e09929ad9137aa39f835f9b3d6df3dfa",
+    "com/finallion/graveyard/entities/GhoulEntity.class": "83cbadbda09788df5f5d9b0b0c8b3bc3e54ae439dc3b0529c91cdcdcef13c197",
+    "com/finallion/graveyard/entities/GhoulingEntity.class": "eed2599baa8812b4941afd913668878c8710e595fac68956ad0dc5c2aeceb50a",
+    "com/finallion/graveyard/entities/LichEntity.class": "ec947249df5cdd66e105ecb850a61d94417a90e60a8bcf216efb7079c6c79cd6",
+    "com/finallion/graveyard/entities/NamelessHangedEntity.class": "c94fd3fff3e2c97b8f18041b29f2d11eead128c5715165c0c1c417d8780d36d7",
+    "com/finallion/graveyard/entities/NightmareEntity.class": "4b6c428184c308c6392a51e2db58a9a5f5d109afc59c1c98260d21bdeae352d2",
+    "com/finallion/graveyard/entities/ReaperEntity.class": "85a80fac001cc7e94b92362bbd13f2db0ddebf498e2d4225bd1c997adc83e1a1",
+    "com/finallion/graveyard/entities/RevenantEntity.class": "e89b581cab3f947b32c132dda8683d5349329de00a28ee805126a845822128c7",
+    "com/finallion/graveyard/entities/WraithEntity.class": "219ac3a8fa2d18a9013ec230f9668227a5a5f4fa957ade0cf645b4b2596994ed",
+    "com/finallion/graveyard/entities/models/BaseGhoulModel.class": "fae6f6339881616a4fe7f64422654a822d328fb084a1c22ea8a1602dc8fbc481",
+    "com/finallion/graveyard/entities/models/CorruptedIllagerModel.class": "7d03e4afacfcf18dd448d4ef4d23b08985b0eaeca4b71435966f9556a65595bf",
+    "com/finallion/graveyard/entities/models/FallingCorpseModel.class": "03f85cbe0876b3f01a4f1749c0b4d84db45eda4a5925160c3c6b5ccf4b08ddd2",
+    "com/finallion/graveyard/entities/models/GhoulingModel.class": "3b2e53761781702f2f628a7e047f062b2bb7c7fcbaf89a82a072c4e3162101b7",
+    "com/finallion/graveyard/entities/models/LichModel.class": "c3c88427ad80d2f1ecb2e6b6365de3dd3998f51825c24ba77ba4368d75232d83",
+    "com/finallion/graveyard/entities/models/NamelessHangedModel.class": "fc70c52e9354e1b985d2ccd116bae6c82bfe786a2c64cb5c3f084f29538b2a2e",
+    "com/finallion/graveyard/entities/models/NightmareModel.class": "efebcbacbeeae842b56793e6f66b970ae236c0ee7748d97162429ba61b85bf8a",
+    "com/finallion/graveyard/entities/models/ReaperModel.class": "794277f29e45c7ab6a607453ceefb25f51cce3d6be32ee0b36f0e94613783c61",
+    "com/finallion/graveyard/entities/models/RevenantModel.class": "b25be82c12f19068949754ff68c97103362a9fba79c85dfebf862e5145b21e44",
+    "com/finallion/graveyard/entities/models/WraithModel.class": "aab56b29d01931671a6c1272d12c37cb4cf992dffe40176f79df4fa707c5f506",
+    "com/finallion/graveyard/entities/renders/AcolyteRender.class": "a25fb2e7cb3f796e50e42344adb2f786c116c6f2780b83a5ece26ef8b163c973",
+    "com/finallion/graveyard/entities/renders/CorruptedPillagerRenderer.class": "df1b911e8e5c187cf5f6321c5048dbfc98e8a0176eb6e4bc6c3d47bc1c8b299d",
+    "com/finallion/graveyard/entities/renders/CorruptedVindicatorRenderer.class": "370204ee82cd2355f4232b5fd8f73b7ddfa8c9be4ba62b017f34538ab66ded1c",
+    "com/finallion/graveyard/entities/renders/FallingCorpseRenderer.class": "a3697334409dd383ebfd24f46546deb703eeb6ef16e0d1781c47f9768ddbf586",
+    "com/finallion/graveyard/entities/renders/GhoulRenderer.class": "2a1a9e39429e94c89f42c7f8b64f3bbaa20b2bbb0254e533e8e5d267ebfa88f7",
+    "com/finallion/graveyard/entities/renders/GhoulingRenderer.class": "ee04244939eac0ba3dc5a1811c76dd0d0ec37c66adc68b64bbdc960adbd56495",
+    "com/finallion/graveyard/entities/renders/LichRenderer.class": "c3785c975b6a5e90e45999d773f5625fc0f5f937aa3913cb3975b99a1ae888d3",
+    "com/finallion/graveyard/entities/renders/NamelessHangedRenderer.class": "2e525453348d325ab63efb18fa6ee2e9f0a188fcdf415d9c2a9605b922535887",
+    "com/finallion/graveyard/entities/renders/NightmareRenderer.class": "08685ce4f97ed740328983c729d3566deec6e93fe91e1f275b130eec5d13605c",
+    "com/finallion/graveyard/entities/renders/ReaperRenderer.class": "77b6d99617ec58b6dbaaa8a926be1f1b66b491d98e07fbe96edc5ae0803ed0ca",
+    "com/finallion/graveyard/entities/renders/RevenantRenderer.class": "3dd4e6215e11dea6b56c7faaae7073d0138cc74b67def0788b948ea6a0882e4e",
+    "com/finallion/graveyard/entities/renders/SkeletonCreeperRender.class": "5ec5c4592f5680a8af1346c0577f973af0ff13f8685f0ceee7af3537fe02a000",
+    "com/finallion/graveyard/entities/renders/WraithRenderer.class": "22fe3204c7f6735ff1e787a3aa48c28774a4adc58a44543e0993ac277e98b088",
+    "com/finallion/graveyard/entities/renders/features/AcolyteEyes.class": "e7a952b87f6cdbab1975a417444b500dbfa623dd2a66b7ccd2c07bbb2c7fa6c2",
+    "com/finallion/graveyard/entities/renders/features/LichEyesFeatureRenderer.class": "c710145e210d1c43c011849fcaca4c97a2652d8ae2a447e077bf665a787fd144",
+    "com/finallion/graveyard/entities/renders/features/ReaperEyesFeatureRenderer.class": "6d8385a09ca335040ea9c434413bc935b507e2ac43e96d6be9a699482d5a50bb",
+    "com/finallion/graveyard/entities/renders/features/RevenantEyesFeatureRenderer.class": "5afcc0737c054d98cc31b4f99d724ef2c048b66cdeff3ae511d0c86eb4e9e959",
+    "com/finallion/graveyard/entities/renders/features/SkeletonCreeperEyes.class": "f418059f83dc131aeb35c879ed75a79acc6fd4a9c0c94c6c4e6e87571b723028",
+    "com/finallion/graveyard/entities/renders/features/WraithEyesFeatureRenderer.class": "34fd69df160f80a22dd5637decfc5d1d48ec8401da71ae7270e45ab759fbaf70"
+  },
+  "images": [
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 1",
+      "image": "ghoul-1.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin1.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 2",
+      "image": "ghoul-2.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin2.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 3",
+      "image": "ghoul-3.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin3.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 4",
+      "image": "ghoul-4.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin4.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 5",
+      "image": "ghoul-5.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin5.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 6",
+      "image": "ghoul-6.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin6.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 7",
+      "image": "ghoul-7.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin7.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghoul",
+      "mob": "Ghoul · 8",
+      "image": "ghoul-8.png",
+      "model": "assets/graveyard/geo/ghoul.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulRenderer.class",
+      "texture": "assets/graveyard/textures/entity/ghoul_skin8.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/BaseGhoulModel.class",
+        "com/finallion/graveyard/entities/GhoulEntity.class",
+        "assets/graveyard/animations/ghoul/ghoul.animation.json"
+      ],
+      "boxes": 53,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:reaper",
+      "mob": "Reaper",
+      "image": "reaper.png",
+      "model": "assets/graveyard/geo/reaper.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/ReaperRenderer.class",
+      "texture": "assets/graveyard/textures/entity/reaper.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/ReaperModel.class",
+        "com/finallion/graveyard/entities/ReaperEntity.class",
+        "assets/graveyard/animations/reaper/reaper.animation.json",
+        "com/finallion/graveyard/entities/renders/features/ReaperEyesFeatureRenderer.class",
+        "assets/graveyard/textures/entity/reaper_eyes.png"
+      ],
+      "boxes": 56,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:nightmare",
+      "mob": "Nightmare",
+      "image": "nightmare.png",
+      "model": "assets/graveyard/geo/nightmare.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/NightmareRenderer.class",
+      "texture": "assets/graveyard/textures/entity/nightmare.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/NightmareModel.class",
+        "com/finallion/graveyard/entities/NightmareEntity.class",
+        "assets/graveyard/animations/nightmare/nightmare.animation.json"
+      ],
+      "boxes": 24,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:revenant",
+      "mob": "Revenant",
+      "image": "revenant.png",
+      "model": "assets/graveyard/geo/revenant.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/RevenantRenderer.class",
+      "texture": "assets/graveyard/textures/entity/revenant.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/RevenantModel.class",
+        "com/finallion/graveyard/entities/RevenantEntity.class",
+        "assets/graveyard/animations/revenant/revenant.animation.json",
+        "com/finallion/graveyard/entities/renders/features/RevenantEyesFeatureRenderer.class",
+        "assets/graveyard/textures/entity/revenant_eyes.png"
+      ],
+      "boxes": 38,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:wraith",
+      "mob": "Wraith",
+      "image": "wraith.png",
+      "model": "assets/graveyard/geo/wraith.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/WraithRenderer.class",
+      "texture": "assets/graveyard/textures/entity/wraith_opaque.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/WraithModel.class",
+        "com/finallion/graveyard/entities/WraithEntity.class",
+        "assets/graveyard/animations/wraith/wraith.animation.json",
+        "com/finallion/graveyard/entities/renders/features/WraithEyesFeatureRenderer.class",
+        "assets/graveyard/textures/entity/wraith_eyes.png"
+      ],
+      "boxes": 46,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:ghouling",
+      "mob": "Ghouling · 1",
+      "image": "ghouling-1.png",
+      "model": "assets/graveyard/geo/ghouling.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulingRenderer.class",
+      "texture": "assets/graveyard/textures/entity/1_ghouling.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/GhoulingModel.class",
+        "com/finallion/graveyard/entities/GhoulingEntity.class",
+        "assets/graveyard/animations/ghouling/ghouling.animation.json"
+      ],
+      "boxes": 52,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas. Variant=1, hasCoffin=false (chain ocultada pelo renderer). O valor inicial Variant=0 pede 0_ghouling.png, ausente nesta build; aparência padrão não confirmada. Estas imagens usam somente os caminhos 1–5 existentes e selecionáveis por Variant/NBT."
+    },
+    {
+      "entity_id": "graveyard:ghouling",
+      "mob": "Ghouling · 2",
+      "image": "ghouling-2.png",
+      "model": "assets/graveyard/geo/ghouling.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulingRenderer.class",
+      "texture": "assets/graveyard/textures/entity/2_ghouling.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/GhoulingModel.class",
+        "com/finallion/graveyard/entities/GhoulingEntity.class",
+        "assets/graveyard/animations/ghouling/ghouling.animation.json"
+      ],
+      "boxes": 52,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas. Variant=2, hasCoffin=false (chain ocultada pelo renderer). O valor inicial Variant=0 pede 0_ghouling.png, ausente nesta build; aparência padrão não confirmada. Estas imagens usam somente os caminhos 1–5 existentes e selecionáveis por Variant/NBT."
+    },
+    {
+      "entity_id": "graveyard:ghouling",
+      "mob": "Ghouling · 3",
+      "image": "ghouling-3.png",
+      "model": "assets/graveyard/geo/ghouling.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulingRenderer.class",
+      "texture": "assets/graveyard/textures/entity/3_ghouling.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/GhoulingModel.class",
+        "com/finallion/graveyard/entities/GhoulingEntity.class",
+        "assets/graveyard/animations/ghouling/ghouling.animation.json"
+      ],
+      "boxes": 52,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas. Variant=3, hasCoffin=false (chain ocultada pelo renderer). O valor inicial Variant=0 pede 0_ghouling.png, ausente nesta build; aparência padrão não confirmada. Estas imagens usam somente os caminhos 1–5 existentes e selecionáveis por Variant/NBT."
+    },
+    {
+      "entity_id": "graveyard:ghouling",
+      "mob": "Ghouling · 4",
+      "image": "ghouling-4.png",
+      "model": "assets/graveyard/geo/ghouling.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulingRenderer.class",
+      "texture": "assets/graveyard/textures/entity/4_ghouling.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/GhoulingModel.class",
+        "com/finallion/graveyard/entities/GhoulingEntity.class",
+        "assets/graveyard/animations/ghouling/ghouling.animation.json"
+      ],
+      "boxes": 52,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas. Variant=4, hasCoffin=false (chain ocultada pelo renderer). O valor inicial Variant=0 pede 0_ghouling.png, ausente nesta build; aparência padrão não confirmada. Estas imagens usam somente os caminhos 1–5 existentes e selecionáveis por Variant/NBT."
+    },
+    {
+      "entity_id": "graveyard:ghouling",
+      "mob": "Ghouling · 5",
+      "image": "ghouling-5.png",
+      "model": "assets/graveyard/geo/ghouling.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/GhoulingRenderer.class",
+      "texture": "assets/graveyard/textures/entity/5_ghouling.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/GhoulingModel.class",
+        "com/finallion/graveyard/entities/GhoulingEntity.class",
+        "assets/graveyard/animations/ghouling/ghouling.animation.json"
+      ],
+      "boxes": 52,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas. Variant=5, hasCoffin=false (chain ocultada pelo renderer). O valor inicial Variant=0 pede 0_ghouling.png, ausente nesta build; aparência padrão não confirmada. Estas imagens usam somente os caminhos 1–5 existentes e selecionáveis por Variant/NBT."
+    },
+    {
+      "entity_id": "graveyard:nameless_hanged",
+      "mob": "Nameless Hanged",
+      "image": "nameless-hanged.png",
+      "model": "assets/graveyard/geo/nameless_hanged.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/NamelessHangedRenderer.class",
+      "texture": "assets/graveyard/textures/entity/nameless_hanged.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/NamelessHangedModel.class",
+        "com/finallion/graveyard/entities/NamelessHangedEntity.class",
+        "assets/graveyard/animations/nameless_hanged/nameless_hanged.animation.json"
+      ],
+      "boxes": 34,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:falling_corpse",
+      "mob": "Falling Corpse",
+      "image": "falling-corpse.png",
+      "model": "assets/graveyard/geo/falling_corpse.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/FallingCorpseRenderer.class",
+      "texture": "minecraft:assets/minecraft/textures/entity/skeleton/stray.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/FallingCorpseModel.class",
+        "com/finallion/graveyard/entities/FallingCorpse.class",
+        "assets/graveyard/animations/falling_corpse/falling_corpse.animation.json"
+      ],
+      "boxes": 6,
+      "notes": "Modelo e textura da build exata; animação falling no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:lich",
+      "mob": "Lich · phase-1",
+      "image": "lich-phase-1.png",
+      "model": "assets/graveyard/geo/lich.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/LichRenderer.class",
+      "texture": "assets/graveyard/textures/entity/lich_texture.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/LichModel.class",
+        "com/finallion/graveyard/entities/LichEntity.class",
+        "assets/graveyard/animations/lich/lich.animation.json",
+        "com/finallion/graveyard/entities/renders/features/LichEyesFeatureRenderer.class",
+        "assets/graveyard/textures/entity/lich_eye_texture.png"
+      ],
+      "boxes": 165,
+      "notes": "Modelo e textura da build exata; animação idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:lich",
+      "mob": "Lich · phase-2",
+      "image": "lich-phase-2.png",
+      "model": "assets/graveyard/geo/lich.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/LichRenderer.class",
+      "texture": "assets/graveyard/textures/entity/lich_texture.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/LichModel.class",
+        "com/finallion/graveyard/entities/LichEntity.class",
+        "assets/graveyard/animations/lich/lich.animation.json",
+        "com/finallion/graveyard/entities/renders/features/LichEyesFeatureRenderer.class",
+        "assets/graveyard/textures/entity/lich_eye_texture.png"
+      ],
+      "boxes": 165,
+      "notes": "Modelo e textura da build exata; animação phase_two_idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:lich",
+      "mob": "Lich · crawl",
+      "image": "lich-crawl.png",
+      "model": "assets/graveyard/geo/lich.geo.json",
+      "renderer": "com/finallion/graveyard/entities/renders/LichRenderer.class",
+      "texture": "assets/graveyard/textures/entity/lich_texture.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/models/LichModel.class",
+        "com/finallion/graveyard/entities/LichEntity.class",
+        "assets/graveyard/animations/lich/lich.animation.json",
+        "com/finallion/graveyard/entities/renders/features/LichEyesFeatureRenderer.class",
+        "assets/graveyard/textures/entity/lich_eye_texture.png"
+      ],
+      "boxes": 165,
+      "notes": "Modelo e textura da build exata; animação crawl_idle no instante 0. Sem equipamentos externos, partículas ou efeitos de ataque. Luz simplificada; camadas originais dos olhos compostas com emissão aproximada, sem executar shader. Transições de animação não executadas."
+    },
+    {
+      "entity_id": "graveyard:skeleton_creeper",
+      "mob": "Skeleton Creeper",
+      "image": "skeleton-creeper.png",
+      "model": "minecraft:net.minecraft.client.model.CreeperModel",
+      "renderer": "com/finallion/graveyard/entities/renders/SkeletonCreeperRender.class",
+      "texture": "assets/graveyard/textures/entity/skeleton_creeper.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/renders/features/SkeletonCreeperEyes.class",
+        "assets/graveyard/textures/entity/skeleton_creeper_eyes.png"
+      ],
+      "notes": "Adulto parado, cabeça neutra; swelling=0, powered=false. Geometria e textura originais, sem equipamentos externos. Corrupted Vindicator preserva o braço danificado próprio da classe. Luz e emissão simplificadas; jogo não executado."
+    },
+    {
+      "entity_id": "graveyard:acolyte",
+      "mob": "Acolyte",
+      "image": "acolyte.png",
+      "model": "com/finallion/graveyard/entities/models/CorruptedIllagerModel.class",
+      "renderer": "com/finallion/graveyard/entities/renders/AcolyteRender.class",
+      "texture": "assets/graveyard/textures/entity/acolyte.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/CorruptedIllager.class",
+        "com/finallion/graveyard/entities/renders/features/AcolyteEyes.class",
+        "assets/graveyard/textures/entity/acolyte_eyes.png"
+      ],
+      "notes": "Adulto parado, cabeça neutra; CROSSED. Geometria e textura originais, sem equipamentos externos. Corrupted Vindicator preserva o braço danificado próprio da classe. Luz e emissão simplificadas; jogo não executado."
+    },
+    {
+      "entity_id": "graveyard:corrupted_pillager",
+      "mob": "Corrupted Pillager",
+      "image": "corrupted-pillager.png",
+      "model": "com/finallion/graveyard/entities/models/CorruptedIllagerModel.class",
+      "renderer": "com/finallion/graveyard/entities/renders/CorruptedPillagerRenderer.class",
+      "texture": "assets/graveyard/textures/entity/corrupted_pillager.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/CorruptedIllager.class",
+        "com/finallion/graveyard/entities/CorruptedPillager.class"
+      ],
+      "notes": "Adulto parado, cabeça neutra; UNDEAD. Geometria e textura originais, sem equipamentos externos. Corrupted Vindicator preserva o braço danificado próprio da classe. Luz e emissão simplificadas; jogo não executado."
+    },
+    {
+      "entity_id": "graveyard:corrupted_vindicator",
+      "mob": "Corrupted Vindicator",
+      "image": "corrupted-vindicator.png",
+      "model": "com/finallion/graveyard/entities/models/CorruptedIllagerModel.class",
+      "renderer": "com/finallion/graveyard/entities/renders/CorruptedVindicatorRenderer.class",
+      "texture": "assets/graveyard/textures/entity/corrupted_vindicator.png",
+      "extra_sources": [
+        "com/finallion/graveyard/entities/CorruptedIllager.class",
+        "com/finallion/graveyard/entities/CorruptedVindicator.class"
+      ],
+      "notes": "Adulto parado, cabeça neutra; UNDEAD. Geometria e textura originais, sem equipamentos externos. Corrupted Vindicator preserva o braço danificado próprio da classe. Luz e emissão simplificadas; jogo não executado."
+    }
+  ],
+  "site_modified": false
+}

@@ -1,0 +1,73 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Receitas auditadas — Enderman Overhaul</title><style>body{font:16px system-ui;background:#faf5e8;color:#302416;max-width:1000px;margin:auto;padding:24px}a{color:#165590}section{border:2px solid #8b7355;padding:16px;margin:20px 0;scroll-margin-top:16px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eee6d7;padding:16px}.source{overflow-wrap:anywhere;font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,48px);gap:4px}.grid span{display:grid;place-items:center;height:48px;background:#eee;border:2px solid #777}</style><a href="/bestiario">← Bestiário</a><h1>Receitas auditadas — Enderman Overhaul</h1><p>JSONs preservados das fontes auditadas. O caminho identifica a versão, datapack de compatibilidade ou overlay; variantes condicionais não são receitas universais da instância.</p><a href="eo.json">Baixar JSONs e caminhos de origem</a><section id="receita-corrupted-blade"><h2>corrupted blade</h2><p>minecraft:crafting_shaped</p><p class="source">evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/corrupted_blade.json</p><div class="grid"><span title="{&quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;}">X</span><span title="&quot;vazio&quot;">·</span><span title="&quot;vazio&quot;">·</span><span title="{&quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;}">X</span><span title="&quot;vazio&quot;">·</span><span title="&quot;vazio&quot;">·</span><span title="{&quot;item&quot;: &quot;minecraft:stick&quot;}">#</span><span title="&quot;vazio&quot;">·</span><span title="&quot;vazio&quot;">·</span></div><pre>{
+  &quot;type&quot;: &quot;minecraft:crafting_shaped&quot;,
+  &quot;category&quot;: &quot;equipment&quot;,
+  &quot;key&quot;: {
+    &quot;#&quot;: {
+      &quot;item&quot;: &quot;minecraft:stick&quot;
+    },
+    &quot;X&quot;: {
+      &quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;
+    }
+  },
+  &quot;pattern&quot;: [
+    &quot;X&quot;,
+    &quot;X&quot;,
+    &quot;#&quot;
+  ],
+  &quot;result&quot;: {
+    &quot;count&quot;: 1,
+    &quot;id&quot;: &quot;endermanoverhaul:corrupted_blade&quot;
+  },
+  &quot;show_notification&quot;: true
+}</pre></section><section id="receita-ender-eye"><h2>ender eye</h2><p>minecraft:crafting_shapeless</p><p class="source">evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/ender_eye.json</p><pre>{
+  &quot;type&quot;: &quot;minecraft:crafting_shapeless&quot;,
+  &quot;category&quot;: &quot;misc&quot;,
+  &quot;ingredients&quot;: [
+    {
+      &quot;tag&quot;: &quot;endermanoverhaul:ender_pearls&quot;
+    },
+    {
+      &quot;item&quot;: &quot;minecraft:blaze_powder&quot;
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;count&quot;: 1,
+    &quot;id&quot;: &quot;minecraft:ender_eye&quot;
+  }
+}</pre></section><section id="receita-ender-pearl"><h2>ender pearl</h2><p>minecraft:crafting_shapeless</p><p class="source">evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/ender_pearl.json</p><pre>{
+  &quot;type&quot;: &quot;minecraft:crafting_shapeless&quot;,
+  &quot;category&quot;: &quot;misc&quot;,
+  &quot;ingredients&quot;: [
+    {
+      &quot;tag&quot;: &quot;endermanoverhaul:ender_pearls&quot;
+    }
+  ],
+  &quot;result&quot;: {
+    &quot;count&quot;: 1,
+    &quot;id&quot;: &quot;minecraft:ender_pearl&quot;
+  }
+}</pre></section><section id="receita-corrupted-shield"><h2>corrupted shield</h2><p>minecraft:crafting_shaped</p><p class="source">evidence-eo/endermanoverhaul-neoforge-1.21.1-2.0.3.jar::data/endermanoverhaul/recipe/corrupted_shield.json</p><div class="grid"><span title="{&quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;}">T</span><span title="{&quot;item&quot;: &quot;minecraft:iron_ingot&quot;}">o</span><span title="{&quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;}">T</span><span title="{&quot;item&quot;: &quot;minecraft:iron_ingot&quot;}">o</span><span title="{&quot;tag&quot;: &quot;minecraft:planks&quot;}">W</span><span title="{&quot;item&quot;: &quot;minecraft:iron_ingot&quot;}">o</span><span title="{&quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;}">T</span><span title="{&quot;item&quot;: &quot;minecraft:iron_ingot&quot;}">o</span><span title="{&quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;}">T</span></div><pre>{
+  &quot;type&quot;: &quot;minecraft:crafting_shaped&quot;,
+  &quot;category&quot;: &quot;equipment&quot;,
+  &quot;key&quot;: {
+    &quot;W&quot;: {
+      &quot;tag&quot;: &quot;minecraft:planks&quot;
+    },
+    &quot;o&quot;: {
+      &quot;item&quot;: &quot;minecraft:iron_ingot&quot;
+    },
+    &quot;T&quot;: {
+      &quot;item&quot;: &quot;endermanoverhaul:enderman_tooth&quot;
+    }
+  },
+  &quot;pattern&quot;: [
+    &quot;ToT&quot;,
+    &quot;oWo&quot;,
+    &quot;ToT&quot;
+  ],
+  &quot;result&quot;: {
+    &quot;count&quot;: 1,
+    &quot;id&quot;: &quot;endermanoverhaul:corrupted_shield&quot;
+  },
+  &quot;show_notification&quot;: true
+}</pre></section></html>

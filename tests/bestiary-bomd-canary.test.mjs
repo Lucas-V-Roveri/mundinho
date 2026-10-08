@@ -27,6 +27,20 @@ function catalog(before = false) {
 const entries = catalog();
 const prior = catalog(true);
 const bomd = entries.filter(e => e.mod === 'Bosses of Mass Destruction');
+test('each integrated group covers every audited mob and row without duplicate associations', () => {
+  const coverage = JSON.parse(fs.readFileSync(path.join(root, 'data/bestiary-audit-coverage.json'), 'utf8'));
+  const groups = new Map();
+  for (const e of entries.filter(e => e.audit)) {
+    const mod = e.audit.rows[0].Mod;
+    if (!groups.has(mod)) groups.set(mod, []);
+    groups.get(mod).push(e);
+  }
+  for (const [mod, cards] of groups) {
+    assert.equal(cards.length, coverage[mod].cards, mod);
+    assert.equal(cards.reduce((n, e) => n + e.audit.rows.length, 0), coverage[mod].rows, mod);
+    assert.deepEqual(cards.map(e => e.audit.rows[0].Mob).sort(), coverage[mod].mobs, mod);
+  }
+});
 test('all published audit groups have valid images or documented exceptions and functioning recipe anchors', () => {
   const corrupt = /(?:[^;\s];\s*){8,}[^;\s]/;
   for (const e of entries.filter(e => e.audit)) {

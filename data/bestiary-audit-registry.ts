@@ -1,3 +1,6 @@
+import audit_gy from "@/data/bestiary-audit-gy.json";
+import audit_eo from "@/data/bestiary-audit-eo.json";
+import audit_co from "@/data/bestiary-audit-co.json";
 import audit_dd from "@/data/bestiary-audit-dd.json";
 import audit_ii from "@/data/bestiary-audit-ii.json";
 import audit_ff from "@/data/bestiary-audit-ff.json";
@@ -7,6 +10,9 @@ import audit_so from "@/data/bestiary-audit-so.json";
 import initial from "@/data/bestiary-integrated-audits.json";
 export const integratedAudits = {
   ...initial,
+  ...audit_gy,
+  ...audit_eo,
+  ...audit_co,
   ...audit_dd,
   ...audit_ii,
   ...audit_ff,

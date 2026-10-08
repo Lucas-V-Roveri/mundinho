@@ -24,7 +24,7 @@ CONFIG = {
  'am': ('Alex’s Mobs Continued',"Alex's Mobs Continued",'lote-final-2026-10-06/am-cards-2026-10-06.md','lote-final-2026-10-06/output-am'),
  'tf': ('Twilight Forest','The Twilight Forest','lote-final-2026-10-06/tf-cards-2026-10-06.md','lote-final-2026-10-06/output-tf'),
 }
-ALIASES = {'bumblezone-variant-bee':'Variant Bee','alexsmobs-cave-centipede':'Centipede Head','mowzies-mobs-umvuthi':'Umvuthi','mowzies-mobs-sculptor':'Sculptor','mowzies-mobs-elokosa-follower-howler':'Elokosa Follower Howler','graveyard-corrupted-champion':'Corrupted Vindicator','undergarden-minion':'Minion','undergarden-smog-mog':'Smog Mog','twilightforest-rising_zombie':'Zombie'}
+ALIASES = {'bumblezone-variant-bee':'Variant Bee','alexsmobs-cave-centipede':'Centipede Head','mowzies-mobs-umvuthi':'Umvuthi','mowzies-mobs-sculptor':'Sculptor','mowzies-mobs-elokosa-follower-howler':'Elokosa Follower Howler','mowzies-mobs-umvuthana-follower-raptor':'Umvuthana Follower Raptor','mowzies-mobs-umvuthana-follower-player':'Umvuthana Follower Player','mowzies-mobs-umvuthana-crane-player':'Umvuthana Crane Player','graveyard-corrupted-champion':'Lich','undergarden-minion':'Minion','undergarden-smog-mog':'Smog Mog','twilightforest-rising_zombie':'Zombie'}
 def norm(x): return re.sub('[^a-z0-9]','',x.lower())
 def recipe_page(slug, mod, md):
  if not md: return None, set()
@@ -72,6 +72,8 @@ for slug in sys.argv[1:]:
   if not rr[0]['Imagem'].startswith('/images/'):nulls.append(e['id'])
   out[e['id']]={'rows':rr,'recipes':[],'imageSourceUrl':f'/bestiary/auditoria/{slug}-proveniencia.json',**({'recipeGuideHref':guide}if guide else {})};count+=len(rr)
  (ROOT/'data'/f'bestiary-audit-{slug}.json').write_text(json.dumps(out,ensure_ascii=False,separators=(',',':'))+'\n')
+ assert count==sum(1 for r in ROWS if r['Mod']==amod),(slug,'missing/duplicated audited rows',count)
+ assert len({norm(a['rows'][0]['Mob']) for a in out.values()})==len(entries),(slug,'duplicate mob association')
  export=ROOT/'public/bestiary/auditoria'/f'{slug}-cards.csv'
  with export.open('w',encoding='utf-8-sig',newline='')as f:
   writer=csv.DictWriter(f,fieldnames=ROWS[0]);writer.writeheader();writer.writerows(r for a in out.values()for r in a['rows'])
