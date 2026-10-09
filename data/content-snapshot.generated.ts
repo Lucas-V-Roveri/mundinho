@@ -4461,8 +4461,7 @@ export const CONTENT_SNAPSHOT_ROWS = [
       ],
       "notes": [
         "Dificuldade é calibração editorial, sem teste de combate no pack.",
-        "Configurações de reprodução e hostilidade do servidor não foram presumidas.",
-        "Texturas de itens do mod mantidas localmente com fallback do componente existente."
+        "Configurações de reprodução e hostilidade do servidor não foram presumidas."
       ]
     }
   },
