@@ -84,7 +84,7 @@ export function ProgressionView() {
       </button>
     </section>
 
-    {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText="organizando os 101 marcos..." /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : content.progression.length === 0 ? <DataStatePanel status="empty" emptyText="A progressão carregou, mas não trouxe nenhum marco." /> : <>
+    {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText={`organizando os ${STATIC_TOTALS.progression} marcos...`} /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : content.progression.length === 0 ? <DataStatePanel status="empty" emptyText="A progressão carregou, mas não trouxe nenhum marco." /> : <>
       {PHASE_ORDER.map((phaseName) => {
         const filteredInPhase = filtered.filter((item) => item.phase === phaseName);
         if (!filteredInPhase.length) return null;
