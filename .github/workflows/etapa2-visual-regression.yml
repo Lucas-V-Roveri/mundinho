@@ -79,11 +79,11 @@ jobs:
           const mods = text('/tmp/mods.html');
           const extras = text('/tmp/extras.html');
           if (!/Guias\s+35/.test(home)) throw new Error('Home SSR não contém Guias 35');
-          if (!/Marcos\s+101/.test(home)) throw new Error('Home SSR não contém Marcos 101');
-          if (!/Ideias extras\s+18/.test(home)) throw new Error('Home SSR não contém Extras 18');
-          if (!progression.includes('101 marcos do mundinho')) throw new Error('Progressão SSR não contém 101 marcos');
+          if (!/Marcos\s+103/.test(home)) throw new Error('Home SSR não contém Marcos 103');
+          if (!/Ideias extras\s+19/.test(home)) throw new Error('Home SSR não contém Extras 19');
+          if (!progression.includes('103 marcos do mundinho')) throw new Error('Progressão SSR não contém 103 marcos');
           if (!mods.includes('35 guia(s) no Mundinho')) throw new Error('Mods SSR não contém 35 guias');
-          if (!extras.includes('18 ideias')) throw new Error('Extras SSR não contém 18 ideias');
+          if (!extras.includes('19 ideias')) throw new Error('Extras SSR não contém 19 ideias');
           if (/XP do mundinho\s+0\/0/.test(home)) throw new Error('Home SSR vazou XP 0/0');
           console.log('SSR_TOTALS_OK');
           NODE
@@ -112,10 +112,10 @@ jobs:
             // P2: totals remain present with JS completely disabled.
             const noJs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1200, height: 900 } });
             for (const [path, expected] of [
-              ['/', ['Guias', '35', 'Marcos', '101', 'Ideias extras', '18']],
-              ['/progressao', ['101 marcos do mundinho']],
+              ['/', ['Guias', '35', 'Marcos', '103', 'Ideias extras', '19']],
+              ['/progressao', ['103 marcos do mundinho']],
               ['/mods', ['35 guia(s) no Mundinho']],
-              ['/extras', ['18 ideias']],
+              ['/extras', ['19 ideias']],
             ]) {
               const page = await noJs.newPage();
               await page.goto(base + path, { waitUntil: 'domcontentloaded' });
@@ -172,8 +172,8 @@ jobs:
             await waitForReady(page);
             const home = await page.locator('body').innerText();
             assert(home.includes('Guias\n35'), 'Home pronta não mostra 35 guias');
-            assert(home.includes('Marcos\n101'), 'Home pronta não mostra 101 marcos');
-            assert(home.includes('Ideias extras\n18'), 'Home pronta não mostra 18 extras');
+            assert(home.includes('Marcos\n103'), 'Home pronta não mostra 103 marcos');
+            assert(home.includes('Ideias extras\n19'), 'Home pronta não mostra 19 extras');
             assert(!home.includes('Prévia local'), 'Estado saudável ainda mostra Prévia local');
             assert(!/XP do mundinho\s*0\/0/.test(home), 'Home saudável mostra XP 0/0');
             await page.screenshot({ path: 'artifacts/audit/home-ready.png', fullPage: true });
@@ -193,7 +193,7 @@ jobs:
               'P1-configured-failure=explicit-error',
               'P1-config-absent=explicit-preview-local',
               'P1-healthy=Supabase-compartilhado',
-              'P2-raw-SSR=35-guides,101-progression,18-extras',
+              'P2-raw-SSR=35-guides,103-progression,19-extras',
               'P2-js-disabled=totals-visible',
               'P3-loading=no-all-done',
               'P3-error=no-all-done',

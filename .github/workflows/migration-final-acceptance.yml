@@ -95,7 +95,7 @@ jobs:
 
             await page.goto(base + '/progressao', { waitUntil: 'domcontentloaded' });
             await ready(page);
-            await page.getByText('101 marcos do mundinho', { exact: true }).waitFor();
+            await page.getByText('103 marcos do mundinho', { exact: true }).waitFor();
 
             const routeChecks = [
               ['/', 'Mundinho · pra sempre'],

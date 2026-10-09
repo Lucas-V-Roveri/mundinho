@@ -70,6 +70,7 @@ export function normalize(text: string) { return text.toLowerCase().normalize("N
 type Rule = { family: string; match: RegExp; effect: EffectKey; variants?: [RegExp, EffectKey][] };
 // Semantic aliases only. No milestone, checklist or guide IDs select an effect.
 export const FAMILY_RULES: Rule[] = [
+  { family: "butterflies", match: /\b(borboletas|mariposas|butterflies|butterfly mod)\b/, effect: "forest" },
   { family: "relics", match: /\b(relics|reliquified|reliquias|artefatos|artifacts)\b/, effect: "relics" },
   { family: "cataclysm", match: /\b(cataclysm|ignis)\b/, effect: "ancient", variants: [[/\b(ignis|ignited|burning|ignitium|netherite monstrosity|lava)\b/, "fireBurst"], [/\b(ender guardian|void runes?)\b/, "ender"], [/\bharbinger\b/, "metal"], [/\bancient remnant\b/, "sand"], [/\bleviathan\b/, "ocean"], [/\bscylla\b/, "storm"], [/\bmaledictus\b/, "soul"]] },
   { family: "twilight", match: /\b(twilight|floresta crepuscular)\b/, effect: "forest", variants: [[/\b(alpha yeti|snow queen|snowy|glacier)\b/, "ice"], [/\b(hydra|fire swamp|lamp of cinders|brasas)\b/, "fire"]] },

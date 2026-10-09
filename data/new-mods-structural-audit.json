@@ -1,0 +1,97 @@
+{
+  "additions": [
+    {
+      "id": "progression:165",
+      "order": 165,
+      "entry": "Borboletas & mariposas",
+      "mods": "Bok's Banging Butterflies",
+      "title": "Começar um pequeno catálogo de borboletas",
+      "type": "Coleção / ciclo de vida — opcional",
+      "equipment": "Sem tier de armadura obrigatório; rede e materiais de registro conforme receitas da versão",
+      "required": "Nenhum boss ou dimensão; encontrar espécies comuns em ambiente seguro",
+      "soft": "Começar perto da base, capturar ou registrar uma espécie comum e observar o ciclo de vida; conferir receitas no JEI",
+      "risk": "Baixo",
+      "unprepared": "O risco baixo se limita às espécies comuns em área segura. Peacemakers hostis, conteúdo do Nether e estruturas especiais ficam fora deste marco.",
+      "complexity": "Moderada",
+      "reversibility": "Alta para captura/soltura de adultos; larvas precisam de folhas e crisálidas não devem ser removidas",
+      "vanilla": "Criação de animais / abelhas — pré-Nether",
+      "phase": "Início",
+      "dependency": "Trilha paralela — ordem indiferente; atividade opcional, sem campanha de combate obrigatória.",
+      "confidence": "Média",
+      "source": "https://modrinth.com/mod/boks-butterflies\nhttps://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683\nhttps://github.com/doc-bok/Butterflies",
+      "notes": "Build 7.10.9 confirmada no inventário. Mecânicas documentadas com confiança alta; dificuldade é calibração editorial. Não exigir todas as espécies nem uma espécie por bioma. Peacemakers dependem da configuração; Butterfly Golem é variante do Iron Golem, não sistema novo de pet.",
+      "icone": "/icons/mob.svg",
+      "gate": {
+        "confirmed": true,
+        "depends_on": [],
+        "note": "Nenhum gate de boss/dimensão para espécies comuns."
+      }
+    },
+    {
+      "id": "progression:485",
+      "order": 485,
+      "entry": "Aether",
+      "mods": "Explore Ruins: The Aether, The Aether",
+      "title": "Explorar as ruínas e estruturas do Aether",
+      "type": "Exploração de estruturas — opcional",
+      "equipment": "Sem tier mecânico obrigatório; preparo adequado à estrutura encontrada",
+      "required": "Acesso à Aether (#480) + localizar uma estrutura",
+      "soft": "Ferro, comida, blocos e rota de retorno segura; reservar estruturas guardadas e Hellfire para equipamento equivalente a diamante e cura",
+      "risk": "Médio",
+      "unprepared": "Ilhas flutuantes, quedas e estruturas guardadas podem tornar a recuperação do equipamento difícil; Valkyrie Library e Small Hellfire Dungeon não são passeios seguros.",
+      "complexity": "Simples",
+      "reversibility": "Alta com rota segura; média em estruturas guardadas",
+      "vanilla": "Nether-pré-Fortress",
+      "phase": "Intermediário",
+      "dependency": "Trilha paralela após #480; sem gate confirmado de Slider, Valkyrie Queen, Sun Spirit ou Eye of the Storm. Ordem indiferente aos marcos #490–520.",
+      "confidence": "Média",
+      "source": "https://modrinth.com/mod/explore-ruins-aether\nhttps://www.curseforge.com/minecraft/mc-mods/explore-ruins-aether/files/6889560",
+      "notes": "v1.0.0 NeoForge 1.21.1: sete famílias de estruturas com variantes; loot reutiliza itens do Aether/vanilla. Conteúdo confirmado; risco/fase são inferência editorial, sem teste de combate. Small Hellfire Dungeon é objetivo opcional de maior dificuldade: Avançado, risco Alto, complexidade Moderada, reversibilidade Média, equivalente Nether Fortress; diamante e cura recomendados. Não é necessário completar Hellfire para concluir este marco.",
+      "icone": "/icons/structure.svg",
+      "gate": {
+        "confirmed": true,
+        "depends_on": [
+          "progression:480"
+        ],
+        "note": "Acesso à dimensão; nenhum boss imposto pelas configurações de estruturas auditadas."
+      }
+    }
+  ],
+  "extra": {
+    "id": "extra-butterfly-garden",
+    "title": "Cultivar um jardim e ampliar o catálogo de borboletas e mariposas",
+    "description": "Bok's Banging Butterflies: conhecer espécies e variantes, observar ovos, larvas, crisálidas e adultos e criar um jardim para as espécies comuns, no ritmo de vocês. Coleção aberta, sem exigir uma espécie por bioma. Peacemakers, Nether e estruturas perigosas ficam fora deste passeio de baixo risco."
+  },
+  "classification": [
+    {
+      "mod": "Explore Ruins: The Aether",
+      "version": "1.0.0",
+      "author": "NoCube",
+      "jar": "explore_ruins_aether-1.0.0-neoforge-1.21.1.jar",
+      "source": "https://modrinth.com/mod/explore-ruins-aether",
+      "destination": "Agrupado",
+      "entry": "Aether",
+      "notes": "Subentrada de estruturas dentro de Aether. Sete famílias com variantes, loot Aether/vanilla, sem campanha nova de bosses. Marco opcional #485 após acesso #480; Hellfire é exploração opcional de maior risco."
+    },
+    {
+      "mod": "Bok's Banging Butterflies",
+      "version": "7.10.9",
+      "author": "Doc Bok",
+      "jar": "butterflies-7.10.9.jar",
+      "source": "https://modrinth.com/mod/boks-butterflies",
+      "destination": "Própria",
+      "entry": "Borboletas & mariposas",
+      "notes": "Ciclo de vida, captura/registro, reprodução, feeder, profissão/trocas, polinização e seda justificam entrada própria. Marco leve opcional #165 para espécies comuns; coleção aberta em Extras. Peacemakers hostis separados do risco Baixo; golem é variante do Iron Golem."
+    },
+    {
+      "mod": "Where Winds Blow",
+      "version": "A confirmar no pack; referência pública 2.1.0",
+      "author": "Jeven",
+      "jar": "Não consta no inventário fornecido; a confirmar",
+      "source": "https://modrinth.com/mod/where-winds-blow",
+      "destination": "Bastidores",
+      "entry": "Visual / ambientação — somente cliente",
+      "notes": "Classificação aprovada para uso apenas no cliente; sem marco. O modo cliente+servidor adiciona blocos e worldgen: se adotado, reclassificar como Agrupado em Overworld vivo e enriquecer #160, sem novo marco. Perfil instalado não presumido."
+    }
+  ]
+}

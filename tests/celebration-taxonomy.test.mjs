@@ -11,7 +11,7 @@ const inputFor = (p) => ({ itemId: p.id, completed: true, section: "progression"
 
 test("every current guide and milestone resolves a semantic family", () => {
   assert.equal(guides.length, 35);
-  assert.equal(progression.length, 101);
+  assert.equal(progression.length, 103);
   for (const guide of guides) assert.notEqual(matchFamily(guide.title.split("+")[0], guide.title).family, "fallback", guide.title);
   for (const item of progression) assert.notEqual(describeCelebration(inputFor(item), context).family, "fallback", item.title);
 });
