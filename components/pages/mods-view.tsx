@@ -84,7 +84,7 @@ export function ModsView() {
         <p className="font-label text-2xl text-wood-700">wiki central</p>
         <h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Mods</h1>
         <p className="mt-3 max-w-4xl leading-7 text-ink-900">Cada entrada mantém o padrão aprovado: como começar, preparo, progressão, riscos, craftings por nível de confiança, checklist e fontes.</p>
-        <p className="mt-3 font-label text-xl text-wood-700">{STATIC_TOTALS.guides} guia(s) no Mundinho</p>
+        <p className="mt-3 font-label text-xl text-wood-700">{ready ? content.guides.length : STATIC_TOTALS.guides} guia(s) no Mundinho</p>
       </header>
       <section className="border border-stone-500 bg-stone-100 p-4 text-ink-900" aria-label="Filtros dos guias">
         <div className="grid gap-3 sm:grid-cols-[1fr_14rem]">
@@ -108,7 +108,7 @@ export function ModsView() {
           </div>
         ) : null}
       </section>
-      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText="abrindo os 35 guias..." /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} expanded={expandedGuideIds.has(guide.id)} onExpandedChange={(expanded) => setGuideExpanded(guide.id, expanded)} />)}</div><TwilightCatalogPanel /></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
+      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText={`abrindo os ${STATIC_TOTALS.guides} guias...`} /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} expanded={expandedGuideIds.has(guide.id)} onExpandedChange={(expanded) => setGuideExpanded(guide.id, expanded)} />)}</div><TwilightCatalogPanel /></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
     </div>
   );
 }

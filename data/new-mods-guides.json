@@ -1,0 +1,1451 @@
+[
+  {
+    "key": "guide:aether",
+    "lot": 2,
+    "payload": {
+      "id": "aether",
+      "risk": "Médio → Severo",
+      "type": "dimensão",
+      "color": "#7aa8c7",
+      "icone": "/icons/minecraft/glowstone_dust.png",
+      "intro": "O portal pode ser aberto bem antes de vocês estarem prontos para tudo. O Aether base tem Bronze, Silver e Gold Dungeons; Deep Aether continua essa curva com a Brass Dungeon e o Eye of the Storm. Explore Ruins 1.0.0 acrescenta sete famílias de estruturas com variantes, numa trilha de exploração paralela aos bosses.",
+      "phase": "Intermediário → Pós-jogo",
+      "theme": {
+        "accent": "gold",
+        "texture": "stone"
+      },
+      "title": "The Aether + Deep Aether + Explore Ruins",
+      "sources": [
+        [
+          "Aether Project Wiki",
+          "https://aether.wiki.gg/"
+        ],
+        [
+          "Brass Dungeon",
+          "https://aether.wiki.gg/wiki/Deep_Aether/Brass_Dungeon"
+        ],
+        [
+          "Eye of the Storm",
+          "https://aether.wiki.gg/wiki/Deep_Aether/eots"
+        ],
+        [
+          "Explore Ruins · estruturas oficiais",
+          "https://modrinth.com/mod/explore-ruins-aether"
+        ],
+        [
+          "Explore Ruins 1.0.0 · NeoForge 1.21.1",
+          "https://www.curseforge.com/minecraft/mc-mods/explore-ruins-aether/files/6889560"
+        ]
+      ],
+      "sections": [
+        {
+          "body": "Obrigatório: frame de Glowstone + água para ativar. Glowstone normalmente puxa a primeira ida ao Nether, mas isso é fonte do material, não uma desculpa para amarrar todos os outros conteúdos numa fila.",
+          "title": "Acesso"
+        },
+        {
+          "list": [
+            "Ferro completo no primeiro acesso; diamante para dungeons posteriores",
+            "Blocos e cuidado extra com quedas",
+            "Comida, ranged e waypoint do portal",
+            "Pickaxe reserva para Bronze Dungeon"
+          ],
+          "title": "Antes de sair"
+        },
+        {
+          "steps": [
+            "Entrar, garantir o portal e conhecer os biomas",
+            "Bronze Dungeon → Slider",
+            "Silver Dungeon → coletar 10 Victory Medals → Valkyrie Queen",
+            "Gold Dungeon → Sun Spirit; entender a mecânica de Ice Crystal em vez de tentar dano bruto",
+            "Deep Aether: explorar a expansão",
+            "Brass Dungeon → interagir com Eye of the Storm → derrotá-lo → usar Brass Key no treasure"
+          ],
+          "title": "Progressão do Aether"
+        },
+        {
+          "body": "Bronze → Silver → Gold é a ordem sugerida de dificuldade usada no Mundinho. Não tratei Slider como gate rígido da Silver nem Valkyrie Queen como gate rígido da Gold sem evidência de bloqueio. Deep Aether fica recomendado depois do Sun Spirit.",
+          "title": "Dependências"
+        },
+        {
+          "body": "O vazio é a punição mais cara. Em dungeons, organize a hotbar antes de iniciar o boss e não leve todos os itens raros que acabou de achar para dentro da arena.",
+          "title": "Para não perder o inventário"
+        },
+        {
+          "title": "Explore Ruins: como começar",
+          "body": "Depois de garantir o portal e o retorno (#480), explore as ilhas à procura de ruínas. #485 é uma trilha opcional: encontrar e explorar uma estrutura adequada ao equipamento já permite começar. Slider, Valkyrie Queen, Sun Spirit e Eye of the Storm não são pré-requisitos dessa trilha. Hellfire pode ficar para outra viagem."
+        },
+        {
+          "title": "Explore Ruins: estruturas e variantes",
+          "list": [
+            "Moa Nest: pequeno local de nidificação; existe uma variante com cockatrices, que não deve ser tratada como ninho passivo.",
+            "Sky Lake: ilha com lago; as variantes incluem argila, píer e naufrágio. Nem todo lago tem um baú.",
+            "Holystone Circle: círculo de pedra com variações; pode esconder um baú.",
+            "Holy Shrine: altar com baú de oferendas.",
+            "Valkyrie Ship: navio voador; há valquírias e baú na estrutura.",
+            "Valkyrie Library: biblioteca com variantes; a descrição oficial registra valquírias e mimics guardando o local.",
+            "Small Hellfire Dungeon: salas ígneas com Fire Minions e mimics; exploração opcional de risco maior."
+          ]
+        },
+        {
+          "title": "Explore Ruins: o que procurar no loot",
+          "list": [
+            "Moa Nest: ovos de moa azul ou branco, penas, gravetos de skyroot e Aechor Petals. A variante de cockatrice tem tabela distinta, com ovo de moa preto, ossos, penas e Aechor Petals.",
+            "Sky Lake com píer/naufrágio: a tabela própria inclui vara de pesca, baldes de skyroot, peixe, linha, Ambrosium Shards e Swet Balls.",
+            "Holystone Circle e Holy Shrine reutilizam tabelas de loot Bronze do Aether; navio e biblioteca reutilizam tabelas Silver. O naufrágio também referencia a tabela Neptune do Aether.",
+            "Small Hellfire Dungeon: a tabela inclui Golden Amber, Zanite Gemstone, Golden Darts, muda de Golden Oak, espada de zanite, etiqueta e blocos/recursos de ambientação. São possibilidades, não uma lista de itens garantidos por baú."
+          ]
+        },
+        {
+          "title": "Explore Ruins: preparo e retirada",
+          "body": "Levem comida, blocos e uma rota segura de volta ao portal. Inspecionem o acesso antes de atravessar entre ilhas; aproximar-se de um ninho não garante que a variante seja passiva. Nas estruturas guardadas, usem equipamento mais forte, combate à distância e cura. Biblioteca e Hellfire ficam para quando houver margem para recuar. O risco Médio de #485 descreve a exploração geral; Hellfire tem calibração editorial de risco Alto e fase Avançado."
+        },
+        {
+          "title": "Explore Ruins: receitas e conclusão",
+          "body": "Explore Ruins 1.0.0 não adiciona receitas próprias: o loot usa itens do Aether e do vanilla. Não há uma chave nova do addon para fabricar nem uma campanha adicional de bosses. O marco #485 não exige limpar as sete famílias ou completar Hellfire. Guarde a localização dos encontros difíceis e volte quando quiser."
+        }
+      ],
+      "subtitle": "dimensão · dungeons · expansão · ruínas opcionais",
+      "checklist": [
+        [
+          "aether-access",
+          "Construir o portal e entrar no Aether",
+          "Intermediário"
+        ],
+        [
+          "aether-slider",
+          "Derrotar Slider na Bronze Dungeon",
+          "Intermediário"
+        ],
+        [
+          "aether-medals",
+          "Conseguir 10 Victory Medals",
+          "Avançado"
+        ],
+        [
+          "aether-valkyrie",
+          "Derrotar Valkyrie Queen",
+          "Avançado"
+        ],
+        [
+          "aether-sun",
+          "Derrotar Sun Spirit",
+          "Avançado"
+        ],
+        [
+          "aether-deep",
+          "Explorar Deep Aether",
+          "Pós-jogo"
+        ],
+        [
+          "aether-brass",
+          "Encontrar a Brass Dungeon",
+          "Pós-jogo"
+        ],
+        [
+          "aether-eots",
+          "Derrotar Eye of the Storm",
+          "Pós-jogo"
+        ],
+        [
+          "aether-treasure",
+          "Abrir o treasure da Brass Dungeon com Brass Key",
+          "Pós-jogo"
+        ],
+        [
+          "aether-ruins-first",
+          "Explorar uma estrutura de Explore Ruins com retorno seguro",
+          "Intermediário"
+        ],
+        [
+          "aether-ruins-hellfire",
+          "Explorar Small Hellfire Dungeon com preparo, como objetivo opcional",
+          "Avançado"
+        ]
+      ],
+      "craftings": [
+        {
+          "body": "É uma construção no mundo, não um item craftável.",
+          "icone": "https://minecraft.wiki/w/Special:Redirect/file/BlockSprite%20glowstone.png",
+          "title": "Portal do Aether",
+          "nameEn": "Aether Portal",
+          "source": {
+            "href": "https://aether.wiki.gg/wiki/Aether_Portal",
+            "label": "Aether Wiki · Aether Portal"
+          },
+          "receita": {
+            "note": "Monte o frame de Glowstone no formato de portal e use água para ativá-lo.",
+            "type": "construction",
+            "result": {
+              "icon": "https://minecraft.wiki/w/Special:Redirect/file/BlockSprite%20glowstone.png",
+              "nameEn": "Aether Portal",
+              "namePt": "Portal do Aether",
+              "iconSource": "https://minecraft.wiki/w/Glowstone"
+            },
+            "station": "Construção no mundo",
+            "ingredients": [
+              {
+                "icon": "https://minecraft.wiki/w/Special:Redirect/file/BlockSprite%20glowstone.png",
+                "nameEn": "Glowstone",
+                "namePt": "Glowstone",
+                "iconSource": "https://minecraft.wiki/w/Glowstone"
+              },
+              {
+                "icon": "https://minecraft.wiki/w/Special:Redirect/file/Invicon%20Water%20Bucket.png",
+                "nameEn": "Water",
+                "namePt": "Água",
+                "iconSource": "https://minecraft.wiki/w/Water_Bucket"
+              }
+            ]
+          },
+          "utilidade": "É a entrada da dimensão: monte o frame de Glowstone e use água dentro dele para ativar o portal.",
+          "confidence": "Alta",
+          "iconSource": "https://minecraft.wiki/w/Glowstone"
+        },
+        {
+          "body": "Não é craftada: o loot oficial concede 1 Bronze Key ao derrotar o Slider.",
+          "icone": "https://raw.githubusercontent.com/The-Aether-Team/The-Aether/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/bronze_dungeon_key.png",
+          "title": "Bronze Key",
+          "nameEn": "Bronze Key",
+          "source": {
+            "href": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/java/com/aetherteam/aether/data/generators/loot/AetherEntityLoot.java",
+            "label": "The Aether · entity loot generator"
+          },
+          "receita": {
+            "type": "drop",
+            "result": {
+              "icon": "https://raw.githubusercontent.com/The-Aether-Team/The-Aether/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/bronze_dungeon_key.png",
+              "nameEn": "Bronze Key",
+              "namePt": "Bronze Key",
+              "iconSource": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/bronze_dungeon_key.png"
+            },
+            "origins": [
+              {
+                "chance": "1 chave",
+                "source": {
+                  "icon": "/icons/mob.svg",
+                  "nameEn": "Slider",
+                  "namePt": "Slider"
+                },
+                "condition": "Derrote o Slider da Bronze Dungeon"
+              }
+            ]
+          },
+          "utilidade": "Abre o treasure chest da Bronze Dungeon; guarde a chave depois de derrotar o Slider até chegar ao tesouro.",
+          "confidence": "Alta",
+          "iconSource": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/bronze_dungeon_key.png"
+        },
+        {
+          "body": "Não é craftada: é a chave de progressão da Silver Dungeon.",
+          "icone": "https://raw.githubusercontent.com/The-Aether-Team/The-Aether/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/silver_dungeon_key.png",
+          "title": "Silver Key",
+          "nameEn": "Silver Key",
+          "source": {
+            "href": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/java/com/aetherteam/aether/data/generators/loot/AetherEntityLoot.java",
+            "label": "The Aether · dungeon keys/loot"
+          },
+          "receita": {
+            "type": "drop",
+            "result": {
+              "icon": "https://raw.githubusercontent.com/The-Aether-Team/The-Aether/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/silver_dungeon_key.png",
+              "nameEn": "Silver Key",
+              "namePt": "Silver Key",
+              "iconSource": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/silver_dungeon_key.png"
+            },
+            "origins": [
+              {
+                "chance": "1 chave",
+                "source": {
+                  "icon": "/icons/mob.svg",
+                  "nameEn": "Valkyrie Queen",
+                  "namePt": "Valkyrie Queen"
+                },
+                "condition": "Derrote a Valkyrie Queen da Silver Dungeon"
+              }
+            ]
+          },
+          "utilidade": "Abre o treasure chest da Silver Dungeon; leve a chave da Valkyrie Queen até a sala de recompensa.",
+          "confidence": "Alta",
+          "iconSource": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/silver_dungeon_key.png"
+        },
+        {
+          "body": "Não é craftada: é obtida ao concluir o boss da Gold Dungeon.",
+          "icone": "https://raw.githubusercontent.com/The-Aether-Team/The-Aether/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/gold_dungeon_key.png",
+          "title": "Gold Key",
+          "nameEn": "Gold Key",
+          "source": {
+            "href": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/java/com/aetherteam/aether/data/generators/loot/AetherEntityLoot.java",
+            "label": "The Aether · dungeon keys/loot"
+          },
+          "receita": {
+            "type": "drop",
+            "result": {
+              "icon": "https://raw.githubusercontent.com/The-Aether-Team/The-Aether/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/gold_dungeon_key.png",
+              "nameEn": "Gold Key",
+              "namePt": "Gold Key",
+              "iconSource": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/gold_dungeon_key.png"
+            },
+            "origins": [
+              {
+                "chance": "1 chave",
+                "source": {
+                  "icon": "/icons/mob.svg",
+                  "nameEn": "Sun Spirit",
+                  "namePt": "Sun Spirit"
+                },
+                "condition": "Derrote o Sun Spirit da Gold Dungeon"
+              }
+            ]
+          },
+          "utilidade": "Abre o treasure chest da Gold Dungeon; é a recompensa funcional que libera o loot depois do Sun Spirit.",
+          "confidence": "Alta",
+          "iconSource": "https://github.com/The-Aether-Team/The-Aether/blob/1.21.1-develop/src/main/resources/assets/aether/textures/item/miscellaneous/gold_dungeon_key.png"
+        },
+        {
+          "body": "O Eye of the Storm concede 1 Brass Key; a chave é consumida ao abrir o treasure chest da Brass Dungeon.",
+          "icone": "https://raw.githubusercontent.com/RazorDevs/Deep-Aether/1.21.1/src/main/resources/assets/deep_aether/textures/item/brass_dungeon_key.png",
+          "title": "Brass Key",
+          "nameEn": "Brass Dungeon Key",
+          "source": {
+            "href": "https://github.com/RazorDevs/Deep-Aether/tree/1.21.1",
+            "label": "Deep Aether 1.21.1 · código e recursos"
+          },
+          "receita": {
+            "type": "drop",
+            "result": {
+              "icon": "https://raw.githubusercontent.com/RazorDevs/Deep-Aether/1.21.1/src/main/resources/assets/deep_aether/textures/item/brass_dungeon_key.png",
+              "nameEn": "Brass Dungeon Key",
+              "namePt": "Brass Key",
+              "iconSource": "https://github.com/RazorDevs/Deep-Aether/blob/1.21.1/src/main/resources/assets/deep_aether/textures/item/brass_dungeon_key.png"
+            },
+            "origins": [
+              {
+                "chance": "1 chave",
+                "source": {
+                  "icon": "/icons/mob.svg",
+                  "nameEn": "Eye of the Storm",
+                  "namePt": "Eye of the Storm"
+                },
+                "condition": "Derrote o Eye of the Storm"
+              }
+            ]
+          },
+          "utilidade": "Abre o treasure chest da Brass Dungeon do Deep Aether; não gaste tempo procurando receita: ela vem do boss.",
+          "confidence": "Alta",
+          "iconSource": "https://github.com/RazorDevs/Deep-Aether/blob/1.21.1/src/main/resources/assets/deep_aether/textures/item/brass_dungeon_key.png"
+        }
+      ],
+      "complexity": "Moderada → Complexa",
+      "confidence": "Alta",
+      "difficulty": "Exige preparo → Muito difícil",
+      "equivalent": "Nether-pré-Fortress → pós-Dragão",
+      "notes": [
+        "Explore Ruins: estruturas e loot conferidos no JAR 1.0.0. Risco e equipamento recomendado são calibração editorial; não houve teste de combate. Loot real pode sofrer alterações dos datapacks e integrações do pack."
+      ]
+    }
+  },
+  {
+    "key": "guide:boks-butterflies",
+    "lot": 3,
+    "payload": {
+      "id": "boks-butterflies",
+      "title": "Bok’s Banging Butterflies · Borboletas & mariposas",
+      "subtitle": "captura · catálogo · ciclo de vida · jardim",
+      "type": "utilidade",
+      "theme": {
+        "accent": "grass",
+        "texture": "leaf"
+      },
+      "icone": "/icons/butterflies/bottle.png",
+      "difficulty": "Tranquilo nas espécies comuns; encontros especiais exigem preparo",
+      "risk": "Baixo nas espécies comuns; variável no conteúdo especial",
+      "phase": "Início → exploração opcional posterior",
+      "equivalent": "Criação de animais / abelhas, pré-Nether",
+      "complexity": "Moderada",
+      "confidence": "Alta nas mecânicas; Média na dificuldade",
+      "intro": "O começo pode ser um passeio perto da base: capturar uma borboleta, conhecer uma espécie e deixar o catálogo crescer com as viagens. Bok’s 7.10.9 também tem reprodução, polinização, seda, alimentador e trocas. O marco #165 cobre apenas espécies comuns em ambiente seguro; a coleção aberta fica em Extras.",
+      "sections": [
+        {
+          "title": "Como começar",
+          "steps": [
+            "Monte uma rede com 3 gravetos e 3 linhas. Procure um adulto comum em uma área segura e capture-o com a rede vazia.",
+            "Para mantê-lo vivo, transforme a rede preenchida em frasco com uma garrafa de vidro. Coloque o frasco como decoração ou use-o sem mirar em um bloco para soltar o adulto.",
+            "Para estudar a espécie, faça um registro com a rede preenchida, papel e pepita de ferro. Esse processo consome o exemplar.",
+            "Quando tiver cobre e ametista para a luneta, monte o microscópio. Examine o registro e combine-o com um livro para começar o catálogo."
+          ]
+        },
+        {
+          "title": "Ovos, larvas, crisálidas e adultos",
+          "body": "Os adultos põem ovos nas folhas. Os ovos viram larvas, que precisam permanecer em folhas para continuar o ciclo; depois formam crisálidas e novos adultos. Ovos e larvas podem ser transferidos para outras folhas. A crisálida é destruída quando se tenta removê-la: prepare o jardim antes dessa etapa. Adultos e larvas em frascos decorativos ficam preservados, sem reprodução ou transformação."
+        },
+        {
+          "title": "Reprodução, jardim e polinização",
+          "body": "Consulte no livro a planta preferida da espécie e alimente os adultos. O alimentador aceita uma pilha de alimento e permite automatizar essa rotina. A polinização pode formar brotos que crescem em flores. Reprodução, densidade, longevidade e polinização dependem das configurações do mundo; os valores ativos do Mundinho ainda não foram conferidos. Comece com poucas espécies e espaço protegido para observar o ciclo."
+        },
+        {
+          "title": "Seda, decoração e trocas",
+          "body": "Certos casulos de mariposa fornecem seda, usada nas receitas de linha e papel abaixo. Colher esse recurso mata a mariposa. Frascos, origami e estandartes ampliam a decoração; o lepidopterista oferece trocas relacionadas ao mod. Nenhum desses sistemas obriga vocês a completar o catálogo para avançar no mundo."
+        },
+        {
+          "title": "Peacemakers e outros encontros especiais",
+          "body": "A versão 7.10.9 inclui Peacemakers hostis, capazes de infestar aldeões e illagers, além de conteúdo como Peacemaker Lair e espécies do Nether. A opção enable_hostile_butterflies existe e o padrão do mod é true; isso não confirma o valor ativo no servidor. Esses encontros ficam fora do risco Baixo de #165 e do passeio de coleção em Extras. Não solte um Peacemaker perto da vila nem trate uma criatura desconhecida como uma espécie passiva."
+        },
+        {
+          "title": "Butterfly Golem",
+          "body": "O Butterfly Golem é uma variante do Iron Golem documentada pelo autor. Sua presença não cria um sistema de pet com níveis ou uma campanha obrigatória. O método exato de criação na configuração do pack ainda precisa ser confirmado antes de virar objetivo; ele não é requisito deste guia nem do catálogo inicial."
+        },
+        {
+          "title": "Progressão e Extras",
+          "body": "#165: começar um pequeno catálogo com espécie comum em área segura. Depois, ampliem o jardim e a coleção pelo objetivo já existente em Extras. Não é necessário capturar todas as espécies, viajar ao Nether ou encontrar uma borboleta por bioma para concluir a introdução. O checklist abaixo serve para experimentar os sistemas, no ritmo de vocês."
+        }
+      ],
+      "craftings": [
+        {
+          "title": "Rede de borboletas",
+          "nameEn": "Butterfly Net",
+          "icone": "/icons/butterflies/net.png",
+          "confidence": "Alta",
+          "utilidade": "Captura um adulto para transportar, soltar ou usar em uma receita.",
+          "body": "3 gravetos e 3 linhas na grade exibida. A rede precisa estar vazia para capturar outra borboleta; a rede comum não é a opção segura para espécies ígneas.",
+          "receita": {
+            "type": "crafting",
+            "station": "Bancada 3×3",
+            "result": {
+              "namePt": "Rede de borboletas",
+              "nameEn": "Butterfly Net",
+              "icon": "/icons/butterflies/net.png"
+            },
+            "grid": [
+              null,
+              null,
+              {
+                "namePt": "Graveto",
+                "nameEn": "Stick",
+                "icon": "/icons/item.svg"
+              },
+              null,
+              {
+                "namePt": "Graveto",
+                "nameEn": "Stick",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Linha",
+                "nameEn": "String",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Graveto",
+                "nameEn": "Stick",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Linha",
+                "nameEn": "String",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Linha",
+                "nameEn": "String",
+                "icon": "/icons/item.svg"
+              }
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Borboleta comum em frasco",
+          "nameEn": "Bottled Common Butterfly",
+          "icone": "/icons/butterflies/bottle.png",
+          "confidence": "Alta",
+          "utilidade": "Preserva a borboleta comum como decoração; permite soltá-la depois.",
+          "body": "Exemplo da espécie Common: rede contendo essa borboleta + frasco de vidro, sem posição fixa. Outras espécies usam sua própria rede preenchida. O adulto no frasco não envelhece nem se reproduz.",
+          "receita": {
+            "type": "crafting",
+            "station": "Crafting sem posição fixa",
+            "result": {
+              "namePt": "Borboleta comum em frasco",
+              "nameEn": "Bottled Common Butterfly",
+              "icon": "/icons/butterflies/bottle.png"
+            },
+            "ingredients": [
+              {
+                "namePt": "Rede com borboleta comum",
+                "nameEn": "Butterfly Net (Common)",
+                "icon": "/icons/butterflies/net.png"
+              },
+              {
+                "namePt": "Frasco de vidro",
+                "nameEn": "Glass Bottle",
+                "icon": "/icons/item.svg"
+              }
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Registro da borboleta comum",
+          "nameEn": "Common Butterfly Scroll",
+          "icone": "/icons/butterflies/scroll.png",
+          "confidence": "Alta",
+          "utilidade": "Cria um espécime registrado para consultar no microscópio e adicionar ao livro.",
+          "body": "Exemplo da espécie Common: rede contendo a borboleta + papel + pepita de ferro. O registro consome o exemplar; use o frasco se quiser mantê-lo vivo.",
+          "receita": {
+            "type": "crafting",
+            "station": "Crafting sem posição fixa",
+            "result": {
+              "namePt": "Registro da borboleta comum",
+              "nameEn": "Common Butterfly Scroll",
+              "icon": "/icons/butterflies/scroll.png"
+            },
+            "ingredients": [
+              {
+                "namePt": "Rede com borboleta comum",
+                "nameEn": "Butterfly Net (Common)",
+                "icon": "/icons/butterflies/net.png"
+              },
+              {
+                "namePt": "Papel",
+                "nameEn": "Paper",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Pepita de ferro",
+                "nameEn": "Iron Nugget",
+                "icon": "/icons/item.svg"
+              }
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Microscópio de borboletas",
+          "nameEn": "Butterfly Microscope",
+          "icone": "/icons/item.svg",
+          "confidence": "Alta",
+          "utilidade": "Examina registros e reúne espécies no livro do lepidopterista.",
+          "body": "1 luneta, 1 graveto e 1 laje de pedra na coluna central. A luneta exige acesso a cobre e ametista; isso não é necessário para começar a capturar espécies comuns.",
+          "receita": {
+            "type": "crafting",
+            "station": "Bancada 3×3",
+            "result": {
+              "namePt": "Microscópio de borboletas",
+              "nameEn": "Butterfly Microscope",
+              "icon": "/icons/item.svg"
+            },
+            "grid": [
+              null,
+              {
+                "namePt": "Luneta",
+                "nameEn": "Spyglass",
+                "icon": "/icons/item.svg"
+              },
+              null,
+              null,
+              {
+                "namePt": "Graveto",
+                "nameEn": "Stick",
+                "icon": "/icons/item.svg"
+              },
+              null,
+              null,
+              {
+                "namePt": "Laje de pedra",
+                "nameEn": "Stone Slab",
+                "icon": "/icons/item.svg"
+              },
+              null
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Livro do lepidopterista",
+          "nameEn": "Lepidopterist’s Book",
+          "icone": "/icons/butterflies/book.png",
+          "confidence": "Alta",
+          "utilidade": "Reúne as páginas das espécies estudadas e informa a alimentação para reprodução.",
+          "body": "No microscópio, coloque um livro vanilla no espaço de livro e um registro no outro espaço; retire o livro resultante. Para ampliar o catálogo, use o livro existente com o registro de uma espécie ainda ausente. O registro é consumido. Não existe receita 3×3 própria para este livro.",
+          "receita": {
+            "type": "ingredients",
+            "station": "Microscópio de borboletas",
+            "ingredients": [
+              {
+                "namePt": "Livro",
+                "nameEn": "Book",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Registro da borboleta comum",
+                "nameEn": "Common Butterfly Scroll",
+                "icon": "/icons/butterflies/scroll.png"
+              }
+            ],
+            "result": {
+              "namePt": "Livro do lepidopterista",
+              "nameEn": "Lepidopterist’s Book",
+              "icon": "/icons/butterflies/book.png"
+            }
+          },
+          "source": {
+            "label": "Código oficial NeoForge 1.21.1 · ButterflyMicroscopeMenu",
+            "href": "https://github.com/doc-bok/Butterflies/blob/9d556046b576b3c48b43e745eacb9cbb35e91386/src/main/java/com/bokmcdok/butterflies/world/inventory/ButterflyMicroscopeMenu.java"
+          }
+        },
+        {
+          "title": "Alimentador de borboletas",
+          "nameEn": "Butterfly Feeder",
+          "icone": "/icons/item.svg",
+          "confidence": "Alta",
+          "utilidade": "Armazena alimento para permitir a reprodução automática das espécies compatíveis.",
+          "body": "3 barras de ferro, 4 bambus e 1 linha na grade exibida. O alimentador comporta uma pilha de alimento; escolha a comida da espécie pelo livro.",
+          "receita": {
+            "type": "crafting",
+            "station": "Bancada 3×3",
+            "result": {
+              "namePt": "Alimentador de borboletas",
+              "nameEn": "Butterfly Feeder",
+              "icon": "/icons/item.svg"
+            },
+            "grid": [
+              {
+                "namePt": "Barra de ferro",
+                "nameEn": "Iron Ingot",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Barra de ferro",
+                "nameEn": "Iron Ingot",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Barra de ferro",
+                "nameEn": "Iron Ingot",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Bambu",
+                "nameEn": "Bamboo",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Linha",
+                "nameEn": "String",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Bambu",
+                "nameEn": "Bamboo",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Bambu",
+                "nameEn": "Bamboo",
+                "icon": "/icons/item.svg"
+              },
+              null,
+              {
+                "namePt": "Bambu",
+                "nameEn": "Bamboo",
+                "icon": "/icons/item.svg"
+              }
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Linha",
+          "nameEn": "String",
+          "icone": "/icons/item.svg",
+          "confidence": "Alta",
+          "utilidade": "Converte seda de certos casulos em linha.",
+          "body": "4 sedas em losango produzem 1 linha. Obter seda de um casulo interrompe o ciclo e mata a mariposa; não use o casulo que deseja ver nascer.",
+          "receita": {
+            "type": "crafting",
+            "station": "Bancada 3×3",
+            "result": {
+              "namePt": "Linha",
+              "nameEn": "String",
+              "icon": "/icons/item.svg"
+            },
+            "grid": [
+              null,
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              null,
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              null,
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              null,
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              null
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Papel",
+          "nameEn": "Paper",
+          "icone": "/icons/item.svg",
+          "confidence": "Alta",
+          "utilidade": "Oferece outra fonte de papel a partir de seda.",
+          "body": "9 sedas preenchendo a grade produzem 1 papel. Não é requisito para o catálogo: papel vanilla também serve.",
+          "receita": {
+            "type": "crafting",
+            "station": "Bancada 3×3",
+            "result": {
+              "namePt": "Papel",
+              "nameEn": "Paper",
+              "icon": "/icons/item.svg"
+            },
+            "grid": [
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              },
+              {
+                "namePt": "Seda",
+                "nameEn": "Silk",
+                "icon": "/icons/butterflies/silk.png"
+              }
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Origami de borboleta branco",
+          "nameEn": "White Butterfly Origami",
+          "icone": "/icons/item.svg",
+          "confidence": "Alta",
+          "utilidade": "Decora a base com uma borboleta de papel.",
+          "body": "1 papel + 1 corante branco, sem posição fixa, produzem 1 origami branco. As outras cores têm receitas equivalentes com seu corante.",
+          "receita": {
+            "type": "crafting",
+            "station": "Crafting sem posição fixa",
+            "result": {
+              "namePt": "Origami de borboleta branco",
+              "nameEn": "White Butterfly Origami",
+              "icon": "/icons/item.svg"
+            },
+            "ingredients": [
+              {
+                "namePt": "Corante branco",
+                "nameEn": "White Dye",
+                "icon": "/icons/item.svg"
+              },
+              {
+                "namePt": "Papel",
+                "nameEn": "Paper",
+                "icon": "/icons/item.svg"
+              }
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        },
+        {
+          "title": "Rede resistente ao fogo",
+          "nameEn": "Fireproof Butterfly Net",
+          "icone": "/icons/butterflies/fireproof-net.png",
+          "confidence": "Alta",
+          "utilidade": "Permite capturar espécies associadas ao fogo sem usar a rede comum.",
+          "body": "1 rede vazia + 1 creme de magma, sem posição fixa. É uma extensão opcional para viagens posteriores, não um requisito do marco inicial #165.",
+          "receita": {
+            "type": "crafting",
+            "station": "Crafting sem posição fixa",
+            "result": {
+              "namePt": "Rede resistente ao fogo",
+              "nameEn": "Fireproof Butterfly Net",
+              "icon": "/icons/butterflies/fireproof-net.png"
+            },
+            "ingredients": [
+              {
+                "namePt": "Rede de borboletas",
+                "nameEn": "Butterfly Net",
+                "icon": "/icons/butterflies/net.png"
+              },
+              {
+                "namePt": "Creme de magma",
+                "nameEn": "Magma Cream",
+                "icon": "/icons/item.svg"
+              }
+            ]
+          },
+          "source": {
+            "label": "Bok’s 7.10.9 · receita no arquivo oficial",
+            "href": "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+          }
+        }
+      ],
+      "craftingNote": "Grades e quantidades conferidas no JAR butterflies-7.10.9.jar. As receitas de frasco e registro mostram a espécie Common como exemplo. Se alguma receita diferir no servidor, confiram no JEI possíveis alterações do pack.",
+      "checklist": [
+        [
+          "bok-first-capture",
+          "Capturar uma espécie comum em local seguro",
+          "Início"
+        ],
+        [
+          "bok-first-jar",
+          "Preservar ou soltar um adulto capturado",
+          "Início"
+        ],
+        [
+          "bok-first-catalog",
+          "Começar o livro com uma espécie estudada",
+          "Início"
+        ],
+        [
+          "bok-life-cycle",
+          "Observar um ciclo de ovo até adulto no jardim",
+          "Início"
+        ],
+        [
+          "bok-breeding",
+          "Reproduzir uma espécie com o alimento indicado no livro",
+          "Início"
+        ],
+        [
+          "bok-feeder",
+          "Experimentar o alimentador de borboletas",
+          "Início"
+        ]
+      ],
+      "sources": [
+        [
+          "Bok’s Banging Butterflies · descrição oficial",
+          "https://modrinth.com/mod/boks-butterflies"
+        ],
+        [
+          "Bok’s 7.10.9 · NeoForge 1.21.1",
+          "https://www.curseforge.com/minecraft/mc-mods/boks-butterflies/files/8745683"
+        ],
+        [
+          "Código da versão 7.10.9 para NeoForge 1.21.1",
+          "https://github.com/doc-bok/Butterflies/tree/9d556046b576b3c48b43e745eacb9cbb35e91386/"
+        ],
+        [
+          "Peacemakers · explicação do autor",
+          "https://www.bokmcdok.com/butterflies-with-hostility/"
+        ],
+        [
+          "Butterfly Golem · autor",
+          "https://www.bokmcdok.com/creating-a-butterfly-golem/"
+        ]
+      ],
+      "notes": [
+        "Dificuldade é calibração editorial, sem teste de combate no pack.",
+        "Configurações de reprodução e hostilidade do servidor não foram presumidas.",
+        "Texturas de itens do mod mantidas localmente com fallback do componente existente."
+      ]
+    }
+  },
+  {
+    "key": "page:backstage",
+    "lot": 4,
+    "payload": {
+      "note": "Java 1.21.1 · NeoForge. 88 itens publicados em Bastidores; Where Winds Blow classificado para uso apenas no cliente. A planilha inclui classificações aprovadas ainda sem guias publicados.",
+      "items": [
+        {
+          "fn": "Visual/cosmético de player",
+          "name": "3d-Skin-Layers",
+          "version": "1.11.2"
+        },
+        {
+          "fn": "Interface/visual de advancements",
+          "name": "Advancement Plaques",
+          "version": "1.6.8"
+        },
+        {
+          "fn": "Áudio/ambientação",
+          "name": "AmbientSounds",
+          "version": "6.3.8"
+        },
+        {
+          "fn": "HUD/QoL",
+          "name": "AppleSkin",
+          "version": "3.0.9+mc1.21"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Architectury",
+          "version": "13.0.11"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "BaguetteLib",
+          "version": "2.0.7"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Balm",
+          "version": "21.0.65"
+        },
+        {
+          "fn": "Compatibilidade",
+          "name": "Cataclysm x YUNG's Better Nether Fortresses Compat",
+          "version": "1.21.1"
+        },
+        {
+          "fn": "Efeito visual/ambientação",
+          "name": "Cave Dust Rethinking",
+          "version": "3.3.0+1.21.1-neoforge"
+        },
+        {
+          "fn": "Biblioteca/API",
+          "name": "Cerbons API",
+          "version": "1.3.0"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Citadel",
+          "version": "2.7.6"
+        },
+        {
+          "fn": "Biblioteca/config",
+          "name": "Cloth Config v15 API",
+          "version": "15.0.140"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "CodxLib",
+          "version": "1.6.0"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "CoroUtil",
+          "version": "1.21.0-1.3.8"
+        },
+        {
+          "fn": "Recuperação de inventário / QoL",
+          "name": "Corpse",
+          "version": "1.21.1-1.1.13"
+        },
+        {
+          "fn": "Compatibilidade Corpse ↔ Curios",
+          "name": "Corpse Curios Compatibility",
+          "version": "4.0.1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "CreativeCore",
+          "version": "2.13.46"
+        },
+        {
+          "fn": "Biblioteca/integração",
+          "name": "Cupboard mod",
+          "version": "4.2"
+        },
+        {
+          "fn": "API/biblioteca de slots",
+          "name": "Curios API",
+          "version": "9.5.1+1.21.1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Delight Lib",
+          "version": "26.05.18-1.21-neoforge"
+        },
+        {
+          "fn": "Compatibilidade visual",
+          "name": "EMF Compat: Core",
+          "version": "2.0.0"
+        },
+        {
+          "fn": "Compatibilidade visual",
+          "name": "EMF Compat: Not Enough Animations",
+          "version": "1.2.0"
+        },
+        {
+          "fn": "Compatibilidade visual",
+          "name": "EMF Compat: Supplementaries",
+          "version": "1.1.0"
+        },
+        {
+          "fn": "Compatibilidade visual",
+          "name": "EMF Compat: Take a Seat",
+          "version": "2.0.0"
+        },
+        {
+          "fn": "Animação/cosmético",
+          "name": "Eating Animation",
+          "version": "6.0.1"
+        },
+        {
+          "fn": "Cosmético/social de player",
+          "name": "Emotecraft",
+          "version": "2.4.12"
+        },
+        {
+          "fn": "Renderização/modelos",
+          "name": "Entity Model Features",
+          "version": "3.3.7"
+        },
+        {
+          "fn": "Renderização/texturas",
+          "name": "Entity Texture Features",
+          "version": "7.2.3"
+        },
+        {
+          "fn": "Performance",
+          "name": "EntityCulling",
+          "version": "1.10.5"
+        },
+        {
+          "fn": "Navegação / QoL",
+          "name": "Explorer's Compass",
+          "version": "1.21.1-3.4.0-neoforge"
+        },
+        {
+          "fn": "Performance — 2 JARs listados no anexo — conferir coexistência na pasta mods; não presumido conflito.",
+          "name": "Ferrite Core",
+          "version": "7.0.3 / 7.0.0"
+        },
+        {
+          "fn": "Câmera/animação",
+          "name": "FirstPerson",
+          "version": "2.7.2"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Framework",
+          "version": "0.13.11"
+        },
+        {
+          "fn": "Biblioteca/animação",
+          "name": "GeckoLib 4",
+          "version": "4.9.2"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "GlitchCore",
+          "version": "2.1.0.2"
+        },
+        {
+          "fn": "Loader/scripting",
+          "name": "GroovyModLoader",
+          "version": "6.0.2"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Iceberg",
+          "version": "1.3.2"
+        },
+        {
+          "fn": "Performance — 2 JARs listados no anexo — conferir coexistência na pasta mods; não presumido conflito.",
+          "name": "ImmediatelyFast",
+          "version": "1.6.12+1.21.1 / 1.6.14+1.21.1"
+        },
+        {
+          "fn": "Correção/tradução",
+          "name": "Incendium Translation Fix",
+          "version": "1.0.5"
+        },
+        {
+          "fn": "API/biblioteca",
+          "name": "Integrated API",
+          "version": "1.8.2"
+        },
+        {
+          "fn": "Shader/renderização",
+          "name": "Iris",
+          "version": "1.8.14-beta.1+mc1.21.1"
+        },
+        {
+          "fn": "HUD/QoL",
+          "name": "Just Enough Effects Descriptions",
+          "version": "1.21-2.3.3"
+        },
+        {
+          "fn": "Interface/QoL de receitas",
+          "name": "Just Enough Items",
+          "version": "19.56.0.440"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Kiwi Library",
+          "version": "15.8.7+neoforge"
+        },
+        {
+          "fn": "Performance/rede",
+          "name": "Krypton FNP",
+          "version": "0.2.28.1-1.21.1"
+        },
+        {
+          "fn": "Iluminação visual",
+          "name": "LambDynamicLights",
+          "version": "4.8.11+1.21.1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Library ferret",
+          "version": "4.0.0"
+        },
+        {
+          "fn": "Performance",
+          "name": "Lithium",
+          "version": "0.15.4+mc1.21.1"
+        },
+        {
+          "fn": "Biblioteca/worldgen",
+          "name": "Lithostitched",
+          "version": "1.8.0+beta6"
+        },
+        {
+          "fn": "Integração de loot",
+          "name": "Lootintegrations mod",
+          "version": "4.7"
+        },
+        {
+          "fn": "Config/biblioteca",
+          "name": "MezzConfig",
+          "version": "0.5.9"
+        },
+        {
+          "fn": "Performance/correções — 2 JARs listados no anexo — conferir coexistência na pasta mods; não presumido conflito.",
+          "name": "ModernFix",
+          "version": "5.25.0+mc1.21.1 / 5.27.24+mc1.21.1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Moonlight Lib",
+          "version": "1.21.1-3.6.4"
+        },
+        {
+          "fn": "Correção",
+          "name": "MoreRelics New Relics Fix",
+          "version": "1.0.2"
+        },
+        {
+          "fn": "Navegação / QoL",
+          "name": "Nature's Compass",
+          "version": "1.21.1-3.4.0-neoforge"
+        },
+        {
+          "fn": "Animação/cosmético",
+          "name": "NotEnoughAnimations",
+          "version": "1.12.4"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "OctoLib",
+          "version": "0.6.2"
+        },
+        {
+          "fn": "Controle de comandos / utilidade",
+          "name": "Only TP",
+          "version": "1.3.1"
+        },
+        {
+          "fn": "Partículas/visual",
+          "name": "Particular Reforged",
+          "version": "1.5.7"
+        },
+        {
+          "fn": "Biblioteca/animação",
+          "name": "Player Animation Library",
+          "version": "1.1.6+mc.1.21.1"
+        },
+        {
+          "fn": "Áudio/ambientação",
+          "name": "Presence Footsteps (NeoForge)",
+          "version": "1.21.1-1.12.0-beta.1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Puzzles Lib",
+          "version": "21.1.60"
+        },
+        {
+          "fn": "Correção",
+          "name": "Reliquified Twilight Forest new relics fix",
+          "version": "1.0.4"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Resourceful Lib",
+          "version": "3.0.12"
+        },
+        {
+          "fn": "Config/biblioteca",
+          "name": "Resourcefulconfig",
+          "version": "3.0.11"
+        },
+        {
+          "fn": "Performance/renderização",
+          "name": "Sodium",
+          "version": "0.8.13+mc1.21.1"
+        },
+        {
+          "fn": "Config/performance",
+          "name": "Sodium Extra",
+          "version": "0.9.3+mc1.21.1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Sophisticated Core",
+          "version": "1.5.1"
+        },
+        {
+          "fn": "Áudio/ambientação",
+          "name": "Sound Physics Remastered",
+          "version": "1.21.1-1.5.1"
+        },
+        {
+          "fn": "Biblioteca/worldgen",
+          "name": "TerraBlender",
+          "version": "4.1.0.8"
+        },
+        {
+          "fn": "Visual/partículas",
+          "name": "Visuality: Reforged",
+          "version": "3.0.0"
+        },
+        {
+          "fn": "Efeito visual",
+          "name": "Wakes",
+          "version": "1.4.1"
+        },
+        {
+          "fn": "Compatibilidade mapa/waystones",
+          "name": "Waystones2Waypoints2",
+          "version": "2.1.0"
+        },
+        {
+          "fn": "Visual/social de player",
+          "name": "What Are They Up To",
+          "version": "1.21.0-1.2.7"
+        },
+        {
+          "fn": "Mapa/HUD",
+          "name": "Xaero's Minimap",
+          "version": "26.5.0"
+        },
+        {
+          "fn": "Mapa/HUD",
+          "name": "Xaero's World Map",
+          "version": "1.46.0"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "YUNG's API",
+          "version": "1.21.1-NeoForge-5.1.8"
+        },
+        {
+          "fn": "Biblioteca/config",
+          "name": "YetAnotherConfigLib",
+          "version": "3.8.2+1.21.1-neoforge"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "Zeta",
+          "version": "1.1-40"
+        },
+        {
+          "fn": "Correção",
+          "name": "Zeta Registry Race Fix",
+          "version": "1.0.0"
+        },
+        {
+          "fn": "Compatibilidade de animação",
+          "name": "fpm_x_compat",
+          "version": "1.2.1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "gaboulibs",
+          "version": "1.9"
+        },
+        {
+          "fn": "Biblioteca/API",
+          "name": "lionfishapi",
+          "version": "3.1"
+        },
+        {
+          "fn": "Integração de loot",
+          "name": "lootintegrations_cataclysm mod",
+          "version": "1"
+        },
+        {
+          "fn": "Integração de loot",
+          "name": "lootintegrations_dnt mod",
+          "version": "1"
+        },
+        {
+          "fn": "Integração de loot",
+          "name": "lootintegrations_integrated mod",
+          "version": "1"
+        },
+        {
+          "fn": "Biblioteca",
+          "name": "oωo",
+          "version": "0.12.15.5-beta.1+1.21"
+        },
+        {
+          "fn": "Bastidores para uso somente no cliente: vento e efeitos de ambientação. A instalação completa também oferece blocos e geração de vegetação; se usados no servidor, agrupar em Overworld vivo, sem novo marco. Inclusão informada em 09/10/2026; versão e perfil instalado ainda a confirmar. https://modrinth.com/mod/where-winds-blow",
+          "name": "Where Winds Blow",
+          "version": "A confirmar no pack; referência 2.1.0"
+        }
+      ],
+      "to_check": [
+        {
+          "fn": "A conferir in-game — não pesquisar, não presumir função, receita ou dependência.",
+          "name": "Dream Relics"
+        },
+        {
+          "fn": "A conferir in-game — não pesquisar, não presumir função, receita ou dependência.",
+          "name": "Twilight Eye"
+        },
+        {
+          "fn": "Conferir in-game o gatilho exato do addon Final Boss na versão instalada.",
+          "name": "Castle Keeper"
+        },
+        {
+          "fn": "Frosted Prison e boss são documentados; conferir in-game o gatilho fino do encontro nesta versão.",
+          "name": "Maledictus"
+        },
+        {
+          "fn": "Cursed Pyramid é documentada; ativação/spawn e padrões finos continuam a conferir in-game.",
+          "name": "Ancient Remnant"
+        },
+        {
+          "fn": "O marco #045 foi reincluído sem inventar receita: confirmar a variante e a receita exatas no pack/JEI.",
+          "name": "Maçã especial do grupo"
+        },
+        {
+          "fn": "Acropolis e necessidade de kit aquático estão registradas; padrões finos da versão: conferir in-game.",
+          "name": "Scylla"
+        },
+        {
+          "fn": "Licowitch Towers são documentadas; detalhe fino dos encontros usado no risco: conferir in-game.",
+          "name": "Candy Cavity"
+        },
+        {
+          "fn": "Conferir a pasta do modpack para saber se duas versões coexistem; não foi presumido conflito.",
+          "name": "Ferrite Core / ImmediatelyFast / ModernFix duplicados"
+        },
+        {
+          "fn": "Fishing, Trial, Sculk, Potato, Blossom e Aether Eye estão com origem/utilidade confirmadas, mas sem sprite específico confirmado; fallback /icons/item.svg temporário.",
+          "name": "Ícones · End Remastered Additions"
+        },
+        {
+          "fn": "Upper/Middle/Lower Ominous Bone Staff Fragment, Vial of Blood e Bone Dagger continuam sem sprite específico confirmado; estruturas/mob de origem usam fallback local.",
+          "name": "Ícones · The Graveyard"
+        },
+        {
+          "fn": "Axe of a Thousand Metals, Ice Crystal e Sol Visage estão com obtenção/utilidade pesquisadas, mas os sprites específicos não foram confirmados nesta revisão.",
+          "name": "Ícones · Mowzie's Mobs"
+        },
+        {
+          "fn": "Raw Ironwood Materials e Liveroot tiveram receita/utilidade corrigidas, mas os sprites específicos não foram confirmados nesta revisão.",
+          "name": "Ícones · Twilight Forest"
+        },
+        {
+          "fn": "Sewing Table e Season Sensor são renderizados como modelos de bloco; não há sprite 2D standalone confirmado para usar honestamente como ícone de item.",
+          "name": "Ícones · Cold Sweat / Serene Seasons"
+        },
+        {
+          "fn": "The Incinerator e Bulwark of the Flame usam modelo builtin/entity; sem sprite 2D standalone confirmado. Ingredientes de Ignitium ainda usam fallback local.",
+          "name": "Ícones · Cataclysm"
+        },
+        {
+          "fn": "Mobs/estruturas de origem de Aether e Alex's Mobs Continued ainda usam fallbacks locais quando não foi localizado sprite específico reutilizável com fonte confiável.",
+          "name": "Ícones de origem · drops"
+        },
+        {
+          "fn": "Utilidade confirmada e card reescrito; a receita exata da versão instalada não apareceu em fonte confiável nesta revisão, por isso confiança Média e sem grade inventada.",
+          "name": "Thirst Canteen"
+        }
+      ],
+      "image_sources": [
+        {
+          "note": "Fallbacks pixel-art locais do próprio projeto; sem hotlink externo.",
+          "label": "Ícones de conteúdo e troféus",
+          "source": "public/icons/*.svg"
+        },
+        {
+          "note": "Arquivos locais fornecidos para o Mundinho.",
+          "label": "Skins de gr1d e benamu",
+          "source": "public/skins/gr1d.png + public/skins/benamu.png"
+        },
+        {
+          "note": "Arquivo local do projeto; carregamento não depende de terceiros.",
+          "label": "Lembrança da página inicial",
+          "source": "public/memories/selfie.jpg"
+        }
+      ]
+    }
+  }
+]

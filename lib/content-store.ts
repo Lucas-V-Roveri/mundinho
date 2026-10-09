@@ -1,6 +1,6 @@
 import type { SupabaseClient } from "@supabase/supabase-js";
 import { CONTENT_SNAPSHOT_GENERATED_AT, CONTENT_SNAPSHOT_ROWS } from "@/data/content-snapshot.generated";
-import { EXPECTED_GUIDE_THEME_COUNT, guideThemeForId } from "@/data/guide-themes";
+import { EXPECTED_GUIDE_THEME_COUNT, GUIDE_THEME_BY_ID, guideThemeForId } from "@/data/guide-themes";
 import { DEFAULT_GUIDE_THEME } from "@/lib/guide-theme";
 import { STATIC_TOTALS } from "@/lib/static-totals";
 import {
@@ -92,8 +92,14 @@ function assertGuideCoverage(guides: Guide[], source: string) {
     throw new Error(`${source}: IDs de guia duplicados: ${duplicateIds.join(", ")}`);
   }
 
-  if (guides.length !== EXPECTED_GUIDE_THEME_COUNT) {
-    throw new Error(`${source}: esperados ${EXPECTED_GUIDE_THEME_COUNT} guias, recebidos ${guides.length}`);
+  // O frontend pode chegar antes do novo registro editorial durante a publicação.
+  // Os 35 guias anteriores continuam obrigatórios; somente a adição desta rodada
+  // pode estar ausente nessa janela, sem derrubar os dados/progresso existentes.
+  const requiredIds = Object.keys(GUIDE_THEME_BY_ID).filter((id) => id !== "boks-butterflies");
+  const missingIds = requiredIds.filter((id) => !guideIds.includes(id));
+  const unexpectedIds = guideIds.filter((id) => !(id in GUIDE_THEME_BY_ID));
+  if (missingIds.length || unexpectedIds.length || guides.length > EXPECTED_GUIDE_THEME_COUNT) {
+    throw new Error(`${source}: cobertura de guias inválida; ausentes: ${missingIds.join(", ")}; inesperados: ${unexpectedIds.join(", ")}`);
   }
 
   const missingLote3 = LOTE3_GUIDE_IDS.filter((id) => !guideIds.includes(id));

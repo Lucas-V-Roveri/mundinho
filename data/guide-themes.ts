@@ -8,6 +8,7 @@ export type GuideThemeMeta = {
 export const GUIDE_THEME_BY_ID = {
   acampamento: { theme: { accent: "torch", texture: "fire" }, rationale: "Fogueira, descanso e cozinha de expedição fazem do fogo a identidade dominante." },
   aether: { theme: { accent: "gold", texture: "stone" }, rationale: "Dungeons Bronze/Silver/Gold e estética celestial pedem ouro/templo." },
+  "boks-butterflies": { theme: { accent: "grass", texture: "leaf" }, rationale: "Borboletas, mariposas, jardim e ciclo de vida têm identidade natural." },
   "alexs-caves": { theme: { accent: "stone", texture: "stone" }, rationale: "A campanha gira em torno de biomas subterrâneos, tablets e exploração profunda." },
   "alexs-mobs": { theme: { accent: "grass", texture: "leaf" }, rationale: "Fauna, ecossistemas e materiais de criaturas dão identidade natural ao guia." },
   bomd: { theme: { accent: "blue", texture: "ice" }, rationale: "Bosses sobrenaturais muito diferentes entre si são unificados pela família end/arcana." },
@@ -44,7 +45,7 @@ export const GUIDE_THEME_BY_ID = {
 } as const satisfies Record<string, GuideThemeMeta>;
 
 export type KnownGuideId = keyof typeof GUIDE_THEME_BY_ID;
-export const EXPECTED_GUIDE_THEME_COUNT = 35;
+export const EXPECTED_GUIDE_THEME_COUNT = 36;
 
 export function guideThemeForId(id: string): GuideTheme | undefined {
   return GUIDE_THEME_BY_ID[id as KnownGuideId]?.theme;

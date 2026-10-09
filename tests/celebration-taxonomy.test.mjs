@@ -10,7 +10,7 @@ const context = { content, actor: "gr1d", playerStates: {}, customItems: [] };
 const inputFor = (p) => ({ itemId: p.id, completed: true, section: "progression", entryKey: p.entry, label: p.title });
 
 test("every current guide and milestone resolves a semantic family", () => {
-  assert.equal(guides.length, 35);
+  assert.equal(guides.length, 36);
   assert.equal(progression.length, 103);
   for (const guide of guides) assert.notEqual(matchFamily(guide.title.split("+")[0], guide.title).family, "fallback", guide.title);
   for (const item of progression) assert.notEqual(describeCelebration(inputFor(item), context).family, "fallback", item.title);

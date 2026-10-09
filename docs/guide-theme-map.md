@@ -1,13 +1,14 @@
-# Identidade visual dos 35 guias
+# Identidade visual dos 36 guias
 
-Todos os guias atuais têm tema explícito. O fallback `stone/stone` existe apenas para futuros guias ainda não mapeados; nenhum dos 35 abaixo depende dele implicitamente.
+Todos os guias atuais têm tema explícito. O fallback `stone/stone` existe apenas para futuros guias ainda não mapeados; nenhum dos 36 abaixo depende dele implicitamente.
 
 | Guia | accent | texture | Justificativa |
 |---|---|---|---|
 | Acampamento & descanso | torch | fire | Calor, fogueira e descanso. |
-| The Aether + Deep Aether | gold | stone | Leitura luminosa/celestial sem fundo brilhante atrás do texto. |
+| The Aether + Deep Aether + Explore Ruins | gold | stone | Leitura luminosa/celestial sem fundo brilhante atrás do texto. |
 | Alex's Caves | blue | stone | Exploração subterrânea e identidade mineral. |
 | Alex's Mobs Continued | grass | leaf | Fauna e ecossistemas. |
+| Bok’s Banging Butterflies · Borboletas & mariposas | grass | leaf | Coleção, metamorfose e jardim. |
 | Bosses of Mass Destruction | redstone | stone | Combate e perigo. |
 | The Bumblezone | gold | stone | Mel/colmeia com textura discreta. |
 | Cataclysm · bosses restantes | redstone | stone | Bosses de alto risco. |

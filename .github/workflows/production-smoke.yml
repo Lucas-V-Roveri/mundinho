@@ -137,7 +137,7 @@ jobs:
             body = await page.locator('body').innerText();
             if (!body.includes('Marcos relacionados')) throw new Error('Marcos relacionados ausentes dos guias');
             if (!body.includes('Craftings pesquisados')) throw new Error('Craftings pesquisados ausentes');
-            if (await page.locator('article[id^="guide-"]').count() !== 35) throw new Error('Mods não carregou os 35 guias');
+            if (await page.locator('article[id^="guide-"]').count() !== 36) throw new Error('Mods não carregou os 36 guias');
 
             for (const [path, heading] of [['/amendments','Amendments'], ['/extras','Extras']]) {
               response = await page.goto(base + path, { waitUntil: 'networkidle', timeout: 45000 });

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-09",
+  "butterflies_source_commit": "9d556046b576b3c48b43e745eacb9cbb35e91386",
+  "files": [
+    {
+      "file": "mundinho-butterflies-7.10.9.jar",
+      "sha256": "26a290161e714015ab8bc16ab3ace60b845382d555fd7736e8c12a2459ea232e"
+    },
+    {
+      "file": "mundinho-explore-ruins-1.0.0.jar",
+      "sha256": "4fc02d88511e580e9660d96adec4f317fae4cb61b1702e7475df3c26b1f9cb99"
+    }
+  ],
+  "recipes": [
+    "Butterfly Net",
+    "Bottled Common Butterfly",
+    "Common Butterfly Scroll",
+    "Butterfly Microscope",
+    "Lepidopterist’s Book",
+    "Butterfly Feeder",
+    "String",
+    "Paper",
+    "White Butterfly Origami",
+    "Fireproof Butterfly Net"
+  ],
+  "preserved_guide_ids": [
+    "ignis",
+    "sophisticated-backpacks",
+    "twilight-forest",
+    "aether",
+    "alexs-caves",
+    "bomd",
+    "bumblezone",
+    "cataclysm-restante",
+    "deeper-darker",
+    "end-reformulado",
+    "eternal-starlight",
+    "graveyard",
+    "incendium",
+    "mowzies-mobs",
+    "undergarden",
+    "acampamento",
+    "alexs-mobs",
+    "construcao",
+    "cozinha",
+    "create",
+    "dungeons-structures",
+    "fallingtree",
+    "friends-foes",
+    "illager-invasion",
+    "mca",
+    "mob-variants",
+    "overworld-terreno",
+    "overworld-vivo",
+    "piglin-proliferation",
+    "quark",
+    "relics",
+    "spider-overhaul",
+    "supplementaries",
+    "survival-climate",
+    "waystones"
+  ],
+  "new_guide_id": "boks-butterflies",
+  "progression_ids_preserved": true,
+  "player_state_mutations": false
+}
