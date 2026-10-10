@@ -548,7 +548,7 @@
         "id": "progression:900:pattern",
         "title": "Aprender lava e investidas de Netherite Monstrosity",
         "phase": "Pós-jogo",
-        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "confidence": "Média — padrões/ativação nesta build a conferir no pack",
         "icone": "/icons/item.svg"
       },
       {
@@ -610,7 +610,7 @@
         "id": "progression:910:pattern",
         "title": "Aprender ataques de área e quebra da arena de Ender Guardian",
         "phase": "Pós-jogo",
-        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "confidence": "Média — padrões/ativação nesta build a conferir no pack",
         "icone": "/icons/item.svg"
       },
       {
@@ -672,7 +672,7 @@
         "id": "progression:920:pattern",
         "title": "Aprender mísseis/lasers e EMP Blocks da fábrica de Harbinger",
         "phase": "Pós-jogo",
-        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "confidence": "Média — padrões/ativação nesta build a conferir no pack",
         "icone": "/icons/item.svg"
       },
       {
@@ -734,7 +734,7 @@
         "id": "progression:930:pattern",
         "title": "Aprender ataques de área na pirâmide de Ancient Remnant",
         "phase": "Pós-jogo",
-        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "confidence": "Média — padrões/ativação nesta build a conferir no pack",
         "icone": "/icons/item.svg"
       },
       {
@@ -796,7 +796,7 @@
         "id": "progression:940:pattern",
         "title": "Aprender mobilidade e respiração durante combate submerso de Leviathan",
         "phase": "Pós-jogo",
-        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "confidence": "Média — padrões/ativação nesta build a conferir no pack",
         "icone": "/icons/item.svg"
       },
       {
@@ -858,7 +858,7 @@
         "id": "progression:950:pattern",
         "title": "Aprender mobilidade vertical e ataques do encontro de Scylla",
         "phase": "Pós-jogo",
-        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "confidence": "Média — padrões/ativação nesta build a conferir no pack",
         "icone": "/icons/item.svg"
       },
       {
@@ -920,7 +920,7 @@
         "id": "progression:960:pattern",
         "title": "Aprender alternância de armas e ataques próximos de Maledictus",
         "phase": "Pós-jogo",
-        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "confidence": "Média — padrões/ativação nesta build a conferir no pack",
         "icone": "/icons/item.svg"
       },
       {

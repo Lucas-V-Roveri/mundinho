@@ -79,9 +79,9 @@ jobs:
           const mods = text('/tmp/mods.html');
           const extras = text('/tmp/extras.html');
           if (!/Guias\s+35/.test(home)) throw new Error('Home SSR não contém Guias 35');
-          if (!/Marcos\s+113/.test(home)) throw new Error('Home SSR não contém Marcos 113');
+          if (!/Marcos\s+115/.test(home)) throw new Error('Home SSR não contém Marcos 115');
           if (!/Ideias extras\s+19/.test(home)) throw new Error('Home SSR não contém Extras 19');
-          if (!progression.includes('113 marcos do mundinho')) throw new Error('Progressão SSR não contém 113 marcos');
+          if (!progression.includes('115 marcos do mundinho')) throw new Error('Progressão SSR não contém 115 marcos');
           if (!mods.includes('35 guia(s) no Mundinho')) throw new Error('Mods SSR não contém 35 guias');
           if (!extras.includes('19 ideias')) throw new Error('Extras SSR não contém 19 ideias');
           if (/XP do mundinho\s+0\/0/.test(home)) throw new Error('Home SSR vazou XP 0/0');
@@ -112,8 +112,8 @@ jobs:
             // P2: totals remain present with JS completely disabled.
             const noJs = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1200, height: 900 } });
             for (const [path, expected] of [
-              ['/', ['Guias', '35', 'Marcos', '113', 'Ideias extras', '19']],
-              ['/progressao', ['113 marcos do mundinho']],
+              ['/', ['Guias', '35', 'Marcos', '115', 'Ideias extras', '19']],
+              ['/progressao', ['115 marcos do mundinho']],
               ['/mods', ['35 guia(s) no Mundinho']],
               ['/extras', ['19 ideias']],
             ]) {
@@ -172,7 +172,7 @@ jobs:
             await waitForReady(page);
             const home = await page.locator('body').innerText();
             assert(home.includes('Guias\n35'), 'Home pronta não mostra 35 guias');
-            assert(home.includes('Marcos\n106'), 'Home pronta não mostra 113 marcos');
+            assert(home.includes('Marcos\n106'), 'Home pronta não mostra 115 marcos');
             assert(home.includes('Ideias extras\n19'), 'Home pronta não mostra 19 extras');
             assert(!home.includes('Prévia local'), 'Estado saudável ainda mostra Prévia local');
             assert(!/XP do mundinho\s*0\/0/.test(home), 'Home saudável mostra XP 0/0');
@@ -193,7 +193,7 @@ jobs:
               'P1-configured-failure=explicit-error',
               'P1-config-absent=explicit-preview-local',
               'P1-healthy=Supabase-compartilhado',
-              'P2-raw-SSR=35-guides,113-progression,19-extras',
+              'P2-raw-SSR=35-guides,115-progression,19-extras',
               'P2-js-disabled=totals-visible',
               'P3-loading=no-all-done',
               'P3-error=no-all-done',

@@ -5,6 +5,20 @@ import {catalog} from './helpers/bestiary-catalog.mjs';
 const manifest=JSON.parse(fs.readFileSync('data/progression-reconciliation-2026-10-10.json'));
 const patches=[1,2,3].flatMap(n=>JSON.parse(fs.readFileSync(`data/progression-lot-${n}.json`)));
 const mobIds=new Set(catalog().map(x=>x.id));
+test('published snapshot preserves every original milestone and existing child ID',()=>{
+  const baseline=JSON.parse(fs.readFileSync('data/progression-baseline-2026-10-10.json')).items;
+  const file=fs.readFileSync('data/content-snapshot.generated.ts','utf8');
+  const marker='export const CONTENT_SNAPSHOT_ROWS = ';
+  const rows=JSON.parse(file.slice(file.indexOf(marker)+marker.length,file.lastIndexOf(' as const satisfies')));
+  const current=rows.find(x=>x.key==='page:progression').payload.items;
+  const map=new Map(current.map(x=>[x.id,x]));
+  assert.equal(map.size,current.length);
+  for(const item of baseline){
+    assert.ok(map.has(item.id),item.id);
+    assert.equal(map.get(item.id).order,item.order);
+    if(item.subitens?.length)assert.deepEqual(map.get(item.id).subitens,item.subitens,item.id);
+  }
+});
 test('all additions have calibrated fields and unique IDs, without embedded completion',()=>{
   const required=['phase','risk','equipment','required','soft','dependency','unprepared','complexity','reversibility','vanilla','confidence','source'];
   const newItems=patches.filter(x=>manifest.newIds.includes(x.id));

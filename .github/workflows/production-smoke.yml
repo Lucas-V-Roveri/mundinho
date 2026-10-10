@@ -123,7 +123,7 @@ jobs:
             if (response?.status() !== 200) throw new Error(`/progressao HTTP ${response?.status()}`);
             await waitForSupabase(page);
             body = await page.locator('body').innerText();
-            if (!body.includes('113 marcos do mundinho')) throw new Error('Progressão não carregou 113 marcos');
+            if (!body.includes('115 marcos do mundinho')) throw new Error('Progressão não carregou 115 marcos');
             if (!body.includes('confiança:')) throw new Error('Selo de confiança não está rotulado');
             const completedToggle = page.getByTestId('show-completed-toggle');
             if (await completedToggle.getAttribute('aria-pressed') === 'false') await completedToggle.click();
