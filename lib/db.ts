@@ -57,6 +57,8 @@ class LocalPreviewStore extends BaseStore implements DataStore {
     const ids = this.subitemsByParent[parentId] ?? [];
     const completed = ids.length > 0 && ids.every((id) => players[flatPlayerKey(actor, id)]?.completed);
     const existing = players[flatPlayerKey(actor, parentId)];
+    // Novos detalhes não revogam uma conclusão anterior nem herdam sua marcação.
+    if (existing?.completed && !completed && !(parentId in KNOWN_SUBITEM_IDS)) return;
     players[flatPlayerKey(actor, parentId)] = { world_id: this.worldId, item_id: parentId, actor, section, entry_key: entryKey, completed, completed_at: completed ? existing?.completed_at ?? nowIso() : null, updated_at: nowIso() };
   }
 
@@ -81,7 +83,7 @@ class LocalPreviewStore extends BaseStore implements DataStore {
       const key = flatPlayerKey(actor, state.item_id);
       if (!players[key]?.completed) { players[key] = { world_id: this.worldId, item_id: state.item_id, actor, section: state.section, entry_key: state.entry_key, completed: true, completed_at: state.completed_at ?? nowIso(), updated_at: nowIso() }; changed = true; }
     }
-    for (const [parentId, ids] of Object.entries(this.subitemsByParent)) {
+    for (const [parentId, ids] of Object.entries(KNOWN_SUBITEM_IDS)) {
       for (const actor of ["gr1d", "benamu"] as const) {
         const parent = players[flatPlayerKey(actor, parentId)];
         if (!parent?.completed) continue;
@@ -120,7 +122,10 @@ class SupabaseStore extends BaseStore implements DataStore {
     const { data, error } = await this.client.from("mundinho_player_item_state").select("item_id,completed,completed_at").eq("world_id", this.worldId).eq("actor", actor).in("item_id", ids);
     if (error) throw error;
     const completed = ids.length > 0 && ids.every((id) => data?.some((row) => row.item_id === id && row.completed));
-    const payload = { world_id: this.worldId, item_id: parentId, actor, section: "progression" as const, entry_key: entryKey, completed, completed_at: completed ? nowIso() : null, updated_at: nowIso() };
+    const { data: existing, error: existingError } = await this.client.from("mundinho_player_item_state").select("completed,completed_at").eq("world_id", this.worldId).eq("item_id", parentId).eq("actor", actor).maybeSingle();
+    if (existingError) throw existingError;
+    if (existing?.completed && !completed && !(parentId in KNOWN_SUBITEM_IDS)) return;
+    const payload = { world_id: this.worldId, item_id: parentId, actor, section: "progression" as const, entry_key: entryKey, completed, completed_at: completed ? existing?.completed_at ?? nowIso() : null, updated_at: nowIso() };
     const { error: parentError } = await this.client.from("mundinho_player_item_state").upsert(payload, { onConflict: "world_id,item_id,actor" });
     if (parentError) throw parentError;
     await this.syncAggregate(parentId, "progression", entryKey);
@@ -146,7 +151,7 @@ class SupabaseStore extends BaseStore implements DataStore {
     }
     const merged = { ...players };
     additions.forEach((row) => { merged[flatPlayerKey(row.actor, row.item_id)] = row; });
-    for (const [parentId, ids] of Object.entries(this.subitemsByParent)) {
+    for (const [parentId, ids] of Object.entries(KNOWN_SUBITEM_IDS)) {
       for (const actor of ["gr1d", "benamu"] as const) {
         const parent = merged[flatPlayerKey(actor, parentId)]; if (!parent?.completed) continue;
         for (const id of ids) {
