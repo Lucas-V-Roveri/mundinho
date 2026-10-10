@@ -109,5 +109,12 @@ test('all new rewards have usable local crafting anchors and honest mechanism/so
 test('images are separate render PNGs and persistence implementation remains byte-identical',()=>{
   assert.equal(new Set(bomd.map(e=>e.imageUrl)).size,4);
   for(const e of bomd){assert.ok(!e.imageUrl.includes('/textures/'));const b=fs.readFileSync(path.join(root,'public',e.imageUrl));assert.equal(b.subarray(1,4).toString(),'PNG');assert.ok(b.readUInt32BE(16)>64&&b.readUInt32BE(20)>64);}
-  for(const name of ['lib/bestiary-state.ts','lib/supabase/browser.ts','types/content.ts']) assert.equal(fs.readFileSync(path.join(root,name),'utf8'),cp.execFileSync('git',['show',`${CANARY_REF}:${name}`],{cwd:root,encoding:'utf8'}));
+  for(const name of ['lib/bestiary-state.ts','lib/supabase/browser.ts']) assert.equal(fs.readFileSync(path.join(root,name),'utf8'),cp.execFileSync('git',['show',`${CANARY_REF}:${name}`],{cwd:root,encoding:'utf8'}));
+  const current=fs.readFileSync(path.join(root,'types/content.ts'),'utf8');
+  const previous=cp.execFileSync('git',['show',`${CANARY_REF}:types/content.ts`],{cwd:root,encoding:'utf8'});
+  for(const name of ['ItemState','PlayerItemState','CustomItem','BackupPayload']) {
+    const pattern=new RegExp(`export type ${name} = \\{[\\s\\S]*?\\n\\};`);
+    assert.equal(current.match(pattern)?.[0],previous.match(pattern)?.[0],name);
+    assert.ok(current.match(pattern),name);
+  }
 });

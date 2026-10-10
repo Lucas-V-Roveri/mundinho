@@ -3,6 +3,8 @@ import test from "node:test";
 import { matchFamily, describeCelebration } from "../components/effects/taxonomy.ts";
 import { CONTENT_SNAPSHOT_ROWS } from "../data/content-snapshot.generated.ts";
 
+import { STATIC_TOTALS } from "../lib/static-totals.ts";
+
 const guides = CONTENT_SNAPSHOT_ROWS.filter((r) => r.key.startsWith("guide:")).map((r) => r.payload);
 const progression = CONTENT_SNAPSHOT_ROWS.find((r) => r.key === "page:progression").payload.items;
 const content = { guides, progression, extras: { items: [] }, amendments: null, backstage: null };
@@ -11,7 +13,7 @@ const inputFor = (p) => ({ itemId: p.id, completed: true, section: "progression"
 
 test("every current guide and milestone resolves a semantic family", () => {
   assert.equal(guides.length, 36);
-  assert.equal(progression.length, 103);
+  assert.equal(progression.length, STATIC_TOTALS.progression);
   for (const guide of guides) assert.notEqual(matchFamily(guide.title.split("+")[0], guide.title).family, "fallback", guide.title);
   for (const item of progression) assert.notEqual(describeCelebration(inputFor(item), context).family, "fallback", item.title);
 });

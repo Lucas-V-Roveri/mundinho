@@ -45,3 +45,8 @@ test("suggestion respects confirmed dependencies", () => {
   assert.equal(nextEligibleProgression(items, () => false)?.id, "inicio:1");
   assert.equal(nextEligibleProgression(items, (id) => id === "inicio:1")?.id, "intermediario:locked");
 });
+
+test("transversal accompanies expeditions without replacing the suggested next milestone", () => {
+  const items = [{...milestone("cross", 1, "Início"),transversal:true},milestone("next",2,"Início")];
+  assert.equal(nextEligibleProgression(items, () => false)?.id,"next");
+});

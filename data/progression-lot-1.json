@@ -1,0 +1,383 @@
+[
+  {
+    "order": 142,
+    "entry": "Relíquias & Artefatos",
+    "mods": "Relics, More Relics, Reliquified Twilight Forest, reliquified_artifacts",
+    "title": "Desenvolver uma relíquia com experiência e uma habilidade útil",
+    "type": "Equipamento / especialização",
+    "equipment": "Sem tier de armadura obrigatório; uma relíquia do sistema Relics",
+    "required": "Possuir uma relíquia com experiência/habilidades do Relics; não se aplica a todo Artifact",
+    "soft": "Ler a interface e escolher uma habilidade que ajude nas atividades atuais; testar perto da base",
+    "risk": "Baixo",
+    "unprepared": "Investir em um efeito que não combina com o uso atual custa tempo; obter experiência pode expor ao risco da atividade escolhida.",
+    "complexity": "Moderada",
+    "reversibility": "Alta — pode trocar a relíquia; investimento e estatísticas não têm reset presumido",
+    "vanilla": "Especializar equipamento encantado",
+    "phase": "Intermediário",
+    "dependency": "Depois de obter uma relíquia em #140; requisito é o item, não marcar #140 nem vencer um chefe.",
+    "confidence": "Alta para o sistema; Média para calibração",
+    "source": "https://www.curseforge.com/minecraft/mc-mods/relics-mod",
+    "notes": "Relics 0.12.8: experiência, estatísticas aleatórias e habilidades progressivas. Não exige nível máximo, conjunto completo ou quantidade inventada. Fase, risco e kit são calibração editorial de conforto, não requisitos impostos pelo mod. Configurações efetivas do save e combate combinado no pack não foram testados. Marco opcional; sem gate de boss para outras trilhas.",
+    "id": "progression:142",
+    "icone": "/icons/item.svg",
+    "subitens": [
+      {
+        "id": "progression:142:inspect",
+        "title": "Escolher uma relíquia Relics e ler sua habilidade e condição de experiência",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:142:experience",
+        "title": "Ganhar experiência usando a condição indicada pela própria relíquia",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:142:ability",
+        "title": "Aplicar uma melhoria disponível e testar a habilidade escolhida",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      }
+    ]
+  },
+  {
+    "order": 145,
+    "entry": "Better Archeology",
+    "mods": "Better Archeology",
+    "title": "Fazer uma escavação e identificar o primeiro artefato",
+    "type": "Arqueologia / utilidade",
+    "equipment": "Escova; ferramentas básicas; ferro/escudo se o sítio estiver ocupado",
+    "required": "Encontrar materiais escováveis do mod; Unidentified Artifact e Archeology Table para identificação",
+    "soft": "Iluminar e preservar blocos suspeitos; consultar JEI para as receitas da build instalada",
+    "risk": "Baixo",
+    "unprepared": "Quebrar blocos escováveis pode perder o achado; estruturas escuras podem conter ameaças comuns.",
+    "complexity": "Moderada",
+    "reversibility": "Alta — pode voltar e procurar outro sítio; achados destruídos não são recuperáveis",
+    "vanilla": "Arqueologia de Trail Ruins",
+    "phase": "Início",
+    "dependency": "Trilha paralela — sem boss gate; identificação vem depois da escavação.",
+    "confidence": "Alta para 1.3.8; Média para preparo",
+    "source": "https://www.curseforge.com/minecraft/mc-mods/better-archeology/files/8577242\nhttps://www.curseforge.com/minecraft/mc-mods/better-archeology",
+    "notes": "Build instalada 1.3.8, não a 1.3.9 posterior. O changelog confirma identificação via receitas da Archeology Table. Não exige todo fóssil/artefato. Fase, risco e kit são calibração editorial de conforto, não requisitos impostos pelo mod. Configurações efetivas do save e combate combinado no pack não foram testados. Marco opcional; sem gate de boss para outras trilhas.",
+    "id": "progression:145",
+    "icone": "/icons/item.svg",
+    "subitens": [
+      {
+        "id": "progression:145:excavation",
+        "title": "Escovar um sítio com Suspicious Dirt ou Suspicious Red Sand",
+        "phase": "Início",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:145:artifact",
+        "title": "Obter um Unidentified Artifact pela arqueologia do mod",
+        "phase": "Início",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:145:identify",
+        "title": "Identificar o artefato na Archeology Table",
+        "phase": "Início",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      }
+    ]
+  },
+  {
+    "order": 175,
+    "entry": "Golems — utilitários, defesa & automação",
+    "mods": "Straw Golem Updated, Golem Overhaul",
+    "title": "Colocar um golem utilitário em uma função real na base",
+    "type": "Utilidade / automação",
+    "equipment": "Sem tier de armadura obrigatório; materiais do golem escolhido",
+    "required": "Criar ou encontrar um golem do grupo; plantação e recipiente para a trilha Straw Golem",
+    "soft": "Começar por uma plantação pequena e protegida; manter alimento e reparos conforme o tipo",
+    "risk": "Baixo",
+    "unprepared": "Golems vulneráveis podem morrer ou parar de trabalhar por falta de manutenção; não substituem defesa automática garantida.",
+    "complexity": "Moderada",
+    "reversibility": "Alta — projeto da base ajustável; morte consome a entidade e seus materiais",
+    "vanilla": "Colheita e proteção de lavoura / Iron Golem",
+    "phase": "Início",
+    "dependency": "Trilha paralela — ordem indiferente; não exige Create, Nether ou boss.",
+    "confidence": "Alta para funções; Média para preparo",
+    "source": "https://modrinth.com/mod/straw-golem-rebaled-updated\nhttps://modrinth.com/mod/golem-overhaul\nhttps://modrinth.com/mod/golem-overhaul/gallery",
+    "notes": "Straw Golem 2.2.2: colheita, replantio e entrega configuráveis; fome/duração exigem manutenção. Golem Overhaul 1.1.1 oferece nove tipos: escolher um uso basta; não obriga criar nove. #175 livre nas duas fontes em 10/10. Fase, risco e kit são calibração editorial de conforto, não requisitos impostos pelo mod. Configurações efetivas do save e combate combinado no pack não foram testados. Marco opcional; sem gate de boss para outras trilhas.",
+    "id": "progression:175",
+    "icone": "/icons/item.svg",
+    "subitens": [
+      {
+        "id": "progression:175:choose",
+        "title": "Escolher Straw Golem para colheita ou um tipo utilitário do Golem Overhaul",
+        "phase": "Início",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:175:deploy",
+        "title": "Criar/encontrar o golem escolhido e preparar sua área de trabalho",
+        "phase": "Início",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:175:function",
+        "title": "Confirmar uma entrega de colheita ou a função específica do golem escolhido",
+        "phase": "Início",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:175:upkeep",
+        "title": "Preparar alimento/reparo e proteger o golem de ameaças",
+        "phase": "Início",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      }
+    ]
+  },
+  {
+    "id": "progression:190",
+    "mods": "Friends&Foes",
+    "risk": "Médio",
+    "soft": "Ranged weapon e comida boa",
+    "type": "Mobs / combate",
+    "entry": "Friends&Foes",
+    "icone": "/icons/minecraft/crossbow.png",
+    "notes": "",
+    "order": 190,
+    "phase": "Intermediário",
+    "title": "Enfrentar Iceologer, Wildfire e outros encontros hostis do mod",
+    "source": "https://modrinth.com/mod/friends-and-foes-forge/version/neoforge-4.0.27%2Bmc1.21.1",
+    "vanilla": "Nether-pré-Fortress",
+    "required": "Encontrar o mob/estrutura correspondente",
+    "equipment": "Ferro completo + escudo",
+    "complexity": "Moderada",
+    "confidence": "Média",
+    "dependency": "Trilha paralela — ordem indiferente.",
+    "unprepared": "Controle de área/ranged dos hostis pode punir quem entra sem escudo ou cobertura.",
+    "reversibility": "Alta",
+    "subitens": [
+      {
+        "id": "progression:190:iceologer",
+        "title": "Encontrar a Iceologer Cabin e enfrentar o Iceologer",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "friendsfoes-iceologer"
+      },
+      {
+        "id": "progression:190:illusioner",
+        "title": "Enfrentar o Illusioner e distinguir suas ilusões",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "friendsfoes-illusioner"
+      },
+      {
+        "id": "progression:190:wildfire",
+        "title": "Localizar a Citadel do Nether e enfrentar Wildfire",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "friendsfoes-wildfire"
+      }
+    ]
+  },
+  {
+    "id": "progression:200",
+    "mods": "Spider Overhaul",
+    "risk": "Médio",
+    "soft": "Antídoto/leite quando aplicável; combate à distância em terreno ruim",
+    "type": "Mobs / combate",
+    "entry": "Spider Overhaul",
+    "icone": "/icons/minecraft/spider_eye.png",
+    "notes": "A página do arquivo confirma que o mod inclui mobs, estruturas, itens/armas e comida, mas não documenta ali uma cadeia rígida de progressão. Detalhamento adicional: conclusão histórica do marco preservada; novos subitens começam desmarcados. Os encontros formam uma amostra prática, não uma coleção de todas as variantes.",
+    "order": 200,
+    "phase": "Intermediário",
+    "title": "Conhecer variantes/estruturas e novas ameaças de aranhas",
+    "source": "https://www.curseforge.com/minecraft/mc-mods/spider-overhaul/files/8741447",
+    "vanilla": "Nether-pré-Fortress",
+    "required": "Nenhum além de encontrar o conteúdo",
+    "equipment": "Ferro completo + escudo",
+    "complexity": "Moderada",
+    "confidence": "Média",
+    "dependency": "Trilha paralela — ordem indiferente.",
+    "unprepared": "Variantes e mecânicas próprias podem punir exploração noturna/cavernas sem rota de fuga.",
+    "reversibility": "Alta",
+    "subitens": [
+      {
+        "id": "progression:200:desert",
+        "title": "Reconhecer Desert Spider e sua rajada de espinhos",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "spideroverhaul-desert_spider"
+      },
+      {
+        "id": "progression:200:cavern",
+        "title": "Enfrentar Cavern Spider e aprender a restrição Webbed",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "spideroverhaul-cavern_spider"
+      },
+      {
+        "id": "progression:200:ice",
+        "title": "Reconhecer Ice Spider e responder ao efeito Icy",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "spideroverhaul-ice_spider"
+      }
+    ]
+  },
+  {
+    "id": "progression:210",
+    "mods": "Alex's Mobs Continued",
+    "risk": "Médio",
+    "soft": "Animal Dictionary/observação e combate seletivo; não atacar neutros sem entender o comportamento",
+    "type": "Mobs / exploração",
+    "entry": "Alex's Mobs Continued",
+    "icone": "/icons/minecraft/rabbit_hide.png",
+    "notes": "",
+    "order": 210,
+    "phase": "Intermediário",
+    "title": "Conhecer a fauna e obter materiais utilitários dos mobs do Overworld/Nether",
+    "source": "https://modrinth.com/mod/kYIaHHfw",
+    "vanilla": "Nether-pré-Fortress",
+    "required": "Nenhum",
+    "equipment": "Ferro completo para os encontros hostis; sem tier para fauna passiva",
+    "complexity": "Moderada",
+    "confidence": "Média",
+    "dependency": "Trilha paralela — ordem indiferente.",
+    "unprepared": "Algumas criaturas têm mecânicas específicas e podem ser muito mais perigosas que mobs vanilla.",
+    "reversibility": "Alta",
+    "subitens": [
+      {
+        "id": "progression:210:dictionary",
+        "title": "Consultar o Animal Dictionary para um encontro do Overworld",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg"
+      },
+      {
+        "id": "progression:210:roadrunner",
+        "title": "Obter Roadrunner Feather e conferir sua utilidade no Bestiário",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "alexsmobs-roadrunner"
+      },
+      {
+        "id": "progression:210:nether",
+        "title": "Reconhecer Crimson Mosquito no Nether e preparar retirada",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "alexsmobs-crimson-mosquito"
+      }
+    ]
+  },
+  {
+    "id": "progression:220",
+    "mods": "Illager Invasion",
+    "risk": "Alto",
+    "soft": "Arco, leite e comida boa para encontros com efeitos e grupos",
+    "type": "Mobs / invasão",
+    "entry": "Illager Invasion",
+    "icone": "/icons/minecraft/crossbow.png",
+    "notes": "",
+    "order": 220,
+    "phase": "Intermediário",
+    "title": "Enfrentar os novos illagers e conteúdo de invasão/estruturas",
+    "source": "https://github.com/Fuzss/illagerinvasion",
+    "vanilla": "Nether-pré-Fortress",
+    "required": "Encontrar estruturas/eventos/illagers adicionados",
+    "equipment": "Ferro completo + escudo",
+    "complexity": "Moderada",
+    "confidence": "Média",
+    "dependency": "Trilha paralela — ordem indiferente; não é requisito para outra dimensão.",
+    "unprepared": "Grupos de illagers e combate à distância podem cercar e desgastar rápido.",
+    "reversibility": "Alta",
+    "subitens": [
+      {
+        "id": "progression:220:basher",
+        "title": "Enfrentar Basher sem insistir contra seu escudo",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "illagerinvasion-basher"
+      },
+      {
+        "id": "progression:220:sorcerer",
+        "title": "Enfrentar Sorcerer e evitar sua magia de área",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "illagerinvasion-sorcerer"
+      },
+      {
+        "id": "progression:220:invoker",
+        "title": "Enfrentar Invoker e obter Hallowed Gem para a linha de Imbuing Table",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "illagerinvasion-invoker"
+      }
+    ]
+  },
+  {
+    "id": "progression:230",
+    "mods": "Piglin Proliferation",
+    "risk": "Alto",
+    "soft": "Escudo e resistência ao fogo quando possível",
+    "type": "Mobs / Nether",
+    "entry": "Piglin Proliferation",
+    "icone": "/icons/minecraft/gold_ingot.png",
+    "notes": "",
+    "order": 230,
+    "phase": "Intermediário",
+    "title": "Aprender os novos tipos e mecânicas de piglins durante a primeira fase do Nether",
+    "source": "https://modrinth.com/mod/piglin-proliferation/version/2.0.15",
+    "vanilla": "Nether-pré-Fortress",
+    "required": "Acesso ao Nether",
+    "equipment": "Ouro em pelo menos uma peça de armadura; ferro/diamante para combate",
+    "complexity": "Moderada",
+    "confidence": "Alta",
+    "dependency": "Depois de acessar o Nether; trilha paralela — ordem indiferente.",
+    "unprepared": "Novos nichos de piglins tornam bastiões/Nether menos previsíveis; agressão pode escalar rápido.",
+    "reversibility": "Alta",
+    "subitens": [
+      {
+        "id": "progression:230:alchemist",
+        "title": "Reconhecer Piglin Alchemist e sua assistência por poções",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "piglinproliferation-piglin_alchemist"
+      },
+      {
+        "id": "progression:230:barter",
+        "title": "Fazer uma troca com Piglin Alchemist sem provocar o grupo",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "piglinproliferation-piglin_alchemist"
+      },
+      {
+        "id": "progression:230:traveler",
+        "title": "Encontrar Piglin Traveler e conhecer suas trocas",
+        "phase": "Intermediário",
+        "confidence": "Alta nos recursos auditados; preparo editorial",
+        "icone": "/icons/item.svg",
+        "bestiaryId": "piglinproliferation-piglin_traveler"
+      }
+    ]
+  }
+]

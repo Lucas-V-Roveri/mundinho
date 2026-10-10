@@ -1,0 +1,2264 @@
+{
+  "version": "v4.4.4+mod",
+  "sha1": "249a5bdd0e8622b8a11f88758e6f5fd5fda036a3",
+  "structures": {
+    "data/nova_structures/worldgen/structure/badlands_miner_outpost.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:badlands_miner_outpost_start",
+      "liquid_settings": "ignore_waterlogging",
+      "biomes": "#nova_structures:collections/badlands",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 100,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/bunker.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:bunker_enterance",
+      "biomes": "#nova_structures:collections/land",
+      "liquid_settings": "ignore_waterlogging",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 100,
+      "size": 20,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/conduit_ruin.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:conduit_ruin/conduit_ruin_start",
+      "biomes": "#nova_structures:collections/oceans",
+      "project_start_to_heightmap": "OCEAN_FLOOR_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "piece",
+          "spawns": [
+            {
+              "type": "minecraft:guardian",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 1
+            },
+            {
+              "type": "minecraft:drowned",
+              "maxCount": 2,
+              "minCount": 1,
+              "weight": 5
+            }
+          ]
+        }
+      },
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 100,
+      "size": 5,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/creeping_crypt.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/taiga",
+      "step": "surface_structures",
+      "liquid_settings": "ignore_waterlogging",
+      "spawn_overrides": {},
+      "terrain_adaptation": "none",
+      "start_pool": "nova_structures:creeping_crypt/crypt_house",
+      "size": 7,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "max_distance_from_center": 128,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/deepslate_camp.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/stronghold_related_ruins_biomes",
+      "step": "underground_structures",
+      "spawn_overrides": {},
+      "terrain_adaptation": "none",
+      "start_pool": "nova_structures:deepslate_camp/deepslate_camp",
+      "dimension_padding": {
+        "bottom": 3,
+        "top": 238
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "size": 2,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": -50
+        },
+        "max_inclusive": {
+          "absolute": 0
+        }
+      },
+      "max_distance_from_center": 8,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/desert_ruins.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:desert_ruins/desert_ruins_start",
+      "biomes": "#nova_structures:collections/deserts",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 100,
+      "size": 9,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/end_castle.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:end_castle/start",
+      "biomes": "#nova_structures:collections/end",
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 158
+        },
+        "max_inclusive": {
+          "absolute": 159
+        }
+      },
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "type": "minecraft:phantom",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:enderman",
+              "maxCount": 4,
+              "minCount": 1,
+              "weight": 200
+            },
+            {
+              "type": "minecraft:endermite",
+              "maxCount": 16,
+              "minCount": 1,
+              "weight": 400
+            }
+          ]
+        }
+      },
+      "step": "surface_structures",
+      "start_jigsaw_name": "nova_structures:end_castle_anchor",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 128,
+      "size": 10,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/end_lighthouse.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:end_lighthouse/start",
+      "biomes": "#minecraft:has_structure/end_city",
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 64
+        },
+        "max_inclusive": {
+          "absolute": 78
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 4,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/end_ship.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:end_ships/boat",
+      "biomes": "#nova_structures:collections/outer_end",
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 80
+        },
+        "max_inclusive": {
+          "absolute": 159
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 128,
+      "size": 2,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_birch.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_birch",
+      "biomes": "#nova_structures:collections/birch_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_cherry.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_cherry",
+      "biomes": "#nova_structures:collections/cherry_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_dark_oak.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_dark_oak",
+      "biomes": "#nova_structures:collections/spooky_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_forest.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_forest",
+      "biomes": [
+        "minecraft:forest"
+      ],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_jungle.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_jungle",
+      "biomes": "#nova_structures:collections/jungles",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_mangrove.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_mangrove",
+      "biomes": [
+        "minecraft:mangrove_swamp"
+      ],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_savanna.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_savanna",
+      "biomes": "#nova_structures:collections/savannas",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_swamp.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_swamp",
+      "biomes": [
+        "minecraft:swamp"
+      ],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/firewatch_tower_taiga.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:firewatch_tower_taiga",
+      "biomes": "#nova_structures:collections/any_taiga",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 1,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/hamlet.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#minecraft:has_structure/bastion_remnant",
+      "start_pool": "nova_structures:hamlet/hamlet_center",
+      "max_distance_from_center": 100,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/illager_camp.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:illager_camp_fire",
+      "biomes": "#nova_structures:illager_hideout",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 3,
+      "terrain_adaptation": "beard_thin"
+    },
+    "data/nova_structures/worldgen/structure/illager_hideout.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:illager_hideout",
+      "step": "underground_structures",
+      "dimension_padding": {
+        "bottom": 3,
+        "top": 300
+      },
+      "spawn_overrides": {},
+      "terrain_adaptation": "encapsulate",
+      "start_pool": "nova_structures:illager_hideout_heart",
+      "liquid_settings": "ignore_waterlogging",
+      "size": 6,
+      "start_height": {
+        "absolute": -32
+      },
+      "max_distance_from_center": 100,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/illager_manor.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/spooky_forests",
+      "max_distance_from_center": 127,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "minecraft:illager_mansion/illager_mansion_entry",
+      "liquid_settings": "ignore_waterlogging",
+      "start_jigsaw_name": "nova_structures:manor_anchor",
+      "size": 11,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/jungle_ruins.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:jungle_ruin_center",
+      "biomes": "#nova_structures:collections/jungles",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "type": "minecraft:spider",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:zombie",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 95
+            },
+            {
+              "type": "minecraft:zombie_villager",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 5
+            },
+            {
+              "type": "minecraft:skeleton",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:creeper",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:slime",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:enderman",
+              "maxCount": 4,
+              "minCount": 1,
+              "weight": 30
+            },
+            {
+              "type": "minecraft:drowned",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 95
+            },
+            {
+              "type": "minecraft:witch",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 5
+            },
+            {
+              "type": "minecraft:bogged",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 200
+            }
+          ]
+        }
+      },
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 100,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/lone_citadel.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/snowy_structures",
+      "max_distance_from_center": 128,
+      "spawn_overrides": {},
+      "step": "underground_decoration",
+      "start_height": {
+        "absolute": 106
+      },
+      "start_pool": "nova_structures:lone_citadel/start",
+      "start_jigsaw_name": "nova_structures:lone_citadel_frame_anchor",
+      "liquid_settings": "ignore_waterlogging",
+      "size": 20,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/mangrove_witch_hut.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:mangrove_witch_hut",
+      "biomes": [
+        "minecraft:mangrove_swamp"
+      ],
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {
+        "creature": {
+          "bounding_box": "piece",
+          "spawns": [
+            {
+              "type": "minecraft:cat",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 1
+            }
+          ]
+        },
+        "monster": {
+          "bounding_box": "piece",
+          "spawns": [
+            {
+              "type": "minecraft:witch",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/nether_keep.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#minecraft:has_structure/nether_fortress",
+      "max_distance_from_center": 127,
+      "dimension_padding": {
+        "bottom": 30,
+        "top": 138
+      },
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "piece",
+          "spawns": [
+            {
+              "type": "minecraft:blaze",
+              "maxCount": 3,
+              "minCount": 2,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:zombified_piglin",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 50
+            },
+            {
+              "type": "minecraft:wither_skeleton",
+              "maxCount": 5,
+              "minCount": 5,
+              "weight": 80
+            },
+            {
+              "type": "minecraft:skeleton",
+              "maxCount": 5,
+              "minCount": 5,
+              "weight": 20
+            },
+            {
+              "type": "minecraft:magma_cube",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 30
+            }
+          ]
+        }
+      },
+      "step": "underground_decoration",
+      "start_height": {
+        "absolute": 60
+      },
+      "start_pool": "minecraft:nether_fortress/nether_fortress_core",
+      "size": 11,
+      "start_jigsaw_name": "minecraft:nether_keep_anchor",
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/nether_port.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#minecraft:has_structure/nether_fortress",
+      "max_distance_from_center": 100,
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "piece",
+          "spawns": [
+            {
+              "type": "minecraft:blaze",
+              "maxCount": 2,
+              "minCount": 1,
+              "weight": 10
+            },
+            {
+              "type": "minecraft:zombified_piglin",
+              "maxCount": 2,
+              "minCount": 1,
+              "weight": 5
+            },
+            {
+              "type": "minecraft:wither_skeleton",
+              "maxCount": 3,
+              "minCount": 1,
+              "weight": 10
+            },
+            {
+              "type": "minecraft:skeleton",
+              "maxCount": 5,
+              "minCount": 1,
+              "weight": 10
+            },
+            {
+              "type": "minecraft:magma_cube",
+              "maxCount": 2,
+              "minCount": 1,
+              "weight": 3
+            }
+          ]
+        }
+      },
+      "step": "underground_decoration",
+      "start_height": {
+        "absolute": 31
+      },
+      "start_pool": "nova_structures:nether_port/main",
+      "size": 5,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/nether_skeleton_tower_crimson.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/nether_crimson_forests",
+      "start_pool": "nova_structures:nether_skeleton_tower/nether_skeleton_tower_crimson_tower",
+      "max_distance_from_center": 75,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 90
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/nether_skeleton_tower_soul.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/nether_souls",
+      "start_pool": "nova_structures:nether_skeleton_tower/nether_skeleton_tower_soul_tower",
+      "max_distance_from_center": 75,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 90
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/nether_skeleton_tower_warped.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/nether_warped_forest",
+      "start_pool": "nova_structures:nether_skeleton_tower/nether_skeleton_tower_warped_tower",
+      "max_distance_from_center": 75,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 90
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/nether_skeleton_tower_waste.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "minecraft:nether_wastes",
+      "start_pool": "nova_structures:nether_skeleton_tower/nether_skeleton_tower_basalt_tower",
+      "max_distance_from_center": 75,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 90
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/piglin_camp.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#minecraft:has_structure/bastion_remnant",
+      "start_pool": "nova_structures:piglin_camp/campfire",
+      "max_distance_from_center": 20,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/piglin_donjon.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#minecraft:has_structure/bastion_remnant",
+      "max_distance_from_center": 128,
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "piece",
+          "spawns": []
+        }
+      },
+      "step": "underground_decoration",
+      "start_height": {
+        "absolute": 32
+      },
+      "start_pool": "nova_structures:donjon/donjon_framework/donjon_center_start",
+      "size": 20,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/piglin_outstation.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#minecraft:has_structure/bastion_remnant",
+      "start_pool": "nova_structures:piglin_outstation/tower",
+      "max_distance_from_center": 100,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      },
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "type": "minecraft:piglin",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 1
+            }
+          ]
+        }
+      },
+      "step": "surface_structures",
+      "size": 5,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_bee_keeper.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/bee_keeper",
+      "biomes": "#nova_structures:collections/floral",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_big_remnant.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/big_remnant",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_big_remnant_2.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/big_remnant_2",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_big_remnant_3.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/big_remnant_3",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_birch_graveyard.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/birch_forrest_graveyard",
+      "biomes": "#nova_structures:collections/birch_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_bridge_remnant.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/bridge_remnant",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_bunny_base.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/bunny_base",
+      "biomes": "#nova_structures:collections/meadows",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_classic_village.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/classic_village_well",
+      "biomes": "#nova_structures:collections/oak_structure_biomes",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_thin"
+    },
+    "data/nova_structures/worldgen/structure/remnant_desert_remnant.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/desert_remnant",
+      "biomes": "#nova_structures:collections/deserts",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_forest_smith.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/forrest_smith",
+      "biomes": "#nova_structures:collections/spooky_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_frog_ranch.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/frog_ranch",
+      "biomes": "#nova_structures:collections/mangroves",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_graveyard.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/graveyard",
+      "biomes": "#nova_structures:collections/any_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_medium_remnant.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/medium_remnant",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_medium_remnant_2.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/medium_remnant_2",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_miner_hut.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/miner_hut",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_mud_brick_constructor.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/mud_brick_constructor",
+      "biomes": "#nova_structures:collections/mangroves",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_ominous_shop.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/ominous_shop",
+      "biomes": "#nova_structures:collections/spooky_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_ruin_farmer.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/ruin_farmer",
+      "biomes": "#nova_structures:collections/oak_structure_biomes",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_ruin_smith.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/ruin_smith",
+      "biomes": "#nova_structures:collections/oak_structure_biomes",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_sawmill.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/sawmill",
+      "biomes": "#nova_structures:collections/any_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_school_remnant.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/school_remnant",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_taiga_castle.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/taiga_castle",
+      "biomes": "#nova_structures:collections/any_taiga",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_woodland_hud.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/woodland_hud",
+      "biomes": "#nova_structures:collections/spooky_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/remnant_zombie_horse_ranch.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:remnant/zombie_horse_ranch",
+      "biomes": "#nova_structures:collections/any_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 3,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/ruin_town.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:ruin_town_center",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 110,
+      "size": 5,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/shrine_combat_tier_1.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:shrine/combat/shrine_enterance_tier_1",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 128,
+      "pool_aliases": [
+        {
+          "type": "minecraft:random_group",
+          "groups": [
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/ice_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/breeze_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/desert_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/forrest_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/dungeon_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/spider_rooms"
+                }
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "size": 20,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/shrine_combat_tier_2.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:shrine/combat/shrine_enterance_tier_2",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 128,
+      "pool_aliases": [
+        {
+          "type": "minecraft:random_group",
+          "groups": [
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/ice_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/breeze_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/desert_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/forrest_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/dungeon_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/spider_rooms"
+                }
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "size": 20,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/shrine_combat_tier_3.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:shrine/combat/shrine_enterance_tier_3",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 128,
+      "pool_aliases": [
+        {
+          "type": "minecraft:random_group",
+          "groups": [
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/ice_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/breeze_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/desert_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/forrest_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/dungeon_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/spider_rooms"
+                }
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "size": 20,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/shrine_combat_tier_4.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:shrine/combat/shrine_enterance_tier_4",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 128,
+      "pool_aliases": [
+        {
+          "type": "minecraft:random_group",
+          "groups": [
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/ice_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/breeze_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/desert_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/forrest_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/dungeon_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/spider_rooms"
+                }
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "size": 20,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/shrine_combat_tier_5.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:shrine/combat/shrine_enterance_tier_5",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 128,
+      "pool_aliases": [
+        {
+          "type": "minecraft:random_group",
+          "groups": [
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/ice_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/breeze_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/desert_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/forrest_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/dungeon_rooms"
+                }
+              ],
+              "weight": 1
+            },
+            {
+              "data": [
+                {
+                  "type": "minecraft:direct",
+                  "alias": "nova_structures:shrine/combat/room_content",
+                  "target": "nova_structures:shrine/combat/spider_rooms"
+                }
+              ],
+              "weight": 1
+            }
+          ]
+        }
+      ],
+      "size": 20,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/shrine_tower.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:shrine/tower/tower_base",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 100,
+      "size": 20,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/skeleton_camp_crimson.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/nether_crimson_forests",
+      "start_pool": "nova_structures:skeleton_camp/crimson",
+      "max_distance_from_center": 20,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/skeleton_camp_soul.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/nether_souls",
+      "start_pool": "nova_structures:skeleton_camp/soul",
+      "max_distance_from_center": 20,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/skeleton_camp_warped.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/nether_warped_forest",
+      "start_pool": "nova_structures:skeleton_camp/warped",
+      "max_distance_from_center": 20,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/skeleton_camp_waste.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "minecraft:nether_wastes",
+      "start_pool": "nova_structures:skeleton_camp/waste",
+      "max_distance_from_center": 20,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 33
+        },
+        "max_inclusive": {
+          "absolute": 70
+        }
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "size": 4,
+      "use_expansion_hack": false,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/stray_fort.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:stray_fort_fortress",
+      "biomes": "#nova_structures:collections/snowy_structures",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "type": "minecraft:stray",
+              "weight": 1,
+              "minCount": 1,
+              "maxCount": 32
+            }
+          ]
+        }
+      },
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 100,
+      "size": 7,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_acacia.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_acacia",
+      "biomes": "#nova_structures:collections/savannas",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_birch.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_birch",
+      "biomes": "#nova_structures:collections/birch_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_cherry.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_cherry",
+      "biomes": "#nova_structures:collections/cherry_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_dark_oak.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_dark_oak",
+      "biomes": "#nova_structures:collections/spooky_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_desert.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_desert",
+      "biomes": "#nova_structures:collections/deserts",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_jungle.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_jungle",
+      "biomes": "#nova_structures:collections/jungles",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_mangrove.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_mangrove",
+      "biomes": "#nova_structures:collections/mangroves",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_oak.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_oak",
+      "biomes": "#nova_structures:collections/oak_structure_biomes",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_snowy.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_snowy",
+      "biomes": "#nova_structures:collections/snowy_structures",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_spruce.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_spruce",
+      "biomes": "#nova_structures:collections/any_taiga",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/tavern_swamp.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:tavern_start_swamp",
+      "biomes": "#nova_structures:collections/swamps",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 6,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/toxic_lair.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/swamps",
+      "step": "underground_decoration",
+      "liquid_settings": "ignore_waterlogging",
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "full",
+          "spawns": [
+            {
+              "type": "minecraft:spider",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:zombie",
+              "maxCount": 16,
+              "minCount": 4,
+              "weight": 95
+            },
+            {
+              "type": "minecraft:zombie_villager",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 5
+            },
+            {
+              "type": "minecraft:skeleton",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:creeper",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 100
+            },
+            {
+              "type": "minecraft:slime",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 200
+            },
+            {
+              "type": "minecraft:enderman",
+              "maxCount": 4,
+              "minCount": 1,
+              "weight": 30
+            },
+            {
+              "type": "minecraft:cave_spider",
+              "maxCount": 16,
+              "minCount": 1,
+              "weight": 200
+            },
+            {
+              "type": "minecraft:drowned",
+              "maxCount": 4,
+              "minCount": 4,
+              "weight": 95
+            },
+            {
+              "type": "minecraft:witch",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 400
+            },
+            {
+              "type": "minecraft:bogged",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 200
+            },
+            {
+              "type": "minecraft:pufferfish",
+              "maxCount": 1,
+              "minCount": 1,
+              "weight": 200
+            }
+          ]
+        }
+      },
+      "start_pool": "nova_structures:toxic_lair/start",
+      "start_jigsaw_name": "nova_structures:toxic_lair_anchor",
+      "size": 6,
+      "start_height": {
+        "absolute": 67
+      },
+      "max_distance_from_center": 110,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/trident_trial_monument.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:trident_monument/start",
+      "biomes": "#minecraft:has_structure/ocean_monument",
+      "start_height": {
+        "absolute": 41
+      },
+      "spawn_overrides": {
+        "monster": {
+          "bounding_box": "piece",
+          "spawns": []
+        }
+      },
+      "step": "underground_decoration",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 100,
+      "size": 9,
+      "terrain_adaptation": "none"
+    },
+    "data/nova_structures/worldgen/structure/undead_crypt.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/stronghold_related_ruins_biomes",
+      "step": "underground_structures",
+      "dimension_padding": {
+        "bottom": 3,
+        "top": 238
+      },
+      "spawn_overrides": {},
+      "terrain_adaptation": "encapsulate",
+      "start_pool": "nova_structures:undead_crypt_spawner",
+      "liquid_settings": "ignore_waterlogging",
+      "size": 4,
+      "start_height": {
+        "absolute": 0
+      },
+      "max_distance_from_center": 100,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/underground_house.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/stronghold_related_ruins_biomes",
+      "step": "underground_structures",
+      "spawn_overrides": {},
+      "terrain_adaptation": "none",
+      "start_pool": "nova_structures:underground_house",
+      "dimension_padding": {
+        "bottom": 3,
+        "top": 238
+      },
+      "liquid_settings": "ignore_waterlogging",
+      "size": 2,
+      "start_height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": -50
+        },
+        "max_inclusive": {
+          "absolute": 50
+        }
+      },
+      "max_distance_from_center": 8,
+      "use_expansion_hack": false
+    },
+    "data/nova_structures/worldgen/structure/village_birch.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/birch_forests",
+      "max_distance_from_center": 80,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "nova_structures:birch_village/town_center",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "use_expansion_hack": true
+    },
+    "data/nova_structures/worldgen/structure/village_jungle.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": [
+        "minecraft:sparse_jungle"
+      ],
+      "max_distance_from_center": 80,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "minecraft:jungle_village/town_center",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "use_expansion_hack": true
+    },
+    "data/nova_structures/worldgen/structure/village_swamp.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/swamps",
+      "max_distance_from_center": 80,
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "size": 6,
+      "spawn_overrides": {},
+      "start_height": {
+        "absolute": 0
+      },
+      "start_pool": "minecraft:swamp_village/town_center",
+      "step": "surface_structures",
+      "terrain_adaptation": "beard_thin",
+      "use_expansion_hack": true
+    },
+    "data/nova_structures/worldgen/structure/well_birch.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:well_birch",
+      "biomes": "#nova_structures:collections/birch_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/well_dark_oak.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:well_dark_oak",
+      "biomes": "#nova_structures:collections/spooky_forests",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/well_jungle.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:well_jungle",
+      "biomes": "#nova_structures:collections/jungles",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/well_oak.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:well_oak",
+      "biomes": "#nova_structures:collections/oak_structure_biomes",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/well_savana.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:well_savana",
+      "biomes": "#nova_structures:collections/savannas",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/well_spruce.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:well_spruce",
+      "biomes": "#nova_structures:collections/any_taiga",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": true,
+      "max_distance_from_center": 80,
+      "size": 2,
+      "terrain_adaptation": "beard_box"
+    },
+    "data/nova_structures/worldgen/structure/wild_ruin.json": {
+      "type": "minecraft:jigsaw",
+      "start_pool": "nova_structures:wild_ruin",
+      "biomes": "#nova_structures:collections/land",
+      "project_start_to_heightmap": "WORLD_SURFACE_WG",
+      "liquid_settings": "ignore_waterlogging",
+      "start_height": {
+        "absolute": 0
+      },
+      "spawn_overrides": {},
+      "step": "surface_structures",
+      "use_expansion_hack": false,
+      "max_distance_from_center": 100,
+      "size": 1,
+      "terrain_adaptation": "beard_thin"
+    },
+    "data/nova_structures/worldgen/structure/witch_villa.json": {
+      "type": "minecraft:jigsaw",
+      "biomes": "#nova_structures:collections/swamps",
+      "step": "surface_structures",
+      "spawn_overrides": {},
+      "terrain_adaptation": "beard_box",
+      "start_pool": "nova_structures:witch_villa/backyard",
+      "liquid_settings": "ignore_waterlogging",
+      "size": 7,
+      "start_height": {
+        "absolute": 63
+      },
+      "max_distance_from_center": 110,
+      "use_expansion_hack": false
+    }
+  }
+}

@@ -107,6 +107,8 @@ export type ProgressionSubitem = {
   icone?: string;
   imagem?: MediaRef;
   trophy?: boolean;
+  bestiaryId?: string;
+  bestiaryIds?: string[];
 };
 
 export type ProgressionItem = {
@@ -135,6 +137,7 @@ export type ProgressionItem = {
   receita?: RecipeDefinition;
   subitens?: ProgressionSubitem[];
   gate?: GateDefinition;
+  transversal?: boolean;
 };
 
 export type AmendmentsPayload = {

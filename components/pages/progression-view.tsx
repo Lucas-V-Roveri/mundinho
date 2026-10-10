@@ -62,7 +62,7 @@ export function ProgressionView() {
 
   return <div className="space-y-6 page-enter">
     <header className="pixel-surface panel-paper p-5 text-ink-900">
-      <p className="font-label text-2xl text-wood-700">{STATIC_TOTALS.progression} marcos do mundinho</p>
+      <p className="font-label text-2xl text-wood-700">{content.progression.length || STATIC_TOTALS.progression} marcos do mundinho</p>
       <h1 className="mt-2 font-display text-lg leading-relaxed text-ink-900 sm:text-2xl">Progressão</h1>
       <p className="mt-3 max-w-4xl leading-7 text-ink-900">Por fase, risco e dependências reais. É uma ordem de conforto, não uma corrida para zerar tudo.</p>
     </header>
@@ -85,11 +85,12 @@ export function ProgressionView() {
     </section>
 
     {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText={`organizando os ${STATIC_TOTALS.progression} marcos...`} /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : content.progression.length === 0 ? <DataStatePanel status="empty" emptyText="A progressão carregou, mas não trouxe nenhum marco." /> : <>
+      {visible.some((item) => item.transversal) ? <section className="space-y-4" aria-labelledby="transversal-title"><header className="pixel-surface header-texture-wood p-4 text-paper-50"><h2 id="transversal-title" className="font-display text-base sm:text-xl">Objetivos transversais</h2><p className="mt-2 text-sm">Acompanham a expedição escolhida. Não exigem concluir a sequência de bosses.</p></header>{visible.filter((item) => item.transversal).map((item) => { const completion = completions.get(item.id)!; return <ProgressionCard key={item.id} item={item} byId={byId} actor={actor} completed={completion.completed} completedAt={completion.completedAt} compactCompleted={showCompleted && completion.completed} />; })}</section> : null}
       {PHASE_ORDER.map((phaseName) => {
-        const filteredInPhase = filtered.filter((item) => item.phase === phaseName);
+        const filteredInPhase = filtered.filter((item) => item.phase === phaseName && !item.transversal);
         if (!filteredInPhase.length) return null;
-        const phaseItems = visible.filter((item) => item.phase === phaseName);
-        const allInPhase = content.progression.filter((item) => item.phase === phaseName);
+        const phaseItems = visible.filter((item) => item.phase === phaseName && !item.transversal);
+        const allInPhase = content.progression.filter((item) => item.phase === phaseName && !item.transversal);
         const complete = allInPhase.filter((item) => completions.get(item.id)?.completed).length;
         return <section key={phaseName} className="space-y-4" aria-labelledby={`phase-${phaseName}`}>
           <header className="pixel-surface header-texture-wood p-4 text-paper-50">
@@ -195,11 +196,12 @@ function ProgressionCard({
       <div className="border-t border-stone-300 p-4 text-ink-900">
         {dependencies.length ? <div className="mb-4 flex flex-wrap gap-2">{dependencies.map((id) => { const dependency = byId.get(id); return <a key={id} href={`#${id}`} className="semantic-link font-label text-lg">Depende de: #{dependency ? String(dependency.order).padStart(3, "0") : id} {dependency?.title ?? "marco"}</a>; })}</div> : null}
         <div className="grid gap-4 lg:grid-cols-[1.1fr_.9fr]">
-          <dl className="grid gap-2 text-sm leading-6"><Detail label="Obrigatório" value={item.required} /><Detail label="Recomendação" value={item.soft} /><Detail label="Se despreparado" value={item.unprepared} tone="danger" /><Detail label="Complexidade" value={item.complexity} /><Detail label="Reversibilidade" value={item.reversibility} /><Detail label="Âncora vanilla" value={item.vanilla} /></dl>
+          <dl className="grid gap-2 text-sm leading-6">{item.transversal ? <Detail label="Posição" value={item.dependency} /> : null}<Detail label="Obrigatório" value={item.required} /><Detail label="Recomendação" value={item.soft} /><Detail label="Se despreparado" value={item.unprepared} tone="danger" /><Detail label="Complexidade" value={item.complexity} /><Detail label="Reversibilidade" value={item.reversibility} /><Detail label="Âncora vanilla" value={item.vanilla} /></dl>
           <div className="space-y-3">
-            {subitems.length ? <><ChecklistItem itemId={item.id} label="Marcar como feito" toastLabel={item.title} phase={`Conclui automaticamente quando ${actor} terminar ${subitems.length}/${subitems.length} subitens.`} section="progression" entryKey={item.entry} disabled /><div className="space-y-2 border border-stone-500 bg-stone-100 p-3 text-ink-900"><div className="flex justify-between gap-3"><strong className="font-label text-xl">Subitens de {actor}</strong><span className="font-label text-xl">{activeProgress.completed}/{activeProgress.total}</span></div>{subitems.map((subitem) => <div key={subitem.id} className="space-y-1"><ChecklistItem itemId={subitem.id} label={subitem.title} toastLabel={`${item.title}: ${subitem.title}`} phase={[subitem.phase, subitem.equipment].filter(Boolean).join(" · ")} section="progression" entryKey={item.entry} /><div className="flex flex-wrap gap-1 pl-10 text-xs">{subitem.phase ? <Tag tone="focus">fase {subitem.phase}</Tag> : null}{subitem.equipment ? <Tag>{subitem.equipment}</Tag> : null}</div></div>)}</div></> : <ChecklistItem itemId={item.id} label="Marcar como feito" toastLabel={item.title} phase={item.phase} section="progression" entryKey={item.entry} />}
+            {subitems.length ? <><ChecklistItem itemId={item.id} label="Marcar como feito" toastLabel={item.title} phase={`Conclui automaticamente quando ${actor} terminar ${subitems.length}/${subitems.length} subitens.`} section="progression" entryKey={item.entry} disabled /><div className="space-y-2 border border-stone-500 bg-stone-100 p-3 text-ink-900"><div className="flex justify-between gap-3"><strong className="font-label text-xl">Subitens de {actor}</strong><span className="font-label text-xl">{activeProgress.completed}/{activeProgress.total}</span></div>{subitems.map((subitem) => <div key={subitem.id} className="space-y-1"><ChecklistItem itemId={subitem.id} label={subitem.title} toastLabel={`${item.title}: ${subitem.title}`} phase={[subitem.phase, subitem.equipment].filter(Boolean).join(" · ")} section="progression" entryKey={item.entry} /><div className="flex flex-wrap gap-1 pl-10 text-xs">{subitem.phase ? <Tag tone="focus">fase {subitem.phase}</Tag> : null}{subitem.equipment ? <Tag>{subitem.equipment}</Tag> : null}{subitem.confidence ? <Tag>confiança: {subitem.confidence}</Tag> : null}{[...new Set([...(subitem.bestiaryId ? [subitem.bestiaryId] : []), ...(subitem.bestiaryIds ?? [])])].map((mobId) => <a key={mobId} href={`/bestiario#mob-${mobId}`} className="semantic-link underline underline-offset-2">Criatura, origem e uso no Bestiário</a>)}</div></div>)}</div></> : <ChecklistItem itemId={item.id} label="Marcar como feito" toastLabel={item.title} phase={item.phase} section="progression" entryKey={item.entry} />}
           </div>
         </div>
+        {item.notes ? <p className="mt-4 text-sm leading-6 text-ink-700">{item.notes}</p> : null}
         <EncounterDetails milestoneId={milestoneId} />
       </div>
     </details>

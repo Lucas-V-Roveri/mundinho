@@ -59,7 +59,7 @@ export function sortProgression(items: ProgressionItem[]) {
 }
 
 export function nextEligibleProgression(items: ProgressionItem[], completed: (id: string) => boolean) {
-  return sortProgression(items).find((item) => !completed(item.id) && dependencyReady(item, completed));
+  return sortProgression(items).find((item) => !item.transversal && !completed(item.id) && dependencyReady(item, completed));
 }
 
 export function isPlaceholder(value?: string | null) {

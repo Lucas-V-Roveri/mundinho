@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 const configUrl = process.env.MUNDINHO_CONFIG_URL || "https://mundinho-blue.vercel.app/api/config";
@@ -9,6 +9,8 @@ function assertString(value, label) {
   return value.trim();
 }
 
+async function loadRows() {
+  if (process.env.CONTENT_ROWS_PATH) return JSON.parse(await readFile(resolve(process.env.CONTENT_ROWS_PATH), "utf8"));
 const configResponse = await fetch(configUrl, { cache: "no-store" });
 if (!configResponse.ok) throw new Error(`Falha ao obter runtime config (${configResponse.status})`);
 const config = await configResponse.json();
@@ -27,7 +29,9 @@ const response = await fetch(endpoint, {
   cache: "no-store",
 });
 if (!response.ok) throw new Error(`Falha ao exportar mundinho_content (${response.status}): ${await response.text()}`);
-const rows = await response.json();
+return await response.json();
+}
+const rows = await loadRows();
 if (!Array.isArray(rows)) throw new Error("mundinho_content não retornou um array");
 
 const guideCount = rows.filter((row) => typeof row?.key === "string" && row.key.startsWith("guide:")).length;

@@ -84,6 +84,8 @@ export const FAMILY_RULES: Rule[] = [
   { family: "graveyard", match: /\b(graveyard|corrupted champion|ominous bone staff|lich prison)\b/, effect: "soul" },
   { family: "bomd", match: /\b(bosses of mass destruction|void blossom|night lich|nether gauntlet|obsidilith)\b/, effect: "magic", variants: [[/\bvoid blossom\b/, "blossom"], [/\bnight lich\b/, "lich"], [/\bnether gauntlet\b/, "fire"], [/\bobsidilith\b/, "ender"]] },
   { family: "mowzies", match: /\b(mowzies|ferrous wroughtnaut|frostmaw|umvuthi|sol visage)\b/, effect: "masks", variants: [[/\b(ferrous wroughtnaut|thousand metals)\b/, "metal"], [/\b(frostmaw|ice crystal)\b/, "ice"], [/\b(umvuthi|sol visage)\b/, "sun"]] },
+  { family: "archeology", match: /\b(better archeology|arqueologia)\b/, effect: "ancient" },
+  { family: "golems", match: /\b(golem overhaul|straw golem|golems)\b/, effect: "metal" },
   { family: "incendium", match: /\bincendium\b/, effect: "fire" },
   { family: "end-eyes", match: /\bend remastered\b/, effect: "eyes" },
   { family: "end", match: /\b(end reformulado|nullscape|savage ender dragon|dragonfight|outer end|ender dragon)\b/, effect: "ender" },
