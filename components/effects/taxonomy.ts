@@ -105,7 +105,7 @@ export const FAMILY_RULES: Rule[] = [
   { family: "fauna", match: /\b(alexs mobs|fauna|void worm)\b/, effect: "fauna", variants: [[/\bvoid worm\b/, "ender"]] },
   { family: "friends", match: /\b(friends\s*&?\s*foes|friends-foes)\b/, effect: "friends", variants: [[/\biceologer\b/, "ice"], [/\bwildfire\b/, "fire"]] },
   { family: "spiders", match: /\b(spider overhaul|aranhas)\b/, effect: "spiders" },
-  { family: "illagers", match: /\billager invasion\b/, effect: "raid" },
+  { family: "illagers", match: /\b(illager invasion|it takes a pillage|pillager camp|bastille)\b/, effect: "raid" },
   { family: "piglins", match: /\bpiglin proliferation\b/, effect: "gold" },
   { family: "variants", match: /\b(variacoes de mobs|creeper overhaul|enderman overhaul|enhanced mob variants|variants\s*&\s*ventures)\b/, effect: "variants", variants: [[/\benderman\b/, "ender"]] },
   { family: "quark", match: /\bquark\b/, effect: "redstone" },
