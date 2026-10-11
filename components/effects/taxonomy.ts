@@ -70,6 +70,7 @@ export function normalize(text: string) { return text.toLowerCase().normalize("N
 type Rule = { family: string; match: RegExp; effect: EffectKey; variants?: [RegExp, EffectKey][] };
 // Semantic aliases only. No milestone, checklist or guide IDs select an effect.
 export const FAMILY_RULES: Rule[] = [
+  { family: "canine-companions", match: /\b(doggy talents|more wolf armors|companheiros caninos)\b/, effect: "fauna" },
   { family: "butterflies", match: /\b(borboletas|mariposas|butterflies|butterfly mod)\b/, effect: "forest" },
   { family: "relics", match: /\b(relics|reliquified|reliquias|artefatos|artifacts)\b/, effect: "relics" },
   { family: "cataclysm", match: /\b(cataclysm|ignis)\b/, effect: "ancient", variants: [[/\b(ignis|ignited|burning|ignitium|netherite monstrosity|lava)\b/, "fireBurst"], [/\b(ender guardian|void runes?)\b/, "ender"], [/\bharbinger\b/, "metal"], [/\bancient remnant\b/, "sand"], [/\bleviathan\b/, "ocean"], [/\bscylla\b/, "storm"], [/\bmaledictus\b/, "soul"]] },

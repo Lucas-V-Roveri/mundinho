@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "entry": "Companheiros caninos — Doggy Talents",
+      "type": "Utilidade / companheiro",
+      "phase": "Início",
+      "risk": "Baixo",
+      "complexity": "Moderada",
+      "dependency": "Trilha paralela — sem dependência de boss, Nether ou dimensão.",
+      "gate": {
+        "confirmed": true,
+        "depends_on": [],
+        "note": "Atividade de base; sem gate de campanha."
+      },
+      "icone": "/icons/minecraft/bone.png",
+      "id": "progression:115",
+      "order": 115,
+      "mods": "Doggy Talents Next",
+      "title": "Treinar um companheiro e testar uma função útil",
+      "equipment": "Sem tier de armadura obrigatório; materiais de Training Treat e alimento aceito pelo cão.",
+      "required": "Um lobo/cão, Training Treat para iniciar a conversão e pontos de talento para a função escolhida; conferir a receita no JEI da versão instalada.",
+      "soft": "Começar perto da base; conferir alimentação, comandos e retorno antes de levar o companheiro para combate.",
+      "unprepared": "Sair sem alimento ou sem conhecer os comandos dificulta controlar o companheiro; fome e ferimentos dependem das configurações do servidor.",
+      "reversibility": "Média — treinamento investe recursos; reversão da conversão para lobo vanilla não confirmada.",
+      "vanilla": "Domesticar um lobo e preparar um companheiro para uma caminhada perto da base.",
+      "confidence": "Alta para treinamento e talentos documentados; Média para configuração do save.",
+      "source": "https://modrinth.com/mod/doggy-talents-next/version/1.19.1\nhttps://doggytalentsnext.wiki.gg/wiki/Getting_Started\nhttps://doggytalentsnext.wiki.gg/wiki/Pack_Puppy\nhttps://doggytalentsnext.wiki.gg/wiki/Configuration",
+      "notes": "Instalação confirmada pelo usuário: DoggyTalentsNext-1.21.1-1.19.1.jar. Fase e risco calibrados para treinamento perto da base. Não exige todos os talentos, nível máximo ou armadura More Wolf Armors. Conferir talentos habilitados no servidor.",
+      "subitens": [
+        {
+          "id": "progression:115:training",
+          "title": "Iniciar o treinamento de um lobo/cão com Training Treat",
+          "phase": "Início",
+          "confidence": "Alta para o sistema; conferir configuração do servidor"
+        },
+        {
+          "id": "progression:115:routine",
+          "title": "Testar comandos e manter o companheiro alimentado perto da base",
+          "phase": "Início",
+          "confidence": "Alta para o sistema; conferir configuração do servidor"
+        },
+        {
+          "id": "progression:115:utility",
+          "title": "Ativar e testar uma função útil, como o inventário Pack Puppy",
+          "phase": "Início",
+          "confidence": "Alta para o sistema; conferir configuração do servidor"
+        }
+      ]
+    },
+    {
+      "entry": "Companheiros caninos — Doggy Talents",
+      "type": "Utilidade / companheiro",
+      "phase": "Início",
+      "risk": "Baixo",
+      "complexity": "Moderada",
+      "dependency": "Trilha paralela — sem dependência de boss, Nether ou dimensão.",
+      "gate": {
+        "confirmed": true,
+        "depends_on": [],
+        "note": "Atividade de base; sem gate de campanha."
+      },
+      "icone": "/icons/minecraft/bone.png",
+      "id": "progression:185",
+      "order": 185,
+      "mods": "More Wolf Armors",
+      "title": "Equipar e manter a primeira armadura melhorada de um lobo",
+      "equipment": "Sem tier de armadura pessoal obrigatório; armadura de lobo vanilla, molde de melhoria e materiais do tier escolhido.",
+      "required": "Lobo domesticado; armadura de lobo e Wolf Armor Upgrade Template, além dos materiais da melhoria; conferir obtenção do molde e receita no JEI.",
+      "soft": "Começar pela melhoria de ferro e testar equipamento/reparo perto da base; reservar os tiers caros para quando fizerem sentido.",
+      "unprepared": "Fabricar uma armadura sem conferir o alvo pode desperdiçar recursos; compatibilidade específica com cães convertidos pelo Doggy não foi confirmada.",
+      "reversibility": "Alta para equipar/reparar; Média para o gasto de materiais na melhoria.",
+      "vanilla": "Equipar e reparar a armadura de um lobo domesticado.",
+      "confidence": "Alta para armaduras/reparo na documentação oficial; compatibilidade Doggy a conferir.",
+      "source": "https://modrinth.com/mod/more-wolf-armors\nhttps://www.curseforge.com/minecraft/mc-mods/more-wolf-armors/files/6112600",
+      "notes": "Instalação confirmada pelo usuário: more_wolf_armors-0.1.6.jar. Um lobo vanilla basta; não depende de concluir #115. Não exige criar ferro, ouro, diamante e netherite. O changelog 0.1.6 corrige empacotamento; encantamentos dependem da configuração.",
+      "subitens": [
+        {
+          "id": "progression:185:prepare",
+          "title": "Reunir armadura de lobo, molde e materiais para uma melhoria",
+          "phase": "Início",
+          "confidence": "Alta para melhoria/reparo; conferir receita e alvo no pack"
+        },
+        {
+          "id": "progression:185:equip",
+          "title": "Criar a primeira armadura melhorada e equipá-la em um lobo compatível",
+          "phase": "Início",
+          "confidence": "Alta para melhoria/reparo; conferir receita e alvo no pack"
+        },
+        {
+          "id": "progression:185:repair",
+          "title": "Aprender e aplicar o reparo da armadura com seu material correspondente",
+          "phase": "Início",
+          "confidence": "Alta para melhoria/reparo; conferir receita e alvo no pack"
+        }
+      ]
+    }
+  ],
+  "extra": {
+    "id": "extra-dimension-photo",
+    "title": "Tirar uma foto de casal em cada dimensão",
+    "description": "Exposure 1.9.19 e Exposure Polaroid 1.1.6: registrar os dois em cada dimensão visitada, com Emotecraft quando der. Usar câmera com filme, revelar e imprimir a foto no Lightroom, ou escolher a Instant Camera com slides para a fotografia imediata. Aether, Twilight, Undergarden, Bumblezone e outras dimensões entram no álbum no ritmo de vocês; não exige visitar todas para começar."
+  },
+  "installation": "Confirmada diretamente pelo usuário em 11/10/2026; nomes dos JARs fornecidos.",
+  "sources": [
+    "https://modrinth.com/mod/exposure",
+    "https://modrinth.com/mod/exposure-polaroid/version/WfVyzdJL",
+    "https://www.curseforge.com/minecraft/mc-mods/exposure/files/8957000"
+  ]
+}
