@@ -36,6 +36,10 @@ export type Database = {
     };
     Views: Record<string, never>;
     Functions: {
+      mundinho_sync_minecraft_canary: {
+        Args: { p_world_id: string; p_actor: string; p_observations: Json };
+        Returns: Json;
+      };
       mundinho_sync_minecraft_category_a: {
         Args: { p_world_id: string; p_actor: string; p_observations: Json };
         Returns: Json;

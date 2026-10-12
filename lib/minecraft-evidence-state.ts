@@ -47,7 +47,7 @@ export function useMinecraftEvidence({ mode, parentDataStatus }: { mode: DataMod
     if (mode !== "supabase" || parentDataStatus !== "ready" || !loaded || error) throw new Error("A sincronização da Progressão precisa estar conectada ao Supabase.");
     const config = classifyRuntimeConfig(await loadPublicRuntimeConfig());
     if (config.kind !== "configured") throw new Error("Supabase indisponível.");
-    const { data, error: problem } = await getBrowserSupabase(config.config).rpc("mundinho_sync_minecraft_category_a", {
+    const { data, error: problem } = await getBrowserSupabase(config.config).rpc("mundinho_sync_minecraft_canary", {
       p_world_id: config.config.worldId || "mundinho-pra-sempre", p_actor: actor,
       p_observations: observations,
     });

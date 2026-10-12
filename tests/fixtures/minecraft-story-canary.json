@@ -1,0 +1,126 @@
+{
+  "gr1d": {
+    "minecraft:story/root": {
+      "done": true,
+      "criteria": {
+        "crafting_table": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/mine_stone": {
+      "done": true,
+      "criteria": {
+        "get_stone": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/upgrade_tools": {
+      "done": true,
+      "criteria": {
+        "stone_pickaxe": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/smelt_iron": {
+      "done": true,
+      "criteria": {
+        "iron": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/obtain_armor": {
+      "done": true,
+      "criteria": {
+        "iron_boots": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/iron_tools": {
+      "done": true,
+      "criteria": {
+        "iron_pickaxe": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/deflect_arrow": {
+      "done": true,
+      "criteria": {
+        "deflected_projectile": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/mine_diamond": {
+      "done": true,
+      "criteria": {
+        "diamond": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/shiny_gear": {
+      "done": true,
+      "criteria": {
+        "diamond_boots": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/form_obsidian": {
+      "done": true,
+      "criteria": {
+        "obsidian": "2026-01-01 00:00:00 +0000"
+      }
+    }
+  },
+  "benamu": {
+    "minecraft:story/root": {
+      "done": true,
+      "criteria": {
+        "crafting_table": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/mine_stone": {
+      "done": true,
+      "criteria": {
+        "get_stone": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/upgrade_tools": {
+      "done": true,
+      "criteria": {
+        "stone_pickaxe": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/smelt_iron": {
+      "done": true,
+      "criteria": {
+        "iron": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/obtain_armor": {
+      "done": true,
+      "criteria": {
+        "iron_boots": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/iron_tools": {
+      "done": true,
+      "criteria": {
+        "iron_pickaxe": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/deflect_arrow": {
+      "done": true,
+      "criteria": {
+        "deflected_projectile": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/mine_diamond": {
+      "done": true,
+      "criteria": {
+        "diamond": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/shiny_gear": {
+      "done": true,
+      "criteria": {
+        "diamond_chestplate": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/form_obsidian": {
+      "done": true,
+      "criteria": {
+        "obsidian": "2026-01-01 00:00:00 +0000"
+      }
+    }
+  }
+}

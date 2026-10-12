@@ -109,7 +109,8 @@ export function categoryASyncPlan(
     let completions: string[] = [];
     if (rule.enabled && rule.kind === "completion" && observed.done === true) completions = ["progression:810:lost-eye"];
     if (rule.enabled && rule.kind === "criteria") completions = Object.keys(criteria).flatMap((key) => ENDREM_CRITERION_TARGETS[key] ? [ENDREM_CRITERION_TARGETS[key]] : []);
-    return [{ ...rule, done: observed.done === true, criteria, completions: completions.filter((id) => allowedTargets.has(id)) }];
+    if (rule.enabled && rule.kind === "milestone" && observed.done === true) completions = [milestone.id];
+    return [{ ...rule, done: observed.done === true, criteria, completions: completions.filter((id) => allowedTargets.has(id) || (rule.kind === "milestone" && id === milestone.id)) }];
   });
 }
 
