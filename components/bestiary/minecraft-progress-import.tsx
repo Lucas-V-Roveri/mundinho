@@ -44,7 +44,7 @@ export function MinecraftProgressImport({ scope = "both", onSynced }: { scope?: 
     try {
       validateMinecraftImportActor(names, actor);
       setPreview({ actor, summary: parseMinecraftProgressDocuments(documents, BESTIARY_ENTRIES) });
-    } catch (error) { setMessage(error instanceof Error ? error.message : String(error)); }
+    } catch (error) { setMessage(error instanceof Error ? error.message : (typeof error === "object" && error && "message" in error ? String(error.message) : String(error))); }
   };
 
   const apply = async () => {
@@ -72,7 +72,7 @@ export function MinecraftProgressImport({ scope = "both", onSynced }: { scope?: 
       await onSynced?.();
       setMessage(`${result.evidence_changed} evidência(s) gravada(s), ${result.completions_changed} marcação(ões) nova(s) na Progressão${scope === "both" ? ` e ${changed} card(s) do Bestiário atualizado(s)` : ""} para ${actor}. Evidências parciais não concluem marcos. Nenhum progresso existente foi desmarcado.`);
     } catch (error) {
-      setMessage(error instanceof Error ? error.message : String(error));
+      setMessage(error instanceof Error ? error.message : (typeof error === "object" && error && "message" in error ? String(error.message) : String(error)));
     } finally {
       setBusy(false);
     }
