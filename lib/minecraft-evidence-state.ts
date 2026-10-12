@@ -19,6 +19,7 @@ export function useMinecraftEvidence({ mode, parentDataStatus }: { mode: DataMod
     let cancelled = false;
     let unsubscribe = () => {};
     let timer: ReturnType<typeof setTimeout> | undefined;
+    let request = 0;
     const fail = (problem: unknown) => { if (!cancelled) setError(problem instanceof Error ? problem.message : String(problem)); };
     void (async () => {
       if (mode !== "supabase") { if (!cancelled) { setRows([]); setLoaded(true); setError(null); } return; }
@@ -27,9 +28,10 @@ export function useMinecraftEvidence({ mode, parentDataStatus }: { mode: DataMod
       const client = getBrowserSupabase(config.config);
       const world = config.config.worldId || "mundinho-pra-sempre";
       const load = async () => {
+        const currentRequest = ++request;
         const { data, error: problem } = await client.from("mundinho_minecraft_evidence").select("*").eq("world_id", world);
         if (problem) throw problem;
-        if (!cancelled) { setRows((data ?? []) as MinecraftEvidenceRow[]); setLoaded(true); setError(null); }
+        if (!cancelled && currentRequest === request) { setRows((data ?? []) as MinecraftEvidenceRow[]); setLoaded(true); setError(null); }
       };
       loader.current = load;
       await load();
@@ -54,5 +56,5 @@ export function useMinecraftEvidence({ mode, parentDataStatus }: { mode: DataMod
     return data as { evidence_changed: number; completions_changed: number };
   };
 
-  return { rows, error, ready: parentDataStatus === "ready" && loaded && !error, retry: () => setNonce((value) => value + 1), apply };
+  return { rows, error, ready: parentDataStatus === "ready" && loaded && !error, retry: () => setNonce((value) => value + 1), refresh: async () => { await loader.current?.(); }, apply };
 }

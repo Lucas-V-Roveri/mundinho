@@ -11,7 +11,7 @@ import { useMinecraftEvidence } from "@/lib/minecraft-evidence-state";
 import { bestiarySyncPlan, categoryASyncPlan, parseMinecraftProgressDocuments, validateMinecraftImportActor, type MinecraftProgressSummary } from "@/lib/minecraft-progress";
 import type { Actor } from "@/types/content";
 
-export function MinecraftProgressImport({ scope = "both" }: { scope?: "both" | "progression" }) {
+export function MinecraftProgressImport({ scope = "both", onSynced }: { scope?: "both" | "progression"; onSynced?: () => Promise<void> }) {
   const { actor, mode, dataStatus, content, refresh } = useMundinho();
   const bestiary = useBestiaryState({ actor, mode, parentDataStatus: scope === "both" ? dataStatus : "loading" });
   const evidence = useMinecraftEvidence({ mode, parentDataStatus: dataStatus });
@@ -68,6 +68,7 @@ export function MinecraftProgressImport({ scope = "both" }: { scope?: "both" | "
         }
       }
       await refresh();
+      await onSynced?.();
       setMessage(`${result.evidence_changed} evidência(s) gravada(s), ${result.completions_changed} marcação(ões) nova(s) na Progressão${scope === "both" ? ` e ${changed} card(s) do Bestiário atualizado(s)` : ""} para ${actor}. Evidências parciais não concluem marcos. Nenhum progresso existente foi desmarcado.`);
     } catch (error) {
       setMessage(error instanceof Error ? error.message : String(error));

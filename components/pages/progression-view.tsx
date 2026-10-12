@@ -73,7 +73,7 @@ export function ProgressionView() {
     </header>
 
     <WorldXpBar stats={xp} status={dataStatus} />
-    <MinecraftProgressImport scope="progression" />
+    <MinecraftProgressImport scope="progression" onSynced={minecraft.refresh} />
     {minecraft.error ? <p role="alert" className="text-sm">Evidências do Minecraft indisponíveis: {minecraft.error} <button className="semantic-link" onClick={minecraft.retry}>tentar novamente</button></p> : null}
 
     <section className="grid gap-3 border border-stone-500 bg-stone-100 p-4 text-ink-900 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] sm:items-end">
