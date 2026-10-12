@@ -6,6 +6,10 @@ import { ChecklistItem } from "@/components/checklist/checklist-item";
 import { CustomItemPanel } from "@/components/checklist/custom-item-panel";
 import { ContentIcon } from "@/components/media/content-icon";
 import { WorldXpBar } from "@/components/progression/world-xp-bar";
+import { MinecraftEvidence } from "@/components/progression/minecraft-evidence";
+import { MinecraftProgressImport } from "@/components/bestiary/minecraft-progress-import";
+import { useMinecraftEvidence } from "@/lib/minecraft-evidence-state";
+import type { MinecraftEvidenceRow } from "@/types/minecraft-evidence";
 import { DataStatePanel } from "@/components/ui/data-state";
 import { Select } from "@/components/ui/select";
 import { Tag } from "@/components/ui/tag";
@@ -24,7 +28,8 @@ const actors: Actor[] = ["gr1d", "benamu"];
 type Completion = { completed: boolean; completedAt: string | null };
 
 export function ProgressionView() {
-  const { content, states, playerStates, customItems, actor, dataStatus, dataError, retry } = useMundinho();
+  const { content, states, playerStates, customItems, actor, mode, dataStatus, dataError, retry } = useMundinho();
+  const minecraft = useMinecraftEvidence({ mode, parentDataStatus: dataStatus });
   const [phase, setPhase] = React.useState("Todas");
   const [risk, setRisk] = React.useState("Todos");
   const [showCompleted, setShowCompleted] = React.useState(false);
@@ -68,6 +73,8 @@ export function ProgressionView() {
     </header>
 
     <WorldXpBar stats={xp} status={dataStatus} />
+    <MinecraftProgressImport scope="progression" />
+    {minecraft.error ? <p role="alert" className="text-sm">Evidências do Minecraft indisponíveis: {minecraft.error} <button className="semantic-link" onClick={minecraft.retry}>tentar novamente</button></p> : null}
 
     <section className="grid gap-3 border border-stone-500 bg-stone-100 p-4 text-ink-900 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] sm:items-end">
       <label className="font-label text-xl">Fase<Select disabled={!ready} className="mt-1" value={phase} onChange={(event) => setPhaseSaved(event.target.value)}>{phases.map((value) => <option key={value}>{value}</option>)}</Select></label>
@@ -103,7 +110,7 @@ export function ProgressionView() {
           {phaseItems.length ? (
             <div className="progression-timeline grid gap-4">{phaseItems.map((item) => {
               const completion = completions.get(item.id) ?? { completed: false, completedAt: null };
-              return <ProgressionCard key={item.id} item={item} byId={byId} actor={actor} completed={completion.completed} completedAt={completion.completedAt} compactCompleted={showCompleted && completion.completed} />;
+              return <ProgressionCard key={item.id} item={item} byId={byId} actor={actor} completed={completion.completed} completedAt={completion.completedAt} compactCompleted={showCompleted && completion.completed} minecraftEvidence={minecraft.rows} />;
             })}</div>
           ) : (
             <p className="border border-stone-500 bg-stone-100 p-4 font-label text-xl text-ink-700">Todos os marcos desta fase que passam pelos filtros estão concluídos e ocultos.</p>
@@ -145,6 +152,7 @@ function ProgressionCard({
   completed,
   completedAt,
   compactCompleted,
+  minecraftEvidence = [],
 }: {
   item: ProgressionItem;
   byId: Map<string, ProgressionItem>;
@@ -152,6 +160,7 @@ function ProgressionCard({
   completed: boolean;
   completedAt: string | null;
   compactCompleted: boolean;
+  minecraftEvidence?: MinecraftEvidenceRow[];
 }) {
   const { playerStates } = useMundinho();
   const subitems = item.subitens ?? [];
@@ -202,6 +211,7 @@ function ProgressionCard({
           </div>
         </div>
         {item.notes ? <p className="mt-4 text-sm leading-6 text-ink-700">{item.notes}</p> : null}
+        <MinecraftEvidence milestoneId={item.id} actor={actor} rows={minecraftEvidence} />
         <EncounterDetails milestoneId={milestoneId} />
       </div>
     </details>

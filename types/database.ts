@@ -3,6 +3,12 @@ export type Json = string | number | boolean | null | { [key: string]: Json | un
 export type Database = {
   public: {
     Tables: {
+      mundinho_minecraft_evidence: {
+        Row: { world_id: string; actor: "gr1d" | "benamu"; advancement_id: string; milestone_id: string; done: boolean; criteria: Record<string, string>; criteria_total: number | null; rule_version: string; imported_at: string };
+        Insert: { world_id: string; actor: "gr1d" | "benamu"; advancement_id: string; milestone_id: string; done?: boolean; criteria?: Record<string, string>; criteria_total?: number | null; rule_version: string; imported_at?: string };
+        Update: Partial<Database["public"]["Tables"]["mundinho_minecraft_evidence"]["Insert"]>;
+        Relationships: [];
+      };
       mundinho_item_state: {
         Row: { world_id: string; item_id: string; section: string; entry_key: string; completed: boolean; completed_by: string | null; completed_at: string | null; updated_at: string; deleted: boolean; deleted_by: string | null; deleted_at: string | null };
         Insert: { world_id: string; item_id: string; section: string; entry_key: string; completed?: boolean; completed_by?: string | null; completed_at?: string | null; updated_at?: string; deleted?: boolean; deleted_by?: string | null; deleted_at?: string | null };
@@ -29,7 +35,12 @@ export type Database = {
       };
     };
     Views: Record<string, never>;
-    Functions: Record<string, never>;
+    Functions: {
+      mundinho_sync_minecraft_category_a: {
+        Args: { p_world_id: string; p_actor: string; p_observations: Json };
+        Returns: Json;
+      };
+    };
     Enums: Record<string, never>;
     CompositeTypes: Record<string, never>;
   };

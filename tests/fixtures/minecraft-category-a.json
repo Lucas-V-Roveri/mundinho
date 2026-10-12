@@ -1,0 +1,289 @@
+{
+  "gr1d": {
+    "graveyard:graveyard/large_graveyard": {
+      "done": true,
+      "criteria": {
+        "large_graveyard": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "mca:root": {
+      "done": true,
+      "criteria": {
+        "village": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "artifacts:amateur_archaeologist": {
+      "done": true,
+      "criteria": {
+        "find_artifact": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:adventure/sleep_in_bed": {
+      "done": true,
+      "criteria": {
+        "slept_in_bed": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "graveyard:graveyard/root": {
+      "done": true,
+      "criteria": {
+        "grave_03": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "mca:marriage": {
+      "done": true,
+      "criteria": {
+        "iron": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "nova_structures:adventure/find_tavern": {
+      "done": true,
+      "criteria": {
+        "nova_structures:tavern_oak": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "nova_structures:root": {
+      "done": true,
+      "criteria": {
+        "nova_structures:adventure/find_tavern": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdeserttemples:temple_entry": {
+      "done": true,
+      "criteria": {
+        "in_better_desert_temple": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "alexsmobs:alexsmobs/root": {
+      "done": true,
+      "criteria": {
+        "useitem": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "alexscaves:alexscaves/cave_tablet": {
+      "done": true,
+      "criteria": {
+        "cave_tablet": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "dungeons_arise:find_greenwood_pub": {
+      "done": true,
+      "criteria": {
+        "location0": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "farmersdelight:main/plant_all_crops": {
+      "done": false,
+      "criteria": {
+        "sweet_berries": "2026-01-01 00:00:00 +0000",
+        "brown_mushroom": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "cold_sweat:use_smokestack": {
+      "done": true,
+      "criteria": {
+        "placed_smokestack": "2026-01-01 00:00:00 +0000",
+        "has_warmth": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "cold_sweat:use_hearth": {
+      "done": false,
+      "criteria": {
+        "has_warmth": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "cold_sweat:insulate_armor": {
+      "done": true,
+      "criteria": {
+        "requirement": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "endrem:main/lost_eye": {
+      "done": true,
+      "criteria": {
+        "lost_eye": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "endrem:main/root": {
+      "done": true,
+      "criteria": {
+        "lost_eye": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/follow_ender_eye": {
+      "done": true,
+      "criteria": {
+        "in_stronghold": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdungeons:all_dungeons": {
+      "done": false,
+      "criteria": {
+        "in_better_zombie_dungeon": "2026-01-01 00:00:00 +0000",
+        "in_better_spider_dungeon": "2026-01-01 00:00:00 +0000",
+        "in_better_monster_room": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdungeons:spider_dungeon": {
+      "done": true,
+      "criteria": {
+        "in_better_spider_dungeon": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "farmersdelight:main/place_cooking_pot": {
+      "done": true,
+      "criteria": {
+        "cooking_pot": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdungeons:zombie_dungeon": {
+      "done": true,
+      "criteria": {
+        "in_better_zombie_dungeon": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdungeons:small_dungeon": {
+      "done": true,
+      "criteria": {
+        "in_better_monster_room": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "farmersdelight:main/eat_nourishing_food": {
+      "done": true,
+      "criteria": {
+        "nourishment": "2026-01-01 00:00:00 +0000"
+      }
+    }
+  },
+  "benamu": {
+    "graveyard:graveyard/large_graveyard": {
+      "done": true,
+      "criteria": {
+        "large_graveyard": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "mca:root": {
+      "done": true,
+      "criteria": {
+        "village": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "artifacts:amateur_archaeologist": {
+      "done": true,
+      "criteria": {
+        "find_artifact": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:adventure/sleep_in_bed": {
+      "done": true,
+      "criteria": {
+        "slept_in_bed": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "graveyard:graveyard/root": {
+      "done": true,
+      "criteria": {
+        "grave_03": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "mca:marriage": {
+      "done": true,
+      "criteria": {
+        "iron": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "nova_structures:adventure/find_tavern": {
+      "done": true,
+      "criteria": {
+        "nova_structures:tavern_oak": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "nova_structures:root": {
+      "done": true,
+      "criteria": {
+        "nova_structures:adventure/find_tavern": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdeserttemples:temple_entry": {
+      "done": true,
+      "criteria": {
+        "in_better_desert_temple": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "alexscaves:alexscaves/cave_tablet": {
+      "done": true,
+      "criteria": {
+        "cave_tablet": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "dungeons_arise:find_greenwood_pub": {
+      "done": true,
+      "criteria": {
+        "location0": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "cold_sweat:use_hearth": {
+      "done": false,
+      "criteria": {
+        "has_warmth": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "cold_sweat:use_smokestack": {
+      "done": true,
+      "criteria": {
+        "placed_smokestack": "2026-01-01 00:00:00 +0000",
+        "has_warmth": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "endrem:main/lost_eye": {
+      "done": true,
+      "criteria": {
+        "lost_eye": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "endrem:main/root": {
+      "done": true,
+      "criteria": {
+        "lost_eye": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "minecraft:story/follow_ender_eye": {
+      "done": true,
+      "criteria": {
+        "in_stronghold": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdungeons:all_dungeons": {
+      "done": false,
+      "criteria": {
+        "in_better_zombie_dungeon": "2026-01-01 00:00:00 +0000",
+        "in_better_monster_room": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdungeons:zombie_dungeon": {
+      "done": true,
+      "criteria": {
+        "in_better_zombie_dungeon": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "betterdungeons:small_dungeon": {
+      "done": true,
+      "criteria": {
+        "in_better_monster_room": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "farmersdelight:main/plant_all_crops": {
+      "done": false,
+      "criteria": {
+        "red_mushroom": "2026-01-01 00:00:00 +0000",
+        "brown_mushroom": "2026-01-01 00:00:00 +0000"
+      }
+    },
+    "farmersdelight:main/eat_nourishing_food": {
+      "done": true,
+      "criteria": {
+        "nourishment": "2026-01-01 00:00:00 +0000"
+      }
+    }
+  }
+}

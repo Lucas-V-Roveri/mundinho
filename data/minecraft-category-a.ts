@@ -1,0 +1,278 @@
+export const MINECRAFT_CATEGORY_A_VERSION = "category-a-2026-10-11-v1";
+export const MINECRAFT_CATEGORY_A = [
+  {
+    "advancementId": "alexscaves:alexscaves/cave_tablet",
+    "milestoneId": "progression:630",
+    "confidence": "Média",
+    "enabled": true,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: critério cave_tablet observado; não comprova Cave Codex nem localizar bioma.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "alexsmobs:alexsmobs/root",
+    "milestoneId": "progression:210",
+    "confidence": "Baixa-conferir",
+    "enabled": false,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial candidato: useitem; validar o item/trigger no JAR antes de associar ao Animal Dictionary.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "artifacts:amateur_archaeologist",
+    "milestoneId": "progression:140",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: comprova obter um artefato; não comprova testar sua utilidade.",
+    "source": "https://raw.githubusercontent.com/ochotonida/artifacts/1.21.1/common/src/generated/resources/data/artifacts/advancement/amateur_archaeologist.json"
+  },
+  {
+    "advancementId": "betterdeserttemples:temple_entry",
+    "milestoneId": "progression:250",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: entrar no templo não comprova explorar/verificar armadilhas do subitem desert.",
+    "source": "https://raw.githubusercontent.com/YUNG-GANG/YUNGs-Better-Desert-Temples/1.21.1/Common/src/main/resources/data/betterdeserttemples/advancement/temple_entry.json"
+  },
+  {
+    "advancementId": "betterdungeons:all_dungeons",
+    "milestoneId": "progression:250",
+    "confidence": "Média",
+    "enabled": true,
+    "total": 4,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: contador de 4 tipos de dungeon dentro de #250; visitar não comprova os cinco subobjetivos do marco.",
+    "source": "https://raw.githubusercontent.com/YUNG-GANG/YUNGs-Better-Dungeons/1.21.1/Common/src/main/resources/data/betterdungeons/advancement/all_dungeons.json"
+  },
+  {
+    "advancementId": "betterdungeons:small_dungeon",
+    "milestoneId": "progression:250",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: localização em monster room; não comprova concluir a dungeon.",
+    "source": "https://raw.githubusercontent.com/YUNG-GANG/YUNGs-Better-Dungeons/1.21.1/Common/src/main/resources/data/betterdungeons/advancement/small_dungeon.json"
+  },
+  {
+    "advancementId": "betterdungeons:spider_dungeon",
+    "milestoneId": "progression:250",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: localização; não comprova concluir a dungeon.",
+    "source": "https://raw.githubusercontent.com/YUNG-GANG/YUNGs-Better-Dungeons/1.21.1/Common/src/main/resources/data/betterdungeons/advancement/spider_dungeon.json"
+  },
+  {
+    "advancementId": "betterdungeons:zombie_dungeon",
+    "milestoneId": "progression:250",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: localização; não comprova concluir a dungeon.",
+    "source": "https://raw.githubusercontent.com/YUNG-GANG/YUNGs-Better-Dungeons/1.21.1/Common/src/main/resources/data/betterdungeons/advancement/zombie_dungeon.json"
+  },
+  {
+    "advancementId": "cold_sweat:insulate_armor",
+    "milestoneId": "progression:10",
+    "confidence": "Baixa-conferir",
+    "enabled": false,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial candidato: isolamento; validar trigger no JAR, não comprova água segura/estabilidade térmica.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "cold_sweat:use_hearth",
+    "milestoneId": "progression:10",
+    "confidence": "Baixa-conferir",
+    "enabled": false,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: has_warmth observado com done=false; Y instalado a conferir. Não concluir a partir da presença.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "cold_sweat:use_smokestack",
+    "milestoneId": "progression:10",
+    "confidence": "Média",
+    "enabled": true,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: critérios placed_smokestack e has_warmth; não comprova todo o preparo de sobrevivência.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "dungeons_arise:find_greenwood_pub",
+    "milestoneId": "progression:240",
+    "confidence": "Média",
+    "enabled": true,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: descoberta de estrutura passiva; não conclui objetivos hostis #260/#265.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "endrem:main/lost_eye",
+    "milestoneId": "progression:810",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "completion",
+    "rule": "done===true → progression:810:lost-eye. Não altera os outros 11 subitens; pai só se completa pela regra existente.",
+    "reason": "Integral para o subitem EXISTENTE progression:810:lost-eye, somente done=true. Nunca concluir #810 inteiro.",
+    "source": "https://raw.githubusercontent.com/Jack-Bagel/End-Remastered/1.21.1/common/src/main/resources/data/endrem/advancement/main/lost_eye.json"
+  },
+  {
+    "advancementId": "endrem:main/root",
+    "milestoneId": "progression:810",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 16,
+    "kind": "criteria",
+    "rule": "Mapear critérios observados aos 12 IDs já existentes em #810. Neste arquivo lost_eye → progression:810:lost-eye. Nunca usar done do root para completar #810. Deduplicar lost_eye.",
+    "reason": "Por critério: os olhos presentes alimentam seus subitens equivalentes de #810; neste save apenas lost_eye. done=true do root significa UM entre 16, nunca 12 olhos.",
+    "source": "https://raw.githubusercontent.com/Jack-Bagel/End-Remastered/1.21.1/common/src/main/resources/data/endrem/advancement/main/root.json"
+  },
+  {
+    "advancementId": "farmersdelight:main/eat_nourishing_food",
+    "milestoneId": "progression:40",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: comprova efeito Nourishment; não comprova produção estável de refeições.",
+    "source": "https://raw.githubusercontent.com/vectorwing/FarmersDelight/1.21/src/generated/resources/data/farmersdelight/advancement/main/eat_nourishing_food.json"
+  },
+  {
+    "advancementId": "farmersdelight:main/place_cooking_pot",
+    "milestoneId": "progression:40",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: comprova colocar Cooking Pot; não comprova fonte estável de refeições.",
+    "source": "https://raw.githubusercontent.com/vectorwing/FarmersDelight/1.21/src/generated/resources/data/farmersdelight/advancement/main/place_cooking_pot.json"
+  },
+  {
+    "advancementId": "farmersdelight:main/plant_all_crops",
+    "milestoneId": "progression:40",
+    "confidence": "Média",
+    "enabled": true,
+    "total": 19,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: catálogo agrícola X/19 no próprio marco, sem 19 subitens; coleção opcional, não gate para refeições.",
+    "source": "https://raw.githubusercontent.com/vectorwing/FarmersDelight/1.21/src/generated/resources/data/farmersdelight/advancement/main/plant_all_crops.json"
+  },
+  {
+    "advancementId": "graveyard:graveyard/large_graveyard",
+    "milestoneId": "progression:600",
+    "confidence": "Média",
+    "enabled": true,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: descoberta do Graveyard; não comprova explorar Crypt e Ruins.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "graveyard:graveyard/root",
+    "milestoneId": "progression:600",
+    "confidence": "Baixa-conferir",
+    "enabled": false,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial candidato: root com grave_03; validar condição de localização no JAR, não usar como instalação nem conclusão do marco.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "mca:marriage",
+    "milestoneId": "progression:110",
+    "confidence": "Baixa-conferir",
+    "enabled": false,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: marriage/critério iron; validar trigger no JAR; não conclui toda a rotina social.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "mca:root",
+    "milestoneId": "progression:110",
+    "confidence": "Média",
+    "enabled": true,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: critério village; não comprova relações e rotina social estabilizadas.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "minecraft:adventure/sleep_in_bed",
+    "milestoneId": "progression:50",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: comprova dormir numa cama; não comprova saco de dormir e campfire do kit.",
+    "source": "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/sleep_in_bed.json"
+  },
+  {
+    "advancementId": "minecraft:story/follow_ender_eye",
+    "milestoneId": "progression:290",
+    "confidence": "Alta",
+    "enabled": true,
+    "total": 1,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: comprova estar em minecraft:stronghold; não comprova explorar a estrutura reformulada.",
+    "source": "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/story/follow_ender_eye.json"
+  },
+  {
+    "advancementId": "nova_structures:adventure/find_tavern",
+    "milestoneId": "progression:240",
+    "confidence": "Média",
+    "enabled": true,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: critério de tavern observado; não comprova todas as atividades da entrada.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  },
+  {
+    "advancementId": "nova_structures:root",
+    "milestoneId": "progression:240",
+    "confidence": "Média",
+    "enabled": true,
+    "total": null,
+    "kind": "partial",
+    "rule": "Evidência parcial no marco; NÃO marcar pai nem subitem amplo como feito. Sem novo marco. Sinais Baixa-conferir ficam desativados até validar definição.",
+    "reason": "Parcial: root referencia find_tavern, não é mera instalação; deduplicar com find_tavern.",
+    "source": "Save anexado: critérios e done. Definição exata do JAR/datapack não fornecida."
+  }
+] as const;

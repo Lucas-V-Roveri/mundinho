@@ -6,7 +6,7 @@ type MinecraftStatsFile = {
   stats?: Record<string, Record<string, number>>;
 };
 
-type MinecraftAdvancement = {
+export type MinecraftAdvancement = {
   done?: boolean;
   criteria?: Record<string, string>;
 };
@@ -17,6 +17,7 @@ export type MinecraftProgressSummary = {
   killed: Record<string, number>;
   killedBy: Record<string, number>;
   completedAdvancements: string[];
+  advancements: Record<string, MinecraftAdvancement>;
   recognizedMobIds: string[];
   unmatchedMobIds: string[];
 };
@@ -39,6 +40,7 @@ export function parseMinecraftProgressDocuments(
   const killed: Record<string, number> = {};
   const killedBy: Record<string, number> = {};
   const completedAdvancements = new Set<string>();
+  const advancements: Record<string, MinecraftAdvancement> = {};
 
   for (const document of documents) {
     if (!isObject(document.data)) continue;
@@ -54,7 +56,13 @@ export function parseMinecraftProgressDocuments(
 
     const possibleAdvancements = document.data as MinecraftAdvancementsFile;
     for (const [id, value] of Object.entries(possibleAdvancements)) {
-      if (isObject(value) && (value as MinecraftAdvancement).done === true) completedAdvancements.add(id);
+      if (!id.includes(":") || id.includes("recipes/") || id.endsWith("recipes") || /(^|\/)recipe($|\/)/.test(id.split(":")[1]) || !isObject(value)) continue;
+      const criteria = isObject(value.criteria)
+        ? Object.fromEntries(Object.entries(value.criteria).filter(([, stamp]) => typeof stamp === "string" && stamp.length <= 64)) as Record<string, string>
+        : {};
+      if (Object.keys(criteria).length > 0 && Object.keys(criteria).every((key) => key === "has_recipe" || key === "has_the_recipe")) continue;
+      advancements[id] = mergeMinecraftAdvancement(advancements[id], { done: value.done === true, criteria });
+      if (value.done === true) completedAdvancements.add(id);
     }
   }
 
@@ -67,9 +75,54 @@ export function parseMinecraftProgressDocuments(
     killed,
     killedBy,
     completedAdvancements: [...completedAdvancements].sort(),
+    advancements,
     recognizedMobIds,
     unmatchedMobIds,
   };
+}
+
+export function mergeMinecraftAdvancement(previous: MinecraftAdvancement | undefined, next: MinecraftAdvancement): MinecraftAdvancement {
+  return { done: previous?.done === true || next.done === true, criteria: { ...next.criteria, ...previous?.criteria } };
+}
+
+export type MinecraftSignalRule = {
+  advancementId: string; milestoneId: string; enabled: boolean; confidence: string;
+  kind: string; total: number | null; rule: string; reason: string; source: string;
+};
+
+export const ENDREM_CRITERION_TARGETS: Readonly<Record<string, string>> = Object.fromEntries(
+  ["old", "nether", "cold", "rogue", "black", "magical", "lost", "corrupted", "wither", "guardian", "witch", "cursed"]
+    .map((eye) => [`${eye}_eye`, `progression:810:${eye}-eye`]),
+);
+
+export function categoryASyncPlan(
+  summary: MinecraftProgressSummary,
+  rules: readonly MinecraftSignalRule[],
+  milestones: readonly { id: string; subitens?: readonly { id: string }[] }[],
+) {
+  return rules.flatMap((rule) => {
+    const observed = summary.advancements[rule.advancementId];
+    const milestone = milestones.find((item) => item.id === rule.milestoneId);
+    if (!observed || !milestone) return [];
+    const criteria = observed.criteria ?? {};
+    const allowedTargets = new Set(milestone.subitens?.map((item) => item.id) ?? []);
+    let completions: string[] = [];
+    if (rule.enabled && rule.kind === "completion" && observed.done === true) completions = ["progression:810:lost-eye"];
+    if (rule.enabled && rule.kind === "criteria") completions = Object.keys(criteria).flatMap((key) => ENDREM_CRITERION_TARGETS[key] ? [ENDREM_CRITERION_TARGETS[key]] : []);
+    return [{ ...rule, done: observed.done === true, criteria, completions: completions.filter((id) => allowedTargets.has(id)) }];
+  });
+}
+
+/** Filenames identify the attached saves, not an authentication mechanism. */
+export function validateMinecraftImportActor(names: string[], actor: string) {
+  const bindings: Record<string, string> = {
+    "8665c085-fd1e-410f-80b1-277175791399": "gr1d",
+    "f6b62653-46b8-4328-b701-ec6a178f2718": "benamu",
+  };
+  const uuids = [...new Set(names.flatMap((name) => name.toLowerCase().match(/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/g) ?? []))];
+  if (uuids.length > 1) throw new Error("Selecione arquivos de apenas um jogador por importação; os critérios dos dois não podem ser somados.");
+  const expected = uuids[0] ? bindings[uuids[0]] : undefined;
+  if (expected && actor !== expected) throw new Error(`Este arquivo pertence a ${expected}. Selecione ${expected} antes de importar.`);
 }
 
 export function bestiarySyncPlan(
