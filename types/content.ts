@@ -101,6 +101,9 @@ export type ProgressionSubitem = {
   id: string;
   title: string;
   phase?: string;
+  risk?: string;
+  source?: string;
+  notes?: string;
   equipment?: string;
   confidence?: Confidence;
   gate?: string;
@@ -136,6 +139,8 @@ export type ProgressionItem = {
   utilidade?: string;
   receita?: RecipeDefinition;
   subitens?: ProgressionSubitem[];
+  /** Retired aggregate/step IDs retained for history, never counted as active objectives. */
+  archivedSubitems?: ProgressionSubitem[];
   gate?: GateDefinition;
   transversal?: boolean;
 };

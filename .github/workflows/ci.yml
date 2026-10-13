@@ -26,6 +26,8 @@ jobs:
         run: npm run test:bestiary-media
       - name: Bestiary audit and canary preservation
         run: npm run test:bestiary-audit
+      - name: Destination migration preservation
+        run: npm run test:destinations
       - name: Minecraft progress sync
         run: npm run test:minecraft-progress
       - name: Typecheck
