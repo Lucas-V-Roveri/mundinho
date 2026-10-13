@@ -1,3 +1,4 @@
+import { MINECRAFT_VANILLA_REMAINING } from "@/data/minecraft-vanilla-remaining";
 import { MINECRAFT_STORY_CANARY } from "@/data/minecraft-story-canary";
 import { MINECRAFT_CATEGORY_A } from "@/data/minecraft-category-a";
 import type { Actor } from "@/types/content";
@@ -11,7 +12,7 @@ export function MinecraftEvidence({ milestoneId, actor, rows }: { milestoneId: s
     <h4 className="font-label text-xl">Progresso do Minecraft · {actor}</h4>
     <p className="text-xs text-ink-700">Evidências parciais não concluem o marco nem seus subitens. Critérios não são somados entre jogadores.</p>
     {observed.map((row) => {
-      const rule = [...MINECRAFT_CATEGORY_A, ...MINECRAFT_STORY_CANARY].find((item) => item.advancementId === row.advancement_id);
+      const rule = [...MINECRAFT_CATEGORY_A, ...MINECRAFT_STORY_CANARY, ...MINECRAFT_VANILLA_REMAINING].find((item) => item.advancementId === row.advancement_id);
       const count = Object.keys(row.criteria).length;
       return <div key={row.advancement_id} className="border-l-2 border-grass-700 pl-3">
         <p className="break-all font-mono text-xs">{row.advancement_id}</p>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Tag } from "@/components/ui/tag";
 import { BESTIARY_ENTRIES } from "@/data/bestiary-catalog";
 import { useBestiaryState } from "@/lib/bestiary-state";
+import { MINECRAFT_VANILLA_REMAINING } from "@/data/minecraft-vanilla-remaining";
 import { MINECRAFT_STORY_CANARY } from "@/data/minecraft-story-canary";
 import { MINECRAFT_CATEGORY_A } from "@/data/minecraft-category-a";
 import { useMinecraftEvidence } from "@/lib/minecraft-evidence-state";
@@ -50,7 +51,7 @@ export function MinecraftProgressImport({ scope = "both", onSynced }: { scope?: 
   const apply = async () => {
     if (!summary || dataStatus !== "ready") return;
     const plan = scope === "both" ? bestiarySyncPlan(summary, BESTIARY_ENTRIES) : [];
-    const signals = categoryASyncPlan(summary, [...MINECRAFT_CATEGORY_A, ...MINECRAFT_STORY_CANARY], content.progression).filter((item) => item.enabled);
+    const signals = categoryASyncPlan(summary, [...MINECRAFT_CATEGORY_A, ...MINECRAFT_STORY_CANARY, ...MINECRAFT_VANILLA_REMAINING], content.progression).filter((item) => item.enabled);
     if ((plan.length && bestiary.status !== "ready") || (signals.length && (!evidence.ready || mode !== "supabase"))) return;
     setBusy(true);
     setMessage(null);
@@ -79,7 +80,7 @@ export function MinecraftProgressImport({ scope = "both", onSynced }: { scope?: 
   };
 
   const plan = summary && scope === "both" ? bestiarySyncPlan(summary, BESTIARY_ENTRIES) : [];
-  const signals = summary ? categoryASyncPlan(summary, [...MINECRAFT_CATEGORY_A, ...MINECRAFT_STORY_CANARY], content.progression) : [];
+  const signals = summary ? categoryASyncPlan(summary, [...MINECRAFT_CATEGORY_A, ...MINECRAFT_STORY_CANARY, ...MINECRAFT_VANILLA_REMAINING], content.progression) : [];
   const activeSignals = signals.filter((item) => item.enabled);
   const completions = new Set(activeSignals.flatMap((item) => item.completions)).size;
   const defeated = plan.filter((item) => item.defeated).length;
@@ -99,7 +100,7 @@ export function MinecraftProgressImport({ scope = "both", onSynced }: { scope?: 
         {scope === "progression" ? <>Selecione o JSON de <code>advancements/&lt;UUID&gt;.json</code> de um jogador.</> : <>Selecione os JSONs de <code>stats/&lt;UUID&gt;.json</code> e/ou <code>advancements/&lt;UUID&gt;.json</code> de um único jogador.</>} Os arquivos são lidos no navegador; somente estados e evidências dos sinais aprovados são enviados ao Supabase. Confira quem está selecionado antes de aplicar.
       </p>
       <p className="mt-2 max-w-4xl text-xs leading-5 text-ink-700">
-        {scope === "both" ? <>Kills marcam “derrotado”; mortes pelo mob marcam apenas “visto”. </> : null}Na Progressão, evidências parciais são registradas dentro do marco e não concluem seu checklist. Os sinais do End Remastered alimentam apenas os olhos comprovados. Cinco sinais a conferir permanecem desativados; os dez marcos iniciais de story são concluídos somente com done=true. Receitas e os demais marcos novos ficam fora deste canário.
+        {scope === "both" ? <>Kills marcam “derrotado”; mortes pelo mob marcam apenas “visto”. </> : null}Na Progressão, evidências parciais são registradas dentro do marco e não concluem seu checklist. Os sinais do End Remastered alimentam apenas os olhos comprovados. Cinco sinais a conferir permanecem desativados; os 26 marcos vanilla aprovados são concluídos somente com done=true do sinal correspondente. Os roots de aventura e alimentação apenas abrem suas trilhas. Receitas e sinais não aprovados são ignorados.
       </p>
 
       <label className="mt-4 block border-2 border-dashed border-stone-500 bg-paper-50 p-4 text-sm">
