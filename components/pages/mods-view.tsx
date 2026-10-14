@@ -20,6 +20,7 @@ export function ModsView() {
   const [type, setType] = React.useState("todos");
   const [query, setQuery] = React.useState("");
   const [expandedGuideIds, setExpandedGuideIds] = React.useState<Set<string>>(new Set());
+  const [targetSectionId, setTargetSectionId] = React.useState("");
   const expansionInitialized = React.useRef(false);
 
   React.useEffect(() => {
@@ -35,19 +36,32 @@ export function ModsView() {
     const openHashTarget = () => {
       const targetGuideId = guideIdFromHash(window.location.hash, guideIds);
       if (!targetGuideId) return;
+      setTargetSectionId(decodeURIComponent(window.location.hash.replace(/^#/, "")));
+      setType("todos");
+      setQuery("");
       setExpandedGuideIds((current) => current.has(targetGuideId) ? current : new Set([...current, targetGuideId]));
     };
 
+    const frame = requestAnimationFrame(() => {
     if (!expansionInitialized.current) {
       const targetGuideId = guideIdFromHash(window.location.hash, guideIds);
       setExpandedGuideIds(new Set([targetGuideId ?? guideIds[0]]));
+      if (targetGuideId) {
+        setTargetSectionId(decodeURIComponent(window.location.hash.replace(/^#/, "")));
+        setType("todos");
+        setQuery("");
+      }
       expansionInitialized.current = true;
     } else {
       openHashTarget();
     }
+    });
 
     window.addEventListener("hashchange", openHashTarget);
-    return () => window.removeEventListener("hashchange", openHashTarget);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("hashchange", openHashTarget);
+    };
   }, [guideIds]);
 
   React.useEffect(() => {
@@ -57,7 +71,7 @@ export function ModsView() {
     if (!targetGuideId || !expandedGuideIds.has(targetGuideId)) return;
     const frame = requestAnimationFrame(() => document.getElementById(targetId)?.scrollIntoView({ block: "start" }));
     return () => cancelAnimationFrame(frame);
-  }, [expandedGuideIds, guideIds]);
+  }, [expandedGuideIds, guideIds, targetSectionId]);
 
   const changeType = (value: string) => {
     setType(value);
@@ -108,7 +122,7 @@ export function ModsView() {
           </div>
         ) : null}
       </section>
-      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText={`abrindo os ${STATIC_TOTALS.guides} guias...`} /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} expanded={expandedGuideIds.has(guide.id)} onExpandedChange={(expanded) => setGuideExpanded(guide.id, expanded)} />)}</div><TwilightCatalogPanel /></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
+      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText={`abrindo os ${STATIC_TOTALS.guides} guias...`} /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} targetSectionId={targetSectionId} expanded={expandedGuideIds.has(guide.id)} onExpandedChange={(expanded) => setGuideExpanded(guide.id, expanded)} />)}</div><TwilightCatalogPanel /></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
     </div>
   );
 }

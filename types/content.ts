@@ -60,10 +60,12 @@ export type Crafting = {
 };
 
 export type GuideSection = {
+  id?: string;
   title: string;
   body?: string;
   list?: string[];
   steps?: string[];
+  links?: ResearchSource[];
 };
 
 export type Guide = {
@@ -112,6 +114,7 @@ export type ProgressionSubitem = {
   trophy?: boolean;
   bestiaryId?: string;
   bestiaryIds?: string[];
+  guideLinks?: ResearchSource[];
 };
 
 export type ProgressionItem = {
@@ -143,6 +146,7 @@ export type ProgressionItem = {
   archivedSubitems?: ProgressionSubitem[];
   gate?: GateDefinition;
   transversal?: boolean;
+  guideLinks?: ResearchSource[];
 };
 
 export type AmendmentsPayload = {

@@ -17,10 +17,11 @@
     "test:bestiary-media": "node --experimental-strip-types --test tests/bestiary-media.test.mjs",
     "test:bestiary-audit": "node --test tests/bestiary-bomd-canary.test.mjs",
     "test:minecraft-progress": "node --experimental-strip-types --test tests/minecraft-progress.test.mjs tests/minecraft-category-a.test.mjs tests/minecraft-story-canary.test.mjs tests/minecraft-vanilla-remaining.test.mjs",
-    "verify": "npm run test:destinations && npm run test:reconciliation && npm run test:progression && npm run test:bestiary-media && npm run test:bestiary-audit && npm run test:minecraft-progress && npm run typecheck && npm run lint && npm run build",
+    "verify": "npm run test:guides && npm run test:destinations && npm run test:reconciliation && npm run test:progression && npm run test:bestiary-media && npm run test:bestiary-audit && npm run test:minecraft-progress && npm run typecheck && npm run lint && npm run build",
     "sync:content": "node scripts/sync-content-snapshot.mjs",
     "test:reconciliation": "node --test tests/progression-migration.test.mjs tests/progression-reconciliation.test.mjs",
-    "test:destinations": "node --experimental-strip-types --test tests/progression-destinations.test.mjs"
+    "test:destinations": "node --experimental-strip-types --test tests/progression-destinations.test.mjs",
+    "test:guides": "node --test tests/destination-guides.test.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "0.12.7",

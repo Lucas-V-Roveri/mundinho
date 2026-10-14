@@ -2861,6 +2861,10 @@ export const CONTENT_SNAPSHOT_ROWS = [
         [
           "The Graveyard",
           "https://modrinth.com/mod/graveyard"
+        ],
+        [
+          "The Graveyard 2.6.2 — build auditada",
+          "https://modrinth.com/mod/the-graveyard-(unofficial-port)/versions"
         ]
       ],
       "sections": [
@@ -2885,6 +2889,267 @@ export const CONTENT_SNAPSHOT_ROWS = [
         {
           "body": "Lich Prison é longe e o boss pode negar dano em fases específicas. Deixem Waystone/rota de retorno e kit de recuperação antes do ritual.",
           "title": "Para não perder o inventário"
+        },
+        {
+          "id": "destination-600-medium-graveyard",
+          "title": "Explorar Medium Graveyard",
+          "body": "Medium Graveyard aparece em forest, flower forest e windswept forest, com compatibilidade opcional de biomas.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Explore durante o dia quando possível, confira muros/saídas antes de abrir urnas e mantenha distância dos hostis. A tabela de geração inclui Ghoul, Revenant e Skeleton Creeper.",
+            "Uma exploração segura deste destino basta. O ritual e o Corrupted Champion ficam em #610/#620, sem obrigação de visitar os outros destinos."
+          ],
+          "links": [
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-ghoul"
+            },
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-revenant"
+            }
+          ]
+        },
+        {
+          "id": "destination-600-large-graveyard",
+          "title": "Explorar Large Graveyard",
+          "body": "Large Graveyard usa taiga, snowy taiga e a tag de plains, com biomas adicionais opcionais. É um complexo de maior escala, separado do Medium.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Prepare um depósito e retorno fora dos muros, escolha um setor e avance sem puxar toda a área. Os recursos incluem hostis nas construções e spawns de Ghoul/Revenant/Skeleton Creeper; iluminar não prova que um setor será permanentemente seguro.",
+            "Uma exploração segura deste destino basta. O ritual e o Corrupted Champion ficam em #610/#620, sem obrigação de visitar os outros destinos."
+          ],
+          "links": [
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-ghoul"
+            },
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-revenant"
+            }
+          ]
+        },
+        {
+          "id": "destination-600-crypt",
+          "title": "Explorar Crypt",
+          "body": "Crypt é subterrânea, com início absoluto -10 e tag de bioma underground; não é uma ruína pequena de superfície.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Leve diamante encantado recomendado, escudo, arco, blocos e iluminação. Marque bifurcações e trate sarcófagos/salas como locais a inspecionar; a geração inclui Acolyte e illagers corrompidos. Reserve um corredor de recuo sem abrir todas as salas.",
+            "Uma exploração segura deste destino basta. O ritual e o Corrupted Champion ficam em #610/#620, sem obrigação de visitar os outros destinos."
+          ],
+          "links": [
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-acolyte"
+            },
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-pillager"
+            },
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-vindicator"
+            }
+          ]
+        },
+        {
+          "id": "destination-600-haunted-house",
+          "title": "Explorar Haunted House",
+          "body": "Haunted House aparece em dark forest, pântanos e old growth pine/spruce taiga, com biomas adicionais opcionais.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Inspecione portas e pisos, controle os hostis do cômodo antes de abrir recipientes e guarde uma saída para o exterior. Os templates incluem Acolyte e zombies; não trate a casa como abrigo neutro.",
+            "Uma exploração segura deste destino basta. O ritual e o Corrupted Champion ficam em #610/#620, sem obrigação de visitar os outros destinos."
+          ],
+          "links": [
+            {
+              "label": "Criatura, comportamento e drops no Bestiário",
+              "href": "/bestiario#mob-graveyard-acolyte"
+            }
+          ]
+        },
+        {
+          "id": "destination-600-ruins-01",
+          "title": "Explorar Ruins 01 — fragmento superior",
+          "body": "Ruins 01 é uma variante de graveyard:ruins, gerada em forest e biomas de vegetação densa. A paleta do template contém upper_bone_staff.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Procure o fragmento superior na construção e colete-o pela interação/mineração normal do bloco. Explore a variante, registre coordenadas e guarde o fragmento para #610; não inicie o ritual só por encontrar uma parte.",
+            "Uma exploração segura deste destino basta. O ritual e o Corrupted Champion ficam em #610/#620, sem obrigação de visitar os outros destinos."
+          ],
+          "links": [
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            }
+          ]
+        },
+        {
+          "id": "destination-600-ruins-02",
+          "title": "Explorar Ruins 02 — fragmento inferior",
+          "body": "Ruins 02 compartilha a geração graveyard:ruins em forest/vegetação densa, mas seu template contém lower_bone_staff.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Procure o fragmento inferior, colete-o e registre esta variante separadamente. A geração escolhe a variante: encontrar Ruins não garante que será esta peça.",
+            "Uma exploração segura deste destino basta. O ritual e o Corrupted Champion ficam em #610/#620, sem obrigação de visitar os outros destinos."
+          ],
+          "links": [
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            }
+          ]
+        },
+        {
+          "id": "destination-600-ruins-03",
+          "title": "Explorar Ruins 03 — fragmento central",
+          "body": "Ruins 03 compartilha a geração graveyard:ruins em forest/vegetação densa; o template contém middle_bone_staff.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Procure o fragmento central, colete-o e registre a variante. Não confunda a peça central com uma ordem obrigatória de visita às ruínas.",
+            "Uma exploração segura deste destino basta. O ritual e o Corrupted Champion ficam em #610/#620, sem obrigação de visitar os outros destinos."
+          ],
+          "links": [
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            }
+          ]
+        },
+        {
+          "id": "destination-610-upper",
+          "title": "Obter o fragmento superior do Ominous Bone Staff em Ruins",
+          "body": "Rota auditada no JAR 2.6.2: o fragmento superior está como bloco na paleta de ruins-01. Procure a família Ruins nas florestas/vegetação densa. Não exige completar o catálogo #600.",
+          "list": [
+            "Levar: ferro completo, escudo, arco, comida, iluminação e retorno marcado.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Explore a variante correspondente e recolha a peça superior; guarde-a em local seguro. Para localização e exploração detalhadas, siga o link do destino abaixo.",
+            "O objetivo é obter a peça, não executar o ritual. Rotas alternativas e usos de itens são consultados no Bestiário."
+          ],
+          "links": [
+            {
+              "label": "Como explorar a variante da Ruin",
+              "href": "/mods#guide-graveyard-destination-600-ruins-01"
+            },
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            }
+          ]
+        },
+        {
+          "id": "destination-610-middle",
+          "title": "Obter o fragmento central do Ominous Bone Staff em Ruins",
+          "body": "Rota auditada no JAR 2.6.2: o fragmento central está como bloco na paleta de ruins-03. Procure a família Ruins nas florestas/vegetação densa. Não exige completar o catálogo #600.",
+          "list": [
+            "Levar: ferro completo, escudo, arco, comida, iluminação e retorno marcado.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Explore a variante correspondente e recolha a peça central; guarde-a em local seguro. Para localização e exploração detalhadas, siga o link do destino abaixo.",
+            "O objetivo é obter a peça, não executar o ritual. Rotas alternativas e usos de itens são consultados no Bestiário."
+          ],
+          "links": [
+            {
+              "label": "Como explorar a variante da Ruin",
+              "href": "/mods#guide-graveyard-destination-600-ruins-03"
+            },
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            }
+          ]
+        },
+        {
+          "id": "destination-610-lower",
+          "title": "Obter o fragmento inferior do Ominous Bone Staff em Ruins",
+          "body": "Rota auditada no JAR 2.6.2: o fragmento inferior está como bloco na paleta de ruins-02. Procure a família Ruins nas florestas/vegetação densa. Não exige completar o catálogo #600.",
+          "list": [
+            "Levar: ferro completo, escudo, arco, comida, iluminação e retorno marcado.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Explore a variante correspondente e recolha a peça inferior; guarde-a em local seguro. Para localização e exploração detalhadas, siga o link do destino abaixo.",
+            "O objetivo é obter a peça, não executar o ritual. Rotas alternativas e usos de itens são consultados no Bestiário."
+          ],
+          "links": [
+            {
+              "label": "Como explorar a variante da Ruin",
+              "href": "/mods#guide-graveyard-destination-600-ruins-02"
+            },
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            }
+          ]
+        },
+        {
+          "id": "destination-610-blood",
+          "title": "Preparar Bone Dagger e encher Vial of Blood conforme o ritual",
+          "body": "Preparação do ritual, fora do combate do Lich. A rota já documentada usa Bone Dagger e Glass Bottle na mão secundária para coletar sangue de Villagers; confirme o preenchimento do Vial antes de ir à Prison.",
+          "list": [
+            "Levar: ferro completo, escudo, arco, comida, iluminação e retorno marcado.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Configurações podem alterar o requisito de invocação. O card auditado registra o limiar do Vial; preparação editorial recomenda preenchê-lo antes da viagem."
+          ],
+          "steps": [
+            "Separe a adaga e garrafa, execute a coleta e confira o estado do Vial no item. Leve o Vial preenchido junto das três peças; não use um frasco vazio como tentativa de invocação.",
+            "A fonte única dos materiais/ritual é o card do Corrupted Champion e as receitas auditadas abaixo. Não é preciso concluir os sete destinos de #600."
+          ],
+          "links": [
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            },
+            {
+              "label": "Materiais e receitas auditadas do Graveyard",
+              "href": "/bestiary/receitas/gy.html"
+            }
+          ]
+        },
+        {
+          "id": "destination-610-prison",
+          "title": "Localizar Lich Prison e preparar o acesso ao altar antes da noite",
+          "body": "Lich Prison tem geração de superfície nos oceanos warm, lukewarm, deep lukewarm, ocean e deep ocean na build 2.6.2. Leve barco e registre terra firme/retorno antes de abordar a estrutura.",
+          "list": [
+            "Levar: ferro completo, escudo, arco, comida, iluminação e retorno marcado.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Localize o altar e prepare a área e a recuperação de inventário sem ativar o ritual. No padrão auditado, o ritual usa as três peças no frame e o Vial; noite e dificuldade diferente de Pacífico importam para invocar.",
+            "Este subitem termina ao localizar e preparar o acesso. A ativação e a luta do Lich ficam no objetivo de boss #620; confira o padrão do altar no Bestiário antes de usar materiais."
+          ],
+          "links": [
+            {
+              "label": "Ritual, materiais e usos auditados no Bestiário",
+              "href": "/bestiario#mob-graveyard-corrupted-champion"
+            }
+          ]
         }
       ],
       "subtitle": "criptas · ritual · Corrupted Champion",
@@ -2922,13 +3187,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
       ],
       "craftings": [
         {
-          "body": "Não é craftado. A rota documentada aponta a Broken Tower como fonte principal; trades noturnos podem substituir exploração.",
+          "body": "Fragmento encontrado como bloco na variante Ruins 01 do JAR 2.6.2 NeoForge 1.21.1. Localização e exploração estão nas seções de destinos deste guia; usos e ritual permanecem no Bestiário.",
           "icone": "/icons/item.svg",
           "title": "Upper Ominous Bone Staff Fragment",
           "nameEn": "Upper Ominous Bone Staff Fragment",
           "source": {
-            "href": "https://suumani.sakura.ne.jp/en/external/the-graveyard/",
-            "label": "The Graveyard guide · fragment route"
+            "href": "/bestiario#mob-graveyard-corrupted-champion",
+            "label": "Ritual, materiais e usos auditados no Bestiário"
           },
           "receita": {
             "type": "loot",
@@ -2941,32 +3206,24 @@ export const CONTENT_SNAPSHOT_ROWS = [
               {
                 "source": {
                   "icon": "/icons/structure.svg",
-                  "nameEn": "Broken Tower Ruin",
-                  "namePt": "Broken Tower Ruin"
+                  "nameEn": "Ruins 01",
+                  "namePt": "Ruins 01"
                 },
-                "condition": "loot da Ruin"
-              },
-              {
-                "source": {
-                  "icon": "/icons/mob.svg",
-                  "nameEn": "Nameless Hanged",
-                  "namePt": "Nameless Hanged"
-                },
-                "condition": "trade noturno por Corruption"
+                "condition": "bloco da estrutura, não receita de bancada"
               }
             ]
           },
-          "utilidade": "É 1/3 do ritual do Corrupted Champion; pegue na Broken Tower ou use o trade do Nameless Hanged como rota alternativa.",
-          "confidence": "Média"
+          "utilidade": "Material do ritual: consulte o card do Corrupted Champion para condições e uso.",
+          "confidence": "Alta para a paleta de estruturas da versão 2.6.2; configuração do mundo a conferir"
         },
         {
-          "body": "Não é craftado. Bloody Hill é a rota principal documentada para o fragmento central.",
+          "body": "Fragmento encontrado como bloco na variante Ruins 03 do JAR 2.6.2 NeoForge 1.21.1. Localização e exploração estão nas seções de destinos deste guia; usos e ritual permanecem no Bestiário.",
           "icone": "/icons/item.svg",
           "title": "Middle Ominous Bone Staff Fragment",
           "nameEn": "Middle Ominous Bone Staff Fragment",
           "source": {
-            "href": "https://minecraft-modding.wiki/world-gen/the-graveyard-fabric",
-            "label": "The Graveyard guide · fragment route"
+            "href": "/bestiario#mob-graveyard-corrupted-champion",
+            "label": "Ritual, materiais e usos auditados no Bestiário"
           },
           "receita": {
             "type": "loot",
@@ -2979,32 +3236,24 @@ export const CONTENT_SNAPSHOT_ROWS = [
               {
                 "source": {
                   "icon": "/icons/structure.svg",
-                  "nameEn": "Bloody Hill Ruin",
-                  "namePt": "Bloody Hill Ruin"
+                  "nameEn": "Ruins 03",
+                  "namePt": "Ruins 03"
                 },
-                "condition": "loot da Ruin"
-              },
-              {
-                "source": {
-                  "icon": "/icons/mob.svg",
-                  "nameEn": "Nameless Hanged",
-                  "namePt": "Nameless Hanged"
-                },
-                "condition": "trade noturno por Corruption"
+                "condition": "bloco da estrutura, não receita de bancada"
               }
             ]
           },
-          "utilidade": "É 1/3 do ritual do Corrupted Champion; procure a Bloody Hill Ruin ou compre do Nameless Hanged se faltar essa peça.",
-          "confidence": "Média"
+          "utilidade": "Material do ritual: consulte o card do Corrupted Champion para condições e uso.",
+          "confidence": "Alta para a paleta de estruturas da versão 2.6.2; configuração do mundo a conferir"
         },
         {
-          "body": "Não é craftado. Campsite é a rota principal documentada para o fragmento inferior.",
+          "body": "Fragmento encontrado como bloco na variante Ruins 02 do JAR 2.6.2 NeoForge 1.21.1. Localização e exploração estão nas seções de destinos deste guia; usos e ritual permanecem no Bestiário.",
           "icone": "/icons/item.svg",
           "title": "Lower Ominous Bone Staff Fragment",
           "nameEn": "Lower Ominous Bone Staff Fragment",
           "source": {
-            "href": "https://minecraft-modding.wiki/world-gen/the-graveyard-fabric",
-            "label": "The Graveyard guide · fragment route"
+            "href": "/bestiario#mob-graveyard-corrupted-champion",
+            "label": "Ritual, materiais e usos auditados no Bestiário"
           },
           "receita": {
             "type": "loot",
@@ -3017,23 +3266,15 @@ export const CONTENT_SNAPSHOT_ROWS = [
               {
                 "source": {
                   "icon": "/icons/structure.svg",
-                  "nameEn": "Campsite Ruin",
-                  "namePt": "Campsite Ruin"
+                  "nameEn": "Ruins 02",
+                  "namePt": "Ruins 02"
                 },
-                "condition": "loot da Ruin"
-              },
-              {
-                "source": {
-                  "icon": "/icons/mob.svg",
-                  "nameEn": "Nameless Hanged",
-                  "namePt": "Nameless Hanged"
-                },
-                "condition": "trade noturno por Corruption"
+                "condition": "bloco da estrutura, não receita de bancada"
               }
             ]
           },
-          "utilidade": "É 1/3 do ritual do Corrupted Champion; busque a Campsite Ruin e só recorra ao trade se a exploração não fechar o trio.",
-          "confidence": "Média"
+          "utilidade": "Material do ritual: consulte o card do Corrupted Champion para condições e uso.",
+          "confidence": "Alta para a paleta de estruturas da versão 2.6.2; configuração do mundo a conferir"
         },
         {
           "body": "Não é receita de bancada: segure Glass Bottle na off-hand e mate Villagers com Bone Dagger até o vial encher completamente.",
@@ -4858,6 +5099,18 @@ export const CONTENT_SNAPSHOT_ROWS = [
         [
           "YUNG's Better Strongholds",
           "https://www.curseforge.com/projects/1015105"
+        ],
+        [
+          "WDA 2.1.68 — recursos de estruturas e biomas",
+          "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+        ],
+        [
+          "Dungeons and Taverns 4.4.4 — variantes de tavernas",
+          "https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns/files/5768823"
+        ],
+        [
+          "YUNG — recursos e geração dos mods Better",
+          "https://github.com/YUNG-GANG"
         ]
       ],
       "sections": [
@@ -4880,6 +5133,320 @@ export const CONTENT_SNAPSHOT_ROWS = [
         {
           "body": "YUNG's Better Stronghold é staging do End, mas não substitui o requisito dos 12 Eyes do End Remastered.",
           "title": "Stronghold"
+        },
+        {
+          "id": "destination-240-tavern",
+          "title": "Explorar Tavern do Dungeons and Taverns",
+          "body": "Procure tavernas na superfície do Overworld. D&T 4.4.4 contém variantes oak, birch, spruce, snowy, desert, acacia, jungle, mangrove, swamp, dark oak e cherry, cada uma ligada à coleção de biomas correspondente. Variantes de madeira contam como o mesmo destino.",
+          "list": [
+            "Levar: Água, comida e retorno marcado; escudo se houver hostis.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor."
+          ],
+          "steps": [
+            "Identifique a entrada e a saída antes de vasculhar salas; guarde coordenadas e faça uma visita diurna. Não presuma que toda construção chamada taverna é este destino: esta família usa o namespace nova_structures.",
+            "Uma variante visitada com suas salas reconhecidas e caminho de retorno registrado basta; não é necessário percorrer todas as tavernas."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-240-greenwood-pub",
+          "title": "Explorar Greenwood Pub do When Dungeons Arise",
+          "body": "Greenwood Pub aparece na superfície de florestas, dark forest e sunflower plains, com extensões opcionais para biomas de outros mods.",
+          "list": [
+            "Levar: Água, comida e retorno marcado; escudo se houver hostis.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem vindicator, zombie e skeleton: confira os cômodos antes de tratar o Pub como abrigo. Use porta/cobertura para combater sem puxar o salão inteiro.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-240-monastery",
+          "title": "Explorar Monastery do When Dungeons Arise",
+          "body": "Monastery aparece na superfície de taigas, colinas e montanhas. É o Monastery do WDA; não é o Earthrend Monastery de Mowzie’s.",
+          "list": [
+            "Levar: Água, comida e retorno marcado; escudo se houver hostis.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Reconheça o pátio e os acessos durante o dia, ilumine a rota e registre um abrigo. Os templates examinados não têm um boss próprio identificado; monstros naturais ainda podem aparecer.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-260-illager-campsite",
+          "title": "Explorar Illager Campsite",
+          "body": "Illager Campsite aparece na superfície de plains, meadow, sunflower plains e colinas, com biomas adicionais por tags opcionais.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem pillager e vindicator. Examine o acampamento de fora, use escudo contra disparos e atraia os inimigos em grupos pequenos; não lute cercado entre as tendas.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-260-illager-windmill",
+          "title": "Explorar Illager Windmill",
+          "body": "Illager Windmill aparece na superfície de plains, meadow e sunflower plains.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem pillager, vindicator e witch. Entre por uma rota marcada; use cobertura contra disparos, dê prioridade à witch à distância e só depois avance pelos pisos do moinho.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-260-illager-fort",
+          "title": "Explorar Illager Fort",
+          "body": "Illager Fort aparece em snowy taiga, snowy plains, snowy slopes e na coleção de taigas.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem pillager, vindicator, evoker e cave spiders. Observe o perímetro, crie cobertura contra flechas e uma retirada que não dependa de atravessar a sala do evoker. Leite é uma opção de recuperação de efeitos, mas remove também seus buffs.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-265-shiraz-palace",
+          "title": "Explorar Shiraz Palace",
+          "body": "Shiraz Palace é uma grande estrutura de superfície dos desertos, incluindo extensões por tags de outros mods.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem husks, skeletons, wither skeletons, pillagers e cave spiders. Marque o acesso no exterior, avance por um setor de cada vez e volte ao depósito antes de encher o inventário. Não trate nomes especiais de entidades como prova de boss exclusivo.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-265-keep-kayra",
+          "title": "Explorar Keep Kayra",
+          "body": "Keep Kayra usa swamp e mangrove swamp e começa na altura absoluta 54 no recurso de geração.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem skeletons e wither skeletons. Prepare uma aproximação seca e saída sinalizada; explore por setores, use cobertura para o combate à distância e evite ficar preso entre água e paredes.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-265-infested-temple",
+          "title": "Explorar Infested Temple",
+          "body": "Infested Temple usa taigas e colinas. Seu início é projetado sobre a superfície com deslocamento -32; parte do complexo pode ficar enterrada.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem spiders, cave spiders, skeletons e wither skeletons. Marque as bifurcações, elimine focos de spawn que encontrar antes de carregar baús e reserve passagem ampla para recuar sob veneno. Não entre por queda sem escada de retorno.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-265-kisegi-sanctuary",
+          "title": "Explorar Kisegi Sanctuary",
+          "body": "Kisegi Sanctuary usa plains e colinas, com extensão opcional para biomas de cerejeira. O início projetado -32 permite partes enterradas.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem skeletons, wither skeletons, spiders e cave spiders. Reconheça a entrada, feche linhas de tiro laterais com blocos e explore salas uma a uma. Uma parede ajuda contra flechas; não presuma que ela elimina todos os ataques do pack.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-265-mechanical-nest",
+          "title": "Explorar Mechanical Nest",
+          "body": "Mechanical Nest usa swamp, mangrove swamp e florestas e começa na altura absoluta 190: procure também acima da linha das árvores.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem ravagers, skeletons, zombies e wither skeletons. Construa acesso com guarda-corpo e patamar de recuo antes de abrir a entrada; leve água e blocos no Overworld para quedas. Evite trocar golpes na borda e deixe a recuperação do inventário planejada.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-265-mining-complex",
+          "title": "Explorar Mining Complex",
+          "body": "Mining Complex gera no subsolo, com início absoluto -5 e adaptação de terreno bury. Usa várias florestas/taigas, jungles, deserts, plains e savannas; o objetivo não é uma construção de superfície.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há gate de boss ou item de invocação identificado neste recurso. Localização e conteúdo seguem WDA 2.1.68; configurações/datapacks podem mudar a geração."
+          ],
+          "steps": [
+            "Os templates incluem skeletons e pillagers. Leve picareta reserva, iluminação e blocos; marque cada bifurcação e mantenha uma escada até a superfície. Avance controlando linhas de tiro, sem minerar verticalmente para dentro de um salão.",
+            "Reconheça os setores principais do destino, enfrente os encontros da sua rota e retorne com segurança. Não exige saquear cada baú nem completar outras estruturas do catálogo."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-mineshaft",
+          "title": "Explorar Better Mineshaft",
+          "body": "Better Mineshaft é subterrâneo. As variantes seguem o bioma: oak em plains/swamp/meadow; spruce em taigas; jungle em jungles; lush/dripstone nos biomas de caverna, além de outras variantes.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Entre por uma caverna ou acesso seguro, marque cruzamentos e pontes e procure aberturas/spawners antes de avançar. Leve picareta reserva e não corte a única sustentação da sua rota.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-small-dungeon",
+          "title": "Explorar Small Dungeon / Better Monster Room",
+          "body": "Small Dungeon / Better Monster Room é uma sala subterrânea do Better Dungeons; tags permitem diversos biomas do Overworld. Não é Small Nether Dungeon.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Localize a sala pela exploração de cavernas, mantenha o acesso iluminado e controle o spawner antes de abrir os baús. Inspecione a sala da entrada para evitar cair no meio dos mobs.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-skeleton-dungeon",
+          "title": "Explorar Skeleton Dungeon / Catacombs",
+          "body": "Skeleton Dungeon / Catacombs é a família subterrânea do Better Dungeons, com vários corredores e salas; o recurso permite muitos biomas do Overworld.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Leve escudo e arco, feche linhas de tiro cruzadas com blocos e marque cada corredor já visitado. Avance primeiro pelas salas que oferecem retirada, em vez de abrir vários corredores ao mesmo tempo.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-spider-dungeon",
+          "title": "Explorar Spider Dungeon / Spider Caves",
+          "body": "Spider Dungeon / Spider Caves pertence às famílias subterrâneas do Better Dungeons, permitidas em vários biomas do Overworld.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Leve espada, blocos e iluminação; remova teias que impeçam a retirada, olhe teto/laterais e controle spawners antes de vasculhar baús. Reserve comida e uma rota curta para se recuperar de veneno quando houver cave spiders.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-zombie-dungeon",
+          "title": "Explorar Zombie Dungeon / Fortress of the Undead",
+          "body": "Zombie Dungeon / Fortress of the Undead é uma família grande do Better Dungeons. Não equivale a uma monster room pequena.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Leve diamante encantado recomendado, escudo, arco e comida. Explore pisos/salas por setores, controle os pontos de spawn encontrados e descarregue loot no depósito exterior; não conte com a porta como única barreira de retirada.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-desert",
+          "title": "Explorar Better Desert Temple + Pharaoh",
+          "body": "Better Desert Temple usa desert e tags de desert compatíveis. A estrutura tem um Pharaoh próprio e pode aplicar Mining Fatigue enquanto o encontro está ativo.",
+          "list": [
+            "Levar: Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Reconheça a entrada e as armadilhas antes de descer; leve blocos, comida, escudo e arma de alcance. Resolva o encontro do Pharaoh pela rota do templo; não planeje a fuga dependendo de minerar paredes sob Mining Fatigue.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-jungle",
+          "title": "Explorar Better Jungle Temple",
+          "body": "Better Jungle Temple segue a tag vanilla de biomas com jungle temple. É uma estrutura própria do mod, não a família WDA Infested Temple.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Inspecione pisos, fios, mecanismos e salas antes de correr até baús. Leve picareta, blocos e escudo, mantenha um caminho de saída e teste um mecanismo por vez; não atribua uma combinação universal a todas as gerações.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-witch",
+          "title": "Explorar Better Witch Hut",
+          "body": "Better Witch Hut aparece em swamp/mangrove swamp e tags de pântano compatíveis.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Reconheça entrada e terreno antes de entrar, ataque a witch à distância usando cobertura e só vasculhe a casa depois de controlar o encontro. Leite é opcional para efeitos e remove buffs também.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
+        },
+        {
+          "id": "destination-250-witch-circle",
+          "title": "Explorar Witch Circle",
+          "body": "Witch Circle é outro recurso de Better Witch Huts, ligado a swamp e tags de pântano; não é uma variante de madeira da Hut.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "Não há pré-requisito de derrotar boss anterior para a localização. Preparo é editorial; configuração de geração no servidor não foi fornecida."
+          ],
+          "steps": [
+            "Observe o círculo de fora e reserve terreno firme para recuar; confira witches/hostis presentes, use ranged e cobertura e depois examine o local. Não há ritual ou chave de boss confirmado para entrar nesse recurso.",
+            "Explore a família indicada e retorne; marcar este destino não exige explorar as outras oito famílias de #250."
+          ],
+          "links": []
         }
       ],
       "subtitle": "YUNG's · Dungeons & Taverns · WDA · Better Village · Seven Seas",
@@ -4981,12 +5548,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
     "lot": 3,
     "payload": {
       "id": "friends-foes",
-      "risk": "Baixo → Médio",
+      "risk": "Baixo → Alto",
       "type": "utilidade",
       "color": "#71825c",
       "icone": "/icons/minecraft/copper_ingot.png",
       "intro": "O mod traz criaturas inspiradas em mob votes e ideias esquecidas. Copper Golem, Glare, Moobloom, Rascal e Tuff Golem ficam do lado utilitário; Iceologer e Wildfire ficam do lado que bate de volta.",
-      "phase": "Início → Intermediário",
+      "phase": "Início → Avançado",
       "theme": {
         "accent": "grass",
         "texture": "leaf"
@@ -4996,6 +5563,14 @@ export const CONTENT_SNAPSHOT_ROWS = [
         [
           "Friends&Foes",
           "https://github.com/Faboslav/friends-and-foes"
+        ],
+        [
+          "Friends&Foes NeoForge 4.0.27 / Minecraft 1.21.1",
+          "https://modrinth.com/mod/friends-and-foes-forge/version/neoforge-4.0.27%2Bmc1.21.1"
+        ],
+        [
+          "Descrição oficial — comportamento dos hostis",
+          "https://www.curseforge.com/minecraft/mc-mods/friends-and-foes-forge"
         ]
       ],
       "sections": [
@@ -5015,6 +5590,66 @@ export const CONTENT_SNAPSHOT_ROWS = [
             "Inventário livre para drops/itens de interação"
           ],
           "title": "Antes de sair"
+        },
+        {
+          "id": "destination-190-iceologer",
+          "title": "Explorar Iceologer Cabin e enfrentar Iceologer",
+          "body": "Cabin aparece na superfície nos biomas da coleção snowy: snowy taiga, grove, snowy slopes e snowy plains, além de entradas opcionais de outros mods. O template inclui Iceologer.",
+          "list": [
+            "Levar: Ferro completo recomendado, escudo, arco, comida e proteção térmica conforme Cold Sweat; retorno marcado.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "generateIceologerCabinStructure=true no padrão do JAR. A opção de geração e a criatura precisam estar habilitadas; configuração efetiva do servidor não fornecida. Explore chunks compatíveis ainda não gerados quando necessário; não recrie o mundo."
+          ],
+          "steps": [
+            "Mantenha espaço para sair de baixo do gelo invocado, evite atacar parado e use cobertura/ranged para controlar a distância. Não conte com o escudo como solução universal para o gelo que cai.",
+            "Visite a estrutura indicada e enfrente seu encontro; abate em raid não comprova que você explorou esta estrutura. Os três destinos são independentes."
+          ],
+          "links": [
+            {
+              "label": "Criatura, drops e receitas auditados no Bestiário",
+              "href": "/bestiario#mob-friendsfoes-iceologer"
+            }
+          ]
+        },
+        {
+          "id": "destination-190-illusioner",
+          "title": "Explorar Illusioner Shack e enfrentar Illusioner",
+          "body": "Shack aparece na superfície em taigas e tags compatíveis, com extensões como Terralith. O template inclui Illusioner. Training Grounds também existe nesta build, mas é outro destino e não conta como Shack.",
+          "list": [
+            "Levar: Ferro encantado/diamante parcial recomendado, escudo, arco, comida e blocos para cobertura.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "generateIllusionerShackStructure=true no padrão do JAR. A opção de geração e a criatura precisam estar habilitadas; configuração efetiva do servidor não fornecida. Explore chunks compatíveis ainda não gerados quando necessário; não recrie o mundo."
+          ],
+          "steps": [
+            "Prepare cobertura contra flechas antes de provocar o Illusioner. Se houver cegueira ou cópias, recue para a rota marcada e elimine cópias sem correr para terreno desconhecido; identifique o original e mantenha a pressão quando houver uma abertura.",
+            "Visite a estrutura indicada e enfrente seu encontro; abate em raid não comprova que você explorou esta estrutura. Os três destinos são independentes."
+          ],
+          "links": [
+            {
+              "label": "Criatura, drops e receitas auditados no Bestiário",
+              "href": "/bestiario#mob-friendsfoes-illusioner"
+            }
+          ]
+        },
+        {
+          "id": "destination-190-wildfire",
+          "title": "Explorar Citadel + Wildfire e enfrentar Wildfire",
+          "body": "Citadel gera no Nether, em biomas da tag is_nether; o recurso usa início entre Y34 e Y54, não uma coordenada universal do boss. Os templates incluem Wildfire e há spawn de Blaze no complexo.",
+          "list": [
+            "Levar: Diamante encantado recomendado, escudo, arco, comida, blocos e resistência ao fogo; portal e retorno protegidos.",
+            "Preparo recomendado; tier de equipamento não é requisito mecânico. Confiança Alta para os recursos versionados, Média para a estratégia e configuração efetiva do servidor.",
+            "generateCitadelStructure=true no padrão do JAR. A opção de geração e a criatura precisam estar habilitadas; configuração efetiva do servidor não fornecida. Explore chunks compatíveis ainda não gerados quando necessário; não recrie o mundo."
+          ],
+          "steps": [
+            "Garanta abrigo e rota ao portal antes do combate. Wildfire usa escudos, barrage de fragmentos, shockwave e reforços de Blaze: mantenha distância, mova-se durante ataques e controle reforços sem ficar encurralado. Resistência ao fogo é preparo recomendado, não garantia contra todos os golpes.",
+            "Visite a estrutura indicada e enfrente seu encontro; abate em raid não comprova que você explorou esta estrutura. Os três destinos são independentes."
+          ],
+          "links": [
+            {
+              "label": "Criatura, drops e receitas auditados no Bestiário",
+              "href": "/bestiario#mob-friendsfoes-wildfire"
+            }
+          ]
         }
       ],
       "subtitle": "mobs de votação · utilidade e combate",
@@ -8212,10 +8847,10 @@ export const CONTENT_SNAPSHOT_ROWS = [
           "type": "Mobs / combate",
           "entry": "Friends&Foes",
           "icone": "/icons/minecraft/crossbow.png",
-          "notes": "",
+          "notes": "Destinos paralelos, com fase e preparo próprios. Sem gate artificial entre Cabin, Shack e Citadel; acesso ao Nether para Citadel. Training Grounds confirmado na build, fora deste lote. IDs e conclusões anteriores preservados.",
           "order": 190,
           "phase": "Intermediário",
-          "title": "Enfrentar Iceologer, Wildfire e outros encontros hostis do mod",
+          "title": "Explorar Iceologer Cabin, Illusioner Shack e Citadel com seus encontros",
           "source": "https://modrinth.com/mod/friends-and-foes-forge/version/neoforge-4.0.27%2Bmc1.21.1",
           "vanilla": "Nether-pré-Fortress",
           "required": "Encontrar o mob/estrutura correspondente",
@@ -8228,27 +8863,63 @@ export const CONTENT_SNAPSHOT_ROWS = [
           "subitens": [
             {
               "id": "progression:190:iceologer",
-              "title": "Encontrar a Iceologer Cabin e enfrentar o Iceologer",
+              "title": "Explorar Iceologer Cabin e enfrentar Iceologer",
               "phase": "Intermediário",
-              "confidence": "Alta nos recursos auditados; preparo editorial",
+              "confidence": "Alta para estruturas/mobs/config padrão na build 4.0.27; Média para tática e overrides do servidor",
               "icone": "/icons/item.svg",
-              "bestiaryId": "friendsfoes-iceologer"
+              "bestiaryId": "friendsfoes-iceologer",
+              "risk": "Médio",
+              "equipment": "Ferro completo recomendado, escudo, arco, comida e proteção térmica conforme Cold Sweat; retorno marcado.",
+              "gate": "Acesso ao Nether somente para Citadel. Sem gate de boss anterior; #180/#190 são referência soft de preparo.",
+              "source": "https://modrinth.com/mod/friends-and-foes-forge/version/neoforge-4.0.27%2Bmc1.21.1",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-friends-foes-destination-190-iceologer"
+                }
+              ]
             },
             {
               "id": "progression:190:illusioner",
-              "title": "Enfrentar o Illusioner e distinguir suas ilusões",
+              "title": "Explorar Illusioner Shack e enfrentar Illusioner",
               "phase": "Intermediário",
-              "confidence": "Alta nos recursos auditados; preparo editorial",
+              "confidence": "Alta para estruturas/mobs/config padrão na build 4.0.27; Média para tática e overrides do servidor",
               "icone": "/icons/item.svg",
-              "bestiaryId": "friendsfoes-illusioner"
+              "bestiaryId": "friendsfoes-illusioner",
+              "risk": "Alto",
+              "equipment": "Ferro encantado/diamante parcial recomendado, escudo, arco, comida e blocos para cobertura.",
+              "gate": "Acesso ao Nether somente para Citadel. Sem gate de boss anterior; #180/#190 são referência soft de preparo.",
+              "source": "https://modrinth.com/mod/friends-and-foes-forge/version/neoforge-4.0.27%2Bmc1.21.1",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-friends-foes-destination-190-illusioner"
+                }
+              ]
             },
             {
               "id": "progression:190:wildfire",
-              "title": "Localizar a Citadel do Nether e enfrentar Wildfire",
-              "phase": "Intermediário",
-              "confidence": "Alta nos recursos auditados; preparo editorial",
+              "title": "Explorar Citadel + Wildfire e enfrentar Wildfire",
+              "phase": "Avançado",
+              "confidence": "Alta para estruturas/mobs/config padrão na build 4.0.27; Média para tática e overrides do servidor",
               "icone": "/icons/item.svg",
-              "bestiaryId": "friendsfoes-wildfire"
+              "bestiaryId": "friendsfoes-wildfire",
+              "risk": "Alto",
+              "equipment": "Diamante encantado recomendado, escudo, arco, comida, blocos e resistência ao fogo; portal e retorno protegidos.",
+              "gate": "Acesso ao Nether somente para Citadel. Sem gate de boss anterior; #180/#190 são referência soft de preparo.",
+              "source": "https://modrinth.com/mod/friends-and-foes-forge/version/neoforge-4.0.27%2Bmc1.21.1",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-friends-foes-destination-190-wildfire"
+                }
+              ]
+            }
+          ],
+          "guideLinks": [
+            {
+              "label": "Como fazer os destinos deste marco",
+              "href": "/mods#guide-friends-foes-destination-190-iceologer"
             }
           ]
         },
@@ -8649,7 +9320,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "confidence": "Alta: existência nos recursos publicados; Média: fase/risco editoriais",
               "gate": "Soft: #240 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://www.curseforge.com/minecraft/mc-mods/dungeon-and-taverns/files/5768823",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-240-tavern"
+                }
+              ]
             },
             {
               "id": "progression:240:greenwood-pub",
@@ -8660,7 +9337,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "confidence": "Alta: existência nos recursos publicados; Média: fase/risco editoriais",
               "gate": "Soft: #240 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-240-greenwood-pub"
+                }
+              ]
             },
             {
               "id": "progression:240:monastery",
@@ -8671,7 +9354,19 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "confidence": "Alta: existência nos recursos publicados; Média: fase/risco editoriais",
               "gate": "Soft: #240 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-240-monastery"
+                }
+              ]
+            }
+          ],
+          "guideLinks": [
+            {
+              "label": "Como fazer os destinos deste marco",
+              "href": "/mods#guide-dungeons-structures-destination-240-tavern"
             }
           ]
         },
@@ -8751,7 +9446,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Médio",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144"
+              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-mineshaft"
+                }
+              ]
             },
             {
               "id": "progression:250:small-dungeon",
@@ -8762,7 +9463,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Médio",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144"
+              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-small-dungeon"
+                }
+              ]
             },
             {
               "id": "progression:250:skeleton-dungeon",
@@ -8773,7 +9480,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144"
+              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-skeleton-dungeon"
+                }
+              ]
             },
             {
               "id": "progression:250:spider-dungeon",
@@ -8784,7 +9497,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144"
+              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-spider-dungeon"
+                }
+              ]
             },
             {
               "id": "progression:250:zombie-dungeon",
@@ -8795,7 +9514,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144"
+              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-zombie-dungeon"
+                }
+              ]
             },
             {
               "id": "progression:250:desert",
@@ -8807,7 +9532,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "equipment": "Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-desert-temples-neoforge",
-              "notes": "Inclui o encontro com Pharaoh. Entrada própria no Bestiário ainda pendente; não atribuir drops não auditados."
+              "notes": "Inclui o encontro com Pharaoh. Entrada própria no Bestiário ainda pendente; não atribuir drops não auditados.",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-desert"
+                }
+              ]
             },
             {
               "id": "progression:250:jungle",
@@ -8818,7 +9549,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144"
+              "source": "https://www.curseforge.com/projects/1015096\nhttps://www.curseforge.com/projects/1015112\nhttps://www.curseforge.com/projects/1015114\nhttps://www.curseforge.com/projects/1015123\nhttps://www.curseforge.com/projects/1015144",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-jungle"
+                }
+              ]
             },
             {
               "id": "progression:250:witch",
@@ -8829,7 +9566,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Médio",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-neoforge"
+              "source": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-neoforge",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-witch"
+                }
+              ]
             },
             {
               "id": "progression:250:witch-circle",
@@ -8840,7 +9583,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "confidence": "Alta: existência nos recursos publicados; Média: fase/risco editoriais",
               "gate": "Soft: #250 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://www.curseforge.com/minecraft/mc-mods/yungs-better-witch-huts-neoforge",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-250-witch-circle"
+                }
+              ]
             }
           ],
           "archivedSubitems": [
@@ -8850,6 +9599,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "phase": "Intermediário",
               "title": "Concluir uma dungeon reformulada pelo YUNG’s Better Dungeons",
               "confidence": "Alta nos recursos auditados; preparo editorial"
+            }
+          ],
+          "guideLinks": [
+            {
+              "label": "Como fazer os destinos deste marco",
+              "href": "/mods#guide-dungeons-structures-destination-250-mineshaft"
             }
           ]
         },
@@ -8884,7 +9639,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #260 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-campsite"
+                }
+              ]
             },
             {
               "id": "progression:260:illager-windmill",
@@ -8895,7 +9656,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Ferro encantado/diamante parcial, escudo, arco, iluminação e rota de saída.",
               "gate": "Soft: #260 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-windmill"
+                }
+              ]
             },
             {
               "id": "progression:260:illager-fort",
@@ -8906,7 +9673,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
               "gate": "Soft: #260 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-fort"
+                }
+              ]
             }
           ],
           "archivedSubitems": [
@@ -8930,6 +9703,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "phase": "Intermediário",
               "title": "Consultar os mapas de exploração de uma estrutura passiva do WDA",
               "confidence": "Alta nos recursos auditados; preparo editorial"
+            }
+          ],
+          "guideLinks": [
+            {
+              "label": "Como fazer os destinos deste marco",
+              "href": "/mods#guide-dungeons-structures-destination-260-illager-campsite"
             }
           ]
         },
@@ -8964,7 +9743,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
               "gate": "Soft: #265 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-265-shiraz-palace"
+                }
+              ]
             },
             {
               "id": "progression:265:keep-kayra",
@@ -8975,7 +9760,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Alto",
               "equipment": "Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
               "gate": "Soft: #265 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-265-keep-kayra"
+                }
+              ]
             },
             {
               "id": "progression:265:infested-temple",
@@ -8986,7 +9777,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Severo",
               "equipment": "Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
               "gate": "Soft: #265 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-265-infested-temple"
+                }
+              ]
             },
             {
               "id": "progression:265:kisegi-sanctuary",
@@ -8997,7 +9794,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "risk": "Severo",
               "equipment": "Diamante encantado, arco, comida e rota de retirada; poções conforme o encontro.",
               "gate": "Soft: #265 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
-              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68"
+              "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-265-kisegi-sanctuary"
+                }
+              ]
             },
             {
               "id": "progression:265:mechanical-nest",
@@ -9008,7 +9811,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "confidence": "Alta: existência nos recursos publicados; Média: fase/risco editoriais",
               "gate": "Soft: #265 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-265-mechanical-nest"
+                }
+              ]
             },
             {
               "id": "progression:265:mining-complex",
@@ -9019,7 +9828,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "confidence": "Alta: existência nos recursos publicados; Média: fase/risco editoriais",
               "gate": "Soft: #265 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://modrinth.com/mod/when-dungeons-arise/version/2.1.68",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-dungeons-structures-destination-265-mining-complex"
+                }
+              ]
             }
           ],
           "archivedSubitems": [
@@ -9050,6 +9865,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "phase": "Avançado",
               "title": "Concluir a expedição escolhida e retirar o loot pela rota marcada",
               "confidence": "Alta nos recursos auditados; preparo editorial"
+            }
+          ],
+          "guideLinks": [
+            {
+              "label": "Como fazer os destinos deste marco",
+              "href": "/mods#guide-dungeons-structures-destination-265-shiraz-palace"
             }
           ]
         },
@@ -10328,6 +11149,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "bestiaryIds": [
                 "graveyard-ghoul",
                 "graveyard-revenant"
+              ],
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-600-medium-graveyard"
+                }
               ]
             },
             {
@@ -10343,6 +11170,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "bestiaryIds": [
                 "graveyard-ghoul",
                 "graveyard-revenant"
+              ],
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-600-large-graveyard"
+                }
               ]
             },
             {
@@ -10359,6 +11192,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
                 "graveyard-acolyte",
                 "graveyard-corrupted-pillager",
                 "graveyard-corrupted-vindicator"
+              ],
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-600-crypt"
+                }
               ]
             },
             {
@@ -10373,6 +11212,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "icone": "/icons/item.svg",
               "bestiaryIds": [
                 "graveyard-acolyte"
+              ],
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-600-haunted-house"
+                }
               ]
             },
             {
@@ -10385,7 +11230,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "gate": "Soft: #600 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://www.curseforge.com/minecraft/mc-mods/the-graveyard-unofficial-port/files/8213402",
               "icone": "/icons/item.svg",
-              "notes": "Variante estrutural 01. A preparação do ritual e seus materiais continuam em #610."
+              "notes": "Variante estrutural 01. A preparação do ritual e seus materiais continuam em #610.",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-600-ruins-01"
+                }
+              ]
             },
             {
               "id": "progression:600:ruins-02",
@@ -10397,7 +11248,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "gate": "Soft: #600 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://www.curseforge.com/minecraft/mc-mods/the-graveyard-unofficial-port/files/8213402",
               "icone": "/icons/item.svg",
-              "notes": "Variante estrutural 02. A preparação do ritual e seus materiais continuam em #610."
+              "notes": "Variante estrutural 02. A preparação do ritual e seus materiais continuam em #610.",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-600-ruins-02"
+                }
+              ]
             },
             {
               "id": "progression:600:ruins-03",
@@ -10409,7 +11266,13 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "gate": "Soft: #600 como referência de preparo; destinos independentes, sem obrigação de concluir os demais.",
               "source": "https://www.curseforge.com/minecraft/mc-mods/the-graveyard-unofficial-port/files/8213402",
               "icone": "/icons/item.svg",
-              "notes": "Variante estrutural 03. A preparação do ritual e seus materiais continuam em #610."
+              "notes": "Variante estrutural 03. A preparação do ritual e seus materiais continuam em #610.",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-600-ruins-03"
+                }
+              ]
             }
           ],
           "archivedSubitems": [
@@ -10427,6 +11290,12 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "phase": "Intermediário",
               "title": "Localizar uma Ruins com fragmento do Ominous Bone Staff",
               "confidence": "Alta nos recursos auditados; preparo editorial"
+            }
+          ],
+          "guideLinks": [
+            {
+              "label": "Como fazer os destinos deste marco",
+              "href": "/mods#guide-graveyard-destination-600-medium-graveyard"
             }
           ]
         },
@@ -10462,35 +11331,71 @@ export const CONTENT_SNAPSHOT_ROWS = [
               "title": "Obter o fragmento superior do Ominous Bone Staff em Ruins",
               "phase": "Avançado",
               "confidence": "Alta nos recursos auditados; preparo editorial",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-610-upper"
+                }
+              ]
             },
             {
               "id": "progression:610:middle",
               "title": "Obter o fragmento central do Ominous Bone Staff em Ruins",
               "phase": "Avançado",
               "confidence": "Alta nos recursos auditados; preparo editorial",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-610-middle"
+                }
+              ]
             },
             {
               "id": "progression:610:lower",
               "title": "Obter o fragmento inferior do Ominous Bone Staff em Ruins",
               "phase": "Avançado",
               "confidence": "Alta nos recursos auditados; preparo editorial",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-610-lower"
+                }
+              ]
             },
             {
               "id": "progression:610:blood",
               "title": "Preparar Bone Dagger e encher Vial of Blood conforme o ritual",
               "phase": "Avançado",
               "confidence": "Alta nos recursos auditados; preparo editorial",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-610-blood"
+                }
+              ]
             },
             {
               "id": "progression:610:prison",
               "title": "Localizar Lich Prison e preparar o acesso ao altar antes da noite",
               "phase": "Avançado",
               "confidence": "Alta nos recursos auditados; preparo editorial",
-              "icone": "/icons/item.svg"
+              "icone": "/icons/item.svg",
+              "guideLinks": [
+                {
+                  "label": "Como fazer: preparo, localização e tática",
+                  "href": "/mods#guide-graveyard-destination-610-prison"
+                }
+              ]
+            }
+          ],
+          "guideLinks": [
+            {
+              "label": "Como fazer os destinos deste marco",
+              "href": "/mods#guide-graveyard-destination-610-upper"
             }
           ]
         },

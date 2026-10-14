@@ -23,9 +23,10 @@ type GuideCardProps = {
   guide: Guide;
   expanded?: boolean;
   onExpandedChange?: (expanded: boolean) => void;
+  targetSectionId?: string;
 };
 
-export function GuideCard({ guide, expanded, onExpandedChange }: GuideCardProps) {
+export function GuideCard({ guide, expanded, onExpandedChange, targetSectionId }: GuideCardProps) {
   const { content } = useMundinho();
   const [internalExpanded, setInternalExpanded] = React.useState(true);
   const isExpanded = expanded ?? internalExpanded;
@@ -69,15 +70,18 @@ export function GuideCard({ guide, expanded, onExpandedChange }: GuideCardProps)
             <p className="text-base leading-7">{guide.intro}</p>
             <Accordion>
               {guide.sections.map((section, index) => (
+                <div key={section.id ?? `${section.title}-${index}`} id={section.id ? `guide-${guide.id}-${section.id}` : undefined} className="scroll-mt-40">
                 <AccordionItem
-                  key={`${section.title}-${index}`}
+                  key={`${section.id ?? index}-${targetSectionId === `guide-${guide.id}-${section.id}`}`}
                   title={<SectionTitle icon={sectionIcon(section.title, index)}>{section.title}</SectionTitle>}
-                  defaultOpen={index === 0}
+                  defaultOpen={index === 0 || targetSectionId === `guide-${guide.id}-${section.id}`}
                 >
                   {section.body ? <p className="leading-7">{section.body}</p> : null}
                   {section.list ? <ul className="list-square space-y-2 pl-5">{section.list.map((item) => <li key={item}>{item}</li>)}</ul> : null}
                   {section.steps ? <ol className="space-y-2 pl-5">{section.steps.map((item, step) => <li key={item}><strong className="font-label text-xl text-wood-700">{step + 1}.</strong> {item}</li>)}</ol> : null}
+                  {section.links?.length ? <ul className="mt-3 space-y-2">{section.links.map((link) => <li key={link.href}><a href={link.href} className="semantic-link underline underline-offset-2">{link.label}</a></li>)}</ul> : null}
                 </AccordionItem>
+                </div>
               ))}
               <div id={`guide-${guide.id}-craftings`} className="scroll-mt-40">
                 <AccordionItem title={<SectionTitle icon="pickaxe">Craftings pesquisados</SectionTitle>}>
