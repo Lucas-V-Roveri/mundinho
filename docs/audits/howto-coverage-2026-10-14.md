@@ -4,7 +4,7 @@ Baseline main: f71d232f93470e788b6e61c0530f026f32b05dba. 143 marcos; 96 registro
 
 ## Estado antes das alterações
 
-Nenhum dos 23 novos subitens tinha ligação a um guia completo de destino. Três tinham links funcionais de criaturas do Graveyard. Fontes externas do mod não contam como guia interno.
+Nenhum dos 23 novos subitens tinha ligação a um guia completo de destino. Três tinham links cadastrados de criaturas do Graveyard. O teste de navegação revelou que a âncora não abria o grupo: portanto não eram funcionais como acesso direto. Fontes externas do mod não contam como guia interno.
 
 | ID | Destino | Link anterior | Cobertura anterior |
 |---|---|---|---|
@@ -25,9 +25,9 @@ Nenhum dos 23 novos subitens tinha ligação a um guia completo de destino. Trê
 |progression:265:kisegi-sanctuary|Explorar Kisegi Sanctuary|Nenhum|Lacuna: só preparo geral do grupo|
 |progression:265:mechanical-nest|Explorar Mechanical Nest|Nenhum|Lacuna: só preparo geral do grupo|
 |progression:265:mining-complex|Explorar Mining Complex|Nenhum|Lacuna: só preparo geral do grupo|
-|progression:600:medium-graveyard|Explorar Medium Graveyard|Bestiário de criaturas|Parcial; falta guia do destino|
-|progression:600:large-graveyard|Explorar Large Graveyard|Bestiário de criaturas|Parcial; falta guia do destino|
-|progression:600:haunted-house|Explorar Haunted House|Bestiário de criaturas|Parcial; falta guia do destino|
+|progression:600:medium-graveyard|Explorar Medium Graveyard|Bestiário de criaturas; âncora não abria grupo|Parcial; acesso direto quebrado e falta guia do destino|
+|progression:600:large-graveyard|Explorar Large Graveyard|Bestiário de criaturas; âncora não abria grupo|Parcial; acesso direto quebrado e falta guia do destino|
+|progression:600:haunted-house|Explorar Haunted House|Bestiário de criaturas; âncora não abria grupo|Parcial; acesso direto quebrado e falta guia do destino|
 |progression:600:ruins-01|Explorar Ruins 01 — fragmento superior|Nenhum|Lacuna: só preparo geral do grupo|
 |progression:600:ruins-02|Explorar Ruins 02 — fragmento inferior|Nenhum|Lacuna: só preparo geral do grupo|
 |progression:600:ruins-03|Explorar Ruins 03 — fragmento central|Nenhum|Lacuna: só preparo geral do grupo|
@@ -105,3 +105,11 @@ Graveyard 2.6.2: paletas de ruins_01/02/03 contêm upper/lower/middle_bone_staff
 Preparo/tática editorial têm confiança Média; recursos/gates da versão têm confiança Alta. Drops e receitas de criaturas permanecem referenciados no Bestiário.
 
 Os 143 IDs, todos os filhos ativos/arquivados, os 16 marcos vanilla e os checklists existentes dos três guias são preservados. Nenhuma marcação é criada e nenhuma regra de auto-sync é alterada.
+
+## Verificação publicada
+
+36 âncoras presentes em Mods (21 estruturas + 12 Graveyard + 3 Friends&Foes). Clique da Progressão abre o guia Wildfire; link interno #610 upper → Ruins 01 abre a seção correta no mesmo guia. A navegação para o Bestiário identificou uma falha anterior: grupos fechados não eram abertos pelo hash. Corrigida com filtro temporário para o registry exato e scroll ao card após carga, sem persistir filtro nem marcar descoberta.
+
+Supabase pós-migração: igualdade integral dos 96 pessoais, 45 compartilhados, 90 evidências, 20 personalizados e 53 regras, incluindo timestamps. 143 marcos; 136 conteúdos de marcos iguais; 7 autorizados alterados.
+
+Regra permanente em CI: qualquer ID de marco/subitem novo, além do baseline aprovado em 14/10, precisa apontar a uma seção existente de como fazer em Mods. As lacunas antigas ficam explícitas e não autorizam exceções novas.

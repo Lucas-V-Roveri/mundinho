@@ -24,6 +24,7 @@ import {
   BESTIARY_MOD_AUDIT,
 } from "@/data/bestiary-catalog";
 import { useBestiaryState } from "@/lib/bestiary-state";
+import { findBestiaryHashTarget } from "@/lib/bestiary-deep-link";
 import { cn } from "@/lib/cn";
 import { findGuideForText, guideThemeClasses } from "@/lib/guide-theme";
 import { resolveGuideIcon } from "@/lib/minecraft-icons";
@@ -150,8 +151,18 @@ export function BestiaryView() {
   const [filters, setFilters] = React.useState<Filters>(initialFilters);
   const [revealAll, setRevealAll] = React.useState(true);
   const [visibleCount, setVisibleCount] = React.useState(FILTER_PAGE_SIZE);
+  const [targetAnchor, setTargetAnchor] = React.useState("");
 
   React.useEffect(() => {
+    const openHashTarget = () => {
+      const target = findBestiaryHashTarget(BESTIARY_ENTRIES, window.location.hash);
+      if (!target) return;
+      // Temporary view filters: do not overwrite saved preferences or mark discovery.
+      setFilters({ ...initialFilters, query: target.registryId });
+      setVisibleCount(FILTER_PAGE_SIZE);
+      setRevealAll(true);
+      setTargetAnchor(decodeURIComponent(window.location.hash.replace(/^#/, "")));
+    };
     const frame = requestAnimationFrame(() => {
       try {
         const stored = JSON.parse(localStorage.getItem(FILTER_KEY) || "null");
@@ -160,9 +171,20 @@ export function BestiaryView() {
         // filtro inválido: usa padrão
       }
       setRevealAll(localStorage.getItem(REVEAL_KEY) !== "false");
+      openHashTarget();
     });
-    return () => cancelAnimationFrame(frame);
+    window.addEventListener("hashchange", openHashTarget);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("hashchange", openHashTarget);
+    };
   }, []);
+
+  React.useEffect(() => {
+    if (!targetAnchor || bestiary.status !== "ready") return;
+    const frame = requestAnimationFrame(() => document.getElementById(targetAnchor)?.scrollIntoView({ block: "start" }));
+    return () => cancelAnimationFrame(frame);
+  }, [targetAnchor, filters, bestiary.status]);
 
   const updateFilter = (key: keyof Filters, value: string) => {
     setVisibleCount(FILTER_PAGE_SIZE);

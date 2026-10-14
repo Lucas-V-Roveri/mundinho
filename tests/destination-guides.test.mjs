@@ -6,6 +6,17 @@ const patch=read('data/destination-howto-2026-10-14.json');
 const coverage=read('data/destination-guide-coverage-2026-10-14.json');
 const items=patch['page:progression'].items;
 const guides=Object.entries(patch).filter(([key])=>key.startsWith('guide:')).map(([,g])=>g);
+test('future objectives require a link to an existing how-to section; old gaps are explicit exceptions',()=>{
+ const file=readFileSync('data/content-snapshot.generated.ts','utf8');const marker='export const CONTENT_SNAPSHOT_ROWS = ';
+ const rows=JSON.parse(file.slice(file.indexOf(marker)+marker.length,file.lastIndexOf(' as const satisfies')));
+ const current=rows.find(r=>r.key==='page:progression').payload.items;
+ const baseline=new Set(read('data/guide-coverage-baseline-2026-10-14.json').existingObjectives);
+ const anchors=new Set(rows.filter(r=>r.key.startsWith('guide:')).flatMap(r=>r.payload.sections.filter(s=>s.id).map(s=>`/mods#guide-${r.payload.id}-${s.id}`)));
+ for(const objective of current.flatMap(i=>[i,...i.subitens??[]])){
+  if(baseline.has(objective.id))continue;
+  assert.ok(objective.guideLinks?.some(l=>anchors.has(l.href)),`Novo objetivo sem como fazer: ${objective.id}`);
+ }
+});
 test('all 36 destination/ritual links resolve to useful sections, not just guide headings',()=>{
  assert.equal(coverage.length,36);
  for(const row of coverage){
