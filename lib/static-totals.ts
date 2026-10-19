@@ -1,5 +1,5 @@
 export const STATIC_TOTALS = {
-  guides: 36,
-  progression: 117,
+  guides: 37,
+  progression: 143,
   extras: 19,
 } as const;

@@ -21,7 +21,7 @@
     "sync:content": "node scripts/sync-content-snapshot.mjs",
     "test:reconciliation": "node --test tests/progression-migration.test.mjs tests/progression-reconciliation.test.mjs",
     "test:destinations": "node --experimental-strip-types --test tests/progression-destinations.test.mjs",
-    "test:guides": "node --experimental-strip-types --test tests/destination-guides.test.mjs tests/bestiary-deep-link.test.mjs"
+    "test:guides": "node --experimental-strip-types --test tests/destination-guides.test.mjs tests/bestiary-deep-link.test.mjs tests/minecraft-techniques.test.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "0.12.7",

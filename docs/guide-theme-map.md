@@ -1,4 +1,4 @@
-# Identidade visual dos 36 guias
+# Identidade visual dos 37 guias
 
 Todos os guias atuais têm tema explícito. O fallback `stone/stone` existe apenas para futuros guias ainda não mapeados; nenhum dos 36 abaixo depende dele implicitamente.
 
@@ -42,3 +42,5 @@ Todos os guias atuais têm tema explícito. O fallback `stone/stone` existe apen
 | Waystones | blue | stone | Viagem/teleporte sobre runas de pedra. |
 
 A fonte executável desta tabela é `data/guide-themes.ts`.
+
+Minecraft · técnicas e catálogos (`minecraft-tecnicas`): grass/leaf; catálogo vanilla individual e exploração.

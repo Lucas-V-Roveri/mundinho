@@ -93,9 +93,9 @@ function assertGuideCoverage(guides: Guide[], source: string) {
   }
 
   // O frontend pode chegar antes do novo registro editorial durante a publicação.
-  // Os 35 guias anteriores continuam obrigatórios; somente a adição desta rodada
-  // pode estar ausente nessa janela, sem derrubar os dados/progresso existentes.
-  const requiredIds = Object.keys(GUIDE_THEME_BY_ID).filter((id) => id !== "boks-butterflies");
+  // As adições editoriais podem estar ausentes nessa janela, sem derrubar
+  // os guias anteriores e os dados/progresso existentes.
+  const requiredIds = Object.keys(GUIDE_THEME_BY_ID).filter((id) => !["boks-butterflies", "minecraft-tecnicas"].includes(id));
   const missingIds = requiredIds.filter((id) => !guideIds.includes(id));
   const unexpectedIds = guideIds.filter((id) => !(id in GUIDE_THEME_BY_ID));
   if (missingIds.length || unexpectedIds.length || guides.length > EXPECTED_GUIDE_THEME_COUNT) {

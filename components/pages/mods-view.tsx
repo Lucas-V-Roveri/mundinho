@@ -9,6 +9,7 @@ import { Select } from "@/components/ui/select";
 import { DataStatePanel } from "@/components/ui/data-state";
 import { useMundinho } from "@/components/app-providers";
 import { STATIC_TOTALS } from "@/lib/static-totals";
+import { useMinecraftEvidence } from "@/lib/minecraft-evidence-state";
 
 function guideIdFromHash(hash: string, guideIds: string[]) {
   const target = decodeURIComponent(hash.replace(/^#/, ""));
@@ -16,7 +17,8 @@ function guideIdFromHash(hash: string, guideIds: string[]) {
 }
 
 export function ModsView() {
-  const { content, dataStatus, dataError, retry } = useMundinho();
+  const { content, dataStatus, dataError, retry, mode } = useMundinho();
+  const minecraftEvidence = useMinecraftEvidence({ mode, parentDataStatus: dataStatus });
   const [type, setType] = React.useState("todos");
   const [query, setQuery] = React.useState("");
   const [expandedGuideIds, setExpandedGuideIds] = React.useState<Set<string>>(new Set());
@@ -122,7 +124,7 @@ export function ModsView() {
           </div>
         ) : null}
       </section>
-      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText={`abrindo os ${STATIC_TOTALS.guides} guias...`} /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} targetSectionId={targetSectionId} expanded={expandedGuideIds.has(guide.id)} onExpandedChange={(expanded) => setGuideExpanded(guide.id, expanded)} />)}</div><TwilightCatalogPanel /></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
+      {dataStatus === "loading" ? <DataStatePanel status="loading" loadingText={`abrindo os ${STATIC_TOTALS.guides} guias...`} /> : dataStatus === "error" ? <DataStatePanel status="error" error={dataError} retry={retry} /> : guides.length ? <><p className="font-label text-xl text-paper-100">{guides.length} guia(s) nesta seleção</p><div className="grid gap-6">{guides.map((guide) => <GuideCard key={guide.id} guide={guide} minecraftEvidence={guide.id === "minecraft-tecnicas" ? minecraftEvidence : undefined} targetSectionId={targetSectionId} expanded={expandedGuideIds.has(guide.id)} onExpandedChange={(expanded) => setGuideExpanded(guide.id, expanded)} />)}</div><TwilightCatalogPanel /></> : <DataStatePanel status="empty" emptyText="Nenhum guia corresponde a este filtro." />}
     </div>
   );
 }

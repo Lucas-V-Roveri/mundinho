@@ -66,6 +66,14 @@ export type GuideSection = {
   list?: string[];
   steps?: string[];
   links?: ResearchSource[];
+  minecraft?: {
+    milestoneId: string;
+    advancementId: string;
+    criteria: string[];
+    requirements: string[][];
+    catalog?: "archaeology" | "biomes" | "foods" | "hostiles" | "wolves";
+    rows?: { label: string; criteria: string[]; technique: string; links?: ResearchSource[] }[];
+  };
 };
 
 export type Guide = {

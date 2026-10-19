@@ -6,6 +6,7 @@ export type GuideThemeMeta = {
 };
 
 export const GUIDE_THEME_BY_ID = {
+  "minecraft-tecnicas": { theme: { accent: "grass", texture: "leaf" }, rationale: "Técnicas vanilla e catálogos pessoais de exploração, alimentação e criaturas." },
   acampamento: { theme: { accent: "torch", texture: "fire" }, rationale: "Fogueira, descanso e cozinha de expedição fazem do fogo a identidade dominante." },
   aether: { theme: { accent: "gold", texture: "stone" }, rationale: "Dungeons Bronze/Silver/Gold e estética celestial pedem ouro/templo." },
   "boks-butterflies": { theme: { accent: "grass", texture: "leaf" }, rationale: "Borboletas, mariposas, jardim e ciclo de vida têm identidade natural." },
@@ -45,7 +46,7 @@ export const GUIDE_THEME_BY_ID = {
 } as const satisfies Record<string, GuideThemeMeta>;
 
 export type KnownGuideId = keyof typeof GUIDE_THEME_BY_ID;
-export const EXPECTED_GUIDE_THEME_COUNT = 36;
+export const EXPECTED_GUIDE_THEME_COUNT = 37;
 
 export function guideThemeForId(id: string): GuideTheme | undefined {
   return GUIDE_THEME_BY_ID[id as KnownGuideId]?.theme;

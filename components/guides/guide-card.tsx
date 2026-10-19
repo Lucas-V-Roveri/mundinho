@@ -9,6 +9,7 @@ import { ChecklistItem } from "@/components/checklist/checklist-item";
 import { CustomItemPanel } from "@/components/checklist/custom-item-panel";
 import { ContentIcon } from "@/components/media/content-icon";
 import { RecipeDisplay } from "@/components/guides/recipe-display";
+import { MinecraftTechniqueProgress, type TechniqueEvidence } from "@/components/guides/minecraft-technique-progress";
 import { useMundinho } from "@/components/app-providers";
 import { guideThemeClasses } from "@/lib/guide-theme";
 import { resolveGuideIcon } from "@/lib/minecraft-icons";
@@ -24,9 +25,10 @@ type GuideCardProps = {
   expanded?: boolean;
   onExpandedChange?: (expanded: boolean) => void;
   targetSectionId?: string;
+  minecraftEvidence?: TechniqueEvidence;
 };
 
-export function GuideCard({ guide, expanded, onExpandedChange, targetSectionId }: GuideCardProps) {
+export function GuideCard({ guide, expanded, onExpandedChange, targetSectionId, minecraftEvidence }: GuideCardProps) {
   const { content } = useMundinho();
   const [internalExpanded, setInternalExpanded] = React.useState(true);
   const isExpanded = expanded ?? internalExpanded;
@@ -36,6 +38,7 @@ export function GuideCard({ guide, expanded, onExpandedChange, targetSectionId }
   };
   const tokens = [...new Set(normalize(`${guide.id} ${guide.title}`).split(/[^a-z0-9]+/).filter((token) => token.length >= 5 && !["guide", "restante", "reformulado", "utilidade"].includes(token)))];
   const related = content.progression.filter((item) => {
+    if (item.guideLinks?.some((link) => link.href.startsWith(`/mods#guide-${guide.id}-`))) return true;
     const haystack = normalize(`${item.entry} ${item.mods} ${item.title}`);
     return tokens.some((token) => haystack.includes(token));
   });
@@ -79,6 +82,7 @@ export function GuideCard({ guide, expanded, onExpandedChange, targetSectionId }
                   {section.body ? <p className="leading-7">{section.body}</p> : null}
                   {section.list ? <ul className="list-square space-y-2 pl-5">{section.list.map((item) => <li key={item}>{item}</li>)}</ul> : null}
                   {section.steps ? <ol className="space-y-2 pl-5">{section.steps.map((item, step) => <li key={item}><strong className="font-label text-xl text-wood-700">{step + 1}.</strong> {item}</li>)}</ol> : null}
+                  {section.minecraft && minecraftEvidence ? <MinecraftTechniqueProgress definition={section.minecraft} evidence={minecraftEvidence} /> : null}
                   {section.links?.length ? <ul className="mt-3 space-y-2">{section.links.map((link) => <li key={link.href}><a href={link.href} className="semantic-link underline underline-offset-2">{link.label}</a></li>)}</ul> : null}
                 </AccordionItem>
                 </div>

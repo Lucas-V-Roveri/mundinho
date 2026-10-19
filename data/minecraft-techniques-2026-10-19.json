@@ -1,0 +1,2035 @@
+{
+  "guide:minecraft-tecnicas": {
+    "id": "minecraft-tecnicas",
+    "title": "Minecraft · técnicas e catálogos do mundinho",
+    "subtitle": "Técnicas no pack e pendências individuais de gr1d e benamu · Minecraft 1.21.1",
+    "type": "utilidade",
+    "theme": {
+      "accent": "grass",
+      "texture": "leaf"
+    },
+    "difficulty": "Variável conforme a atividade",
+    "risk": "Baixo a Severo",
+    "phase": "Início ao Pós-jogo",
+    "equivalent": "Do Overworld inicial ao End",
+    "complexity": "Baixa a Alta",
+    "confidence": "Alta nos critérios; Média nas rotas do mundo",
+    "intro": "Técnicas para os 16 marcos vanilla já existentes. As tabelas consultam o último upload de cada jogador; presença de item, mob parecido ou ajuda do parceiro não substitui o critério individual. Use o preparo do destino antes de sair.",
+    "sections": [
+      {
+        "id": "vanilla-12",
+        "title": "#12 · Primeiro combate controlado",
+        "body": "Isolar um zombie vanilla perto de abrigo, enfrentar com arma, escudo e espaço de retirada. O abate deve ser atribuído ao jogador; companhia ou mob de outro registry não é prova deste objetivo. No pack, confira o tipo mostrado pela interface antes de confundir variantes com o alvo.",
+        "list": [
+          "Confiança: Alta."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:12"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:12",
+          "advancementId": "minecraft:adventure/kill_a_mob",
+          "criteria": [
+            "minecraft:blaze",
+            "minecraft:bogged",
+            "minecraft:breeze",
+            "minecraft:cave_spider",
+            "minecraft:creeper",
+            "minecraft:drowned",
+            "minecraft:elder_guardian",
+            "minecraft:ender_dragon",
+            "minecraft:enderman",
+            "minecraft:endermite",
+            "minecraft:evoker",
+            "minecraft:ghast",
+            "minecraft:guardian",
+            "minecraft:hoglin",
+            "minecraft:husk",
+            "minecraft:magma_cube",
+            "minecraft:phantom",
+            "minecraft:piglin",
+            "minecraft:piglin_brute",
+            "minecraft:pillager",
+            "minecraft:ravager",
+            "minecraft:shulker",
+            "minecraft:silverfish",
+            "minecraft:skeleton",
+            "minecraft:slime",
+            "minecraft:spider",
+            "minecraft:stray",
+            "minecraft:vex",
+            "minecraft:vindicator",
+            "minecraft:witch",
+            "minecraft:wither",
+            "minecraft:wither_skeleton",
+            "minecraft:zoglin",
+            "minecraft:zombie",
+            "minecraft:zombie_villager",
+            "minecraft:zombified_piglin"
+          ],
+          "requirements": [
+            [
+              "minecraft:blaze",
+              "minecraft:bogged",
+              "minecraft:breeze",
+              "minecraft:cave_spider",
+              "minecraft:creeper",
+              "minecraft:drowned",
+              "minecraft:elder_guardian",
+              "minecraft:ender_dragon",
+              "minecraft:enderman",
+              "minecraft:endermite",
+              "minecraft:evoker",
+              "minecraft:ghast",
+              "minecraft:guardian",
+              "minecraft:hoglin",
+              "minecraft:husk",
+              "minecraft:magma_cube",
+              "minecraft:phantom",
+              "minecraft:piglin",
+              "minecraft:piglin_brute",
+              "minecraft:pillager",
+              "minecraft:ravager",
+              "minecraft:shulker",
+              "minecraft:silverfish",
+              "minecraft:skeleton",
+              "minecraft:slime",
+              "minecraft:spider",
+              "minecraft:stray",
+              "minecraft:vex",
+              "minecraft:vindicator",
+              "minecraft:witch",
+              "minecraft:wither_skeleton",
+              "minecraft:wither",
+              "minecraft:zoglin",
+              "minecraft:zombie_villager",
+              "minecraft:zombie",
+              "minecraft:zombified_piglin"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-13",
+        "title": "#13 · Acertar uma flecha com segurança",
+        "body": "Usar arco e flechas contra um hostil isolado, mirando o corpo e mantendo cobertura. Precisa acertar a entidade, não apenas disparar. Reutilizar um encontro já controlado; não viajar para dungeon só por isso.",
+        "list": [
+          "Confiança: Alta."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:13"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:13",
+          "advancementId": "minecraft:adventure/shoot_arrow",
+          "criteria": [
+            "shot_arrow"
+          ],
+          "requirements": [
+            [
+              "shot_arrow"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-14",
+        "title": "#14 · Arqueologia que realmente registra o advancement",
+        "body": "Escova: pena, cobre e graveto. Rota do pack auditada: areia suspeita no piso inferior de Better Desert Temples (#250:desert), cujo processador referencia minecraft:archaeology/desert_pyramid; o JAR 4.1.5 tem o mesmo SHA-256 da auditoria publicada. O templo tem Pharaoh e não é uma saída leve sem preparo. Alternativa de menor compromisso: Trail Ruins vanilla, pesquisada como estrutura na Explorer’s Compass. Escovar o bloco intacto e com suporte, sem quebrar ou derrubar. Basta uma tabela vanilla de escavação, além de has_sherd já cumprido; não exige 7/7 nem seis sítios. A posse de peça de Better Archeology/D&T não substitui o trigger de escavação vanilla. Poço do deserto é alternativa visual, não prometer localização por bússola de estruturas porque é feature.",
+        "list": [
+          "Confiança: Alta nos critérios e recurso do templo; Média para configuração/geração efetiva.",
+          "São dois grupos obrigatórios: has_sherd E qualquer uma das seis tabelas de escavação. 7/7 não é uma exigência."
+        ],
+        "links": [
+          {
+            "href": "/mods#guide-dungeons-structures-destination-250-desert",
+            "label": "Como fazer: preparo, localização e tática"
+          },
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:14"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:14",
+          "advancementId": "minecraft:adventure/salvage_sherd",
+          "criteria": [
+            "desert_pyramid",
+            "desert_well",
+            "has_sherd",
+            "ocean_ruin_cold",
+            "ocean_ruin_warm",
+            "trail_ruins_common",
+            "trail_ruins_rare"
+          ],
+          "requirements": [
+            [
+              "desert_pyramid",
+              "desert_well",
+              "ocean_ruin_cold",
+              "ocean_ruin_warm",
+              "trail_ruins_rare",
+              "trail_ruins_common"
+            ],
+            [
+              "has_sherd"
+            ]
+          ],
+          "catalog": "archaeology",
+          "rows": [
+            {
+              "label": "desert_pyramid",
+              "criteria": [
+                "desert_pyramid"
+              ],
+              "technique": "Better Desert Temple #250:desert: areia suspeita no piso inferior; exige preparo para dungeon/Pharaoh."
+            },
+            {
+              "label": "desert_well",
+              "criteria": [
+                "desert_well"
+              ],
+              "technique": "Poço do deserto encontrado visualmente: escovar areia suspeita. É feature, não alvo garantido de bússola de estruturas."
+            },
+            {
+              "label": "has_sherd",
+              "criteria": [
+                "has_sherd"
+              ],
+              "technique": "Posse de fragmento: grupo obrigatório. Não substitui a escavação."
+            },
+            {
+              "label": "ocean_ruin_cold",
+              "criteria": [
+                "ocean_ruin_cold"
+              ],
+              "technique": "Ruína oceânica fria vanilla: escovar cascalho suspeito com preparo aquático."
+            },
+            {
+              "label": "ocean_ruin_warm",
+              "criteria": [
+                "ocean_ruin_warm"
+              ],
+              "technique": "Ruína oceânica quente vanilla: escovar areia suspeita com preparo aquático."
+            },
+            {
+              "label": "trail_ruins_common",
+              "criteria": [
+                "trail_ruins_common"
+              ],
+              "technique": "Trail Ruins vanilla: escovar cascalho suspeito; Explorer’s Compass para a estrutura registrada."
+            },
+            {
+              "label": "trail_ruins_rare",
+              "criteria": [
+                "trail_ruins_rare"
+              ],
+              "technique": "Trail Ruins vanilla: alternativa de tabela rara, não uma segunda visita obrigatória."
+            }
+          ]
+        }
+      },
+      {
+        "id": "vanilla-15",
+        "title": "#15 · Uma troca real para benamu",
+        "body": "Usar o ponto de comércio de vocês, se estiver marcado no Xaero, e benamu retirar o resultado de uma troca válida. Se ainda não houver um comerciante utilizável, atribuir profissão com estação e negociar oferta simples de recursos renováveis. No MCA, abrir a interface de comércio: conversar ou dar presente não comprova villager_trade. O registro de gr1d não identifica o NPC nem suas coordenadas; validar o trigger no comerciante escolhido.",
+        "list": [
+          "Confiança: Alta no critério; Média na interação MCA da configuração do mundo."
+        ],
+        "links": [
+          {
+            "label": "MCA · relações e comércio no pack",
+            "href": "/mods#guide-mca"
+          },
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:15"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:15",
+          "advancementId": "minecraft:adventure/trade",
+          "criteria": [
+            "traded"
+          ],
+          "requirements": [
+            [
+              "traded"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-16",
+        "title": "#16 · Reprodução simples para benamu",
+        "body": "Dois adultos vanilla da mesma espécie em cercado: vacas ou ovelhas com trigo. Benamu alimenta ambos e espera o filhote, com espaço e os animais fora do cooldown. Preferir a criação já existente e manter companheiros caninos afastados. Não usar como prova um filhote de registry de mod diferente sem validar o critério.",
+        "list": [
+          "Confiança: Alta."
+        ],
+        "links": [
+          {
+            "label": "MCA · relações e comércio no pack",
+            "href": "/mods#guide-mca"
+          },
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:16"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:16",
+          "advancementId": "minecraft:husbandry/breed_an_animal",
+          "criteria": [
+            "bred"
+          ],
+          "requirements": [
+            [
+              "bred"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-17",
+        "title": "#17 · Domesticação sem confundir skin e progresso",
+        "body": "Domar um lobo vanilla com ossos, antes de mudanças opcionais de treinamento/skin no Doggy Talents. O dono é o jogador que doma; não contar o lobo do parceiro. O registro pale de #166 ajuda a explicar o histórico, mas mudar aparência no Doggy não comprova outra variante vanilla. Não há necessidade de domesticar outro agora.",
+        "list": [
+          "Confiança: Alta no vanilla; Média para interações Doggy específicas."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:17"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:17",
+          "advancementId": "minecraft:husbandry/tame_an_animal",
+          "criteria": [
+            "tamed_animal"
+          ],
+          "requirements": [
+            [
+              "tamed_animal"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-18",
+        "title": "#18 · Captura eficiente de axolote",
+        "body": "Levar balde com água às lush caves, bioma já registrado pelos dois; usar no axolote e manter o balde de axolote no inventário. Prepare acesso e retorno e não deixe o animal exposto fora d’água. O advancement é de obter o balde, não exige catalogar cores nem repetir a captura.",
+        "list": [
+          "Confiança: Alta."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:18"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:18",
+          "advancementId": "minecraft:husbandry/axolotl_in_a_bucket",
+          "criteria": [
+            "axolotl_bucket"
+          ],
+          "requirements": [
+            [
+              "axolotl_bucket"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-46",
+        "title": "#46 · Cardápio exato que falta para cada um",
+        "body": "Separar porções em mochilas/baús individuais: lavoura e cozinha primeiro; carnes e pesca depois; expedições e itens raros por último. Os pratos do Farmer’s Delight podem sustentar a viagem, mas não substituem os IDs vanilla exigidos. Usar JEI para as receitas do pack; comer cada item, não apenas coletar. Alimentos crus são critérios separados dos cozidos. Consumir os itens de efeitos negativos na base com vida, comida segura, leite e espaço protegido. Enchanted Golden Apple para benamu é uma pendência rara: a já comida por gr1d não prova que existe outra guardada.",
+        "list": [
+          "Confiança: Alta para listas; Média para disponibilidade/rota de aquisição."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:46"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:46",
+          "advancementId": "minecraft:husbandry/balanced_diet",
+          "criteria": [
+            "apple",
+            "baked_potato",
+            "beef",
+            "beetroot",
+            "beetroot_soup",
+            "bread",
+            "carrot",
+            "chicken",
+            "chorus_fruit",
+            "cod",
+            "cooked_beef",
+            "cooked_chicken",
+            "cooked_cod",
+            "cooked_mutton",
+            "cooked_porkchop",
+            "cooked_rabbit",
+            "cooked_salmon",
+            "cookie",
+            "dried_kelp",
+            "enchanted_golden_apple",
+            "glow_berries",
+            "golden_apple",
+            "golden_carrot",
+            "honey_bottle",
+            "melon_slice",
+            "mushroom_stew",
+            "mutton",
+            "poisonous_potato",
+            "porkchop",
+            "potato",
+            "pufferfish",
+            "pumpkin_pie",
+            "rabbit",
+            "rabbit_stew",
+            "rotten_flesh",
+            "salmon",
+            "spider_eye",
+            "suspicious_stew",
+            "sweet_berries",
+            "tropical_fish"
+          ],
+          "requirements": [
+            [
+              "apple"
+            ],
+            [
+              "mushroom_stew"
+            ],
+            [
+              "bread"
+            ],
+            [
+              "porkchop"
+            ],
+            [
+              "cooked_porkchop"
+            ],
+            [
+              "golden_apple"
+            ],
+            [
+              "enchanted_golden_apple"
+            ],
+            [
+              "cod"
+            ],
+            [
+              "salmon"
+            ],
+            [
+              "tropical_fish"
+            ],
+            [
+              "pufferfish"
+            ],
+            [
+              "cooked_cod"
+            ],
+            [
+              "cooked_salmon"
+            ],
+            [
+              "cookie"
+            ],
+            [
+              "melon_slice"
+            ],
+            [
+              "beef"
+            ],
+            [
+              "cooked_beef"
+            ],
+            [
+              "chicken"
+            ],
+            [
+              "cooked_chicken"
+            ],
+            [
+              "rotten_flesh"
+            ],
+            [
+              "spider_eye"
+            ],
+            [
+              "carrot"
+            ],
+            [
+              "potato"
+            ],
+            [
+              "baked_potato"
+            ],
+            [
+              "poisonous_potato"
+            ],
+            [
+              "golden_carrot"
+            ],
+            [
+              "pumpkin_pie"
+            ],
+            [
+              "rabbit"
+            ],
+            [
+              "cooked_rabbit"
+            ],
+            [
+              "rabbit_stew"
+            ],
+            [
+              "mutton"
+            ],
+            [
+              "cooked_mutton"
+            ],
+            [
+              "chorus_fruit"
+            ],
+            [
+              "beetroot"
+            ],
+            [
+              "beetroot_soup"
+            ],
+            [
+              "dried_kelp"
+            ],
+            [
+              "suspicious_stew"
+            ],
+            [
+              "sweet_berries"
+            ],
+            [
+              "honey_bottle"
+            ],
+            [
+              "glow_berries"
+            ]
+          ],
+          "catalog": "foods",
+          "rows": [
+            {
+              "label": "apple",
+              "criteria": [
+                "apple"
+              ],
+              "technique": "Só benamu: maçã, batata assada, salmão cozido e bagas doces; fontes e técnicas já usadas por gr1d, sem pressupor estoque restante."
+            },
+            {
+              "label": "baked_potato",
+              "criteria": [
+                "baked_potato"
+              ],
+              "technique": "Só benamu: maçã, batata assada, salmão cozido e bagas doces; fontes e técnicas já usadas por gr1d, sem pressupor estoque restante."
+            },
+            {
+              "label": "beef",
+              "criteria": [
+                "beef"
+              ],
+              "technique": "Criação e abate controlado; separar uma porção crua por jogador antes de cozinhar o restante."
+            },
+            {
+              "label": "beetroot",
+              "criteria": [
+                "beetroot"
+              ],
+              "technique": "Lavoura: colher/replantar na base. Batata venenosa vem ocasionalmente da colheita; não é receita garantida."
+            },
+            {
+              "label": "beetroot_soup",
+              "criteria": [
+                "beetroot_soup"
+              ],
+              "technique": "Cozinha/JEI: sopa de beterraba; torta de abóbora; cenoura dourada; cookie com cacau e trigo. Usar o item vanilla exato."
+            },
+            {
+              "label": "bread",
+              "criteria": [
+                "bread"
+              ],
+              "technique": "Trigo da lavoura → pão via JEI. Consumir a própria porção."
+            },
+            {
+              "label": "carrot",
+              "criteria": [
+                "carrot"
+              ],
+              "technique": "Lavoura: colher/replantar na base. Batata venenosa vem ocasionalmente da colheita; não é receita garantida."
+            },
+            {
+              "label": "chicken",
+              "criteria": [
+                "chicken"
+              ],
+              "technique": "Criação e abate controlado; separar uma porção crua por jogador antes de cozinhar o restante."
+            },
+            {
+              "label": "chorus_fruit",
+              "criteria": [
+                "chorus_fruit"
+              ],
+              "technique": "Guardar para a etapa do End depois da cadeia End Remastered; entrar no Aether/Twilight não substitui este item."
+            },
+            {
+              "label": "cod",
+              "criteria": [
+                "cod"
+              ],
+              "technique": "Pesca/coleta aquática: separar cru e cozido quando exigido; tropical fish/pufferfish são itens distintos. Não presumir que filé de mod substitui peixe vanilla."
+            },
+            {
+              "label": "cooked_beef",
+              "criteria": [
+                "cooked_beef"
+              ],
+              "technique": "Separar carne bovina vanilla e assar na fornalha; conferir o resultado no JEI."
+            },
+            {
+              "label": "cooked_chicken",
+              "criteria": [
+                "cooked_chicken"
+              ],
+              "technique": "Assar frango vanilla na fornalha; conferir o resultado no JEI."
+            },
+            {
+              "label": "cooked_cod",
+              "criteria": [
+                "cooked_cod"
+              ],
+              "technique": "Pesca/coleta aquática: separar cru e cozido quando exigido; tropical fish/pufferfish são itens distintos. Não presumir que filé de mod substitui peixe vanilla."
+            },
+            {
+              "label": "cooked_mutton",
+              "criteria": [
+                "cooked_mutton"
+              ],
+              "technique": "Assar carneiro vanilla na fornalha; conferir o resultado no JEI."
+            },
+            {
+              "label": "cooked_porkchop",
+              "criteria": [
+                "cooked_porkchop"
+              ],
+              "technique": "Assar porco vanilla na fornalha; conferir o resultado no JEI."
+            },
+            {
+              "label": "cooked_rabbit",
+              "criteria": [
+                "cooked_rabbit"
+              ],
+              "technique": "Coelho vanilla: separar cru, cozinhar outra porção e preparar o ensopado com legumes/cogumelo/batata assada via JEI. Aproveitar expedição a desertos/neve; caça não é garantida pelo bioma sozinho."
+            },
+            {
+              "label": "cooked_salmon",
+              "criteria": [
+                "cooked_salmon"
+              ],
+              "technique": "Só benamu: maçã, batata assada, salmão cozido e bagas doces; fontes e técnicas já usadas por gr1d, sem pressupor estoque restante."
+            },
+            {
+              "label": "cookie",
+              "criteria": [
+                "cookie"
+              ],
+              "technique": "Cozinha/JEI: sopa de beterraba; torta de abóbora; cenoura dourada; cookie com cacau e trigo. Usar o item vanilla exato."
+            },
+            {
+              "label": "dried_kelp",
+              "criteria": [
+                "dried_kelp"
+              ],
+              "technique": "Algas: colher kelp no mar e secar na fornalha."
+            },
+            {
+              "label": "enchanted_golden_apple",
+              "criteria": [
+                "enchanted_golden_apple"
+              ],
+              "technique": "Só benamu: reservar busca de loot para longo prazo. Não tem receita vanilla e o consumo de gr1d não comprova outro exemplar no estoque."
+            },
+            {
+              "label": "glow_berries",
+              "criteria": [
+                "glow_berries"
+              ],
+              "technique": "Lush caves já registrada: colher as bagas luminosas das cave vines."
+            },
+            {
+              "label": "golden_apple",
+              "criteria": [
+                "golden_apple"
+              ],
+              "technique": "Só benamu: maçã dourada comum via receita vanilla/JEI ou loot; separar da encantada."
+            },
+            {
+              "label": "golden_carrot",
+              "criteria": [
+                "golden_carrot"
+              ],
+              "technique": "Cozinha/JEI: sopa de beterraba; torta de abóbora; cenoura dourada; cookie com cacau e trigo. Usar o item vanilla exato."
+            },
+            {
+              "label": "honey_bottle",
+              "criteria": [
+                "honey_bottle"
+              ],
+              "technique": "Só benamu: garrafa de mel de colmeia com mel e coleta protegida; não é garrafa de água nem alimento de abelha do mod."
+            },
+            {
+              "label": "melon_slice",
+              "criteria": [
+                "melon_slice"
+              ],
+              "technique": "Jungle já registrada: recolher/plantar melão e separar fatias vanilla, não apenas o bloco."
+            },
+            {
+              "label": "mushroom_stew",
+              "criteria": [
+                "mushroom_stew"
+              ],
+              "technique": "Ensopado de cogumelos vanilla com tigela e os dois cogumelos via JEI; distinto do ensopado suspeito."
+            },
+            {
+              "label": "mutton",
+              "criteria": [
+                "mutton"
+              ],
+              "technique": "Criação e abate controlado; separar uma porção crua por jogador antes de cozinhar o restante."
+            },
+            {
+              "label": "poisonous_potato",
+              "criteria": [
+                "poisonous_potato"
+              ],
+              "technique": "Lavoura: colher/replantar na base. Batata venenosa vem ocasionalmente da colheita; não é receita garantida."
+            },
+            {
+              "label": "porkchop",
+              "criteria": [
+                "porkchop"
+              ],
+              "technique": "Criação e abate controlado; separar uma porção crua por jogador antes de cozinhar o restante."
+            },
+            {
+              "label": "potato",
+              "criteria": [
+                "potato"
+              ],
+              "technique": "Lavoura: colher/replantar na base. Batata venenosa vem ocasionalmente da colheita; não é receita garantida."
+            },
+            {
+              "label": "pufferfish",
+              "criteria": [
+                "pufferfish"
+              ],
+              "technique": "Pesca/coleta aquática: separar cru e cozido quando exigido; tropical fish/pufferfish são itens distintos. Não presumir que filé de mod substitui peixe vanilla."
+            },
+            {
+              "label": "pumpkin_pie",
+              "criteria": [
+                "pumpkin_pie"
+              ],
+              "technique": "Cozinha/JEI: sopa de beterraba; torta de abóbora; cenoura dourada; cookie com cacau e trigo. Usar o item vanilla exato."
+            },
+            {
+              "label": "rabbit",
+              "criteria": [
+                "rabbit"
+              ],
+              "technique": "Coelho vanilla: separar cru, cozinhar outra porção e preparar o ensopado com legumes/cogumelo/batata assada via JEI. Aproveitar expedição a desertos/neve; caça não é garantida pelo bioma sozinho."
+            },
+            {
+              "label": "rabbit_stew",
+              "criteria": [
+                "rabbit_stew"
+              ],
+              "technique": "Coelho vanilla: separar cru, cozinhar outra porção e preparar o ensopado com legumes/cogumelo/batata assada via JEI. Aproveitar expedição a desertos/neve; caça não é garantida pelo bioma sozinho."
+            },
+            {
+              "label": "rotten_flesh",
+              "criteria": [
+                "rotten_flesh"
+              ],
+              "technique": "Separar os itens vanilla dos encontros com zombie/aranhas; receitas/usos extras não são necessários para este critério de consumo."
+            },
+            {
+              "label": "salmon",
+              "criteria": [
+                "salmon"
+              ],
+              "technique": "Pesca/coleta aquática: separar cru e cozido quando exigido; tropical fish/pufferfish são itens distintos. Não presumir que filé de mod substitui peixe vanilla."
+            },
+            {
+              "label": "spider_eye",
+              "criteria": [
+                "spider_eye"
+              ],
+              "technique": "Separar os itens vanilla dos encontros com zombie/aranhas; receitas/usos extras não são necessários para este critério de consumo."
+            },
+            {
+              "label": "suspicious_stew",
+              "criteria": [
+                "suspicious_stew"
+              ],
+              "technique": "Preparar ensopado suspeito vanilla com cogumelos, tigela e flor de efeito conhecido via JEI; não confundir com mushroom_stew, já feito pelos dois."
+            },
+            {
+              "label": "sweet_berries",
+              "criteria": [
+                "sweet_berries"
+              ],
+              "technique": "Só benamu: maçã, batata assada, salmão cozido e bagas doces; fontes e técnicas já usadas por gr1d, sem pressupor estoque restante."
+            },
+            {
+              "label": "tropical_fish",
+              "criteria": [
+                "tropical_fish"
+              ],
+              "technique": "Pesca/coleta aquática: separar cru e cozido quando exigido; tropical fish/pufferfish são itens distintos. Não presumir que filé de mod substitui peixe vanilla."
+            }
+          ]
+        }
+      },
+      {
+        "id": "vanilla-155",
+        "title": "#155 · Expedições pelos biomas ausentes",
+        "body": "Nature’s Compass com o namespace minecraft: de cada alvo; confirmar o ID do bioma por HUD/F3. Terralith pode ter paisagem parecida com outro registry: isso não cumpre o critério vanilla por semelhança. Escolher o alvo ainda ausente mais acessível pela busca atual e usar os circuitos abaixo para aproveitar a viagem. Xaero registra os retornos; água potável, preparo térmico e alimento conforme sobrevivência do pack. Não há seed/coordenadas/waypoints disponíveis nesta auditoria para calcular caminho mais curto. Deep Dark fica em saída própria, sem transformar a visita em luta com Warden.",
+        "list": [
+          "Confiança: Alta para diferenças; Média para ordem geográfica."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:155"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:155",
+          "advancementId": "minecraft:adventure/adventuring_time",
+          "criteria": [
+            "minecraft:badlands",
+            "minecraft:bamboo_jungle",
+            "minecraft:beach",
+            "minecraft:birch_forest",
+            "minecraft:cherry_grove",
+            "minecraft:cold_ocean",
+            "minecraft:dark_forest",
+            "minecraft:deep_cold_ocean",
+            "minecraft:deep_dark",
+            "minecraft:deep_frozen_ocean",
+            "minecraft:deep_lukewarm_ocean",
+            "minecraft:deep_ocean",
+            "minecraft:desert",
+            "minecraft:dripstone_caves",
+            "minecraft:eroded_badlands",
+            "minecraft:flower_forest",
+            "minecraft:forest",
+            "minecraft:frozen_ocean",
+            "minecraft:frozen_peaks",
+            "minecraft:frozen_river",
+            "minecraft:grove",
+            "minecraft:ice_spikes",
+            "minecraft:jagged_peaks",
+            "minecraft:jungle",
+            "minecraft:lukewarm_ocean",
+            "minecraft:lush_caves",
+            "minecraft:mangrove_swamp",
+            "minecraft:meadow",
+            "minecraft:mushroom_fields",
+            "minecraft:ocean",
+            "minecraft:old_growth_birch_forest",
+            "minecraft:old_growth_pine_taiga",
+            "minecraft:old_growth_spruce_taiga",
+            "minecraft:plains",
+            "minecraft:river",
+            "minecraft:savanna",
+            "minecraft:savanna_plateau",
+            "minecraft:snowy_beach",
+            "minecraft:snowy_plains",
+            "minecraft:snowy_slopes",
+            "minecraft:snowy_taiga",
+            "minecraft:sparse_jungle",
+            "minecraft:stony_peaks",
+            "minecraft:stony_shore",
+            "minecraft:sunflower_plains",
+            "minecraft:swamp",
+            "minecraft:taiga",
+            "minecraft:warm_ocean",
+            "minecraft:windswept_forest",
+            "minecraft:windswept_gravelly_hills",
+            "minecraft:windswept_hills",
+            "minecraft:windswept_savanna",
+            "minecraft:wooded_badlands"
+          ],
+          "requirements": [
+            [
+              "minecraft:mushroom_fields"
+            ],
+            [
+              "minecraft:deep_frozen_ocean"
+            ],
+            [
+              "minecraft:frozen_ocean"
+            ],
+            [
+              "minecraft:deep_cold_ocean"
+            ],
+            [
+              "minecraft:cold_ocean"
+            ],
+            [
+              "minecraft:deep_ocean"
+            ],
+            [
+              "minecraft:ocean"
+            ],
+            [
+              "minecraft:deep_lukewarm_ocean"
+            ],
+            [
+              "minecraft:lukewarm_ocean"
+            ],
+            [
+              "minecraft:warm_ocean"
+            ],
+            [
+              "minecraft:stony_shore"
+            ],
+            [
+              "minecraft:swamp"
+            ],
+            [
+              "minecraft:mangrove_swamp"
+            ],
+            [
+              "minecraft:snowy_slopes"
+            ],
+            [
+              "minecraft:snowy_plains"
+            ],
+            [
+              "minecraft:snowy_beach"
+            ],
+            [
+              "minecraft:windswept_gravelly_hills"
+            ],
+            [
+              "minecraft:grove"
+            ],
+            [
+              "minecraft:windswept_hills"
+            ],
+            [
+              "minecraft:snowy_taiga"
+            ],
+            [
+              "minecraft:windswept_forest"
+            ],
+            [
+              "minecraft:taiga"
+            ],
+            [
+              "minecraft:plains"
+            ],
+            [
+              "minecraft:meadow"
+            ],
+            [
+              "minecraft:beach"
+            ],
+            [
+              "minecraft:forest"
+            ],
+            [
+              "minecraft:old_growth_spruce_taiga"
+            ],
+            [
+              "minecraft:flower_forest"
+            ],
+            [
+              "minecraft:birch_forest"
+            ],
+            [
+              "minecraft:dark_forest"
+            ],
+            [
+              "minecraft:savanna_plateau"
+            ],
+            [
+              "minecraft:savanna"
+            ],
+            [
+              "minecraft:jungle"
+            ],
+            [
+              "minecraft:badlands"
+            ],
+            [
+              "minecraft:desert"
+            ],
+            [
+              "minecraft:wooded_badlands"
+            ],
+            [
+              "minecraft:jagged_peaks"
+            ],
+            [
+              "minecraft:stony_peaks"
+            ],
+            [
+              "minecraft:frozen_river"
+            ],
+            [
+              "minecraft:river"
+            ],
+            [
+              "minecraft:ice_spikes"
+            ],
+            [
+              "minecraft:old_growth_pine_taiga"
+            ],
+            [
+              "minecraft:sunflower_plains"
+            ],
+            [
+              "minecraft:old_growth_birch_forest"
+            ],
+            [
+              "minecraft:sparse_jungle"
+            ],
+            [
+              "minecraft:bamboo_jungle"
+            ],
+            [
+              "minecraft:eroded_badlands"
+            ],
+            [
+              "minecraft:windswept_savanna"
+            ],
+            [
+              "minecraft:cherry_grove"
+            ],
+            [
+              "minecraft:frozen_peaks"
+            ],
+            [
+              "minecraft:dripstone_caves"
+            ],
+            [
+              "minecraft:lush_caves"
+            ],
+            [
+              "minecraft:deep_dark"
+            ]
+          ],
+          "catalog": "biomes",
+          "rows": [
+            {
+              "label": "1 · flores e relevos próximos",
+              "criteria": [
+                "minecraft:flower_forest",
+                "minecraft:windswept_forest",
+                "minecraft:windswept_hills",
+                "minecraft:windswept_gravelly_hills",
+                "minecraft:windswept_savanna"
+              ],
+              "technique": "Buscar o ID ausente mais próximo a partir dos pontos já marcados, em vez de visitar forest/plains novamente; ventos e penhascos pedem água/blocos."
+            },
+            {
+              "label": "2 · montanhas",
+              "criteria": [
+                "minecraft:meadow",
+                "minecraft:cherry_grove",
+                "minecraft:grove",
+                "minecraft:snowy_slopes",
+                "minecraft:jagged_peaks",
+                "minecraft:frozen_peaks",
+                "minecraft:stony_peaks"
+              ],
+              "technique": "Percorrer base, encostas e topo, conferindo o bioma de fato; nem toda montanha reúne os sete. Proteção térmica, comida, água e cuidado com powder snow."
+            },
+            {
+              "label": "3 · taigas antigas e neve",
+              "criteria": [
+                "minecraft:old_growth_pine_taiga",
+                "minecraft:old_growth_spruce_taiga",
+                "minecraft:snowy_taiga",
+                "minecraft:snowy_plains",
+                "minecraft:ice_spikes",
+                "minecraft:frozen_river",
+                "minecraft:snowy_beach"
+              ],
+              "technique": "Taiga comum já está feita: apontar especificamente para os dois old growth e snowy. Aproveitar para procurar stray para benamu e lobos só se desejarem reconciliar o upload."
+            },
+            {
+              "label": "4 · pântanos e biomas quentes",
+              "criteria": [
+                "minecraft:swamp",
+                "minecraft:mangrove_swamp",
+                "minecraft:bamboo_jungle",
+                "minecraft:eroded_badlands"
+              ],
+              "technique": "Jungle/badlands normais já estão feitos; usar os IDs destas variantes. Pântanos também são rota para bogged e witch."
+            },
+            {
+              "label": "5 · mar frio e ilha de cogumelos",
+              "criteria": [
+                "minecraft:deep_cold_ocean",
+                "minecraft:frozen_ocean",
+                "minecraft:deep_frozen_ocean",
+                "minecraft:mushroom_fields"
+              ],
+              "technique": "Barco, descanso e provisões; cold_ocean e deep_ocean já estão feitos, mas suas combinações frias/profundas acima não. Confirmar entradas de mushroom_fields por ID."
+            },
+            {
+              "label": "6 · cavernas em saídas separadas",
+              "criteria": [
+                "minecraft:dripstone_caves",
+                "minecraft:deep_dark"
+              ],
+              "technique": "Lush caves já está feito. Levar iluminação/retorno para dripstone; lã e deslocamento cuidadoso no Deep Dark. Visitar não exige invocar nem matar Warden."
+            },
+            {
+              "label": "Demais biomas vanilla do catálogo",
+              "criteria": [
+                "minecraft:badlands",
+                "minecraft:beach",
+                "minecraft:birch_forest",
+                "minecraft:cold_ocean",
+                "minecraft:dark_forest",
+                "minecraft:deep_lukewarm_ocean",
+                "minecraft:deep_ocean",
+                "minecraft:desert",
+                "minecraft:forest",
+                "minecraft:jungle",
+                "minecraft:lukewarm_ocean",
+                "minecraft:lush_caves",
+                "minecraft:ocean",
+                "minecraft:old_growth_birch_forest",
+                "minecraft:plains",
+                "minecraft:river",
+                "minecraft:savanna",
+                "minecraft:savanna_plateau",
+                "minecraft:sparse_jungle",
+                "minecraft:stony_shore",
+                "minecraft:sunflower_plains",
+                "minecraft:taiga",
+                "minecraft:warm_ocean",
+                "minecraft:wooded_badlands"
+              ],
+              "technique": "Selecionar o ID minecraft: na Nature’s Compass e conferir por HUD/F3. Este grupo já estava documentado pelos dois na auditoria de 19/10; ausência de novo upload não prova visita atual."
+            }
+          ]
+        }
+      },
+      {
+        "id": "vanilla-166",
+        "title": "#166 · Variantes de lobo e diferença entre site e save",
+        "body": "Preservar a conclusão manual. Exibir que o último save sincronizado comprova só pale, sem afirmar que faltam oito atualmente no mundo. A tabela opcional abaixo relaciona as oito variantes não documentadas nesse upload aos biomas vanilla; uma nova sincronização real pode atualizar essa evidência. Para registrar novas variantes, o próprio jogador doma o lobo; skin do Doggy não é prova. Não exigir repetição para fechar um marco já marcado pelos dois.",
+        "list": [
+          "Confiança: Alta para estado do site e do upload; Média para estado atual no mundo.",
+          "Conciliação opcional do upload: não reabre nem desmarca uma conclusão manual."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:166"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:166",
+          "advancementId": "minecraft:husbandry/whole_pack",
+          "criteria": [
+            "minecraft:ashen",
+            "minecraft:black",
+            "minecraft:chestnut",
+            "minecraft:pale",
+            "minecraft:rusty",
+            "minecraft:snowy",
+            "minecraft:spotted",
+            "minecraft:striped",
+            "minecraft:woods"
+          ],
+          "requirements": [
+            [
+              "minecraft:ashen"
+            ],
+            [
+              "minecraft:black"
+            ],
+            [
+              "minecraft:chestnut"
+            ],
+            [
+              "minecraft:pale"
+            ],
+            [
+              "minecraft:rusty"
+            ],
+            [
+              "minecraft:snowy"
+            ],
+            [
+              "minecraft:spotted"
+            ],
+            [
+              "minecraft:striped"
+            ],
+            [
+              "minecraft:woods"
+            ]
+          ],
+          "catalog": "wolves",
+          "rows": [
+            {
+              "label": "minecraft:ashen",
+              "criteria": [
+                "minecraft:ashen"
+              ],
+              "technique": "Bioma vanilla: snowy_taiga. O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:black",
+              "criteria": [
+                "minecraft:black"
+              ],
+              "technique": "Bioma vanilla: old_growth_pine_taiga. O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:chestnut",
+              "criteria": [
+                "minecraft:chestnut"
+              ],
+              "technique": "Bioma vanilla: old_growth_spruce_taiga. O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:pale",
+              "criteria": [
+                "minecraft:pale"
+              ],
+              "technique": "Bioma vanilla: taiga (pale já documentado na auditoria). O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:rusty",
+              "criteria": [
+                "minecraft:rusty"
+              ],
+              "technique": "Bioma vanilla: sparse_jungle (já visitado). O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:snowy",
+              "criteria": [
+                "minecraft:snowy"
+              ],
+              "technique": "Bioma vanilla: grove. O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:spotted",
+              "criteria": [
+                "minecraft:spotted"
+              ],
+              "technique": "Bioma vanilla: savanna_plateau (já visitado). O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:striped",
+              "criteria": [
+                "minecraft:striped"
+              ],
+              "technique": "Bioma vanilla: wooded_badlands (já visitado). O jogador doma; não tratar skin do Doggy como prova de variante."
+            },
+            {
+              "label": "minecraft:woods",
+              "criteria": [
+                "minecraft:woods"
+              ],
+              "technique": "Bioma vanilla: forest (já visitado). O jogador doma; não tratar skin do Doggy como prova de variante."
+            }
+          ]
+        }
+      },
+      {
+        "id": "vanilla-225",
+        "title": "#225 · Reutilizar a Trial Chamber de vocês",
+        "body": "Reutilizar o ponto conhecido/waypoint; o registro não contém coordenadas, portanto não inventar uma localização. Se não estiver marcado, Explorer’s Compass busca a estrutura Trial Chambers; o mapa de exploração de cartógrafo é alternativa vanilla. Definir depósito e retirada, deixar espaço contra quedas e distinguir Trial Spawner de gerador comum: luz não o desliga. Entrar cumpre este marco; não exige limpar cada sala.",
+        "list": [
+          "Confiança: Alta no critério e mecânica; Média na rota do mundo."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:225"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:225",
+          "advancementId": "minecraft:adventure/minecraft_trials_edition",
+          "criteria": [
+            "minecraft_trials_edition"
+          ],
+          "requirements": [
+            [
+              "minecraft_trials_edition"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-226",
+        "title": "#226 · Blowback para benamu",
+        "body": "Na Trial Chamber já conhecida, separar um Breeze e reduzir sua vida com golpes controlados. Gr1d para de atacar antes do golpe final; benamu espera e rebate com ataque a carga lançada pelo próprio Breeze até que ela dê o golpe fatal. Bloquear no escudo ou usar uma Wind Charge craftada não equivale à condição: o JSON exige minecraft:breeze_wind_charge. Prepare parede atrás/retirada para não cair nos arremessos. Não prometer número fixo de rebotes.",
+        "list": [
+          "Confiança: Alta."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:226"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:226",
+          "advancementId": "minecraft:adventure/blowback",
+          "criteria": [
+            "blowback"
+          ],
+          "requirements": [
+            [
+              "blowback"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-227",
+        "title": "#227 · Vault e crédito individual",
+        "body": "Concluir ondas de Trial Spawner para tentar obter Trial Key e usá-la num Vault comum que o jogador ainda não abriu. A mesma estrutura pode servir aos dois, mas cada um precisa da própria chave e interação; gr1d abrir não conclui por benamu. Não quebrar o spawner em busca de chave. Os dois já comprovaram o objetivo.",
+        "list": [
+          "Confiança: Alta."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:227"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:227",
+          "advancementId": "minecraft:adventure/under_lock_and_key",
+          "criteria": [
+            "under_lock_and_key"
+          ],
+          "requirements": [
+            [
+              "under_lock_and_key"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-228",
+        "title": "#228 · Ominous Vault para benamu",
+        "body": "Preparar armadura, escudo, comida, luz para circulação e retirada; obter Ominous Bottle, ativar o efeito e iniciar uma Ominous Trial perto de Trial Spawner. Completar a tentativa para obter Ominous Trial Key e benamu usá-la num Ominous Vault que ela ainda não abriu. Trial Key comum não serve. O Vault aberto por gr1d pode continuar elegível para ela. Leite remove efeitos: não usá-lo indiscriminadamente antes de iniciar a tentativa. Não há exigência de derrotar boss de mod.",
+        "list": [
+          "Confiança: Alta na mecânica; Média no preparo editorial."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:228"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:228",
+          "advancementId": "minecraft:adventure/revaulting",
+          "criteria": [
+            "revaulting"
+          ],
+          "requirements": [
+            [
+              "revaulting"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-231",
+        "title": "#231 · Ancient Debris sem depender de explosões",
+        "body": "No Nether do Incendium, preferir mineração em túneis baixos perto de Y15, picareta de diamante ou superior e inventário com blocos de contenção, comida, água potável e resistência ao fogo. Verificar lava antes de abrir cada trecho e manter retorno ao portal. Água de balde não funciona como contenção no Nether. Camas/TNT são técnicas opcionais de risco maior, não padrão necessário; resistência ao fogo não protege da explosão. Não presumir que Incendium multiplica minério. Este marco termina ao obter o bloco, sem exigir barra de netherita.",
+        "list": [
+          "Confiança: Alta para técnica vanilla; Média para configuração de geração."
+        ],
+        "links": [
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:231"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:231",
+          "advancementId": "minecraft:nether/obtain_ancient_debris",
+          "criteria": [
+            "ancient_debris"
+          ],
+          "requirements": [
+            [
+              "ancient_debris"
+            ]
+          ]
+        }
+      },
+      {
+        "id": "vanilla-990",
+        "title": "#990 · Catálogo individual dos 36 hostis vanilla",
+        "body": "Usar a matriz abaixo: 25 alvos faltam aos dois; cave_spider falta só para gr1d; enderman, pillager, stray e witch faltam só para benamu. Separar abates por jogador: estar perto não garante o crédito player_killed_entity. Aproveitar estruturas já auditadas do pack e confirmar registry vanilla. End Remastered exige a cadeia de Eyes/portal; #810/#830/#840 ainda não estão marcados para os dois, então Ender Dragon/Shulker/Chorus Fruit são plano futuro, não saída imediata. Warden, Illusioner, Wildfire e bosses de mods não estão nos 36.",
+        "list": [
+          "Confiança: Alta para critérios e diferenças; Média para rotas do pack."
+        ],
+        "links": [
+          {
+            "href": "/mods#guide-dungeons-structures-destination-250-mineshaft",
+            "label": "Como fazer os destinos deste marco"
+          },
+          {
+            "href": "/mods#guide-dungeons-structures-destination-260-illager-campsite",
+            "label": "Como fazer os destinos deste marco"
+          },
+          {
+            "href": "/mods#guide-dungeons-structures-destination-265-shiraz-palace",
+            "label": "Como fazer os destinos deste marco"
+          },
+          {
+            "label": "Ver marco na Progressão",
+            "href": "/progressao#progression:990"
+          }
+        ],
+        "minecraft": {
+          "milestoneId": "progression:990",
+          "advancementId": "minecraft:adventure/kill_all_mobs",
+          "criteria": [
+            "minecraft:blaze",
+            "minecraft:bogged",
+            "minecraft:breeze",
+            "minecraft:cave_spider",
+            "minecraft:creeper",
+            "minecraft:drowned",
+            "minecraft:elder_guardian",
+            "minecraft:ender_dragon",
+            "minecraft:enderman",
+            "minecraft:endermite",
+            "minecraft:evoker",
+            "minecraft:ghast",
+            "minecraft:guardian",
+            "minecraft:hoglin",
+            "minecraft:husk",
+            "minecraft:magma_cube",
+            "minecraft:phantom",
+            "minecraft:piglin",
+            "minecraft:piglin_brute",
+            "minecraft:pillager",
+            "minecraft:ravager",
+            "minecraft:shulker",
+            "minecraft:silverfish",
+            "minecraft:skeleton",
+            "minecraft:slime",
+            "minecraft:spider",
+            "minecraft:stray",
+            "minecraft:vex",
+            "minecraft:vindicator",
+            "minecraft:witch",
+            "minecraft:wither",
+            "minecraft:wither_skeleton",
+            "minecraft:zoglin",
+            "minecraft:zombie",
+            "minecraft:zombie_villager",
+            "minecraft:zombified_piglin"
+          ],
+          "requirements": [
+            [
+              "minecraft:blaze"
+            ],
+            [
+              "minecraft:bogged"
+            ],
+            [
+              "minecraft:breeze"
+            ],
+            [
+              "minecraft:cave_spider"
+            ],
+            [
+              "minecraft:creeper"
+            ],
+            [
+              "minecraft:drowned"
+            ],
+            [
+              "minecraft:elder_guardian"
+            ],
+            [
+              "minecraft:ender_dragon"
+            ],
+            [
+              "minecraft:enderman"
+            ],
+            [
+              "minecraft:endermite"
+            ],
+            [
+              "minecraft:evoker"
+            ],
+            [
+              "minecraft:ghast"
+            ],
+            [
+              "minecraft:guardian"
+            ],
+            [
+              "minecraft:hoglin"
+            ],
+            [
+              "minecraft:husk"
+            ],
+            [
+              "minecraft:magma_cube"
+            ],
+            [
+              "minecraft:phantom"
+            ],
+            [
+              "minecraft:piglin"
+            ],
+            [
+              "minecraft:piglin_brute"
+            ],
+            [
+              "minecraft:pillager"
+            ],
+            [
+              "minecraft:ravager"
+            ],
+            [
+              "minecraft:shulker"
+            ],
+            [
+              "minecraft:silverfish"
+            ],
+            [
+              "minecraft:skeleton"
+            ],
+            [
+              "minecraft:slime"
+            ],
+            [
+              "minecraft:spider"
+            ],
+            [
+              "minecraft:stray"
+            ],
+            [
+              "minecraft:vex"
+            ],
+            [
+              "minecraft:vindicator"
+            ],
+            [
+              "minecraft:witch"
+            ],
+            [
+              "minecraft:wither_skeleton"
+            ],
+            [
+              "minecraft:wither"
+            ],
+            [
+              "minecraft:zoglin"
+            ],
+            [
+              "minecraft:zombie_villager"
+            ],
+            [
+              "minecraft:zombie"
+            ],
+            [
+              "minecraft:zombified_piglin"
+            ]
+          ],
+          "catalog": "hostiles",
+          "rows": [
+            {
+              "label": "minecraft:blaze",
+              "criteria": [
+                "minecraft:blaze"
+              ],
+              "technique": "YUNG’s Better Nether Fortress e suas rotas já previstas no guia de estruturas. Não confundir Wildfire de Friends&Foes com Blaze ou com este critério.",
+              "links": []
+            },
+            {
+              "label": "minecraft:bogged",
+              "criteria": [
+                "minecraft:bogged"
+              ],
+              "technique": "Swamp/mangrove ou a Trial Chamber quando o spawner dessa câmara gerar bogged. Witch também em Better Witch Hut/Circle (#250); não presumir que toda Trial tem bogged.",
+              "links": []
+            },
+            {
+              "label": "minecraft:breeze",
+              "criteria": [
+                "minecraft:breeze"
+              ],
+              "technique": "Trial Chamber já conhecida; crédito individual do Breeze vanilla.",
+              "links": []
+            },
+            {
+              "label": "minecraft:cave_spider",
+              "criteria": [
+                "minecraft:cave_spider"
+              ],
+              "technique": "Better Mineshaft/Spider Dungeon de #250 ou Illager Fort #260. Só gr1d ainda precisa; benamu já tem crédito.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-250-mineshaft",
+                  "label": "Como fazer: preparo, localização e tática"
+                },
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-250-spider-dungeon",
+                  "label": "Como fazer: preparo, localização e tática"
+                },
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-fort",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:creeper",
+              "criteria": [
+                "minecraft:creeper"
+              ],
+              "technique": "Overworld à noite, área aberta e controlada perto de retorno. Usar exemplar selvagem de zombie villager; não sacrificar aldeão da base para fabricar um alvo.",
+              "links": []
+            },
+            {
+              "label": "minecraft:drowned",
+              "criteria": [
+                "minecraft:drowned"
+              ],
+              "technique": "Rios/ruínas oceânicas durante exploração aquática; preparar respiração e combate/retirada da água.",
+              "links": []
+            },
+            {
+              "label": "minecraft:elder_guardian",
+              "criteria": [
+                "minecraft:elder_guardian"
+              ],
+              "technique": "Better Ocean Monument #270: preparar kit aquático, ranged apropriado e retorno. Elder/guardian são critérios distintos; o avanço de um não conclui o outro.",
+              "links": []
+            },
+            {
+              "label": "minecraft:ender_dragon",
+              "criteria": [
+                "minecraft:ender_dragon"
+              ],
+              "technique": "Longo prazo: #810 Eyes → #830 End → #840 Savage Ender Dragon e End externo/Nullscape #850. Dragon exige crédito de abate individual; Shulker é outro encontro. Não assumir que a primeira luta dará o critério para ambos.",
+              "links": []
+            },
+            {
+              "label": "minecraft:enderman",
+              "criteria": [
+                "minecraft:enderman"
+              ],
+              "technique": "Overworld à noite; alternativa Warped Forest no Nether. Só benamu precisa. As variantes de Enderman Overhaul não são automaticamente prova do registry minecraft:enderman.",
+              "links": []
+            },
+            {
+              "label": "minecraft:endermite",
+              "criteria": [
+                "minecraft:endermite"
+              ],
+              "technique": "Chance ao usar Ender Pearls no Overworld, em local controlado com vida para os teletransportes. Separar crédito dos dois e não afirmar quantidade garantida de pérolas.",
+              "links": []
+            },
+            {
+              "label": "minecraft:evoker",
+              "criteria": [
+                "minecraft:evoker"
+              ],
+              "technique": "Illager Fort do WDA #260 contém evoker/vindicator nos templates; vex exige deixar o evoker invocar. Prepare combate alto: vex atravessa cobertura simples. Mansion/raid são alternativas se existentes, não gates obrigatórios.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-fort",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:ghast",
+              "criteria": [
+                "minecraft:ghast"
+              ],
+              "technique": "Expedição Nether/Incendium: terreno protegido para ghast; regiões adequadas para magma cube; zombified piglin vanilla com espaço de retirada da hostilidade do grupo. Não prometer spawn em toda estrutura do Incendium.",
+              "links": []
+            },
+            {
+              "label": "minecraft:guardian",
+              "criteria": [
+                "minecraft:guardian"
+              ],
+              "technique": "Better Ocean Monument #270: preparar kit aquático, ranged apropriado e retorno. Elder/guardian são critérios distintos; o avanço de um não conclui o outro.",
+              "links": []
+            },
+            {
+              "label": "minecraft:hoglin",
+              "criteria": [
+                "minecraft:hoglin"
+              ],
+              "technique": "Crimson Forest para hoglin e biomas Nether adequados para piglin; usar registry vanilla. Piglin Proliferation acrescenta variantes que não substituem automaticamente esses critérios.",
+              "links": []
+            },
+            {
+              "label": "minecraft:husk",
+              "criteria": [
+                "minecraft:husk"
+              ],
+              "technique": "Deserto à noite ou Shiraz Palace #265, cujo template contém husk; confirmar a entidade vanilla.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-265-shiraz-palace",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:magma_cube",
+              "criteria": [
+                "minecraft:magma_cube"
+              ],
+              "technique": "Expedição Nether/Incendium: terreno protegido para ghast; regiões adequadas para magma cube; zombified piglin vanilla com espaço de retirada da hostilidade do grupo. Não prometer spawn em toda estrutura do Incendium.",
+              "links": []
+            },
+            {
+              "label": "minecraft:phantom",
+              "criteria": [
+                "minecraft:phantom"
+              ],
+              "technique": "Evento de insônia em saída planejada, mantendo espaço seguro e retorno; não impor várias noites sem dormir como rotina permanente do mundo.",
+              "links": []
+            },
+            {
+              "label": "minecraft:piglin",
+              "criteria": [
+                "minecraft:piglin"
+              ],
+              "technique": "Crimson Forest para hoglin e biomas Nether adequados para piglin; usar registry vanilla. Piglin Proliferation acrescenta variantes que não substituem automaticamente esses critérios.",
+              "links": []
+            },
+            {
+              "label": "minecraft:piglin_brute",
+              "criteria": [
+                "minecraft:piglin_brute"
+              ],
+              "technique": "Bastion Remnant se presente na geração atual; procurar estrutura registrada com Explorer’s Compass. Não tratar Piglin Donjon ou inimigo do mod como fonte confirmada de brute sem inspecionar o alvo.",
+              "links": []
+            },
+            {
+              "label": "minecraft:pillager",
+              "criteria": [
+                "minecraft:pillager"
+              ],
+              "technique": "Illager Campsite/Windmill/Fort #260 já auditados. Só benamu precisa; escolher pillager vanilla, sem tratar novo illager de mod como equivalente.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-campsite",
+                  "label": "Como fazer: preparo, localização e tática"
+                },
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-windmill",
+                  "label": "Como fazer: preparo, localização e tática"
+                },
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-fort",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:ravager",
+              "criteria": [
+                "minecraft:ravager"
+              ],
+              "technique": "Mechanical Nest #265 tem ravagers nos templates, mas é alta/arriscada. Raid é alternativa quando quiserem essa atividade. Não subir despreparado só para completar a lista.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-265-mechanical-nest",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:shulker",
+              "criteria": [
+                "minecraft:shulker"
+              ],
+              "technique": "Longo prazo: #810 Eyes → #830 End → #840 Savage Ender Dragon e End externo/Nullscape #850. Dragon exige crédito de abate individual; Shulker é outro encontro. Não assumir que a primeira luta dará o critério para ambos.",
+              "links": []
+            },
+            {
+              "label": "minecraft:silverfish",
+              "criteria": [
+                "minecraft:silverfish"
+              ],
+              "technique": "Stronghold/ambiente com silverfish vanilla; não quebrar gerador necessário nem presumir que qualquer criatura semelhante conta.",
+              "links": []
+            },
+            {
+              "label": "minecraft:skeleton",
+              "criteria": [
+                "minecraft:skeleton"
+              ],
+              "technique": "Overworld à noite em área com cobertura contra flechas.",
+              "links": []
+            },
+            {
+              "label": "minecraft:slime",
+              "criteria": [
+                "minecraft:slime"
+              ],
+              "technique": "Slime vanilla em habitat apropriado; na auditoria ambos já tinham crédito.",
+              "links": []
+            },
+            {
+              "label": "minecraft:spider",
+              "criteria": [
+                "minecraft:spider"
+              ],
+              "technique": "Overworld à noite; confirmar minecraft:spider, sem confundir com registry de Spider Overhaul.",
+              "links": []
+            },
+            {
+              "label": "minecraft:stray",
+              "criteria": [
+                "minecraft:stray"
+              ],
+              "technique": "Snowy Plains/Ice Spikes durante expedição fria ou Trial com variante apropriada; só benamu precisa. Não basta entrar no bioma nem matar skeleton de skin parecida.",
+              "links": []
+            },
+            {
+              "label": "minecraft:vex",
+              "criteria": [
+                "minecraft:vex"
+              ],
+              "technique": "Illager Fort do WDA #260 contém evoker/vindicator nos templates; vex exige deixar o evoker invocar. Prepare combate alto: vex atravessa cobertura simples. Mansion/raid são alternativas se existentes, não gates obrigatórios.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-fort",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:vindicator",
+              "criteria": [
+                "minecraft:vindicator"
+              ],
+              "technique": "Illager Fort do WDA #260 contém evoker/vindicator nos templates; vex exige deixar o evoker invocar. Prepare combate alto: vex atravessa cobertura simples. Mansion/raid são alternativas se existentes, não gates obrigatórios.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-260-illager-fort",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:witch",
+              "criteria": [
+                "minecraft:witch"
+              ],
+              "technique": "Swamp/mangrove ou a Trial Chamber quando o spawner dessa câmara gerar bogged. Witch também em Better Witch Hut/Circle (#250); não presumir que toda Trial tem bogged.",
+              "links": [
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-250-witch",
+                  "label": "Como fazer: preparo, localização e tática"
+                },
+                {
+                  "href": "/mods#guide-dungeons-structures-destination-250-witch-circle",
+                  "label": "Como fazer: preparo, localização e tática"
+                }
+              ]
+            },
+            {
+              "label": "minecraft:wither",
+              "criteria": [
+                "minecraft:wither"
+              ],
+              "technique": "Projeto de chefe futuro: preparar invocação com almas e crânios conforme regra do mundo e kit/arena. Não transformar em requisito para as saídas leves; cada jogador precisa do próprio crédito de abate.",
+              "links": []
+            },
+            {
+              "label": "minecraft:wither_skeleton",
+              "criteria": [
+                "minecraft:wither_skeleton"
+              ],
+              "technique": "YUNG’s Better Nether Fortress e suas rotas já previstas no guia de estruturas. Não confundir Wildfire de Friends&Foes com Blaze ou com este critério.",
+              "links": []
+            },
+            {
+              "label": "minecraft:zoglin",
+              "criteria": [
+                "minecraft:zoglin"
+              ],
+              "technique": "Levar hoglin através do portal para o Overworld e aguardar transformação, com área isolada e retorno protegido; um alvo por crédito, sem trazê-lo para perto dos aldeões/animais.",
+              "links": []
+            },
+            {
+              "label": "minecraft:zombie",
+              "criteria": [
+                "minecraft:zombie"
+              ],
+              "technique": "Overworld à noite em área controlada perto de retorno.",
+              "links": []
+            },
+            {
+              "label": "minecraft:zombie_villager",
+              "criteria": [
+                "minecraft:zombie_villager"
+              ],
+              "technique": "Overworld à noite, área aberta e controlada perto de retorno. Usar exemplar selvagem de zombie villager; não sacrificar aldeão da base para fabricar um alvo.",
+              "links": []
+            },
+            {
+              "label": "minecraft:zombified_piglin",
+              "criteria": [
+                "minecraft:zombified_piglin"
+              ],
+              "technique": "Expedição Nether/Incendium: terreno protegido para ghast; regiões adequadas para magma cube; zombified piglin vanilla com espaço de retirada da hostilidade do grupo. Não prometer spawn em toda estrutura do Incendium.",
+              "links": []
+            }
+          ]
+        }
+      }
+    ],
+    "craftings": [],
+    "craftingNote": "Consulte o JEI para as receitas efetivas do pack; os itens e técnicas necessários estão nas seções correspondentes.",
+    "checklist": [],
+    "sources": [
+      [
+        "Minecraft Java 1.21 — Trial, Vault, Ominous e Blowback",
+        "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-21"
+      ],
+      [
+        "Minecraft Java 1.20.5 — variantes de lobo",
+        "https://www.minecraft.net/en-us/article/minecraft-java-edition-1-20-5"
+      ],
+      [
+        "Minecraft — uso e receita da escova",
+        "https://www.minecraft.net/en-us/article/brush"
+      ],
+      [
+        "Minecraft — técnica de Ancient Debris",
+        "https://www.minecraft.net/pt-br/article/taking-inventory--netherite-scrap"
+      ],
+      [
+        "Nature’s Compass — biomas registrados",
+        "https://modrinth.com/mod/natures-compass"
+      ],
+      [
+        "Explorer’s Compass — estruturas registradas",
+        "https://modrinth.com/mod/explorers-compass"
+      ],
+      [
+        "YUNG Better Desert Temples 4.1.5 — recurso versionado",
+        "https://modrinth.com/mod/yungs-better-desert-temples/version/GQ9iNWkI"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/kill_a_mob",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/kill_a_mob.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/shoot_arrow",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/shoot_arrow.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/salvage_sherd",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/salvage_sherd.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/trade",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/trade.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:husbandry/breed_an_animal",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/husbandry/breed_an_animal.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:husbandry/tame_an_animal",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/husbandry/tame_an_animal.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:husbandry/axolotl_in_a_bucket",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/husbandry/axolotl_in_a_bucket.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:husbandry/balanced_diet",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/husbandry/balanced_diet.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/adventuring_time",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/adventuring_time.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:husbandry/whole_pack",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/husbandry/whole_pack.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/minecraft_trials_edition",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/minecraft_trials_edition.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/blowback",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/blowback.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/under_lock_and_key",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/under_lock_and_key.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/revaulting",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/revaulting.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:nether/obtain_ancient_debris",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/nether/obtain_ancient_debris.json"
+      ],
+      [
+        "Minecraft 1.21.1 · minecraft:adventure/kill_all_mobs",
+        "https://raw.githubusercontent.com/misode/mcmeta/1.21.1-data/data/minecraft/advancement/adventure/kill_all_mobs.json"
+      ]
+    ],
+    "notes": [
+      "Orientações aprovadas em 19/10/2026. Os contadores e pendências são calculados com a evidência atual de cada jogador; não são congelados no texto.",
+      "Sem inventário, seed, coordenadas, waypoints ou configurações atuais do servidor: não presumir estoque, proximidade ou todos os spawns padrão. Ausência no upload não prova que algo nunca foi feito desde então.",
+      "Este card não cria marcos, subitens ou marcações automáticas. A conciliação de #166 é opcional."
+    ]
+  }
+}
